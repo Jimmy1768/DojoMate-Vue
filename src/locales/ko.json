@@ -73,15 +73,44 @@
         "messages": "시스템 알림",
         "records": "출석 기록"
       },
-            "business": {
+      "business": {
         "create_academy": "도장 생성",
         "academy_basics": "도장 설정",
         "academy_qr": "도장 QR 코드",
         "delete_academy": "도장 삭제",
         "add_instructor": "강사 추가",
         "membership_cards": "회원권"
+      },
+      "members": {
+        "applications": "입관 신청",
+        "rejection": "회원 거절/차단",
+        "records": "출석 기록"
+      },
+      "schedule": {
+        "create": "수업 생성",
+        "manage": "수업 편집/취소/삭제",
+        "book_for_students": "회원 대신 예약"
+      },
+      "cards": {
+        "create_template": "회원권 템플릿 생성",
+        "edit_templates": "회원권 템플릿 수정",
+        "delete_templates": "회원권 템플릿 삭제",
+        "issue_cards": "회원권 발급",
+        "manage_cards": "회원권 관리",
+        "delete_cards": "회원권 삭제",
+        "card_records": "카드 기록"
+      },
+      "tools": {
+        "prologue": "유료 도구 소개",
+        "timetable": "주간 수업표",
+        "pause_cards": "회원권 일시정지",
+        "staff_permissions": "직원 권한",
+        "analytics_overview": "운영 분석 개요",
+        "analytics_wages": "급여 설정",
+        "analytics_reports": "보고서 & 근무기록"
       }
     },
+
     "account": {
       "sign_in": {
         "title": "로그인",
@@ -224,7 +253,7 @@
         "quick": "‘빠른 접근’에서 최근 사용한 회원권 및 관련 수업 기록을 볼 수 있습니다."
       }
     },
-        "business": {
+    "business": {
       "create_academy": {
         "title": "도장 생성",
         "intro": "업무 관리 → 도장 생성으로 이동합니다. 도장 정보를 입력하세요. 정보가 자세할수록 회원 검색에 유리합니다.",
@@ -346,7 +375,7 @@
         "view_records": "출석 기록 창이 열립니다. 스크린샷을 찍어 보관하거나 분쟁 해결용으로 사용할 수 있습니다."
       }
     },
-        "schedule": {
+    "schedule": {
       "create": {
         "title": "수업 생성",
         "intro": "수업표로 이동합니다. 기본은 오늘 날짜가 표시됩니다 — 목표 날짜를 선택하고 ‘수업 생성’을 클릭하세요.",

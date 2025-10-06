@@ -109,7 +109,8 @@
         "analytics_wages": "員工薪酬",
         "analytics_reports": "報表與工時"
       }
-    }    ,
+    },
+    
     "account": {
       "sign_in": {
         "title": "登入",

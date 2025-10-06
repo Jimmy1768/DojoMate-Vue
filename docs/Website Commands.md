@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "updated nginx"
+git commit -m "fixed translation files"
 git push
 
 git pull
@@ -47,6 +47,8 @@ sudo rsync -av --delete dist/ /var/www/DojoMate/
 ## Nginx
 
 ```bash
+
+sudo cp ~/Projects/DojoMate-Vue/ops/nginx/dojomateapp.conf /etc/nginx/sites-available/dojomateapp.conf
 
 # Test & reload
 sudo nginx -t

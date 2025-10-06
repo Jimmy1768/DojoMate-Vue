@@ -355,7 +355,8 @@
         "no_pending": "If you see “No pending accounts”, the member didn’t apply correctly. Ask them to try again by scanning your academy QR code or searching your academy name.",
         "accept_reject": "When an application appears, press Accept or Reject.",
         "child_accounts": "To accept linked child accounts, go to Members → Members List, open the parent’s profile, and accept child accounts listed there.",
-        "refresh": "If child accounts don’t appear, either they weren’t created (or creation failed) or your list is stale. Ask the parent to create them, or close and relaunch the app to refresh (no need to log out)."      },
+        "refresh": "If child accounts don’t appear, either they weren’t created (or creation failed) or your list is stale. Ask the parent to create them, or close and relaunch the app to refresh (no need to log out)."      
+      },
       "rejection": {
         "title": "Rejecting or Banning Members",
         "intro": "Manage membership status from the member’s profile.",
