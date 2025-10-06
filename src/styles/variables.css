@@ -1,0 +1,55 @@
+:root {
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --line-height: 1.6;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font sizes */
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px; /* base */
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+
+  /* Colors */
+  --color-fg: #111;            /* Primary text */
+  --color-fg-muted: #666;      /* Secondary text */
+  --color-bg: #fff;            /* Page background */
+  --color-bg-alt: #f7f7f7;     /* Cards / alt sections */
+  --color-border: #ddd;        /* Dividers, card borders */
+
+  --color-primary: #0a63d1;    /* Brand accent (links, buttons) */
+  --color-primary-hover: #084a9e;
+  --color-success: #2e7d32;
+  --color-warning: #ed6c02;
+  --color-error:   #d32f2f;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Radius & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 2px 6px rgba(0,0,0,0.08);
+
+  /* Component tokens */
+  --btn-fg: #fff;
+  --btn-bg: var(--color-primary);
+  --btn-bg-hover: var(--color-primary-hover);
+  --btn-border: transparent;
+
+  --badge-fg: var(--color-primary);
+  --badge-bg: rgba(10, 99, 209, 0.08);
+  --badge-border: rgba(10, 99, 209, 0.25);
+}

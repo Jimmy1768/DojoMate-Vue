@@ -1,0 +1,499 @@
+{
+  "copyright_footer": "© 2025 SourceGrid Labs Ltd. All rights reserved.",
+  "home": {
+    "welcome": "Welcome to DojoMate",
+    "desc_1": "DojoMate is your intuitive mobile app for martial arts academies.",
+    "desc_2": "Easily manage student check-ins, instructor scheduling, and more — all in one clean, simple interface.",
+    "get_started_title": "Get Started",
+    "get_started_text": "Press the link to see detailed documentation of the app.",
+    "help_guide_link": "Help Guide",
+    "privacy_policy_title": "Privacy Policy",
+    "privacy_policy_text": "Understand how we handle your data.",
+    "privacy_policy_link": "Click Here",
+    "download_app_title": "Get the App",
+    "support_title": "Have a question?",
+    "support_text": "Email our support team:"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "effective_date": "Effective Date: June 26, 2025",
+    "intro": "DojoMate is a mobile productivity application developed and owned by SourceGrid Labs (sourcegridlabs.com). We value your privacy and are committed to protecting any information you may share with us.",
+    "info_collect_title": "Information We Collect",
+    "info_collect_text": "DojoMate does not collect, store, or transmit any personally identifiable information. The app operates fully on your device and only accesses data necessary for its core functionality (e.g., check-ins, schedules, academy details).",
+    "third_party_title": "Third-Party Services",
+    "third_party_text": "We do not use third-party analytics, advertising platforms, or tracking tools. The app does not communicate with any external servers controlled by SourceGrid Labs.",
+    "children_title": "Children's Privacy",
+    "children_text": "DojoMate does not target children under 13 and does not knowingly collect data from minors.",
+    "changes_title": "Changes to This Policy",
+    "changes_text": "We may update this privacy policy if our practices change. Any updates will be reflected on this page.",
+    "manage_prefs": "You can manage your preferences at any time by going to Settings → Privacy Settings in the app. From there, you may adjust options such as push notifications, email preferences, and marketing communications."
+  },
+  "help": {
+    "title": "Help Guide",
+    "text_1": "Navigate using the table of contents on the left.",
+    "text_2": "Type in keywoards to search for specific topics.",
+    "sections": {
+      "account": "Account",
+      "settings": "Settings",
+      "profile": "Profile",
+      "academy": "Academy",
+      "business": "Business (Owner)",
+      "cards": "Membership Cards",
+      "members": "Members",
+      "schedule": "Schedule",
+      "tools": "Paid Tools"
+    },
+    "search": {
+      "placeholder": "Search help…",
+      "no_results": "No matches"
+    },
+    "toc": {
+      "account": {
+        "sign_in": "Sign In",
+        "create_account": "Create Account",
+        "reset_password": "Reset Password",
+        "troubleshooting": "Troubleshooting"
+      },
+      "settings": {
+        "change_password": "Change Password",
+        "language": "Select Language",
+        "currency": "Select Currency",
+        "logout": "Log Out",
+        "privacy": "Privacy Settings",
+        "delete_account": "Delete Account"
+      },
+      "profile": {
+        "edit_profile": "Edit Profile",
+        "child_accounts": "Child Accounts"
+      },
+      "academy": {
+        "join": "Join Academy",
+        "memberships": "Managing Memberships",
+        "booking": "Booking Classes",
+        "messages": "System Messages",
+        "records": "Attendance Records"
+      },
+      "business": {
+        "create_academy": "Create Academy",
+        "academy_basics": "Academy Basics",
+        "academy_qr": "Academy QR Code",
+        "delete_academy": "Delete Academy",
+        "add_instructor": "Add Instructors",
+        "membership_cards": "Membership Cards"
+      },
+      "cards": {
+        "create_template": "Create Card Template",
+        "edit_templates": "Edit Card Templates",
+        "delete_templates": "Delete Card Templates",
+        "issue_cards": "Issue Membership Cards",
+        "manage_cards": "Manage Membership Cards",
+        "delete_cards": "Delete Cards",
+        "card_records": "Card Records"
+      },
+      "members": {
+        "applications": "Academy Applications",
+        "rejection": "Reject / Ban Members",
+        "records": "Attendance Records"
+      },
+      "schedule": {
+        "create": "Create Lesson",
+        "manage": "Edit / Cancel / Delete Lesson",
+        "book_for_students": "Booking for Students"
+      },
+      "tools": {
+        "prologue": "About Paid Tools",
+        "timetable": "Timetable",
+        "pause_cards": "Pause Cards",
+        "staff_permissions": "Staff Permissions",
+        "analytics_overview": "Analytics Overview",
+        "analytics_wages": "Staff Wages",
+        "analytics_reports": "Reports & Timesheets"
+      }
+    },
+
+    "account": {
+      "sign_in": {
+        "title": "Sign In",
+        "intro": "Use your email and password to sign in to DojoMate.",
+        "fields": "Fields",
+        "field_email": "Enter your email address.",
+        "field_password": "Enter your account password.",
+        "actions": "Actions",
+        "action_sign_in": "Tap Sign In to access your account.",
+        "action_reset_password": "Tap Reset Password if you forgot your password.",
+        "tips": "Tips",
+        "tip_wrong_credentials": "If login fails, double-check your email and password.",
+        "tip_language_selector": "Use the language selector at the top if needed."
+      },
+      "create": {
+        "title": "Create Account",
+        "intro": "Create a new DojoMate account.",
+        "choices": "Choose your account type:",
+        "member": "Member Account — for students and parents.",
+        "admin": "Admin Account — for academy staff and owners.",
+        "requirements": "Requirements",
+        "email": "A valid email address is required.",
+        "password_rules": "Password must meet the app’s security rules.",
+        "next": "Next Steps",
+        "next_member": "Once created, you can join your academy as a member.",
+        "next_admin": "Once created, you can manage academy staff, members, and schedules."
+      },
+      "reset": {
+        "title": "Reset Password",
+        "intro": "If you forgot your password, use the Reset Password option on the sign-in screen.",
+        "notes": "Notes",
+        "note_where": "You’ll find Reset Password below the sign-in fields.",
+        "note_email_timing": "The reset email may take a few minutes to arrive.",
+        "not_received": "Didn’t receive the email?",
+        "check_spam": "Check spam/junk folders.",
+        "correct_email": "Confirm you used the correct email.",
+        "resend": "Try again after a few minutes."
+      },
+      "troubleshooting": {
+        "title": "Troubleshooting",
+        "cannot_sign_in": "Cannot sign in",
+        "check_email_pw": "Check email and password.",
+        "reset_pw": "Try Reset Password.",
+        "online": "Ensure you are online; retry if the network was unstable.",
+        "email_in_use": "“Email already in use”",
+        "already_registered": "If you previously signed up, use Sign In instead of Create Account.",
+        "role_change": "Signed up as Member but need Admin",
+        "role_change_steps": "Go to Settings → Account Settings. Scroll down to Admin Role, and select Admin."
+      }
+    },
+    "settings": {
+      "change_password": {
+        "title": "Change Password",
+        "intro": "Go to Settings → Account Settings, enter your old password and a new one, then press Change Password.",
+        "note": "If the new password doesn’t work, use the Reset Password option instead."
+      },
+      "language": {
+        "title": "Select Language",
+        "intro": "Go to Settings → Account Settings. Tap the button that shows your current language, then choose your preferred language from the list."
+      },
+      "currency": {
+        "title": "Select Currency",
+        "intro": "Go to Settings -> Account Settings, then press the button showing the currency symbol to choose your preferred currency.",
+        "members": "For members, subscription prices in the app will display in your chosen currency. Tuition payments always use your academy’s currency.",
+        "owners": "For academy owners, your selected currency becomes the default when creating a new academy, but it can be changed during setup."
+      },
+      "logout": {
+        "title": "Log Out",
+        "intro": "Go to Settings → Account Settings and press the Log Out button."
+      },
+      "privacy": {
+        "title": "Privacy Settings",
+        "intro": "Go to Settings → Privacy Settings to control notifications, marketing, and visibility preferences.",
+        "notifications": "System alerts include class cancellations and membership expirations. The app sends a push first; if delivery fails, an email is sent. You can turn off app notifications and/or emails.",
+        "marketing": "Optional announcements from DojoMate or Source Combatives only—no third-party ads, no tracking, and we never sell your data.",
+        "booking": "When you book a class, your name appears on the attendance list. You may book anonymously to other students; admins and instructors still see your booking.",
+        "analytics_attendance": "Attendance is recorded and not anonymous. This ensures accurate accountability, dispute resolution, and academy reporting.",
+        "analytics_aggregate": "Other app metrics (e.g., membership card usage and trends) may be used in aggregate for product research and marketing insights. You can choose anonymity so these records are not attached to your name."
+      },
+      "delete_account": {
+        "title": "Delete Account",
+        "intro": "Go to Settings → Privacy Settings, then press Delete under Delete Account.",
+        "validations": "Before deleting, ensure your academy has closed your account and canceled any active membership cards.",
+        "failures": "If deletion is blocked, one or more linked accounts may prevent removal.",
+        "children": "Dependent child accounts are deleted together with the main account when possible.",
+        "child_cards": "Child accounts with active membership cards must be cleared with their academy before the main account can be deleted."
+      }
+    },
+    "profile": {
+      "edit_profile": {
+        "title": "Edit Profile",
+        "intro": "Go to Profile → Edit Profile. Enter or change your profile information.",
+        "admin_role": "Admin Role: If you created a Member account and want to become an Admin, select Admin here.",
+        "submit": "Press Submit Changes to save."
+      },
+      "child_accounts": {
+        "title": "Child Accounts",
+        "intro": "Go to Profile → Edit Profile.",
+        "parent_role": "Member Role: Select Parent to unlock child account creation.",
+        "create": "Press Create Child Account to add a child. The Create Account button appears after selecting a birthdate.",
+        "edit": "Use the Child Accounts button to edit a child’s profile information.",
+        "delete": "To delete: Press Delete Child Account to see the list of child accounts, then choose Delete Account under the child you wish to remove."
+      }
+    },
+    "academy": {
+      "join": {
+        "title": "Join Academy",
+        "intro": "Go to Academy → Search Academy to find and join your academy.",
+        "qr": "Allow camera usage and scan the academy’s QR code, provided by the admin.",
+        "search": "You can also search by typing the academy name; partial matches will appear.",
+        "verify": "Check details such as owner name and address before joining.",
+        "apply": "Press Join Academy and wait for admin approval.",
+        "children": "If you have dependent child accounts, admins can accept them afterwards."
+      },
+      "memberships": {
+        "title": "Managing Memberships",
+        "intro": "Go to Academy → Member Cards to see all active membership cards grouped by academy.",
+        "multi": "You can join multiple academies; switch between them in Academy → Academy List.",
+        "select": "If multiple academies are joined, select one as active for class booking."
+      },
+      "booking": {
+        "title": "Booking Classes",
+        "intro": "First, ensure you’ve selected the correct academy in Academy → Academy List.",
+        "schedule": "Go to Academy → Schedule. Select a day to view lessons. Navigate weeks with the arrows.",
+        "book": "Press the Booking button next to a lesson. If it’s grayed out, the lesson is unpublished—contact your academy’s admin.",
+        "confirm": "On the attendance page, press Book Lesson. Then select a membership card.",
+        "eligibility": "If no cards appear, your card may not be eligible. Admins decide which card types (adult, child, beginner, etc.) can book each lesson.",
+        "select_card": "Tap a card until it turns blue, then press Confirm to book.",
+        "unbook": "Tap a booked card until it turns white, then press Confirm to unbook."
+      },
+      "messages": {
+        "title": "System Messages",
+        "intro": "Go to Academy → System Messages to see notifications about your memberships, cards, and lessons.",
+        "examples": "Examples: card expired, new card issued, lesson cancelled. Parent accounts also see child account alerts."
+      },
+      "records": {
+        "title": "Attendance Records",
+        "intro": "Go to Academy → Records to view attendance history for yourself or your child accounts.",
+        "range": "You can select a date range to filter records.",
+        "quick": "Quick Access shows your most recently and previously used membership cards with linked lesson history."
+      }
+    },
+    "business": {
+      "create_academy": {
+        "title": "Create Academy",
+        "intro": "Go to Business → Create Academy. Enter academy information; more details help students find you.",
+        "duplicates": "Academy Name must be unique. If saving fails, a duplicate name may be the reason.",
+        "currency": "Currency defaults from your Settings. Choose your local currency now—this cannot be changed later and should match how students pay tuition.",
+        "action": "Press Create Academy to finish."
+      },
+      "academy_basics": {
+        "title": "Academy Basics",
+        "edit": "Business -> Edit Academy lets you update academy details (e.g., address, contact, description).",
+        "messages": "Business -> System Messages shows academy-level alerts similar to member messages"
+      },
+      "academy_qr": {
+        "title": "Academy QR Code",
+        "intro": "Open the academy’s QR so students can scan and join.",
+        "multiple": "If you manage multiple academies, press the button to open the QR Code page. Then choose Selected Academy to load the academy you want. Only one academy can be active at a time."
+      },
+      "delete_academy": {
+        "title": "Delete Academy",
+        "preconditions": "There must be no active membership cards. Clear cards with students first—academies cannot be deleted with active cards.",
+        "members": "Reject all members before deletion. You cannot reject members who still have active cards.",
+        "success": "After clearing cards and rejecting members, you can delete the academy."
+      },
+      "add_instructor": {
+        "title": "Add Instructors",
+        "intro": "Go to Business → Analytics. Press Choose a Member, select a name, then press Add to Staff.",
+        "requirements": "You must have at least one instructor to create lessons.",
+        "owner_tip": "Most owners are the head instructor—add yourself first.",
+        "no_tool_needed": "You can add instructors even if the Analytics tool isn’t activated; wage fields just won’t be available yet.",
+        "next_steps": "See the next section for instructions on adding members to your academy."
+      }
+    },
+    "cards": {
+      "create_template": {
+        "title": "Create Card Template",
+        "intro": "Go to Cards → Create Card Template and enter the details.",
+        "fields_name": "Card Name — the template’s display name.",
+        "fields_fee": "Fee — enter a number. The system will use the currency you chose when setting up the academy.",
+        "fields_desc": "Description — optional notes for admins.",
+        "fields_sessions": "Total Sessions — total lessons the card provides.",
+        "fields_expire_days": "Expire Days — duration in days (e.g., 30 for a month, 365 for a year).",
+        "fields_type": "Type — group or private lesson. Booking eligibility uses this type. Instructor hourly wages also depend on this."
+      },
+      "edit_templates": {
+        "title": "Edit Card Templates",
+        "intro": "Go to Cards → Edit Card Template to update details.",
+        "name_locked": "Card Name cannot be changed to prevent mix-ups.",
+        "save": "Press Submit Changes to save.",
+        "effects_note": "Changes do not affect already issued cards (see Active Cards for adjustments)."
+      },
+      "delete_templates": {
+        "title": "Delete Card Templates",
+        "intro": "Go to Cards → Delete Card Template, open the template, then press Delete Card.",
+        "cannot_delete_active": "Templates with active cards cannot be deleted."
+      },
+      "issue_cards": {
+        "title": "Issue Membership Cards",
+        "intro": "Go to Cards → Assign Cards.",
+        "choose_template": "Tap a card template to open the member list.",
+        "select_members": "Select one or more members and press Confirm to issue.",
+        "already_issued_note": "Members who already hold an active card for this template are shown in gray.",
+        "cannot_revoke_here": "Issuance cannot be revoked on this screen."
+      },
+      "manage_cards": {
+        "title": "Manage Membership Cards",
+        "intro_paths": "Open via Cards → Active Cards (select a card) or via Members → Members List → Manage Cards.",
+        "actions": "Available actions: Adjust Lessons, Adjust Expiry Time.",
+        "input_rules": "Use positive numbers to increase and negative numbers to decrease lessons.",
+        "expiry_rule_note": "Expiry can only be extended (days are added from 0); it cannot be reduced."
+      },
+      "delete_cards": {
+        "title": "Delete Cards",
+        "intro_paths": "Open via Cards → Active Cards → Select Action, or via Members → Members List → Manage Cards.",
+        "expired_default": "Default reason: Card Expired — normal completion (lessons used or time expired).",
+        "no_duplicate_active": "A member cannot hold two active cards for the same template. Delete the active card before issuing a new one.",
+        "cancel_option": "Choose Cancel Card to remove a card that wasn’t fully used.",
+        "cancel_reason_required": "Provide a note (e.g., issued wrong card, refund amount) — the reason is saved in records.",
+        "records_visibility": "Expired cards do not appear in app-facing records; canceled cards do and include who canceled and the note."
+      },
+      "card_records": {
+        "title": "Card Records",
+        "intro": "Go to Cards → Card Records. First choose a record type, then use the search bar to filter by member.",
+        "empty_state": "If no results appear, the member has no records for the selected type.",
+        "items_current": "Current Card Records — attendance linked to the most recent active card.",
+        "items_issued": "Issued Card Records — all active card issuances and who issued them.",
+        "items_canceled": "Canceled Card Records — canceled cards, who canceled, and the recorded reason.",
+        "items_debt": "Lesson Debt Records — entries created when lessons exceed remaining balance.",
+        "debt_policy": "The system allows up to −3 lessons (maximum debt of 3). When a new card is issued, debt is settled by subtracting from the new card.",
+        "settlement_edge": "If settling debt would leave the new card at 1 or fewer lessons, it is not auto-settled to avoid immediate re-renewal after one class.",
+        "manual_resolve": "To resolve manually: open Lesson Debt Records, press Pay Off Debt for an entry, confirm the amount (optional note), then the entry shows Debt Cleared.",
+        "cleared_visibility": "Cleared debt remains visible in records, without the Pay Off Debt action."
+      }
+    },
+    "members": {
+      "applications": {
+        "title": "Academy Applications",
+        "intro": "Members must apply to join your academy from the Join Academy page.",
+        "instructions": "Go to Members → Add/Reject Members to view pending applications.",
+        "no_pending": "If you see “No pending accounts”, the member didn’t apply correctly. Ask them to try again by scanning your academy QR code or searching your academy name.",
+        "accept_reject": "When an application appears, press Accept or Reject.",
+        "child_accounts": "To accept linked child accounts, go to Members → Members List, open the parent’s profile, and accept child accounts listed there.",
+        "refresh": "If child accounts don’t appear, either they weren’t created (or creation failed) or your list is stale. Ask the parent to create them, or close and relaunch the app to refresh (no need to log out)."      },
+      "rejection": {
+        "title": "Rejecting or Banning Members",
+        "intro": "Manage membership status from the member’s profile.",
+        "reject": "Go to Members → Members List, open a profile, and press Reject to remove a member. You cannot reject members with active cards—clear their account and delete active cards first.",
+        "rejected_list": "Find rejected members in Members → Rejected List. From there you can Accept or Ban.",
+        "ban": "Banned members cannot reapply by pressing Join Academy.",
+        "unban": "To remove a ban, go to Members → Banned List, press their name, and press Remove Ban. They will reappear in Add/Reject Members for acceptance."
+      },
+      "records": {
+        "title": "Attendance Records",
+        "intro": "View attendance records for members and linked child accounts.",
+        "instructions": "Go to Members → Records.",
+        "date_range": "Select a date range. If only the first date is filled, results show that single day. Adding a second date retrieves the whole range.",
+        "clear_field": "Once the second date is touched, it defaults to today. You can choose a date before today. To clear it, reload the page.",
+        "member_search": "After setting the range, type a member’s name and select it from the list.",
+        "view_records": "A window opens with the member’s attendance records. Screenshot for recordkeeping or dispute resolution."
+      }
+    },
+    "schedule": {
+      "create": {
+        "title": "Create Lesson",
+        "intro": "Go to Schedule. It opens on today by default—select the day you want and press Create Lesson.",
+        "lesson_name": "Lesson Name.",
+        "lesson_type": "Lesson Type: defaults to Group Lesson.",
+        "lesson_type_note": "Booked cards must match the lesson type (Group or Private).",
+        "date": "Date: double-check if you navigated around the calendar.",
+        "time": "Start / End Time: use 24-hour format (HH:MM). Times use your local timezone.",
+        "classroom": "Classroom (optional): required if you schedule overlapping lessons.",
+        "max_capacity": "Maximum Capacity: required and must be > 0. Students cannot book beyond the limit; admins can.",
+        "min_capacity": "Minimum Capacity: required and must be > 0. The lesson auto-cancels if not reached by the booking cut-off time.",
+        "cutoff": "Booking Cut-Off: defaults to 5 minutes if empty. Suggested ≥ 20 minutes so students get timely cancellation notices. After cut-off, students can’t book/unbook; admins can until the class finishes.",
+        "content": "Lesson Content (optional).",
+        "sessions_deduct": "Sessions to Deduct: defaults to 1. You can set any lesson length and deduct a non-zero number if you need to charge more than 1 per lesson.",
+        "usable_cards": "Usable Membership Cards: tap to select one or more cards allowed to book this lesson (e.g., adults, children, beginner/advanced).",
+        "instructors": "Instructor: tap to select one or more; at least one is required. (See Add Instructors.)",
+        "assistants": "Assistant Instructor (optional).",
+        "action": "Press Create Lesson."
+      },
+      "manage": {
+        "title": "Edit / Cancel / Delete Lesson",
+        "intro": "Go to Schedule, select the date, then tap the lesson (not the Booking button).",
+        "edit": "Edit the lesson info and press Save Changes.",
+        "cancel": "Cancel Lesson: unbooks all currently booked members and prevents new booking. The Booking button will be disabled.",
+        "delete": "Delete Lesson: if you need to remove it entirely (e.g., created by mistake), cancel it first, then press Delete Lesson.",
+        "cutoff_rule": "You can’t edit a lesson after the booking cut-off time.",
+        "started_rule": "You can’t cancel or delete a lesson that has already started."
+      },
+      "book": {
+        "title": "Booking for Students",
+        "intro": "Encourage students/parents to book themselves. If cut-off has passed or they forgot, admins can book with more freedom (not limited by cut-off or capacity).",
+        "open": "Go to Schedule → select date → tap the lesson → Booking → Add Members.",
+        "select_member": "Find the member (parent or child). Tap to show their active cards that are allowed for this lesson.",
+        "choose_card": "Tap a card until it turns blue, then press Confirm to book.",
+        "unbook": "To unbook, tap the member in the attendance list, tap the blue (booked) card until it turns gray, then press Confirm.",
+        "finished_rule": "You can’t book (or unbook) students into lessons that have finished."
+      }
+    },
+    "tools": {
+      "prologue": {
+        "title": "Paid Tools",
+        "intro_1": "Paid tools are purchased by academy owners at",
+        "intro_link": "sourcecombatives.com (Affiliate Tools).",
+        "intro_2": "Other roles may use them for free. You can log in if you have created at least one academy.", 
+        "available": "There are four paid tools: Timetable, Pause Cards, Staff Permissions, and Analytics. The Premium Package includes all four at a discount, with a free 90-day trial available. Press Start Trial on the Features page to begin.",
+        "pricing": "Prices are regionally adjusted (PPP). Enter your Country (and Province for China) to receive the correct discount."
+      },
+      "timetable": {
+        "title": "Timetable",
+        "intro": "Manage a weekly recurring schedule. Create lesson templates once and publish them directly to the calendar without re-creating each lesson.",
+        "create": "Go to Timetable and select a day of the week. Press Create Lesson to open the same form as the Schedule screen and fill it out as you would for a normal lesson.",
+        "end_date": "Timetable templates include an additional End Date field. Define a date range using Start Date (default today) and End Date (in the future). Templates do not exist until published, so you can safely set a far-future end date.",
+        "edit": "After creation, lesson templates appear on the day-of-week page. Press a template to edit it, following the same process as regular lessons.",
+        "publish": "Unpublished lessons appear on the Schedule page. Admins will see a Publish button instead of Booking—press to publish and allow booking. Members see unpublished lessons grayed out, which is useful for viewing future plans.",
+        "holidays": "If a scheduled lesson falls on a holiday, you may simply choose not to publish it. Once published, lessons cannot be unpublished. To remove a published lesson, follow the same Cancel Lesson procedure as in the Schedule instructions."
+      },
+      "pause_cards": {
+        "title": "Pause Cards",
+        "intro": "You can pause a card to stop the clock when needed.",
+        "individual": "Members → Accepted Members. Find or search the member, open the profile, then use the middle (orange) Pause Cards button to pause/unpause.",
+        "academy_wide": "Owners can pause all cards for the academy: Cards → Pause Cards.",
+        "template_toggle": "Each card template has a toggle to exclude it from academy-wide pauses (e.g., let Gift Cards continue expiring).",
+        "no_booking": "Paused cards cannot be used to book lessons.",
+        "independence": "Academy-wide pause/unpause does not change individual pause states; they are independent."
+      },
+      "staff_permissions": {
+        "title": "Staff Permissions",
+        "intro": "Delegate tasks in the app to administrative staff by assigning permissions.",
+        "add_staff": "Go to Business → Permissions. Press Choose a Member and select from your academy’s member list. Add staff members first using the normal Add Member process.",
+        "set_permissions": "Press a staff member’s name to open the permissions window, then assign roles:",
+        "make_admin": "Make Admin — if the user signed up as a Member and didn’t switch to Admin in Settings, you can set it here.",
+        "schedule": "Schedule Access — allows creating, editing, and booking lessons on the Schedule page.",
+        "members": "Members Access — allows Add/Reject/Ban/Unban. Checking attendance records (Members → Records) is always available to Admins and not restricted.",
+        "cards": "Cards Access — allows creating, editing, and deleting card templates; issuing, adjusting, or canceling active cards. Tuition is collected on card issuance. See Membership Cards → Card Records for audit logs.",
+        "timetable": "timetable Access — allows creating, editing, deleting, and publishing lesson templates.",
+        "confirm": "Choose Yes or No for each permission and press Confirm.",
+        "trial_expiry": "If your free trial ends without payment, this tool will lock and you cannot change permissions. Existing permissions remain active.",
+        "remove_staff": "Remove staff by pressing Remove next to their name. This revokes their access (no need to flip each item to 'No' first)."
+      },
+      "analytics": {
+        "overview": {
+          "title": "Analytics Overview",
+          "intro": "Analytics provides real-time and scheduled reports about your academy’s performance.",
+          "realtime": "Real-time data includes: Active Members (with active cards), New/Lost Members this month, Total Planned Classes this week, Completed Classes this week, and Most Popular Card (by usage count).",
+          "weekly_reports": "Weekly reports summarize attendance and class performance, published every Monday for the previous week.",
+          "weekly_items": "Reports include total classes planned and completed, top attended classes, and most active members (one adult and one child).",
+          "financial_reports": "Weekly financial reports are released every Wednesday and include Weekly Net Profit and Average Income per Class.",
+          "monthly_reports": "Monthly reports include 'No Attendance Report', showing members with active cards who did not attend any class during the previous month.",
+          "notes": "Weekly reports only include teaching and staff costs (no rent, utilities, or sales). Financial reports are lesson-related only."
+        },
+        "wages": {
+          "title": "Instructor & Staff Wages",
+          "intro": "Set salary or hourly rates for instructors and staff so the system can calculate costs accurately.",
+          "access": "Go to Business → Analytics. Press on your name or a staff member’s name to enter wage details.",
+          "roles": "Select Position: Instructor or Staff. Instructors are paid by teaching time (lesson duration), while Staff are paid for office hours (clock-in/out). The two roles are exclusive.",
+          "contract_types": "Choose Contract Type: monthly, hourly, or both (for instructors only). You can set both a base monthly and hourly teaching rate.",
+          "fields": "Enter Monthly Rate, Hourly Rate, and Private Lesson Rate. Use your local currency set when the academy was created.",
+          "private_rate": "Private Lesson Rate applies only when the lesson type is Private. Group lessons use the standard rate.",
+          "tiered_intro": "Tiered Wages are optional and allow hourly pay to increase with class attendance size.",
+          "tiered_example": "Add tiers using + Add Tier or × Remove Tier. Example: Tier 1: 2 students → $20/hr, Tier 2: 5 students → $30/hr, Tier 3: 8 students → $40/hr.",
+          "tiered_behavior": "Attendance determines tier activation: 2–4 students use Tier 1, 5–7 use Tier 2, 8 or more always use Tier 3.",
+          "minute_calculation": "Lessons are not limited to 60 minutes. The system calculates hourly wages by minutes (e.g., 90-minute lesson = 1.5× hourly rate)."
+        },
+        "punch_cards": {
+          "title": "Staff Punch Cards",
+          "intro": "Clock-in/out system for tracking staff office hours. Instructor teaching hours are calculated automatically from scheduled lessons.",
+          "usage": "Go to Business → Analytics. Press Actions next to a staff member, then Clock In/Out.",
+          "rules": "Staff on fixed salary can still clock in/out for attendance tracking. Hourly staff must clock in/out for pay calculation.",
+          "instructors_note": "Instructors do not need to clock in unless you wish to monitor office hours. Their pay is based on lesson teaching time.",
+          "current_limit": "Currently, only the academy owner can clock staff in/out. A future update will enable staff self check-in/out using an RFID card at the academy.",
+          "audit_intro": "Timesheet Audit runs every Monday. The owner reviews and approves each punch card for the previous week.",
+          "audit_steps": "Scroll to the bottom of the Analytics page and press Review next to each punch card to inspect details.",
+          "inspect": "Check dates, hours, and clock-in/out times. Missing or incorrect data can be adjusted manually.",
+          "problems": "If missing wage data, enter it. If staff forgot to clock out, press Clock Out. If hours are too long (forgot to clock out earlier), edit the working hours manually.",
+          "actions": "Write notes for special cases (e.g., left early). To reject false or duplicate records, press Error → Reject. Press Mark as Late to log tardiness (tracking only).",
+          "approval": "When correct, press Approve. Approved punch cards are included in financial reports.",
+          "summary": "Every Monday: previous week’s punch cards appear for approval. Every 1st of the month: remaining partial week cards appear. Reports are generated on Wednesdays and the 3rd of each month, giving 2 days to complete reviews. Unapproved cards are excluded from reports."
+        }
+      }
+    }
+  }
+}

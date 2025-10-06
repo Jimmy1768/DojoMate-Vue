@@ -1,0 +1,80 @@
+/* Centered page container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Layout primitives */
+.row   { display: flex; gap: var(--space-2); align-items: center; }
+.stack { display: grid; gap: var(--space-2); }
+.stack.tight { gap: var(--space-1); } /* compact stack for short blurbs */
+
+/* Centering */
+.centered { display: flex; justify-content: center; } /* horizontal center only */
+.text-center { text-align: center; }
+
+/* Gap utilities */
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+
+/* Margin utilities (y-axis + individual) */
+.my-2 { margin-top: var(--space-2); margin-bottom: var(--space-2); }
+.my-3 { margin-top: var(--space-3); margin-bottom: var(--space-3); }
+.my-4 { margin-top: var(--space-4); margin-bottom: var(--space-4); }
+.my-6 { margin-top: var(--space-6); margin-bottom: var(--space-6); }
+
+.mt-2 { margin-top: var(--space-2); } .mb-2 { margin-bottom: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); } .mb-3 { margin-bottom: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); } .mb-4 { margin-bottom: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); } .mb-6 { margin-bottom: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); } .mb-8 { margin-bottom: var(--space-8); }
+
+/* Store button sizing */
+.store-links .store-badge { height: 44px; object-fit: contain; }
+
+/* Two-column split (Help page) */
+.split {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+/* Sticky left column for TOC */
+.split .sticky {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  max-height: calc(100dvh - var(--space-6));
+  overflow: auto;
+  padding-right: var(--space-2);
+  border-right: 1px solid var(--color-border);
+}
+
+/* Mobile: stack columns */
+@media (max-width: 720px) {
+  .split { grid-template-columns: 1fr; }
+  .split .sticky {
+    position: static;
+    max-height: none;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+}
+
+/* Independent scrolling sidebar for Help TOC */
+.help-sidebar {
+  position: sticky;      /* sticks inside the page scroll */
+  top: 0;                /* adjust if you have a fixed header; otherwise 0 */
+  align-self: start;     /* so the sticky calculates from the top of column */
+  height: 100vh;         /* full viewport height */
+  overflow-y: auto;      /* vertical scroll inside the sidebar only */
+  overscroll-behavior: contain; /* prevent wheel scroll from bubbling to page */
+}

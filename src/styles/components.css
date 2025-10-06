@@ -1,0 +1,57 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+}
+.btn:hover { background: var(--btn-bg-hover); }
+.btn[disabled], .btn:disabled { opacity: .6; cursor: default; }
+
+/* Ghost / text button */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+}
+.btn--ghost:hover { background: var(--color-bg-alt); }
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--badge-fg);
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+}
+.badge--success { color: var(--color-success); background: rgba(46,125,50,.08); border-color: rgba(46,125,50,.25); }
+.badge--warning { color: var(--color-warning); background: rgba(237,108,2,.08); border-color: rgba(237,108,2,.25); }
+.badge--error   { color: var(--color-error);   background: rgba(211,47,47,.08); border-color: rgba(211,47,47,.25); }
+
+/* Card */
+.card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Link utility */
+.link { color: var(--color-primary); text-decoration: none; font-weight: var(--font-weight-semibold); }
+.link:hover { text-decoration: underline; }
+
+/* Text utility */
+.muted { color: var(--color-fg-muted); }

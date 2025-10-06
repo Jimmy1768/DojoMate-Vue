@@ -1,0 +1,75 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
+<template>
+  <section class="stack tight text-center">
+    <h1>{{ t('home.welcome') }}</h1>
+    <p class="muted">{{ t('home.desc_1') }}</p>
+    <p class="muted">{{ t('home.desc_2') }}</p>
+  </section>
+
+  <section class="stack mb-6">
+    <h2 class="text-center">{{ t('home.download_app_title') }}</h2>
+    <div class="centered gap-3 store-links">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.jimmy1768.Thea"
+        target="_blank" rel="noopener"
+        aria-label="Get it on Google Play"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          class="store-badge"
+        />
+      </a>
+
+      <a
+        href="https://apps.apple.com/us/app/dojomate/id6740231616"
+        target="_blank" rel="noopener"
+        aria-label="Download on the App Store"
+      >
+        <img
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          alt="Download on the App Store"
+          class="store-badge"
+        />
+      </a>
+    </div>
+  </section>
+
+  <div class="home-cards">
+
+    <section class="card mb-6">
+      <h2>{{ t('home.privacy_policy_title') }}</h2>
+      <p class="muted">{{ t('home.privacy_policy_text') }}</p>
+      <router-link class="btn btn--ghost" to="/privacy">
+        {{ t('home.privacy_policy_link') }}
+      </router-link>    
+    </section>
+
+    <section class="card mb-6">
+      <h2>{{ t('home.get_started_title') }}</h2>
+      <p class="muted">{{ t('home.get_started_text') }}</p>
+      <router-link class="btn" to="/help">{{ t('home.help_guide_link') }}</router-link>
+    </section>    
+
+    <section class="card mb-6">
+      <h2>{{ t('home.support_title') }}</h2>
+      <p class="muted">{{ t('home.support_text') }}</p>
+      <a class="btn btn--ghost" href="mailto:support@dojomateapp.com">support@dojomateapp.com</a>
+    </section>
+  </div>
+</template>
+
+<style scoped>
+.home-cards {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+}
+.home-cards .card {
+  flex: 1;
+}
+</style>
