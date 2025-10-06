@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
+import Privacy from '../pages/Privacy.vue'
 import HelpLayout from '../components/HelpLayout.vue'
 import HelpWelcome from '../pages/HelpWelcome.vue'
 
@@ -76,6 +77,7 @@ const router = createRouter({
 
   routes: [
     { path: '/', name: 'home', component: Home },
+    { path: '/privacy', name: 'privacy', component: Privacy },
 
     {
       path: '/help',
