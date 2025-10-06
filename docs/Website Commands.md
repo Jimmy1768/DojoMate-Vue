@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "client request changes"
+git commit -m "updated nginx"
 git push
 
 git pull
@@ -39,6 +39,7 @@ http://localhost:5173
 # Rebuild fresh dist
 rm -rf dist
 npm run build
+sudo rsync -av --delete dist/ /var/www/DojoMate/
 ```
 
 ---
@@ -46,7 +47,6 @@ npm run build
 ## Nginx
 
 ```bash
-ops -> root@143.198.91.24:/etc/nginx/sites-available/
 
 # Test & reload
 sudo nginx -t
