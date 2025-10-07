@@ -12,7 +12,10 @@ const { locale, t } = useI18n()
     </header>
 
     <div class="topbar">
-      <router-link to="/" class="link">Home</router-link>
+      <div class="links">
+        <router-link to="/" class="link">Home</router-link>
+        <a href="https://sourcecombatives.com" target="_blank" rel="noopener" class="link">Upgrade</a>
+      </div>
 
       <div class="lang">
         <button class="btn btn--ghost" @click="setLocale('en')"   :disabled="locale === 'en'">EN</button>
@@ -37,6 +40,11 @@ const { locale, t } = useI18n()
   justify-content: space-between;
   align-items: center;
   margin: 0;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* same horizontal rhythm as language buttons */
 }
 .lang {
   display: flex;

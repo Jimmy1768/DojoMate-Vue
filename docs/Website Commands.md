@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "fixed privacy page link"
+git commit -m "debug for mobile"
 git push
 
 git pull
