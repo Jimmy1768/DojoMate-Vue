@@ -34,10 +34,25 @@ async function scrollToHash() {
 onMounted(scrollToHash)
 watch(() => route.hash, () => { scrollToHash() })
 
-/* --- Mobile contents toggle --- */
+/* ---------- Responsive: only toggle on breakpoint change ---------- */
 const showContents = ref(true)
+let prevIsDesktop = null
+function isDesktop() {
+  return window.innerWidth > 720
+}
 function syncLayoutToViewport() {
-  showContents.value = window.innerWidth > 720
+  const nowDesktop = isDesktop()
+  if (prevIsDesktop === null) {
+    // First run: set initial visibility by breakpoint
+    showContents.value = nowDesktop
+    prevIsDesktop = nowDesktop
+    return
+  }
+  // Only change when crossing the breakpoint (prevents keyboard-induced closes)
+  if (nowDesktop !== prevIsDesktop) {
+    showContents.value = nowDesktop
+    prevIsDesktop = nowDesktop
+  }
 }
 onMounted(() => {
   syncLayoutToViewport()
@@ -47,21 +62,36 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', syncLayoutToViewport)
 })
 
-/* NEW: auto-close Contents on mobile when a search result is clicked */
+/* Close Contents after selecting a search result (mobile only) */
 function handleResultClick() {
-  const isMobile = window.matchMedia('(max-width: 720px)').matches
-  if (isMobile) {
-    // Defer to avoid interfering with router-link navigation
+  if (!isDesktop()) {
     setTimeout(() => {
       showContents.value = false
       query.value = '' // collapse dropdown
     }, 0)
   }
 }
+
+/* Close Contents when clicking any TOC/link inside the sidebar (mobile only) */
+function handleSidebarClick(e) {
+  if (isDesktop()) return
+
+  // Ignore clicks inside the search UI (focus/typing should not close)
+  if (e.target.closest('.search-card')) return
+
+  // Only hide when an actual link in the sidebar is clicked
+  const linkEl = e.target.closest('a, [role="link"], .router-link')
+  if (!linkEl) return
+
+  setTimeout(() => {
+    showContents.value = false
+  }, 0)
+}
 </script>
 
 <template>
   <div class="help-wrap">
+    <!-- Mobile toggle -->
     <div class="contents-toggle">
       <button class="btn btn--ghost" @click="showContents = !showContents">
         {{ showContents ? t('help.contents.hide', 'Hide Contents') : t('help.contents.show', 'Show Contents') }}
@@ -69,7 +99,7 @@ function handleResultClick() {
     </div>
 
     <div class="split fill">
-      <aside class="help-sidebar sticky" v-if="showContents">
+      <aside class="help-sidebar sticky" v-if="showContents" @click="handleSidebarClick">
         <div class="search-sticky">
           <div class="stack card search-card">
             <input
@@ -108,11 +138,26 @@ function handleResultClick() {
 </template>
 
 <style scoped>
-.help-wrap { height: 68vh; max-height: 78vh; }
-.fill { height: 100%; overflow: hidden; }
+.help-wrap {
+  height: 68vh;
+  max-height: 78vh;
+}
 
-.help-sidebar { height: 100%; overflow: auto; }
-.help-content { height: 100%; overflow: auto; padding-right: 2px; }
+.fill {
+  height: 100%;
+  overflow: hidden;
+}
+
+.help-sidebar {
+  height: 100%;
+  overflow: auto;
+}
+
+.help-content {
+  height: 100%;
+  overflow: auto;
+  padding-right: 2px;
+}
 
 .split {
   display: grid;
