@@ -65,11 +65,20 @@ const { t } = useI18n()
 
 <style scoped>
 .home-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* [][][] */
   gap: var(--space-4);
-  justify-content: space-between;
+  align-items: stretch; /* even heights if content differs */
 }
-.home-cards .card {
-  flex: 1;
+
+/* Stack on phones: 
+   [] 
+   [] 
+   [] 
+*/
+@media (max-width: 768px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

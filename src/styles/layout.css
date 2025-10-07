@@ -69,12 +69,17 @@
   }
 }
 
-/* Independent scrolling sidebar for Help TOC */
-.help-sidebar {
-  position: sticky;      /* sticks inside the page scroll */
-  top: 0;                /* adjust if you have a fixed header; otherwise 0 */
-  align-self: start;     /* so the sticky calculates from the top of column */
-  height: 100vh;         /* full viewport height */
-  overflow-y: auto;      /* vertical scroll inside the sidebar only */
-  overscroll-behavior: contain; /* prevent wheel scroll from bubbling to page */
+/* Desktop-only sticky sidebar */
+@media (min-width: 721px) {
+  .help-sidebar {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    max-height: 100svh;   /* safer on mobile browsers too */
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: var(--space-2);
+    /* (Optional) keep border on desktop if you like it here instead of .split .sticky */
+    /* border-right: 1px solid var(--color-border); */
+  }
 }

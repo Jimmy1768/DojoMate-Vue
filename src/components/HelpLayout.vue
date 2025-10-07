@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, nextTick, watch } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import Contents from './Contents.vue'
@@ -9,7 +9,6 @@ const { t } = useI18n()
 const route = useRoute()
 
 const query = ref('')
-
 const index = computed(() => getSearchIndex(t))
 
 const results = computed(() => {
@@ -30,18 +29,47 @@ async function scrollToHash() {
   if (!route.hash) return
   await nextTick()
   const el = document.querySelector(route.hash)
-  if (el && typeof el.scrollIntoView === 'function') {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
-  }
+  if (el?.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
 }
 onMounted(scrollToHash)
 watch(() => route.hash, () => { scrollToHash() })
+
+/* --- Mobile contents toggle --- */
+const showContents = ref(true)
+function syncLayoutToViewport() {
+  showContents.value = window.innerWidth > 720
+}
+onMounted(() => {
+  syncLayoutToViewport()
+  window.addEventListener('resize', syncLayoutToViewport)
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', syncLayoutToViewport)
+})
+
+/* NEW: auto-close Contents on mobile when a search result is clicked */
+function handleResultClick() {
+  const isMobile = window.matchMedia('(max-width: 720px)').matches
+  if (isMobile) {
+    // Defer to avoid interfering with router-link navigation
+    setTimeout(() => {
+      showContents.value = false
+      query.value = '' // collapse dropdown
+    }, 0)
+  }
+}
 </script>
 
 <template>
   <div class="help-wrap">
+    <div class="contents-toggle">
+      <button class="btn btn--ghost" @click="showContents = !showContents">
+        {{ showContents ? t('help.contents.hide', 'Hide Contents') : t('help.contents.show', 'Show Contents') }}
+      </button>
+    </div>
+
     <div class="split fill">
-      <aside class="help-sidebar">
+      <aside class="help-sidebar sticky" v-if="showContents">
         <div class="search-sticky">
           <div class="stack card search-card">
             <input
@@ -60,6 +88,7 @@ watch(() => route.hash, () => { scrollToHash() })
                   :to="r.path"
                   class="link"
                   role="listitem"
+                  @click="handleResultClick"
                 >
                   {{ r.title }}
                 </router-link>
@@ -79,36 +108,20 @@ watch(() => route.hash, () => { scrollToHash() })
 </template>
 
 <style scoped>
-.help-wrap {
-  height: 68vh;
-  max-height: 78vh;
-}
+.help-wrap { height: 68vh; max-height: 78vh; }
+.fill { height: 100%; overflow: hidden; }
 
-.fill {
-  height: 100%;
-  overflow: hidden;
-}
-
-.help-sidebar {
-  height: 100%;
-  overflow: auto;
-}
-
-.help-content {
-  height: 100%;
-  overflow: auto;
-  padding-right: 2px;
-}
+.help-sidebar { height: 100%; overflow: auto; }
+.help-content { height: 100%; overflow: auto; padding-right: 2px; }
 
 .split {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 240px 1fr; /* desktop: [content][page] */
   gap: var(--space-4, 16px);
   align-items: start;
 }
 
 /* keep search pinned */
-/* Sidebar search: no left shift, just a narrower card */
 .search-sticky {
   position: sticky;
   top: 0;
@@ -116,18 +129,16 @@ watch(() => route.hash, () => { scrollToHash() })
   background: var(--color-bg, #fff);
 }
 
-/* Sidebar search: narrower visual width */
+/* Sidebar search card */
 .search-card {
   position: relative;
-  margin: 0 16px 0 0px;         /* top right bottom left → left side reduced by 2px */
-  padding: 4px 6px;            /* tighter padding inside the card */
+  margin: 0 16px 0 0px;  /* top right bottom left */
+  padding: 4px 6px;
   border-radius: 8px;
   background: var(--color-bg, #fff);
   border: 1px solid var(--color-border, #ccc);
   box-sizing: border-box;
 }
-
-/* Input fills inside but respects margins */
 .search-card input {
   width: 100%;
   padding: 4px 6px;
@@ -136,11 +147,26 @@ watch(() => route.hash, () => { scrollToHash() })
   font-size: 0.9rem;
 }
 
-/* mobile layout unchanged */
+/* Toggle alignment (left) */
+.contents-toggle {
+  display: none;
+  margin: 0 0 var(--space-3, 12px) 0;
+  text-align: left;
+}
+
+/* Mobile layout + refinements */
 @media (max-width: 720px) {
-  .split { grid-template-columns: 1fr; }
-  .help-sidebar { height: auto; max-height: none; }
-  .help-content { height: auto; }
   .help-wrap { height: auto; max-height: none; }
+  .fill { height: auto; overflow: visible; }
+  .split { grid-template-columns: 1fr; gap: var(--space-3, 12px); }
+  .help-sidebar { height: auto; max-height: none; overflow: visible; }
+  .help-content { height: auto; overflow: visible; padding-right: 0; }
+  .search-sticky { position: static; } /* disable sticky on mobile */
+  .contents-toggle { display: block; }  /* show the toggle on mobile */
+
+  /* Keep the search area the same width as desktop (240px) on mobile */
+  .search-sticky,
+  .search-card { max-width: 240px; }
+  .search-card { width: 100%; margin: 0; }
 }
 </style>

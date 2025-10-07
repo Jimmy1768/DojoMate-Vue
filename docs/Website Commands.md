@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "fixed translation files"
+git commit -m "fixed privacy page link"
 git push
 
 git pull
