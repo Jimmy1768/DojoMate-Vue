@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "debug for mobile"
+git commit -m "include Upgrade link"
 git push
 
 git pull

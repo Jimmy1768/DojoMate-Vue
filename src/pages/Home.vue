@@ -42,11 +42,16 @@ const { t } = useI18n()
   <div class="home-cards">
 
     <section class="card mb-6">
-      <h2>{{ t('home.privacy_policy_title') }}</h2>
-      <p class="muted">{{ t('home.privacy_policy_text') }}</p>
-      <router-link class="btn btn--ghost" to="/privacy">
-        {{ t('home.privacy_policy_link') }}
-      </router-link>    
+      <h2>{{ t('home.policies_title') }}</h2>
+      <p class="muted">{{ t('home.policies_desc') }}</p>
+      <div class="gap-2" style="display:flex; flex-wrap:wrap;">
+        <router-link class="btn" to="/progression">
+          {{ t('home.policies_progression_btn') }}
+        </router-link>
+        <router-link class="btn btn--ghost" to="/privacy">
+          {{ t('home.policies_privacy_btn') }}
+        </router-link>
+      </div>
     </section>
 
     <section class="card mb-6">
@@ -57,8 +62,19 @@ const { t } = useI18n()
 
     <section class="card mb-6">
       <h2>{{ t('home.support_title') }}</h2>
-      <p class="muted">{{ t('home.support_text') }}</p>
-      <a class="btn btn--ghost" href="mailto:support@dojomateapp.com">support@dojomateapp.com</a>
+      <p class="muted">{{ t('home.support_desc') }}</p>
+
+      <div class="stack tight">
+        <div>
+          <strong>{{ t('home.support_app_label') }}</strong><br />
+          <a class="link" href="mailto:support@dojomateapp.com">support@dojomateapp.com</a>
+        </div>
+
+        <div>
+          <strong>{{ t('home.support_subs_label') }}</strong><br />
+          <a class="link" href="mailto:support@sourcecombatives.com">support@sourcecombatives.com</a>
+        </div>
+      </div>
     </section>
   </div>
 </template>
