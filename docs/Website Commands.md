@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "include Upgrade link"
+git commit -m "added Progression Policy"
 git push
 
 git pull

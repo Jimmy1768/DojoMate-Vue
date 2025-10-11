@@ -8,10 +8,10 @@
     "get_started_text": "Press the link to see detailed documentation of the app.",
     "help_guide_link": "Help Guide",
     "download_app_title": "Get the App",
-    "support_title": "Questions?",
-    "support_desc": "Choose the right contact so we can assist you quickly.",
-    "support_app_label": "About the app:",
-    "support_subs_label": "About curriculum issues:",
+    "support_title": "Contact",
+    "support_desc": "Reach out to the right team for faster assistance.",
+    "support_app_label": "DojoMate team:",
+    "support_subs_label": "Source Combatives:",
     "policies_title": "Company Policies",
     "policies_desc": "Understand how we handle data and how training progression works safely and fairly.",
     "policies_privacy_btn": "Privacy",
@@ -62,7 +62,8 @@
     "integrity_text": "We use device/session limits, audit logs, and anomaly checks to protect fairness. Attempts to manipulate XP, ranks, or results may lead to removal of awards or account actions.",
     "privacy_title": "Privacy and Public Profiles",
     "privacy_text": "Public profiles are opt-in and exclude sensitive personal data. Minor accounts are private by default and require guardian controls.",
-    "appeals_text": "If you believe a badge, XP entry, or rank record is incorrect, contact support@sourcecombatives.com with details. We will review promptly."
+    "appeals_prefix": "If you believe a badge, XP entry, or rank record is incorrect, contact",
+    "appeals_suffix": "with details. We will review promptly."
   },
   "help": {
     "title": "Help Guide",

@@ -8,10 +8,10 @@
     "get_started_text": "点击查看应用的详细使用说明。",
     "help_guide_link": "使用指南",
     "download_app_title": "下载应用",
-    "support_title": "有问题吗？",
-    "support_desc": "请选择正确的联系方式，以便我们快速协助您。",
-    "support_app_label": "关于应用：",
-    "support_subs_label": "关于课程或订阅问题：",
+    "support_title": "联系",
+    "support_desc": "请联系相应团队以获得更快的协助。",
+    "support_app_label": "DojoMate 团队：",
+    "support_subs_label": "Source Combatives：",
     "policies_title": "公司政策",
     "policies_desc": "了解我们如何处理数据，以及训练进度系统如何安全、公平地运作。",
     "policies_privacy_btn": "隐私",
@@ -62,7 +62,8 @@
     "integrity_text": "我们通过设备/会话限制、日志审计与异常检测来维护公平。试图操纵经验值、等级或成绩的行为可能导致奖励撤销或账号处理。",
     "privacy_title": "隐私与公开档案",
     "privacy_text": "公开档案为可选，且不包含敏感个人资料。未成年用户默认保持私密，需经监护人同意后才能公开。",
-    "appeals_text": "如您认为徽章、经验值或等级记录有误，请发送详情至 support@sourcecombatives.com，我们将尽快核查。"
+    "appeals_prefix": "如您认为徽章、经验值或等级记录有误，请发送详情至",
+    "appeals_suffix": "。我们将尽快核查。"  
   },
   "help": {
     "title": "使用指南",

@@ -8,10 +8,10 @@
     "get_started_text": "以下のリンクからアプリの詳細ドキュメントをご覧ください。",
     "help_guide_link": "使用ガイド",
     "download_app_title": "アプリをダウンロード",
-    "support_title": "ご質問がありますか？",
-    "support_desc": "内容に応じて、適切なサポート窓口にご連絡ください。",
-    "support_app_label": "アプリに関するお問い合わせ：",
-    "support_subs_label": "カリキュラムや購読に関するお問い合わせ：",
+    "support_title": "お問い合わせ",
+    "support_desc": "適切なチームに連絡すると、より迅速に対応できます。",
+    "support_app_label": "DojoMate チーム：",
+    "support_subs_label": "Source Combatives：",
     "policies_title": "会社ポリシー",
     "policies_desc": "データの取扱い方針や、学習進度システムの安全で公正な運用についてご確認ください。",
     "policies_privacy_btn": "プライバシー",
@@ -62,7 +62,8 @@
     "integrity_text": "デバイスやセッション制限、ログ監査、異常検知を通じて公正性を維持します。XP、レベル、成績の不正操作は、報酬の取り消しやアカウント処分の対象となる場合があります。",
     "privacy_title": "プライバシーと公開プロフィール",
     "privacy_text": "公開プロフィールは任意であり、個人を特定する情報は含まれません。未成年のアカウントはデフォルトで非公開になっており、保護者の承認が必要です。",
-    "appeals_text": "バッジ、XP、昇級記録に誤りがあると思われる場合は、support@sourcecombatives.com までご連絡ください。迅速に確認いたします。"
+    "appeals_prefix": "バッジ、XP、昇級記録に誤りがあると思われる場合は、",
+    "appeals_suffix": " までご連絡ください。迅速に確認いたします。"  
   },
   "help": {
     "title": "使用ガイド",

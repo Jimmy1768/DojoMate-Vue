@@ -50,6 +50,10 @@ const { t } = useI18n()
     <p>{{ t('progression.privacy_text') }}</p>
 
     <hr />
-    <p class="muted">{{ t('progression.appeals_text') }}</p>
+    <p>
+        {{ t('progression.appeals_prefix') }}
+        <a class="link" href="mailto:support@sourcecombatives.com">support@sourcecombatives.com</a>
+        {{ t('progression.appeals_suffix') }}
+        </p>
   </main>
 </template>
