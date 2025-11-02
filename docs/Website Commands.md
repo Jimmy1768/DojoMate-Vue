@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "fixed Progression Policy errors"
+git commit -m "added apk download for mainland china"
 git push
 
 git pull
