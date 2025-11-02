@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "added apk download for mainland china"
+git commit -m "edit nginx for apk download"
 git push
 
 git pull
