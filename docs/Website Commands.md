@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "added Progression Policy"
+git commit -m "fixed Progression Policy errors"
 git push
 
 git pull
