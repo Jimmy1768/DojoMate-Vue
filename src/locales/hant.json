@@ -128,6 +128,7 @@
         "card_records": "卡片記錄"
       },
       "members": {
+        "enrollment": "快速註冊",
         "applications": "入館申請",
         "rejection": "拒絕 / 封禁成員",
         "records": "出勤記錄"
@@ -385,9 +386,21 @@
       }
     },
     "members": {
+      "enrollment": {
+        "title": "快速註冊",
+        "intro": "館主可以快速註冊尚未擁有 DojoMate 帳號的使用者，或使用 DojoMate 電子郵件新增已有帳號的成員。",
+        "portal_link": "前往 Affiliate Portal",
+        "portal_instructions": "前往 Affiliate Portal，使用您的 DojoMate 電子郵件與密碼登入，然後按下［Register］。",
+        "temp_password": "輸入對方的真實電子郵件地址，並建立一組臨時密碼。",
+        "roles_children": "選擇成員角色（家長或學生）。若選擇家長，系統會顯示建立孩童帳號的畫面。",
+        "confirm": "確認所有資料正確後，按下［Confirm］。",
+        "view_members": "您可以按［Members］查看新加入的成員。",
+        "issue_cards": "您必須在 DojoMate App 中為新成員發放會員卡。",
+        "existing_account": "若新成員已經有 DojoMate 帳號，請按［Member］→［Add Member by Email］，輸入他們的電子郵件並按［Add］新增。"
+      },
       "applications": {
         "title": "入館申請",
-        "intro": "成員需在「加入學院」頁面發起申請。",
+        "intro": "使用者也可以從「加入道館」頁面申請加入您的道館。",
         "instructions": "前往 成員 → 新增/拒絕 成員 查看待處理申請。",
         "no_pending": "若顯示「無待處理帳號」，表示成員未正確申請。請其重新掃描學院 QR 碼或搜尋學院名稱。",
         "accept_reject": "出現申請後，可點「接受」或「拒絕」。",

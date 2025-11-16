@@ -100,6 +100,22 @@ export const adminSections = [
     sectionKey: 'help.sections.members',
     items: [
       {
+        path: '/help/members/enrollment',
+        labelKey: 'help.toc.members.enrollment',
+        titleKey: 'help.members.enrollment.title',
+        bodyKeys: [
+          'help.members.enrollment.intro',
+          'help.members.enrollment.portal_link',
+          'help.members.enrollment.portal_instructions',
+          'help.members.enrollment.temp_password',
+          'help.members.enrollment.roles_children',
+          'help.members.enrollment.confirm',
+          'help.members.enrollment.view_members',
+          'help.members.enrollment.issue_cards',
+          'help.members.enrollment.existing_account'
+        ]
+      },
+      {
         path: '/help/members/applications',
         labelKey: 'help.toc.members.applications',
         titleKey: 'help.members.applications.title',

@@ -128,6 +128,7 @@
         "card_records": "Card Records"
       },
       "members": {
+        "enrollment": "Quick Enrollment",
         "applications": "Academy Applications",
         "rejection": "Reject / Ban Members",
         "records": "Attendance Records"
@@ -385,9 +386,21 @@
       }
     },
     "members": {
+      "enrollment": {
+        "title": "Quick Enrollment",
+        "intro": "Owners can quickly register users without a DojoMate account, or add existing accounts using their email for DojoMate.",
+        "portal_link": "Go to Affiliate Portal",
+        "portal_instructions": "Go to the Affiliate Portal, log in using your DojoMate email and password, then press [Register].",
+        "temp_password": "Enter their real email address, and create a temporary password.",
+        "roles_children": "Choose the member role—parent or student. When selecting parent, another screen will appear to create child accounts.",
+        "confirm": "Review the information to ensure it is correct, then press [Confirm].",
+        "view_members": "You can now see the new members by pressing [Members].",
+        "issue_cards": "You can issue membership cards for the new members using the DojoMate app only.",
+        "existing_account": "If a new member already has a DojoMate account, you can add them by pressing [Member], then [Add Member by Email], entering their email, and pressing [Add]."
+      },
       "applications": {
         "title": "Academy Applications",
-        "intro": "Members must apply to join your academy from the Join Academy page.",
+        "intro": "Users can also apply to join your academy from the Join Academy page.",
         "instructions": "Go to Members → Add/Reject Members to view pending applications.",
         "no_pending": "If you see “No pending accounts”, the member didn’t apply correctly. Ask them to try again by scanning your academy QR code or searching your academy name.",
         "accept_reject": "When an application appears, press Accept or Reject.",

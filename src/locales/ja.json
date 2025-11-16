@@ -128,6 +128,7 @@
         "card_records": "カード記録"
       },
       "members": {
+        "enrollment": "クイック登録",
         "applications": "入会申請",
         "rejection": "拒否 / BAN管理",
         "records": "出席記録"
@@ -385,9 +386,21 @@
       }
     },
     "members": {
+      "enrollment": {
+        "title": "クイック登録",
+        "intro": "オーナーは DojoMate アカウントがないユーザーを素早く登録したり、DojoMate のメールアドレスを使って既存アカウントを追加できます。",
+        "portal_link": "Affiliate Portal へ移動",
+        "portal_instructions": "Affiliate Portal にアクセスし、DojoMate のメールアドレスとパスワードでログインして［Register］を押します。",
+        "temp_password": "相手の本物のメールアドレスを入力し、一時パスワードを作成します。",
+        "roles_children": "メンバーの役割（保護者または生徒）を選択します。保護者を選ぶと、子どものアカウントを作成する画面が表示されます。",
+        "confirm": "内容を確認し、正しければ［Confirm］を押します。",
+        "view_members": "［Members］を押すと、新しく追加されたメンバーを確認できます。",
+        "issue_cards": "新しいメンバーへの会員カード発行は DojoMate アプリでのみ可能です。",
+        "existing_account": "新メンバーがすでに DojoMate アカウントを持っている場合は、［Member］→［Add Member by Email］を押し、メールアドレスを入力して［Add］を押してください。"
+      },
       "applications": {
         "title": "入会申請",
-        "intro": "メンバーは「アカデミーに参加」ページから申請します。",
+        "intro": "ユーザーは「道場に参加」ページからもあなたのアカデミーに参加申請できます。",
         "instructions": "メンバー → 追加/拒否 で保留中の申請を確認します。",
         "no_pending": "「保留中アカウントなし」と表示される場合、申請が正しく送信されていません。QRコードを再スキャンまたは検索を試してください。",
         "accept_reject": "申請が表示されたら「承認」または「拒否」をクリックします。",

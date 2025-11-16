@@ -119,6 +119,7 @@
         "membership_cards": "회원권"
       },
       "members": {
+        "enrollment": "빠른 등록",
         "applications": "입관 신청",
         "rejection": "회원 거절/차단",
         "records": "출석 기록"
@@ -385,9 +386,21 @@
       }
     },
     "members": {
+      "enrollment": {
+        "title": "빠른 등록",
+        "intro": "관장은 DojoMate 계정이 없는 사용자를 빠르게 등록하거나, DojoMate 이메일을 사용하여 기존 계정을 추가할 수 있습니다.",
+        "portal_link": "Affiliate Portal 이동",
+        "portal_instructions": "Affiliate Portal 에 접속하여 DojoMate 이메일과 비밀번호로 로그인한 후, [Register] 를 누르세요.",
+        "temp_password": "상대의 실제 이메일 주소를 입력하고 임시 비밀번호를 생성하세요.",
+        "roles_children": "회원 역할(학부모 또는 학생)을 선택하세요. 학부모를 선택하면 자녀 계정을 생성하는 화면이 표시됩니다.",
+        "confirm": "모든 정보가 정확한지 확인한 후 [Confirm] 을 누르세요.",
+        "view_members": "이제 [Members] 를 눌러 새로 등록된 회원을 확인할 수 있습니다.",
+        "issue_cards": "새 회원의 회원카드는 DojoMate 앱에서만 발급할 수 있습니다.",
+        "existing_account": "새 회원이 이미 DojoMate 계정을 가지고 있다면, [Member] → [Add Member by Email] 을 눌러 이메일을 입력하고 [Add] 를 누르세요."
+      },
       "applications": {
         "title": "입관 신청",
-        "intro": "회원은 ‘도장 가입’ 페이지에서 신청을 보냅니다.",
+        "intro": "사용자는 ‘Join Academy’ 페이지에서도 도장에서 가입 신청을 할 수 있습니다.",
         "instructions": "회원 → 회원 추가/거절로 이동해 대기 중인 신청을 확인합니다.",
         "no_pending": "‘대기 중인 계정 없음’이 표시되면 회원이 올바르게 신청하지 않은 것입니다. QR 코드를 다시 스캔하거나 도장 이름으로 검색하도록 안내하세요.",
         "accept_reject": "신청이 표시되면 ‘승인’ 또는 ‘거절’을 누르세요.",

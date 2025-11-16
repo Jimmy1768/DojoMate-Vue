@@ -47,6 +47,7 @@ import DeleteCards from '../pages/cards/DeleteCards.vue'
 import CardRecords from '../pages/cards/CardRecords.vue'
 
 // Members (Admin) pages
+import Enrollment from '../pages/members/Enrollment.vue'
 import Applications from '../pages/members/Applications.vue'
 import Rejection from '../pages/members/Rejection.vue'
 import MemberRecords from '../pages/members/Records.vue'
@@ -129,6 +130,7 @@ const router = createRouter({
         { path: 'cards/records', component: CardRecords },
 
         // Members (Admin)
+        { path: 'members/enrollment', component: Enrollment },
         { path: 'members/applications', component: Applications },
         { path: 'members/rejection', component: Rejection },
         { path: 'members/records', component: MemberRecords },

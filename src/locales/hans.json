@@ -128,6 +128,7 @@
         "card_records": "卡片记录"
       },
       "members": {
+        "enrollment": "快速注册",
         "applications": "入馆申请",
         "rejection": "拒绝 / 封禁成员",
         "records": "出勤记录"
@@ -385,9 +386,21 @@
       }
     },
     "members": {
+      "enrollment": {
+        "title": "快速注册",
+        "intro": "馆主可以快速注册没有 DojoMate 账号的用户，或使用 DojoMate 邮箱添加已有账号的成员。",
+        "portal_link": "前往 Affiliate Portal",
+        "portal_instructions": "前往 Affiliate Portal，使用您的 DojoMate 邮箱和密码登录，然后点击［Register］。",
+        "temp_password": "输入对方的真实邮箱地址，并为他们创建一个临时密码。",
+        "roles_children": "选择成员角色（家长或学生）。若选择家长，会进入到建立儿童账号的页面。",
+        "confirm": "确认所有信息无误后，点击［Confirm］。",
+        "view_members": "您可以点击［Members］查看新加入的成员。",
+        "issue_cards": "您必须使用 DojoMate App 为新成员发放会员卡。",
+        "existing_account": "如果新成员已经拥有 DojoMate 账号，请点击［Member］→［Add Member by Email］，输入他们的邮箱并点击［Add］。"
+      },
       "applications": {
         "title": "入馆申请",
-        "intro": "成员需在“加入学院”页面发起申请。",
+        "intro": "用户也可以从“加入道馆”页面申请加入您的道馆。",
         "instructions": "前往 成员 → 添加/拒绝成员 查看待处理申请。",
         "no_pending": "若显示“无待处理账号”，说明成员未正确申请。请其重新扫码学院二维码或搜索学院名称。",
         "accept_reject": "出现申请后，可点击“接受”或“拒绝”。",
