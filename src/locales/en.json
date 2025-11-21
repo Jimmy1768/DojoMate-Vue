@@ -145,7 +145,8 @@
         "staff_permissions": "Staff Permissions",
         "analytics_overview": "Analytics Overview",
         "analytics_wages": "Staff Wages",
-        "analytics_reports": "Reports & Timesheets"
+        "analytics_reports": "Reports & Timesheets",
+        "analytics_punch_cards": "Staff Punch Cards"
       }
     },
 

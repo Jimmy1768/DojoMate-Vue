@@ -11,7 +11,9 @@ export const toolsSections = [
         labelKey: 'help.toc.tools.prologue',
         titleKey: 'help.tools.prologue.title',
         bodyKeys: [
-          'help.tools.prologue.intro',
+          'help.tools.prologue.intro_1',
+          'help.tools.prologue.intro_link',
+          'help.tools.prologue.intro_2',
           'help.tools.prologue.available',
           'help.tools.prologue.pricing'
         ]
@@ -49,7 +51,7 @@ export const toolsSections = [
         },
         {
         path: '/help/tools/analytics-punch-cards',
-        labelKey: 'help.toc.tools.analytics_reports',
+        labelKey: 'help.toc.tools.analytics_punch_cards',
         titleKey: 'help.tools.analytics.punch_cards.title',
         bodyKeys: ['help.tools.analytics.punch_cards.intro']
         }

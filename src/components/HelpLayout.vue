@@ -159,13 +159,6 @@ function handleSidebarClick(e) {
   padding-right: 2px;
 }
 
-.split {
-  display: grid;
-  grid-template-columns: 240px 1fr; /* desktop: [content][page] */
-  gap: var(--space-4, 16px);
-  align-items: start;
-}
-
 /* keep search pinned */
 .search-sticky {
   position: sticky;
@@ -203,7 +196,6 @@ function handleSidebarClick(e) {
 @media (max-width: 720px) {
   .help-wrap { height: auto; max-height: none; }
   .fill { height: auto; overflow: visible; }
-  .split { grid-template-columns: 1fr; gap: var(--space-3, 12px); }
   .help-sidebar { height: auto; max-height: none; overflow: visible; }
   .help-content { height: auto; overflow: visible; padding-right: 0; }
   .search-sticky { position: static; } /* disable sticky on mobile */

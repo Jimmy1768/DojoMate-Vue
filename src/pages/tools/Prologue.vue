@@ -9,7 +9,7 @@ const { t } = useI18n()
 
     <p>
       {{ t('help.tools.prologue.intro_1') }}
-      <a href="https://sourcecombatives.com" target="_blank" rel="noopener">
+      <a href="https://sourcecombatives.com" target="_blank" rel="noopener noreferrer">
         {{ t('help.tools.prologue.intro_link') }}
       </a>
       {{ t('help.tools.prologue.intro_2') }}

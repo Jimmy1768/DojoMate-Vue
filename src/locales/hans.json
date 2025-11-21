@@ -145,7 +145,8 @@
         "staff_permissions": "员工权限",
         "analytics_overview": "分析总览",
         "analytics_wages": "员工薪酬",
-        "analytics_reports": "报表与工时"
+        "analytics_reports": "报表与工时",
+        "analytics_punch_cards": "员工打卡（报表）"
       }
     },
     

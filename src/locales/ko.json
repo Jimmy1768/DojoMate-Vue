@@ -145,7 +145,8 @@
         "staff_permissions": "직원 권한",
         "analytics_overview": "운영 분석 개요",
         "analytics_wages": "급여 설정",
-        "analytics_reports": "보고서 & 근무기록"
+        "analytics_reports": "보고서 & 근무기록",
+        "analytics_punch_cards": "직원 출퇴근 기록"
       }
     },
 

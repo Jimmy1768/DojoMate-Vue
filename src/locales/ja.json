@@ -145,7 +145,8 @@
         "staff_permissions": "スタッフ権限",
         "analytics_overview": "分析概要",
         "analytics_wages": "スタッフ給与",
-        "analytics_reports": "レポート・勤務時間"
+        "analytics_reports": "レポート・勤務時間",
+        "analytics_punch_cards": "スタッフ打刻（勤務表）"
       }
     },
 

@@ -24,7 +24,7 @@ const isHans = computed(() => {
     <div class="centered gap-3 store-links">
       <a
         href="https://play.google.com/store/apps/details?id=com.jimmy1768.Thea"
-        target="_blank" rel="noopener"
+        target="_blank" rel="noopener noreferrer"
         aria-label="Get it on Google Play"
       >
         <img
@@ -36,7 +36,7 @@ const isHans = computed(() => {
 
       <a
         href="https://apps.apple.com/us/app/dojomate/id6740231616"
-        target="_blank" rel="noopener"
+        target="_blank" rel="noopener noreferrer"
         aria-label="Download on the App Store"
       >
         <img
@@ -51,7 +51,7 @@ const isHans = computed(() => {
         v-if="isHans"
         href="/downloads/DojoMate-latest.apk"
         class="btn"
-        rel="noopener"
+        rel="noopener noreferrer"
         download
         aria-label="直接下载 APK（适用于中国大陆）"
         title="直接下载 APK（适用于中国大陆）"

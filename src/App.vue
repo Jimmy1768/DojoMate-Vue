@@ -14,7 +14,7 @@ const { locale, t } = useI18n()
     <div class="topbar">
       <div class="links">
         <router-link to="/" class="link">Home</router-link>
-        <a href="https://sourcecombatives.com" target="_blank" rel="noopener" class="link">Upgrade</a>
+        <a href="https://sourcecombatives.com" target="_blank" rel="noopener noreferrer" class="link">Upgrade</a>
       </div>
 
       <div class="lang">

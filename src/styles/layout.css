@@ -58,7 +58,7 @@
 
 /* Mobile: stack columns */
 @media (max-width: 720px) {
-  .split { grid-template-columns: 1fr; }
+  .split { grid-template-columns: 1fr; gap: var(--space-3); }
   .split .sticky {
     position: static;
     max-height: none;
