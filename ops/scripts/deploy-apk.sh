@@ -41,6 +41,9 @@ echo "  Source APK : $SOURCE_APK"
 echo "  Backup file: $BACKUP_APK (new build snapshot)"
 echo "  Target file: $TARGET_APK (public download)"
 
+echo "Ensuring destination directory exists..."
+sudo install -d -o www-data -g www-data -m 0755 "$DEST_DIR"
+
 echo "Creating versioned snapshot of the new build..."
 sudo install -o www-data -g www-data -m 0644 "$SOURCE_APK" "$BACKUP_APK"
 

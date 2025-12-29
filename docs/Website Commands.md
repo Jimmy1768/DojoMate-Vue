@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "fixed minor inconsistencies"
+git commit -m "updated apk upload replace method"
 git push
 
 git pull
@@ -48,15 +48,15 @@ sudo rsync -av --delete dist/ /var/www/DojoMate/
 
 ```bash
 # Upload the new build from your local machine (adjust the path & build number)
-scp /Users/jimmy1768/Projects/DojoMate-Expo/DojoMate-build-1766993725581.apk \
-    jimmy1768_user@143.198.91.24:/tmp/DojoMate-build-1766993725581.apk
+scp /Users/jimmy1768/Projects/DojoMate-Expo/build-<id>.apk \
+    jimmy1768_user@143.198.91.24:/tmp/build-<id>.apk
 
 # On the droplet (run inside Projects/DojoMate-Vue)
-./ops/scripts/deploy-apk.sh /tmp/DojoMate-build-1766993725581.apk 1.9.5
+./ops/scripts/deploy-apk.sh /tmp/build-1766993725581.apk 1.9.5
 ```
 
-- `<build>` should match the exact filename you output from Expo.
-- `<build-tag>` becomes the suffix for the backup file (e.g., `2024-06-15` or `1.7.0`).
+- `<id>` should match the exact unique suffix Expo generates for the build (e.g., `1766993725581`).
+- `<build-tag>` should describe the new build (e.g., `1.9.5`); the script stores a snapshot at `DojoMate-<build-tag>.apk` before replacing `DojoMate-latest.apk`.
 
 ---
 
