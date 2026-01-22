@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "updated apk upload replace method"
+git commit -m "added Deletion.vue"
 git push
 
 git pull

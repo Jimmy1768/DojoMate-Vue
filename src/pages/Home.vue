@@ -84,7 +84,10 @@ const isHans = computed(() => {
     <section class="card mb-6">
       <h2>{{ t('home.get_started_title') }}</h2>
       <p class="muted">{{ t('home.get_started_text') }}</p>
-      <router-link class="btn" to="/help">{{ t('home.help_guide_link') }}</router-link>
+      <div class="gap-2" style="display:flex; flex-wrap:wrap;">
+        <router-link class="btn" to="/help">{{ t('home.help_guide_link') }}</router-link>
+        <router-link class="btn btn--ghost" to="/deletion">{{ t('home.deletion_link') }}</router-link>
+      </div>
     </section>    
 
     <section class="card mb-6">

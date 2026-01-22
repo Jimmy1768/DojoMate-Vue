@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Privacy from '../pages/Privacy.vue'
+import Deletion from '../pages/Deletion.vue'
 import Progression from '../pages/Progression.vue'
 import HelpLayout from '../components/HelpLayout.vue'
 import HelpWelcome from '../pages/HelpWelcome.vue'
@@ -80,6 +81,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'home', component: Home },
     { path: '/privacy', name: 'privacy', component: Privacy },
+    { path: '/deletion', name: 'deletion', component: Deletion },
     { path: '/progression', name: 'progression', component: Progression},
     {
       path: '/help',
