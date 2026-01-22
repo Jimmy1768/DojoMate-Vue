@@ -39,7 +39,7 @@ http://localhost:5173
 # Rebuild fresh dist
 rm -rf dist
 npm run build
-sudo rsync -av --delete dist/ /var/www/DojoMate/
+sudo rsync -av --delete --exclude 'downloads/' dist/ /var/www/DojoMate/
 ```
 
 ---
@@ -52,7 +52,7 @@ scp /Users/jimmy1768/Projects/DojoMate-Expo/build-<id>.apk \
     jimmy1768_user@143.198.91.24:/tmp/build-<id>.apk
 
 # On the droplet (run inside Projects/DojoMate-Vue)
-./ops/scripts/deploy-apk.sh /tmp/build-1766993725581.apk 1.9.5
+./ops/scripts/deploy-apk.sh /tmp/build-1768887532699.apk 1.9.5
 ```
 
 - `<id>` should match the exact unique suffix Expo generates for the build (e.g., `1766993725581`).

@@ -42,7 +42,7 @@ const { t } = useI18n()
       <p>{{ t('deletion.support_instructions') }}</p>
       <p>
         <strong>{{ t('deletion.contact_label') }}</strong><br />
-        <a class="link" href="mailto:support@dojomateapp.com">{{ t('deletion.contact_email') }}</a>
+        <a class="link" href="mailto:support@dojomateapp.com">support@dojomateapp.com</a>
       </p>
     </section>
   </main>

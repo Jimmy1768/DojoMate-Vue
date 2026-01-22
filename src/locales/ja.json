@@ -1,5 +1,5 @@
 {
-  "copyright_footer": "© 2025 SourceGrid Labs Ltd. すべての権利を保有します。",
+  "copyright_footer": "© 2026 SourceGrid Labs Pte. Ltd. すべての権利を保有します。",
   "home": {
     "welcome": "DojoMate へようこそ",
     "desc_1": "DojoMate は武道アカデミーや道場向けに設計された直感的なモバイルアプリです。",
@@ -51,8 +51,7 @@
     "owner_review": "各館長からの削除依頼は手動で確認し、アカウントを停止・削除する前にスケジュールと残る記録をお知らせします。",
     "data_title": "データ保管",
     "data_text": "ログイン権限を削除した後でも、法律・税務・運用上必要な期間は、財務・出席・コンプライアンス記録を保管する場合があります。",
-    "contact_label": "サポート連絡先：",
-    "contact_email": "support@dojomateapp.com"
+    "contact_label": "サポート連絡先："
   },
   "progression": {
     "title": "進行および公正利用ポリシー",

@@ -1,5 +1,5 @@
 {
-  "copyright_footer": "© 2025 SourceGrid Labs Ltd. 版权所有。",
+  "copyright_footer": "© 2026 SourceGrid Labs Pte. Ltd. 版权所有。",
   "home": {
     "welcome": "欢迎使用 DojoMate",
     "desc_1": "DojoMate 是一款直观易用的武馆管理移动应用。",
@@ -51,8 +51,7 @@
     "owner_review": "我们会在停用或移除馆主账号之前人工确认每一份申请，并告知账号关闭时间以及仍对成员可见的记录。",
     "data_title": "数据保留",
     "data_text": "即使账号登录已停用，仍可能根据法律、税务或运营需要保留财务、出勤与合规记录。",
-    "contact_label": "联系客服：",
-    "contact_email": "support@dojomateapp.com"
+    "contact_label": "联系客服："
   },
   "progression": {
     "title": "进度与公平使用政策",

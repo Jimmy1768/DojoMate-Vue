@@ -1,5 +1,5 @@
 {
-  "copyright_footer": "© 2025 SourceGrid Labs Ltd. All rights reserved.",
+  "copyright_footer": "© 2026 SourceGrid Labs Pte. Ltd. All rights reserved.",
   "home": {
     "welcome": "Welcome to DojoMate",
     "desc_1": "DojoMate is your intuitive mobile app for martial arts academies.",
@@ -51,8 +51,7 @@
     "owner_review": "We manually confirm each owner request before deactivating the account or removing access. We will let you know when the account is scheduled for closure and what records remain visible to members.",
     "data_title": "Data Retention",
     "data_text": "Financial, attendance, and compliance records may be retained for as long as required by law, tax rules, or operational necessity even after your login is removed.",
-    "contact_label": "Contact our support team:",
-    "contact_email": "support@dojomateapp.com"
+    "contact_label": "Contact our support team:"
   },
   "progression": {
     "title": "Progression & Fair-Play Policy",
