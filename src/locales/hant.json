@@ -372,9 +372,12 @@
       },
       "issue_cards": {
         "title": "發放會員卡",
-        "intro": "前往 卡片管理 → 分配卡片。",
-        "choose_template": "點擊某個卡片模板以開啟成員列表。",
-        "select_members": "選擇一名或多名成員並點「確認」發放。",
+        "intro": "前往 卡片管理 → 分配卡片。現在這裡會開啟新頁面，不再是彈窗。",
+        "choose_template": "在 Choose a Card to Assign 畫面中，選擇這間道館的卡片模板。",
+        "choose_member": "接著會開啟另一個畫面：Choose Member。",
+        "newest_priority": "為了方便操作，accepted 狀態在過去 24 小時內變更的最新成員會排到最上方。",
+        "select_members": "在完整成員列表中選擇一名或多名成員，然後捲動到最底部點「確認」。",
+        "final_confirm": "最後會跳出確認視窗，列出已選成員供再次檢查。確認後，再按一次「確認」發放。",
         "already_issued_note": "已持有該模板在用卡的成員會以灰色顯示。",
         "cannot_revoke_here": "此介面無法撤銷發放。"
       },

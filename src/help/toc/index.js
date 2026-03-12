@@ -1,6 +1,7 @@
 // src/help/toc/index.js
 import { memberSections } from './member.js'
 import { ownerSections } from './owner.js'
+import { portalSections } from './portal.js'
 import { adminSections } from './admin.js'
 import { toolsSections } from './tools.js'   // ✅ new import
 
@@ -8,6 +9,7 @@ import { toolsSections } from './tools.js'   // ✅ new import
 export const sections = [
   ...memberSections,
   ...ownerSections,
+  ...portalSections,
   ...adminSections,
   ...toolsSections    // ✅ add tools at the end
 ]

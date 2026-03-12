@@ -37,6 +37,12 @@ import AcademyBasics from '../pages/business/AcademyBasics.vue'
 import AcademyQR from '../pages/business/AcademyQR.vue'
 import DeleteAcademy from '../pages/business/DeleteAcademy.vue'
 import AddInstructor from '../pages/business/AddInstructor.vue'
+import PortalPrologue from '../pages/portal/Prologue.vue'
+import PortalCards from '../pages/portal/Cards.vue'
+import PortalMembers from '../pages/portal/Members.vue'
+import PortalRanks from '../pages/portal/Ranks.vue'
+import PortalReports from '../pages/portal/Reports.vue'
+import PortalRegister from '../pages/portal/Register.vue'
 
 // Cards (Admin) pages
 import CreateTemplate from '../pages/cards/CreateTemplate.vue'
@@ -121,6 +127,14 @@ const router = createRouter({
         { path: 'business/academy-qr', component: AcademyQR },
         { path: 'business/delete-academy', component: DeleteAcademy },
         { path: 'business/add-instructor', component: AddInstructor },
+
+        // Affiliate Portal
+        { path: 'portal/prologue', component: PortalPrologue },
+        { path: 'portal/register', component: PortalRegister },
+        { path: 'portal/members', component: PortalMembers },
+        { path: 'portal/ranks', component: PortalRanks },
+        { path: 'portal/cards', component: PortalCards },
+        { path: 'portal/reports', component: PortalReports },
 
         // Cards (Admin)
         { path: 'cards/create-template', component: CreateTemplate },

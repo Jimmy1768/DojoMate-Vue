@@ -47,7 +47,10 @@ export const adminSections = [
         bodyKeys: [
           'help.cards.issue_cards.intro',
           'help.cards.issue_cards.choose_template',
+          'help.cards.issue_cards.choose_member',
+          'help.cards.issue_cards.newest_priority',
           'help.cards.issue_cards.select_members',
+          'help.cards.issue_cards.final_confirm',
           'help.cards.issue_cards.already_issued_note',
           'help.cards.issue_cards.cannot_revoke_here'
         ]

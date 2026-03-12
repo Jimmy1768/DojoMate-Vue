@@ -7,7 +7,10 @@ const { t } = useI18n()
     <h1>{{ t('help.cards.issue_cards.title') }}</h1>
     <p>{{ t('help.cards.issue_cards.intro') }}</p>
     <p>{{ t('help.cards.issue_cards.choose_template') }}</p>
+    <p>{{ t('help.cards.issue_cards.choose_member') }}</p>
+    <p>{{ t('help.cards.issue_cards.newest_priority') }}</p>
     <p>{{ t('help.cards.issue_cards.select_members') }}</p>
+    <p>{{ t('help.cards.issue_cards.final_confirm') }}</p>
     <p class="muted">{{ t('help.cards.issue_cards.already_issued_note') }}</p>
     <p class="muted">{{ t('help.cards.issue_cards.cannot_revoke_here') }}</p>
   </section>

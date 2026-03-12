@@ -9,7 +9,10 @@ const { t } = useI18n()
     <p>{{ t('help.business.add_instructor.intro') }}</p>
     <p>{{ t('help.business.add_instructor.requirements') }}</p>
     <p>{{ t('help.business.add_instructor.owner_tip') }}</p>
-    <p>{{ t('help.business.add_instructor.no_tool_needed') }}</p>
+    <p>{{ t('help.business.add_instructor.staff_list') }}</p>
+    <p>{{ t('help.business.add_instructor.instructor_toggle') }}</p>
+    <p>{{ t('help.business.add_instructor.assistant_toggle') }}</p>
+    <p>{{ t('help.business.add_instructor.analytics_active') }}</p>
     <p>{{ t('help.business.add_instructor.next_steps') }}</p>
   </section>
 </template>

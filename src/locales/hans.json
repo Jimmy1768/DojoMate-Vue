@@ -372,9 +372,12 @@
       },
       "issue_cards": {
         "title": "发放会员卡",
-        "intro": "前往 卡片管理 → 分配卡片。",
-        "choose_template": "点击某个卡模板打开成员列表。",
-        "select_members": "选择一名或多名成员并点击“确认”发放。",
+        "intro": "前往 卡片管理 → 分配卡片。现在这里打开的是新页面，不再是弹窗。",
+        "choose_template": "在 Choose a Card to Assign 页面中，选择该道馆的卡模板。",
+        "choose_member": "随后会打开另一个页面：Choose Member。",
+        "newest_priority": "为了方便操作，accepted 状态在过去 24 小时内变更的最新成员会排到最上方。",
+        "select_members": "在完整成员列表中选择一名或多名成员，然后滚动到最底部点击“确认”。",
+        "final_confirm": "最后会弹出确认窗口，列出已选成员供再次检查。确认无误后，再点击一次“确认”发放。",
         "already_issued_note": "已持有该模板在用卡的成员会以灰色显示。",
         "cannot_revoke_here": "此界面无法撤销发放。"
       },

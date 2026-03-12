@@ -28,7 +28,7 @@ export const memberSections = [
     id: 'academy',
     sectionKey: 'help.sections.academy',
     items: [
-      { path: '/help/academy/join-academy', labelKey: 'help.toc.academy.join',         titleKey: 'help.academy.join.title',         bodyKeys: ['help.academy.join.intro', 'help.academy.join.qr', 'help.academy.join.search', 'help.academy.join.verify', 'help.academy.join.apply', 'help.academy.join.children'] },
+      { path: '/help/academy/join-academy', labelKey: 'help.toc.academy.join',         titleKey: 'help.academy.join.title',         bodyKeys: ['help.academy.join.intro', 'help.academy.join.discover', 'help.academy.join.qr', 'help.academy.join.search', 'help.academy.join.verify', 'help.academy.join.apply', 'help.academy.join.children'] },
       { path: '/help/academy/memberships',  labelKey: 'help.toc.academy.memberships',  titleKey: 'help.academy.memberships.title',  bodyKeys: ['help.academy.memberships.intro', 'help.academy.memberships.multi', 'help.academy.memberships.select'] },
       { path: '/help/academy/booking',      labelKey: 'help.toc.academy.booking',      titleKey: 'help.academy.booking.title',      bodyKeys: ['help.academy.booking.intro', 'help.academy.booking.schedule', 'help.academy.booking.book', 'help.academy.booking.confirm', 'help.academy.booking.eligibility', 'help.academy.booking.select_card', 'help.academy.booking.unbook'] },
       { path: '/help/academy/messages',     labelKey: 'help.toc.academy.messages',     titleKey: 'help.academy.messages.title',     bodyKeys: ['help.academy.messages.intro', 'help.academy.messages.examples'] },

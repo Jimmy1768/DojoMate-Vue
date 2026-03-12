@@ -21,7 +21,7 @@ cd Projects/DojoMate-Vue
 
 ```bash
 git add .
-git commit -m "added Deletion.vue"
+git commit -m "updated afl pages, academy section"
 git push
 
 git pull

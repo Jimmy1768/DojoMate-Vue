@@ -10,6 +10,7 @@ const { t } = useI18n()
     <p>{{ t('help.tools.analytics.wages.intro') }}</p>
     <p>{{ t('help.tools.analytics.wages.access') }}</p>
     <p>{{ t('help.tools.analytics.wages.roles') }}</p>
+    <p>{{ t('help.tools.analytics.wages.assistant_note') }}</p>
     <p>{{ t('help.tools.analytics.wages.contract_types') }}</p>
     <p>{{ t('help.tools.analytics.wages.fields') }}</p>
     <p>{{ t('help.tools.analytics.wages.private_rate') }}</p>

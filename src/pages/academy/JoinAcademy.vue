@@ -7,6 +7,7 @@ const { t } = useI18n()
   <section class="stack">
     <h1>{{ t('help.academy.join.title') }}</h1>
     <p>{{ t('help.academy.join.intro') }}</p>
+    <p>{{ t('help.academy.join.discover') }}</p>
     <p>{{ t('help.academy.join.qr') }}</p>
     <p>{{ t('help.academy.join.search') }}</p>
     <p>{{ t('help.academy.join.verify') }}</p>

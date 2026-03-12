@@ -52,7 +52,11 @@ export const ownerSections = [
         bodyKeys: [
           'help.business.add_instructor.intro',
           'help.business.add_instructor.requirements',
-          'help.business.add_instructor.owner_tip'
+          'help.business.add_instructor.owner_tip',
+          'help.business.add_instructor.staff_list',
+          'help.business.add_instructor.instructor_toggle',
+          'help.business.add_instructor.assistant_toggle',
+          'help.business.add_instructor.analytics_active'
         ]
       },
     ]
