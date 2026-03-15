@@ -19,6 +19,7 @@ const { locale, t } = useI18n()
 
       <div class="lang">
         <button class="btn btn--ghost" @click="setLocale('en')"   :disabled="locale === 'en'">EN</button>
+        <button class="btn btn--ghost" @click="setLocale('pt')"   :disabled="locale === 'pt'">PT</button>
         <button class="btn btn--ghost" @click="setLocale('hans')" :disabled="locale === 'hans'">简中</button>
         <button class="btn btn--ghost" @click="setLocale('hant')" :disabled="locale === 'hant'">繁中</button>
         <button class="btn btn--ghost" @click="setLocale('ko')"   :disabled="locale === 'ko'">한국어</button>

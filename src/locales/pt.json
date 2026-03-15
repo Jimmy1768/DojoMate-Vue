@@ -1,0 +1,656 @@
+{
+  "copyright_footer": "© 2026 SourceGrid Labs Pte. Ltd. All rights reserved.",
+  "home": {
+    "welcome": "Bem-vindo ao DojoMate",
+    "desc_1": "DojoMate e o seu aplicativo móvel intuitivo para academias de artes marciais.",
+    "desc_2": "Gerencie facilmente check-ins de alunos, horários de instrutores e muito mais, tudo em uma interface simples e limpa.",
+    "get_started_title": "Começar",
+    "get_started_text": "Pressione o link para ver a documentação detalhada do aplicativo.",
+    "help_guide_link": "Guia de Ajuda",
+    "deletion_link": "Exclusão",
+    "download_app_title": "Baixar o App",
+    "support_title": "Contato",
+    "support_desc": "Fale com a equipe certa para receber ajuda mais rapidamente.",
+    "support_app_label": "DojoMate team:",
+    "support_subs_label": "Source Combatives:",
+    "policies_title": "Politicas da Empresa",
+    "policies_desc": "Entenda como lidamos com os dados e como a progressao de treino funciona de forma segura e justa.",
+    "policies_privacy_btn": "Privacidade",
+    "policies_progression_btn": "Progressao"
+  },
+  "privacy": {
+    "title": "Politica de Privacidade",
+    "effective_date": "Data de Vigencia: 26 de junho de 2025",
+    "intro": "DojoMate e um aplicativo movel de produtividade desenvolvido e pertencente a SourceGrid Labs (sourcegridlabs.com). Valorizamos sua privacidade e estamos comprometidos em proteger qualquer informacao que voce compartilhe conosco.",
+    "info_collect_title": "Informacoes que Coletamos",
+    "info_collect_text": "DojoMate nao coleta, armazena nem transmite informacoes de identificacao pessoal. O aplicativo funciona totalmente no seu dispositivo e acessa apenas os dados necessarios para sua funcionalidade principal, como check-ins, horarios e detalhes da academia.",
+    "third_party_title": "Servicos de Terceiros",
+    "third_party_text": "Nao usamos analytics de terceiros, plataformas de publicidade ou ferramentas de rastreamento. O aplicativo nao se comunica com servidores externos controlados pela SourceGrid Labs.",
+    "children_title": "Privacidade de Criancas",
+    "children_text": "DojoMate nao e direcionado a criancas menores de 13 anos e nao coleta intencionalmente dados de menores.",
+    "changes_title": "Alteracoes nesta Politica",
+    "changes_text": "Podemos atualizar esta politica de privacidade se nossas praticas mudarem. Qualquer atualizacao sera refletida nesta pagina.",
+    "manage_prefs": "Voce pode gerenciar suas preferencias a qualquer momento em Configuracoes → Configuracoes de Privacidade no aplicativo. La, voce pode ajustar opcoes como notificacoes push, preferencias de email e comunicacoes de marketing."
+  },
+  "deletion": {
+    "title": "Exclusao de Conta",
+    "intro_primary": "Voce pode excluir sua conta DojoMate a qualquer momento, depois que todas as obrigacoes ligadas a conta forem resolvidas.",
+    "intro_secondary": "A exclusao dentro do aplicativo fica disponivel quando nao houver assinaturas ativas, cartoes, saldos pre-pagos ou pagamentos pendentes na conta.",
+    "in_app_title": "Excluir no Aplicativo",
+    "in_app_text": "No aplicativo movel DojoMate, va para Configuracoes → Configuracoes de Privacidade → Excluir Conta. O botao Excluir esta sempre disponivel. Pressione-o para executar as validacoes. O aplicativo mostrara tudo o que ainda precisa ser resolvido, como:",
+    "in_app_item_memberships": "Todas as assinaturas e cartoes de membro vinculados ao seu perfil ou a contas de criancas estao inativos ou cancelados.",
+    "in_app_item_obligations": "Nao ha mensalidades nao pagas, taxas de reserva pendentes ou disputas nao resolvidas com sua academia.",
+    "in_app_item_access": "Voce esta conectado no dispositivo que deseja remover.",
+    "support_title": "Solicitar Ajuda ao Suporte",
+    "support_text": "Se voce nao puder cumprir os requisitos no aplicativo, por exemplo, se a academia ainda precisar encerrar um cartao, envie um email para nossa equipe de suporte e solicite a exclusao manual.",
+    "support_instructions": "Inclua o email usado na conta, o nome da sua academia e informe se voce e membro ou proprietario de academia. Responderemos com os proximos passos apos a verificacao.",
+    "member_title": "Contas de Membro",
+    "member_text": "As exclusoes de membros normalmente sao confirmadas rapidamente. A academia ainda pode dever valor nao utilizado do seu plano; excluir a conta nao impede a emissao de reembolso pelo processo proprio da academia.",
+    "owner_title": "Contas de Academia (Proprietario)",
+    "owner_text": "Contas de proprietario exigem revisao extra para que possamos proteger seus membros, acertar salarios e manter o historico de assinaturas, pagamentos, sessoes e taxas.",
+    "owner_review": "Confirmamos manualmente cada solicitacao de proprietario antes de desativar a conta ou remover o acesso. Informaremos quando a conta estiver programada para encerramento e quais registros continuarao visiveis para os membros.",
+    "data_title": "Retencao de Dados",
+    "data_text": "Registros financeiros, de presenca e de conformidade podem ser mantidos pelo tempo exigido por lei, regras fiscais ou necessidade operacional, mesmo depois que seu login for removido.",
+    "contact_label": "Entre em contato com nossa equipe de suporte:"
+  },
+  "progression": {
+    "title": "Politica de Progressao e Jogo Justo",
+    "effective_date": "Data de Vigencia: 11 de outubro de 2025",
+    "intro": "DojoMate e Source Combatives usam XP, niveis, distintivos e registros verificados para motivar estudo consistente, nao para vender produtos dentro do aplicativo. O progresso e conquistado por treino real e resultados verificados.",
+    "fairness_title": "Justica e Sem Pay-to-Win",
+    "fairness_text": "Pagamentos ou assinaturas nunca concedem XP, niveis, distintivos ou elegibilidade para graduacao. Pagamentos fornecem apenas acesso ao conteudo de aprendizado; o progresso e conquistado por acoes de treino e resultados verificados.",
+    "payments_title": "Onde os Pagamentos Acontecem",
+    "payments_text": "DojoMate e um terminal de dados de treino: ele registra presenca em aula, visualizacao de licoes e pratica. DojoMate nao vende produtos digitais nem assinaturas. As mensalidades presenciais podem ser pagas por meios aprovados, como LINE Pay e Alipay. Source Combatives cuida das assinaturas online e dos Catalogos Extras opcionais, pagos apenas em sourcecombatives.com.",
+    "xp_title": "Como o XP e Ganho",
+    "xp_text_1": "O XP reflete esforco de treino verificado. Exemplos incluem:",
+    "xp_list_watch": "Assistir novos segmentos de licao pela primeira vez.",
+    "xp_list_catalog": "Completar um Catalogo dentro de um Curriculo.",
+    "xp_list_homework": "Responder corretamente perguntas de pratica corrigidas automaticamente.",
+    "xp_list_attend": "Participar de aulas presenciais registradas no DojoMate.",
+    "xp_list_tests": "Passar em testes presenciais de graduacao verificados por instrutores.",
+    "xp_list_compete": "Participar de competicoes reconhecidas, incluindo resultados no podio.",
+    "xp_text_caps": "Repetir visualizacoes concede XP minimo de pratica. Limites semanais impedem excesso de farming de atividade.",
+    "extras_title": "Catalogos Extras",
+    "extras_text": "Alguns canais oferecem Catalogos Extras opcionais, modulos focados de aprendizado. Comprar um Catalogo Extra concede apenas acesso. XP ou distintivos aparecem somente apos a conclusao. Catalogos Extras nunca alteram os requisitos de graduacao.",
+    "homework_title": "Tarefa e Perguntas de Pratica",
+    "homework_text": "A tarefa usa perguntas de multipla escolha ou verdadeiro/falso corrigidas automaticamente, definidas pelos canais. Nao ha envio de texto livre nem correcao manual.",
+    "ranks_title": "Graduacoes e Certificados",
+    "ranks_text": "Todos os exames de graduacao sao realizados presencialmente. Testes online de graduacao nao sao permitidos. A elegibilidade depende de tempo, continuidade, presenca e aprovacao do instrutor, nao de pagamento. Os certificados sao emitidos apenas apos avaliacao presencial bem-sucedida.",
+    "competitions_title": "Competicoes e Conquistas",
+    "competitions_text": "Participacao e resultados verificados em competicoes de organizacoes reconhecidas podem aparecer nos perfis. Taxas de inscricao por si so nao concedem XP.",
+    "streaks_title": "Sequencias e Bem-Estar",
+    "streaks_text": "As sequencias medem consistencia semanal de treino, nao logins diarios. Existem periodos de tolerancia e congelamento de sequencia para viagem, exames ou lesao.",
+    "integrity_title": "Integridade e Antiabuso",
+    "integrity_text": "Usamos limites de dispositivo e sessao, logs de auditoria e verificacoes de anomalia para proteger a justica. Tentativas de manipular XP, graduacoes ou resultados podem levar a remocao de premios ou acoes na conta.",
+    "privacy_title": "Privacidade e Perfis Publicos",
+    "privacy_text": "Perfis publicos sao opcionais e excluem dados pessoais sensiveis. Contas de menores sao privadas por padrao e exigem controle do responsavel.",
+    "appeals_prefix": "Se voce acredita que um distintivo, registro de XP ou registro de graduacao esta incorreto, entre em contato com",
+    "appeals_suffix": "com os detalhes. Faremos a revisao rapidamente."
+  },
+  "help": {
+    "title": "Guia de Ajuda",
+    "text_1": "Navegue usando o indice na esquerda.",
+    "text_2": "Digite palavras-chave para procurar topicos especificos.",
+    "sections": {
+      "account": "Conta",
+      "settings": "Configuracoes",
+      "profile": "Perfil",
+      "academy": "Academia",
+      "business": "Negocio (Proprietario)",
+      "portal": "Affiliate Portal",
+      "cards": "Cartoes de Membro",
+      "members": "Membros",
+      "schedule": "Agenda",
+      "tools": "Ferramentas Pagas"
+    },
+    "search": {
+      "placeholder": "Pesquisar ajuda…",
+      "no_results": "Nenhum resultado"
+    },
+    "toc": {
+      "account": {
+        "sign_in": "Entrar",
+        "create_account": "Criar Conta",
+        "reset_password": "Redefinir Senha",
+        "troubleshooting": "Solucao de Problemas"
+      },
+      "settings": {
+        "change_password": "Alterar Senha",
+        "language": "Selecionar Idioma",
+        "currency": "Selecionar Moeda",
+        "logout": "Sair",
+        "privacy": "Configuracoes de Privacidade",
+        "delete_account": "Excluir Conta"
+      },
+      "profile": {
+        "edit_profile": "Editar Perfil",
+        "child_accounts": "Contas de Criancas"
+      },
+      "academy": {
+        "join": "Entrar na Academia",
+        "memberships": "Gerenciar Planos",
+        "booking": "Reservar Aulas",
+        "messages": "Mensagens do Sistema",
+        "records": "Registros de Presenca"
+      },
+      "business": {
+        "create_academy": "Criar Academia",
+        "academy_basics": "Informacoes da Academia",
+        "academy_qr": "QR Code da Academia",
+        "delete_academy": "Excluir Academia",
+        "add_instructor": "Adicionar Instrutores",
+        "membership_cards": "Cartoes de Membro"
+      },
+      "portal": {
+        "prologue": "Sobre o Affiliate Portal",
+        "register": "Registrar",
+        "members": "Membros",
+        "ranks": "Graduacoes",
+        "cards": "Cartoes",
+        "reports": "Relatorios"
+      },
+      "cards": {
+        "create_template": "Criar Modelo de Cartao",
+        "edit_templates": "Editar Modelos de Cartao",
+        "delete_templates": "Excluir Modelos de Cartao",
+        "issue_cards": "Emitir Cartoes de Membro",
+        "manage_cards": "Gerenciar Cartoes de Membro",
+        "delete_cards": "Excluir Cartoes",
+        "card_records": "Registros de Cartoes"
+      },
+      "members": {
+        "enrollment": "Cadastro Rapido",
+        "applications": "Solicitacoes da Academia",
+        "rejection": "Rejeitar / Banir Membros",
+        "records": "Registros de Presenca"
+      },
+      "schedule": {
+        "create": "Criar Aula",
+        "manage": "Editar / Cancelar / Excluir Aula",
+        "book_for_students": "Reservar para Alunos"
+      },
+      "tools": {
+        "prologue": "Sobre as Ferramentas Pagas",
+        "timetable": "Horario",
+        "pause_cards": "Pausar Cartoes",
+        "staff_permissions": "Acesso da Equipe",
+        "analytics_overview": "Visao Geral de Analytics",
+        "analytics_wages": "Salarios da Equipe",
+        "analytics_reports": "Relatorios e Folhas de Ponto",
+        "analytics_punch_cards": "Ponto da Equipe"
+      }
+    },
+
+    "account": {
+      "sign_in": {
+        "title": "Entrar",
+        "intro": "Use seu email e senha para entrar no DojoMate.",
+        "fields": "Campos",
+        "field_email": "Digite seu endereco de email.",
+        "field_password": "Digite a senha da sua conta.",
+        "actions": "Acoes",
+        "action_sign_in": "Toque em Entrar para acessar sua conta.",
+        "action_reset_password": "Toque em Redefinir Senha se voce esqueceu sua senha.",
+        "tips": "Dicas",
+        "tip_wrong_credentials": "Se o login falhar, confira novamente seu email e senha.",
+        "tip_language_selector": "Use o seletor de idioma no topo, se necessario."
+      },
+      "create": {
+        "title": "Criar Conta",
+        "intro": "Crie uma nova conta DojoMate.",
+        "choices": "Escolha o tipo da sua conta:",
+        "member": "Conta de Membro — para alunos e pais.",
+        "admin": "Conta de Admin — para equipe e proprietarios da academia.",
+        "requirements": "Requisitos",
+        "email": "E necessario um endereco de email valido.",
+        "password_rules": "A senha deve seguir as regras de seguranca do aplicativo.",
+        "next": "Proximos Passos",
+        "next_member": "Depois de criar a conta, voce pode entrar na sua academia como membro.",
+        "next_admin": "Depois de criar a conta, voce pode gerenciar equipe, membros e horarios da academia."
+      },
+      "reset": {
+        "title": "Redefinir Senha",
+        "intro": "Se voce esqueceu sua senha, use a opcao Redefinir Senha na tela de login.",
+        "notes": "Observacoes",
+        "note_where": "Voce encontrara Redefinir Senha abaixo dos campos de login.",
+        "note_email_timing": "O email de redefinicao pode levar alguns minutos para chegar.",
+        "not_received": "Nao recebeu o email?",
+        "check_spam": "Verifique as pastas de spam ou lixo eletronico.",
+        "correct_email": "Confirme se voce usou o email correto.",
+        "resend": "Tente novamente depois de alguns minutos."
+      },
+      "troubleshooting": {
+        "title": "Solucao de Problemas",
+        "cannot_sign_in": "Nao consegue entrar",
+        "check_email_pw": "Confira o email e a senha.",
+        "reset_pw": "Tente Redefinir Senha.",
+        "online": "Verifique se voce esta online; tente novamente se a rede estiver instavel.",
+        "email_in_use": "“Email ja esta em uso”",
+        "already_registered": "Se voce ja se cadastrou antes, use Entrar em vez de Criar Conta.",
+        "role_change": "Cadastrou-se como Membro, mas precisa de Admin",
+        "role_change_steps": "Va para Configuracoes → Configuracoes da Conta. Role ate Funcao de Admin e selecione Admin."
+      }
+    },
+    "settings": {
+      "change_password": {
+        "title": "Alterar Senha",
+        "intro": "Va para Configuracoes → Configuracoes da Conta, digite sua senha antiga e uma nova, depois pressione Alterar Senha.",
+        "note": "Se a nova senha nao funcionar, use a opcao Redefinir Senha."
+      },
+      "language": {
+        "title": "Selecionar Idioma",
+        "intro": "Va para Configuracoes → Configuracoes da Conta. Toque no botao que mostra seu idioma atual e depois escolha o idioma desejado na lista."
+      },
+      "currency": {
+        "title": "Selecionar Moeda",
+        "intro": "Va para Configuracoes -> Configuracoes da Conta e pressione o botao que mostra o simbolo da moeda para escolher sua moeda preferida.",
+        "members": "Para membros, os precos de assinatura no aplicativo serao exibidos na moeda escolhida. Os pagamentos de mensalidade sempre usam a moeda da academia.",
+        "owners": "Para proprietarios de academia, a moeda selecionada se torna o padrao ao criar uma nova academia, mas pode ser alterada durante a configuracao."
+      },
+      "logout": {
+        "title": "Sair",
+        "intro": "Va para Configuracoes → Configuracoes da Conta e pressione o botao Sair."
+      },
+      "privacy": {
+        "title": "Configuracoes de Privacidade",
+        "intro": "Va para Configuracoes → Configuracoes de Privacidade para controlar notificacoes, marketing e preferencias de visibilidade.",
+        "notifications": "Os alertas do sistema incluem cancelamentos de aula e expiracoes de planos. O aplicativo envia primeiro uma notificacao push; se a entrega falhar, um email e enviado. Voce pode desativar notificacoes do app e/ou emails.",
+        "marketing": "Apenas anuncios opcionais do DojoMate ou Source Combatives; sem anuncios de terceiros, sem rastreamento e nunca vendemos seus dados.",
+        "booking": "Quando voce reserva uma aula, seu nome aparece na lista de presenca. Voce pode reservar anonimamente para outros alunos; admins e instrutores ainda veem sua reserva.",
+        "analytics_attendance": "A presenca e registrada e nao e anonima. Isso garante responsabilidade precisa, resolucao de disputas e relatorios da academia.",
+        "analytics_aggregate": "Outras metricas do aplicativo, como uso e tendencias de cartoes de membro, podem ser usadas de forma agregada para pesquisa de produto e insights de marketing. Voce pode escolher anonimato para que esses registros nao fiquem ligados ao seu nome."
+      },
+      "delete_account": {
+        "title": "Excluir Conta",
+        "intro": "Va para Configuracoes → Configuracoes de Privacidade e pressione Excluir em Excluir Conta.",
+        "validations": "Antes de excluir, confirme que sua academia encerrou sua conta e cancelou todos os cartoes de membro ativos.",
+        "failures": "Se a exclusao for bloqueada, uma ou mais contas vinculadas podem estar impedindo a remocao.",
+        "children": "As contas dependentes de criancas sao excluidas junto com a conta principal quando possivel.",
+        "child_cards": "Contas de criancas com cartoes de membro ativos precisam ser resolvidas com a academia antes que a conta principal possa ser excluida."
+      }
+    },
+    "profile": {
+      "edit_profile": {
+        "title": "Editar Perfil",
+        "intro": "Va para Perfil → Editar Perfil. Digite ou altere as informacoes do seu perfil.",
+        "admin_role": "Funcao de Admin: se voce criou uma conta de Membro e quer se tornar Admin, selecione Admin aqui.",
+        "submit": "Pressione Submit Changes para salvar."
+      },
+      "child_accounts": {
+        "title": "Contas de Criancas",
+        "intro": "Va para Perfil → Editar Perfil.",
+        "parent_role": "Funcao do Membro: selecione Pai ou Mae para liberar a criacao de conta de crianca.",
+        "create": "Pressione Criar Conta de Crianca para adicionar uma crianca. O botao Criar Conta aparece depois de selecionar a data de nascimento.",
+        "edit": "Use o botao Contas de Criancas para editar as informacoes do perfil da crianca.",
+        "delete": "Para excluir: pressione Excluir Conta de Crianca para ver a lista de contas de criancas, depois escolha Excluir Conta na crianca que deseja remover."
+      }
+    },
+    "academy": {
+      "join": {
+        "title": "Entrar na Academia",
+        "intro": "Va para Academia → Buscar Academia para encontrar e entrar na sua academia.",
+        "discover": "Voce tambem pode pressionar Discover Academy para abrir uma pagina que lista todas as academias do DojoMate.",
+        "qr": "Permita o uso da camera e escaneie o QR code da academia fornecido pelo admin.",
+        "search": "Voce tambem pode procurar digitando o nome da academia; correspondencias parciais aparecerao.",
+        "verify": "Confira detalhes como nome do proprietario e endereco antes de entrar.",
+        "apply": "Pressione Join Academy e aguarde a aprovacao do admin.",
+        "children": "Se voce tiver contas de criancas dependentes, os admins podem aceita-las depois."
+      },
+      "memberships": {
+        "title": "Gerenciar Planos",
+        "intro": "Va para Academia → Cartoes de Membro para ver todos os cartoes de membro ativos agrupados por academia.",
+        "multi": "Voce pode entrar em varias academias; alterne entre elas em Academia → Lista de Academias.",
+        "select": "Se voce entrou em varias academias, selecione uma como ativa para reservar aulas."
+      },
+      "booking": {
+        "title": "Reservar Aulas",
+        "intro": "Primeiro, confirme que voce selecionou a academia correta em Academia → Lista de Academias.",
+        "schedule": "Va para Academia → Agenda. Selecione um dia para ver as aulas. Navegue entre as semanas com as setas.",
+        "book": "Pressione o botao Booking ao lado de uma aula. Se estiver cinza, a aula nao foi publicada. Entre em contato com o admin da sua academia.",
+        "confirm": "Na pagina de presenca, pressione Book Lesson. Depois selecione um cartao de membro.",
+        "eligibility": "Se nenhum cartao aparecer, seu cartao pode nao ser elegivel. Os admins decidem quais tipos de cartao, como adulto, crianca ou iniciante, podem reservar cada aula.",
+        "select_card": "Toque em um cartao ate ele ficar azul, depois pressione Confirm para reservar.",
+        "unbook": "Toque em um cartao reservado ate ele ficar branco, depois pressione Confirm para cancelar a reserva."
+      },
+      "messages": {
+        "title": "Mensagens do Sistema",
+        "intro": "Va para Academia → Mensagens do Sistema para ver notificacoes sobre seus planos, cartoes e aulas.",
+        "examples": "Exemplos: cartao expirado, novo cartao emitido, aula cancelada. Contas de pais tambem veem alertas de contas de criancas."
+      },
+      "records": {
+        "title": "Registros de Presenca",
+        "intro": "Va para Academia → Registros para ver o historico de presenca seu ou das suas contas de criancas.",
+        "range": "Voce pode selecionar um intervalo de datas para filtrar os registros.",
+        "quick": "Quick Access mostra seus cartoes de membro usados mais recentemente e anteriormente, com o historico de aulas vinculado."
+      }
+    },
+    "business": {
+      "create_academy": {
+        "title": "Criar Academia",
+        "intro": "Va para Negocio → Criar Academia. Insira as informacoes da academia; mais detalhes ajudam os alunos a encontrar voce.",
+        "duplicates": "O nome da academia deve ser unico. Se nao salvar, um nome duplicado pode ser o motivo.",
+        "currency": "A moeda vem por padrao das suas Configuracoes. Escolha agora sua moeda local; isso nao pode ser alterado depois e deve corresponder a forma como os alunos pagam a mensalidade.",
+        "action": "Pressione Criar Academia para finalizar."
+      },
+      "academy_basics": {
+        "title": "Informacoes da Academia",
+        "edit": "Negocio -> Editar Academia permite atualizar os detalhes da academia, como endereco, contato e descricao.",
+        "messages": "Negocio -> Mensagens do Sistema mostra alertas no nivel da academia, semelhantes as mensagens dos membros"
+      },
+      "academy_qr": {
+        "title": "QR Code da Academia",
+        "intro": "Abra o QR da academia para que os alunos possam escanear e entrar.",
+        "multiple": "Se voce gerencia varias academias, pressione o botao para abrir a pagina de QR Code. Depois escolha Academia Selecionada para carregar a academia desejada. Apenas uma academia pode ficar ativa por vez."
+      },
+      "delete_academy": {
+        "title": "Excluir Academia",
+        "preconditions": "Nao pode haver cartoes de membro ativos. Resolva os cartoes com os alunos primeiro; academias nao podem ser excluidas com cartoes ativos.",
+        "members": "Rejeite todos os membros antes da exclusao. Voce nao pode rejeitar membros que ainda tenham cartoes ativos.",
+        "success": "Depois de limpar os cartoes e rejeitar os membros, voce pode excluir a academia."
+      },
+      "add_instructor": {
+        "title": "Adicionar Instrutores",
+        "intro": "Va para Negocio → Instrutores. Pressione Choose Member, selecione um membro ou voce mesmo, depois pressione Add to Staff.",
+        "requirements": "Voce precisa ter pelo menos um instrutor para criar aulas.",
+        "owner_tip": "A maioria dos proprietarios e o instrutor principal; adicione voce primeiro.",
+        "staff_list": "Os membros selecionados aparecem na lista da equipe.",
+        "instructor_toggle": "Ative o toggle para tornar esse membro da equipe um instrutor.",
+        "assistant_toggle": "Deixe o toggle desligado se essa pessoa deve estar disponivel apenas como assistente de instrutor.",
+        "analytics_active": "Se Analytics estiver ativo, o botao Instrutores sera substituido por Analytics. Nesse caso, va para Negocio → Analytics e siga o fluxo de Analytics.",
+        "next_steps": "Veja a proxima secao para instrucoes sobre como adicionar membros a sua academia."
+      }
+    },
+    "cards": {
+      "create_template": {
+        "title": "Criar Modelo de Cartao",
+        "intro": "Va para Cartoes → Criar Modelo de Cartao e preencha os detalhes.",
+        "fields_name": "Nome do Cartao — o nome exibido do modelo.",
+        "fields_fee": "Taxa — digite um numero. O sistema usara a moeda que voce escolheu ao configurar a academia.",
+        "fields_desc": "Descricao — observacoes opcionais para admins.",
+        "fields_sessions": "Total de Sessoes — total de aulas fornecidas pelo cartao.",
+        "fields_expire_days": "Dias para Expirar — duracao em dias, por exemplo, 30 para um mes ou 365 para um ano.",
+        "fields_type": "Tipo — aula em grupo ou aula particular. A elegibilidade para reserva usa esse tipo. Os salarios por hora dos instrutores tambem dependem disso."
+      },
+      "edit_templates": {
+        "title": "Editar Modelos de Cartao",
+        "intro": "Va para Cartoes → Editar Modelo de Cartao para atualizar os detalhes.",
+        "name_locked": "O nome do cartao nao pode ser alterado para evitar confusoes.",
+        "save": "Pressione Submit Changes para salvar.",
+        "effects_note": "As alteracoes nao afetam cartoes ja emitidos. Veja Cartoes Ativos para ajustes."
+      },
+      "delete_templates": {
+        "title": "Excluir Modelos de Cartao",
+        "intro": "Va para Cartoes → Excluir Modelo de Cartao, abra o modelo e depois pressione Delete Card.",
+        "cannot_delete_active": "Modelos com cartoes ativos nao podem ser excluidos."
+      },
+      "issue_cards": {
+        "title": "Emitir Cartoes de Membro",
+        "intro": "Va para Cartoes → Assign Cards.",
+        "choose_template": "Primeiro voce vera Choose a Card to Assign. Pressione um modelo de cartao para continuar.",
+        "choose_member": "Depois voce vera Choose Member.",
+        "newest_priority": "Membros aceitos recentemente aparecem no topo por 24 horas para ficar mais facil encontra-los.",
+        "select_members": "Selecione um ou mais membros. Depois role ate o fim da pagina e pressione Confirm.",
+        "final_confirm": "Revise os membros selecionados e depois pressione Confirm novamente para emitir os cartoes.",
+        "already_issued_note": "Membros que ja possuem um cartao ativo desse modelo aparecem em cinza.",
+        "cannot_revoke_here": "A emissao nao pode ser desfeita nesta tela."
+      },
+      "manage_cards": {
+        "title": "Gerenciar Cartoes de Membro",
+        "intro_paths": "Abra por Cartoes → Cartoes Ativos, selecionando um cartao, ou por Membros → Lista de Membros → Gerenciar Cartoes.",
+        "actions": "Acoes disponiveis: Ajustar Aulas e Ajustar Tempo de Expiracao.",
+        "input_rules": "Use numeros positivos para aumentar e negativos para diminuir aulas.",
+        "expiry_rule_note": "A expiracao so pode ser estendida; os dias sao adicionados a partir de 0. Ela nao pode ser reduzida."
+      },
+      "delete_cards": {
+        "title": "Excluir Cartoes",
+        "intro_paths": "Abra por Cartoes → Cartoes Ativos → Select Action, ou por Membros → Lista de Membros → Gerenciar Cartoes.",
+        "expired_default": "Motivo padrao: Card Expired — conclusao normal, por uso total das aulas ou expiracao do tempo.",
+        "no_duplicate_active": "Um membro nao pode ter dois cartoes ativos do mesmo modelo. Exclua o cartao ativo antes de emitir um novo.",
+        "cancel_option": "Escolha Cancel Card para remover um cartao que nao foi totalmente usado.",
+        "cancel_reason_required": "Forneca uma observacao, por exemplo, cartao emitido errado ou valor de reembolso. O motivo fica salvo nos registros.",
+        "records_visibility": "Cartoes expirados nao aparecem nos registros visiveis no aplicativo; cartoes cancelados aparecem e incluem quem cancelou e a observacao."
+      },
+      "card_records": {
+        "title": "Registros de Cartoes",
+        "intro": "Va para Cartoes → Registros de Cartoes. Primeiro escolha um tipo de registro e depois use a barra de busca para filtrar por membro.",
+        "empty_state": "Se nenhum resultado aparecer, o membro nao tem registros para o tipo selecionado.",
+        "items_current": "Registros de Cartao Atual — presenca vinculada ao cartao ativo mais recente.",
+        "items_issued": "Registros de Cartao Emitido — todas as emissoes de cartoes ativos e quem as emitiu.",
+        "items_canceled": "Registros de Cartao Cancelado — cartoes cancelados, quem cancelou e o motivo registrado.",
+        "items_debt": "Registros de Divida de Aula — entradas criadas quando as aulas excedem o saldo restante.",
+        "debt_policy": "O sistema permite ate −3 aulas, ou divida maxima de 3. Quando um novo cartao e emitido, a divida e quitada subtraindo do novo cartao.",
+        "settlement_edge": "Se quitar a divida deixar o novo cartao com 1 aula ou menos, a quitacao automatica nao acontece para evitar renovacao imediata apos uma unica aula.",
+        "manual_resolve": "Para resolver manualmente, abra Registros de Divida de Aula, pressione Pay Off Debt em uma entrada, confirme o valor, com observacao opcional, e a entrada passara a mostrar Debt Cleared.",
+        "cleared_visibility": "A divida quitada continua visivel nos registros, sem a acao Pay Off Debt."
+      }
+    },
+    "members": {
+      "enrollment": {
+        "title": "Cadastro Rapido",
+        "intro": "Os proprietarios podem registrar usuarios rapidamente sem conta DojoMate ou adicionar contas existentes usando o email do DojoMate.",
+        "portal_link": "Ir para o Affiliate Portal",
+        "portal_instructions": "Va para o Affiliate Portal, entre usando seu email e senha do DojoMate e depois pressione [Register].",
+        "temp_password": "Digite o email real da pessoa e crie uma senha temporaria.",
+        "roles_children": "Escolha a funcao do membro, pai ou mae, ou aluno. Ao selecionar pai ou mae, outra tela aparecera para criar contas de criancas.",
+        "confirm": "Revise as informacoes para garantir que estao corretas e depois pressione [Confirm].",
+        "view_members": "Agora voce pode ver os novos membros pressionando [Members].",
+        "issue_cards": "Voce pode emitir cartoes de membro para os novos membros usando apenas o aplicativo DojoMate.",
+        "existing_account": "Se um novo membro ja tiver uma conta DojoMate, voce pode adiciona-lo pressionando [Member], depois [Add Member by Email], digitando o email e pressionando [Add]."
+      },
+      "portal": {
+        "prologue": {
+          "title": "Affiliate Portal",
+          "intro_1": "As ferramentas gratuitas para proprietarios estao disponiveis no",
+          "intro_link": "Affiliate Portal.",
+          "intro_2": "Entre usando seu email e senha do DojoMate.",
+          "requirement": "Voce precisa criar pelo menos uma academia no DojoMate antes de poder usar o Affiliate Portal.",
+          "available": "O Affiliate Portal inclui ferramentas gratuitas para proprietarios, como Register, Members, Ranks, Cards e Reports."
+        },
+        "register": {
+          "title": "Registrar",
+          "intro": "Use Register para onboarding rapido. As contas criadas aqui nao usam as etapas normais de pendente e aceito.",
+          "role": "Escolha Student ou Parent.",
+          "parent_flow": "Se voce escolher Parent, a proxima tela sera para os detalhes da conta da crianca. Digite as informacoes da crianca e depois pressione Next.",
+          "student_flow": "Se voce escolher Student, pressione Next para ir para a pagina de revisao.",
+          "review": "Na pagina de revisao, confira as informacoes com cuidado e depois pressione Confirm para criar a conta.",
+          "result": "A conta e criada imediatamente.",
+          "resume": "Se voce sair depois de criar uma conta de pai ou mae, pode retomar a criacao das contas de criancas mais tarde. O pai ou mae aparece em Members, em Pending Users. Pressione Resume para continuar."
+        },
+        "members": {
+          "title": "Membros",
+          "intro": "Use Members para gerenciar o status dos membros em um so lugar.",
+          "add_email": "Pressione Add Member by Email se a conta ja existir no DojoMate.",
+          "accept_reject": "Voce pode aceitar ou rejeitar membros nesta pagina.",
+          "recently_accepted": "Recently Accepted e uma lista de conveniencia para mudancas recentes. Ela pode incluir membros aceitos recentemente e membros que retornaram depois que o plano foi pausado ou retomado.",
+          "sections": "Ha seis secoes: Recently Accepted, Pending Users, Accepted Parent Accounts, Accepted Adult Members, Rejected Users e Banned Users.",
+          "parents": "Accepted Parent Accounts mostra pais com contas de criancas vinculadas.",
+          "adults": "Accepted Adult Members mostra membros aceitos sem contas dependentes de criancas."
+        },
+        "ranks": {
+          "title": "Graduacoes",
+          "intro": "Use Ranks para gerenciar listas de programas e salvar mudancas de graduacao ou stripes para cada arte marcial.",
+          "programs": "Adicione programas na pagina Ranks, como Brazilian Jiu-Jitsu ou Judo. Cada programa mantem seu proprio sistema de graduacao e sua propria lista.",
+          "first_program": "Quando voce adiciona o primeiro programa, todos os membros da academia atualmente aceitos sao adicionados automaticamente a esse programa, mas apenas como conveniencia inicial e somente se ainda nao existirem inscricoes para essa arte marcial.",
+          "later_members": "Membros que entrarem depois nao sao adicionados automaticamente. Voce precisa adiciona-los manualmente a lista do programa.",
+          "additional_programs": "Quando voce adiciona um segundo programa ou outro posterior, ele comeca vazio. Membros existentes nao sao adicionados automaticamente.",
+          "roster_view": "A pagina mostra uma aba de programa ativa por vez. A lista mostra apenas membros inscritos nesse programa.",
+          "roster_actions": "Use Add Members para inscrever membros aceitos da academia que ainda nao estejam no programa ativo. Voce tambem pode remover membros da lista do programa ativo.",
+          "save_direct": "Para membros que ja estao na lista, a primeira atribuicao de graduacao e a progressao para frente podem ser salvas diretamente.",
+          "forward_rule": "Progressao para frente significa avancar para uma graduacao mais alta no mesmo sistema ou aumentar stripes na mesma graduacao.",
+          "review_needed": "Rebaixamentos, diminuicao de stripes, mudanca para um sistema de graduacao diferente na mesma linha e resets ou correcoes exigem revisao antes de salvar.",
+          "review_modal": "Na janela de revisao, escolha um tipo de mudanca e digite observacoes. Os tipos permitidos sao correction, demotion e reset. Confirm fica indisponivel ate que ambos sejam preenchidos.",
+          "guardrails": "Se um membro nao estiver inscrito na lista do programa selecionado, as mudancas de graduacao nao podem ser salvas.",
+          "history": "O historico de graduacao e registrado sempre que as mudancas sao salvas.",
+          "bootstrap_note": "A inscricao automatica do primeiro programa serve apenas para a configuracao inicial. Depois que as linhas de inscricao existem, a pagina funciona em modo de lista explicita."
+        },
+        "cards": {
+          "title": "Cartoes",
+          "intro": "Use Cards para gerenciar modelos, atribuicao de cartoes, cartoes ativos e registros.",
+          "tabs": "Ha quatro abas: Cards, Assign, Active e History.",
+          "cards_tab": "Cards e onde voce cria, edita e exclui modelos de cartao.",
+          "assign_tab": "Assign e onde voce emite cartoes ativos para membros usando seus modelos de cartao.",
+          "active_tab": "Active e onde voce gerencia cartoes ativos, incluindo acoes como excluir ou pausar cartoes.",
+          "history_tab": "History mostra os registros de cartoes em uma unica pagina.",
+          "history_search": "Use o campo Search Records no topo para filtrar os registros.",
+          "history_lists": "History lista juntos os registros de cartoes emitidos, cartoes excluidos e logs de auditoria."
+        },
+        "reports": {
+          "title": "Relatorios",
+          "intro": "Use Reports para ver relatorios financeiros mensais.",
+          "items": "Os relatorios mostram informacoes financeiras basicas, como custo, receita e lucro.",
+          "active_only": "Os relatorios sao gerados apenas enquanto a ferramenta esta ativa.",
+          "inactive_missing": "Se a ferramenta estiver inativa, por exemplo sem pagamento ou fora do periodo de teste gratis, os relatorios desse periodo nao serao criados e ficarao ausentes aqui.",
+          "future_note": "Uma atualizacao futura permitira ver dados financeiros passados mesmo quando a ferramenta estiver inativa. Tente manter sua assinatura ativa se quiser um historico completo de relatorios."
+        }
+      },
+      "applications": {
+        "title": "Solicitacoes da Academia",
+        "intro": "Os usuarios tambem podem solicitar entrada na sua academia pela pagina Join Academy.",
+        "instructions": "Va para Membros → Add/Reject Members para ver as solicitacoes pendentes.",
+        "no_pending": "Se voce vir “No pending accounts”, o membro nao solicitou corretamente. Peca para tentar novamente escaneando o QR code da sua academia ou procurando o nome da academia.",
+        "accept_reject": "Quando uma solicitacao aparecer, pressione Accept ou Reject.",
+        "child_accounts": "Para aceitar contas de criancas vinculadas, va para Membros → Lista de Membros, abra o perfil do pai ou mae e aceite as contas de criancas listadas ali.",
+        "refresh": "Se as contas de criancas nao aparecerem, ou elas nao foram criadas, ou a criacao falhou, ou sua lista esta desatualizada. Peca para o pai ou mae cria-las ou feche e reabra o app para atualizar, sem precisar sair da conta."      
+      },
+      "rejection": {
+        "title": "Rejeitar ou Banir Membros",
+        "intro": "Gerencie o status de membro a partir do perfil do membro.",
+        "reject": "Va para Membros → Lista de Membros, abra um perfil e pressione Reject para remover um membro. Voce nao pode rejeitar membros com cartoes ativos; primeiro limpe a conta e exclua os cartoes ativos.",
+        "rejected_list": "Encontre membros rejeitados em Membros → Lista de Rejeitados. De la voce pode usar Accept ou Ban.",
+        "ban": "Membros banidos nao podem solicitar novamente pressionando Join Academy.",
+        "unban": "Para remover um banimento, va para Membros → Lista de Banidos, pressione o nome da pessoa e depois Remove Ban. Ela reaparecera em Add/Reject Members para ser aceita."
+      },
+      "records": {
+        "title": "Registros de Presenca",
+        "intro": "Veja os registros de presenca de membros e de contas de criancas vinculadas.",
+        "instructions": "Va para Membros → Registros.",
+        "date_range": "Selecione um intervalo de datas. Se apenas a primeira data estiver preenchida, os resultados mostrarao esse unico dia. Ao adicionar a segunda data, o sistema traz o intervalo completo.",
+        "clear_field": "Assim que a segunda data for tocada, ela passa a usar hoje como padrao. Voce pode escolher uma data anterior a hoje. Para limpar, recarregue a pagina.",
+        "member_search": "Depois de definir o intervalo, pressione Choose Member.",
+        "view_records": "Uma janela se abre e lista os membros com registros de presenca nesse periodo. Pressione um nome para ver os registros individuais desse membro. Tire uma captura de tela para arquivamento ou resolucao de disputa."
+      }
+    },
+    "schedule": {
+      "create": {
+        "title": "Criar Aula",
+        "intro": "Va para Agenda. Ela abre no dia de hoje por padrao; selecione o dia desejado e pressione Create Lesson.",
+        "lesson_name": "Nome da Aula.",
+        "lesson_type": "Tipo de Aula: por padrao e Group Lesson.",
+        "lesson_type_note": "Os cartoes reservados precisam corresponder ao tipo de aula, Group ou Private.",
+        "date": "Data: confira novamente se voce navegou pelo calendario.",
+        "time": "Inicio / Fim: use o formato de 24 horas, HH:MM. Os horarios usam seu fuso horario local.",
+        "classroom": "Sala, opcional: necessaria se voce agendar aulas sobrepostas.",
+        "max_capacity": "Capacidade Maxima: obrigatoria e precisa ser maior que 0. Os alunos nao podem reservar acima do limite; admins podem.",
+        "min_capacity": "Capacidade Minima: obrigatoria e precisa ser maior que 0. A aula e cancelada automaticamente se o minimo nao for atingido ate o horario limite de reserva.",
+        "cutoff": "Horario Limite de Reserva: por padrao e 5 minutos se ficar vazio. Recomenda-se 20 minutos ou mais para que os alunos recebam avisos de cancelamento a tempo. Depois do limite, alunos nao podem reservar nem cancelar; admins podem ate a aula terminar.",
+        "content": "Conteudo da Aula, opcional.",
+        "sessions_deduct": "Sessoes a Descontar: por padrao e 1. Voce pode definir qualquer duracao de aula e descontar um valor diferente de zero se precisar cobrar mais de 1 por aula.",
+        "usable_cards": "Cartoes de Membro Usaveis: toque para selecionar um ou mais cartoes permitidos para reservar esta aula, como adultos, criancas, iniciante ou avancado.",
+        "instructors": "Instrutor: toque para selecionar um ou mais; pelo menos um e obrigatorio. Veja Adicionar Instrutores.",
+        "assistants": "Instrutor Assistente, opcional.",
+        "action": "Pressione Create Lesson."
+      },
+      "manage": {
+        "title": "Editar / Cancelar / Excluir Aula",
+        "intro": "Va para Agenda, selecione a data e depois toque na aula, nao no botao Booking.",
+        "edit": "Edite as informacoes da aula e pressione Save Changes.",
+        "cancel": "Cancel Lesson: cancela a reserva de todos os membros atualmente reservados e impede novas reservas. O botao Booking ficara desativado.",
+        "delete": "Delete Lesson: se voce precisar remover totalmente a aula, por exemplo, se foi criada por engano, cancele primeiro e depois pressione Delete Lesson.",
+        "cutoff_rule": "Voce nao pode editar uma aula depois do horario limite de reserva.",
+        "started_rule": "Voce nao pode cancelar nem excluir uma aula que ja comecou."
+      },
+      "book": {
+        "title": "Reservar para Alunos",
+        "intro": "Incentive alunos e pais a reservarem sozinhos. Se o horario limite ja passou ou eles esqueceram, admins podem reservar com mais liberdade, sem ficar limitados pelo horario de corte ou pela capacidade.",
+        "open": "Va para Agenda → selecione a data → toque na aula → Booking → Add Members.",
+        "select_member": "Encontre o membro, pai, mae ou crianca. Toque para mostrar os cartoes ativos permitidos para essa aula.",
+        "choose_card": "Toque em um cartao ate ele ficar azul e depois pressione Confirm para reservar.",
+        "unbook": "Para cancelar a reserva, toque no membro na lista de presenca, toque no cartao azul, reservado, ate ele ficar cinza e depois pressione Confirm.",
+        "finished_rule": "Voce nao pode reservar nem cancelar a reserva de alunos em aulas que ja terminaram."
+      }
+    },
+    "tools": {
+      "prologue": {
+        "title": "Ferramentas Pagas",
+        "intro_1": "As ferramentas pagas sao compradas pelos proprietarios de academia no",
+        "intro_link": "Affiliate Portal.",
+        "intro_2": "Outras funcoes podem usa-las gratuitamente. Voce pode entrar se tiver criado pelo menos uma academia.", 
+        "available": "Existem quatro ferramentas pagas: Timetable, Pause Cards, Staff Permissions e Analytics. O pacote Premium inclui as quatro com desconto e oferece um teste gratis de 90 dias. Pressione Start Trial na pagina Features para comecar.",
+        "pricing": "Os precos sao ajustados regionalmente, usando PPP. Informe seu pais, e provincia no caso da China, para receber o desconto correto."
+      },
+      "timetable": {
+        "title": "Horario Semanal",
+        "intro": "Gerencie um horario semanal recorrente. Crie modelos de aula uma vez e publique-os diretamente no calendario sem recriar cada aula.",
+        "create": "Va para Timetable e selecione um dia da semana. Pressione Create Lesson para abrir o mesmo formulario da tela Agenda e preencha como faria em uma aula normal.",
+        "end_date": "Os modelos do Timetable incluem um campo adicional de End Date. Defina um intervalo usando Start Date, que por padrao e hoje, e End Date, no futuro. Os modelos nao existem ate serem publicados, entao voce pode definir uma data final bem distante com seguranca.",
+        "edit": "Depois da criacao, os modelos de aula aparecem na pagina do dia da semana. Pressione um modelo para editá-lo seguindo o mesmo processo das aulas regulares.",
+        "publish": "As aulas nao publicadas aparecem na pagina Agenda. Os admins veem um botao Publish em vez de Booking; pressione-o para publicar e permitir reservas. Os membros veem aulas nao publicadas em cinza, o que ajuda a visualizar planos futuros.",
+        "holidays": "Se uma aula agendada cair em um feriado, voce pode simplesmente optar por nao publica-la. Depois de publicada, a aula nao pode ser despublicada. Para remover uma aula publicada, siga o mesmo procedimento de Cancel Lesson descrito nas instrucoes da Agenda."
+      },
+      "pause_cards": {
+        "title": "Pausar Cartoes",
+        "intro": "Voce pode pausar um cartao para parar a contagem de tempo quando necessario.",
+        "individual": "Membros → Membros Aceitos. Encontre ou pesquise o membro, abra o perfil e use o botao Pause Cards do meio, laranja, para pausar ou retomar.",
+        "academy_wide": "Os proprietarios podem pausar todos os cartoes da academia em Cartoes → Pause Cards.",
+        "template_toggle": "Cada modelo de cartao tem um toggle para exclui-lo das pausas em toda a academia, por exemplo, deixando Gift Cards continuarem expirando.",
+        "no_booking": "Cartoes pausados nao podem ser usados para reservar aulas.",
+        "independence": "Pausar ou retomar em toda a academia nao altera o estado de pausa individual; os dois funcionam de forma independente."
+      },
+      "staff_permissions": {
+        "title": "Acesso da Equipe",
+        "intro": "Delegue tarefas do aplicativo para a equipe administrativa atribuindo acessos.",
+        "add_staff": "Va para Negocio → Access. Membros da equipe adicionados em Instructors ou Analytics aparecem aqui automaticamente.",
+        "set_permissions": "Ha dois badges. Staff significa que a pessoa ainda nao e admin.",
+        "make_admin": "Pressione o nome de um membro da equipe e depois pressione Confirm para promovê-lo a admin.",
+        "schedule": "Acesso a Agenda — permite criar, editar e reservar aulas na pagina Agenda.",
+        "members": "Acesso a Membros — permite Add, Reject, Ban e Unban. Consultar registros de presenca em Membros → Registros esta sempre disponivel para admins e nao e restrito.",
+        "cards": "Acesso a Cartoes — permite criar, editar e excluir modelos de cartao; emitir, ajustar ou cancelar cartoes ativos. A mensalidade e cobrada na emissao do cartao. Veja Cartoes de Membro → Registros de Cartoes para logs de auditoria.",
+        "timetable": "Acesso a Timetable — permite criar, editar, excluir e publicar modelos de aula.",
+        "confirm": "Depois disso, pressione o nome do admin para alterar os valores de acesso como antes. Escolha Yes ou No para cada item e pressione Confirm.",
+        "trial_expiry": "Se o periodo de teste gratis terminar sem pagamento, esta ferramenta sera bloqueada. Todos os admins voltarao a Staff e todo o acesso sera desligado.",
+        "remove_staff": "Pressione Remove Admin para transformar um admin novamente em Staff."
+      },
+      "analytics": {
+        "overview": {
+          "title": "Visao Geral de Analytics",
+          "intro": "Analytics fornece relatorios em tempo real e agendados sobre o desempenho da sua academia.",
+          "realtime": "Os dados em tempo real incluem: Membros Ativos, com cartoes ativos, Novos e Perdidos neste mes, Total de Aulas Planejadas nesta semana, Aulas Concluidas nesta semana e Cartao Mais Popular, por contagem de uso.",
+          "weekly_reports": "Os relatorios semanais resumem presenca e desempenho das aulas e sao publicados toda segunda-feira para a semana anterior.",
+          "weekly_items": "Os relatorios incluem total de aulas planejadas e concluidas, aulas com maior presenca e membros mais ativos, um adulto e uma crianca.",
+          "financial_reports": "Os relatorios financeiros semanais sao publicados toda quarta-feira e incluem Lucro Liquido Semanal e Receita Media por Aula.",
+          "monthly_reports": "Os relatorios mensais incluem o No Attendance Report, que mostra membros com cartoes ativos que nao participaram de nenhuma aula no mes anterior.",
+          "notes": "Os relatorios semanais incluem apenas custos de ensino e equipe, sem aluguel, utilidades ou vendas. Os relatorios financeiros sao apenas relacionados as aulas."
+        },
+        "wages": {
+          "title": "Salarios de Instrutores e Equipe",
+          "intro": "Defina salario fixo ou valores por hora para instrutores e equipe para que o sistema possa calcular os custos com precisao.",
+          "access": "Va para Negocio → Analytics. Pressione Choose Member, selecione um membro ou voce mesmo e depois pressione Add to Staff. Pressione seu nome ou o nome de um membro da equipe para inserir os detalhes de salario.",
+          "roles": "Se Is Instructor estiver selecionado no formulario de salario, o sistema conta as horas de ensino usando esse valor. Se nao estiver selecionado, as horas de ensino nao serao contadas para esse membro da equipe.",
+          "assistant_note": "Instrutores assistentes ainda podem ser selecionados para aulas mesmo quando Is Instructor estiver desligado.",
+          "contract_types": "Escolha Contract Type: mensal, por hora ou ambos, apenas para instrutores. Voce pode definir um valor base mensal e um valor de ensino por hora.",
+          "fields": "Digite Monthly Rate, Hourly Rate e Private Lesson Rate. Use a moeda local definida quando a academia foi criada.",
+          "private_rate": "Private Lesson Rate se aplica apenas quando o tipo da aula e Private. Aulas em grupo usam a taxa padrao.",
+          "tiered_intro": "Tiered Wages e opcional e permite que o pagamento por hora aumente com o tamanho da turma.",
+          "tiered_example": "Adicione niveis usando + Add Tier ou × Remove Tier. Exemplo: Tier 1: 2 alunos → $20/h, Tier 2: 5 alunos → $30/h, Tier 3: 8 alunos → $40/h.",
+          "tiered_behavior": "A presenca determina a ativacao do nivel: 2 a 4 alunos usam Tier 1, 5 a 7 usam Tier 2 e 8 ou mais sempre usam Tier 3.",
+          "minute_calculation": "As aulas nao sao limitadas a 60 minutos. O sistema calcula os salarios por hora com base nos minutos, por exemplo, uma aula de 90 minutos equivale a 1,5 vez a taxa horaria."
+        },
+        "punch_cards": {
+          "title": "Ponto da Equipe",
+          "intro": "Sistema de entrada e saida para acompanhar horas de escritorio da equipe. As horas de ensino dos instrutores sao calculadas automaticamente a partir das aulas agendadas.",
+          "usage": "Va para Negocio → Analytics. Pressione Actions ao lado de um membro da equipe e depois Clock In/Out.",
+          "rules": "A equipe com salario fixo ainda pode registrar entrada e saida para acompanhamento. A equipe paga por hora precisa registrar entrada e saida para calculo de pagamento.",
+          "instructors_note": "Os instrutores nao precisam registrar entrada, a menos que voce queira monitorar horas de escritorio. O pagamento deles e baseado no tempo de ensino em aula.",
+          "current_limit": "Atualmente, apenas o proprietario da academia pode registrar entrada e saida da equipe. Uma atualizacao futura permitira auto check-in e check-out da equipe usando um cartao RFID na academia.",
+          "audit_intro": "A auditoria de folha de ponto ocorre toda segunda-feira. O proprietario revisa e aprova cada cartao de ponto da semana anterior.",
+          "audit_steps": "Role ate o final da pagina Analytics e pressione Review ao lado de cada cartao de ponto para inspecionar os detalhes.",
+          "inspect": "Confira datas, horas e horarios de entrada e saida. Dados ausentes ou incorretos podem ser ajustados manualmente.",
+          "problems": "Se faltar dado salarial, insira-o. Se a equipe esqueceu de registrar a saida, pressione Clock Out. Se as horas estiverem longas demais, por esquecimento de saida anterior, edite manualmente as horas trabalhadas.",
+          "actions": "Escreva observacoes para casos especiais, como saida antecipada. Para rejeitar registros falsos ou duplicados, pressione Error → Reject. Pressione Mark as Late para registrar atraso, apenas para acompanhamento.",
+          "approval": "Quando estiver correto, pressione Approve. Os cartoes de ponto aprovados entram nos relatorios financeiros.",
+          "summary": "Toda segunda-feira, os cartoes de ponto da semana anterior aparecem para aprovacao. Todo dia 1 do mes, os cartoes restantes de uma semana parcial tambem aparecem. Os relatorios sao gerados nas quartas-feiras e no dia 3 de cada mes, dando dois dias para concluir as revisoes. Cartoes nao aprovados ficam fora dos relatorios."
+        }
+      }
+    }
+  }
+}

@@ -42,6 +42,8 @@ npm run build
 sudo rsync -av --delete --exclude 'downloads/' dist/ /var/www/DojoMate/
 ```
 
+- `downloads/` is excluded from deploy, so APK files in `/var/www/DojoMate/downloads/` are not removed by the dist publish step.
+
 ---
 
 ## 📱 Deploy Android APK
@@ -57,6 +59,7 @@ scp /Users/jimmy1768/Projects/DojoMate-Expo/build-<id>.apk \
 
 - `<id>` should match the exact unique suffix Expo generates for the build (e.g., `1766993725581`).
 - `<build-tag>` should describe the new build (e.g., `1.9.5`); the script stores a snapshot at `DojoMate-<build-tag>.apk` before replacing `DojoMate-latest.apk`.
+- Old versioned APK files stay in `/var/www/DojoMate/downloads/`. Only `DojoMate-latest.apk` is replaced.
 
 ---
 

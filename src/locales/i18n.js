@@ -7,6 +7,7 @@ import hans from './hans.json'  // Simplified Chinese
 import hant from './hant.json'  // Traditional Chinese
 import ko from './ko.json'
 import ja from './ja.json'
+import pt from './pt.json'
 
 const messages = {
   en,
@@ -14,6 +15,7 @@ const messages = {
   hant,
   ko,
   ja,
+  pt,
 }
 
 const saved = localStorage.getItem('locale') || 'en'
