@@ -1,0 +1,95 @@
+<template>
+  <section class="stack gap-4">
+    <div class="stack tight">
+      <span class="badge">Business</span>
+      <h1>Run the business side of your academy</h1>
+      <p class="muted">
+        The Business area helps you set up your team, decide who can manage the academy, and review pay and performance tools.
+      </p>
+    </div>
+
+    <section class="card stack tight">
+      <h2>Start with the job you need to do</h2>
+      <div class="v2-grid">
+        <article class="v2-panel">
+          <h3>Choose Who Can Teach</h3>
+          <p class="muted">
+            Use <strong>Instructors</strong> to decide which people can be assigned to lessons.
+          </p>
+          <router-link class="link" to="/help-v2/business/instructors">
+            Open the Instructors guide
+          </router-link>
+        </article>
+
+        <article class="v2-panel">
+          <h3>Choose Who Can Manage the Academy</h3>
+          <p class="muted">
+            Use <strong>Staff Access</strong> to grant or update admin access.
+          </p>
+          <span class="v2-coming-soon">Coming next in v2</span>
+        </article>
+
+        <article class="v2-panel">
+          <h3>Track Pay, Time, and Performance</h3>
+          <p class="muted">
+            Use <strong>Analytics</strong> for compensation, reports, timesheets, and payroll-related tools.
+          </p>
+          <span class="v2-coming-soon">Coming next in v2</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="card stack tight">
+      <h2>What to know</h2>
+      <ul>
+        <li>These Business pages support different jobs, so it helps to choose the page that matches what you are trying to do.</li>
+        <li>If you are setting up a new academy, start by deciding who teaches first.</li>
+        <li>If you are unsure where to begin, the Instructors guide is the best first step for team setup.</li>
+      </ul>
+    </section>
+
+    <section class="card stack tight">
+      <h2>Next step</h2>
+      <p class="muted">
+        Start with <strong>Choose Who Can Teach</strong> if you are setting up your teaching team.
+      </p>
+      <div>
+        <router-link class="btn" to="/help-v2/business/instructors">
+          Go to Choose Who Can Teach
+        </router-link>
+      </div>
+    </section>
+  </section>
+</template>
+
+<style scoped>
+.v2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.v2-panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  background: var(--color-bg);
+}
+
+.v2-panel h3 {
+  margin-top: 0;
+}
+
+.v2-coming-soon {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--color-fg-muted);
+}
+
+@media (max-width: 720px) {
+  .v2-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

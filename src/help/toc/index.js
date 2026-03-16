@@ -5,14 +5,28 @@ import { portalSections } from './portal.js'
 import { adminSections } from './admin.js'
 import { toolsSections } from './tools.js'   // ✅ new import
 
+const HELP_V1_BASE = '/help-v1'
+
+function withHelpBase(sections, basePath = HELP_V1_BASE) {
+  return sections.map(sec => ({
+    ...sec,
+    items: sec.items.map(item => ({
+      ...item,
+      path: typeof item.path === 'string' ? item.path.replace(/^\/help\b/, basePath) : item.path
+    }))
+  }))
+}
+
 // Merge in the desired order
-export const sections = [
+const rawSections = [
   ...memberSections,
   ...ownerSections,
   ...portalSections,
   ...adminSections,
   ...toolsSections    // ✅ add tools at the end
 ]
+
+export const sections = withHelpBase(rawSections)
 
 // Flat list used by search to index (title + short body copy only).
 export const searchPages = sections.flatMap(sec =>

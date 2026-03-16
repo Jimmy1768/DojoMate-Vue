@@ -4,7 +4,11 @@ import Privacy from '../pages/Privacy.vue'
 import Deletion from '../pages/Deletion.vue'
 import Progression from '../pages/Progression.vue'
 import HelpLayout from '../components/HelpLayout.vue'
+import HelpLayoutV2 from '../components/HelpLayoutV2.vue'
 import HelpWelcome from '../pages/HelpWelcome.vue'
+import HelpWelcomeV2 from '../pages/HelpWelcomeV2.vue'
+import BusinessOverviewV2 from '../pages/help-v2/BusinessOverviewV2.vue'
+import InstructorsV2 from '../pages/help-v2/InstructorsV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -73,6 +77,84 @@ import AnalyticsOverview from '../pages/tools/AnalyticsOverview.vue'
 import AnalyticsWages from '../pages/tools/AnalyticsWages.vue'
 import AnalyticsPunchCards from '../pages/tools/AnalyticsPunchCards.vue'
 
+const helpChildren = [
+  { path: '', component: HelpWelcome },
+
+  // Account
+  { path: 'account/sign-in', component: SignIn },
+  { path: 'account/create-account', component: CreateAccount },
+  { path: 'account/reset-password', component: ResetPassword },
+  { path: 'account/troubleshooting', component: Troubleshooting },
+
+  // Settings
+  { path: 'settings/change-password', component: ChangePassword },
+  { path: 'settings/language', component: Language },
+  { path: 'settings/currency', component: Currency },
+  { path: 'settings/logout', component: Logout },
+  { path: 'settings/privacy-settings', component: PrivacySettings },
+  { path: 'settings/delete-account', component: DeleteAccount },
+
+  // Profile
+  { path: 'profile/edit-profile', component: EditProfile },
+  { path: 'profile/child-accounts', component: ChildAccounts },
+
+  // Academy (Member)
+  { path: 'academy/join-academy', component: JoinAcademy },
+  { path: 'academy/memberships', component: ManagingMemberships },
+  { path: 'academy/booking', component: Booking },
+  { path: 'academy/messages', component: SystemMessages },
+  { path: 'academy/records', component: AttendanceRecords },
+
+  // Business (Owner)
+  { path: 'business/create-academy', component: CreateAcademy },
+  { path: 'business/academy-basics', component: AcademyBasics },
+  { path: 'business/academy-qr', component: AcademyQR },
+  { path: 'business/delete-academy', component: DeleteAcademy },
+  { path: 'business/add-instructor', component: AddInstructor },
+
+  // Affiliate Portal
+  { path: 'portal/prologue', component: PortalPrologue },
+  { path: 'portal/register', component: PortalRegister },
+  { path: 'portal/members', component: PortalMembers },
+  { path: 'portal/ranks', component: PortalRanks },
+  { path: 'portal/cards', component: PortalCards },
+  { path: 'portal/reports', component: PortalReports },
+
+  // Cards (Admin)
+  { path: 'cards/create-template', component: CreateTemplate },
+  { path: 'cards/edit-templates', component: EditTemplates },
+  { path: 'cards/delete-templates', component: DeleteTemplates },
+  { path: 'cards/issue-cards', component: IssueCards },
+  { path: 'cards/manage-cards', component: ManageCards },
+  { path: 'cards/delete-cards', component: DeleteCards },
+  { path: 'cards/records', component: CardRecords },
+
+  // Members (Admin)
+  { path: 'members/enrollment', component: Enrollment },
+  { path: 'members/applications', component: Applications },
+  { path: 'members/rejection', component: Rejection },
+  { path: 'members/records', component: MemberRecords },
+
+  // Schedule
+  { path: 'schedule/create-lesson', component: CreateLesson },
+  { path: 'schedule/manage-lesson', component: ManageLesson },
+  { path: 'schedule/book-for-students', component: BookForStudents },
+
+  // Paid Tools
+  { path: 'tools/prologue', component: Prologue },
+  { path: 'tools/timetable', component: Timetable },
+  { path: 'tools/pause-cards', component: PauseCards },
+  { path: 'tools/staff-permissions', component: StaffPermissions },
+  { path: 'tools/analytics-overview', component: AnalyticsOverview },
+  { path: 'tools/analytics-wages', component: AnalyticsWages },
+  { path: 'tools/analytics-punch-cards', component: AnalyticsPunchCards },
+]
+
+function normalizeLegacyHelpPath(pathMatch) {
+  if (Array.isArray(pathMatch)) return pathMatch.join('/')
+  return pathMatch || ''
+}
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
@@ -90,81 +172,36 @@ const router = createRouter({
     { path: '/deletion', name: 'deletion', component: Deletion },
     { path: '/progression', name: 'progression', component: Progression},
     {
+      path: '/help-v1',
+      name: 'help-v1',
+      component: HelpLayout,
+      children: helpChildren
+    },
+    {
+      path: '/help-v2',
+      name: 'help-v2',
+      component: HelpLayoutV2,
+      children: [
+        { path: '', component: HelpWelcomeV2 },
+        { path: 'business', component: BusinessOverviewV2 },
+        { path: 'business/instructors', component: InstructorsV2 }
+      ]
+    },
+    {
       path: '/help',
       name: 'help',
-      component: HelpLayout,
-      children: [
-        { path: '', component: HelpWelcome },
-
-        // Account
-        { path: 'account/sign-in', component: SignIn },
-        { path: 'account/create-account', component: CreateAccount },
-        { path: 'account/reset-password', component: ResetPassword },
-        { path: 'account/troubleshooting', component: Troubleshooting },
-
-        // Settings
-        { path: 'settings/change-password', component: ChangePassword },
-        { path: 'settings/language', component: Language },
-        { path: 'settings/currency', component: Currency },
-        { path: 'settings/logout', component: Logout },
-        { path: 'settings/privacy-settings', component: PrivacySettings },
-        { path: 'settings/delete-account', component: DeleteAccount },
-
-        // Profile
-        { path: 'profile/edit-profile', component: EditProfile },
-        { path: 'profile/child-accounts', component: ChildAccounts },
-
-        // Academy (Member)
-        { path: 'academy/join-academy', component: JoinAcademy },
-        { path: 'academy/memberships', component: ManagingMemberships },
-        { path: 'academy/booking', component: Booking },
-        { path: 'academy/messages', component: SystemMessages },
-        { path: 'academy/records', component: AttendanceRecords },
-
-        // Business (Owner)
-        { path: 'business/create-academy', component: CreateAcademy },
-        { path: 'business/academy-basics', component: AcademyBasics },
-        { path: 'business/academy-qr', component: AcademyQR },
-        { path: 'business/delete-academy', component: DeleteAcademy },
-        { path: 'business/add-instructor', component: AddInstructor },
-
-        // Affiliate Portal
-        { path: 'portal/prologue', component: PortalPrologue },
-        { path: 'portal/register', component: PortalRegister },
-        { path: 'portal/members', component: PortalMembers },
-        { path: 'portal/ranks', component: PortalRanks },
-        { path: 'portal/cards', component: PortalCards },
-        { path: 'portal/reports', component: PortalReports },
-
-        // Cards (Admin)
-        { path: 'cards/create-template', component: CreateTemplate },
-        { path: 'cards/edit-templates', component: EditTemplates },
-        { path: 'cards/delete-templates', component: DeleteTemplates },
-        { path: 'cards/issue-cards', component: IssueCards },
-        { path: 'cards/manage-cards', component: ManageCards },
-        { path: 'cards/delete-cards', component: DeleteCards },
-        { path: 'cards/records', component: CardRecords },
-
-        // Members (Admin)
-        { path: 'members/enrollment', component: Enrollment },
-        { path: 'members/applications', component: Applications },
-        { path: 'members/rejection', component: Rejection },
-        { path: 'members/records', component: MemberRecords },
-
-        // Schedule
-        { path: 'schedule/create-lesson', component: CreateLesson },
-        { path: 'schedule/manage-lesson', component: ManageLesson },
-        { path: 'schedule/book-for-students', component: BookForStudents },
-
-        // Paid Tools
-        { path: 'tools/prologue', component: Prologue },
-        { path: 'tools/timetable', component: Timetable },
-        { path: 'tools/pause-cards', component: PauseCards },
-        { path: 'tools/staff-permissions', component: StaffPermissions },
-        { path: 'tools/analytics-overview', component: AnalyticsOverview },
-        { path: 'tools/analytics-wages', component: AnalyticsWages },
-        { path: 'tools/analytics-punch-cards', component: AnalyticsPunchCards },
-      ]
+      redirect: to => ({ path: '/help-v1', query: to.query, hash: to.hash })
+    },
+    {
+      path: '/help/:pathMatch(.*)*',
+      redirect: to => {
+        const suffix = normalizeLegacyHelpPath(to.params.pathMatch)
+        return {
+          path: suffix ? `/help-v1/${suffix}` : '/help-v1',
+          query: to.query,
+          hash: to.hash
+        }
+      }
     },
 
     { path: '/:pathMatch(.*)*', redirect: '/' }
