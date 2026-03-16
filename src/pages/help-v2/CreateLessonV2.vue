@@ -1,5 +1,5 @@
 <template>
-  <section class="stack gap-4">
+  <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Schedule</span>
       <h1>Create a lesson</h1>

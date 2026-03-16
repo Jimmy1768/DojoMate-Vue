@@ -1,5 +1,5 @@
 <template>
-  <section class="stack gap-4">
+  <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Preview</span>
       <h1>Help Guide v2</h1>
@@ -40,6 +40,16 @@
             Open Schedule Overview
           </router-link>
         </article>
+
+        <article class="v2-home-card">
+          <h3>Set up membership cards</h3>
+          <p class="muted">
+            Learn how cards support booking, then create templates and issue cards.
+          </p>
+          <router-link class="link" to="/help-v2/cards">
+            Open Cards Overview
+          </router-link>
+        </article>
       </div>
     </section>
 
@@ -69,7 +79,7 @@
 <style scoped>
 .v2-home-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-3);
 }
 

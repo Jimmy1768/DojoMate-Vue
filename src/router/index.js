@@ -15,6 +15,10 @@ import ScheduleOverviewV2 from '../pages/help-v2/ScheduleOverviewV2.vue'
 import CreateLessonV2 from '../pages/help-v2/CreateLessonV2.vue'
 import ManageLessonV2 from '../pages/help-v2/ManageLessonV2.vue'
 import BookForStudentsV2 from '../pages/help-v2/BookForStudentsV2.vue'
+import CardsOverviewV2 from '../pages/help-v2/CardsOverviewV2.vue'
+import CardsBookingFlowV2 from '../pages/help-v2/CardsBookingFlowV2.vue'
+import CreateCardTemplateV2 from '../pages/help-v2/CreateCardTemplateV2.vue'
+import IssueCardsV2 from '../pages/help-v2/IssueCardsV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -196,7 +200,11 @@ const router = createRouter({
         { path: 'schedule', component: ScheduleOverviewV2 },
         { path: 'schedule/create-lesson', component: CreateLessonV2 },
         { path: 'schedule/manage-lesson', component: ManageLessonV2 },
-        { path: 'schedule/book-for-students', component: BookForStudentsV2 }
+        { path: 'schedule/book-for-students', component: BookForStudentsV2 },
+        { path: 'cards', component: CardsOverviewV2 },
+        { path: 'cards/how-booking-works', component: CardsBookingFlowV2 },
+        { path: 'cards/create-template', component: CreateCardTemplateV2 },
+        { path: 'cards/issue-cards', component: IssueCardsV2 }
       ]
     },
     {

@@ -55,3 +55,8 @@
 
 /* Text utility */
 .muted { color: var(--color-fg-muted); }
+
+/* v2 help pages use a looser vertical rhythm than v1 */
+.v2-page {
+  gap: var(--space-6);
+}

@@ -43,6 +43,19 @@
             <router-link class="v2-nav-link" to="/help-v2/schedule/book-for-students">
               Book for Students
             </router-link>
+            <h3 class="v2-nav-title">Cards</h3>
+            <router-link class="v2-nav-link" to="/help-v2/cards">
+              Cards Overview
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/how-booking-works">
+              How Cards Work
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/create-template">
+              Create a Card Template
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/issue-cards">
+              Issue Cards
+            </router-link>
           </nav>
         </div>
       </aside>
