@@ -19,6 +19,10 @@ import CardsOverviewV2 from '../pages/help-v2/CardsOverviewV2.vue'
 import CardsBookingFlowV2 from '../pages/help-v2/CardsBookingFlowV2.vue'
 import CreateCardTemplateV2 from '../pages/help-v2/CreateCardTemplateV2.vue'
 import IssueCardsV2 from '../pages/help-v2/IssueCardsV2.vue'
+import MembersOverviewV2 from '../pages/help-v2/MembersOverviewV2.vue'
+import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
+import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
+import RejectOrBanMembersV2 from '../pages/help-v2/RejectOrBanMembersV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -204,7 +208,11 @@ const router = createRouter({
         { path: 'cards', component: CardsOverviewV2 },
         { path: 'cards/how-booking-works', component: CardsBookingFlowV2 },
         { path: 'cards/create-template', component: CreateCardTemplateV2 },
-        { path: 'cards/issue-cards', component: IssueCardsV2 }
+        { path: 'cards/issue-cards', component: IssueCardsV2 },
+        { path: 'members', component: MembersOverviewV2 },
+        { path: 'members/quick-enrollment', component: QuickEnrollmentV2 },
+        { path: 'members/applications', component: ApplicationsV2 },
+        { path: 'members/reject-or-ban', component: RejectOrBanMembersV2 }
       ]
     },
     {

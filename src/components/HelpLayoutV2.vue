@@ -56,6 +56,19 @@
             <router-link class="v2-nav-link" to="/help-v2/cards/issue-cards">
               Issue Cards
             </router-link>
+            <h3 class="v2-nav-title">Members</h3>
+            <router-link class="v2-nav-link" to="/help-v2/members">
+              Members Overview
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/members/quick-enrollment">
+              Add a Member Directly
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/members/applications">
+              Review Applications
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/members/reject-or-ban">
+              Reject or Ban Members
+            </router-link>
           </nav>
         </div>
       </aside>

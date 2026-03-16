@@ -50,6 +50,16 @@
             Open Cards Overview
           </router-link>
         </article>
+
+        <article class="v2-home-card">
+          <h3>Add and manage members</h3>
+          <p class="muted">
+            Bring people into the academy, review applications, and manage status changes.
+          </p>
+          <router-link class="link" to="/help-v2/members">
+            Open Members Overview
+          </router-link>
+        </article>
       </div>
     </section>
 
