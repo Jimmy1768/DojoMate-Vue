@@ -356,7 +356,7 @@
         "staff_list": "Os membros selecionados aparecem na lista da equipe.",
         "instructor_toggle": "Ative o toggle para tornar esse membro da equipe um instrutor.",
         "assistant_toggle": "Deixe o toggle desligado se essa pessoa deve estar disponivel apenas como assistente de instrutor.",
-        "analytics_active": "Se Analytics estiver ativo, o botao Instrutores sera substituido por Analytics. Nesse caso, va para Negocio → Analytics e siga o fluxo de Analytics.",
+        "analytics_active": "Instrutores e a pagina para gerenciar quem ensina. Voce tambem pode ver Analytics como uma pagina separada em Negocio.",
         "next_steps": "Veja a proxima secao para instrucoes sobre como adicionar membros a sua academia."
       }
     },
@@ -599,21 +599,21 @@
       "staff_permissions": {
         "title": "Acesso da Equipe",
         "intro": "Delegue tarefas do aplicativo para a equipe administrativa atribuindo acessos.",
-        "add_staff": "Va para Negocio → Access. Membros da equipe adicionados em Instructors ou Analytics aparecem aqui automaticamente.",
-        "set_permissions": "Ha dois badges. Staff significa que a pessoa ainda nao e admin.",
-        "make_admin": "Pressione o nome de um membro da equipe e depois pressione Confirm para promovê-lo a admin.",
+        "add_staff": "Va para Negocio → Permissions para conceder ou atualizar acesso de admin. Instrutores e Analytics sao paginas separadas em Negocio.",
+        "set_permissions": "Ha dois badges: Member e Admin. Member significa que a pessoa nao tem acesso de admin no momento.",
+        "make_admin": "Pressione o nome de um membro e depois pressione Confirm para promovê-lo a admin.",
         "schedule": "Acesso a Agenda — permite criar, editar e reservar aulas na pagina Agenda.",
         "members": "Acesso a Membros — permite Add, Reject, Ban e Unban. Consultar registros de presenca em Membros → Registros esta sempre disponivel para admins e nao e restrito.",
         "cards": "Acesso a Cartoes — permite criar, editar e excluir modelos de cartao; emitir, ajustar ou cancelar cartoes ativos. A mensalidade e cobrada na emissao do cartao. Veja Cartoes de Membro → Registros de Cartoes para logs de auditoria.",
         "timetable": "Acesso a Timetable — permite criar, editar, excluir e publicar modelos de aula.",
         "confirm": "Depois disso, pressione o nome do admin para alterar os valores de acesso como antes. Escolha Yes ou No para cada item e pressione Confirm.",
-        "trial_expiry": "Se o periodo de teste gratis terminar sem pagamento, esta ferramenta sera bloqueada. Todos os admins voltarao a Staff e todo o acesso sera desligado.",
-        "remove_staff": "Pressione Remove Admin para transformar um admin novamente em Staff."
+        "trial_expiry": "Se esta ferramenta nao estiver disponivel, voce nao podera alterar o acesso de admin aqui.",
+        "remove_staff": "Pressione Remove Admin para transformar um admin novamente em Member."
       },
       "analytics": {
         "overview": {
           "title": "Visao Geral de Analytics",
-          "intro": "Analytics fornece relatorios em tempo real e agendados sobre o desempenho da sua academia.",
+          "intro": "Analytics e uma pagina separada em Negocio para metricas, compensacao e ferramentas de tempo ou folha de pagamento.",
           "realtime": "Os dados em tempo real incluem: Membros Ativos, com cartoes ativos, Novos e Perdidos neste mes, Total de Aulas Planejadas nesta semana, Aulas Concluidas nesta semana e Cartao Mais Popular, por contagem de uso.",
           "weekly_reports": "Os relatorios semanais resumem presenca e desempenho das aulas e sao publicados toda segunda-feira para a semana anterior.",
           "weekly_items": "Os relatorios incluem total de aulas planejadas e concluidas, aulas com maior presenca e membros mais ativos, um adulto e uma crianca.",
@@ -624,7 +624,7 @@
         "wages": {
           "title": "Salarios de Instrutores e Equipe",
           "intro": "Defina salario fixo ou valores por hora para instrutores e equipe para que o sistema possa calcular os custos com precisao.",
-          "access": "Va para Negocio → Analytics. Pressione Choose Member, selecione um membro ou voce mesmo e depois pressione Add to Staff. Pressione seu nome ou o nome de um membro da equipe para inserir os detalhes de salario.",
+          "access": "Va para Negocio → Analytics para gerenciar detalhes de compensacao. Use Instrutores para gerenciar quem ensina. Alterar a compensacao em Analytics nao transforma alguem em instrutor.",
           "roles": "Se Is Instructor estiver selecionado no formulario de salario, o sistema conta as horas de ensino usando esse valor. Se nao estiver selecionado, as horas de ensino nao serao contadas para esse membro da equipe.",
           "assistant_note": "Instrutores assistentes ainda podem ser selecionados para aulas mesmo quando Is Instructor estiver desligado.",
           "contract_types": "Escolha Contract Type: mensal, por hora ou ambos, apenas para instrutores. Voce pode definir um valor base mensal e um valor de ensino por hora.",

@@ -173,7 +173,7 @@
         "prologue": "About Paid Tools",
         "timetable": "Timetable",
         "pause_cards": "Pause Cards",
-        "staff_permissions": "Staff Permissions",
+        "staff_permissions": "Staff Access",
         "analytics_overview": "Analytics Overview",
         "analytics_wages": "Staff Wages",
         "analytics_reports": "Reports & Timesheets",
@@ -356,7 +356,7 @@
         "staff_list": "Selected members appear in the staff list.",
         "instructor_toggle": "Turn the toggle on to make that staff member an instructor.",
         "assistant_toggle": "Leave the toggle off if this person should only be available as an assistant instructor.",
-        "analytics_active": "If Analytics is active, the Instructors button is replaced by Analytics. In that case, go to Business → Analytics and follow the Analytics workflow there.",
+        "analytics_active": "Instructors is the page for managing who teaches. You may also see Analytics as a separate Business page.",
         "next_steps": "See the next section for instructions on adding members to your academy."
       }
     },
@@ -575,7 +575,7 @@
         "intro_1": "Paid tools are purchased by academy owners at",
         "intro_link": "Affiliate Portal.",
         "intro_2": "Other roles may use them for free. You can log in if you have created at least one academy.", 
-        "available": "There are four paid tools: Timetable, Pause Cards, Staff Permissions, and Analytics. The Premium Package includes all four at a discount, with a free 90-day trial available. Press Start Trial on the Features page to begin.",
+        "available": "There are four paid tools: Timetable, Pause Cards, Staff Access, and Analytics. The Premium Package includes all four at a discount, with a free 90-day trial available. Press Start Trial on the Features page to begin.",
         "pricing": "Prices are regionally adjusted (PPP). Enter your Country (and Province for China) to receive the correct discount."
       },
       "timetable": {
@@ -599,21 +599,21 @@
       "staff_permissions": {
         "title": "Staff Access",
         "intro": "Delegate tasks in the app to administrative staff by assigning access.",
-        "add_staff": "Go to Business → Access. Staff members added in Instructors or Analytics appear here automatically.",
-        "set_permissions": "There are two badges. Staff means the person is not an admin yet.",
-        "make_admin": "Press a staff member’s name, then press Confirm to promote them to admin.",
+        "add_staff": "Go to Business → Permissions to grant or update admin access.",
+        "set_permissions": "There are two badges: Member and Admin. Member means the person does not currently have admin access.",
+        "make_admin": "Press a member’s name, then press Confirm to promote them to admin.",
         "schedule": "Schedule Access — allows creating, editing, and booking lessons on the Schedule page.",
         "members": "Members Access — allows Add/Reject/Ban/Unban. Checking attendance records (Members → Records) is always available to Admins and not restricted.",
         "cards": "Cards Access — allows creating, editing, and deleting card templates; issuing, adjusting, or canceling active cards. Tuition is collected on card issuance. See Membership Cards → Card Records for audit logs.",
-        "timetable": "timetable Access — allows creating, editing, deleting, and publishing lesson templates.",
+        "timetable": "Timetable Access — allows creating, editing, deleting, and publishing lesson templates.",
         "confirm": "After that, press the admin’s name to change access values as before. Choose Yes or No for each item and press Confirm.",
-        "trial_expiry": "If your free trial ends without payment, this tool will lock. All admins will be changed back to Staff and all access will be turned off.",
-        "remove_staff": "Press Remove Admin to change an admin back into Staff."
+        "trial_expiry": "If this tool is unavailable, you will not be able to change admin access here.",
+        "remove_staff": "Press Remove Admin to change an admin back into Member."
       },
       "analytics": {
         "overview": {
           "title": "Analytics Overview",
-          "intro": "Analytics provides real-time and scheduled reports about your academy’s performance.",
+          "intro": "Analytics is a separate Business page for metrics, compensation, and time or payroll tools.",
           "realtime": "Real-time data includes: Active Members (with active cards), New/Lost Members this month, Total Planned Classes this week, Completed Classes this week, and Most Popular Card (by usage count).",
           "weekly_reports": "Weekly reports summarize attendance and class performance, published every Monday for the previous week.",
           "weekly_items": "Reports include total classes planned and completed, top attended classes, and most active members (one adult and one child).",
@@ -624,7 +624,7 @@
         "wages": {
           "title": "Instructor & Staff Wages",
           "intro": "Set salary or hourly rates for instructors and staff so the system can calculate costs accurately.",
-          "access": "Go to Business → Analytics. Press Choose Member, select a member or yourself, then press Add to Staff. Press your name or a staff member’s name to enter wage details.",
+          "access": "Go to Business → Analytics to manage compensation details. Use Instructors to manage who teaches. Updating compensation in Analytics does not make someone an instructor.",
           "roles": "If Is Instructor is selected in the salary form, the system counts teaching hours using that wage. If it is not selected, teaching hours are not counted for that staff member.",
           "assistant_note": "Assistant instructors can still be selected for lessons even when Is Instructor is off.",
           "contract_types": "Choose Contract Type: monthly, hourly, or both (for instructors only). You can set both a base monthly and hourly teaching rate.",
