@@ -24,6 +24,25 @@
             <router-link class="v2-nav-link" to="/help-v2/business/instructors">
               Choose Who Can Teach
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/staff-access">
+              Choose Who Can Manage
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/analytics">
+              Track Pay and Performance
+            </router-link>
+            <h3 class="v2-nav-title">Schedule</h3>
+            <router-link class="v2-nav-link" to="/help-v2/schedule">
+              Schedule Overview
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/schedule/create-lesson">
+              Create a Lesson
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/schedule/manage-lesson">
+              Edit or Cancel a Lesson
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/schedule/book-for-students">
+              Book for Students
+            </router-link>
           </nav>
         </div>
       </aside>

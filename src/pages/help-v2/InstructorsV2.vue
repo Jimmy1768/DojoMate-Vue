@@ -53,6 +53,9 @@
         <router-link class="btn btn--ghost" to="/help-v2/business">
           Back to Business Overview
         </router-link>
+        <router-link class="btn" to="/help-v2/business/staff-access">
+          Go to Staff Access
+        </router-link>
       </div>
     </section>
   </section>

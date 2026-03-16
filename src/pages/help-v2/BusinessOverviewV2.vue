@@ -26,7 +26,9 @@
           <p class="muted">
             Use <strong>Staff Access</strong> to grant or update admin access.
           </p>
-          <span class="v2-coming-soon">Coming next in v2</span>
+          <router-link class="link" to="/help-v2/business/staff-access">
+            Open the Staff Access guide
+          </router-link>
         </article>
 
         <article class="v2-panel">
@@ -34,7 +36,9 @@
           <p class="muted">
             Use <strong>Analytics</strong> for compensation, reports, timesheets, and payroll-related tools.
           </p>
-          <span class="v2-coming-soon">Coming next in v2</span>
+          <router-link class="link" to="/help-v2/business/analytics">
+            Open the Analytics guide
+          </router-link>
         </article>
       </div>
     </section>
@@ -44,7 +48,7 @@
       <ul>
         <li>These Business pages support different jobs, so it helps to choose the page that matches what you are trying to do.</li>
         <li>If you are setting up a new academy, start by deciding who teaches first.</li>
-        <li>If you are unsure where to begin, the Instructors guide is the best first step for team setup.</li>
+        <li>If you are unsure where to begin, the Instructors guide is the best first step for team setup, followed by Staff Access and then Analytics.</li>
       </ul>
     </section>
 
@@ -78,13 +82,6 @@
 
 .v2-panel h3 {
   margin-top: 0;
-}
-
-.v2-coming-soon {
-  display: inline-block;
-  margin-top: var(--space-2);
-  font-size: var(--fs-sm);
-  color: var(--color-fg-muted);
 }
 
 @media (max-width: 720px) {

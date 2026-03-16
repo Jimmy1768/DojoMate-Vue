@@ -9,6 +9,12 @@ import HelpWelcome from '../pages/HelpWelcome.vue'
 import HelpWelcomeV2 from '../pages/HelpWelcomeV2.vue'
 import BusinessOverviewV2 from '../pages/help-v2/BusinessOverviewV2.vue'
 import InstructorsV2 from '../pages/help-v2/InstructorsV2.vue'
+import StaffAccessV2 from '../pages/help-v2/StaffAccessV2.vue'
+import AnalyticsV2 from '../pages/help-v2/AnalyticsV2.vue'
+import ScheduleOverviewV2 from '../pages/help-v2/ScheduleOverviewV2.vue'
+import CreateLessonV2 from '../pages/help-v2/CreateLessonV2.vue'
+import ManageLessonV2 from '../pages/help-v2/ManageLessonV2.vue'
+import BookForStudentsV2 from '../pages/help-v2/BookForStudentsV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -184,7 +190,13 @@ const router = createRouter({
       children: [
         { path: '', component: HelpWelcomeV2 },
         { path: 'business', component: BusinessOverviewV2 },
-        { path: 'business/instructors', component: InstructorsV2 }
+        { path: 'business/instructors', component: InstructorsV2 },
+        { path: 'business/staff-access', component: StaffAccessV2 },
+        { path: 'business/analytics', component: AnalyticsV2 },
+        { path: 'schedule', component: ScheduleOverviewV2 },
+        { path: 'schedule/create-lesson', component: CreateLessonV2 },
+        { path: 'schedule/manage-lesson', component: ManageLessonV2 },
+        { path: 'schedule/book-for-students', component: BookForStudentsV2 }
       ]
     },
     {

@@ -30,6 +30,16 @@
             Open this guide
           </router-link>
         </article>
+
+        <article class="v2-home-card">
+          <h3>Create and manage lessons</h3>
+          <p class="muted">
+            Build your scheduling workflow with the new Schedule guides.
+          </p>
+          <router-link class="link" to="/help-v2/schedule">
+            Open Schedule Overview
+          </router-link>
+        </article>
       </div>
     </section>
 
@@ -59,7 +69,7 @@
 <style scoped>
 .v2-home-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-3);
 }
 
