@@ -69,6 +69,16 @@
             <router-link class="v2-nav-link" to="/help-v2/members/reject-or-ban">
               Reject or Ban Members
             </router-link>
+            <h3 class="v2-nav-title">Tools</h3>
+            <router-link class="v2-nav-link" to="/help-v2/tools">
+              Tools Overview
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/tools/timetable">
+              Timetable
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/tools/pause-cards">
+              Pause Cards
+            </router-link>
           </nav>
         </div>
       </aside>

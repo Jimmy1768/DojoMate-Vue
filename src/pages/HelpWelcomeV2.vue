@@ -60,6 +60,16 @@
             Open Members Overview
           </router-link>
         </article>
+
+        <article class="v2-home-card">
+          <h3>Use paid tools</h3>
+          <p class="muted">
+            Add recurring scheduling and card-pausing tools after the core workflow is in place.
+          </p>
+          <router-link class="link" to="/help-v2/tools">
+            Open Tools Overview
+          </router-link>
+        </article>
       </div>
     </section>
 

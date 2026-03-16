@@ -23,6 +23,9 @@ import MembersOverviewV2 from '../pages/help-v2/MembersOverviewV2.vue'
 import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
 import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
 import RejectOrBanMembersV2 from '../pages/help-v2/RejectOrBanMembersV2.vue'
+import ToolsOverviewV2 from '../pages/help-v2/ToolsOverviewV2.vue'
+import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
+import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -212,7 +215,10 @@ const router = createRouter({
         { path: 'members', component: MembersOverviewV2 },
         { path: 'members/quick-enrollment', component: QuickEnrollmentV2 },
         { path: 'members/applications', component: ApplicationsV2 },
-        { path: 'members/reject-or-ban', component: RejectOrBanMembersV2 }
+        { path: 'members/reject-or-ban', component: RejectOrBanMembersV2 },
+        { path: 'tools', component: ToolsOverviewV2 },
+        { path: 'tools/timetable', component: TimetableV2 },
+        { path: 'tools/pause-cards', component: PauseCardsV2 }
       ]
     },
     {
