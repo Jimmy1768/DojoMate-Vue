@@ -8,43 +8,48 @@ import V2Icon from '../components/V2Icon.vue'
       <span class="badge">Preview</span>
       <h1>Help Guide v2</h1>
       <p class="muted">
-        This version is being rebuilt as a task-first guide for owners and admins.
+        This version is being rebuilt around the person using DojoMate, not just the screen they happen to be on.
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with a real task</h2>
+      <h2>Start with who you are</h2>
       <div class="v2-home-grid">
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="business" :size="18" />Run the business side of your academy</h3>
+          <h3 class="v2-home-title"><V2Icon name="business" :size="18" />I run the academy</h3>
           <p class="muted">
-            Understand the difference between Instructors, Staff Access, and Analytics.
+            Start here if you own the academy and need setup, team, cards, schedule, or tools guidance.
           </p>
-          <router-link class="link" to="/help-v2/business">
-            Open Business Overview
+          <router-link class="link" to="/help-v2/owner">
+            Open the owner path
           </router-link>
         </article>
 
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="instructors" :size="18" />Choose who can teach</h3>
+          <h3 class="v2-home-title"><V2Icon name="access" :size="18" />I help manage the academy</h3>
           <p class="muted">
-            Start your team setup with the Instructors guide.
+            Start here if you are staff helping with lessons, members, cards, or daily academy operations.
           </p>
-          <router-link class="link" to="/help-v2/business/instructors">
-            Open this guide
+          <router-link class="link" to="/help-v2/admin">
+            Open the admin path
           </router-link>
         </article>
 
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="schedule" :size="18" />Create and manage lessons</h3>
+          <h3 class="v2-home-title"><V2Icon name="members" :size="18" />I train at an academy</h3>
           <p class="muted">
-            Build your scheduling workflow with the new Schedule guides.
+            Start here if you are a student, parent, or academy member looking for account, booking, or membership help.
           </p>
-          <router-link class="link" to="/help-v2/schedule">
-            Open Schedule Overview
+          <router-link class="link" to="/help-v2/student">
+            Open the student path
           </router-link>
         </article>
+      </div>
+    </section>
 
+    <section class="card stack tight">
+      <h2>Or jump straight into a job</h2>
+      <div class="v2-home-grid">
         <article class="v2-home-card">
           <h3 class="v2-home-title"><V2Icon name="cards" :size="18" />Set up membership cards</h3>
           <p class="muted">
@@ -80,11 +85,11 @@ import V2Icon from '../components/V2Icon.vue'
     <section class="card stack tight">
       <h2>How v2 is different</h2>
       <p class="muted">
-        v2 is organized around jobs people are trying to finish, not around long screen-by-screen explanations. The goal is to help users decide what to do next, faster.
+        v2 is organized around people and the jobs they are trying to finish, not around long screen-by-screen explanations. The goal is to help users decide what to do next, faster.
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v1">Open Help v1</router-link>
-        <router-link class="btn" to="/help-v2/getting-started-owner">Start Here</router-link>
+        <router-link class="btn" to="/help-v2/owner">Start Here</router-link>
       </div>
     </section>
 

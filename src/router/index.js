@@ -7,6 +7,14 @@ import HelpLayout from '../components/HelpLayout.vue'
 import HelpLayoutV2 from '../components/HelpLayoutV2.vue'
 import HelpWelcome from '../pages/HelpWelcome.vue'
 import HelpWelcomeV2 from '../pages/HelpWelcomeV2.vue'
+import OwnerHomeV2 from '../pages/help-v2/OwnerHomeV2.vue'
+import AdminHomeV2 from '../pages/help-v2/AdminHomeV2.vue'
+import StudentHomeV2 from '../pages/help-v2/StudentHomeV2.vue'
+import JoinAcademyV2 from '../pages/help-v2/JoinAcademyV2.vue'
+import MembershipsV2 from '../pages/help-v2/MembershipsV2.vue'
+import BookingStudentV2 from '../pages/help-v2/BookingStudentV2.vue'
+import SystemAlertsV2 from '../pages/help-v2/SystemAlertsV2.vue'
+import AttendanceRecordsStudentV2 from '../pages/help-v2/AttendanceRecordsStudentV2.vue'
 import BusinessOverviewV2 from '../pages/help-v2/BusinessOverviewV2.vue'
 import BusinessComparisonV2 from '../pages/help-v2/BusinessComparisonV2.vue'
 import InstructorsV2 from '../pages/help-v2/InstructorsV2.vue'
@@ -20,6 +28,10 @@ import CardsOverviewV2 from '../pages/help-v2/CardsOverviewV2.vue'
 import CardsBookingFlowV2 from '../pages/help-v2/CardsBookingFlowV2.vue'
 import CreateCardTemplateV2 from '../pages/help-v2/CreateCardTemplateV2.vue'
 import IssueCardsV2 from '../pages/help-v2/IssueCardsV2.vue'
+import EditCardTemplatesV2 from '../pages/help-v2/EditCardTemplatesV2.vue'
+import DeleteCardTemplatesV2 from '../pages/help-v2/DeleteCardTemplatesV2.vue'
+import DeleteCardsV2 from '../pages/help-v2/DeleteCardsV2.vue'
+import CardRecordsV2 from '../pages/help-v2/CardRecordsV2.vue'
 import MembersOverviewV2 from '../pages/help-v2/MembersOverviewV2.vue'
 import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
 import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
@@ -30,6 +42,10 @@ import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
 import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
 import GettingStartedOwnerV2 from '../pages/help-v2/GettingStartedOwnerV2.vue'
 import EnrollmentVsApplicationsV2 from '../pages/help-v2/EnrollmentVsApplicationsV2.vue'
+import CreateAcademyV2 from '../pages/help-v2/CreateAcademyV2.vue'
+import AcademyBasicsV2 from '../pages/help-v2/AcademyBasicsV2.vue'
+import AcademyQRV2 from '../pages/help-v2/AcademyQRV2.vue'
+import DeleteAcademyV2 from '../pages/help-v2/DeleteAcademyV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -204,7 +220,19 @@ const router = createRouter({
       component: HelpLayoutV2,
       children: [
         { path: '', component: HelpWelcomeV2 },
+        { path: 'owner', component: OwnerHomeV2 },
+        { path: 'admin', component: AdminHomeV2 },
+        { path: 'student', component: StudentHomeV2 },
+        { path: 'student/join-academy', component: JoinAcademyV2 },
+        { path: 'student/memberships', component: MembershipsV2 },
+        { path: 'student/booking', component: BookingStudentV2 },
+        { path: 'student/system-alerts', component: SystemAlertsV2 },
+        { path: 'student/attendance-records', component: AttendanceRecordsStudentV2 },
         { path: 'getting-started-owner', component: GettingStartedOwnerV2 },
+        { path: 'business/create-academy', component: CreateAcademyV2 },
+        { path: 'business/academy-basics', component: AcademyBasicsV2 },
+        { path: 'business/academy-qr', component: AcademyQRV2 },
+        { path: 'business/delete-academy', component: DeleteAcademyV2 },
         { path: 'business', component: BusinessOverviewV2 },
         { path: 'business/compare-pages', component: BusinessComparisonV2 },
         { path: 'business/instructors', component: InstructorsV2 },
@@ -218,6 +246,10 @@ const router = createRouter({
         { path: 'cards/how-booking-works', component: CardsBookingFlowV2 },
         { path: 'cards/create-template', component: CreateCardTemplateV2 },
         { path: 'cards/issue-cards', component: IssueCardsV2 },
+        { path: 'cards/edit-templates', component: EditCardTemplatesV2 },
+        { path: 'cards/delete-templates', component: DeleteCardTemplatesV2 },
+        { path: 'cards/delete-cards', component: DeleteCardsV2 },
+        { path: 'cards/records', component: CardRecordsV2 },
         { path: 'members', component: MembersOverviewV2 },
         { path: 'members/quick-enrollment', component: QuickEnrollmentV2 },
         { path: 'members/quick-enrollment-vs-applications', component: EnrollmentVsApplicationsV2 },

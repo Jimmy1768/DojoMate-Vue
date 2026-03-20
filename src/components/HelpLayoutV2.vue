@@ -23,9 +23,53 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="home" :size="16" />
               Help v2 Home
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/owner">
+              <V2Icon name="business" :size="16" />
+              I Run the Academy
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/admin">
+              <V2Icon name="access" :size="16" />
+              I Help Manage
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student">
+              <V2Icon name="members" :size="16" />
+              I Train at an Academy
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student/join-academy">
+              <V2Icon name="members" :size="16" />
+              Join Academy
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student/memberships">
+              <V2Icon name="members" :size="16" />
+              Managing Memberships
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student/booking">
+              <V2Icon name="schedule" :size="16" />
+              Booking
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student/system-alerts">
+              <V2Icon name="members" :size="16" />
+              System Alerts
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student/attendance-records">
+              <V2Icon name="members" :size="16" />
+              Attendance Records
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/getting-started-owner">
               <V2Icon name="getting-started" :size="16" />
               Getting Started as an Owner
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/create-academy">
+              <V2Icon name="business" :size="16" />
+              Create Academy
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/academy-basics">
+              <V2Icon name="business" :size="16" />
+              Academy Basics
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/academy-qr">
+              <V2Icon name="business" :size="16" />
+              Academy QR
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business">
               <V2Icon name="business" :size="16" />
@@ -48,6 +92,10 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="analytics" :size="16" />
               Track Pay and Performance
               <span class="badge badge--premium">Paid</span>
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/delete-academy">
+              <V2Icon name="business" :size="16" />
+              Delete Academy
             </router-link>
             <h3 class="v2-nav-title">Schedule</h3>
             <router-link class="v2-nav-link" to="/help-v2/schedule">
@@ -82,6 +130,22 @@ import V2Icon from './V2Icon.vue'
             <router-link class="v2-nav-link" to="/help-v2/cards/issue-cards">
               <V2Icon name="cards" :size="16" />
               Issue Cards
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/edit-templates">
+              <V2Icon name="cards" :size="16" />
+              Edit Templates
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/delete-templates">
+              <V2Icon name="cards" :size="16" />
+              Delete Templates
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/delete-cards">
+              <V2Icon name="cards" :size="16" />
+              Delete Cards
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/cards/records">
+              <V2Icon name="cards" :size="16" />
+              Card Records
             </router-link>
             <h3 class="v2-nav-title">Members</h3>
             <router-link class="v2-nav-link" to="/help-v2/members">
