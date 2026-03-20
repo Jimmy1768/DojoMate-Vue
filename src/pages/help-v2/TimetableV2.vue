@@ -1,8 +1,15 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Tools</span>
-      <h1>Build a recurring weekly schedule</h1>
+      <div class="v2-meta-row">
+        <span class="badge">Tools</span>
+        <span class="badge badge--premium">Paid Tool</span>
+      </div>
+      <h1 class="v2-page-title"><V2Icon name="timetable" :size="24" />Build a recurring weekly schedule</h1>
       <p class="muted">
         Use <strong>Timetable</strong> when you want to create lesson templates once and publish them into the calendar over time.
       </p>
@@ -53,6 +60,19 @@
       <p class="muted">
         If a recurring lesson falls on a holiday, you usually do not need to rebuild the timetable. Simply choose not to publish that lesson.
       </p>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/tools/activate">
+          Activate Tools and Premium
+        </router-link>
+      </div>
     </section>
   </section>
 </template>
+
+<style scoped>
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+</style>

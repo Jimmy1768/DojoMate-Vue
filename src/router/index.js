@@ -8,6 +8,7 @@ import HelpLayoutV2 from '../components/HelpLayoutV2.vue'
 import HelpWelcome from '../pages/HelpWelcome.vue'
 import HelpWelcomeV2 from '../pages/HelpWelcomeV2.vue'
 import BusinessOverviewV2 from '../pages/help-v2/BusinessOverviewV2.vue'
+import BusinessComparisonV2 from '../pages/help-v2/BusinessComparisonV2.vue'
 import InstructorsV2 from '../pages/help-v2/InstructorsV2.vue'
 import StaffAccessV2 from '../pages/help-v2/StaffAccessV2.vue'
 import AnalyticsV2 from '../pages/help-v2/AnalyticsV2.vue'
@@ -24,6 +25,7 @@ import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
 import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
 import RejectOrBanMembersV2 from '../pages/help-v2/RejectOrBanMembersV2.vue'
 import ToolsOverviewV2 from '../pages/help-v2/ToolsOverviewV2.vue'
+import ActivateToolsV2 from '../pages/help-v2/ActivateToolsV2.vue'
 import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
 import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
 import GettingStartedOwnerV2 from '../pages/help-v2/GettingStartedOwnerV2.vue'
@@ -204,6 +206,7 @@ const router = createRouter({
         { path: '', component: HelpWelcomeV2 },
         { path: 'getting-started-owner', component: GettingStartedOwnerV2 },
         { path: 'business', component: BusinessOverviewV2 },
+        { path: 'business/compare-pages', component: BusinessComparisonV2 },
         { path: 'business/instructors', component: InstructorsV2 },
         { path: 'business/staff-access', component: StaffAccessV2 },
         { path: 'business/analytics', component: AnalyticsV2 },
@@ -221,6 +224,7 @@ const router = createRouter({
         { path: 'members/applications', component: ApplicationsV2 },
         { path: 'members/reject-or-ban', component: RejectOrBanMembersV2 },
         { path: 'tools', component: ToolsOverviewV2 },
+        { path: 'tools/activate', component: ActivateToolsV2 },
         { path: 'tools/timetable', component: TimetableV2 },
         { path: 'tools/pause-cards', component: PauseCardsV2 }
       ]

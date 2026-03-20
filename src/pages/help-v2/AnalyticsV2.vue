@@ -1,7 +1,10 @@
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Business</span>
+      <div class="v2-meta-row">
+        <span class="badge">Business</span>
+        <span class="badge badge--premium">Paid Tool</span>
+      </div>
       <h1>Track pay, time, and performance</h1>
       <p class="muted">
         Use <strong>Business → Analytics</strong> for compensation, reports, timesheets, and payroll-related tools.
@@ -47,6 +50,7 @@
         <li>Changing compensation in Analytics does not make someone an instructor.</li>
         <li>If someone should teach, add that role in <strong>Instructors</strong>.</li>
         <li>If someone should manage the academy, grant that access in <strong>Permissions</strong>.</li>
+        <li>Some analytics screens may be fully locked, while others can stay visible and show upgrade prompts instead.</li>
       </ul>
     </section>
 
@@ -55,19 +59,30 @@
       <p class="muted">
         Analytics is not the place to decide teaching roles or admin roles. It is the place to review business metrics and manage pay-related tools.
       </p>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/business/compare-pages">
+          Compare Business Pages
+        </router-link>
+      </div>
     </section>
 
     <section class="card stack tight">
       <h2>Next step</h2>
       <p class="muted">
-        If you are still setting up your team, go back and finish the teaching role and admin role steps first.
+        If you are still setting up your team, finish the teaching role and admin role steps first. If the team is already set, the next common job is creating lessons and letting booking do the daily work.
       </p>
       <div class="row">
+        <router-link class="btn btn--ghost" to="/help-v2/tools/activate">
+          Activate Tools and Premium
+        </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/business/instructors">
           Instructors
         </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/business/staff-access">
           Staff Access
+        </router-link>
+        <router-link class="btn" to="/help-v2/schedule">
+          Go to Schedule
         </router-link>
       </div>
     </section>

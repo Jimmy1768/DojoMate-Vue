@@ -13,10 +13,16 @@ import V2Icon from '../../components/V2Icon.vue'
     </div>
 
     <section class="card stack tight">
+      <div class="v2-meta-row">
+        <span class="badge badge--premium">Paid Tool</span>
+      </div>
       <h2>Start with the tool you need</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Build a recurring schedule</h3>
+          <div class="v2-meta-row">
+            <h3>Build a recurring schedule</h3>
+            <span class="badge badge--premium">Paid</span>
+          </div>
           <p class="muted">
             Use Timetable when you want repeating weekly lessons without recreating them one by one.
           </p>
@@ -26,7 +32,10 @@ import V2Icon from '../../components/V2Icon.vue'
         </article>
 
         <article class="v2-panel">
-          <h3>Pause active cards</h3>
+          <div class="v2-meta-row">
+            <h3>Pause active cards</h3>
+            <span class="badge badge--premium">Paid</span>
+          </div>
           <p class="muted">
             Use Pause Cards when you need to stop card time temporarily.
           </p>
@@ -41,9 +50,15 @@ import V2Icon from '../../components/V2Icon.vue'
       <h2>What to know</h2>
       <ul>
         <li>Paid tools extend the core workflows you already use in Business, Schedule, Cards, and Members.</li>
+        <li>Tools can be available individually, or through the Premium Package.</li>
         <li>Other roles can often use the tools after the academy owner enables them.</li>
         <li>It is usually easier to learn the base workflow first, then add paid tools on top.</li>
       </ul>
+      <div>
+        <router-link class="btn" to="/help-v2/tools/activate">
+          Activate Tools and Premium
+        </router-link>
+      </div>
     </section>
   </section>
 </template>
@@ -64,6 +79,7 @@ import V2Icon from '../../components/V2Icon.vue'
 
 .v2-panel h3 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .v2-page-title {

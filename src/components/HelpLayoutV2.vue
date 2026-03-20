@@ -31,6 +31,10 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="business" :size="16" />
               Business Overview
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/compare-pages">
+              <V2Icon name="business" :size="16" />
+              Compare Business Pages
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/instructors">
               <V2Icon name="instructors" :size="16" />
               Choose Who Can Teach
@@ -38,10 +42,12 @@ import V2Icon from './V2Icon.vue'
             <router-link class="v2-nav-link" to="/help-v2/business/staff-access">
               <V2Icon name="access" :size="16" />
               Choose Who Can Manage
+              <span class="badge badge--premium">Paid</span>
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/analytics">
               <V2Icon name="analytics" :size="16" />
               Track Pay and Performance
+              <span class="badge badge--premium">Paid</span>
             </router-link>
             <h3 class="v2-nav-title">Schedule</h3>
             <router-link class="v2-nav-link" to="/help-v2/schedule">
@@ -103,13 +109,19 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="tools" :size="16" />
               Tools Overview
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/tools/activate">
+              <V2Icon name="tools" :size="16" />
+              Activate Tools and Premium
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/timetable">
               <V2Icon name="timetable" :size="16" />
               Timetable
+              <span class="badge badge--premium">Paid</span>
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/pause-cards">
               <V2Icon name="pause-cards" :size="16" />
               Pause Cards
+              <span class="badge badge--premium">Paid</span>
             </router-link>
           </nav>
         </div>
@@ -158,6 +170,10 @@ import V2Icon from './V2Icon.vue'
   color: var(--color-fg);
   background: var(--color-bg);
   font-weight: var(--font-weight-semibold);
+}
+
+.v2-nav-link .badge {
+  margin-left: auto;
 }
 
 .v2-nav-link:hover {

@@ -1,8 +1,15 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Tools</span>
-      <h1>Pause active cards when needed</h1>
+      <div class="v2-meta-row">
+        <span class="badge">Tools</span>
+        <span class="badge badge--premium">Paid Tool</span>
+      </div>
+      <h1 class="v2-page-title"><V2Icon name="pause-cards" :size="24" />Pause active cards when needed</h1>
       <p class="muted">
         Use <strong>Pause Cards</strong> when you need to stop card time temporarily instead of letting the card keep expiring normally.
       </p>
@@ -38,6 +45,9 @@
         <router-link class="btn btn--ghost" to="/help-v2/tools">
           Back to Tools Overview
         </router-link>
+        <router-link class="btn btn--ghost" to="/help-v2/tools/activate">
+          Activate Tools and Premium
+        </router-link>
         <router-link class="btn" to="/help-v2/cards">
           Back to Cards
         </router-link>
@@ -45,3 +55,11 @@
     </section>
   </section>
 </template>
+
+<style scoped>
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+</style>

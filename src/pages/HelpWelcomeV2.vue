@@ -68,7 +68,7 @@ import V2Icon from '../components/V2Icon.vue'
         <article class="v2-home-card">
           <h3 class="v2-home-title"><V2Icon name="tools" :size="18" />Use paid tools</h3>
           <p class="muted">
-            Add recurring scheduling and card-pausing tools after the core workflow is in place.
+            Add recurring scheduling and card-pausing tools after the core workflow is in place, and use the Features page to activate Premium when needed.
           </p>
           <router-link class="link" to="/help-v2/tools">
             Open Tools Overview

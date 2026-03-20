@@ -1,7 +1,10 @@
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Business</span>
+      <div class="v2-meta-row">
+        <span class="badge">Business</span>
+        <span class="badge badge--premium">Paid Tool</span>
+      </div>
       <h1>Choose who can manage the academy</h1>
       <p class="muted">
         Use <strong>Business → Permissions</strong> to grant or update admin access for your team.
@@ -34,6 +37,7 @@
         <li>The two badges are <strong>Member</strong> and <strong>Admin</strong>.</li>
         <li>Permissions controls admin access. It does not decide who can teach.</li>
         <li>The current access areas are Schedule, Members, Cards, and Timetable.</li>
+        <li>This feature is entitlement-gated. If the tool is inactive, delegated staff permissions will not take effect.</li>
       </ul>
     </section>
 
@@ -42,6 +46,11 @@
       <p class="muted">
         Giving someone teaching responsibility and giving someone admin access are separate setup steps. Use <strong>Instructors</strong> for teaching roles and <strong>Permissions</strong> for admin roles.
       </p>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/business/compare-pages">
+          Compare Business Pages
+        </router-link>
+      </div>
     </section>
 
     <section class="card stack tight">
@@ -59,6 +68,12 @@
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/business/instructors">
           Back to Instructors
+        </router-link>
+        <router-link class="btn btn--ghost" to="/help-v2/tools/activate">
+          Activate Tools and Premium
+        </router-link>
+        <router-link class="btn btn--ghost" to="/help-v2/business/compare-pages">
+          Compare Pages
         </router-link>
         <router-link class="btn" to="/help-v2/business/analytics">
           Go to Analytics
