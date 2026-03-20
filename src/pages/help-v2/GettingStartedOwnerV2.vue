@@ -38,6 +38,9 @@ import V2Icon from '../../components/V2Icon.vue'
     <section class="card stack tight">
       <h2>Start here if you are not sure</h2>
       <div class="row">
+        <router-link class="btn btn--ghost" to="/help-v2/business/create-academy">
+          Create Academy
+        </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/members">
           Bring in Members
         </router-link>

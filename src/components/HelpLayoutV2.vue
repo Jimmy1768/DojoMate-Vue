@@ -55,6 +55,22 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="members" :size="16" />
               Attendance Records
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/account/sign-in">
+              <V2Icon name="members" :size="16" />
+              Sign In
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/account/create-account">
+              <V2Icon name="members" :size="16" />
+              Create Account
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/account/reset-password">
+              <V2Icon name="members" :size="16" />
+              Reset Password
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/account/troubleshooting">
+              <V2Icon name="members" :size="16" />
+              Account Troubleshooting
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/getting-started-owner">
               <V2Icon name="getting-started" :size="16" />
               Getting Started as an Owner

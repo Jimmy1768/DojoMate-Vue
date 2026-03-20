@@ -10,6 +10,10 @@ import HelpWelcomeV2 from '../pages/HelpWelcomeV2.vue'
 import OwnerHomeV2 from '../pages/help-v2/OwnerHomeV2.vue'
 import AdminHomeV2 from '../pages/help-v2/AdminHomeV2.vue'
 import StudentHomeV2 from '../pages/help-v2/StudentHomeV2.vue'
+import SignInV2 from '../pages/help-v2/SignInV2.vue'
+import CreateAccountV2 from '../pages/help-v2/CreateAccountV2.vue'
+import ResetPasswordV2 from '../pages/help-v2/ResetPasswordV2.vue'
+import TroubleshootingV2 from '../pages/help-v2/TroubleshootingV2.vue'
 import JoinAcademyV2 from '../pages/help-v2/JoinAcademyV2.vue'
 import MembershipsV2 from '../pages/help-v2/MembershipsV2.vue'
 import BookingStudentV2 from '../pages/help-v2/BookingStudentV2.vue'
@@ -223,6 +227,10 @@ const router = createRouter({
         { path: 'owner', component: OwnerHomeV2 },
         { path: 'admin', component: AdminHomeV2 },
         { path: 'student', component: StudentHomeV2 },
+        { path: 'account/sign-in', component: SignInV2 },
+        { path: 'account/create-account', component: CreateAccountV2 },
+        { path: 'account/reset-password', component: ResetPasswordV2 },
+        { path: 'account/troubleshooting', component: TroubleshootingV2 },
         { path: 'student/join-academy', component: JoinAcademyV2 },
         { path: 'student/memberships', component: MembershipsV2 },
         { path: 'student/booking', component: BookingStudentV2 },

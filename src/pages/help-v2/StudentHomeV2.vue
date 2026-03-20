@@ -46,14 +46,17 @@ import V2SupportCallout from '../../components/V2SupportCallout.vue'
         <article class="v2-panel">
           <h3>Account help</h3>
           <div class="stack tight">
-            <router-link class="link" to="/help-v1/account/sign-in">
+            <router-link class="link" to="/help-v2/account/sign-in">
               Sign In
             </router-link>
-            <router-link class="link" to="/help-v1/account/reset-password">
+            <router-link class="link" to="/help-v2/account/create-account">
+              Create Account
+            </router-link>
+            <router-link class="link" to="/help-v2/account/reset-password">
               Reset Password
             </router-link>
-            <router-link class="link" to="/help-v1/settings/change-password">
-              Change Password
+            <router-link class="link" to="/help-v2/account/troubleshooting">
+              Account Troubleshooting
             </router-link>
           </div>
         </article>
@@ -63,7 +66,7 @@ import V2SupportCallout from '../../components/V2SupportCallout.vue'
     <section class="card stack tight">
       <h2>Still need something else?</h2>
       <p class="muted">
-        Some account and settings topics still live in Help v1 while the student path is being rebuilt.
+        Settings topics still live in Help v1 while the account and student path are being rebuilt.
       </p>
       <div>
         <router-link class="btn btn--ghost" to="/help-v1">
