@@ -1,8 +1,12 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Schedule</span>
-      <h1>Plan, run, and manage lessons</h1>
+      <h1 class="v2-page-title"><V2Icon name="schedule" :size="24" />Plan, run, and manage lessons</h1>
       <p class="muted">
         Use the Schedule area to create lessons, adjust lesson details, and help students book when needed.
       </p>
@@ -82,6 +86,12 @@
 
 .v2-panel h3 {
   margin-top: 0;
+}
+
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {

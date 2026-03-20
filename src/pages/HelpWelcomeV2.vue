@@ -1,3 +1,7 @@
+<script setup>
+import V2Icon from '../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
@@ -12,7 +16,7 @@
       <h2>Start with a real task</h2>
       <div class="v2-home-grid">
         <article class="v2-home-card">
-          <h3>Run the business side of your academy</h3>
+          <h3 class="v2-home-title"><V2Icon name="business" :size="18" />Run the business side of your academy</h3>
           <p class="muted">
             Understand the difference between Instructors, Staff Access, and Analytics.
           </p>
@@ -22,7 +26,7 @@
         </article>
 
         <article class="v2-home-card">
-          <h3>Choose who can teach</h3>
+          <h3 class="v2-home-title"><V2Icon name="instructors" :size="18" />Choose who can teach</h3>
           <p class="muted">
             Start your team setup with the Instructors guide.
           </p>
@@ -32,7 +36,7 @@
         </article>
 
         <article class="v2-home-card">
-          <h3>Create and manage lessons</h3>
+          <h3 class="v2-home-title"><V2Icon name="schedule" :size="18" />Create and manage lessons</h3>
           <p class="muted">
             Build your scheduling workflow with the new Schedule guides.
           </p>
@@ -42,7 +46,7 @@
         </article>
 
         <article class="v2-home-card">
-          <h3>Set up membership cards</h3>
+          <h3 class="v2-home-title"><V2Icon name="cards" :size="18" />Set up membership cards</h3>
           <p class="muted">
             Learn how cards support booking, then create templates and issue cards.
           </p>
@@ -52,7 +56,7 @@
         </article>
 
         <article class="v2-home-card">
-          <h3>Add and manage members</h3>
+          <h3 class="v2-home-title"><V2Icon name="members" :size="18" />Add and manage members</h3>
           <p class="muted">
             Bring people into the academy, review applications, and manage status changes.
           </p>
@@ -62,7 +66,7 @@
         </article>
 
         <article class="v2-home-card">
-          <h3>Use paid tools</h3>
+          <h3 class="v2-home-title"><V2Icon name="tools" :size="18" />Use paid tools</h3>
           <p class="muted">
             Add recurring scheduling and card-pausing tools after the core workflow is in place.
           </p>
@@ -80,7 +84,7 @@
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v1">Open Help v1</router-link>
-        <router-link class="btn" to="/help-v2/business">Start Business v2</router-link>
+        <router-link class="btn" to="/help-v2/getting-started-owner">Start Here</router-link>
       </div>
     </section>
 
@@ -112,6 +116,12 @@
 
 .v2-home-card h3 {
   margin-top: 0;
+}
+
+.v2-home-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 720px) {

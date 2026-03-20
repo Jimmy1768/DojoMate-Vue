@@ -1,3 +1,7 @@
+<script setup>
+import V2Icon from './V2Icon.vue'
+</script>
+
 <template>
   <div class="help-wrap">
     <div class="split fill">
@@ -16,67 +20,95 @@
           <nav class="card stack tight" aria-label="Help v2 navigation">
             <h3 class="v2-nav-title">Start Here</h3>
             <router-link class="v2-nav-link" to="/help-v2">
+              <V2Icon name="home" :size="16" />
               Help v2 Home
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/getting-started-owner">
+              <V2Icon name="getting-started" :size="16" />
+              Getting Started as an Owner
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business">
+              <V2Icon name="business" :size="16" />
               Business Overview
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/instructors">
+              <V2Icon name="instructors" :size="16" />
               Choose Who Can Teach
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/staff-access">
+              <V2Icon name="access" :size="16" />
               Choose Who Can Manage
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/analytics">
+              <V2Icon name="analytics" :size="16" />
               Track Pay and Performance
             </router-link>
             <h3 class="v2-nav-title">Schedule</h3>
             <router-link class="v2-nav-link" to="/help-v2/schedule">
+              <V2Icon name="schedule" :size="16" />
               Schedule Overview
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/schedule/create-lesson">
+              <V2Icon name="schedule" :size="16" />
               Create a Lesson
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/schedule/manage-lesson">
+              <V2Icon name="schedule" :size="16" />
               Edit or Cancel a Lesson
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/schedule/book-for-students">
+              <V2Icon name="schedule" :size="16" />
               Book for Students
             </router-link>
             <h3 class="v2-nav-title">Cards</h3>
             <router-link class="v2-nav-link" to="/help-v2/cards">
+              <V2Icon name="cards" :size="16" />
               Cards Overview
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/how-booking-works">
+              <V2Icon name="cards" :size="16" />
               How Cards Work
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/create-template">
+              <V2Icon name="cards" :size="16" />
               Create a Card Template
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/issue-cards">
+              <V2Icon name="cards" :size="16" />
               Issue Cards
             </router-link>
             <h3 class="v2-nav-title">Members</h3>
             <router-link class="v2-nav-link" to="/help-v2/members">
+              <V2Icon name="members" :size="16" />
               Members Overview
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/quick-enrollment">
+              <V2Icon name="members" :size="16" />
               Add a Member Directly
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/members/quick-enrollment-vs-applications">
+              <V2Icon name="members" :size="16" />
+              Enrollment vs Applications
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/applications">
+              <V2Icon name="members" :size="16" />
               Review Applications
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/reject-or-ban">
+              <V2Icon name="members" :size="16" />
               Reject or Ban Members
             </router-link>
             <h3 class="v2-nav-title">Tools</h3>
             <router-link class="v2-nav-link" to="/help-v2/tools">
+              <V2Icon name="tools" :size="16" />
               Tools Overview
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/timetable">
+              <V2Icon name="timetable" :size="16" />
               Timetable
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/pause-cards">
+              <V2Icon name="pause-cards" :size="16" />
               Pause Cards
             </router-link>
           </nav>
@@ -117,7 +149,9 @@
 }
 
 .v2-nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 10px 12px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);

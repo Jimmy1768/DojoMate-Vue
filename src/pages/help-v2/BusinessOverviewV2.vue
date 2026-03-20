@@ -1,8 +1,12 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Business</span>
-      <h1>Run the business side of your academy</h1>
+      <h1 class="v2-page-title"><V2Icon name="business" :size="24" />Run the business side of your academy</h1>
       <p class="muted">
         The Business area helps you set up your team, decide who can manage the academy, and review pay and performance tools.
       </p>
@@ -82,6 +86,12 @@
 
 .v2-panel h3 {
   margin-top: 0;
+}
+
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {

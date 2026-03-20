@@ -26,6 +26,8 @@ import RejectOrBanMembersV2 from '../pages/help-v2/RejectOrBanMembersV2.vue'
 import ToolsOverviewV2 from '../pages/help-v2/ToolsOverviewV2.vue'
 import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
 import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
+import GettingStartedOwnerV2 from '../pages/help-v2/GettingStartedOwnerV2.vue'
+import EnrollmentVsApplicationsV2 from '../pages/help-v2/EnrollmentVsApplicationsV2.vue'
 
 // Account pages
 import SignIn from '../pages/account/SignIn.vue'
@@ -200,6 +202,7 @@ const router = createRouter({
       component: HelpLayoutV2,
       children: [
         { path: '', component: HelpWelcomeV2 },
+        { path: 'getting-started-owner', component: GettingStartedOwnerV2 },
         { path: 'business', component: BusinessOverviewV2 },
         { path: 'business/instructors', component: InstructorsV2 },
         { path: 'business/staff-access', component: StaffAccessV2 },
@@ -214,6 +217,7 @@ const router = createRouter({
         { path: 'cards/issue-cards', component: IssueCardsV2 },
         { path: 'members', component: MembersOverviewV2 },
         { path: 'members/quick-enrollment', component: QuickEnrollmentV2 },
+        { path: 'members/quick-enrollment-vs-applications', component: EnrollmentVsApplicationsV2 },
         { path: 'members/applications', component: ApplicationsV2 },
         { path: 'members/reject-or-ban', component: RejectOrBanMembersV2 },
         { path: 'tools', component: ToolsOverviewV2 },

@@ -1,8 +1,12 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Tools</span>
-      <h1>Use paid tools to extend your academy workflow</h1>
+      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />Use paid tools to extend your academy workflow</h1>
       <p class="muted">
         Paid tools add extra systems on top of the core academy workflow, such as recurring schedules, card pausing, staff access, and analytics.
       </p>
@@ -60,6 +64,12 @@
 
 .v2-panel h3 {
   margin-top: 0;
+}
+
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {

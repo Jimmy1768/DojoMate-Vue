@@ -1,8 +1,12 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Cards</span>
-      <h1>Use cards to support booking</h1>
+      <h1 class="v2-page-title"><V2Icon name="cards" :size="24" />Use cards to support booking</h1>
       <p class="muted">
         The main card workflow is simple: create the card, issue it, then let booking deduct lessons automatically.
       </p>
@@ -71,6 +75,12 @@
 
 .v2-panel h3 {
   margin-top: 0;
+}
+
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {

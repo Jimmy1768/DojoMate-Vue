@@ -54,6 +54,15 @@
     </section>
 
     <section class="card stack tight">
+      <h2>Need help choosing this flow?</h2>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/members/quick-enrollment-vs-applications">
+          Compare Quick Enrollment and Applications
+        </router-link>
+      </div>
+    </section>
+
+    <section class="card stack tight">
       <h2>Next step</h2>
       <p class="muted">
         After the account is in the academy, the next common job is issuing a membership card.

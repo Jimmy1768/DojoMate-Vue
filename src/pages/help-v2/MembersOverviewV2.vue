@@ -1,8 +1,12 @@
+<script setup>
+import V2Icon from '../../components/V2Icon.vue'
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <span class="badge">Members</span>
-      <h1>Bring people into your academy and manage membership status</h1>
+      <h1 class="v2-page-title"><V2Icon name="members" :size="24" />Bring people into your academy and manage membership status</h1>
       <p class="muted">
         Use the Members area for the people side of the system: adding members, reviewing applications, and managing accepted, rejected, or banned status.
       </p>
@@ -52,6 +56,18 @@
         <li>Child accounts can require extra review steps, especially when a parent account is involved.</li>
       </ul>
     </section>
+
+    <section class="card stack tight">
+      <h2>Not sure which path to choose?</h2>
+      <p class="muted">
+        If you are deciding between creating the account yourself or letting the member apply on their own, use the comparison page first.
+      </p>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/members/quick-enrollment-vs-applications">
+          Compare the two member flows
+        </router-link>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -71,6 +87,12 @@
 
 .v2-panel h3 {
   margin-top: 0;
+}
+
+.v2-page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {

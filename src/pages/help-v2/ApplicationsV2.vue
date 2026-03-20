@@ -27,6 +27,18 @@
     </section>
 
     <section class="card stack tight">
+      <h2>Why use applications?</h2>
+      <p class="muted">
+        This is the better long-term path when you want members to create their own accounts and add your academy themselves.
+      </p>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/members/quick-enrollment-vs-applications">
+          Compare Applications and Quick Enrollment
+        </router-link>
+      </div>
+    </section>
+
+    <section class="card stack tight">
       <h2>Common mistake</h2>
       <p class="muted">
         If child accounts do not appear right away, either they were not created properly yet or the list is stale. Ask the parent to finish child setup, or refresh the app view.
