@@ -14,6 +14,14 @@ import SignInV2 from '../pages/help-v2/SignInV2.vue'
 import CreateAccountV2 from '../pages/help-v2/CreateAccountV2.vue'
 import ResetPasswordV2 from '../pages/help-v2/ResetPasswordV2.vue'
 import TroubleshootingV2 from '../pages/help-v2/TroubleshootingV2.vue'
+import ChangePasswordV2 from '../pages/help-v2/ChangePasswordV2.vue'
+import LanguageV2 from '../pages/help-v2/LanguageV2.vue'
+import CurrencyV2 from '../pages/help-v2/CurrencyV2.vue'
+import PrivacySettingsV2 from '../pages/help-v2/PrivacySettingsV2.vue'
+import DeleteAccountSettingsV2 from '../pages/help-v2/DeleteAccountSettingsV2.vue'
+import LogoutV2 from '../pages/help-v2/LogoutV2.vue'
+import EditProfileV2 from '../pages/help-v2/EditProfileV2.vue'
+import ChildAccountsV2 from '../pages/help-v2/ChildAccountsV2.vue'
 import JoinAcademyV2 from '../pages/help-v2/JoinAcademyV2.vue'
 import MembershipsV2 from '../pages/help-v2/MembershipsV2.vue'
 import BookingStudentV2 from '../pages/help-v2/BookingStudentV2.vue'
@@ -46,6 +54,12 @@ import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
 import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
 import GettingStartedOwnerV2 from '../pages/help-v2/GettingStartedOwnerV2.vue'
 import EnrollmentVsApplicationsV2 from '../pages/help-v2/EnrollmentVsApplicationsV2.vue'
+import PortalOverviewV2 from '../pages/help-v2/PortalOverviewV2.vue'
+import PortalRegisterV2 from '../pages/help-v2/PortalRegisterV2.vue'
+import PortalMembersV2 from '../pages/help-v2/PortalMembersV2.vue'
+import PortalRanksV2 from '../pages/help-v2/PortalRanksV2.vue'
+import PortalCardsV2 from '../pages/help-v2/PortalCardsV2.vue'
+import PortalReportsV2 from '../pages/help-v2/PortalReportsV2.vue'
 import CreateAcademyV2 from '../pages/help-v2/CreateAcademyV2.vue'
 import AcademyBasicsV2 from '../pages/help-v2/AcademyBasicsV2.vue'
 import AcademyQRV2 from '../pages/help-v2/AcademyQRV2.vue'
@@ -231,6 +245,14 @@ const router = createRouter({
         { path: 'account/create-account', component: CreateAccountV2 },
         { path: 'account/reset-password', component: ResetPasswordV2 },
         { path: 'account/troubleshooting', component: TroubleshootingV2 },
+        { path: 'settings/change-password', component: ChangePasswordV2 },
+        { path: 'settings/language', component: LanguageV2 },
+        { path: 'settings/currency', component: CurrencyV2 },
+        { path: 'settings/privacy-settings', component: PrivacySettingsV2 },
+        { path: 'settings/delete-account', component: DeleteAccountSettingsV2 },
+        { path: 'settings/logout', component: LogoutV2 },
+        { path: 'profile/edit-profile', component: EditProfileV2 },
+        { path: 'profile/child-accounts', component: ChildAccountsV2 },
         { path: 'student/join-academy', component: JoinAcademyV2 },
         { path: 'student/memberships', component: MembershipsV2 },
         { path: 'student/booking', component: BookingStudentV2 },
@@ -246,6 +268,12 @@ const router = createRouter({
         { path: 'business/instructors', component: InstructorsV2 },
         { path: 'business/staff-access', component: StaffAccessV2 },
         { path: 'business/analytics', component: AnalyticsV2 },
+        { path: 'portal', component: PortalOverviewV2 },
+        { path: 'portal/register', component: PortalRegisterV2 },
+        { path: 'portal/members', component: PortalMembersV2 },
+        { path: 'portal/ranks', component: PortalRanksV2 },
+        { path: 'portal/cards', component: PortalCardsV2 },
+        { path: 'portal/reports', component: PortalReportsV2 },
         { path: 'schedule', component: ScheduleOverviewV2 },
         { path: 'schedule/create-lesson', component: CreateLessonV2 },
         { path: 'schedule/manage-lesson', component: ManageLessonV2 },

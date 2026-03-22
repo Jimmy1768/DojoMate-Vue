@@ -109,6 +109,18 @@ import V2SupportCallout from '../../components/V2SupportCallout.vue'
     </section>
 
     <section class="card stack tight">
+      <h2>Portal workflows</h2>
+      <p class="muted">
+        Some workflows happen in the Affiliate Portal inside Source Combatives AFL rather than inside the day-to-day DojoMate app screens.
+      </p>
+      <div class="row">
+        <router-link class="btn btn--ghost" to="/help-v2/portal">
+          Open Affiliate Portal Guide
+        </router-link>
+      </div>
+    </section>
+
+    <section class="card stack tight">
       <h2>Paid features</h2>
       <p class="muted">
         Timetable, Pause Cards, Staff Access, and Analytics are entitlement-gated. Use the Features page guide if you need to activate tools or start Premium.

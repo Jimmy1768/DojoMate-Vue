@@ -35,6 +35,30 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="members" :size="16" />
               I Train at an Academy
             </router-link>
+
+            <h3 class="v2-nav-title">Owner Setup</h3>
+            <router-link class="v2-nav-link" to="/help-v2/getting-started-owner">
+              <V2Icon name="getting-started" :size="16" />
+              Getting Started as an Owner
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/create-academy">
+              <V2Icon name="business" :size="16" />
+              Create Academy
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/academy-basics">
+              <V2Icon name="business" :size="16" />
+              Academy Basics
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/academy-qr">
+              <V2Icon name="business" :size="16" />
+              Academy QR
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/business/delete-academy">
+              <V2Icon name="business" :size="16" />
+              Delete Academy
+            </router-link>
+
+            <h3 class="v2-nav-title">Student</h3>
             <router-link class="v2-nav-link" to="/help-v2/student/join-academy">
               <V2Icon name="members" :size="16" />
               Join Academy
@@ -55,6 +79,8 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="members" :size="16" />
               Attendance Records
             </router-link>
+
+            <h3 class="v2-nav-title">Account & Profile</h3>
             <router-link class="v2-nav-link" to="/help-v2/account/sign-in">
               <V2Icon name="members" :size="16" />
               Sign In
@@ -71,22 +97,40 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="members" :size="16" />
               Account Troubleshooting
             </router-link>
-            <router-link class="v2-nav-link" to="/help-v2/getting-started-owner">
-              <V2Icon name="getting-started" :size="16" />
-              Getting Started as an Owner
+            <router-link class="v2-nav-link" to="/help-v2/settings/change-password">
+              <V2Icon name="members" :size="16" />
+              Change Password
             </router-link>
-            <router-link class="v2-nav-link" to="/help-v2/business/create-academy">
-              <V2Icon name="business" :size="16" />
-              Create Academy
+            <router-link class="v2-nav-link" to="/help-v2/settings/language">
+              <V2Icon name="members" :size="16" />
+              Language
             </router-link>
-            <router-link class="v2-nav-link" to="/help-v2/business/academy-basics">
-              <V2Icon name="business" :size="16" />
-              Academy Basics
+            <router-link class="v2-nav-link" to="/help-v2/settings/currency">
+              <V2Icon name="members" :size="16" />
+              Currency
             </router-link>
-            <router-link class="v2-nav-link" to="/help-v2/business/academy-qr">
-              <V2Icon name="business" :size="16" />
-              Academy QR
+            <router-link class="v2-nav-link" to="/help-v2/settings/privacy-settings">
+              <V2Icon name="members" :size="16" />
+              Privacy
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/settings/delete-account">
+              <V2Icon name="members" :size="16" />
+              Delete Account
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/settings/logout">
+              <V2Icon name="members" :size="16" />
+              Logout
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/profile/edit-profile">
+              <V2Icon name="members" :size="16" />
+              Edit Profile
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/profile/child-accounts">
+              <V2Icon name="members" :size="16" />
+              Child Accounts
+            </router-link>
+
+            <h3 class="v2-nav-title">Business</h3>
             <router-link class="v2-nav-link" to="/help-v2/business">
               <V2Icon name="business" :size="16" />
               Business Overview
@@ -109,9 +153,31 @@ import V2Icon from './V2Icon.vue'
               Track Pay and Performance
               <span class="badge badge--premium">Paid</span>
             </router-link>
-            <router-link class="v2-nav-link" to="/help-v2/business/delete-academy">
-              <V2Icon name="business" :size="16" />
-              Delete Academy
+
+            <h3 class="v2-nav-title">Portal</h3>
+            <router-link class="v2-nav-link" to="/help-v2/portal">
+              <V2Icon name="tools" :size="16" />
+              Affiliate Portal
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/register">
+              <V2Icon name="tools" :size="16" />
+              Portal Register
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/members">
+              <V2Icon name="tools" :size="16" />
+              Portal Members
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/ranks">
+              <V2Icon name="tools" :size="16" />
+              Portal Ranks
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/cards">
+              <V2Icon name="tools" :size="16" />
+              Portal Cards
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/reports">
+              <V2Icon name="tools" :size="16" />
+              Portal Reports
             </router-link>
             <h3 class="v2-nav-title">Schedule</h3>
             <router-link class="v2-nav-link" to="/help-v2/schedule">
