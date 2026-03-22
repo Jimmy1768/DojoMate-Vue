@@ -20,17 +20,259 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "effective_date": "Effective Date: June 26, 2025",
-    "intro": "DojoMate is a mobile productivity application developed and owned by SourceGrid Labs (sourcegridlabs.com). We value your privacy and are committed to protecting any information you may share with us.",
-    "info_collect_title": "Information We Collect",
-    "info_collect_text": "DojoMate does not collect, store, or transmit any personally identifiable information. The app operates fully on your device and only accesses data necessary for its core functionality (e.g., check-ins, schedules, academy details).",
-    "third_party_title": "Third-Party Services",
-    "third_party_text": "We do not use third-party analytics, advertising platforms, or tracking tools. The app does not communicate with any external servers controlled by SourceGrid Labs.",
-    "children_title": "Children's Privacy",
-    "children_text": "DojoMate does not target children under 13 and does not knowingly collect data from minors.",
-    "changes_title": "Changes to This Policy",
-    "changes_text": "We may update this privacy policy if our practices change. Any updates will be reflected on this page.",
-    "manage_prefs": "You can manage your preferences at any time by going to Settings → Privacy Settings in the app. From there, you may adjust options such as push notifications, email preferences, and marketing communications."
+    "effective_date": "Effective date: [to be filled at publish time]",
+    "intro": "This Privacy Policy explains how Source Combatives and its related products, including DojoMate, AFL, Education, and related web and mobile services, collect, use, retain, and share information.",
+    "scope": {
+      "title": "1. Scope",
+      "intro": "This Privacy Policy applies to:",
+      "items": [
+        "account registration and login",
+        "academy operations and attendance tracking",
+        "subscriptions, payments, and related product access",
+        "Education learning activity",
+        "progression, achievements, and gamify features",
+        "websites, mobile apps, and related support or notification services"
+      ]
+    },
+    "collect": {
+      "title": "2. Information We Collect",
+      "intro": "We collect different types of information depending on how you use the platform.",
+      "account": {
+        "title": "Account and identity information",
+        "intro": "This may include:",
+        "items": [
+          "email address",
+          "password and account security information",
+          "account preferences",
+          "profile details you provide, such as your name and time zone"
+        ],
+        "extra_intro": "Some features may require additional information, such as:",
+        "extra_items": [
+          "birthdate",
+          "parent/dependent relationship information",
+          "government or national ID for tournament registration, when needed to match the registration to the correct person"
+        ],
+        "extra_note": "If you do not use tournament registration through DojoMate, you generally do not need to provide this."
+      },
+      "attendance": {
+        "title": "Attendance and academy operations data",
+        "intro": "We collect data needed to operate academy services, which may include:",
+        "items": [
+          "lesson bookings",
+          "attendance history",
+          "class date and time",
+          "academy affiliation",
+          "card or membership usage",
+          "instructor and assistant assignment data"
+        ]
+      },
+      "payment": {
+        "title": "Payment and subscription data",
+        "intro": "If you subscribe to paid products or services, we may collect or receive:",
+        "items": [
+          "subscription status",
+          "product access state",
+          "payment and billing records",
+          "transaction-related metadata"
+        ],
+        "note": "Payment processing may be handled by third-party providers. We do not describe third-party processor practices in full here, and you should also review the applicable processor terms and privacy materials."
+      },
+      "edu": {
+        "title": "Education learning data",
+        "intro": "If you use Education features, we may collect:",
+        "items": [
+          "watched progress",
+          "lesson completion status",
+          "homework submissions",
+          "homework scores and attempts",
+          "related learning activity history"
+        ]
+      },
+      "progression": {
+        "title": "Progression, XP, and gamify data",
+        "intro": "We may collect or derive progression, XP, achievement, and related activity data needed to operate these features, including:",
+        "items": [
+          "attendance-linked progression events",
+          "learning-linked progression events",
+          "XP, accomplishments, and related feature activity"
+        ],
+        "note": "For more detail about progression rules and feature behavior, see"
+      },
+      "device": {
+        "title": "Device, notification, and security data",
+        "intro": "We may collect:",
+        "items": [
+          "push notification device tokens",
+          "session and refresh-token data",
+          "password reset data",
+          "security and service logs needed to operate and protect the platform"
+        ]
+      }
+    },
+    "use": {
+      "title": "3. How We Use Information",
+      "intro": "We use information for the following purposes:",
+      "operate": {
+        "title": "To provide and operate the platform",
+        "intro": "This includes:",
+        "items": [
+          "creating and maintaining accounts",
+          "running academy tools and services",
+          "recording attendance and class history",
+          "enabling subscriptions and access controls",
+          "providing Education learning features",
+          "powering progression, achievements, and related feature behavior"
+        ]
+      },
+      "analytics": {
+        "title": "To maintain analytics and business reporting",
+        "intro": "We use operational records to:",
+        "items": [
+          "measure academy activity",
+          "calculate class-level financial and operational reports",
+          "understand product performance",
+          "improve service quality and reliability"
+        ],
+        "note": "Where possible, long-term analytics may rely on internal identifiers or pseudonymous records instead of human-readable names."
+      },
+      "communicate": {
+        "title": "To communicate with users",
+        "intro": "We may use information to:",
+        "items": [
+          "send transactional or operational notices",
+          "send product or support messages",
+          "send marketing communications where permitted and configured by the user"
+        ]
+      },
+      "personalize": {
+        "title": "To personalize product offers and recommendations",
+        "intro": "We may use account activity, such as attendance, subscriptions, Education activity, or progression-related behavior, to personalize recommendations or offers for courses, subscriptions, and related products.",
+        "items": [
+          "recommend courses",
+          "recommend subscriptions or upgrades",
+          "personalize product offers",
+          "inform marketing or promotional messaging"
+        ],
+        "note": "This behavior is separate from core platform operation. Child or dependent data is not used for personalized marketing."
+      }
+    },
+    "recommendations": {
+      "title": "4. Recommendations and Offers",
+      "intro": "We may use account activity data to support recommendations and offers related to our products and services.",
+      "body": "This may include activity such as:",
+      "items": [
+        "attendance patterns",
+        "Education lesson activity",
+        "homework completion behavior",
+        "progression or gamify activity",
+        "subscription history"
+      ],
+      "child_note": "Child or dependent data is not used for personalized marketing.",
+      "aggregate_note": "We may also use anonymous or aggregated analytics to understand overall product use and improve the platform."
+    },
+    "public_features": {
+      "title": "5. Public and Community Features",
+      "intro": "Some progression, achievement, or community features may involve public or limited public display. In general:",
+      "items": [
+        "public visibility should be treated separately from marketing personalization",
+        "disabling marketing personalization does not automatically remove progression history",
+        "public display settings may be controlled separately in product settings where available"
+      ],
+      "note": "For more detail about progression and visibility features, see"
+    },
+    "retention": {
+      "title": "6. How Long We Keep Information",
+      "intro": "We retain information for different periods based on the type of data and the reason it is needed.",
+      "active": {
+        "title": "Active account data",
+        "intro": "While an account remains active, we may keep:",
+        "items": [
+          "account identity data",
+          "attendance records",
+          "Education learning history",
+          "progression and gamify history",
+          "subscription and payment records",
+          "operational messaging and device data"
+        ]
+      },
+      "long_term": {
+        "title": "Long-term operational records",
+        "intro": "Some operational records may continue to be retained for:",
+        "items": [
+          "analytics",
+          "reporting",
+          "dispute handling",
+          "accounting or legal compliance"
+        ],
+        "note": "In some cases, the platform may retain internal identifiers or pseudonymous records instead of names. Display-name snapshots in some historical records may be removed or anonymized after a retention period."
+      },
+      "deleted": {
+        "title": "Deleted accounts",
+        "intro": "If an account is deleted, direct identity data may be deleted or scrubbed, while some operational records may remain in anonymized or pseudonymous form for analytics, reporting, accounting, dispute handling, or legal compliance.",
+        "note": "Final implementation details may vary by subsystem and applicable law."
+      }
+    },
+    "controls": {
+      "title": "7. User Choices and Controls",
+      "intro": "Depending on the product surface, users may be able to control:",
+      "items": [
+        "marketing personalization",
+        "system alerts by email",
+        "system alerts by push",
+        "marketing contact by email",
+        "marketing contact by push",
+        "public progression or community visibility",
+        "account deletion"
+      ],
+      "note": "These controls are not all the same. In particular:",
+      "notes": [
+        "turning off personalized marketing is not the same as deleting the account",
+        "turning off marketing does not turn off system alerts, and it does not automatically delete attendance or progression records",
+        "deleting the account may have broader consequences for profile and identity data"
+      ]
+    },
+    "child_data": {
+      "title": "8. Child and Dependent Data",
+      "intro": "Some features support parent, dependent, or child-linked accounts. We treat child or dependent data with additional care. In particular:",
+      "items": [
+        "child or dependent data is used for product operations, attendance, access, and related workflows",
+        "child or dependent data is not used for personalized marketing",
+        "parent or guardian relationships may be used to provide the service or communicate about dependent-linked activity"
+      ]
+    },
+    "sharing": {
+      "title": "9. Sharing and Disclosure",
+      "intro": "We may share information:",
+      "items": [
+        "with service providers that help us operate the platform",
+        "with payment processors and infrastructure providers",
+        "with academy operators or authorized personnel as needed to provide academy services",
+        "when required by law, regulation, legal process, or valid governmental request",
+        "to protect the rights, safety, security, or integrity of the platform or others"
+      ],
+      "note_1": "This list is not exhaustive.",
+      "note_2": "The published policy may be updated as integrations and legal requirements change."
+    },
+    "security": {
+      "title": "10. Security",
+      "intro": "We use reasonable administrative, technical, and organizational measures to protect information.",
+      "note": "No method of transmission or storage is perfectly secure, and we cannot guarantee absolute security."
+    },
+    "international": {
+      "title": "11. International Use",
+      "intro": "If the platform is used across different countries or regions, information may be processed in jurisdictions different from your own.",
+      "note": "The final published policy should be reviewed for jurisdiction-specific requirements before release."
+    },
+    "changes": {
+      "title": "12. Changes To This Policy",
+      "intro": "We may update this Privacy Policy from time to time.",
+      "note": "If we make material changes, we may update the effective date, post the revised policy, and take additional steps where appropriate."
+    },
+    "contact": {
+      "title": "13. Contact",
+      "intro": "For privacy-related questions or requests, contact:",
+      "value": "support@dojomateapp.com"
+    }
   },
   "deletion": {
     "title": "Account Deletion",
