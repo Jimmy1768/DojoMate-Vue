@@ -10,6 +10,8 @@ import ja from './ja.json'
 import pt from './pt.json'
 import enV2 from './v2/en'
 import hansV2 from './v2/hans'
+import hantV2 from './v2/hant'
+import jaV2 from './v2/ja'
 
 function mergeMessages(base, extra) {
   const output = { ...base }
@@ -34,9 +36,9 @@ function mergeMessages(base, extra) {
 const messages = {
   en: mergeMessages(en, enV2),
   hans: mergeMessages(hans, hansV2),
-  hant,
+  hant: mergeMessages(hant, hantV2),
+  ja: mergeMessages(ja, jaV2),
   ko,
-  ja,
   pt,
 }
 
