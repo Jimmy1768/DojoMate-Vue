@@ -1,69 +1,59 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import V2Icon from '../../components/V2Icon.vue'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Business</span>
-      <h1 class="v2-page-title"><V2Icon name="business" :size="24" />Run the business side of your academy</h1>
+      <span class="badge">{{ t('help_v2.business.overview.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="business" :size="24" />{{ t('help_v2.business.overview.title') }}</h1>
       <p class="muted">
-        The Business area helps you set up your team, decide who can manage the academy, and review pay and performance tools.
+        {{ t('help_v2.business.overview.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with the job you need to do</h2>
+      <h2>{{ t('help_v2.business.overview.start_title') }}</h2>
       <div class="v2-grid">
-        <article class="v2-panel">
-          <h3>Choose Who Can Teach</h3>
+        <article v-for="card in tm('help_v2.business.overview.cards')" :key="card.link" class="v2-panel">
+          <div class="v2-meta-row" v-if="card.paid">
+            <h3>{{ card.title }}</h3>
+            <span class="badge badge--premium">{{ t('help_v2.business.overview.paid_badge') }}</span>
+          </div>
+          <h3 v-else>{{ card.title }}</h3>
           <p class="muted">
-            Use <strong>Instructors</strong> to decide which people can be assigned to lessons.
+            {{ card.body }}
           </p>
-          <router-link class="link" to="/help-v2/business/instructors">
-            Open the Instructors guide
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Choose Who Can Manage the Academy</h3>
-          <p class="muted">
-            Use <strong>Staff Access</strong> to grant or update admin access.
-          </p>
-          <router-link class="link" to="/help-v2/business/staff-access">
-            Open the Staff Access guide
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Track Pay, Time, and Performance</h3>
-          <p class="muted">
-            Use <strong>Analytics</strong> for compensation, reports, timesheets, and payroll-related tools.
-          </p>
-          <router-link class="link" to="/help-v2/business/analytics">
-            Open the Analytics guide
+          <router-link class="link" :to="card.link">
+            {{ card.cta }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.business.overview.know_title') }}</h2>
       <ul>
-        <li>These Business pages support different jobs, so it helps to choose the page that matches what you are trying to do.</li>
-        <li>If you are setting up a new academy, start by deciding who teaches first.</li>
-        <li>If you are unsure where to begin, the Instructors guide is the best first step for team setup, followed by Staff Access and then Analytics.</li>
+        <li v-for="item in tm('help_v2.business.overview.know_items')" :key="item">{{ item }}</li>
       </ul>
+      <div>
+        <router-link class="btn btn--ghost" to="/help-v2/business/compare-pages">
+          {{ t('help_v2.business.overview.compare_link') }}
+        </router-link>
+      </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.business.overview.next_title') }}</h2>
       <p class="muted">
-        Start with <strong>Choose Who Can Teach</strong> if you are setting up your teaching team.
+        {{ t('help_v2.business.overview.next_body') }}
       </p>
       <div>
         <router-link class="btn" to="/help-v2/business/instructors">
-          Go to Choose Who Can Teach
+          {{ t('help_v2.business.overview.next_link') }}
         </router-link>
       </div>
     </section>

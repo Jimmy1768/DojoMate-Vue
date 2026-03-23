@@ -165,6 +165,703 @@ export default {
       compare_link: '比較 Business 頁面',
       tools_link: '啟用工具與 Premium'
     },
+    business: {
+      overview: {
+        badge: 'Business',
+        paid_badge: '付費',
+        title: '處理學院的業務側工作',
+        intro: 'Business 區域幫助你設定團隊、決定誰可以管理學院，並查看薪酬與表現工具。',
+        start_title: '先從你要完成的工作開始',
+        cards: [
+          {
+            title: '選擇誰可以授課',
+            body: '使用 Instructors 決定哪些人可以被安排到課程中。',
+            cta: '打開 Instructors 指南',
+            link: '/help-v2/business/instructors'
+          },
+          {
+            title: '選擇誰可以管理學院',
+            body: '使用 Staff Access 授予或更新管理員存取權限。',
+            cta: '打開 Staff Access 指南',
+            link: '/help-v2/business/staff-access',
+            paid: true
+          },
+          {
+            title: '追蹤薪酬、時間與表現',
+            body: '使用 Analytics 處理薪酬、報表、工時單和與薪資相關的工具。',
+            cta: '打開 Analytics 指南',
+            link: '/help-v2/business/analytics',
+            paid: true
+          }
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '這些 Business 頁面支援不同工作，因此最好先選擇與你目標最匹配的頁面。',
+          '如果你正在設定一所新學院，先從決定誰來授課開始。',
+          '如果你不確定從哪裡開始，團隊設定的最佳第一步是 Instructors，接著是 Staff Access，最後是 Analytics。'
+        ],
+        compare_link: '比較 Business 頁面',
+        next_title: '下一步',
+        next_body: '如果你正在設定教學團隊，就先從「選擇誰可以授課」開始。',
+        next_link: '前往選擇誰可以授課'
+      },
+      compare: {
+        badge: 'Business',
+        paid_badge: '付費',
+        title: 'Instructors、Staff Access 和 Analytics',
+        intro: '這三個 Business 頁面支援不同工作。當你不確定哪一個最適合目前任務時，就使用這個頁面。',
+        pick_title: '按工作選擇頁面',
+        cards: [
+          {
+            title: 'Instructors',
+            body: '當你需要決定誰可以授課時，請使用這個頁面。',
+            items: [
+              '把某人加入員工列表',
+              '開啟講師狀態',
+              '為排課準備教學團隊'
+            ],
+            cta: '打開 Instructors',
+            link: '/help-v2/business/instructors'
+          },
+          {
+            title: 'Staff Access',
+            body: '當某人需要幫助管理學院時，請使用這個頁面。',
+            items: [
+              '把成員提升為管理員',
+              '查看存取範圍',
+              '之後移除管理員權限'
+            ],
+            cta: '打開 Staff Access',
+            link: '/help-v2/business/staff-access',
+            paid: true
+          },
+          {
+            title: 'Analytics',
+            body: '當你想查看業務數據、薪酬設定或時間記錄時，請使用這個頁面。',
+            items: [
+              '查看報表',
+              '設定薪酬',
+              '檢查工時單和薪資相關工具'
+            ],
+            cta: '打開 Analytics',
+            link: '/help-v2/business/analytics',
+            paid: true
+          }
+        ],
+        rules_title: '快速規則',
+        rules_items: [
+          '在 Analytics 中修改薪酬並不會讓某人成為講師。',
+          '給某人管理員權限同樣不會讓他們成為講師。',
+          '如果某人既要授課又要管理，你可能需要在多個 Business 頁面中設定他。'
+        ],
+        start_title: '如果你還在判斷，從這裡開始',
+        start_body: '如果你的問題是「這個人能授課嗎？」，先看 Instructors。若問題是「這個人能管理學院嗎？」，去 Staff Access。若問題是「我去哪裡查看薪酬或報表？」，去 Analytics。',
+        instructors_link: 'Instructors',
+        staff_access_link: 'Staff Access',
+        analytics_link: 'Analytics'
+      },
+      instructors: {
+        badge: 'Business',
+        title: '選擇誰可以授課',
+        intro: '使用 Business → Instructors 決定哪些人可以被安排到課程中。',
+        before_title: '開始前',
+        before_items: [
+          '在你建立課程之前，至少需要一名講師。',
+          '如果館主自己也授課，大多數人會先把自己加進去。',
+          '這個人應該已經作為學院成員存在。'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Business → Instructors。',
+          '點擊 Choose Member。',
+          '選擇你想添加的人。',
+          '點擊 Add to Staff。',
+          '如果這個人要授課，就打開 instructor 開關。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '添加後，被選中的人會出現在員工列表中。',
+          '如果 instructor 開關保持關閉，這個人只能作為助教可用。',
+          '在 Analytics 中修改薪酬並不會讓某人成為講師。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '如果某人還需要管理學院，那是另一個單獨的設定步驟。授課權限和管理員權限不是一回事。',
+        compare_link: '比較 Business 頁面',
+        next_title: '下一步',
+        next_body: '在教學團隊設定好之後，下一個常見任務就是決定誰還應該擁有管理員權限。',
+        back_link: '返回 Business 總覽',
+        next_link: '前往 Staff Access'
+      },
+      staff_access: {
+        badge: 'Business',
+        paid_badge: '付費工具',
+        title: '選擇誰可以管理學院',
+        intro: '使用 Business → Permissions 為團隊授予或更新管理員存取權限。',
+        use_title: '在以下情況使用這個頁面',
+        use_items: [
+          '某人需要幫助管理課程、成員、會員卡或 timetable 工作',
+          '你需要把成員提升為管理員',
+          '你想查看或移除管理員權限'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Business → Permissions。',
+          '找到你想更新的人。',
+          '如果他們顯示為 Member，點擊該行並按 Confirm，使其成為管理員。',
+          '再次點擊這個管理員來查看存取設定。',
+          '選擇你想要的存取設定，然後按 Confirm。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '兩個徽章分別是 Member 和 Admin。',
+          'Permissions 控制的是管理員存取。它並不決定誰可以授課。',
+          '目前存取區域包括 Schedule、Members、Cards 和 Timetable。',
+          '這個功能受 entitlement 控制。如果工具未啟用，委派給員工的權限不會生效。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '授予某人教學職責和授予某人管理員權限是兩個獨立步驟。教學角色用 Instructors，管理員角色用 Permissions。',
+        compare_link: '比較 Business 頁面',
+        remove_title: '移除管理員權限',
+        remove_body: '如果某人不再需要管理學院，使用 Remove Admin 把他們恢復為 Member。',
+        next_title: '下一步',
+        next_body: '團隊角色設定完成後，下一個常見任務是到 Analytics 中查看薪酬和報表工具。',
+        back_link: '返回 Instructors',
+        activate_link: '啟用工具與 Premium',
+        compare_pages_link: '比較頁面',
+        next_link: '前往 Analytics'
+      },
+      analytics: {
+        badge: 'Business',
+        paid_badge: '付費工具',
+        title: '追蹤薪酬、時間與表現',
+        intro: '使用 Business → Analytics 處理薪酬、報表、工時單和與薪資相關的工具。',
+        use_title: '在以下情況使用這個頁面',
+        use_items: [
+          '你想查看學院指標和報表',
+          '你需要輸入或更新薪酬資訊',
+          '你需要查看工時單或員工打卡活動'
+        ],
+        covers_title: 'Analytics 涵蓋的內容',
+        cards: [
+          {
+            title: '報表',
+            body: '查看即時數據、每週摘要、財務報表和與月度出勤相關的報表。'
+          },
+          {
+            title: '薪酬',
+            body: '設定薪資、時薪和私教課薪酬細節，讓成本追蹤更準確。'
+          },
+          {
+            title: '時間與薪資工具',
+            body: '查看打卡卡片、辦公時長和基於時間的員工記錄審批流程。'
+          }
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '在 Analytics 中修改薪酬並不會讓某人成為講師。',
+          '如果某人需要授課，請在 Instructors 中添加該角色。',
+          '如果某人需要管理學院，請在 Permissions 中授予該權限。',
+          '某些 analytics 畫面可能會被完全鎖定，而另一些仍然可見，但會顯示升級提示。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: 'Analytics 不是決定授課角色或管理員角色的地方。它是查看業務數據和管理薪酬相關工具的地方。',
+        compare_link: '比較 Business 頁面',
+        next_title: '下一步',
+        next_body: '如果你還在設定團隊，先完成授課角色和管理員角色設定。如果團隊已經就緒，下一個常見任務就是建立課程，並讓預約承擔日常工作。',
+        activate_link: '啟用工具與 Premium',
+        instructors_link: 'Instructors',
+        staff_access_link: 'Staff Access',
+        next_link: '前往 Schedule'
+      }
+    },
+    schedule: {
+      overview: {
+        badge: 'Schedule',
+        title: '規劃、執行並管理課程',
+        intro: '使用 Schedule 區域建立課程、調整課程細節，並在需要時幫助學員預約。',
+        start_title: '先從你要完成的工作開始',
+        cards: [
+          {
+            title: '建立課程',
+            body: '設定課程時間、講師、可用會員卡和預約規則。',
+            cta: '打開建立課程指南',
+            link: '/help-v2/schedule/create-lesson'
+          },
+          {
+            title: '編輯、取消或刪除課程',
+            body: '更新課程細節，或讓課程停止可預約狀態。',
+            cta: '打開管理課程指南',
+            link: '/help-v2/schedule/manage-lesson'
+          },
+          {
+            title: '代學員預約',
+            body: '當學員或家長無法自己完成預約時，由管理員介入。',
+            cta: '打開預約指南',
+            link: '/help-v2/schedule/book-for-students'
+          }
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '建立課程通常是排課的第一項任務。',
+          '編輯、取消和刪除都有時間規則，因此這些任務需要單獨指南。',
+          '管理員代預約最適合作為學員或家長無法自行完成預約時的備援方案。'
+        ],
+        before_title: '開始前',
+        before_body: '確保你的教學團隊已經設定好，這樣在建立課程時正確的講師才會可用。',
+        before_link: '查看 Instructors'
+      },
+      create: {
+        badge: 'Schedule',
+        title: '建立課程',
+        intro: '使用 Schedule 在你希望學員預約的那一天添加課程。',
+        before_title: '開始前',
+        before_items: [
+          '在建立課程之前，你至少需要選擇一名講師。',
+          '先選擇正確的日期，因為 Schedule 預設打開的是今天。',
+          '決定哪些會員卡應該被允許預約這節課。'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Schedule 並移動到你想要的日期。',
+          '點擊 Create Lesson。',
+          '輸入課程名稱、日期和開始/結束時間。',
+          '選擇課程類型和允許的會員卡。',
+          '至少選擇一名講師，如有需要再添加助教講師。',
+          '設定容量、最低開課人數和預約截止時間等規則。',
+          '點擊 Create Lesson。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '預約使用的會員卡必須匹配課程類型，例如團課或私教課。',
+          '如果你安排了重疊課程，教室就會變得重要。',
+          '管理員通常比學員更容易突破一般限制進行預約，但學員仍然受截止時間和容量規則限制。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '如果預約截止時間設定得太短，當課程臨時取消時容易讓學員感到困惑。如果你想要更順暢的溝通，請設定更長的截止窗口。',
+        next_title: '下一步',
+        next_body: '課程建立完成後，接下來最常見的工作是調整課程細節或幫助學員預約進入課程。',
+        manage_link: '編輯或取消課程',
+        booking_link: '代學員預約'
+      },
+      manage: {
+        badge: 'Schedule',
+        title: '編輯、取消或刪除課程',
+        intro: '使用課程詳情頁面更新課程資訊，或讓課程停止可預約狀態。',
+        open_title: '如何打開課程',
+        open_items: [
+          '打開 Schedule。',
+          '選擇正確的日期。',
+          '點擊課程本身，而不是預約按鈕。'
+        ],
+        actions_title: '每個操作的作用',
+        actions_items: [
+          'Edit：更新課程細節，然後保存更改。',
+          'Cancel：取消目前成員的預約，並阻止新的預約。',
+          'Delete：在課程已取消後，將其徹底刪除。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '一旦超過預約截止時間，你就不能再編輯課程。',
+          '已經開始的課程不能被取消或刪除。',
+          '如果課程是誤建立的，先取消，再刪除。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '人們經常點進預約流程，而實際上他們需要的是課程詳情頁面。如果你想編輯或取消課程，請打開課程卡片本身。',
+        next_title: '下一步',
+        next_body: '如果課程仍然保持有效，接下來最常見的任務就是幫助學員預約進去。',
+        back_link: '返回建立課程',
+        next_link: '前往預約'
+      },
+      booking: {
+        badge: 'Schedule',
+        title: '在需要時代學員預約',
+        intro: '最理想的是由學員或家長自行預約，但如果有人忘記、錯過截止時間或需要幫助，管理員可以介入。',
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Schedule 並選擇課程日期。',
+          '打開課程，然後進入 Booking。',
+          '點擊 Add Members。',
+          '選擇你想預約的成員。',
+          '從他們可用的有效會員卡中選擇一張。',
+          '按 Confirm。'
+        ],
+        unbook_title: '為學員取消預約',
+        unbook_items: [
+          '打開該課程的出勤列表。',
+          '點擊已預約的成員。',
+          '點擊藍色的已預約卡片，直到它變成灰色。',
+          '按 Confirm。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '管理員通常比學員擁有更大的預約自由度，尤其在截止時間或容量規則方面。',
+          '成員仍然必須擁有一張對此課程有效且被允許的活動會員卡。',
+          '已經結束的課程不能被預約或取消預約。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '如果正確的會員卡沒有出現，可能是這節課限制了不同的卡類型，而該成員目前持有的是其他活動卡。',
+        next_title: '下一步',
+        next_body: '如果預約規則不斷引發問題，請回頭檢查課程設定並調整課程，而不是反覆手動覆蓋。',
+        create_link: '查看建立課程',
+        manage_link: '查看管理課程'
+      }
+    },
+    cards: {
+      overview: {
+        badge: 'Cards',
+        title: '使用會員卡支援預約',
+        intro: '主要的卡片流程很簡單：建立卡、發卡，然後讓預約自動扣減課次。',
+        start_title: '先從你要完成的工作開始',
+        cards: [
+          {
+            title: '了解預約流程',
+            body: '了解會員卡如何參與預約、課次扣減和報表。',
+            cta: '打開預約流程指南',
+            link: '/help-v2/cards/how-booking-works'
+          },
+          {
+            title: '建立卡模板',
+            body: '設定卡名稱、費用、課次數、到期時間和課程類型。',
+            cta: '打開建立模板指南',
+            link: '/help-v2/cards/create-template'
+          },
+          {
+            title: '為成員發卡',
+            body: '使用你的模板為成員分配一張有效會員卡。',
+            cta: '打開發卡指南',
+            link: '/help-v2/cards/issue-cards'
+          }
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '模板在前。卡模板存在之前，你不能發卡。',
+          '會員卡的主要作用是支援預約和自動扣課。',
+          '當卡用完或過期時，在發下一張卡前先刪除目前有效卡。',
+          '偶爾遇到特殊情況時，你可以手動調整有效卡。最常見的用法是延長到期時間，尤其是在你沒有使用 Pause Cards 的情況下。'
+        ],
+        support_title: '支援性工作流',
+        support_templates_title: '編輯或停用模板',
+        support_templates_body: '當模板需要修正，或不再應繼續提供時，請使用這些頁面。',
+        edit_templates_link: '編輯模板',
+        delete_templates_link: '刪除模板',
+        support_cleanup_title: '清理已結束的卡',
+        support_cleanup_body: '當有效卡已用完、已過期或即將被替換時，刪除或取消它。',
+        delete_cards_link: '刪除卡',
+        support_records_title: '查看卡片歷史',
+        support_records_body: '當你需要查看歷史、狀態，或跟進異常卡狀態時，請使用記錄頁面。',
+        records_link: '卡片記錄'
+      },
+      flow: {
+        badge: 'Cards',
+        title: '會員卡如何與預約協作',
+        intro: '會員卡主要用於預約課程。學員預約後，課次會自動扣減，系統也會根據真實預約活動進行計算。',
+        normal_title: '正常流程',
+        normal_items: [
+          '建立卡模板。',
+          '把卡發給成員。',
+          '成員使用這張卡預約課程。',
+          '課次透過預約課程自動扣減。',
+          '當卡的課次歸零或到期時間結束時，刪除目前有效卡。',
+          '成員續費時再發新卡。'
+        ],
+        why_title: '為什麼這很重要',
+        why_items: [
+          '會員卡應該清晰且可預測地支援課程預約。',
+          '只有透過預約課程扣減的課次，才會計入 Analytics 財務報表。',
+          '同一成員不能同時持有同一模板的兩張有效卡。'
+        ],
+        next_title: '下一步',
+        create_link: '建立卡模板',
+        issue_link: '發卡'
+      },
+      create_template: {
+        badge: 'Cards',
+        title: '建立會員卡模板',
+        intro: '使用 Cards → Create Card Template 建立你的學院會發放的會員卡類型。',
+        before_title: '開始前',
+        before_items: [
+          '先決定這張卡是用於團課還是私教課。',
+          '決定卡內應包含多少節課。',
+          '如果你想要無限次會員卡，先規劃好時間週期。無限次卡仍然使用到期時段。',
+          '沿用學院現有的學費和貨幣邏輯。'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Cards → Create Card Template。',
+          '輸入成員和管理員都能輕鬆識別的卡名稱。',
+          '輸入費用和可選描述。',
+          '設定總課次數和到期天數。',
+          '如果是無限次卡，把 Total Sessions 保存為 -1，而不是 0。',
+          '選擇這張卡適用於 Group 課程還是 Private 課程。',
+          '保存模板。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '課程類型決定這張卡能預約哪些課程。',
+          '保存為 Total Sessions = -1 的卡，在有效期內可以無限預約。',
+          '團課和私教課通常每節價格不同，講師薪酬也可能不同。',
+          '卡名稱應該保持清晰穩定，因為之後預約和發卡時人們還會看到它。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '如果預約時這張卡沒有出現，請檢查卡類型是否與課程類型匹配。這是有意設計的，這樣團課卡不會誤用於私教課，私教卡也不會誤用於團課。',
+        next_title: '下一步',
+        next_body: '模板建立好之後，下一個常見任務就是把這張卡發給一位或多位成員。',
+        back_link: '返回 Cards 總覽',
+        next_link: '前往發卡'
+      },
+      issue: {
+        badge: 'Cards',
+        title: '發放會員卡',
+        intro: '使用 Cards → Assign Cards 為一位或多位成員發放一張有效卡。',
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Cards → Assign Cards。',
+          '選擇你要發放的卡模板。',
+          '選擇一位或多位成員。',
+          '檢查已選成員。',
+          '按 Confirm 發卡。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '新近被接受的成員可能會排在更靠前的位置，方便發卡。',
+          '已經持有該模板有效卡的成員會以不同方式顯示，方便你發現重複。',
+          '同一成員不能同時持有同一模板的兩張有效卡。'
+        ],
+        mistake_title: '常見錯誤',
+        mistake_body: '如果成員是在續同一張卡，先刪除舊的有效卡，再發新的。',
+        next_title: '下一步',
+        next_body: '發卡後，正常的下一步就是使用這張卡去預約課程。',
+        back_link: '返回模板',
+        next_link: '會員卡如何運作'
+      },
+      edit_template: {
+        badge: 'Cards',
+        title: '編輯卡模板',
+        intro: '當模板已經存在，而你需要更新它未來使用的設定時，請使用這個頁面。',
+        use_title: '在以下情況使用這個頁面',
+        use_items: [
+          '模板設定需要被修正',
+          '費用、課次數、到期時間或課程類型設定需要變更',
+          '你想在不建立新模板的情況下調整未來發卡行為'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '模板名稱在建立後會被鎖定。',
+          '變更應謹慎保存，因為它們會影響模板之後的行為。',
+          '如果變化已經大到足以代表一個完全不同的會員產品，那麼新建一個模板通常會更清晰。'
+        ],
+        next_title: '下一步',
+        back_link: '返回建立模板',
+        next_link: '發卡'
+      },
+      delete_template: {
+        badge: 'Cards',
+        title: '刪除卡模板',
+        intro: '當模板不應再存在，並且不再與有效卡綁定時，請使用這個頁面。',
+        before_title: '刪除前',
+        before_items: [
+          '檢查模板是否仍然與有效卡綁定。',
+          '如果仍有有效卡依賴它，就需要先完成清理。'
+        ],
+        know_title: '需要知道的事',
+        know_body: '刪除模板是一種清理工作流。它應該用於某個會員產品真正退役時，而不是因為單個成員正在續費。',
+        next_title: '下一步',
+        back_link: '返回模板',
+        next_link: 'Cards 總覽'
+      },
+      delete_card: {
+        badge: 'Cards',
+        title: '刪除或取消一張有效卡',
+        intro: '當一張有效卡已經走到生命周期末尾，或不應再對該成員保持有效時，請使用這個頁面。',
+        use_title: '最常見的用途',
+        use_items: [
+          '卡已過期或已完全用完',
+          '成員正在續費，需要發一張新的有效卡',
+          '這張卡需要被取消並正確記錄，然後再繼續下一步'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '過期卡通常會按預設清理路徑被刪除。',
+          '同一成員不能同時持有同一模板的兩張有效卡。',
+          '如果你取消一張卡，請填寫所需原因，並讓卡片歷史保持可見。'
+        ],
+        next_title: '下一步',
+        next_body: '清理完成後，只有當成員確實繼續新的有效會員資格時，才發下一張卡。',
+        back_link: '返回發卡',
+        next_link: 'Cards 總覽'
+      },
+      records: {
+        badge: 'Cards',
+        title: '查看卡片記錄',
+        intro: '當你需要歷史、狀態可見性，或跟進異常卡狀態時，請使用卡片記錄。',
+        review_title: '你可以查看的內容',
+        review_items: [
+          '目前卡',
+          '已發卡',
+          '已取消卡',
+          '與欠費相關的卡狀態'
+        ],
+        when_title: '什麼時候最有幫助',
+        when_items: [
+          '你需要弄清某一張卡發生了什麼',
+          '你正在檢查一張卡是否被取消、結清或清理',
+          '你正在跟進一筆債務或記錄差異'
+        ],
+        know_title: '需要知道的事',
+        know_body: '卡片記錄主要是查看和審計工作流。正常的日常卡流程仍然是：建立模板、發卡、預約課程，然後在卡結束時清理它。'
+      }
+    },
+    members: {
+      overview: {
+        badge: 'Members',
+        title: '讓人加入你的學院並管理成員狀態',
+        intro: '使用 Members 區域處理系統中的「人」這一面：添加成員、審核申請，以及管理 accepted、rejected 或 banned 狀態。',
+        start_title: '先從你要完成的工作開始',
+        cards: [
+          {
+            title: '直接添加成員',
+            body: '當你想直接為某人註冊，而不是等待正常申請流程時，使用 quick enrollment。',
+            cta: '打開 Quick Enrollment',
+            link: '/help-v2/members/quick-enrollment'
+          },
+          {
+            title: '審核學院申請',
+            body: '接受或拒絕透過 Join Academy 提交申請的人。',
+            cta: '打開 Academy Applications',
+            link: '/help-v2/members/applications'
+          },
+          {
+            title: '拒絕或封禁某人',
+            body: '當某位成員不應再繼續保持活躍狀態時，管理其狀態變化。',
+            cta: '打開 Reject or Ban Members',
+            link: '/help-v2/members/reject-or-ban'
+          }
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          'Quick enrollment 和 academy applications 是進入學院的兩條不同路徑。',
+          '為整個學院完成入駐需要時間，因此從長期看，最輕鬆的方式通常是讓成員自己建立帳號並自行添加你的學院。',
+          '一旦成員處於活躍狀態，下一步最常見的工作就是在 DojoMate 中發放會員卡。',
+          '兒童帳號可能需要額外審核步驟，尤其當涉及家長帳號時。'
+        ],
+        compare_title: '不確定該選哪條路徑？',
+        compare_body: '如果你在猶豫是自己建立帳號，還是讓成員自己申請加入，請先查看比較頁面。',
+        compare_link: '比較兩種成員流程'
+      },
+      quick: {
+        badge: 'Members',
+        title: '直接添加成員',
+        intro: '當你想直接為某人註冊，而不是等待正常的 Join Academy 申請流程時，請使用 quick enrollment。',
+        when_title: '何時使用',
+        when_items: [
+          '你正在現場為某人辦理入駐',
+          '你想直接建立帳號',
+          '你正在為家長註冊，並希望在同一流程中建立多個兒童帳號',
+          '成員不擅長技術，你想替他們設定帳號',
+          '你想透過電子郵件添加一個已有的 DojoMate 帳號'
+        ],
+        path_title: '先選最輕鬆的路徑',
+        path_body_1: '如果你的學院正在成長，長期來看，最輕鬆的方式通常是讓成員自己建立帳號並自行添加你的學院。',
+        path_body_2: 'Quick enrollment 最適合那些需要額外幫助，或不太可能自己完成設定的人。',
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Affiliate Portal，並使用你的 DojoMate 電子郵件和密碼登入。',
+          '打開 Register。',
+          '輸入成員的真實電子郵件，並建立一個臨時密碼。',
+          '選擇該帳號是學員帳號還是家長帳號。',
+          '如果你選擇家長，繼續進入兒童帳號設定流程。',
+          '檢查資訊並按 Confirm。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          'Quick enrollment 會跳過正常的 pending 和 accepted 申請流程。',
+          '這個流程對家長特別有用，因為你可以在同一次註冊操作中建立多個兒童帳號。',
+          '建立帳號時可以保存一個簡單的臨時密碼。成員之後可以登入並修改它。',
+          '有些成員可能永遠不會自己登入，如果你在代管他們的帳號，這也沒有問題。',
+          '新註冊完成的成員在設定好之後，仍然可以透過 app 獲得會員卡。',
+          '如果這個人已經有 DojoMate 帳號，請透過電子郵件添加，而不是建立重複帳號。'
+        ],
+        compare_title: '需要幫助決定是否使用這個流程？',
+        compare_link: '比較 Quick Enrollment 和 Applications',
+        next_title: '下一步',
+        next_body: '當帳號進入學院後，下一步最常見的工作就是發放會員卡。',
+        back_link: '返回 Members Overview',
+        next_link: '前往 Issue Cards'
+      },
+      compare: {
+        badge: 'Members',
+        title: '在 Quick Enrollment 和 Applications 之間選擇',
+        intro: '這兩條流程都會把人帶入學院，但它們適用於不同的情境。',
+        quick_title: '在這些情況下使用 Quick Enrollment',
+        quick_items: [
+          '你想自己建立帳號',
+          '這個人需要幫助完成設定',
+          '這個人不擅長技術',
+          '你正在為一位家長和多個兒童帳號一起註冊'
+        ],
+        quick_link: '打開 Quick Enrollment',
+        apps_title: '在這些情況下使用 Applications',
+        apps_items: [
+          '你希望成員自己建立帳號',
+          '你希望學院在不由館主手動建立每一個帳號的情況下也能擴展',
+          '成員可以自己完成 Join Academy 流程'
+        ],
+        apps_link: '打開 Academy Applications',
+        rule_title: '簡單規則',
+        rule_body: '只要可能，就讓成員自己建立帳號。當他們需要額外幫助，或者你想直接處理註冊時，再使用 Quick Enrollment。'
+      },
+      applications: {
+        badge: 'Members',
+        title: '審核學院申請',
+        intro: '當有人透過 Join Academy 申請加入，而你需要接受或拒絕他們時，使用這個流程。',
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Members → Add/Reject Members。',
+          '查看待處理申請列表。',
+          '在申請人上按 Accept 或 Reject。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果沒有出現待處理帳號，這個人可能沒有正確提交申請。',
+          '他們可能需要重新掃描學院 QR 碼，或重新搜尋你的學院名稱。',
+          '關聯的兒童帳號可能需要透過家長資料頁完成額外的接受步驟。'
+        ],
+        why_title: '為什麼使用 applications？',
+        why_body: '當你希望成員自己建立帳號並自行添加你的學院時，這是一條更適合長期使用的路徑。',
+        compare_link: '比較 Applications 和 Quick Enrollment',
+        mistake_title: '常見錯誤',
+        mistake_body: '如果兒童帳號沒有馬上出現，要麼是它們還沒有被正確建立，要麼列表沒有刷新。讓家長完成兒童設定，或刷新 app 視圖。',
+        next_title: '下一步',
+        next_body: '當你接受某人進入學院後，下一步最常見的工作就是發放他們的會員卡。',
+        back_link: '返回 Members Overview',
+        next_link: '前往 Issue Cards'
+      },
+      reject: {
+        badge: 'Members',
+        title: '在需要時拒絕或封禁成員',
+        intro: '當某人不應再繼續作為學院活躍成員時，請使用這個流程。',
+        reject_title: '拒絕如何運作',
+        reject_items: [
+          '從 Members → Members List 打開該成員的資料。',
+          '按 Reject 將他們從學院中移除。',
+          '如果成員仍有有效卡，就必須先清理後才能拒絕。'
+        ],
+        ban_title: '封禁如何運作',
+        ban_items: [
+          '被拒絕的成員會出現在 Members → Rejected List 中。',
+          '從那裡你可以重新接受他們，或將他們封禁。',
+          '被封禁的成員不能再透過 Join Academy 重新申請。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '先移除有效卡，是拒絕之前正常清理流程的一部分。',
+          '如果你之後想撤銷封禁，請前往 Banned List 並使用 Remove Ban。'
+        ],
+        next_title: '下一步',
+        back_link: '返回 Members Overview',
+        next_link: '查看 Cards 工作流'
+      }
+    },
     student: {
       home: {
         badge: '學員',

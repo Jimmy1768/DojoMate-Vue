@@ -1,60 +1,80 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import V2Icon from '../../components/V2Icon.vue'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Cards</span>
-      <h1 class="v2-page-title"><V2Icon name="cards" :size="24" />Use cards to support booking</h1>
+      <span class="badge">{{ t('help_v2.cards.overview.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="cards" :size="24" />{{ t('help_v2.cards.overview.title') }}</h1>
       <p class="muted">
-        The main card workflow is simple: create the card, issue it, then let booking deduct lessons automatically.
+        {{ t('help_v2.cards.overview.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with the job you need to do</h2>
+      <h2>{{ t('help_v2.cards.overview.start_title') }}</h2>
       <div class="v2-grid">
-        <article class="v2-panel">
-          <h3>Understand the booking flow</h3>
+        <article v-for="card in tm('help_v2.cards.overview.cards')" :key="card.link" class="v2-panel">
+          <h3>{{ card.title }}</h3>
           <p class="muted">
-            Learn how cards fit into booking, lesson deduction, and reporting.
+            {{ card.body }}
           </p>
-          <router-link class="link" to="/help-v2/cards/how-booking-works">
-            Open the booking flow guide
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Create a card template</h3>
-          <p class="muted">
-            Set the card name, fee, session count, expiry, and lesson type.
-          </p>
-          <router-link class="link" to="/help-v2/cards/create-template">
-            Open the Create Template guide
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Issue a card to a member</h3>
-          <p class="muted">
-            Assign an active membership card using one of your templates.
-          </p>
-          <router-link class="link" to="/help-v2/cards/issue-cards">
-            Open the Issue Cards guide
+          <router-link class="link" :to="card.link">
+            {{ card.cta }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.cards.overview.know_title') }}</h2>
       <ul>
-        <li>Templates come first. You cannot issue a card until the card template already exists.</li>
-        <li>Cards are mainly there to support booking and automatic lesson deduction.</li>
-        <li>When a card is used up or expires, delete the active card before issuing the next one.</li>
-        <li>For occasional exceptions, you can adjust an active card manually. The most common use is extending expiry time, especially if you are not using Pause Cards.</li>
+        <li v-for="item in tm('help_v2.cards.overview.know_items')" :key="item">{{ item }}</li>
       </ul>
+    </section>
+
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.cards.overview.support_title') }}</h2>
+      <div class="v2-grid">
+        <article class="v2-panel">
+          <h3>{{ t('help_v2.cards.overview.support_templates_title') }}</h3>
+          <p class="muted">
+            {{ t('help_v2.cards.overview.support_templates_body') }}
+          </p>
+          <div class="row">
+            <router-link class="link" to="/help-v2/cards/edit-templates">
+              {{ t('help_v2.cards.overview.edit_templates_link') }}
+            </router-link>
+            <router-link class="link" to="/help-v2/cards/delete-templates">
+              {{ t('help_v2.cards.overview.delete_templates_link') }}
+            </router-link>
+          </div>
+        </article>
+
+        <article class="v2-panel">
+          <h3>{{ t('help_v2.cards.overview.support_cleanup_title') }}</h3>
+          <p class="muted">
+            {{ t('help_v2.cards.overview.support_cleanup_body') }}
+          </p>
+          <router-link class="link" to="/help-v2/cards/delete-cards">
+            {{ t('help_v2.cards.overview.delete_cards_link') }}
+          </router-link>
+        </article>
+
+        <article class="v2-panel">
+          <h3>{{ t('help_v2.cards.overview.support_records_title') }}</h3>
+          <p class="muted">
+            {{ t('help_v2.cards.overview.support_records_body') }}
+          </p>
+          <router-link class="link" to="/help-v2/cards/records">
+            {{ t('help_v2.cards.overview.records_link') }}
+          </router-link>
+        </article>
+      </div>
     </section>
   </section>
 </template>

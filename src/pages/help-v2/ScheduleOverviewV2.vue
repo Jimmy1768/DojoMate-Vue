@@ -1,69 +1,50 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import V2Icon from '../../components/V2Icon.vue'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Schedule</span>
-      <h1 class="v2-page-title"><V2Icon name="schedule" :size="24" />Plan, run, and manage lessons</h1>
+      <span class="badge">{{ t('help_v2.schedule.overview.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="schedule" :size="24" />{{ t('help_v2.schedule.overview.title') }}</h1>
       <p class="muted">
-        Use the Schedule area to create lessons, adjust lesson details, and help students book when needed.
+        {{ t('help_v2.schedule.overview.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with the job you need to do</h2>
+      <h2>{{ t('help_v2.schedule.overview.start_title') }}</h2>
       <div class="v2-grid">
-        <article class="v2-panel">
-          <h3>Create a lesson</h3>
+        <article v-for="card in tm('help_v2.schedule.overview.cards')" :key="card.link" class="v2-panel">
+          <h3>{{ card.title }}</h3>
           <p class="muted">
-            Set the lesson time, instructors, allowed cards, and booking rules.
+            {{ card.body }}
           </p>
-          <router-link class="link" to="/help-v2/schedule/create-lesson">
-            Open the Create Lesson guide
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Edit, cancel, or delete a lesson</h3>
-          <p class="muted">
-            Update lesson details or stop a lesson from being bookable.
-          </p>
-          <router-link class="link" to="/help-v2/schedule/manage-lesson">
-            Open the Manage Lesson guide
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Book for students</h3>
-          <p class="muted">
-            Step in when a student or parent cannot complete the booking themselves.
-          </p>
-          <router-link class="link" to="/help-v2/schedule/book-for-students">
-            Open the Booking guide
+          <router-link class="link" :to="card.link">
+            {{ card.cta }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.schedule.overview.know_title') }}</h2>
       <ul>
-        <li>Creating lessons is usually the first scheduling task.</li>
-        <li>Editing, canceling, and deleting have timing rules, so those tasks need their own guide.</li>
-        <li>Admin booking is best used as backup when students or parents cannot finish booking themselves.</li>
+        <li v-for="item in tm('help_v2.schedule.overview.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Before you start</h2>
+      <h2>{{ t('help_v2.schedule.overview.before_title') }}</h2>
       <p class="muted">
-        Make sure your teaching team is already set up so the right instructors are available when you create lessons.
+        {{ t('help_v2.schedule.overview.before_body') }}
       </p>
       <div>
         <router-link class="btn btn--ghost" to="/help-v2/business/instructors">
-          Review Instructors
+          {{ t('help_v2.schedule.overview.before_link') }}
         </router-link>
       </div>
     </section>

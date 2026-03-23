@@ -1,62 +1,58 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Schedule</span>
-      <h1>Create a lesson</h1>
+      <span class="badge">{{ t('help_v2.schedule.create.badge') }}</span>
+      <h1>{{ t('help_v2.schedule.create.title') }}</h1>
       <p class="muted">
-        Use <strong>Schedule</strong> to add a lesson on the day you want students to book.
+        {{ t('help_v2.schedule.create.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Before you start</h2>
+      <h2>{{ t('help_v2.schedule.create.before_title') }}</h2>
       <ul>
-        <li>You need at least one instructor selected before you can create a lesson.</li>
-        <li>Choose the correct date first, because Schedule opens on today by default.</li>
-        <li>Decide which membership cards should be allowed to book this lesson.</li>
+        <li v-for="item in tm('help_v2.schedule.create.before_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Steps</h2>
+      <h2>{{ t('help_v2.schedule.create.steps_title') }}</h2>
       <ol>
-        <li>Open <strong>Schedule</strong> and move to the date you want.</li>
-        <li>Tap <strong>Create Lesson</strong>.</li>
-        <li>Enter the lesson name, date, and start/end time.</li>
-        <li>Choose the lesson type and allowed membership cards.</li>
-        <li>Select at least one instructor, then add an assistant instructor if needed.</li>
-        <li>Set booking rules like capacity, minimum capacity, and booking cut-off.</li>
-        <li>Tap <strong>Create Lesson</strong>.</li>
+        <li v-for="item in tm('help_v2.schedule.create.steps_items')" :key="item">{{ item }}</li>
       </ol>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.schedule.create.know_title') }}</h2>
       <ul>
-        <li>Booked cards must match the lesson type, such as group or private.</li>
-        <li>If you schedule overlapping lessons, classroom becomes important.</li>
-        <li>Admins can book beyond normal limits more easily than students, but students still follow cut-off and capacity rules.</li>
+        <li v-for="item in tm('help_v2.schedule.create.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Common mistake</h2>
+      <h2>{{ t('help_v2.schedule.create.mistake_title') }}</h2>
       <p class="muted">
-        A booking cut-off that is too short can create confusion for students when a lesson cancels late. If you want smoother communication, use a longer cut-off window.
+        {{ t('help_v2.schedule.create.mistake_body') }}
       </p>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.schedule.create.next_title') }}</h2>
       <p class="muted">
-        After a lesson exists, the next common jobs are adjusting lesson details or helping students book into it.
+        {{ t('help_v2.schedule.create.next_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/schedule/manage-lesson">
-          Edit or Cancel a Lesson
+          {{ t('help_v2.schedule.create.manage_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/schedule/book-for-students">
-          Book for Students
+          {{ t('help_v2.schedule.create.booking_link') }}
         </router-link>
       </div>
     </section>

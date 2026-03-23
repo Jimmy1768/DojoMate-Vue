@@ -165,6 +165,703 @@ export default {
       compare_link: 'Compare Business Pages',
       tools_link: 'Activate Tools and Premium'
     },
+    business: {
+      overview: {
+        badge: 'Business',
+        paid_badge: 'Paid',
+        title: 'Run the business side of your academy',
+        intro: 'The Business area helps you set up your team, decide who can manage the academy, and review pay and performance tools.',
+        start_title: 'Start with the job you need to do',
+        cards: [
+          {
+            title: 'Choose Who Can Teach',
+            body: 'Use Instructors to decide which people can be assigned to lessons.',
+            cta: 'Open the Instructors guide',
+            link: '/help-v2/business/instructors'
+          },
+          {
+            title: 'Choose Who Can Manage the Academy',
+            body: 'Use Staff Access to grant or update admin access.',
+            cta: 'Open the Staff Access guide',
+            link: '/help-v2/business/staff-access',
+            paid: true
+          },
+          {
+            title: 'Track Pay, Time, and Performance',
+            body: 'Use Analytics for compensation, reports, timesheets, and payroll-related tools.',
+            cta: 'Open the Analytics guide',
+            link: '/help-v2/business/analytics',
+            paid: true
+          }
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'These Business pages support different jobs, so it helps to choose the page that matches what you are trying to do.',
+          'If you are setting up a new academy, start by deciding who teaches first.',
+          'If you are unsure where to begin, the Instructors guide is the best first step for team setup, followed by Staff Access and then Analytics.'
+        ],
+        compare_link: 'Compare Business Pages',
+        next_title: 'Next step',
+        next_body: 'Start with Choose Who Can Teach if you are setting up your teaching team.',
+        next_link: 'Go to Choose Who Can Teach'
+      },
+      compare: {
+        badge: 'Business',
+        paid_badge: 'Paid',
+        title: 'Instructors, Staff Access, and Analytics',
+        intro: 'These three Business pages support different jobs. Use this page when you are not sure which one matches what you need to do.',
+        pick_title: 'Choose the page by the job',
+        cards: [
+          {
+            title: 'Instructors',
+            body: 'Use this page when you need to decide who can teach lessons.',
+            items: [
+              'add someone to staff',
+              'turn on instructor status',
+              'prepare your teaching team for scheduling'
+            ],
+            cta: 'Open Instructors',
+            link: '/help-v2/business/instructors'
+          },
+          {
+            title: 'Staff Access',
+            body: 'Use this page when someone should help manage the academy.',
+            items: [
+              'promote a member to admin',
+              'review access areas',
+              'remove admin access later'
+            ],
+            cta: 'Open Staff Access',
+            link: '/help-v2/business/staff-access',
+            paid: true
+          },
+          {
+            title: 'Analytics',
+            body: 'Use this page when you want business numbers, pay settings, or time records.',
+            items: [
+              'review reports',
+              'set compensation',
+              'check timesheets and payroll-related tools'
+            ],
+            cta: 'Open Analytics',
+            link: '/help-v2/business/analytics',
+            paid: true
+          }
+        ],
+        rules_title: 'Quick rules',
+        rules_items: [
+          'Changing compensation in Analytics does not make someone an instructor.',
+          'Giving someone admin access does not make them an instructor either.',
+          'If someone should both teach and manage, you may need to set them up in more than one Business page.'
+        ],
+        start_title: 'Start here if you are still deciding',
+        start_body: 'If the question is “Can this person teach?”, start with Instructors. If the question is “Can this person manage the academy?”, go to Staff Access. If the question is “Where do I check pay or reports?”, go to Analytics.',
+        instructors_link: 'Instructors',
+        staff_access_link: 'Staff Access',
+        analytics_link: 'Analytics'
+      },
+      instructors: {
+        badge: 'Business',
+        title: 'Choose who can teach',
+        intro: 'Use Business → Instructors to decide which people can be assigned to lessons.',
+        before_title: 'Before you start',
+        before_items: [
+          'You need at least one instructor before you can create lessons.',
+          'Most owners add themselves first if they are also teaching.',
+          'The person should already be available as a member in your academy.'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Business → Instructors.',
+          'Tap Choose Member.',
+          'Select the person you want to add.',
+          'Tap Add to Staff.',
+          'Turn on the instructor toggle if this person should teach lessons.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Selected people appear in the staff list after you add them.',
+          'If the instructor toggle is left off, the person can stay available as an assistant instructor only.',
+          'Changing compensation in Analytics does not make someone an instructor.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'If someone should be allowed to manage the academy, that is a separate setup step. Teaching access and admin access are not the same thing.',
+        compare_link: 'Compare Business Pages',
+        next_title: 'Next step',
+        next_body: 'After your teaching team is set, the next common job is deciding who should also have admin access.',
+        back_link: 'Back to Business Overview',
+        next_link: 'Go to Staff Access'
+      },
+      staff_access: {
+        badge: 'Business',
+        paid_badge: 'Paid Tool',
+        title: 'Choose who can manage the academy',
+        intro: 'Use Business → Permissions to grant or update admin access for your team.',
+        use_title: 'Use this page when',
+        use_items: [
+          'someone should help manage lessons, members, cards, or timetable work',
+          'you need to promote a member to admin',
+          'you want to review or remove admin access'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Business → Permissions.',
+          'Find the person you want to update.',
+          'If they show as Member, tap their row and press Confirm to make them an admin.',
+          'Tap the admin again to review access values.',
+          'Choose the access settings you want, then press Confirm.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'The two badges are Member and Admin.',
+          'Permissions controls admin access. It does not decide who can teach.',
+          'The current access areas are Schedule, Members, Cards, and Timetable.',
+          'This feature is entitlement-gated. If the tool is inactive, delegated staff permissions will not take effect.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'Giving someone teaching responsibility and giving someone admin access are separate setup steps. Use Instructors for teaching roles and Permissions for admin roles.',
+        compare_link: 'Compare Business Pages',
+        remove_title: 'Remove admin access',
+        remove_body: 'If someone should no longer manage the academy, use Remove Admin to return them to Member.',
+        next_title: 'Next step',
+        next_body: 'After team roles are set, the next common job is reviewing compensation and reporting tools in Analytics.',
+        back_link: 'Back to Instructors',
+        activate_link: 'Activate Tools and Premium',
+        compare_pages_link: 'Compare Pages',
+        next_link: 'Go to Analytics'
+      },
+      analytics: {
+        badge: 'Business',
+        paid_badge: 'Paid Tool',
+        title: 'Track pay, time, and performance',
+        intro: 'Use Business → Analytics for compensation, reports, timesheets, and payroll-related tools.',
+        use_title: 'Use this page when',
+        use_items: [
+          'you want to review academy metrics and reports',
+          'you need to enter or update compensation details',
+          'you need to review timesheets or staff punch-card activity'
+        ],
+        covers_title: 'What Analytics covers',
+        cards: [
+          {
+            title: 'Reports',
+            body: 'Review real-time numbers, weekly summaries, financial reports, and monthly attendance-related reports.'
+          },
+          {
+            title: 'Compensation',
+            body: 'Set salary, hourly, and private-lesson pay details so costs can be tracked more accurately.'
+          },
+          {
+            title: 'Time and payroll tools',
+            body: 'Review punch cards, office hours, and approval workflows for time-based staff records.'
+          }
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Changing compensation in Analytics does not make someone an instructor.',
+          'If someone should teach, add that role in Instructors.',
+          'If someone should manage the academy, grant that access in Permissions.',
+          'Some analytics screens may be fully locked, while others can stay visible and show upgrade prompts instead.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'Analytics is not the place to decide teaching roles or admin roles. It is the place to review business metrics and manage pay-related tools.',
+        compare_link: 'Compare Business Pages',
+        next_title: 'Next step',
+        next_body: 'If you are still setting up your team, finish the teaching role and admin role steps first. If the team is already set, the next common job is creating lessons and letting booking do the daily work.',
+        activate_link: 'Activate Tools and Premium',
+        instructors_link: 'Instructors',
+        staff_access_link: 'Staff Access',
+        next_link: 'Go to Schedule'
+      }
+    },
+    schedule: {
+      overview: {
+        badge: 'Schedule',
+        title: 'Plan, run, and manage lessons',
+        intro: 'Use the Schedule area to create lessons, adjust lesson details, and help students book when needed.',
+        start_title: 'Start with the job you need to do',
+        cards: [
+          {
+            title: 'Create a lesson',
+            body: 'Set the lesson time, instructors, allowed cards, and booking rules.',
+            cta: 'Open the Create Lesson guide',
+            link: '/help-v2/schedule/create-lesson'
+          },
+          {
+            title: 'Edit, cancel, or delete a lesson',
+            body: 'Update lesson details or stop a lesson from being bookable.',
+            cta: 'Open the Manage Lesson guide',
+            link: '/help-v2/schedule/manage-lesson'
+          },
+          {
+            title: 'Book for students',
+            body: 'Step in when a student or parent cannot complete the booking themselves.',
+            cta: 'Open the Booking guide',
+            link: '/help-v2/schedule/book-for-students'
+          }
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Creating lessons is usually the first scheduling task.',
+          'Editing, canceling, and deleting have timing rules, so those tasks need their own guide.',
+          'Admin booking is best used as backup when students or parents cannot finish booking themselves.'
+        ],
+        before_title: 'Before you start',
+        before_body: 'Make sure your teaching team is already set up so the right instructors are available when you create lessons.',
+        before_link: 'Review Instructors'
+      },
+      create: {
+        badge: 'Schedule',
+        title: 'Create a lesson',
+        intro: 'Use Schedule to add a lesson on the day you want students to book.',
+        before_title: 'Before you start',
+        before_items: [
+          'You need at least one instructor selected before you can create a lesson.',
+          'Choose the correct date first, because Schedule opens on today by default.',
+          'Decide which membership cards should be allowed to book this lesson.'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Schedule and move to the date you want.',
+          'Tap Create Lesson.',
+          'Enter the lesson name, date, and start/end time.',
+          'Choose the lesson type and allowed membership cards.',
+          'Select at least one instructor, then add an assistant instructor if needed.',
+          'Set booking rules like capacity, minimum capacity, and booking cut-off.',
+          'Tap Create Lesson.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Booked cards must match the lesson type, such as group or private.',
+          'If you schedule overlapping lessons, classroom becomes important.',
+          'Admins can book beyond normal limits more easily than students, but students still follow cut-off and capacity rules.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'A booking cut-off that is too short can create confusion for students when a lesson cancels late. If you want smoother communication, use a longer cut-off window.',
+        next_title: 'Next step',
+        next_body: 'After a lesson exists, the next common jobs are adjusting lesson details or helping students book into it.',
+        manage_link: 'Edit or Cancel a Lesson',
+        booking_link: 'Book for Students'
+      },
+      manage: {
+        badge: 'Schedule',
+        title: 'Edit, cancel, or delete a lesson',
+        intro: 'Use the lesson details screen to update lesson info or stop a lesson from being bookable.',
+        open_title: 'How to open the lesson',
+        open_items: [
+          'Open Schedule.',
+          'Select the correct date.',
+          'Tap the lesson itself, not the booking button.'
+        ],
+        actions_title: 'What each action does',
+        actions_items: [
+          'Edit: update lesson details, then save changes.',
+          'Cancel: unbook current members and stop new bookings.',
+          'Delete: remove the lesson completely after it has been canceled.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'You cannot edit a lesson after the booking cut-off time.',
+          'You cannot cancel or delete a lesson that has already started.',
+          'If a lesson was created by mistake, cancel it first, then delete it.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'People often tap the booking flow when they actually need the lesson details screen. If you want to edit or cancel the lesson, open the lesson card itself.',
+        next_title: 'Next step',
+        next_body: 'If the lesson is staying active, the next common task is helping students book into it.',
+        back_link: 'Back to Create Lesson',
+        next_link: 'Go to Booking'
+      },
+      booking: {
+        badge: 'Schedule',
+        title: 'Book for students when needed',
+        intro: 'It is best when students or parents book themselves, but admins can step in when someone forgot, missed the cut-off, or needs help.',
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Schedule and choose the lesson date.',
+          'Open the lesson, then go to Booking.',
+          'Tap Add Members.',
+          'Choose the member you want to book.',
+          'Select one of their allowed active cards.',
+          'Press Confirm.'
+        ],
+        unbook_title: 'To unbook a student',
+        unbook_items: [
+          'Open the attendance list for the lesson.',
+          'Tap the booked member.',
+          'Tap the blue booked card until it turns gray.',
+          'Press Confirm.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Admins can usually book with more freedom than students, especially around cut-off or capacity rules.',
+          'The member must still have an active card that is allowed for that lesson.',
+          'Finished lessons cannot be booked or unbooked.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'If the correct card does not appear, the lesson may be limited to different card types than the member currently has active.',
+        next_title: 'Next step',
+        next_body: 'If booking rules are causing problems, review the lesson setup and adjust the lesson instead of repeatedly overriding it.',
+        create_link: 'Review Create Lesson',
+        manage_link: 'Review Manage Lesson'
+      }
+    },
+    cards: {
+      overview: {
+        badge: 'Cards',
+        title: 'Use cards to support booking',
+        intro: 'The main card workflow is simple: create the card, issue it, then let booking deduct lessons automatically.',
+        start_title: 'Start with the job you need to do',
+        cards: [
+          {
+            title: 'Understand the booking flow',
+            body: 'Learn how cards fit into booking, lesson deduction, and reporting.',
+            cta: 'Open the booking flow guide',
+            link: '/help-v2/cards/how-booking-works'
+          },
+          {
+            title: 'Create a card template',
+            body: 'Set the card name, fee, session count, expiry, and lesson type.',
+            cta: 'Open the Create Template guide',
+            link: '/help-v2/cards/create-template'
+          },
+          {
+            title: 'Issue a card to a member',
+            body: 'Assign an active membership card using one of your templates.',
+            cta: 'Open the Issue Cards guide',
+            link: '/help-v2/cards/issue-cards'
+          }
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Templates come first. You cannot issue a card until the card template already exists.',
+          'Cards are mainly there to support booking and automatic lesson deduction.',
+          'When a card is used up or expires, delete the active card before issuing the next one.',
+          'For occasional exceptions, you can adjust an active card manually. The most common use is extending expiry time, especially if you are not using Pause Cards.'
+        ],
+        support_title: 'Support workflows',
+        support_templates_title: 'Edit or retire templates',
+        support_templates_body: 'Use these pages when a template needs correction or should no longer be available.',
+        edit_templates_link: 'Edit Templates',
+        delete_templates_link: 'Delete Templates',
+        support_cleanup_title: 'Clean up finished cards',
+        support_cleanup_body: 'Delete or cancel active cards when they are fully used, expired, or being replaced.',
+        delete_cards_link: 'Delete Cards',
+        support_records_title: 'Review card history',
+        support_records_body: 'Use records when you need history, status review, or follow-up on unusual card states.',
+        records_link: 'Card Records'
+      },
+      flow: {
+        badge: 'Cards',
+        title: 'How cards work with booking',
+        intro: 'Membership cards are mainly for booking lessons. Students book, lessons are deducted automatically, and the system calculates from real booking activity.',
+        normal_title: 'The normal flow',
+        normal_items: [
+          'Create a card template.',
+          'Issue the card to a member.',
+          'The member books lessons using that card.',
+          'Lessons are deducted through booked lessons.',
+          'When the card reaches 0 lessons or the expiry time is up, delete the active card.',
+          'Issue a new card when the member renews.'
+        ],
+        why_title: 'Why this matters',
+        why_items: [
+          'Cards should support lesson booking clearly and predictably.',
+          'Only lessons deducted through booked lessons count toward Analytics financial reports.',
+          'A member cannot hold two active cards for the same template at the same time.'
+        ],
+        next_title: 'Next step',
+        create_link: 'Create a Card Template',
+        issue_link: 'Issue Cards'
+      },
+      create_template: {
+        badge: 'Cards',
+        title: 'Create a membership card template',
+        intro: 'Use Cards → Create Card Template to build the card types your academy will issue.',
+        before_title: 'Before you start',
+        before_items: [
+          'Decide whether this card is for group lessons or private lessons.',
+          'Decide how many lessons the card should include.',
+          'If you want an unlimited membership card, plan the time period first. Unlimited cards still use an expiry timeframe.',
+          'Use the same tuition and currency logic your academy already uses.'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Cards → Create Card Template.',
+          'Enter the card name members and admins should recognize easily.',
+          'Enter the fee and optional description.',
+          'Set total sessions and expiry days.',
+          'For an unlimited card, save Total Sessions as -1, not 0.',
+          'Choose whether the card is for Group lessons or Private lessons.',
+          'Save the template.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'The lesson type controls which lessons the card can be used to book.',
+          'A card saved with Total Sessions = -1 allows unlimited booking during its active timeframe.',
+          'Group and Private lessons often have different pricing per class, and instructor pay can also be different.',
+          'Card names should stay clear and stable, because people will see them later during booking and card assignment.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'If the card does not appear during booking, check whether the card type matches the lesson type. This is intentional, so Group cards cannot be used for Private lessons by accident, and Private cards cannot be used for Group lessons by accident.',
+        next_title: 'Next step',
+        next_body: 'After the template exists, the next common job is issuing that card to one or more members.',
+        back_link: 'Back to Cards Overview',
+        next_link: 'Go to Issue Cards'
+      },
+      issue: {
+        badge: 'Cards',
+        title: 'Issue a membership card',
+        intro: 'Use Cards → Assign Cards to give an active card to one or more members.',
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Cards → Assign Cards.',
+          'Choose the card template you want to issue.',
+          'Choose one or more members.',
+          'Review the selected members.',
+          'Press Confirm to issue the cards.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Newly accepted members may appear near the top for easier issuing.',
+          'Members who already hold an active card for that template are shown differently so you can spot duplicates.',
+          'A member cannot hold two active cards for the same template at the same time.'
+        ],
+        mistake_title: 'Common mistake',
+        mistake_body: 'If the member is renewing the same card, delete the old active card first and then issue the new one.',
+        next_title: 'Next step',
+        next_body: 'After a card is issued, the normal next step is using that card to book lessons.',
+        back_link: 'Back to Templates',
+        next_link: 'How Cards Work'
+      },
+      edit_template: {
+        badge: 'Cards',
+        title: 'Edit a card template',
+        intro: 'Use this when a template already exists and you need to update its settings for future use.',
+        use_title: 'Use this page when',
+        use_items: [
+          'a template setting needs to be corrected',
+          'the fee, session count, expiry, or lesson-type setup needs to change',
+          'you want to adjust future issuing behavior without creating a new template yet'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'The template name stays locked after creation.',
+          'Changes should be saved carefully because they affect how the template behaves going forward.',
+          'If the change is large enough to represent a different membership product, it may be cleaner to create a new template instead.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Create Template',
+        next_link: 'Issue Cards'
+      },
+      delete_template: {
+        badge: 'Cards',
+        title: 'Delete a card template',
+        intro: 'Use this when a template should no longer exist and is not still tied to active cards.',
+        before_title: 'Before you delete it',
+        before_items: [
+          'Check whether the template is still tied to active cards.',
+          'If active cards still depend on it, cleanup needs to happen first.'
+        ],
+        know_title: 'What to know',
+        know_body: 'Template deletion is a cleanup workflow. It should be used when a membership offering is truly retired, not just because one member is renewing.',
+        next_title: 'Next step',
+        back_link: 'Back to Templates',
+        next_link: 'Cards Overview'
+      },
+      delete_card: {
+        badge: 'Cards',
+        title: 'Delete or cancel an active card',
+        intro: 'Use this when an active card has reached the end of its life or should no longer remain active for that member.',
+        use_title: 'Most common use',
+        use_items: [
+          'the card is expired or fully used',
+          'the member is renewing and needs a new active card issued',
+          'the card should be canceled and recorded correctly before moving on'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Expired cards are usually deleted as the default cleanup path.',
+          'A member cannot hold two active cards for the same template at the same time.',
+          'If you cancel a card, provide the required reason and let the card history remain visible.'
+        ],
+        next_title: 'Next step',
+        next_body: 'After cleanup, issue the next card only if the member is continuing with a new active membership.',
+        back_link: 'Back to Issue Cards',
+        next_link: 'Cards Overview'
+      },
+      records: {
+        badge: 'Cards',
+        title: 'Review card records',
+        intro: 'Use card records when you need history, status visibility, or follow-up on unusual card states.',
+        review_title: 'What you can review',
+        review_items: [
+          'current cards',
+          'issued cards',
+          'canceled cards',
+          'debt-related card states'
+        ],
+        when_title: 'When this helps most',
+        when_items: [
+          'you need to understand what happened to a specific card',
+          'you are checking whether a card was canceled, settled, or cleared',
+          'you are following up on a debt or record discrepancy'
+        ],
+        know_title: 'What to know',
+        know_body: 'Card records are mainly a review and audit workflow. The normal daily card flow is still: create the template, issue the card, book lessons, then clean up the card when it ends.'
+      }
+    },
+    members: {
+      overview: {
+        badge: 'Members',
+        title: 'Bring people into your academy and manage membership status',
+        intro: 'Use the Members area for the people side of the system: adding members, reviewing applications, and managing accepted, rejected, or banned status.',
+        start_title: 'Start with the job you need to do',
+        cards: [
+          {
+            title: 'Add a member directly',
+            body: 'Use quick enrollment when you want to register someone directly instead of waiting for the normal application flow.',
+            cta: 'Open Quick Enrollment',
+            link: '/help-v2/members/quick-enrollment'
+          },
+          {
+            title: 'Review academy applications',
+            body: 'Accept or reject people who applied through Join Academy.',
+            cta: 'Open Academy Applications',
+            link: '/help-v2/members/applications'
+          },
+          {
+            title: 'Reject or ban someone',
+            body: 'Manage status changes when a member should no longer be active in the academy.',
+            cta: 'Open Reject or Ban Members',
+            link: '/help-v2/members/reject-or-ban'
+          }
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Quick enrollment and academy applications are different entry paths into the academy.',
+          'It takes time to onboard an entire academy, so the easiest long-term approach is usually letting members create their own accounts and add your academy themselves.',
+          'Once members are active, the next common step is issuing membership cards in DojoMate.',
+          'Child accounts can require extra review steps, especially when a parent account is involved.'
+        ],
+        compare_title: 'Not sure which path to choose?',
+        compare_body: 'If you are deciding between creating the account yourself or letting the member apply on their own, use the comparison page first.',
+        compare_link: 'Compare the two member flows'
+      },
+      quick: {
+        badge: 'Members',
+        title: 'Add a member directly',
+        intro: 'Use quick enrollment when you want to register someone directly instead of waiting for the normal Join Academy application flow.',
+        when_title: 'When to use this',
+        when_items: [
+          'you are onboarding someone in person',
+          'you want to create the account directly',
+          'you are registering a parent and want to create multiple child accounts in one setup flow',
+          'the member is resistant to tech and you want to set up the account for them',
+          'you want to add an existing DojoMate account by email'
+        ],
+        path_title: 'Start with the easiest path',
+        path_body_1: 'If your academy is growing, the easiest long-term approach is usually letting members create their own accounts and add your academy themselves.',
+        path_body_2: 'Quick enrollment is best for people who need extra help or who are unlikely to complete the setup on their own.',
+        steps_title: 'Steps',
+        steps_items: [
+          'Open the Affiliate Portal and sign in with your DojoMate email and password.',
+          'Open Register.',
+          'Enter the member’s real email and create a temporary password.',
+          'Choose whether the account is for a student or a parent.',
+          'If you choose parent, continue into the child-account setup flow.',
+          'Review the details and press Confirm.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Quick enrollment skips the normal pending and accepted application flow.',
+          'This flow is especially useful for parents, because you can create multiple child accounts as part of the same registration action.',
+          'You can save a simple temporary password when you create the account. The member can sign in later and change it.',
+          'Some members may never log in themselves, and that is still fine if you are managing the account for them.',
+          'Newly enrolled members can still receive membership cards through the app after setup.',
+          'If the person already has a DojoMate account, add them by email instead of creating a duplicate account.'
+        ],
+        compare_title: 'Need help choosing this flow?',
+        compare_link: 'Compare Quick Enrollment and Applications',
+        next_title: 'Next step',
+        next_body: 'After the account is in the academy, the next common job is issuing a membership card.',
+        back_link: 'Back to Members Overview',
+        next_link: 'Go to Issue Cards'
+      },
+      compare: {
+        badge: 'Members',
+        title: 'Choose between Quick Enrollment and Applications',
+        intro: 'Both flows bring people into the academy, but they are meant for different situations.',
+        quick_title: 'Use Quick Enrollment when',
+        quick_items: [
+          'you want to create the account yourself',
+          'the person needs help with setup',
+          'the person is resistant to tech',
+          'you are registering a parent and multiple child accounts together'
+        ],
+        quick_link: 'Open Quick Enrollment',
+        apps_title: 'Use Applications when',
+        apps_items: [
+          'you want members to create their own accounts',
+          'you want the academy to scale without the owner creating every account manually',
+          'the member can follow the Join Academy flow on their own'
+        ],
+        apps_link: 'Open Academy Applications',
+        rule_title: 'The simple rule',
+        rule_body: 'Let members create themselves whenever possible. Use Quick Enrollment when they need extra help or when you want to handle registration directly.'
+      },
+      applications: {
+        badge: 'Members',
+        title: 'Review academy applications',
+        intro: 'Use this flow when someone applies through Join Academy and you need to accept or reject them.',
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Members → Add/Reject Members.',
+          'Review the pending application list.',
+          'Press Accept or Reject on the applicant.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'If no pending account appears, the person may not have applied correctly.',
+          'They may need to scan the academy QR code again or search your academy name again.',
+          'Linked child accounts may need extra acceptance steps through the parent’s profile.'
+        ],
+        why_title: 'Why use applications?',
+        why_body: 'This is the better long-term path when you want members to create their own accounts and add your academy themselves.',
+        compare_link: 'Compare Applications and Quick Enrollment',
+        mistake_title: 'Common mistake',
+        mistake_body: 'If child accounts do not appear right away, either they were not created properly yet or the list is stale. Ask the parent to finish child setup, or refresh the app view.',
+        next_title: 'Next step',
+        next_body: 'After you accept someone into the academy, the next common job is issuing their membership card.',
+        back_link: 'Back to Members Overview',
+        next_link: 'Go to Issue Cards'
+      },
+      reject: {
+        badge: 'Members',
+        title: 'Reject or ban a member when needed',
+        intro: 'Use this flow when someone should no longer remain active in the academy.',
+        reject_title: 'How rejection works',
+        reject_items: [
+          'Open the member’s profile from Members → Members List.',
+          'Press Reject to remove them from the academy.',
+          'A member with active cards must be cleared before rejection can happen.'
+        ],
+        ban_title: 'How ban works',
+        ban_items: [
+          'Rejected members appear in Members → Rejected List.',
+          'From there you can choose to accept them again or ban them.',
+          'Banned members cannot reapply through Join Academy.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Removing active cards first is part of the normal cleanup process before rejection.',
+          'If you want to undo a ban later, go to Banned List and use Remove Ban.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Members Overview',
+        next_link: 'Review Cards Workflow'
+      }
+    },
     student: {
       home: {
         badge: 'Student',

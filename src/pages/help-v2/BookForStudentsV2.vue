@@ -1,62 +1,58 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Schedule</span>
-      <h1>Book for students when needed</h1>
+      <span class="badge">{{ t('help_v2.schedule.booking.badge') }}</span>
+      <h1>{{ t('help_v2.schedule.booking.title') }}</h1>
       <p class="muted">
-        It is best when students or parents book themselves, but admins can step in when someone forgot, missed the cut-off, or needs help.
+        {{ t('help_v2.schedule.booking.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Steps</h2>
+      <h2>{{ t('help_v2.schedule.booking.steps_title') }}</h2>
       <ol>
-        <li>Open <strong>Schedule</strong> and choose the lesson date.</li>
-        <li>Open the lesson, then go to <strong>Booking</strong>.</li>
-        <li>Tap <strong>Add Members</strong>.</li>
-        <li>Choose the member you want to book.</li>
-        <li>Select one of their allowed active cards.</li>
-        <li>Press <strong>Confirm</strong>.</li>
+        <li v-for="item in tm('help_v2.schedule.booking.steps_items')" :key="item">{{ item }}</li>
       </ol>
     </section>
 
     <section class="card stack tight">
-      <h2>To unbook a student</h2>
+      <h2>{{ t('help_v2.schedule.booking.unbook_title') }}</h2>
       <ol>
-        <li>Open the attendance list for the lesson.</li>
-        <li>Tap the booked member.</li>
-        <li>Tap the blue booked card until it turns gray.</li>
-        <li>Press <strong>Confirm</strong>.</li>
+        <li v-for="item in tm('help_v2.schedule.booking.unbook_items')" :key="item">{{ item }}</li>
       </ol>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.schedule.booking.know_title') }}</h2>
       <ul>
-        <li>Admins can usually book with more freedom than students, especially around cut-off or capacity rules.</li>
-        <li>The member must still have an active card that is allowed for that lesson.</li>
-        <li>Finished lessons cannot be booked or unbooked.</li>
+        <li v-for="item in tm('help_v2.schedule.booking.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Common mistake</h2>
+      <h2>{{ t('help_v2.schedule.booking.mistake_title') }}</h2>
       <p class="muted">
-        If the correct card does not appear, the lesson may be limited to different card types than the member currently has active.
+        {{ t('help_v2.schedule.booking.mistake_body') }}
       </p>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.schedule.booking.next_title') }}</h2>
       <p class="muted">
-        If booking rules are causing problems, review the lesson setup and adjust the lesson instead of repeatedly overriding it.
+        {{ t('help_v2.schedule.booking.next_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/schedule/create-lesson">
-          Review Create Lesson
+          {{ t('help_v2.schedule.booking.create_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/schedule/manage-lesson">
-          Review Manage Lesson
+          {{ t('help_v2.schedule.booking.manage_link') }}
         </router-link>
       </div>
     </section>

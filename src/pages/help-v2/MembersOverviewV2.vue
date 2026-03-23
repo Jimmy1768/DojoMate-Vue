@@ -1,70 +1,50 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import V2Icon from '../../components/V2Icon.vue'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Members</span>
-      <h1 class="v2-page-title"><V2Icon name="members" :size="24" />Bring people into your academy and manage membership status</h1>
+      <span class="badge">{{ t('help_v2.members.overview.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="members" :size="24" />{{ t('help_v2.members.overview.title') }}</h1>
       <p class="muted">
-        Use the Members area for the people side of the system: adding members, reviewing applications, and managing accepted, rejected, or banned status.
+        {{ t('help_v2.members.overview.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with the job you need to do</h2>
+      <h2>{{ t('help_v2.members.overview.start_title') }}</h2>
       <div class="v2-grid">
-        <article class="v2-panel">
-          <h3>Add a member directly</h3>
+        <article v-for="card in tm('help_v2.members.overview.cards')" :key="card.link" class="v2-panel">
+          <h3>{{ card.title }}</h3>
           <p class="muted">
-            Use quick enrollment when you want to register someone directly instead of waiting for the normal application flow.
+            {{ card.body }}
           </p>
-          <router-link class="link" to="/help-v2/members/quick-enrollment">
-            Open Quick Enrollment
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Review academy applications</h3>
-          <p class="muted">
-            Accept or reject people who applied through Join Academy.
-          </p>
-          <router-link class="link" to="/help-v2/members/applications">
-            Open Academy Applications
-          </router-link>
-        </article>
-
-        <article class="v2-panel">
-          <h3>Reject or ban someone</h3>
-          <p class="muted">
-            Manage status changes when a member should no longer be active in the academy.
-          </p>
-          <router-link class="link" to="/help-v2/members/reject-or-ban">
-            Open Reject or Ban Members
+          <router-link class="link" :to="card.link">
+            {{ card.cta }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.members.overview.know_title') }}</h2>
       <ul>
-        <li>Quick enrollment and academy applications are different entry paths into the academy.</li>
-        <li>It takes time to onboard an entire academy, so the easiest long-term approach is usually letting members create their own accounts and add your academy themselves.</li>
-        <li>Once members are active, the next common step is issuing membership cards in DojoMate.</li>
-        <li>Child accounts can require extra review steps, especially when a parent account is involved.</li>
+        <li v-for="item in tm('help_v2.members.overview.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Not sure which path to choose?</h2>
+      <h2>{{ t('help_v2.members.overview.compare_title') }}</h2>
       <p class="muted">
-        If you are deciding between creating the account yourself or letting the member apply on their own, use the comparison page first.
+        {{ t('help_v2.members.overview.compare_body') }}
       </p>
       <div>
         <router-link class="btn btn--ghost" to="/help-v2/members/quick-enrollment-vs-applications">
-          Compare the two member flows
+          {{ t('help_v2.members.overview.compare_link') }}
         </router-link>
       </div>
     </section>

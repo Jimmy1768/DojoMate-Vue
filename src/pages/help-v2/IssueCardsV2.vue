@@ -1,51 +1,51 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Cards</span>
-      <h1>Issue a membership card</h1>
+      <span class="badge">{{ t('help_v2.cards.issue.badge') }}</span>
+      <h1>{{ t('help_v2.cards.issue.title') }}</h1>
       <p class="muted">
-        Use <strong>Cards → Assign Cards</strong> to give an active card to one or more members.
+        {{ t('help_v2.cards.issue.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Steps</h2>
+      <h2>{{ t('help_v2.cards.issue.steps_title') }}</h2>
       <ol>
-        <li>Open <strong>Cards → Assign Cards</strong>.</li>
-        <li>Choose the card template you want to issue.</li>
-        <li>Choose one or more members.</li>
-        <li>Review the selected members.</li>
-        <li>Press <strong>Confirm</strong> to issue the cards.</li>
+        <li v-for="item in tm('help_v2.cards.issue.steps_items')" :key="item">{{ item }}</li>
       </ol>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.cards.issue.know_title') }}</h2>
       <ul>
-        <li>Newly accepted members may appear near the top for easier issuing.</li>
-        <li>Members who already hold an active card for that template are shown differently so you can spot duplicates.</li>
-        <li>A member cannot hold two active cards for the same template at the same time.</li>
+        <li v-for="item in tm('help_v2.cards.issue.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Common mistake</h2>
+      <h2>{{ t('help_v2.cards.issue.mistake_title') }}</h2>
       <p class="muted">
-        If the member is renewing the same card, delete the old active card first and then issue the new one.
+        {{ t('help_v2.cards.issue.mistake_body') }}
       </p>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.cards.issue.next_title') }}</h2>
       <p class="muted">
-        After a card is issued, the normal next step is using that card to book lessons.
+        {{ t('help_v2.cards.issue.next_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/cards/create-template">
-          Back to Templates
+          {{ t('help_v2.cards.issue.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/cards/how-booking-works">
-          How Cards Work
+          {{ t('help_v2.cards.issue.next_link') }}
         </router-link>
       </div>
     </section>

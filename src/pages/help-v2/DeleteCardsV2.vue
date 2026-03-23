@@ -1,42 +1,44 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Cards</span>
-      <h1>Delete or cancel an active card</h1>
+      <span class="badge">{{ t('help_v2.cards.delete_card.badge') }}</span>
+      <h1>{{ t('help_v2.cards.delete_card.title') }}</h1>
       <p class="muted">
-        Use this when an active card has reached the end of its life or should no longer remain active for that member.
+        {{ t('help_v2.cards.delete_card.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Most common use</h2>
+      <h2>{{ t('help_v2.cards.delete_card.use_title') }}</h2>
       <ul>
-        <li>the card is expired or fully used</li>
-        <li>the member is renewing and needs a new active card issued</li>
-        <li>the card should be canceled and recorded correctly before moving on</li>
+        <li v-for="item in tm('help_v2.cards.delete_card.use_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.cards.delete_card.know_title') }}</h2>
       <ul>
-        <li>Expired cards are usually deleted as the default cleanup path.</li>
-        <li>A member cannot hold two active cards for the same template at the same time.</li>
-        <li>If you cancel a card, provide the required reason and let the card history remain visible.</li>
+        <li v-for="item in tm('help_v2.cards.delete_card.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.cards.delete_card.next_title') }}</h2>
       <p class="muted">
-        After cleanup, issue the next card only if the member is continuing with a new active membership.
+        {{ t('help_v2.cards.delete_card.next_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/cards/issue-cards">
-          Back to Issue Cards
+          {{ t('help_v2.cards.delete_card.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/cards">
-          Cards Overview
+          {{ t('help_v2.cards.delete_card.next_link') }}
         </router-link>
       </div>
     </section>

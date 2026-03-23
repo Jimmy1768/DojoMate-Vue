@@ -1,88 +1,77 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <div class="v2-meta-row">
-        <span class="badge">Business</span>
-        <span class="badge badge--premium">Paid Tool</span>
+        <span class="badge">{{ t('help_v2.business.analytics.badge') }}</span>
+        <span class="badge badge--premium">{{ t('help_v2.business.analytics.paid_badge') }}</span>
       </div>
-      <h1>Track pay, time, and performance</h1>
+      <h1>{{ t('help_v2.business.analytics.title') }}</h1>
       <p class="muted">
-        Use <strong>Business → Analytics</strong> for compensation, reports, timesheets, and payroll-related tools.
+        {{ t('help_v2.business.analytics.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Use this page when</h2>
+      <h2>{{ t('help_v2.business.analytics.use_title') }}</h2>
       <ul>
-        <li>you want to review academy metrics and reports</li>
-        <li>you need to enter or update compensation details</li>
-        <li>you need to review timesheets or staff punch-card activity</li>
+        <li v-for="item in tm('help_v2.business.analytics.use_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What Analytics covers</h2>
+      <h2>{{ t('help_v2.business.analytics.covers_title') }}</h2>
       <div class="v2-grid">
-        <article class="v2-panel">
-          <h3>Reports</h3>
+        <article v-for="card in tm('help_v2.business.analytics.cards')" :key="card.title" class="v2-panel">
+          <h3>{{ card.title }}</h3>
           <p class="muted">
-            Review real-time numbers, weekly summaries, financial reports, and monthly attendance-related reports.
-          </p>
-        </article>
-        <article class="v2-panel">
-          <h3>Compensation</h3>
-          <p class="muted">
-            Set salary, hourly, and private-lesson pay details so costs can be tracked more accurately.
-          </p>
-        </article>
-        <article class="v2-panel">
-          <h3>Time and payroll tools</h3>
-          <p class="muted">
-            Review punch cards, office hours, and approval workflows for time-based staff records.
+            {{ card.body }}
           </p>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.business.analytics.know_title') }}</h2>
       <ul>
-        <li>Changing compensation in Analytics does not make someone an instructor.</li>
-        <li>If someone should teach, add that role in <strong>Instructors</strong>.</li>
-        <li>If someone should manage the academy, grant that access in <strong>Permissions</strong>.</li>
-        <li>Some analytics screens may be fully locked, while others can stay visible and show upgrade prompts instead.</li>
+        <li v-for="item in tm('help_v2.business.analytics.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Common mistake</h2>
+      <h2>{{ t('help_v2.business.analytics.mistake_title') }}</h2>
       <p class="muted">
-        Analytics is not the place to decide teaching roles or admin roles. It is the place to review business metrics and manage pay-related tools.
+        {{ t('help_v2.business.analytics.mistake_body') }}
       </p>
       <div>
         <router-link class="btn btn--ghost" to="/help-v2/business/compare-pages">
-          Compare Business Pages
+          {{ t('help_v2.business.analytics.compare_link') }}
         </router-link>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.business.analytics.next_title') }}</h2>
       <p class="muted">
-        If you are still setting up your team, finish the teaching role and admin role steps first. If the team is already set, the next common job is creating lessons and letting booking do the daily work.
+        {{ t('help_v2.business.analytics.next_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/tools/activate">
-          Activate Tools and Premium
+          {{ t('help_v2.business.analytics.activate_link') }}
         </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/business/instructors">
-          Instructors
+          {{ t('help_v2.business.analytics.instructors_link') }}
         </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/business/staff-access">
-          Staff Access
+          {{ t('help_v2.business.analytics.staff_access_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/schedule">
-          Go to Schedule
+          {{ t('help_v2.business.analytics.next_link') }}
         </router-link>
       </div>
     </section>

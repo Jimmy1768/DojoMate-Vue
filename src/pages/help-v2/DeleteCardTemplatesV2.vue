@@ -1,36 +1,41 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Cards</span>
-      <h1>Delete a card template</h1>
+      <span class="badge">{{ t('help_v2.cards.delete_template.badge') }}</span>
+      <h1>{{ t('help_v2.cards.delete_template.title') }}</h1>
       <p class="muted">
-        Use this when a template should no longer exist and is not still tied to active cards.
+        {{ t('help_v2.cards.delete_template.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Before you delete it</h2>
+      <h2>{{ t('help_v2.cards.delete_template.before_title') }}</h2>
       <ul>
-        <li>Check whether the template is still tied to active cards.</li>
-        <li>If active cards still depend on it, cleanup needs to happen first.</li>
+        <li v-for="item in tm('help_v2.cards.delete_template.before_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.cards.delete_template.know_title') }}</h2>
       <p class="muted">
-        Template deletion is a cleanup workflow. It should be used when a membership offering is truly retired, not just because one member is renewing.
+        {{ t('help_v2.cards.delete_template.know_body') }}
       </p>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.cards.delete_template.next_title') }}</h2>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/cards/create-template">
-          Back to Templates
+          {{ t('help_v2.cards.delete_template.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/cards">
-          Cards Overview
+          {{ t('help_v2.cards.delete_template.next_link') }}
         </router-link>
       </div>
     </section>

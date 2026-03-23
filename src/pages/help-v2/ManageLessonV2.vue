@@ -1,58 +1,58 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Schedule</span>
-      <h1>Edit, cancel, or delete a lesson</h1>
+      <span class="badge">{{ t('help_v2.schedule.manage.badge') }}</span>
+      <h1>{{ t('help_v2.schedule.manage.title') }}</h1>
       <p class="muted">
-        Use the lesson details screen to update lesson info or stop a lesson from being bookable.
+        {{ t('help_v2.schedule.manage.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>How to open the lesson</h2>
+      <h2>{{ t('help_v2.schedule.manage.open_title') }}</h2>
       <ol>
-        <li>Open <strong>Schedule</strong>.</li>
-        <li>Select the correct date.</li>
-        <li>Tap the lesson itself, not the booking button.</li>
+        <li v-for="item in tm('help_v2.schedule.manage.open_items')" :key="item">{{ item }}</li>
       </ol>
     </section>
 
     <section class="card stack tight">
-      <h2>What each action does</h2>
+      <h2>{{ t('help_v2.schedule.manage.actions_title') }}</h2>
       <ul>
-        <li><strong>Edit:</strong> update lesson details, then save changes.</li>
-        <li><strong>Cancel:</strong> unbook current members and stop new bookings.</li>
-        <li><strong>Delete:</strong> remove the lesson completely after it has been canceled.</li>
+        <li v-for="item in tm('help_v2.schedule.manage.actions_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.schedule.manage.know_title') }}</h2>
       <ul>
-        <li>You cannot edit a lesson after the booking cut-off time.</li>
-        <li>You cannot cancel or delete a lesson that has already started.</li>
-        <li>If a lesson was created by mistake, cancel it first, then delete it.</li>
+        <li v-for="item in tm('help_v2.schedule.manage.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Common mistake</h2>
+      <h2>{{ t('help_v2.schedule.manage.mistake_title') }}</h2>
       <p class="muted">
-        People often tap the booking flow when they actually need the lesson details screen. If you want to edit or cancel the lesson, open the lesson card itself.
+        {{ t('help_v2.schedule.manage.mistake_body') }}
       </p>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.schedule.manage.next_title') }}</h2>
       <p class="muted">
-        If the lesson is staying active, the next common task is helping students book into it.
+        {{ t('help_v2.schedule.manage.next_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/schedule/create-lesson">
-          Back to Create Lesson
+          {{ t('help_v2.schedule.manage.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/schedule/book-for-students">
-          Go to Booking
+          {{ t('help_v2.schedule.manage.next_link') }}
         </router-link>
       </div>
     </section>
