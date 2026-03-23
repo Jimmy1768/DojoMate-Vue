@@ -1,63 +1,91 @@
 <script setup>
 import V2Icon from '../../components/V2Icon.vue'
 import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <div class="v2-meta-row">
-        <span class="badge">Portal</span>
+        <span class="badge">{{ t('help_v2.portal.overview.badge') }}</span>
       </div>
-      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />Use the Affiliate Portal in AFL</h1>
-      <p class="muted">
-        The Affiliate Portal is a web surface in Source Combatives AFL. Use it for portal-only workflows that go beyond the normal day-to-day app screens.
-      </p>
+      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />{{ t('help_v2.portal.overview.title') }}</h1>
+      <p class="muted">{{ t('help_v2.portal.overview.intro') }}</p>
     </div>
 
     <section class="card stack tight">
-      <h2>Portal jobs</h2>
+      <h2>{{ t('help_v2.portal.overview.workflows_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Register and set up programs</h3>
+          <h3>{{ t('help_v2.portal.overview.register_title') }}</h3>
           <div class="stack tight">
             <router-link class="link" to="/help-v2/portal/register">
-              Register
+              {{ t('help_v2.layout.nav.portal_register') }}
             </router-link>
-            <router-link class="link" to="/help-v2/portal/ranks">
-              Ranks
-            </router-link>
+            <p class="muted">{{ t('help_v2.portal.overview.register_body') }}</p>
           </div>
         </article>
 
         <article class="v2-panel">
-          <h3>Manage people and cards</h3>
+          <h3>{{ t('help_v2.portal.overview.members_title') }}</h3>
           <div class="stack tight">
             <router-link class="link" to="/help-v2/portal/members">
-              Members
+              {{ t('help_v2.layout.nav.portal_members') }}
             </router-link>
-            <router-link class="link" to="/help-v2/portal/cards">
-              Cards
-            </router-link>
+            <p class="muted">{{ t('help_v2.portal.overview.members_body') }}</p>
           </div>
         </article>
 
         <article class="v2-panel">
-          <h3>Review reports</h3>
+          <h3>{{ t('help_v2.portal.overview.ranks_title') }}</h3>
+          <div class="stack tight">
+            <router-link class="link" to="/help-v2/portal/ranks">
+              {{ t('help_v2.layout.nav.portal_ranks') }}
+            </router-link>
+            <p class="muted">{{ t('help_v2.portal.overview.ranks_body') }}</p>
+          </div>
+        </article>
+
+        <article class="v2-panel">
+          <h3>{{ t('help_v2.portal.overview.cards_title') }}</h3>
+          <div class="stack tight">
+            <router-link class="link" to="/help-v2/portal/cards">
+              {{ t('help_v2.layout.nav.portal_cards') }}
+            </router-link>
+            <p class="muted">{{ t('help_v2.portal.overview.cards_body') }}</p>
+          </div>
+        </article>
+
+        <article class="v2-panel">
+          <h3>{{ t('help_v2.portal.overview.reports_title') }}</h3>
           <div class="stack tight">
             <router-link class="link" to="/help-v2/portal/reports">
-              Reports
+              {{ t('help_v2.layout.nav.portal_reports') }}
             </router-link>
+            <router-link class="link" to="/help-v2/tools/activate">
+              Features
+            </router-link>
+            <p class="muted">{{ t('help_v2.portal.overview.reports_body') }}</p>
           </div>
         </article>
       </div>
     </section>
 
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.portal.overview.know_title') }}</h2>
+      <ul>
+        <li v-for="item in tm('help_v2.portal.overview.know_items')" :key="item">{{ item }}</li>
+      </ul>
+    </section>
+
     <V2SupportCallout
       board-name="AFL portal board"
       href="https://sourcecombatives.com/forum/afl-portal"
-      description="Use the AFL portal board on Source Combatives for Affiliate Portal questions, portal setup problems, and other AFL-specific web workflows."
-      button-label="Open the AFL Portal Board"
+      :description="t('help_v2.portal.overview.support_desc')"
+      :button-label="t('help_v2.portal.overview.support_button')"
     />
   </section>
 </template>

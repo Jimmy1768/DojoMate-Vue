@@ -1,105 +1,108 @@
 <script setup>
 import V2Icon from '../components/V2Icon.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Preview</span>
-      <h1>Help Guide v2</h1>
+      <span class="badge">{{ t('help_v2.welcome.badge') }}</span>
+      <h1>{{ t('help_v2.welcome.title') }}</h1>
       <p class="muted">
-        This version is being rebuilt around the person using DojoMate, not just the screen they happen to be on.
+        {{ t('help_v2.welcome.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with who you are</h2>
+      <h2>{{ t('help_v2.welcome.who_title') }}</h2>
       <div class="v2-home-grid">
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="business" :size="18" />I run the academy</h3>
+          <h3 class="v2-home-title"><V2Icon name="business" :size="18" />{{ t('help_v2.welcome.owner_title') }}</h3>
           <p class="muted">
-            Start here if you own the academy and need setup, team, cards, schedule, or tools guidance.
+            {{ t('help_v2.welcome.owner_body') }}
           </p>
           <router-link class="link" to="/help-v2/owner">
-            Open the owner path
+            {{ t('help_v2.welcome.owner_link') }}
           </router-link>
         </article>
 
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="access" :size="18" />I help manage the academy</h3>
+          <h3 class="v2-home-title"><V2Icon name="access" :size="18" />{{ t('help_v2.welcome.admin_title') }}</h3>
           <p class="muted">
-            Start here if you are staff helping with lessons, members, cards, or daily academy operations.
+            {{ t('help_v2.welcome.admin_body') }}
           </p>
           <router-link class="link" to="/help-v2/admin">
-            Open the admin path
+            {{ t('help_v2.welcome.admin_link') }}
           </router-link>
         </article>
 
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="members" :size="18" />I train at an academy</h3>
+          <h3 class="v2-home-title"><V2Icon name="members" :size="18" />{{ t('help_v2.welcome.student_title') }}</h3>
           <p class="muted">
-            Start here if you are a student, parent, or academy member looking for account, booking, or membership help.
+            {{ t('help_v2.welcome.student_body') }}
           </p>
           <router-link class="link" to="/help-v2/student">
-            Open the student path
+            {{ t('help_v2.welcome.student_link') }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Or jump straight into a job</h2>
+      <h2>{{ t('help_v2.welcome.jobs_title') }}</h2>
       <div class="v2-home-grid">
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="cards" :size="18" />Set up membership cards</h3>
+          <h3 class="v2-home-title"><V2Icon name="cards" :size="18" />{{ t('help_v2.welcome.cards_title') }}</h3>
           <p class="muted">
-            Learn how cards support booking, then create templates and issue cards.
+            {{ t('help_v2.welcome.cards_body') }}
           </p>
           <router-link class="link" to="/help-v2/cards">
-            Open Cards Overview
+            {{ t('help_v2.welcome.cards_link') }}
           </router-link>
         </article>
 
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="members" :size="18" />Add and manage members</h3>
+          <h3 class="v2-home-title"><V2Icon name="members" :size="18" />{{ t('help_v2.welcome.members_title') }}</h3>
           <p class="muted">
-            Bring people into the academy, review applications, and manage status changes.
+            {{ t('help_v2.welcome.members_body') }}
           </p>
           <router-link class="link" to="/help-v2/members">
-            Open Members Overview
+            {{ t('help_v2.welcome.members_link') }}
           </router-link>
         </article>
 
         <article class="v2-home-card">
-          <h3 class="v2-home-title"><V2Icon name="tools" :size="18" />Use paid tools</h3>
+          <h3 class="v2-home-title"><V2Icon name="tools" :size="18" />{{ t('help_v2.welcome.tools_title') }}</h3>
           <p class="muted">
-            Add recurring scheduling and card-pausing tools after the core workflow is in place, and use the Features page to activate Premium when needed.
+            {{ t('help_v2.welcome.tools_body') }}
           </p>
           <router-link class="link" to="/help-v2/tools">
-            Open Tools Overview
+            {{ t('help_v2.welcome.tools_link') }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>How v2 is different</h2>
+      <h2>{{ t('help_v2.welcome.difference_title') }}</h2>
       <p class="muted">
-        v2 is organized around people and the jobs they are trying to finish, not around long screen-by-screen explanations. The goal is to help users decide what to do next, faster.
+        {{ t('help_v2.welcome.difference_body') }}
       </p>
       <div class="row">
-        <router-link class="btn btn--ghost" to="/help-v1">Open Help v1</router-link>
-        <router-link class="btn" to="/help-v2/owner">Start Here</router-link>
+        <router-link class="btn btn--ghost" to="/help-v1">{{ t('help_v2.welcome.difference_v1') }}</router-link>
+        <router-link class="btn" to="/help-v2/owner">{{ t('help_v2.welcome.difference_start') }}</router-link>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Current Status</h2>
+      <h2>{{ t('help_v2.welcome.status_title') }}</h2>
       <p class="muted">
-        v1 remains the live guide at the public help link. v2 is being built in parallel, chunk by chunk, so structure and tone can improve without breaking existing links.
+        {{ t('help_v2.welcome.status_body') }}
       </p>
       <div>
-        <router-link class="btn" to="/help-v1">Go to Help v1</router-link>
+        <router-link class="btn" to="/help-v1">{{ t('help_v2.welcome.status_link') }}</router-link>
       </div>
     </section>
   </section>

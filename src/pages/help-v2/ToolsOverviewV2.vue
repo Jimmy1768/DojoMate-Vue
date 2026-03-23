@@ -1,62 +1,73 @@
 <script setup>
 import V2Icon from '../../components/V2Icon.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Tools</span>
-      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />Use paid tools to extend your academy workflow</h1>
-      <p class="muted">
-        Paid tools add extra systems on top of the core academy workflow, such as recurring schedules, card pausing, staff access, and analytics.
-      </p>
+      <span class="badge">{{ t('help_v2.tools.overview.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />{{ t('help_v2.tools.overview.title') }}</h1>
+      <p class="muted">{{ t('help_v2.tools.overview.intro') }}</p>
     </div>
 
     <section class="card stack tight">
       <div class="v2-meta-row">
-        <span class="badge badge--premium">Paid Tool</span>
+        <span class="badge badge--premium">{{ t('help_v2.tools.overview.start_badge') }}</span>
       </div>
-      <h2>Start with the tool you need</h2>
+      <h2>{{ t('help_v2.tools.overview.start_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
           <div class="v2-meta-row">
-            <h3>Build a recurring schedule</h3>
+            <h3>{{ t('help_v2.tools.overview.timetable_title') }}</h3>
             <span class="badge badge--premium">Paid</span>
           </div>
           <p class="muted">
-            Use Timetable when you want repeating weekly lessons without recreating them one by one.
+            {{ t('help_v2.tools.overview.timetable_body') }}
           </p>
           <router-link class="link" to="/help-v2/tools/timetable">
-            Open Timetable
+            {{ t('help_v2.tools.overview.timetable_link') }}
           </router-link>
         </article>
 
         <article class="v2-panel">
           <div class="v2-meta-row">
-            <h3>Pause active cards</h3>
+            <h3>{{ t('help_v2.tools.overview.pause_title') }}</h3>
             <span class="badge badge--premium">Paid</span>
           </div>
           <p class="muted">
-            Use Pause Cards when you need to stop card time temporarily.
+            {{ t('help_v2.tools.overview.pause_body') }}
           </p>
           <router-link class="link" to="/help-v2/tools/pause-cards">
-            Open Pause Cards
+            {{ t('help_v2.tools.overview.pause_link') }}
+          </router-link>
+        </article>
+
+        <article class="v2-panel">
+          <div class="v2-meta-row">
+            <h3>{{ t('help_v2.tools.overview.broadcast_title') }}</h3>
+            <span class="badge badge--premium">Paid</span>
+          </div>
+          <p class="muted">
+            {{ t('help_v2.tools.overview.broadcast_body') }}
+          </p>
+          <router-link class="link" to="/help-v2/tools/broadcast">
+            {{ t('help_v2.tools.overview.broadcast_link') }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.tools.overview.know_title') }}</h2>
       <ul>
-        <li>Paid tools extend the core workflows you already use in Business, Schedule, Cards, and Members.</li>
-        <li>Tools can be available individually, or through the Premium Package.</li>
-        <li>Other roles can often use the tools after the academy owner enables them.</li>
-        <li>It is usually easier to learn the base workflow first, then add paid tools on top.</li>
+        <li v-for="item in tm('help_v2.tools.overview.know_items')" :key="item">{{ item }}</li>
       </ul>
       <div>
         <router-link class="btn" to="/help-v2/tools/activate">
-          Activate Tools and Premium
+          {{ t('help_v2.tools.overview.activate_link') }}
         </router-link>
       </div>
     </section>

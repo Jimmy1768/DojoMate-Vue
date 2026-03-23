@@ -59,7 +59,16 @@
 
 /* v2 help pages use a looser vertical rhythm than v1 */
 .v2-page {
-  gap: var(--space-6);
+  gap: var(--space-8);
+}
+
+.v2-page > .card,
+.v2-page > .v2-support-callout {
+  margin-top: var(--space-4);
+}
+
+.v2-page > .card {
+  padding-top: calc(var(--space-4) + 10px);
 }
 
 .v2-meta-row {

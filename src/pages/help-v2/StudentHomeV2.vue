@@ -1,62 +1,74 @@
 <script setup>
 import V2Icon from '../../components/V2Icon.vue'
 import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Student</span>
-      <h1 class="v2-page-title"><V2Icon name="members" :size="24" />I train at an academy</h1>
+      <span class="badge">{{ t('help_v2.student.home.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="members" :size="24" />{{ t('help_v2.student.home.title') }}</h1>
       <p class="muted">
-        This path is for students, parents, and academy members who want account help, booking help, and membership help.
+        {{ t('help_v2.student.home.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Start with the job you need</h2>
+      <h2>{{ t('help_v2.welcome.who_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Join and manage academy access</h3>
+          <h3>{{ t('help_v2.student.home.section_1') }}</h3>
           <div class="stack tight">
             <router-link class="link" to="/help-v2/student/join-academy">
-              Join Academy
+              {{ t('help_v2.student.home.join_link') }}
             </router-link>
             <router-link class="link" to="/help-v2/student/memberships">
-              Managing Memberships
+              {{ t('help_v2.student.home.memberships_link') }}
             </router-link>
           </div>
         </article>
 
         <article class="v2-panel">
-          <h3>Booking and records</h3>
+          <h3>{{ t('help_v2.student.home.section_2') }}</h3>
           <div class="stack tight">
             <router-link class="link" to="/help-v2/student/booking">
-              Booking
+              {{ t('help_v2.student.home.booking_link') }}
             </router-link>
             <router-link class="link" to="/help-v2/student/attendance-records">
-              Attendance Records
+              {{ t('help_v2.student.home.attendance_link') }}
+            </router-link>
+            <router-link class="link" to="/help-v2/student/broadcast">
+              {{ t('help_v2.student.home.broadcast_link') }}
             </router-link>
             <router-link class="link" to="/help-v2/student/system-alerts">
-              System Alerts
+              {{ t('help_v2.student.home.alerts_link') }}
             </router-link>
           </div>
         </article>
 
         <article class="v2-panel">
-          <h3>Account help</h3>
+          <h3>{{ t('help_v2.student.home.section_3') }}</h3>
           <div class="stack tight">
             <router-link class="link" to="/help-v2/account/sign-in">
-              Sign In
+              {{ t('help_v2.student.home.sign_in_link') }}
             </router-link>
             <router-link class="link" to="/help-v2/account/create-account">
-              Create Account
+              {{ t('help_v2.student.home.create_account_link') }}
             </router-link>
             <router-link class="link" to="/help-v2/account/reset-password">
-              Reset Password
+              {{ t('help_v2.student.home.reset_password_link') }}
             </router-link>
             <router-link class="link" to="/help-v2/account/troubleshooting">
-              Account Troubleshooting
+              {{ t('help_v2.student.home.troubleshooting_link') }}
+            </router-link>
+            <router-link class="link" to="/help-v2/settings/change-password">
+              {{ t('help_v2.student.home.change_password_link') }}
+            </router-link>
+            <router-link class="link" to="/help-v2/profile/child-accounts">
+              {{ t('help_v2.student.home.child_accounts_link') }}
             </router-link>
           </div>
         </article>
@@ -64,13 +76,13 @@ import V2SupportCallout from '../../components/V2SupportCallout.vue'
     </section>
 
     <section class="card stack tight">
-      <h2>Still need something else?</h2>
+      <h2>{{ t('help_v2.student.home.still_need_title') }}</h2>
       <p class="muted">
-        Settings topics still live in Help v1 while the account and student path are being rebuilt.
+        {{ t('help_v2.student.home.still_need_body') }}
       </p>
       <div>
         <router-link class="btn btn--ghost" to="/help-v1">
-          Open Help v1
+          {{ t('help_v2.student.home.still_need_link') }}
         </router-link>
       </div>
     </section>

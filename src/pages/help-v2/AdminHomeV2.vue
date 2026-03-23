@@ -1,70 +1,72 @@
 <script setup>
 import V2Icon from '../../components/V2Icon.vue'
 import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Admin</span>
-      <h1 class="v2-page-title"><V2Icon name="access" :size="24" />I help manage the academy</h1>
+      <span class="badge">{{ t('help_v2.admin_home.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="access" :size="24" />{{ t('help_v2.admin_home.title') }}</h1>
       <p class="muted">
-        This path is for staff who help run daily academy operations after the owner has already set up the academy.
+        {{ t('help_v2.admin_home.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Most common admin jobs</h2>
+      <h2>{{ t('help_v2.admin_home.jobs_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Run schedule tasks</h3>
+          <h3>{{ t('help_v2.admin_home.schedule_title') }}</h3>
           <p class="muted">
-            Create lessons, edit changes, and help students or parents book when needed.
+            {{ t('help_v2.admin_home.schedule_body') }}
           </p>
           <router-link class="link" to="/help-v2/schedule">
-            Open Schedule
+            {{ t('help_v2.admin_home.schedule_link') }}
           </router-link>
         </article>
 
         <article class="v2-panel">
-          <h3>Manage members and cards</h3>
+          <h3>{{ t('help_v2.admin_home.members_title') }}</h3>
           <p class="muted">
-            Review applications, register members directly, and issue cards.
+            {{ t('help_v2.admin_home.members_body') }}
           </p>
           <div class="row">
             <router-link class="link" to="/help-v2/members">
-              Members
+              {{ t('help_v2.layout.nav.members') }}
             </router-link>
             <router-link class="link" to="/help-v2/cards">
-              Cards
+              {{ t('help_v2.layout.nav.cards') }}
             </router-link>
           </div>
         </article>
 
         <article class="v2-panel">
-          <h3>Use delegated access</h3>
+          <h3>{{ t('help_v2.admin_home.delegated_title') }}</h3>
           <p class="muted">
-            If the owner enabled admin access for you, your daily tasks can include schedule, members, cards, and sometimes tools.
+            {{ t('help_v2.admin_home.delegated_body') }}
           </p>
           <router-link class="link" to="/help-v2/business/staff-access">
-            Review Staff Access
+            {{ t('help_v2.admin_home.delegated_link') }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.admin_home.know_title') }}</h2>
       <ul>
-        <li>Most admin topics overlap with the owner workflow, so you do not need a completely separate wiki tree.</li>
-        <li>If something is missing from your account, the owner may need to grant access or activate the required tool first.</li>
+        <li v-for="item in tm('help_v2.admin_home.know_items')" :key="item">{{ item }}</li>
       </ul>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/business/compare-pages">
-          Compare Business Pages
+          {{ t('help_v2.admin_home.compare_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/tools/activate">
-          Activate Tools and Premium
+          {{ t('help_v2.admin_home.tools_link') }}
         </router-link>
       </div>
     </section>

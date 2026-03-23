@@ -1,8 +1,17 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const props = defineProps({
+  title: {
+    type: String,
+    default: ''
+  },
   boardName: {
     type: String,
-    default: 'DojoMate help board'
+    default: ''
   },
   href: {
     type: String,
@@ -10,20 +19,24 @@ const props = defineProps({
   },
   description: {
     type: String,
-    default: 'Use the DojoMate help board on Source Combatives for questions, edge cases, and follow-up help across the app and connected web flows.'
+    default: ''
   },
   buttonLabel: {
     type: String,
-    default: 'Open the DojoMate Help Board'
+    default: ''
   }
 })
+
+const titleText = computed(() => props.title || t('help_v2.support.heading'))
+const descriptionText = computed(() => props.description || t('help_v2.support.default_description'))
+const buttonText = computed(() => props.buttonLabel || t('help_v2.support.default_button'))
 </script>
 
 <template>
   <section class="v2-support-callout stack tight">
-    <h2>Need more help?</h2>
+    <h2>{{ titleText }}</h2>
     <p class="muted">
-      {{ description }}
+      {{ descriptionText }}
     </p>
     <div>
       <a
@@ -32,7 +45,7 @@ const props = defineProps({
         target="_blank"
         rel="noopener noreferrer"
       >
-        {{ buttonLabel }}
+        {{ buttonText }}
       </a>
     </div>
   </section>

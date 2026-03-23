@@ -1,103 +1,94 @@
 <script setup>
 import V2Icon from '../../components/V2Icon.vue'
+import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
       <div class="v2-meta-row">
-        <span class="badge">Tools</span>
-        <span class="badge badge--premium">Paid Tool</span>
+        <span class="badge">{{ t('help_v2.tools.activate.badge') }}</span>
+        <span class="badge badge--premium">{{ t('help_v2.tools.activate.paid_badge') }}</span>
       </div>
-      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />Activate tools and Premium</h1>
-      <p class="muted">
-        Use the Features page to start a Premium trial and manage entitlement-gated tools for your academy.
-      </p>
+      <h1 class="v2-page-title"><V2Icon name="tools" :size="24" />{{ t('help_v2.tools.activate.title') }}</h1>
+      <p class="muted">{{ t('help_v2.tools.activate.intro') }}</p>
     </div>
 
     <section class="card stack tight">
-      <h2>Where to go</h2>
-      <p class="muted">
-        Open <strong>AFL System → Features</strong>. This is the current Rails-managed entry point for tool activation and subscription status.
-      </p>
+      <h2>{{ t('help_v2.tools.activate.where_title') }}</h2>
+      <p class="muted">{{ t('help_v2.tools.activate.where_body') }}</p>
     </section>
 
     <section class="card stack tight">
-      <h2>How tools are presented</h2>
+      <h2>{{ t('help_v2.tools.activate.organized_title') }}</h2>
       <ul>
-        <li>Tools are available individually.</li>
-        <li>The Features page presents them in two groups: <strong>Essential Tools</strong> and <strong>Advanced Tools</strong>.</li>
-        <li><strong>Premium Package</strong> includes all four tools.</li>
-        <li>First-time users can start a <strong>90-day Premium trial</strong>.</li>
+        <li v-for="item in tm('help_v2.tools.activate.organized_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Current tool groups</h2>
+      <h2>{{ t('help_v2.tools.activate.groups_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Essential Tools</h3>
+          <h3>{{ t('help_v2.tools.activate.essential_title') }}</h3>
           <ul>
-            <li>Timetables</li>
-            <li>Pause Academy</li>
+            <li v-for="item in tm('help_v2.tools.activate.essential_items')" :key="item">{{ item }}</li>
           </ul>
         </article>
         <article class="v2-panel">
-          <h3>Advanced Tools</h3>
+          <h3>{{ t('help_v2.tools.activate.advanced_title') }}</h3>
           <ul>
-            <li>Staff Permissions</li>
-            <li>Analytics</li>
+            <li v-for="item in tm('help_v2.tools.activate.advanced_items')" :key="item">{{ item }}</li>
           </ul>
         </article>
         <article class="v2-panel">
-          <h3>Premium Package</h3>
-          <p class="muted">
-            Includes all Essential and Advanced Tools in one bundle.
-          </p>
+          <h3>{{ t('help_v2.tools.activate.packages_title') }}</h3>
+          <p class="muted">{{ t('help_v2.tools.activate.packages_body') }}</p>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>What you may see on the Features page</h2>
+      <h2>{{ t('help_v2.tools.activate.features_title') }}</h2>
       <ul>
-        <li><strong>Start Free Trial</strong></li>
-        <li><strong>Purchase Premium Package</strong></li>
-        <li><strong>Premium active!</strong></li>
-        <li><strong>Included in Premium</strong></li>
-        <li><strong>Available in free trial</strong></li>
-        <li><strong>Included in free trial</strong></li>
-        <li><strong>Buy Now</strong></li>
-        <li><strong>Manage</strong></li>
+        <li v-for="item in tm('help_v2.tools.activate.features_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.tools.activate.know_title') }}</h2>
       <ul>
-        <li>Some screens are fully locked when a tool is inactive.</li>
-        <li>Some screens still load but replace paid actions with upgrade prompts.</li>
-        <li>Staff Permissions is currently more of a capability gate than a big locked screen.</li>
+        <li v-for="item in tm('help_v2.tools.activate.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Paid guides</h2>
+      <h2>{{ t('help_v2.tools.activate.guides_title') }}</h2>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/tools/timetable">
-          Timetable
+          {{ t('help_v2.layout.nav.timetable') }}
         </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/tools/pause-cards">
-          Pause Cards
+          {{ t('help_v2.layout.nav.pause_cards') }}
         </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/business/staff-access">
-          Staff Access
+          {{ t('help_v2.tools.activate.staff_access') }}
         </router-link>
         <router-link class="btn" to="/help-v2/business/analytics">
-          Analytics
+          {{ t('help_v2.tools.activate.analytics') }}
         </router-link>
       </div>
     </section>
+
+    <V2SupportCallout
+      board-name="AFL portal board"
+      href="https://sourcecombatives.com/forum/afl-portal"
+      :description="t('help_v2.tools.activate.support_desc')"
+      :button-label="t('help_v2.tools.activate.support_button')"
+    />
   </section>
 </template>
 

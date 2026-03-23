@@ -75,6 +75,10 @@ import V2Icon from './V2Icon.vue'
               <V2Icon name="members" :size="16" />
               System Alerts
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/student/broadcast">
+              <V2Icon name="broadcast" :size="16" />
+              Broadcast
+            </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student/attendance-records">
               <V2Icon name="members" :size="16" />
               Attendance Records
@@ -269,6 +273,11 @@ import V2Icon from './V2Icon.vue'
               Pause Cards
               <span class="badge badge--premium">Paid</span>
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/tools/broadcast">
+              <V2Icon name="broadcast" :size="16" />
+              Broadcast
+              <span class="badge badge--premium">Paid</span>
+            </router-link>
           </nav>
         </div>
       </aside>
@@ -303,7 +312,11 @@ import V2Icon from './V2Icon.vue'
 }
 
 .v2-nav-title {
-  margin: 0;
+  margin: 18px 0 0;
+}
+
+.v2-nav-title:first-of-type {
+  margin-top: 0;
 }
 
 .v2-nav-link {

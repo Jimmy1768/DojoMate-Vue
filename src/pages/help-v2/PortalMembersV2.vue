@@ -1,21 +1,52 @@
+<script setup>
+import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Portal</span>
-      <h1>Manage portal members</h1>
-      <p class="muted">
-        Use the portal members area when you need to review member information, add email details, or process acceptance and rejection flows.
-      </p>
+      <span class="badge">{{ t('help_v2.portal.members.badge') }}</span>
+      <h1>{{ t('help_v2.portal.members.title') }}</h1>
+      <p class="muted">{{ t('help_v2.portal.members.intro') }}</p>
     </div>
 
     <section class="card stack tight">
-      <h2>What this area covers</h2>
+      <h2>{{ t('help_v2.portal.members.jobs_title') }}</h2>
       <ul>
-        <li>member email details</li>
-        <li>accept and reject work</li>
-        <li>recently accepted members</li>
-        <li>different handling patterns for parents and adults</li>
+        <li v-for="item in tm('help_v2.portal.members.jobs_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
+
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.portal.members.labels_title') }}</h2>
+      <ul>
+        <li v-for="item in tm('help_v2.portal.members.labels_items')" :key="item">{{ item }}</li>
+      </ul>
+    </section>
+
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.portal.members.confusion_title') }}</h2>
+      <ul>
+        <li v-for="item in tm('help_v2.portal.members.confusion_items')" :key="item">{{ item }}</li>
+      </ul>
+    </section>
+
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.portal.members.next_title') }}</h2>
+      <div class="row">
+        <router-link class="btn btn--ghost" to="/help-v2/portal/register">{{ t('help_v2.portal.members.register_link') }}</router-link>
+        <router-link class="btn" to="/help-v2/portal/cards">{{ t('help_v2.portal.members.cards_link') }}</router-link>
+      </div>
+    </section>
+
+    <V2SupportCallout
+      board-name="AFL portal board"
+      href="https://sourcecombatives.com/forum/afl-portal"
+      :description="t('help_v2.portal.members.support_desc')"
+      :button-label="t('help_v2.portal.members.support_button')"
+    />
   </section>
 </template>

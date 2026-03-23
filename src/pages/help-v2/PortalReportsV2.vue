@@ -1,20 +1,44 @@
+<script setup>
+import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Portal</span>
-      <h1>Review portal reports</h1>
-      <p class="muted">
-        Use portal reports when you need report views based on portal data and active-member rules.
-      </p>
+      <span class="badge">{{ t('help_v2.portal.reports.badge') }}</span>
+      <h1>{{ t('help_v2.portal.reports.title') }}</h1>
+      <p class="muted">{{ t('help_v2.portal.reports.intro') }}</p>
     </div>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.portal.reports.flow_title') }}</h2>
       <ul>
-        <li>report items can depend on active-member status</li>
-        <li>inactive members may not appear the way active members do</li>
-        <li>future-oriented notes can affect how you interpret the report view</li>
+        <li v-for="item in tm('help_v2.portal.reports.flow_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
+
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.portal.reports.access_title') }}</h2>
+      <ul>
+        <li v-for="item in tm('help_v2.portal.reports.access_items')" :key="item">{{ item }}</li>
+      </ul>
+    </section>
+
+    <section class="card stack tight">
+      <h2>{{ t('help_v2.portal.reports.know_title') }}</h2>
+      <ul>
+        <li v-for="item in tm('help_v2.portal.reports.know_items')" :key="item">{{ item }}</li>
+      </ul>
+    </section>
+
+    <V2SupportCallout
+      board-name="AFL portal board"
+      href="https://sourcecombatives.com/forum/afl-portal"
+      :description="t('help_v2.portal.reports.support_desc')"
+      :button-label="t('help_v2.portal.reports.support_button')"
+    />
   </section>
 </template>

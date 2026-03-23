@@ -1,107 +1,110 @@
 <script setup>
 import V2Icon from '../../components/V2Icon.vue'
 import V2SupportCallout from '../../components/V2SupportCallout.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Owner</span>
-      <h1 class="v2-page-title"><V2Icon name="business" :size="24" />I run the academy</h1>
+      <span class="badge">{{ t('help_v2.owner_home.badge') }}</span>
+      <h1 class="v2-page-title"><V2Icon name="business" :size="24" />{{ t('help_v2.owner_home.title') }}</h1>
       <p class="muted">
-        This path is for academy owners setting up the academy, building the team, and running daily operations.
+        {{ t('help_v2.owner_home.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Best place to start</h2>
+      <h2>{{ t('help_v2.owner_home.start_title') }}</h2>
       <p class="muted">
-        If you are setting up a new academy, start with the owner setup path first. It follows the most useful order so the rest of the app makes sense.
+        {{ t('help_v2.owner_home.start_body') }}
       </p>
       <div class="row">
         <router-link class="btn" to="/help-v2/getting-started-owner">
-          Getting Started as an Owner
+          {{ t('help_v2.owner_home.start_primary') }}
         </router-link>
         <router-link class="btn btn--ghost" to="/help-v2/business/create-academy">
-          Create Academy
+          {{ t('help_v2.owner_home.start_secondary') }}
         </router-link>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Academy setup</h2>
+      <h2>{{ t('help_v2.owner_home.setup_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Create the academy</h3>
+          <h3>{{ t('help_v2.owner_home.setup_create_title') }}</h3>
           <p class="muted">
-            Start with the academy itself before you try to bring in members or build lessons.
+            {{ t('help_v2.owner_home.setup_create_body') }}
           </p>
           <router-link class="link" to="/help-v2/business/create-academy">
-            Create Academy
+            {{ t('help_v2.layout.nav.create_academy') }}
           </router-link>
         </article>
 
         <article class="v2-panel">
-          <h3>Review basics and QR</h3>
+          <h3>{{ t('help_v2.owner_home.setup_review_title') }}</h3>
           <p class="muted">
-            Keep the academy details accurate and use QR joining when you want faster onboarding.
+            {{ t('help_v2.owner_home.setup_review_body') }}
           </p>
           <div class="row">
             <router-link class="link" to="/help-v2/business/academy-basics">
-              Academy Basics
+              {{ t('help_v2.layout.nav.academy_basics') }}
             </router-link>
             <router-link class="link" to="/help-v2/business/academy-qr">
-              Academy QR
+              {{ t('help_v2.layout.nav.academy_qr') }}
             </router-link>
           </div>
         </article>
 
         <article class="v2-panel">
-          <h3>Academy lifecycle</h3>
+          <h3>{{ t('help_v2.owner_home.setup_lifecycle_title') }}</h3>
           <p class="muted">
-            Use the deletion guide only when the academy itself should no longer remain active.
+            {{ t('help_v2.owner_home.setup_lifecycle_body') }}
           </p>
           <router-link class="link" to="/help-v2/business/delete-academy">
-            Delete Academy
+            {{ t('help_v2.layout.nav.delete_academy') }}
           </router-link>
         </article>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Main jobs</h2>
+      <h2>{{ t('help_v2.owner_home.jobs_title') }}</h2>
       <div class="v2-grid">
         <article class="v2-panel">
-          <h3>Set up your team</h3>
+          <h3>{{ t('help_v2.owner_home.jobs_team_title') }}</h3>
           <p class="muted">
-            Decide who teaches, who can manage the academy, and how compensation tools fit in.
+            {{ t('help_v2.owner_home.jobs_team_body') }}
           </p>
           <router-link class="link" to="/help-v2/business">
-            Open Business
+            {{ t('help_v2.owner_home.jobs_team_link') }}
           </router-link>
         </article>
 
         <article class="v2-panel">
-          <h3>Run lessons and booking</h3>
+          <h3>{{ t('help_v2.owner_home.jobs_schedule_title') }}</h3>
           <p class="muted">
-            Create lessons, manage changes, and support booking when needed.
+            {{ t('help_v2.owner_home.jobs_schedule_body') }}
           </p>
           <router-link class="link" to="/help-v2/schedule">
-            Open Schedule
+            {{ t('help_v2.owner_home.jobs_schedule_link') }}
           </router-link>
         </article>
 
         <article class="v2-panel">
-          <h3>Set up cards and members</h3>
+          <h3>{{ t('help_v2.owner_home.jobs_cards_title') }}</h3>
           <p class="muted">
-            Bring people into the academy, issue cards, and let booking deduct lessons correctly.
+            {{ t('help_v2.owner_home.jobs_cards_body') }}
           </p>
           <div class="row">
             <router-link class="link" to="/help-v2/members">
-              Members
+              {{ t('help_v2.layout.nav.members') }}
             </router-link>
             <router-link class="link" to="/help-v2/cards">
-              Cards
+              {{ t('help_v2.layout.nav.cards') }}
             </router-link>
           </div>
         </article>
@@ -109,25 +112,25 @@ import V2SupportCallout from '../../components/V2SupportCallout.vue'
     </section>
 
     <section class="card stack tight">
-      <h2>Portal workflows</h2>
+      <h2>{{ t('help_v2.owner_home.portal_title') }}</h2>
       <p class="muted">
-        Some workflows happen in the Affiliate Portal inside Source Combatives AFL rather than inside the day-to-day DojoMate app screens.
+        {{ t('help_v2.owner_home.portal_body') }}
       </p>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/portal">
-          Open Affiliate Portal Guide
+          {{ t('help_v2.owner_home.portal_link') }}
         </router-link>
       </div>
     </section>
 
     <section class="card stack tight">
-      <h2>Paid features</h2>
+      <h2>{{ t('help_v2.owner_home.paid_title') }}</h2>
       <p class="muted">
-        Timetable, Pause Cards, Staff Access, and Analytics are entitlement-gated. Use the Features page guide if you need to activate tools or start Premium.
+        {{ t('help_v2.owner_home.paid_body') }}
       </p>
       <div>
         <router-link class="btn btn--ghost" to="/help-v2/tools/activate">
-          Activate Tools and Premium
+          {{ t('help_v2.owner_home.paid_link') }}
         </router-link>
       </div>
     </section>
