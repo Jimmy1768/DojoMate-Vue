@@ -337,7 +337,7 @@ const results = computed(() => {
 .help-wrap {
   height: 68vh;
   max-height: 78vh;
-  width: min(1056px, 100%);
+  width: min(1120px, 100%);
   margin: 0 auto;
 }
 
