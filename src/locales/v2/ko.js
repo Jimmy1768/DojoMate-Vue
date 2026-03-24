@@ -106,12 +106,9 @@ export default {
       tools_body: '핵심 흐름이 자리 잡은 뒤 반복 일정, 카드 일시정지 같은 도구를 추가하고 필요할 때 Features 페이지에서 Premium을 활성화하세요.',
       tools_link: '도구 개요 열기',
       difference_title: 'v2가 다른 점',
-      difference_body: 'v2는 긴 화면별 설명이 아니라 사람과 그 사람이 끝내려는 작업을 중심으로 구성됩니다. 목표는 다음에 무엇을 해야 하는지 더 빨리 알 수 있게 하는 것입니다.',
-      difference_v1: '도움말 v1 열기',
-      difference_start: '여기서 시작',
-      status_title: '현재 상태',
-      status_body: '공개 도움말 링크에서는 여전히 v1이 운영 중인 가이드입니다. v2는 기존 링크를 깨지 않고 구조와 톤을 개선하기 위해 병행해서 조금씩 만들어지고 있습니다.',
-      status_link: '도움말 v1로 이동'
+      difference_body: 'v2는 사람과 그 사람이 끝내려는 작업을 중심으로 구성되어, 다음에 무엇을 해야 하는지 더 쉽게 판단할 수 있습니다.',
+      difference_v1: '검색이 있는 기존 가이드를 원하면 도움말 v1 열기',
+      difference_start: '여기서 시작'
     },
     owner_home: {
       badge: '오너',

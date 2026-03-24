@@ -95,16 +95,6 @@ const { t } = useI18n()
         <router-link class="btn" to="/help-v2/owner">{{ t('help_v2.welcome.difference_start') }}</router-link>
       </div>
     </section>
-
-    <section class="card stack tight">
-      <h2>{{ t('help_v2.welcome.status_title') }}</h2>
-      <p class="muted">
-        {{ t('help_v2.welcome.status_body') }}
-      </p>
-      <div>
-        <router-link class="btn" to="/help-v1">{{ t('help_v2.welcome.status_link') }}</router-link>
-      </div>
-    </section>
   </section>
 </template>
 

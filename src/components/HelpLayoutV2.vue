@@ -1,5 +1,8 @@
 <script setup>
 import V2Icon from './V2Icon.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -8,275 +11,275 @@ import V2Icon from './V2Icon.vue'
       <aside class="help-sidebar">
         <div class="stack gap-3">
           <div class="card stack tight">
-            <div class="badge">Help v2</div>
+            <div class="badge">{{ t('help_v2.layout.preview_badge') }}</div>
             <p class="muted">
-              A task-first guide for owners and admins. v1 remains live while this version is being built.
+              {{ t('help_v2.layout.intro') }}
             </p>
             <router-link class="btn btn--ghost" to="/help-v1">
-              Open Help v1
+              {{ t('help_v2.layout.open_v1') }}
             </router-link>
           </div>
 
           <nav class="card stack tight" aria-label="Help v2 navigation">
-            <h3 class="v2-nav-title">Start Here</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.start_here') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2">
               <V2Icon name="home" :size="16" />
-              Help v2 Home
+              {{ t('help_v2.layout.nav.home') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/owner">
               <V2Icon name="business" :size="16" />
-              I Run the Academy
+              {{ t('help_v2.layout.nav.owner') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/admin">
               <V2Icon name="access" :size="16" />
-              I Help Manage
+              {{ t('help_v2.layout.nav.admin') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student">
               <V2Icon name="members" :size="16" />
-              I Train at an Academy
+              {{ t('help_v2.layout.nav.student_home') }}
             </router-link>
 
-            <h3 class="v2-nav-title">Owner Setup</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.owner_setup') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/getting-started-owner">
               <V2Icon name="getting-started" :size="16" />
-              Getting Started as an Owner
+              {{ t('help_v2.layout.nav.getting_started_owner') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/create-academy">
               <V2Icon name="business" :size="16" />
-              Create Academy
+              {{ t('help_v2.layout.nav.create_academy') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/academy-basics">
               <V2Icon name="business" :size="16" />
-              Academy Basics
+              {{ t('help_v2.layout.nav.academy_basics') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/academy-qr">
               <V2Icon name="business" :size="16" />
-              Academy QR
+              {{ t('help_v2.layout.nav.academy_qr') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/delete-academy">
               <V2Icon name="business" :size="16" />
-              Delete Academy
+              {{ t('help_v2.layout.nav.delete_academy') }}
             </router-link>
 
-            <h3 class="v2-nav-title">Student</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.student') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/student/join-academy">
               <V2Icon name="members" :size="16" />
-              Join Academy
+              {{ t('help_v2.layout.nav.join_academy') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student/memberships">
               <V2Icon name="members" :size="16" />
-              Managing Memberships
+              {{ t('help_v2.layout.nav.memberships') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student/booking">
               <V2Icon name="schedule" :size="16" />
-              Booking
+              {{ t('help_v2.layout.nav.booking') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student/system-alerts">
               <V2Icon name="members" :size="16" />
-              System Alerts
+              {{ t('help_v2.layout.nav.system_alerts') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student/broadcast">
               <V2Icon name="broadcast" :size="16" />
-              Broadcast
+              {{ t('help_v2.layout.nav.broadcast') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/student/attendance-records">
               <V2Icon name="members" :size="16" />
-              Attendance Records
+              {{ t('help_v2.layout.nav.attendance_records') }}
             </router-link>
 
-            <h3 class="v2-nav-title">Account & Profile</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.account_profile') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/account/sign-in">
               <V2Icon name="members" :size="16" />
-              Sign In
+              {{ t('help_v2.layout.nav.sign_in') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/account/create-account">
               <V2Icon name="members" :size="16" />
-              Create Account
+              {{ t('help_v2.layout.nav.create_account') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/account/reset-password">
               <V2Icon name="members" :size="16" />
-              Reset Password
+              {{ t('help_v2.layout.nav.reset_password') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/account/troubleshooting">
               <V2Icon name="members" :size="16" />
-              Account Troubleshooting
+              {{ t('help_v2.layout.nav.account_troubleshooting') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/settings/change-password">
               <V2Icon name="members" :size="16" />
-              Change Password
+              {{ t('help_v2.layout.nav.change_password') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/settings/language">
               <V2Icon name="members" :size="16" />
-              Language
+              {{ t('help_v2.layout.nav.language') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/settings/currency">
               <V2Icon name="members" :size="16" />
-              Currency
+              {{ t('help_v2.layout.nav.currency') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/settings/privacy-settings">
               <V2Icon name="members" :size="16" />
-              Privacy
+              {{ t('help_v2.layout.nav.privacy') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/settings/delete-account">
               <V2Icon name="members" :size="16" />
-              Delete Account
+              {{ t('help_v2.layout.nav.delete_account') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/settings/logout">
               <V2Icon name="members" :size="16" />
-              Logout
+              {{ t('help_v2.layout.nav.logout') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/profile/edit-profile">
               <V2Icon name="members" :size="16" />
-              Edit Profile
+              {{ t('help_v2.layout.nav.edit_profile') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/profile/child-accounts">
               <V2Icon name="members" :size="16" />
-              Child Accounts
+              {{ t('help_v2.layout.nav.child_accounts') }}
             </router-link>
 
-            <h3 class="v2-nav-title">Business</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.business') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/business">
               <V2Icon name="business" :size="16" />
-              Business Overview
+              {{ t('help_v2.layout.nav.business_overview') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/compare-pages">
               <V2Icon name="business" :size="16" />
-              Compare Business Pages
+              {{ t('help_v2.layout.nav.compare_business_pages') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/instructors">
               <V2Icon name="instructors" :size="16" />
-              Choose Who Can Teach
+              {{ t('help_v2.layout.nav.choose_who_can_teach') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/staff-access">
               <V2Icon name="access" :size="16" />
-              Choose Who Can Manage
-              <span class="badge badge--premium">Paid</span>
+              {{ t('help_v2.layout.nav.choose_who_can_manage') }}
+              <span class="badge badge--premium">{{ t('help_v2.business.overview.paid_badge') }}</span>
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/business/analytics">
               <V2Icon name="analytics" :size="16" />
-              Track Pay and Performance
-              <span class="badge badge--premium">Paid</span>
+              {{ t('help_v2.layout.nav.track_pay_and_performance') }}
+              <span class="badge badge--premium">{{ t('help_v2.business.overview.paid_badge') }}</span>
             </router-link>
 
-            <h3 class="v2-nav-title">Portal</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.portal') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/portal">
               <V2Icon name="tools" :size="16" />
-              Affiliate Portal
+              {{ t('help_v2.layout.nav.affiliate_portal') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/portal/register">
               <V2Icon name="tools" :size="16" />
-              Portal Register
+              {{ t('help_v2.layout.nav.portal_register') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/portal/members">
               <V2Icon name="tools" :size="16" />
-              Portal Members
+              {{ t('help_v2.layout.nav.portal_members') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/portal/ranks">
               <V2Icon name="tools" :size="16" />
-              Portal Ranks
+              {{ t('help_v2.layout.nav.portal_ranks') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/portal/cards">
               <V2Icon name="tools" :size="16" />
-              Portal Cards
+              {{ t('help_v2.layout.nav.portal_cards') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/portal/reports">
               <V2Icon name="tools" :size="16" />
-              Portal Reports
+              {{ t('help_v2.layout.nav.portal_reports') }}
             </router-link>
-            <h3 class="v2-nav-title">Schedule</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.schedule') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/schedule">
               <V2Icon name="schedule" :size="16" />
-              Schedule Overview
+              {{ t('help_v2.layout.nav.schedule_overview') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/schedule/create-lesson">
               <V2Icon name="schedule" :size="16" />
-              Create a Lesson
+              {{ t('help_v2.layout.nav.create_a_lesson') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/schedule/manage-lesson">
               <V2Icon name="schedule" :size="16" />
-              Edit or Cancel a Lesson
+              {{ t('help_v2.layout.nav.edit_or_cancel_a_lesson') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/schedule/book-for-students">
               <V2Icon name="schedule" :size="16" />
-              Book for Students
+              {{ t('help_v2.layout.nav.book_for_students') }}
             </router-link>
-            <h3 class="v2-nav-title">Cards</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.cards') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/cards">
               <V2Icon name="cards" :size="16" />
-              Cards Overview
+              {{ t('help_v2.layout.nav.cards_overview') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/how-booking-works">
               <V2Icon name="cards" :size="16" />
-              How Cards Work
+              {{ t('help_v2.layout.nav.how_cards_work') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/create-template">
               <V2Icon name="cards" :size="16" />
-              Create a Card Template
+              {{ t('help_v2.layout.nav.create_a_card_template') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/issue-cards">
               <V2Icon name="cards" :size="16" />
-              Issue Cards
+              {{ t('help_v2.layout.nav.issue_cards') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/edit-templates">
               <V2Icon name="cards" :size="16" />
-              Edit Templates
+              {{ t('help_v2.layout.nav.edit_templates') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/delete-templates">
               <V2Icon name="cards" :size="16" />
-              Delete Templates
+              {{ t('help_v2.layout.nav.delete_templates') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/delete-cards">
               <V2Icon name="cards" :size="16" />
-              Delete Cards
+              {{ t('help_v2.layout.nav.delete_cards') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/cards/records">
               <V2Icon name="cards" :size="16" />
-              Card Records
+              {{ t('help_v2.layout.nav.card_records') }}
             </router-link>
-            <h3 class="v2-nav-title">Members</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.members') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/members">
               <V2Icon name="members" :size="16" />
-              Members Overview
+              {{ t('help_v2.layout.nav.members_overview') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/quick-enrollment">
               <V2Icon name="members" :size="16" />
-              Add a Member Directly
+              {{ t('help_v2.layout.nav.add_a_member_directly') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/quick-enrollment-vs-applications">
               <V2Icon name="members" :size="16" />
-              Enrollment vs Applications
+              {{ t('help_v2.layout.nav.enrollment_vs_applications') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/applications">
               <V2Icon name="members" :size="16" />
-              Review Applications
+              {{ t('help_v2.layout.nav.review_applications') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/members/reject-or-ban">
               <V2Icon name="members" :size="16" />
-              Reject or Ban Members
+              {{ t('help_v2.layout.nav.reject_or_ban_members') }}
             </router-link>
-            <h3 class="v2-nav-title">Tools</h3>
+            <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.tools') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/tools">
               <V2Icon name="tools" :size="16" />
-              Tools Overview
+              {{ t('help_v2.layout.nav.tools_overview') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/activate">
               <V2Icon name="tools" :size="16" />
-              Activate Tools and Premium
+              {{ t('help_v2.layout.nav.activate_tools_and_premium') }}
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/timetable">
               <V2Icon name="timetable" :size="16" />
-              Timetable
-              <span class="badge badge--premium">Paid</span>
+              {{ t('help_v2.layout.nav.timetable') }}
+              <span class="badge badge--premium">{{ t('help_v2.tools.overview.start_badge') }}</span>
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/pause-cards">
               <V2Icon name="pause-cards" :size="16" />
-              Pause Cards
-              <span class="badge badge--premium">Paid</span>
+              {{ t('help_v2.layout.nav.pause_cards') }}
+              <span class="badge badge--premium">{{ t('help_v2.tools.overview.start_badge') }}</span>
             </router-link>
             <router-link class="v2-nav-link" to="/help-v2/tools/broadcast">
               <V2Icon name="broadcast" :size="16" />
-              Broadcast
-              <span class="badge badge--premium">Paid</span>
+              {{ t('help_v2.layout.nav.broadcast') }}
+              <span class="badge badge--premium">{{ t('help_v2.tools.overview.start_badge') }}</span>
             </router-link>
           </nav>
         </div>

@@ -106,12 +106,9 @@ export default {
       tools_body: 'Add recurring scheduling and card-pausing tools after the core workflow is in place, and use the Features page to activate Premium when needed.',
       tools_link: 'Open Tools Overview',
       difference_title: 'How v2 is different',
-      difference_body: 'v2 is organized around people and the jobs they are trying to finish, not around long screen-by-screen explanations. The goal is to help users decide what to do next, faster.',
-      difference_v1: 'Open Help v1',
-      difference_start: 'Start Here',
-      status_title: 'Current Status',
-      status_body: 'v1 remains the live guide at the public help link. v2 is being built in parallel, chunk by chunk, so structure and tone can improve without breaking existing links.',
-      status_link: 'Go to Help v1'
+      difference_body: 'v2 is organized around people and the jobs they are trying to finish, so it is easier to decide what to do next.',
+      difference_v1: 'Prefer the classic guide with search? Open Help v1',
+      difference_start: 'Start Here'
     },
     owner_home: {
       badge: 'Owner',

@@ -106,12 +106,9 @@ export default {
       tools_body: 'Adicione agenda recorrente e ferramentas de pausa de cartões depois que o fluxo principal já estiver funcionando, e use a página Features para ativar o Premium quando precisar.',
       tools_link: 'Abrir visão geral das ferramentas',
       difference_title: 'Como a v2 é diferente',
-      difference_body: 'A v2 é organizada em torno das pessoas e do que elas estão tentando concluir, e não em torno de longas explicações tela por tela. O objetivo é ajudar o usuário a decidir mais rápido o que fazer em seguida.',
-      difference_v1: 'Abrir Ajuda v1',
-      difference_start: 'Comece aqui',
-      status_title: 'Status atual',
-      status_body: 'A v1 continua sendo o guia oficial no link público de ajuda. A v2 está sendo construída em paralelo, em partes, para melhorar estrutura e tom sem quebrar os links existentes.',
-      status_link: 'Ir para a Ajuda v1'
+      difference_body: 'A v2 é organizada em torno das pessoas e do que elas estão tentando concluir, então fica mais fácil decidir o que fazer em seguida.',
+      difference_v1: 'Se você preferir o guia clássico com busca, abra a Ajuda v1',
+      difference_start: 'Comece aqui'
     },
     owner_home: {
       badge: 'Dono',

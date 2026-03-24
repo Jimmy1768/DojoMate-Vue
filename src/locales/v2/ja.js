@@ -106,12 +106,9 @@ export default {
       tools_body: '基本ワークフローが整ってから、定期スケジュールやカード一時停止ツールを追加し、必要に応じて Features ページから Premium を有効化します。',
       tools_link: 'ツール概要を開く',
       difference_title: 'v2 の違い',
-      difference_body: 'v2 は長い画面ごとの説明ではなく、人とその人が終わらせたい仕事を軸に整理されています。次に何をすべきかを、より早く判断できるようにするのが目的です。',
-      difference_v1: 'ヘルプ v1 を開く',
-      difference_start: 'ここから開始',
-      status_title: '現在の状態',
-      status_body: '公開ヘルプリンクでは、今も v1 が現行ガイドです。v2 は並行して段階的に構築しており、既存リンクを壊さずに構成とトーンを改善しています。',
-      status_link: 'ヘルプ v1 へ移動'
+      difference_body: 'v2 は人とその人が終わらせたい仕事を軸に整理されているので、次に何をすべきか判断しやすくなっています。',
+      difference_v1: '検索つきの従来ガイドを使いたい場合は、ヘルプ v1 を開く',
+      difference_start: 'ここから開始'
     },
     owner_home: {
       badge: 'オーナー',

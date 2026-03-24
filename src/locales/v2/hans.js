@@ -106,12 +106,9 @@ export default {
       tools_body: '在核心流程稳定后再加入重复排课、暂停会员卡等工具，并在需要时通过 Features 页面启用 Premium。',
       tools_link: '打开工具总览',
       difference_title: 'v2 有什么不同',
-      difference_body: 'v2 按照“人”和“要完成的任务”来组织，而不是用冗长的逐屏说明。目标是让用户更快知道下一步该做什么。',
-      difference_v1: '打开帮助 v1',
-      difference_start: '从这里开始',
-      status_title: '当前状态',
-      status_body: 'v1 仍然是公开帮助链接下的正式指南。v2 会并行分块建设，以便在不破坏现有链接的前提下改进结构和语气。',
-      status_link: '前往帮助 v1'
+      difference_body: 'v2 按照“人”和“要完成的任务”来组织，因此更容易判断下一步该做什么。',
+      difference_v1: '如果你更喜欢带搜索的经典指南，请打开帮助 v1',
+      difference_start: '从这里开始'
     },
     owner_home: {
       badge: '馆主',

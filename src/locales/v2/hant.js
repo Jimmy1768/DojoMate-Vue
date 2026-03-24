@@ -106,12 +106,9 @@ export default {
       tools_body: '在核心流程穩定後再加入重複排課、暫停會員卡等工具，並在需要時透過 Features 頁面啟用 Premium。',
       tools_link: '打開工具總覽',
       difference_title: 'v2 有什麼不同',
-      difference_body: 'v2 按照「人」和「要完成的任務」來組織，而不是用冗長的逐屏說明。目標是讓使用者更快知道下一步該做什麼。',
-      difference_v1: '打開幫助 v1',
-      difference_start: '從這裡開始',
-      status_title: '目前狀態',
-      status_body: 'v1 仍然是公開幫助連結下的正式指南。v2 會並行分塊建設，以便在不破壞現有連結的前提下改進結構和語氣。',
-      status_link: '前往幫助 v1'
+      difference_body: 'v2 按照「人」和「要完成的任務」來組織，因此更容易判斷下一步該做什麼。',
+      difference_v1: '如果你偏好帶搜尋的經典指南，請打開幫助 v1',
+      difference_start: '從這裡開始'
     },
     owner_home: {
       badge: '館主',
