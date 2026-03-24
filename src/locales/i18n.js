@@ -12,6 +12,8 @@ import enV2 from './v2/en'
 import hansV2 from './v2/hans'
 import hantV2 from './v2/hant'
 import jaV2 from './v2/ja'
+import koV2 from './v2/ko'
+import ptV2 from './v2/pt'
 
 function mergeMessages(base, extra) {
   const output = { ...base }
@@ -38,8 +40,8 @@ const messages = {
   hans: mergeMessages(hans, hansV2),
   hant: mergeMessages(hant, hantV2),
   ja: mergeMessages(ja, jaV2),
-  ko,
-  pt,
+  ko: mergeMessages(ko, koV2),
+  pt: mergeMessages(pt, ptV2),
 }
 
 const saved = localStorage.getItem('locale') || 'en'

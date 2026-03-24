@@ -23,8 +23,6 @@ const { t } = useI18n()
       <li>{{ t('progression.xp_list_catalog') }}</li>
       <li>{{ t('progression.xp_list_homework') }}</li>
       <li>{{ t('progression.xp_list_attend') }}</li>
-      <li>{{ t('progression.xp_list_tests') }}</li>
-      <li>{{ t('progression.xp_list_compete') }}</li>
     </ul>
     <p class="muted">{{ t('progression.xp_text_caps') }}</p>
 

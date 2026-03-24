@@ -26,6 +26,7 @@ import JoinAcademyV2 from '../pages/help-v2/JoinAcademyV2.vue'
 import MembershipsV2 from '../pages/help-v2/MembershipsV2.vue'
 import BookingStudentV2 from '../pages/help-v2/BookingStudentV2.vue'
 import SystemAlertsV2 from '../pages/help-v2/SystemAlertsV2.vue'
+import StudentBroadcastV2 from '../pages/help-v2/StudentBroadcastV2.vue'
 import AttendanceRecordsStudentV2 from '../pages/help-v2/AttendanceRecordsStudentV2.vue'
 import BusinessOverviewV2 from '../pages/help-v2/BusinessOverviewV2.vue'
 import BusinessComparisonV2 from '../pages/help-v2/BusinessComparisonV2.vue'
@@ -52,6 +53,7 @@ import ToolsOverviewV2 from '../pages/help-v2/ToolsOverviewV2.vue'
 import ActivateToolsV2 from '../pages/help-v2/ActivateToolsV2.vue'
 import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
 import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
+import BroadcastV2 from '../pages/help-v2/BroadcastV2.vue'
 import GettingStartedOwnerV2 from '../pages/help-v2/GettingStartedOwnerV2.vue'
 import EnrollmentVsApplicationsV2 from '../pages/help-v2/EnrollmentVsApplicationsV2.vue'
 import PortalOverviewV2 from '../pages/help-v2/PortalOverviewV2.vue'
@@ -257,6 +259,7 @@ const router = createRouter({
         { path: 'student/memberships', component: MembershipsV2 },
         { path: 'student/booking', component: BookingStudentV2 },
         { path: 'student/system-alerts', component: SystemAlertsV2 },
+        { path: 'student/broadcast', component: StudentBroadcastV2 },
         { path: 'student/attendance-records', component: AttendanceRecordsStudentV2 },
         { path: 'getting-started-owner', component: GettingStartedOwnerV2 },
         { path: 'business/create-academy', component: CreateAcademyV2 },
@@ -294,7 +297,8 @@ const router = createRouter({
         { path: 'tools', component: ToolsOverviewV2 },
         { path: 'tools/activate', component: ActivateToolsV2 },
         { path: 'tools/timetable', component: TimetableV2 },
-        { path: 'tools/pause-cards', component: PauseCardsV2 }
+        { path: 'tools/pause-cards', component: PauseCardsV2 },
+        { path: 'tools/broadcast', component: BroadcastV2 }
       ]
     },
     {

@@ -58,6 +58,9 @@ const iconData = {
   'pause-cards': {
     body: '<path fill="currentColor" d="M13 16V8h2v8zm-4 0V8h2v8zm3-14a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8a8 8 0 0 0 8 8a8 8 0 0 0 8-8a8 8 0 0 0-8-8"/>'
   },
+  broadcast: {
+    body: '<path fill="currentColor" d="M3 10v4a1 1 0 0 0 1 1h2l2.3 4.6a1 1 0 0 0 .9.6H11a1 1 0 0 0 .9-1.45L10.4 15H14l5 3V6l-5 3H4a1 1 0 0 0-1 1m2 1h8.5L17 8.9v6.2L13.5 13H5zm15.5 1a5.5 5.5 0 0 0-2.1-4.33v1.87a3.5 3.5 0 0 1 0 4.92v1.87A5.5 5.5 0 0 0 20.5 12"/>'
+  },
   fallback: {
     body: '<path fill="currentColor" d="M11 18h2v-2h-2zm1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2a2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4"/>'
   }
@@ -75,7 +78,8 @@ const iconMap = {
   members: 'members',
   tools: 'tools',
   timetable: 'timetable',
-  'pause-cards': 'pause-cards'
+  'pause-cards': 'pause-cards',
+  broadcast: 'broadcast'
 }
 
 const iconName = computed(() => iconData[iconMap[props.name]] ?? iconData.fallback)

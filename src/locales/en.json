@@ -90,11 +90,14 @@
       },
       "progression": {
         "title": "Progression, XP, and gamify data",
-        "intro": "We may collect or derive progression, XP, achievement, and related activity data needed to operate these features, including:",
+        "intro": "We may collect or derive progression, XP, achievement, streak, and related activity data needed to operate these features for eligible self-managed accounts, including:",
         "items": [
           "attendance-linked progression events",
-          "learning-linked progression events",
-          "XP, accomplishments, and related feature activity"
+          "Education video completion events",
+          "homework correctness and related progression events",
+          "XP, achievements, badges, streaks, accomplishments, and related feature activity",
+          "leaderboard participation and public-profile visibility settings where those controls exist",
+          "related audit or integrity records used to protect fairness"
         ],
         "note": "For more detail about progression rules and feature behavior, see"
       },
@@ -146,7 +149,7 @@
       },
       "personalize": {
         "title": "To personalize product offers and recommendations",
-        "intro": "We may use account activity, such as attendance, subscriptions, Education activity, or progression-related behavior, to personalize recommendations or offers for courses, subscriptions, and related products.",
+        "intro": "We may use account activity, such as attendance, subscriptions, Education activity, or progression-related behavior, to personalize recommendations or offers for courses, subscriptions, and related products. Marketing personalization is separate from progression controls, leaderboard participation, and public profile access.",
         "items": [
           "recommend courses",
           "recommend subscriptions or upgrades",
@@ -174,9 +177,10 @@
       "title": "5. Public and Community Features",
       "intro": "Some progression, achievement, or community features may involve public or limited public display. In general:",
       "items": [
-        "public visibility should be treated separately from marketing personalization",
-        "disabling marketing personalization does not automatically remove progression history",
-        "public display settings may be controlled separately in product settings where available"
+        "leaderboard participation and public profile access are separate controls",
+        "opting out of leaderboard participation excludes the user from rankings rather than merely hiding the ranking display",
+        "marketing personalization is separate from leaderboard participation and public profile access",
+        "competition, bracket, or winner publication may follow separate event rules"
       ],
       "note": "For more detail about progression and visibility features, see"
     },
@@ -208,8 +212,8 @@
       },
       "deleted": {
         "title": "Deleted accounts",
-        "intro": "If an account is deleted, direct identity data may be deleted or scrubbed, while some operational records may remain in anonymized or pseudonymous form for analytics, reporting, accounting, dispute handling, or legal compliance.",
-        "note": "Final implementation details may vary by subsystem and applicable law."
+        "intro": "If an account is deleted, direct identity data may be deleted or scrubbed, while some operational records may remain in anonymized or pseudonymous form for analytics, reporting, accounting, dispute handling, or legal compliance. Profile visibility controls are separate from deletion.",
+        "note": "Internal historical progression handling on account deletion is still being finalized. Final implementation details may vary by subsystem and applicable law."
       }
     },
     "controls": {
@@ -217,16 +221,19 @@
       "intro": "Depending on the product surface, users may be able to control:",
       "items": [
         "marketing personalization",
+        "leaderboard participation",
+        "public profile access",
         "system alerts by email",
         "system alerts by push",
         "marketing contact by email",
         "marketing contact by push",
-        "public progression or community visibility",
         "account deletion"
       ],
       "note": "These controls are not all the same. In particular:",
       "notes": [
         "turning off personalized marketing is not the same as deleting the account",
+        "turning off leaderboard participation excludes the account from rankings",
+        "turning off public profile access is a separate control from leaderboard participation",
         "turning off marketing does not turn off system alerts, and it does not automatically delete attendance or progression records",
         "deleting the account may have broader consequences for profile and identity data"
       ]
@@ -236,6 +243,7 @@
       "intro": "Some features support parent, dependent, or child-linked accounts. We treat child or dependent data with additional care. In particular:",
       "items": [
         "child or dependent data is used for product operations, attendance, access, and related workflows",
+        "child or dependent data does not participate in progression, leaderboards, or public progression profiles",
         "child or dependent data is not used for personalized marketing",
         "parent or guardian relationships may be used to provide the service or communicate about dependent-linked activity"
       ]
@@ -298,20 +306,20 @@
   "progression": {
     "title": "Progression & Fair-Play Policy",
     "effective_date": "Effective Date: October 11, 2025",
-    "intro": "DojoMate and Source Combatives use XP, levels, badges, and verified records to motivate consistent study—not to sell in-app products. Progress is earned through real training and verified results.",
+    "intro": "DojoMate and Source Combatives use XP, levels, badges, streaks, and verified records to motivate consistent study for eligible self-managed accounts—not to sell in-app products. Progress is earned through recorded training and learning activity.",
     "fairness_title": "Fairness and No Pay-to-Win",
     "fairness_text": "Payments or subscriptions never grant XP, levels, badges, or rank eligibility. Payments provide access to learning content only; progress is earned through training actions and verified results.",
     "payments_title": "Where Payments Occur",
     "payments_text": "DojoMate is a training-data terminal: it records class attendance, lesson views, and practice. DojoMate does not sell digital goods or subscriptions. Brick-and-mortar tuition may be paid through approved merchants (e.g., LINE Pay, Alipay) for in-person classes. Source Combatives handles online subscriptions and optional Extra Catalogs, which are paid on sourcecombatives.com only.",
     "xp_title": "How XP Is Earned",
-    "xp_text_1": "XP reflects verified training effort. Examples include:",
-    "xp_list_watch": "Watching new lesson segments for the first time.",
-    "xp_list_catalog": "Completing a Catalog inside a Curriculum.",
+    "xp_text_1": "XP reflects eligible recorded activity in the live product. Current examples include:",
+    "xp_list_watch": "Completing eligible Education video content for the first time.",
+    "xp_list_catalog": "Completing eligible recorded Education units or curriculum segments.",
     "xp_list_homework": "Answering auto-graded practice questions correctly.",
     "xp_list_attend": "Attending in-person classes recorded in DojoMate.",
     "xp_list_tests": "Passing in-person rank tests verified by instructors.",
     "xp_list_compete": "Participating in recognized competitions (and podium results).",
-    "xp_text_caps": "Repeat viewing grants minimal practice XP. Weekly caps limit excessive activity farming.",
+    "xp_text_caps": "Only activities explicitly marked as eligible in the live product count toward progression. Repeat viewing may grant limited practice XP, and caps may be used to reduce activity farming.",
     "extras_title": "Extra Catalogs",
     "extras_text": "Some channels offer optional Extra Catalogs—focused learning modules. Purchasing an Extra Catalog grants access only. XP or badges appear only after completion. Extra Catalogs never alter rank requirements.",
     "homework_title": "Homework & Practice Questions",
@@ -319,13 +327,13 @@
     "ranks_title": "Ranks and Certificates",
     "ranks_text": "All rank examinations are conducted in person. Online rank testing is not allowed. Eligibility depends on time, continuity, attendance, and instructor approval—not payment. Certificates are issued only after successful in-person evaluation.",
     "competitions_title": "Competitions and Achievements",
-    "competitions_text": "Verified competition participation and results from recognized organizations may appear on profiles. Entry fees alone do not grant XP.",
+    "competitions_text": "Verified competition participation and results from recognized organizations may appear according to event rules. Competition, bracket, and winner publication are separate from normal leaderboard participation and public profile controls. Entry fees alone do not grant XP.",
     "streaks_title": "Streaks & Well-Being",
     "streaks_text": "Streaks measure consistent weekly training, not daily logins. Grace periods and streak freezes exist for travel, exams, or injury.",
     "integrity_title": "Integrity & Anti-Abuse",
     "integrity_text": "We use device/session limits, audit logs, and anomaly checks to protect fairness. Attempts to manipulate XP, ranks, or results may lead to removal of awards or account actions.",
     "privacy_title": "Privacy and Public Profiles",
-    "privacy_text": "Public profiles are opt-in and exclude sensitive personal data. Minor accounts are private by default and require guardian controls.",
+    "privacy_text": "Leaderboard participation, public profile access, and marketing personalization are separate controls. Opting out of leaderboard participation excludes the account from rankings. Public profile access controls broader public stats/profile visibility. Child or dependent records do not participate in progression, leaderboards, or public progression profiles. Internal historical progression handling on account deletion is still being finalized.",
     "appeals_prefix": "If you believe a badge, XP entry, or rank record is incorrect, contact",
     "appeals_suffix": "with details. We will review promptly."
   },
@@ -495,12 +503,12 @@
       },
       "privacy": {
         "title": "Privacy Settings",
-        "intro": "Go to Settings → Privacy Settings to control notifications, marketing, and visibility preferences.",
+        "intro": "Go to Settings → Privacy Settings to control notifications, marketing, leaderboard participation, public profile access, and other visibility preferences.",
         "notifications": "System alerts include class cancellations and membership expirations. The app sends a push first; if delivery fails, an email is sent. You can turn off app notifications and/or emails.",
-        "marketing": "Optional announcements from DojoMate or Source Combatives only—no third-party ads, no tracking, and we never sell your data.",
+        "marketing": "Optional announcements from DojoMate or Source Combatives only—no third-party ads, no tracking, and we never sell your data. Marketing controls are separate from progression, leaderboard, and public-profile controls.",
         "booking": "When you book a class, your name appears on the attendance list. You may book anonymously to other students; admins and instructors still see your booking.",
         "analytics_attendance": "Attendance is recorded and not anonymous. This ensures accurate accountability, dispute resolution, and academy reporting.",
-        "analytics_aggregate": "Other app metrics (e.g., membership card usage and trends) may be used in aggregate for product research and marketing insights. You can choose anonymity so these records are not attached to your name."
+        "analytics_aggregate": "Other app metrics (e.g., membership card usage and trends) may be used in aggregate for product research and marketing insights. Child or dependent data is excluded from personalized marketing."
       },
       "delete_account": {
         "title": "Delete Account",
