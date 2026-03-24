@@ -170,6 +170,8 @@ const { t, tm } = useI18n()
 
     <h2>{{ t('privacy.contact.title') }}</h2>
     <p>{{ t('privacy.contact.intro') }}</p>
-    <p>{{ t('privacy.contact.value') }}</p>
+    <p>
+      <a class="link" href="mailto:support@dojomateapp.com">support@dojomateapp.com</a>
+    </p>
   </main>
 </template>
