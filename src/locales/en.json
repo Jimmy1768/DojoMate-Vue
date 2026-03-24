@@ -284,23 +284,23 @@
   },
   "deletion": {
     "title": "Account Deletion",
-    "intro_primary": "You can delete your DojoMate account at any time once all obligations tied to the account are settled.",
-    "intro_secondary": "Deletion inside the app becomes available when no active memberships, cards, prepaid balances, or outstanding payments remain on the account.",
+    "intro_primary": "You can request deletion of your DojoMate account at any time, but the account still needs to pass the current validation checks before removal can finish.",
+    "intro_secondary": "The Delete button is always available in the app. Pressing it runs the checks and shows anything that still needs to be resolved first.",
     "in_app_title": "Delete in the App",
-    "in_app_text": "In the DojoMate mobile app go to Settings → Privacy Settings → Delete Account. The Delete button is always available—press it to run the validation checks. The app will list anything you still need to resolve, such as:",
-    "in_app_item_memberships": "All memberships and membership cards linked to your profile or child accounts are inactive or canceled.",
-    "in_app_item_obligations": "No unpaid tuition, pending booking fees, or unresolved disputes remain with your academy.",
-    "in_app_item_access": "You are signed in on the device you wish to remove.",
+    "in_app_text": "In the DojoMate mobile app, go to Settings -> Privacy Settings -> Delete Account. Press Delete to run the current checks. The app will show unresolved items such as:",
+    "in_app_item_memberships": "Active memberships or cards linked to you or to dependent child accounts.",
+    "in_app_item_obligations": "Unpaid dues, pending booking fees, or other academy obligations that still need to be cleared.",
+    "in_app_item_access": "Linked account conditions that still block removal, including dependent child accounts that cannot yet be deleted with the main account.",
     "support_title": "Request Help from Support",
-    "support_text": "If you cannot meet the in-app requirements (for example, an academy still needs to close a card), email our support team and ask for manual deletion.",
-    "support_instructions": "Include the email used for the account, your academy name, and whether you are a member or an academy owner. We reply with next steps once verification is completed.",
+    "support_text": "If you cannot satisfy the in-app checks yourself, for example because an academy still needs to close a card or clear a linked account condition, email support and ask for help reviewing the deletion blockers.",
+    "support_instructions": "Include the email used for the account, your academy name, and whether you are a member or an academy owner. We will review the blockers and reply with the next steps after verification.",
     "member_title": "Member Accounts",
-    "member_text": "Member deletions are usually confirmed quickly. Academies may still owe you unused membership value; deleting the account does not prevent them from issuing refunds through their own process.",
+    "member_text": "Member deletions are usually the simplest case once active cards, memberships, and linked-account blockers have been cleared. If your academy still owes unused value from a plan, deletion does not stop them from handling that separately through their own process.",
     "owner_title": "Academy (Business Owner) Accounts",
-    "owner_text": "Owner accounts require extra review so we can protect your members, settle wages, and keep the history of memberships, payments, sessions, and fees.",
-    "owner_review": "We manually confirm each owner request before deactivating the account or removing access. We will let you know when the account is scheduled for closure and what records remain visible to members.",
+    "owner_text": "Owner accounts require extra review so we can protect academy members, settle wages, and preserve required history around subscriptions, payments, sessions, and fees.",
+    "owner_review": "We manually review owner deletion requests before deactivating access. We will confirm what must be resolved first and which records remain retained for operations, compliance, or member-facing continuity.",
     "data_title": "Data Retention",
-    "data_text": "Financial, attendance, and compliance records may be retained for as long as required by law, tax rules, or operational necessity even after your login is removed.",
+    "data_text": "Financial, attendance, and compliance-related records may still be retained after login removal where required for analytics, reporting, dispute handling, accounting, legal compliance, or operational continuity.",
     "contact_label": "Contact our support team:"
   },
   "progression": {
@@ -430,7 +430,6 @@
         "analytics_punch_cards": "Staff Punch Cards"
       }
     },
-
     "account": {
       "sign_in": {
         "title": "Sign In",
@@ -760,7 +759,7 @@
         "no_pending": "If you see “No pending accounts”, the member didn’t apply correctly. Ask them to try again by scanning your academy QR code or searching your academy name.",
         "accept_reject": "When an application appears, press Accept or Reject.",
         "child_accounts": "To accept linked child accounts, go to Members → Members List, open the parent’s profile, and accept child accounts listed there.",
-        "refresh": "If child accounts don’t appear, either they weren’t created (or creation failed) or your list is stale. Ask the parent to create them, or close and relaunch the app to refresh (no need to log out)."      
+        "refresh": "If child accounts don’t appear, either they weren’t created (or creation failed) or your list is stale. Ask the parent to create them, or close and relaunch the app to refresh (no need to log out)."
       },
       "rejection": {
         "title": "Rejecting or Banning Members",
@@ -824,7 +823,7 @@
         "title": "Paid Tools",
         "intro_1": "Paid tools are purchased by academy owners at",
         "intro_link": "Affiliate Portal.",
-        "intro_2": "Other roles may use them for free. You can log in if you have created at least one academy.", 
+        "intro_2": "Other roles may use them for free. You can log in if you have created at least one academy.",
         "available": "There are four paid tools: Timetable, Pause Cards, Staff Access, and Analytics. The Premium Package includes all four at a discount, with a free 90-day trial available. Press Start Trial on the Features page to begin.",
         "pricing": "Prices are regionally adjusted (PPP). Enter your Country (and Province for China) to receive the correct discount."
       },

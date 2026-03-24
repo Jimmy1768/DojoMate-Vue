@@ -20,37 +20,287 @@
   },
   "privacy": {
     "title": "Politica de Privacidade",
-    "effective_date": "Data de Vigencia: 26 de junho de 2025",
-    "intro": "DojoMate e um aplicativo movel de produtividade desenvolvido e pertencente a SourceGrid Labs (sourcegridlabs.com). Valorizamos sua privacidade e estamos comprometidos em proteger qualquer informacao que voce compartilhe conosco.",
-    "info_collect_title": "Informacoes que Coletamos",
-    "info_collect_text": "DojoMate nao coleta, armazena nem transmite informacoes de identificacao pessoal. O aplicativo funciona totalmente no seu dispositivo e acessa apenas os dados necessarios para sua funcionalidade principal, como check-ins, horarios e detalhes da academia.",
-    "third_party_title": "Servicos de Terceiros",
-    "third_party_text": "Nao usamos analytics de terceiros, plataformas de publicidade ou ferramentas de rastreamento. O aplicativo nao se comunica com servidores externos controlados pela SourceGrid Labs.",
-    "children_title": "Privacidade de Criancas",
-    "children_text": "DojoMate nao e direcionado a criancas menores de 13 anos e nao coleta intencionalmente dados de menores.",
-    "changes_title": "Alteracoes nesta Politica",
-    "changes_text": "Podemos atualizar esta politica de privacidade se nossas praticas mudarem. Qualquer atualizacao sera refletida nesta pagina.",
-    "manage_prefs": "Voce pode gerenciar suas preferencias a qualquer momento em Configuracoes → Configuracoes de Privacidade no aplicativo. La, voce pode ajustar opcoes como notificacoes push, preferencias de email e comunicacoes de marketing."
+    "effective_date": "Data de vigencia: [preencher na publicacao]",
+    "intro": "Esta Politica de Privacidade explica como a Source Combatives e seus produtos relacionados, incluindo DojoMate, AFL, Education e servicos web e moveis relacionados, coletam, usam, retêm e compartilham informacoes.",
+    "scope": {
+      "title": "1. Escopo",
+      "intro": "Esta Politica de Privacidade se aplica a:",
+      "items": [
+        "cadastro e login de conta",
+        "operacoes da academia e controle de presenca",
+        "assinaturas, pagamentos e acesso a produtos relacionados",
+        "atividade de aprendizagem no Education",
+        "progressao, conquistas e recursos de gamificacao",
+        "sites, aplicativos moveis e servicos relacionados de suporte ou notificacao"
+      ]
+    },
+    "collect": {
+      "title": "2. Informacoes que Coletamos",
+      "intro": "Coletamos diferentes tipos de informacoes dependendo de como voce usa a plataforma.",
+      "account": {
+        "title": "Informacoes de conta e identidade",
+        "intro": "Isso pode incluir:",
+        "items": [
+          "endereco de email",
+          "senha e informacoes de seguranca da conta",
+          "preferencias da conta",
+          "detalhes de perfil fornecidos por voce, como nome e fuso horario"
+        ],
+        "extra_intro": "Alguns recursos podem exigir informacoes adicionais, como:",
+        "extra_items": [
+          "data de nascimento",
+          "informacoes sobre relacao entre responsavel e dependente",
+          "documento oficial ou identidade nacional para inscricao em torneios, quando necessario para associar a inscricao a pessoa correta"
+        ],
+        "extra_note": "Se voce nao usar o cadastro de torneio pelo DojoMate, em geral nao precisara fornecer isso."
+      },
+      "attendance": {
+        "title": "Dados de presenca e operacoes da academia",
+        "intro": "Coletamos dados necessarios para operar os servicos da academia, que podem incluir:",
+        "items": [
+          "reservas de aulas",
+          "historico de presenca",
+          "data e hora das aulas",
+          "vinculo com a academia",
+          "uso de cartao ou plano",
+          "dados de atribuicao de instrutor e assistente"
+        ]
+      },
+      "payment": {
+        "title": "Dados de pagamento e assinatura",
+        "intro": "Se voce assinar produtos ou servicos pagos, poderemos coletar ou receber:",
+        "items": [
+          "status da assinatura",
+          "estado de acesso ao produto",
+          "registros de pagamento e cobranca",
+          "metadados relacionados a transacoes"
+        ],
+        "note": "O processamento de pagamentos pode ser feito por provedores terceirizados. Nao descrevemos aqui em detalhes as praticas desses processadores, e voce tambem deve consultar os termos e materiais de privacidade aplicaveis do processador."
+      },
+      "edu": {
+        "title": "Dados de aprendizagem do Education",
+        "intro": "Se voce usar os recursos do Education, poderemos coletar:",
+        "items": [
+          "progresso assistido",
+          "status de conclusao de licoes",
+          "envios de tarefa",
+          "pontuacoes e tentativas de tarefa",
+          "historico de atividade de aprendizagem relacionado"
+        ]
+      },
+      "progression": {
+        "title": "Dados de progressao, XP e gamificacao",
+        "intro": "Podemos coletar ou derivar dados de progressao, XP, conquistas, sequencias e atividades relacionadas necessarios para operar esses recursos em contas elegiveis autogeridas, incluindo:",
+        "items": [
+          "eventos de progressao vinculados a presenca",
+          "eventos de conclusao de videos do Education",
+          "correcao de tarefa e eventos de progressao relacionados",
+          "XP, conquistas, distintivos, sequencias, realizacoes e atividade relacionada do recurso",
+          "configuracoes de participacao em leaderboard e visibilidade de perfil publico quando esses controles existirem",
+          "registros relacionados de auditoria ou integridade usados para proteger a justica"
+        ],
+        "note": "Para mais detalhes sobre regras de progressao e comportamento do recurso, consulte"
+      },
+      "device": {
+        "title": "Dados de dispositivo, notificacao e seguranca",
+        "intro": "Podemos coletar:",
+        "items": [
+          "tokens de dispositivo para notificacoes push",
+          "dados de sessao e refresh token",
+          "dados de redefinicao de senha",
+          "logs de seguranca e servico necessarios para operar e proteger a plataforma"
+        ]
+      }
+    },
+    "use": {
+      "title": "3. Como Usamos as Informacoes",
+      "intro": "Usamos as informacoes para os seguintes fins:",
+      "operate": {
+        "title": "Para fornecer e operar a plataforma",
+        "intro": "Isso inclui:",
+        "items": [
+          "criar e manter contas",
+          "operar ferramentas e servicos da academia",
+          "registrar presenca e historico de aulas",
+          "habilitar assinaturas e controles de acesso",
+          "fornecer recursos de aprendizagem do Education",
+          "alimentar progressao, conquistas e comportamento relacionado"
+        ]
+      },
+      "analytics": {
+        "title": "Para manter analytics e relatorios de negocio",
+        "intro": "Usamos registros operacionais para:",
+        "items": [
+          "medir a atividade da academia",
+          "calcular relatorios financeiros e operacionais por aula",
+          "entender o desempenho do produto",
+          "melhorar a qualidade e a confiabilidade do servico"
+        ],
+        "note": "Quando possivel, analytics de longo prazo podem usar identificadores internos ou registros pseudonimizados em vez de nomes legiveis por humanos."
+      },
+      "communicate": {
+        "title": "Para nos comunicarmos com os usuarios",
+        "intro": "Podemos usar informacoes para:",
+        "items": [
+          "enviar avisos transacionais ou operacionais",
+          "enviar mensagens de produto ou suporte",
+          "enviar comunicacoes de marketing quando permitido e configurado pelo usuario"
+        ]
+      },
+      "personalize": {
+        "title": "Para personalizar ofertas e recomendacoes de produto",
+        "intro": "Podemos usar a atividade da conta, como presenca, assinaturas, atividade no Education ou comportamento relacionado a progressao, para personalizar recomendacoes ou ofertas de cursos, assinaturas e produtos relacionados. A personalizacao de marketing e separada dos controles de progressao, da participacao em leaderboard e do acesso ao perfil publico.",
+        "items": [
+          "recomendar cursos",
+          "recomendar assinaturas ou upgrades",
+          "personalizar ofertas de produto",
+          "informar mensagens de marketing ou promocionais"
+        ],
+        "note": "Esse comportamento e separado da operacao principal da plataforma. Dados de criancas ou dependentes nao sao usados para marketing personalizado."
+      }
+    },
+    "recommendations": {
+      "title": "4. Recomendacoes e Ofertas",
+      "intro": "Podemos usar dados de atividade da conta para apoiar recomendacoes e ofertas relacionadas aos nossos produtos e servicos.",
+      "body": "Isso pode incluir atividades como:",
+      "items": [
+        "padroes de presenca",
+        "atividade em licoes do Education",
+        "comportamento de conclusao de tarefa",
+        "atividade de progressao ou gamificacao",
+        "historico de assinaturas"
+      ],
+      "child_note": "Dados de criancas ou dependentes nao sao usados para marketing personalizado.",
+      "aggregate_note": "Tambem podemos usar analytics anonimos ou agregados para entender o uso geral do produto e melhorar a plataforma."
+    },
+    "public_features": {
+      "title": "5. Recursos Publicos e da Comunidade",
+      "intro": "Alguns recursos de progressao, conquistas ou comunidade podem envolver exibicao publica ou semipublica. Em geral:",
+      "items": [
+        "a participacao em leaderboard e o acesso ao perfil publico sao controles separados",
+        "optar por sair do leaderboard exclui o usuario dos rankings em vez de apenas ocultar a exibicao do ranking",
+        "a personalizacao de marketing e separada da participacao em leaderboard e do acesso ao perfil publico",
+        "a publicacao de competicoes, brackets ou vencedores pode seguir regras separadas do evento"
+      ],
+      "note": "Para mais detalhes sobre progressao e recursos de visibilidade, consulte"
+    },
+    "retention": {
+      "title": "6. Por Quanto Tempo Mantemos as Informacoes",
+      "intro": "Reteremos informacoes por periodos diferentes com base no tipo de dado e no motivo pelo qual ele e necessario.",
+      "active": {
+        "title": "Dados de conta ativa",
+        "intro": "Enquanto uma conta permanecer ativa, poderemos manter:",
+        "items": [
+          "dados de identidade da conta",
+          "registros de presenca",
+          "historico de aprendizagem do Education",
+          "historico de progressao e gamificacao",
+          "registros de assinatura e pagamento",
+          "dados operacionais de mensagens e dispositivo"
+        ]
+      },
+      "long_term": {
+        "title": "Registros operacionais de longo prazo",
+        "intro": "Alguns registros operacionais podem continuar sendo retidos para:",
+        "items": [
+          "analytics",
+          "relatorios",
+          "tratamento de disputas",
+          "contabilidade ou conformidade legal"
+        ],
+        "note": "Em alguns casos, a plataforma pode reter identificadores internos ou registros pseudonimizados em vez de nomes. Capturas de nome exibido em alguns registros historicos podem ser removidas ou anonimizadas apos um periodo de retencao."
+      },
+      "deleted": {
+        "title": "Contas excluidas",
+        "intro": "Se uma conta for excluida, os dados diretos de identidade podem ser removidos ou higienizados, enquanto alguns registros operacionais podem permanecer em forma anonimizada ou pseudonimizada para analytics, relatorios, contabilidade, tratamento de disputas ou conformidade legal. Os controles de visibilidade do perfil sao separados da exclusao.",
+        "note": "O tratamento historico interno da progressao na exclusao de conta ainda esta sendo finalizado. Os detalhes finais de implementacao podem variar conforme o subsistema e a lei aplicavel."
+      }
+    },
+    "controls": {
+      "title": "7. Escolhas e Controles do Usuario",
+      "intro": "Dependendo da area do produto, os usuarios podem controlar:",
+      "items": [
+        "personalizacao de marketing",
+        "participacao em leaderboard",
+        "acesso ao perfil publico",
+        "alertas do sistema por email",
+        "alertas do sistema por push",
+        "contato de marketing por email",
+        "contato de marketing por push",
+        "exclusao de conta"
+      ],
+      "note": "Esses controles nao sao todos iguais. Em especial:",
+      "notes": [
+        "desativar marketing personalizado nao e o mesmo que excluir a conta",
+        "desativar a participacao em leaderboard exclui a conta dos rankings",
+        "desativar o acesso ao perfil publico e um controle separado da participacao em leaderboard",
+        "desativar marketing nao desativa alertas do sistema nem apaga automaticamente registros de presenca ou progressao",
+        "excluir a conta pode ter consequencias mais amplas para dados de perfil e identidade"
+      ]
+    },
+    "child_data": {
+      "title": "8. Dados de Criancas e Dependentes",
+      "intro": "Alguns recursos oferecem suporte a contas vinculadas a pais, dependentes ou criancas. Tratamos os dados de criancas ou dependentes com cuidado adicional. Em especial:",
+      "items": [
+        "dados de criancas ou dependentes sao usados para operacao do produto, presenca, acesso e fluxos relacionados",
+        "dados de criancas ou dependentes nao participam de progressao, leaderboards nem perfis publicos de progressao",
+        "dados de criancas ou dependentes nao sao usados para marketing personalizado",
+        "relacoes entre pais ou responsaveis podem ser usadas para fornecer o servico ou comunicar atividade vinculada ao dependente"
+      ]
+    },
+    "sharing": {
+      "title": "9. Compartilhamento e Divulgacao",
+      "intro": "Podemos compartilhar informacoes:",
+      "items": [
+        "com prestadores de servico que nos ajudam a operar a plataforma",
+        "com processadores de pagamento e provedores de infraestrutura",
+        "com operadores da academia ou pessoal autorizado conforme necessario para fornecer servicos da academia",
+        "quando exigido por lei, regulacao, processo legal ou solicitacao governamental valida",
+        "para proteger os direitos, a seguranca, a integridade da plataforma ou de outras pessoas"
+      ],
+      "note_1": "Nao vendemos informacoes pessoais no sentido tradicional.",
+      "note_2": "Alguns dados podem ser processados em mais de um pais, dependendo de como a infraestrutura e os prestadores de servico sao operados."
+    },
+    "security": {
+      "title": "10. Seguranca",
+      "intro": "Usamos medidas tecnicas e organizacionais razoaveis para proteger informacoes e reduzir o risco de acesso, perda, uso indevido ou divulgacao nao autorizados.",
+      "note": "Nenhum sistema pode ser garantido como totalmente seguro, e voce tambem e responsavel por proteger suas credenciais de conta."
+    },
+    "international": {
+      "title": "11. Transferencias Internacionais",
+      "intro": "Dependendo de onde voce estiver localizado, seus dados podem ser processados ou armazenados em jurisdicoes diferentes da sua.",
+      "note": "Ao usar a plataforma, voce entende que o processamento pode envolver transferencias entre paises, sujeitas as salvaguardas aplicaveis."
+    },
+    "changes": {
+      "title": "12. Alteracoes a Esta Politica",
+      "intro": "Podemos atualizar esta Politica de Privacidade ao longo do tempo.",
+      "note": "Quando exigido, publicaremos a politica revisada e atualizaremos a data de vigencia. Alteracoes materiais podem ser comunicadas por meios apropriados."
+    },
+    "contact": {
+      "title": "13. Contato",
+      "intro": "Se voce tiver perguntas sobre esta Politica de Privacidade ou sobre nossos dados e praticas de privacidade, entre em contato em:",
+      "value": "support@dojomateapp.com"
+    }
   },
   "deletion": {
     "title": "Exclusao de Conta",
-    "intro_primary": "Voce pode excluir sua conta DojoMate a qualquer momento, depois que todas as obrigacoes ligadas a conta forem resolvidas.",
-    "intro_secondary": "A exclusao dentro do aplicativo fica disponivel quando nao houver assinaturas ativas, cartoes, saldos pre-pagos ou pagamentos pendentes na conta.",
+    "intro_primary": "Voce pode solicitar a exclusao da sua conta DojoMate a qualquer momento, mas a conta ainda precisa passar pelas validacoes atuais antes que a remocao possa ser concluida.",
+    "intro_secondary": "O botao Excluir esta sempre disponivel no aplicativo. Ao pressionar, o sistema executa as verificacoes e mostra tudo o que ainda precisa ser resolvido primeiro.",
     "in_app_title": "Excluir no Aplicativo",
-    "in_app_text": "No aplicativo movel DojoMate, va para Configuracoes → Configuracoes de Privacidade → Excluir Conta. O botao Excluir esta sempre disponivel. Pressione-o para executar as validacoes. O aplicativo mostrara tudo o que ainda precisa ser resolvido, como:",
-    "in_app_item_memberships": "Todas as assinaturas e cartoes de membro vinculados ao seu perfil ou a contas de criancas estao inativos ou cancelados.",
-    "in_app_item_obligations": "Nao ha mensalidades nao pagas, taxas de reserva pendentes ou disputas nao resolvidas com sua academia.",
-    "in_app_item_access": "Voce esta conectado no dispositivo que deseja remover.",
+    "in_app_text": "No aplicativo movel DojoMate, va para Configuracoes -> Configuracoes de Privacidade -> Excluir Conta. Pressione Excluir para executar as verificacoes atuais. O aplicativo mostrara itens nao resolvidos, como:",
+    "in_app_item_memberships": "Planos ou cartoes ativos vinculados a voce ou a contas dependentes de criancas.",
+    "in_app_item_obligations": "Mensalidades em aberto, taxas de reserva pendentes ou outras obrigacoes com a academia que ainda precisam ser resolvidas.",
+    "in_app_item_access": "Condicoes de contas vinculadas que ainda impedem a remocao, incluindo contas dependentes de criancas que ainda nao podem ser excluidas junto com a conta principal.",
     "support_title": "Solicitar Ajuda ao Suporte",
-    "support_text": "Se voce nao puder cumprir os requisitos no aplicativo, por exemplo, se a academia ainda precisar encerrar um cartao, envie um email para nossa equipe de suporte e solicite a exclusao manual.",
-    "support_instructions": "Inclua o email usado na conta, o nome da sua academia e informe se voce e membro ou proprietario de academia. Responderemos com os proximos passos apos a verificacao.",
+    "support_text": "Se voce nao conseguir satisfazer as verificacoes no aplicativo por conta propria, por exemplo porque a academia ainda precisa encerrar um cartao ou liberar uma condicao de conta vinculada, envie um email ao suporte e peca ajuda para revisar os bloqueios da exclusao.",
+    "support_instructions": "Inclua o email usado na conta, o nome da sua academia e informe se voce e membro ou proprietario de academia. Revisaremos os bloqueios e responderemos com os proximos passos apos a verificacao.",
     "member_title": "Contas de Membro",
-    "member_text": "As exclusoes de membros normalmente sao confirmadas rapidamente. A academia ainda pode dever valor nao utilizado do seu plano; excluir a conta nao impede a emissao de reembolso pelo processo proprio da academia.",
+    "member_text": "As exclusoes de membros geralmente sao o caso mais simples, desde que cartoes ativos, planos e bloqueios de contas vinculadas ja tenham sido resolvidos. Se a sua academia ainda dever algum valor nao utilizado do plano, a exclusao nao impede que isso seja tratado separadamente pelo processo proprio da academia.",
     "owner_title": "Contas de Academia (Proprietario)",
-    "owner_text": "Contas de proprietario exigem revisao extra para que possamos proteger seus membros, acertar salarios e manter o historico de assinaturas, pagamentos, sessoes e taxas.",
-    "owner_review": "Confirmamos manualmente cada solicitacao de proprietario antes de desativar a conta ou remover o acesso. Informaremos quando a conta estiver programada para encerramento e quais registros continuarao visiveis para os membros.",
+    "owner_text": "Contas de proprietario exigem revisao extra para que possamos proteger os membros da academia, acertar salarios e preservar o historico necessario de assinaturas, pagamentos, sessoes e taxas.",
+    "owner_review": "Revisamos manualmente as solicitacoes de exclusao de proprietarios antes de desativar o acesso. Confirmaremos o que precisa ser resolvido primeiro e quais registros permanecerao retidos para operacoes, conformidade ou continuidade voltada aos membros.",
     "data_title": "Retencao de Dados",
-    "data_text": "Registros financeiros, de presenca e de conformidade podem ser mantidos pelo tempo exigido por lei, regras fiscais ou necessidade operacional, mesmo depois que seu login for removido.",
+    "data_text": "Registros financeiros, de presenca e relacionados a conformidade ainda podem ser mantidos apos a remocao do login quando exigidos para analytics, relatorios, tratamento de disputas, contabilidade, conformidade legal ou continuidade operacional.",
     "contact_label": "Entre em contato com nossa equipe de suporte:"
   },
   "progression": {
@@ -180,7 +430,6 @@
         "analytics_punch_cards": "Ponto da Equipe"
       }
     },
-
     "account": {
       "sign_in": {
         "title": "Entrar",
@@ -510,7 +759,7 @@
         "no_pending": "Se voce vir “No pending accounts”, o membro nao solicitou corretamente. Peca para tentar novamente escaneando o QR code da sua academia ou procurando o nome da academia.",
         "accept_reject": "Quando uma solicitacao aparecer, pressione Accept ou Reject.",
         "child_accounts": "Para aceitar contas de criancas vinculadas, va para Membros → Lista de Membros, abra o perfil do pai ou mae e aceite as contas de criancas listadas ali.",
-        "refresh": "Se as contas de criancas nao aparecerem, ou elas nao foram criadas, ou a criacao falhou, ou sua lista esta desatualizada. Peca para o pai ou mae cria-las ou feche e reabra o app para atualizar, sem precisar sair da conta."      
+        "refresh": "Se as contas de criancas nao aparecerem, ou elas nao foram criadas, ou a criacao falhou, ou sua lista esta desatualizada. Peca para o pai ou mae cria-las ou feche e reabra o app para atualizar, sem precisar sair da conta."
       },
       "rejection": {
         "title": "Rejeitar ou Banir Membros",
@@ -574,7 +823,7 @@
         "title": "Ferramentas Pagas",
         "intro_1": "As ferramentas pagas sao compradas pelos proprietarios de academia no",
         "intro_link": "Affiliate Portal.",
-        "intro_2": "Outras funcoes podem usa-las gratuitamente. Voce pode entrar se tiver criado pelo menos uma academia.", 
+        "intro_2": "Outras funcoes podem usa-las gratuitamente. Voce pode entrar se tiver criado pelo menos uma academia.",
         "available": "Existem quatro ferramentas pagas: Timetable, Pause Cards, Staff Permissions e Analytics. O pacote Premium inclui as quatro com desconto e oferece um teste gratis de 90 dias. Pressione Start Trial na pagina Features para comecar.",
         "pricing": "Os precos sao ajustados regionalmente, usando PPP. Informe seu pais, e provincia no caso da China, para receber o desconto correto."
       },
