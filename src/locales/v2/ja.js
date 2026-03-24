@@ -9,6 +9,8 @@ export default {
       preview_badge: 'ヘルプ v2',
       intro: 'オーナーと管理者向けの、作業起点のガイドです。v1 はこの v2 の構築中も公開されたままです。',
       open_v1: 'ヘルプ v1 を開く',
+      search_placeholder: 'ヘルプを検索',
+      search_no_results: '結果が見つかりません',
       nav: {
         start_here: 'ここから開始',
         owner_setup: 'オーナー設定',

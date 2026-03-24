@@ -9,6 +9,8 @@ export default {
       preview_badge: '帮助 v2',
       intro: '这是一个以任务为中心的指南，面向馆主和管理员。v1 仍然保持在线，v2 会继续完善。',
       open_v1: '打开帮助 v1',
+      search_placeholder: '搜索帮助',
+      search_no_results: '没有找到结果',
       nav: {
         start_here: '从这里开始',
         owner_setup: '馆主设置',

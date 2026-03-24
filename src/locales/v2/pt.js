@@ -9,6 +9,8 @@ export default {
       preview_badge: 'Ajuda v2',
       intro: 'Um guia orientado por tarefas para donos e administradores. A v1 continua ativa enquanto esta versão está sendo construída.',
       open_v1: 'Abrir Ajuda v1',
+      search_placeholder: 'Buscar ajuda',
+      search_no_results: 'Nenhum resultado encontrado',
       nav: {
         start_here: 'Comece aqui',
         owner_setup: 'Configuração do Dono',

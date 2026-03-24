@@ -9,6 +9,8 @@ export default {
       preview_badge: 'Help v2',
       intro: 'A task-first guide for owners and admins. v1 remains live while this version is being built.',
       open_v1: 'Open Help v1',
+      search_placeholder: 'Search help',
+      search_no_results: 'No results found',
       nav: {
         start_here: 'Start Here',
         owner_setup: 'Owner Setup',

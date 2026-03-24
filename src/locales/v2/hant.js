@@ -9,6 +9,8 @@ export default {
       preview_badge: '幫助 v2',
       intro: '這是一個以任務為中心的指南，面向館主和管理員。v1 仍然保持在線，v2 會繼續完善。',
       open_v1: '打開幫助 v1',
+      search_placeholder: '搜尋幫助',
+      search_no_results: '找不到結果',
       nav: {
         start_here: '從這裡開始',
         owner_setup: '館主設定',

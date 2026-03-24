@@ -1,8 +1,25 @@
 <script setup>
+import { computed, ref } from 'vue'
 import V2Icon from './V2Icon.vue'
 import { useI18n } from 'vue-i18n'
+import { getV2SearchIndex } from '../help-v2/search'
 
 const { t } = useI18n()
+const query = ref('')
+const index = computed(() => getV2SearchIndex(t))
+const results = computed(() => {
+  const q = query.value.trim().toLowerCase()
+  if (!q) return []
+  const seen = new Set()
+  return index.value
+    .filter(item => item.text.includes(q))
+    .filter(item => {
+      if (seen.has(item.path)) return false
+      seen.add(item.path)
+      return true
+    })
+    .slice(0, 20)
+})
 </script>
 
 <template>
@@ -18,6 +35,30 @@ const { t } = useI18n()
             <router-link class="btn btn--ghost" to="/help-v1">
               {{ t('help_v2.layout.open_v1') }}
             </router-link>
+          </div>
+
+          <div class="card stack tight search-card">
+            <input
+              v-model="query"
+              type="text"
+              :placeholder="t('help_v2.layout.search_placeholder')"
+            />
+            <div v-if="query" class="stack tight">
+              <div v-if="results.length === 0" class="muted">
+                {{ t('help_v2.layout.search_no_results') }}
+              </div>
+              <div v-else class="stack tight" role="list">
+                <router-link
+                  v-for="r in results"
+                  :key="r.path"
+                  :to="r.path"
+                  class="link"
+                  role="listitem"
+                >
+                  {{ r.title }}
+                </router-link>
+              </div>
+            </div>
           </div>
 
           <nav class="card stack tight" aria-label="Help v2 navigation">
@@ -296,6 +337,8 @@ const { t } = useI18n()
 .help-wrap {
   height: 68vh;
   max-height: 78vh;
+  width: min(1056px, 100%);
+  margin: 0 auto;
 }
 
 .fill {
@@ -347,6 +390,14 @@ const { t } = useI18n()
   border-color: rgba(10, 99, 209, 0.35);
   background: rgba(10, 99, 209, 0.08);
   color: var(--color-primary);
+}
+
+.search-card input {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 720px) {

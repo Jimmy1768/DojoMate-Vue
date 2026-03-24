@@ -9,6 +9,8 @@ export default {
       preview_badge: '도움말 v2',
       intro: '오너와 관리자 중심의 작업형 가이드입니다. v2를 만드는 동안에도 v1은 계속 공개됩니다.',
       open_v1: '도움말 v1 열기',
+      search_placeholder: '도움말 검색',
+      search_no_results: '검색 결과가 없습니다',
       nav: {
         start_here: '여기서 시작',
         owner_setup: '오너 설정',

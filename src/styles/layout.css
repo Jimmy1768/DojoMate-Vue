@@ -40,7 +40,7 @@
 /* Two-column split (Help page) */
 .split {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 264px 1fr;
   gap: var(--space-4);
   align-items: start;
 }
