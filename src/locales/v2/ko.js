@@ -144,6 +144,110 @@ export default {
       paid_body: 'Timetable, Pause Cards, Staff Access, Analytics는 entitlement로 제어됩니다. 도구를 활성화하거나 Premium을 시작해야 하면 Features 페이지 가이드를 확인하세요.',
       paid_link: '도구와 Premium 활성화'
     },
+    owner_setup: {
+      getting_started: {
+        badge: '시작 가이드',
+        title: '올바른 순서로 도장을 설정하세요',
+        intro: '처음부터 시작한다면 이 페이지가 가장 단순한 순서를 보여 주므로 이후 앱 흐름도 더 이해하기 쉬워집니다.',
+        order_title: '추천 순서',
+        order_items: [
+          '도장을 만드세요.',
+          '멤버를 도장에 들이세요.',
+          '멤버십 카드 템플릿을 만드세요.',
+          '활성 멤버에게 카드를 발급하세요.',
+          '강사와 스태프 접근 권한을 설정하세요.',
+          '첫 수업을 만드세요.',
+          '준비가 되면 유료 도구를 추가하세요. Affiliate Portal에는 모든 도구가 열리는 90일 무료 Premium 체험이 포함됩니다.'
+        ],
+        why_title: '이 순서가 도움이 되는 이유',
+        why_items: [
+          '카드를 발급하려면 먼저 멤버가 존재해야 합니다.',
+          '예약이 제대로 작동하려면 먼저 카드가 있어야 합니다.',
+          '수업을 만들기 전에 강사가 준비되어 있어야 합니다.',
+          '유료 도구는 도장의 기본 워크플로우가 이미 돌아간 뒤에 추가할 때 가장 효과적입니다.'
+        ],
+        start_title: '확신이 없다면 여기서 시작하세요',
+        create_link: '도장 만들기',
+        members_link: '멤버 들이기',
+        cards_link: '카드 설정'
+      },
+      create: {
+        badge: '오너',
+        title: '도장 만들기',
+        intro: '이것은 오너의 첫 단계입니다. 멤버를 들이고, 카드를 발급하고, 수업 만들기를 시작하기 전에 먼저 도장을 만드세요.',
+        before_title: '만들기 전에',
+        before_items: [
+          '도장이 이미 존재하는지 확인해 중복 생성을 피하세요.',
+          '처음부터 올바른 통화를 선택할 준비를 하세요.'
+        ],
+        steps_title: '단계',
+        steps_items: [
+          '도장 생성 흐름을 엽니다.',
+          '도장 정보를 신중하게 입력합니다.',
+          '올바른 통화를 선택합니다.',
+          '폼을 제출해 도장을 생성합니다.'
+        ],
+        next_title: '다음 단계',
+        next_body: '도장이 생긴 뒤의 일반적인 다음 작업은 기본 도장 정보를 검토한 뒤 사람들을 도장에 들이는 것입니다.',
+        back_link: '오너 경로로 돌아가기',
+        next_link: '도장 기본 정보로 이동'
+      },
+      basics: {
+        badge: '오너',
+        title: '도장 기본 정보 업데이트',
+        intro: '이 페이지를 사용해 도장 프로필을 정확하게 유지하면 멤버와 스태프가 올바른 도장 정보를 보게 됩니다.',
+        use_title: '이 페이지를 사용하는 경우',
+        use_items: [
+          '도장 정보가 수정되거나 새로고침되어야 할 때',
+          '도장에 표시되는 정보가 바뀌었을 때',
+          '멤버에게 도장이 어떻게 보이는지 검토하고 싶을 때'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '멤버와 카드를 확장하기 전에 오너는 도장 기본 정보를 최신 상태로 유지해야 합니다.',
+          '멤버가 도장 메시지나 온보딩 흐름을 통해 가입한다면 정확한 도장 정보가 중요합니다.'
+        ],
+        next_title: '다음 단계',
+        back_link: '도장 만들기로 돌아가기',
+        next_link: '도장 QR로 이동'
+      },
+      qr: {
+        badge: '오너',
+        title: '도장 QR 코드 공유',
+        intro: '사람들이 도장을 직접 검색하지 않고 더 빠르게 가입하길 원할 때 도장 QR을 사용하세요.',
+        use_title: '가장 도움이 되는 경우',
+        use_items: [
+          '도장에서 직접 온보딩할 때',
+          '이벤트, 체험 수업, 바쁜 등록일',
+          '여러 사람이 빠르게 가입해야 하는 상황'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          'QR 경로는 직접 검색하게 하는 것보다 보통 더 빠릅니다.',
+          '온보딩 중 가입 실수를 줄이고 싶을 때 특히 유용합니다.'
+        ],
+        next_title: '다음 단계',
+        back_link: '도장 기본 정보로 돌아가기',
+        next_link: '멤버 들이기'
+      },
+      delete: {
+        badge: '오너',
+        title: '도장 삭제는 신중하게',
+        intro: '이것은 도장 라이프사이클 단계이지 일상 작업이 아닙니다. 도장을 정말로 제거해야 할 때만 사용하세요.',
+        before_title: '실행하기 전에',
+        before_items: [
+          '먼저 선행 조건을 검토하세요.',
+          '현재 멤버에게 어떤 일이 생기는지 이해하세요.',
+          '일반 정리를 위한 지름길로 도장 삭제를 사용하지 마세요.'
+        ],
+        meaning_title: '이 의미는',
+        meaning_body: '도장 삭제는 중대한 오너 작업입니다. 도장 자체가 더 이상 활성 상태로 남아 있지 않아야 할 때만 이뤄져야 합니다.',
+        help_title: '먼저 도움이 필요하신가요?',
+        help_body: '삭제가 맞는 결정인지 확신이 없다면 마지막 단계를 하기 전에 DojoMate 도움 게시판에서 먼저 물어보세요.',
+        help_link: 'DojoMate 도움 게시판 열기',
+        back_link: '오너 경로로 돌아가기'
+      }
+    },
     admin_home: {
       badge: '관리자',
       title: '도장 운영을 돕습니다',
@@ -862,7 +966,197 @@ export default {
         next_link: 'Cards 워크플로 검토'
       }
     },
+    account: {
+      sign_in: {
+        badge: 'Account',
+        title: '계정에 로그인하기',
+        intro: '계정이 이미 존재하고 도장, 예약, 카드, 기록에 접근하고 싶을 때 로그인 기능을 사용합니다.',
+        need_title: '필요한 것',
+        need_items: ['이메일 주소', '비밀번호'],
+        trouble_title: '로그인이 되지 않을 때',
+        trouble_items: [
+          '이메일과 비밀번호가 맞는지 확인하기',
+          '필요하면 Reset Password 사용하기',
+          '화면이 낯설다면 언어 선택기를 확인하기'
+        ],
+        next_title: '다음 단계',
+        back_link: 'Student Path로 돌아가기',
+        next_link: 'Reset Password'
+      },
+      create: {
+        badge: 'Account',
+        title: '계정 만들기',
+        intro: '도장에 가입하거나 수업을 예약하거나 앱의 나머지 기능을 쓰기 전에 계정을 만드세요.',
+        path_title: '올바른 경로 선택하기',
+        path_items: [
+          '수련하거나 도장에 가입하는 경우 member/student 경로',
+          '도장을 설정하거나 관리하는 경우 admin/owner 경로'
+        ],
+        need_title: '필요한 것',
+        need_items: ['유효한 이메일 주소', '앱 규칙을 충족하는 비밀번호'],
+        next_title: '다음 단계',
+        back_link: 'Sign In으로 돌아가기',
+        next_link: 'Join an Academy'
+      },
+      reset: {
+        badge: 'Account',
+        title: '비밀번호 재설정',
+        intro: '비밀번호가 기억나지 않거나 현재 비밀번호가 더 이상 동작하지 않을 때 사용합니다.',
+        how_title: '작동 방식',
+        how_items: [
+          '로그인 화면에서 재설정을 요청하기',
+          'DojoMate 로그인에 연결된 이메일 계정 확인하기',
+          '메일이 오면 재설정 링크 따라가기'
+        ],
+        email_title: '이메일이 도착하지 않으면',
+        email_items: [
+          '스팸/정크 메일함 확인하기',
+          '올바른 이메일을 입력했는지 확인하기',
+          '재설정을 다시 보내기'
+        ]
+      },
+      troubleshooting: {
+        badge: 'Account',
+        title: '계정 문제 해결',
+        intro: '일반적인 로그인 또는 가입 문제로 계정 접근이 막혔을 때 이 페이지를 사용하세요.',
+        signin_title: '로그인할 수 없음',
+        signin_items: [
+          '이메일과 비밀번호를 꼼꼼히 확인하기',
+          '필요하면 비밀번호 재설정하기',
+          '기기가 온라인인지 확인하기'
+        ],
+        email_title: '이미 사용 중인 이메일',
+        email_body: '보통 이것은 계정이 이미 존재한다는 뜻이므로, 두 번째 계정을 만들기보다 로그인하거나 비밀번호를 재설정해야 합니다.',
+        role_title: '역할 혼동',
+        role_body: '역할이 바뀌었거나 계정 동작이 예상과 다르다면, 먼저 올바른 계정과 도장 membership을 사용 중인지 확인하세요.'
+      }
+    },
+    settings: {
+      password: {
+        badge: 'Settings',
+        title: '비밀번호 변경하기',
+        intro: '현재 비밀번호를 아직 알고 있고 계정 설정 안에서 업데이트하고 싶을 때 사용하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '이것은 비밀번호 재설정과 다릅니다. 비밀번호 변경은 이미 계정에 접근할 수 있다는 전제입니다.',
+          '전혀 로그인할 수 없다면 대신 Reset Password를 사용하세요.'
+        ]
+      },
+      language: {
+        badge: 'Settings',
+        title: '앱 언어 바꾸기',
+        intro: '앱을 다른 지원 언어로 표시하고 싶을 때 언어 설정을 사용하세요.',
+        know_title: '알아둘 점',
+        know_body: '화면을 이해하기 어렵게 느껴진다면 언어 설정을 확인하는 것이 가장 빠른 해결책 중 하나입니다.'
+      },
+      currency: {
+        badge: 'Settings',
+        title: '통화 보기 선택하기',
+        intro: '통화 설정을 사용해 앱에서 금액이 어떻게 표시될지 조절하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '멤버는 주로 금액이 정확하고 분명하게 보이는지를 중요하게 생각합니다.',
+          '오너는 도장 쪽 재무 설정과 일관성도 신경 쓸 수 있습니다.'
+        ]
+      },
+      privacy: {
+        badge: 'Settings',
+        title: '개인정보 설정 검토하기',
+        intro: '개인정보 설정을 사용해 알림, 마케팅, 리더보드, 공개 프로필, 예약 및 analytics 관련 데이터가 어떻게 처리되는지 이해하고 제어하세요.',
+        main_title: '주요 개인정보 영역',
+        main_items: [
+          '알림',
+          '마케팅',
+          '리더보드 참여',
+          '공개 프로필 접근',
+          '예약 관련 설정',
+          '출석 및 집계 analytics 데이터'
+        ],
+        progression_title: 'progression 관련 제어',
+        progression_items: [
+          '리더보드 참여와 공개 프로필 접근은 별도 제어 항목입니다.',
+          '리더보드 참여를 끄면 계정이 순위에서 제외됩니다.',
+          '공개 프로필 접근을 꺼도 계정이 모든 허용된 화면에서 자동으로 사라지는 것은 아닙니다.',
+          '마케팅 제어는 progression, 리더보드, 공개 프로필 제어와 별개입니다.'
+        ],
+        child_title: '자녀 및 dependent 계정',
+        child_body: '자녀 및 dependent 기록은 progression 참여, 리더보드 참여, 공개 progression 프로필, 개인화 마케팅에서 제외됩니다.',
+        know_title: '알아둘 점',
+        knowBody: '이 페이지는 메시지를 켜고 끄는 것만이 아니라 개인정보 선택을 이해하고 관리하는 데 목적이 있습니다.'
+      },
+      delete: {
+        badge: 'Settings',
+        title: '계정 삭제는 신중하게',
+        intro: '계정 삭제는 중요한 작업입니다. 단순히 한 도장을 떠나는 것이 아니라 계정 자체를 정말 닫고 싶을 때만 사용하세요.',
+        before_title: '실행 전에',
+        before_items: [
+          '먼저 검증 규칙 확인하기',
+          '삭제를 막을 수 있는 항목 검토하기',
+          '자녀 계정과 관련 자녀 카드 관계 고려하기'
+        ],
+        know_title: '알아둘 점',
+        know_body: '계정 전체 삭제는 한 개의 도장 membership을 떠나는 것과 다릅니다. 계정을 유지해야 한다면 membership 흐름을 사용하세요.'
+      },
+      logout: {
+        badge: 'Settings',
+        title: '로그아웃',
+        intro: '현재 기기에서 앱 사용을 마쳤거나 다른 계정으로 전환하고 싶을 때 로그아웃을 사용하세요.'
+      }
+    },
+    profile: {
+      edit: {
+        badge: 'Profile',
+        title: '프로필 수정하기',
+        intro: '개인 프로필 정보를 업데이트해야 할 때 이 페이지를 사용하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '계정이 어떻게 사용되는지에 따라 일부 사용자는 역할 관련 맥락을 볼 수 있습니다.',
+          '변경 후에는 폼을 제출해 저장하세요.'
+        ]
+      },
+      children: {
+        badge: 'Profile',
+        title: '자녀 계정 관리하기',
+        intro: '부모나 보호자가 자녀 계정을 만들고 수정하고 관리해야 할 때 자녀 계정을 사용하세요.',
+        do_title: '할 수 있는 일',
+        do_items: [
+          '자녀 계정 만들기',
+          '자녀 계정 정보 수정하기',
+          '필요할 때 자녀 계정 제거하기'
+        ],
+        know_title: '알아둘 점',
+        know_body: '부모가 관리하는 계정 관계는 도장 가입이나 membership 처리 같은 다른 흐름에도 영향을 줄 수 있습니다.'
+      }
+    },
     student: {
+      join: {
+        badge: 'Student',
+        title: '도장 가입하기',
+        intro: '계정을 도장에 연결하고 앱 안에서 그 도장을 사용하기 시작하고 싶을 때 이 흐름을 사용하세요.',
+        find_title: '도장을 찾는 방법',
+        find_items: [
+          'Discover Academy를 사용해 앱 안에서 도장을 둘러보기',
+          '직접 검색하거나 도장 QR 코드를 스캔하려면 Search Academy 사용하기'
+        ],
+        steps_title: '단계',
+        steps_items: [
+          'Academy 섹션에서 Discover Academy를 엽니다.',
+          '도장 목록을 둘러봅니다.',
+          '도장을 열어 상세 정보를 봅니다.',
+          '도장 정보와 갤러리를 확인합니다.',
+          '원하는 도장이 맞는지 확인합니다.',
+          '가입 신청을 합니다.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '가입 전에 여러 도장을 비교하고 싶다면 Discover Academy가 유용합니다.',
+          'Search Academy는 검색과 QR 스캔을 위한 직접 경로입니다.',
+          '부모는 가입 과정에서 자녀 계정도 함께 고려해야 할 수 있습니다.'
+        ],
+        next_title: '다음 단계',
+        back_link: 'Student Path로 돌아가기',
+        next_link: 'Memberships 관리'
+      },
       home: {
         badge: '학생',
         title: '도장에서 수련합니다',
@@ -927,6 +1221,393 @@ export default {
           'Expo의 관리자용 작성 화면은 아직 준비 단계이며 현재의 주된 실사용 흐름으로 보면 안 됩니다.'
         ],
         join_link: '도장 가입',
+        alerts_link: '시스템 알림'
+      },
+      memberships: {
+        badge: 'Student',
+        title: '도장 memberships 관리하기',
+        intro: '계정이 둘 이상의 도장에 속해 있거나, 어떤 도장 membership 안에서 행동할지 바꿔야 할 때 이 페이지를 사용하세요.',
+        when_title: '이럴 때 중요함',
+        when_items: [
+          '둘 이상의 도장에 속해 있을 때',
+          '지금 어느 도장 안에서 행동하고 있는지 선택해야 할 때',
+          '앱에서 현재 선택된 도장이 잘못되었을 때'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '여러 도장에 속한 멤버는 예약하거나 기록을 보기 전에 올바른 도장을 선택해야 합니다.',
+          '무언가 빠져 보인다면 단순히 잘못된 도장이 활성화된 것일 수 있습니다.'
+        ],
+        next_title: '다음 단계',
+        back_link: 'Join Academy로 돌아가기',
+        next_link: 'Booking'
+      },
+      booking: {
+        badge: 'Student',
+        title: '수업 예약하기',
+        intro: '예약을 사용해 수업을 고르고, 사용할 수 있는 카드를 선택하고, 자리를 확보하세요.',
+        steps_title: '단계',
+        steps_items: [
+          '일정을 엽니다.',
+          '원하는 수업을 고릅니다.',
+          '예약 자격이 있는지 확인합니다.',
+          '사용할 카드를 선택합니다.',
+          '예약을 확정합니다.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '여러 도장에 속해 있다면 먼저 올바른 도장을 선택해야 할 수 있습니다.',
+          '카드가 보이지 않는다면 수업과 카드가 호환되지 않을 수 있습니다.',
+          '규칙이 허용하는 동안에는 예약 취소도 할 수 있습니다.'
+        ],
+        next_title: '다음 단계',
+        back_link: 'Memberships',
+        next_link: 'Attendance Records'
+      },
+      alerts: {
+        badge: 'Student',
+        title: '시스템 알림 읽기',
+        intro: '시스템 알림은 도장 업데이트와 기타 중요한 계정 또는 membership 정보를 따라가는 데 도움이 됩니다.',
+        see_title: '볼 수 있는 내용',
+        see_items: [
+          '도장 업데이트',
+          'membership 관련 안내',
+          '도장 사용과 관련된 기타 시스템 생성 알림'
+        ],
+        know_title: '알아둘 점',
+        know_body: '이것은 일반 채팅이나 메시지 스레드가 아니라 시스템 알림 화면입니다. 중요한 계정 및 도장 정보로 받아들이세요.'
+      },
+      attendance: {
+        badge: 'Student',
+        title: '출석 기록 검토하기',
+        intro: '훈련 기록을 검토하고 선택한 날짜 범위에서 어떤 일이 있었는지 확인하고 싶을 때 출석 기록을 사용하세요.',
+        help_title: '이 페이지가 도움이 되는 것',
+        help_items: [
+          '최근 출석을 빠르게 확인하기',
+          '더 긴 날짜 범위 검토하기',
+          '수업이 예상대로 기록되었는지 확인하기'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '날짜 범위 제어는 더 긴 기간 검토를 쉽게 해 줍니다.',
+          '이 페이지는 주로 기록을 검토하기 위한 것이지 변경하기 위한 것이 아닙니다.'
+        ]
+      }
+    },
+    account: {
+      sign_in: {
+        badge: '계정',
+        title: '계정에 로그인하기',
+        intro: '이미 계정이 있고 도장, 예약, 카드, 기록에 접근하려면 로그인을 사용하세요.',
+        need_title: '필요한 것',
+        need_items: ['이메일 주소', '비밀번호'],
+        trouble_title: '로그인이 되지 않을 때',
+        trouble_items: [
+          '이메일과 비밀번호가 맞는지 확인하세요',
+          '필요하면 비밀번호 재설정을 사용하세요',
+          '화면이 낯설게 보이면 언어 설정을 먼저 확인하세요'
+        ],
+        next_title: '다음 단계',
+        back_link: '학생 경로로 돌아가기',
+        next_link: '비밀번호 재설정'
+      },
+      create: {
+        badge: '계정',
+        title: '계정 만들기',
+        intro: '도장에 가입하거나 수업을 예약하거나 다른 기능을 사용하기 전에 계정을 만드세요.',
+        path_title: '올바른 경로 선택',
+        path_items: [
+          '훈련하거나 도장에 가입하려면 멤버/학생 경로',
+          '도장을 설정하거나 관리하려면 관리자/오너 경로'
+        ],
+        need_title: '필요한 것',
+        need_items: ['유효한 이메일 주소', '앱 규칙을 만족하는 비밀번호'],
+        next_title: '다음 단계',
+        back_link: '로그인으로 돌아가기',
+        next_link: '도장 가입하기'
+      },
+      reset: {
+        badge: '계정',
+        title: '비밀번호 재설정',
+        intro: '비밀번호가 기억나지 않거나 현재 비밀번호가 더 이상 작동하지 않을 때 사용하세요.',
+        how_title: '작동 방식',
+        how_items: [
+          '로그인 화면에서 재설정을 요청하세요',
+          'DojoMate 로그인에 연결된 이메일 계정을 확인하세요',
+          '메일이 도착하면 재설정 링크를 여세요'
+        ],
+        email_title: '메일이 오지 않을 때',
+        email_items: [
+          '스팸함을 확인하세요',
+          '올바른 이메일을 입력했는지 확인하세요',
+          '재설정 메일을 다시 보내세요'
+        ]
+      },
+      troubleshooting: {
+        badge: '계정',
+        title: '계정 문제 해결',
+        intro: '일반적인 로그인 또는 가입 문제 때문에 계정 접근이 막혔을 때 이 페이지를 사용하세요.',
+        signin_title: '로그인할 수 없음',
+        signin_items: [
+          '이메일과 비밀번호를 다시 확인하세요',
+          '필요하면 비밀번호를 재설정하세요',
+          '기기가 온라인인지 확인하세요'
+        ],
+        email_title: '이미 사용 중인 이메일',
+        email_body: '보통은 해당 계정이 이미 존재한다는 뜻입니다. 두 번째 계정을 만들기보다 로그인하거나 비밀번호를 재설정하세요.',
+        role_title: '역할 혼동',
+        role_body: '역할이 바뀌었거나 계정 동작이 기대와 다르면, 먼저 올바른 계정과 올바른 도장 멤버십을 사용하고 있는지 확인하세요.'
+      }
+    },
+    settings: {
+      password: {
+        badge: '설정',
+        title: '비밀번호 변경',
+        intro: '현재 비밀번호를 알고 있고 계정 설정 안에서 비밀번호를 바꾸고 싶을 때 사용하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '이것은 비밀번호 재설정과 다릅니다. 비밀번호 변경은 이미 계정에 접근할 수 있다는 전제입니다.',
+          '아예 로그인할 수 없다면 비밀번호 재설정을 사용하세요.'
+        ]
+      },
+      language: {
+        badge: '설정',
+        title: '앱 언어 변경',
+        intro: '앱을 다른 지원 언어로 표시하고 싶을 때 언어 설정을 사용하세요.',
+        know_title: '알아둘 점',
+        know_body: '어떤 화면이 이해하기 어렵다면 언어 설정을 확인하는 것이 가장 빠른 해결책 중 하나입니다.'
+      },
+      currency: {
+        badge: '설정',
+        title: '통화 표시 선택',
+        intro: '앱에서 금액이 어떻게 표시되는지 통화 설정으로 제어하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '멤버는 금액이 명확하게 보이는지를 가장 중요하게 생각합니다.',
+          '오너는 도장 측 재무 설정과 일관성도 함께 신경 쓸 수 있습니다.'
+        ]
+      },
+      privacy: {
+        badge: '설정',
+        title: '개인정보 설정 검토',
+        intro: '알림, 마케팅, 리더보드, 공개 프로필, 예약, 분석 관련 데이터가 어떻게 처리되는지 이해하고 제어하려면 개인정보 설정을 사용하세요.',
+        main_title: '주요 개인정보 영역',
+        main_items: [
+          '알림',
+          '마케팅',
+          '리더보드 참여',
+          '공개 프로필 접근',
+          '예약 관련 설정',
+          '출석 및 집계 분석 데이터'
+        ],
+        progression_title: 'progression 관련 제어',
+        progression_items: [
+          '리더보드 참여와 공개 프로필 접근은 별도의 설정입니다.',
+          '리더보드 참여를 끄면 순위에서 제외됩니다.',
+          '공개 프로필 접근을 꺼도 허용된 모든 화면에서 자동으로 사라지는 것은 아닙니다.',
+          '마케팅 제어는 progression, 리더보드, 공개 프로필 제어와 별개입니다.'
+        ],
+        child_title: '아동 및 부양 계정',
+        child_body: '아동 및 부양 기록은 progression 참여, 리더보드 참여, 공개 progression 프로필, 개인화 마케팅에서 제외됩니다.',
+        know_title: '알아둘 점',
+        know_body: '이 페이지는 메시지를 켜고 끄는 것만이 아니라 개인정보 선택을 이해하고 관리하는 데 목적이 있습니다.'
+      },
+      delete: {
+        badge: '설정',
+        title: '계정 삭제는 신중하게',
+        intro: '계정 삭제는 큰 작업입니다. 한 도장을 떠나는 것이 아니라 계정 자체를 닫고 싶을 때만 사용하세요.',
+        before_title: '진행하기 전에',
+        before_items: [
+          '먼저 검증 규칙을 확인하세요',
+          '삭제를 막는 조건을 확인하세요',
+          '아동 계정과 관련 카드 관계를 고려하세요'
+        ],
+        know_title: '알아둘 점',
+        know_body: '계정 전체를 삭제하는 것은 한 도장 멤버십을 떠나는 것과 다릅니다. 계정을 유지해야 한다면 멤버십 흐름을 사용하세요.'
+      },
+      logout: {
+        badge: '설정',
+        title: '로그아웃',
+        intro: '현재 기기에서 사용을 마쳤거나 다른 계정으로 전환하고 싶을 때 로그아웃을 사용하세요.'
+      }
+    },
+    profile: {
+      edit: {
+        badge: '프로필',
+        title: '프로필 편집',
+        intro: '개인 프로필 정보를 업데이트해야 할 때 이 페이지를 사용하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '일부 사용자는 계정 사용 방식에 따라 역할 관련 맥락을 볼 수 있습니다.',
+          '변경 후에는 폼을 제출해 업데이트를 저장하세요.'
+        ]
+      },
+      children: {
+        badge: '프로필',
+        title: '아동 계정 관리',
+        intro: '부모나 보호자가 아이 계정을 생성, 수정, 관리해야 할 때 아동 계정 기능을 사용하세요.',
+        do_title: '할 수 있는 일',
+        do_items: [
+          '아동 계정 생성',
+          '아동 계정 정보 수정',
+          '필요할 때 아동 계정 제거'
+        ],
+        know_title: '알아둘 점',
+        know_body: '부모가 관리하는 계정 관계는 도장 가입이나 멤버십 처리 같은 다른 흐름에도 영향을 줄 수 있습니다.'
+      }
+    },
+    student: {
+      home: {
+        badge: '학생',
+        title: '도장에서 훈련하고 있어요',
+        intro: '이 경로는 계정, 예약, 멤버십 도움을 원하는 학생, 부모, 도장 멤버를 위한 것입니다.',
+        section_1: '도장에 가입하고 접근 관리하기',
+        join_link: '도장 가입하기',
+        memberships_link: '멤버십 관리',
+        section_2: '예약, 기록, 도장 업데이트',
+        booking_link: '예약',
+        attendance_link: '출석 기록',
+        broadcast_link: 'Broadcast',
+        alerts_link: '시스템 알림',
+        section_3: '계정 도움말',
+        sign_in_link: '로그인',
+        create_account_link: '계정 만들기',
+        reset_password_link: '비밀번호 재설정',
+        troubleshooting_link: '계정 문제 해결',
+        change_password_link: '비밀번호 변경',
+        child_accounts_link: '아동 계정',
+        still_need_title: '아직 다른 것이 필요하신가요?',
+        still_need_body: '학생 경로가 더 정리되기 전까지 일부 전문적인 주제는 Help v1에 남아 있을 수 있습니다.',
+        still_need_link: 'Help v1 열기'
+      },
+      join: {
+        badge: '학생',
+        title: '도장 가입하기',
+        intro: 'DojoMate를 사용하는 도장에 가입하고 싶을 때 이 흐름을 사용하세요.',
+        start_title: '시작 방법 두 가지',
+        start_items: [
+          'Discover Academy로 도장을 둘러보고 상세 정보와 갤러리를 본 뒤 가입 신청하세요.',
+          'Search Academy로 직접 검색하거나 도장 QR 코드를 스캔하세요.'
+        ],
+        discover_title: 'Discover Academy',
+        discover_items: [
+          'Academy 섹션에서 Discover Academy를 여세요.',
+          '도장 목록을 둘러보세요.',
+          '도장을 열어 상세 정보와 갤러리를 보세요.',
+          '맞는 도장인지 확인한 뒤 가입 신청하세요.'
+        ],
+        search_title: 'Search Academy',
+        search_items: [
+          '도장 이름을 알고 있다면 바로 검색하세요.',
+          'QR 코드를 받았다면 스캔해서 바로 가입할 수도 있습니다.',
+          '보통 올바른 도장으로 들어가는 가장 빠른 방법입니다.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '가입 신청 후에도 도장에서 먼저 승인해야 할 수 있습니다.',
+          '부모 계정은 아동 계정을 연결하기 위한 추가 단계가 필요할 수 있습니다.'
+        ],
+        next_title: '다음 단계',
+        next_link: '멤버십 관리'
+      },
+      memberships: {
+        badge: '학생',
+        title: '멤버십 관리',
+        intro: '이 페이지에서 도장과의 관계, 카드, 가입 후 자주 이어지는 흐름을 이해할 수 있습니다.',
+        items_title: '여기에서 다루는 내용',
+        items_items: [
+          '올바른 도장에 가입했는지 확인하기',
+          '내 멤버 상태 확인하기',
+          '카드와 예약이 어떻게 연결되는지 이해하기'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '아직 올바른 상태가 보이지 않는다면 도장에서 아직 신청을 승인하지 않았을 수 있습니다.',
+          '일부 멤버십 관련 작업은 여전히 도장 직원이 처리해야 합니다.'
+        ],
+        next_title: '다음 단계',
+        booking_link: '예약'
+      },
+      booking: {
+        badge: '학생',
+        title: '수업 예약',
+        intro: '도장에 가입하고 사용 가능한 카드를 가진 뒤에는 예약으로 수업에 참여합니다.',
+        steps_title: '일반적인 흐름',
+        steps_items: [
+          '먼저 올바른 도장을 선택하세요.',
+          '스케줄을 열고 예약 가능한 수업을 확인하세요.',
+          '카드 유형과 맞는 수업을 선택하세요.',
+          '예약을 완료하세요.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '예약 중 카드가 보이지 않으면 카드 유형이 수업 유형과 맞는지 확인하세요.',
+          '예약이 정상적인 기본 흐름이며, 수업 차감과 관련 기록도 여기서 처리됩니다.'
+        ],
+        next_title: '다음 단계',
+        attendance_link: '출석 기록'
+      },
+      alerts: {
+        badge: '학생',
+        title: '시스템 알림 보기',
+        intro: '계정, 도장, 관련 흐름에 관한 중요한 업데이트를 보려면 시스템 알림을 사용하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          'System Alerts가 현재 제품 용어입니다.',
+          '채팅도 아니고 양방향 메시지 도구도 아닙니다.'
+        ]
+      },
+      attendance: {
+        badge: '학생',
+        title: '출석 기록 보기',
+        intro: '이미 참석한 수업을 돌아보려면 출석 기록을 사용하세요.',
+        know_title: '알아둘 점',
+        know_items: [
+          '이 기록은 예약과 출석이 제대로 기록되었는지 확인하는 데 도움이 됩니다.',
+          '기록이 이상해 보이면 도장에 문의하세요.'
+        ]
+      },
+      broadcast: {
+        badge: '학생',
+        title: '앱에서 도장 Broadcast 읽기',
+        intro: '앱의 Broadcast로 도장 업데이트와 훈련 게시물을 읽을 수 있습니다. 이것은 읽기 중심의 도장 소식 피드이며 채팅, 댓글, 답글이 아닙니다.',
+        where_title: '어디에서 찾는지',
+        where_items: [
+          '멤버 쪽에서는 Academy 메뉴에서 Broadcast를 엽니다.',
+          '현재 아이콘은 확성기입니다.',
+          'Broadcast는 선택한 도장을 따라가므로 먼저 도장을 선택하세요.'
+        ],
+        actions_title: '할 수 있는 일',
+        actions_items: [
+          'Updates와 Training 탭 사이를 전환하기',
+          '당겨서 새로고침하기',
+          '방송 본문과 이미지 캡션 읽기',
+          '이미지를 눌러 전체 화면으로 보고 바깥을 눌러 닫기'
+        ],
+        screen_title: '화면에서 볼 수 있는 것',
+        screen_items: [
+          '제목: Broadcast',
+          '상단의 선택된 도장 이름',
+          '탭: Updates와 Training',
+          '각 카드에는 작성자 이름 또는 기본값으로 Academy Admin이 표시될 수 있음',
+          '게시 날짜와 시간',
+          '본문, 이미지 썸네일, 선택적 이미지 캡션'
+        ],
+        limits_title: '빈 상태와 현재 제한',
+        limits_items: [
+          '도장이 선택되지 않았다면 Select an academy first가 보일 수 있습니다.',
+          '빈 스트림에는 Updates coming soon 또는 No visible broadcasts are available in this stream yet.가 표시될 수 있습니다.',
+          '현재 멤버용 Broadcast 피드는 읽기 전용입니다.',
+          '좋아요, 댓글, 답글, 리액션, 공유, 멤버 게시 기능은 없습니다.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          'Broadcast가 현재 정식 제품 용어입니다. 예전 Newsfeed 표현은 더 이상 쓰지 않습니다.',
+          '콘텐츠는 AFL에서 만들고 앱이 표시합니다.',
+          '피드 요청이 실패하면 앱은 별도 오류 대신 빈 목록으로 대체합니다.',
+          'Expo의 관리자용 작성 화면은 아직 단계적 상태이므로 현재 मुख्य 라이브 흐름으로 보면 안 됩니다.'
+        ],
+        join_link: '도장 가입하기',
         alerts_link: '시스템 알림'
       }
     },
@@ -1051,6 +1732,62 @@ export default {
         student_link: '앱에서 Broadcast 읽기',
         support_desc: 'Broadcast 도구, 게시/Recall/Repost 문제, AFL entitlement 이슈는 AFL Portal 게시판을 이용하세요.',
         support_button: 'AFL Portal 게시판 열기'
+      },
+      timetable: {
+        badge: '도구',
+        paid_badge: '유료 도구',
+        title: '반복되는 주간 스케줄 만들기',
+        intro: 'Timetable은 수업 템플릿을 한 번 만들고, 그것을 시간에 따라 캘린더에 게시하고 싶을 때 사용합니다.',
+        use_title: '이럴 때 사용하세요',
+        use_items: [
+          '매주 같은 수업을 운영할 때',
+          '각 수업을 매번 수동으로 다시 만들지 않고 더 멀리까지 계획하고 싶을 때',
+          '준비가 되면 수업을 캘린더에 게시하고 싶을 때'
+        ],
+        steps_title: '단계',
+        steps_items: [
+          'Timetable을 엽니다.',
+          '원하는 요일을 선택합니다.',
+          'Create Lesson을 누릅니다.',
+          '일반 Schedule 화면에서처럼 수업 폼을 작성합니다.',
+          '반복 템플릿의 시작일과 종료일을 설정합니다.',
+          '템플릿을 저장합니다.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '템플릿은 게시하기 전까지 실제 캘린더 수업이 되지 않습니다.',
+          '미래 종료일을 사용하면 안전하게 더 멀리까지 계획할 수 있습니다.',
+          '생성 후에는 요일 페이지로 돌아가 그곳에서 템플릿을 수정할 수 있습니다.'
+        ],
+        publish_title: '게시',
+        publish_body_1: '게시되지 않은 수업은 먼저 Schedule 페이지에 나타납니다. 관리자는 예약 준비가 되었을 때 게시할 수 있습니다.',
+        publish_body_2: '멤버는 게시되지 않은 수업도 미래 계획으로 볼 수 있지만 아직 예약할 수는 없습니다.',
+        mistake_title: '흔한 실수',
+        mistake_body: '반복 수업이 공휴일과 겹치더라도 보통 timetable을 다시 만들 필요는 없습니다. 그 수업만 게시하지 않으면 됩니다.',
+        activate_link: '도구와 Premium 활성화'
+      },
+      pause: {
+        badge: '도구',
+        paid_badge: '유료 도구',
+        title: '필요할 때 활성 카드를 일시정지하세요',
+        intro: 'Pause Cards는 카드 시간이 정상적으로 계속 만료되게 두는 대신, 일시적으로 멈추고 싶을 때 사용합니다.',
+        modes_title: '카드를 일시정지하는 두 가지 방법',
+        modes_items: [
+          '개별 일시정지: 해당 멤버의 프로필에서 한 사람의 카드를 일시정지하거나 재개합니다.',
+          '도장 전체 일시정지: 오너는 도장 전체의 카드를 일시정지할 수 있습니다.'
+        ],
+        know_title: '알아둘 점',
+        know_items: [
+          '일시정지된 카드는 예약에 사용할 수 없습니다.',
+          '필요하다면 카드 템플릿별로 도장 전체 일시정지에서 제외할 수 있습니다.',
+          '도장 전체 일시정지 전에 이미 개별로 일시정지된 멤버는, 도장 전체 일시정지가 끝난 뒤에도 계속 일시정지 상태입니다.'
+        ],
+        common_title: '가장 흔한 사용 사례',
+        common_body: '오너는 카드마다 만료일을 수동으로 하나씩 늘리지 않고 멤버 시간을 보호하고 싶을 때 이 도구를 자주 사용합니다.',
+        next_title: '다음 단계',
+        back_tools: '도구 개요로 돌아가기',
+        activate_link: '도구와 Premium 활성화',
+        back_cards: '카드로 돌아가기'
       }
     },
     portal: {

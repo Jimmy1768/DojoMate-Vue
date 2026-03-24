@@ -1,50 +1,48 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Student</span>
-      <h1>Join an academy</h1>
+      <span class="badge">{{ t('help_v2.student.join.badge') }}</span>
+      <h1>{{ t('help_v2.student.join.title') }}</h1>
       <p class="muted">
-        Use this flow when you want to connect your account to an academy and start using that academy inside the app.
+        {{ t('help_v2.student.join.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Ways to find an academy</h2>
+      <h2>{{ t('help_v2.student.join.find_title') }}</h2>
       <ul>
-        <li>use <strong>Discover Academy</strong> to browse academies inside the app</li>
-        <li>use <strong>Search Academy</strong> if you want to search directly or scan an academy QR code</li>
+        <li v-for="item in tm('help_v2.student.join.find_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Steps</h2>
+      <h2>{{ t('help_v2.student.join.steps_title') }}</h2>
       <ol>
-        <li>Open <strong>Discover Academy</strong> from the Academy section.</li>
-        <li>Browse the academy list.</li>
-        <li>Open the academy to view its details.</li>
-        <li>Review the academy information and gallery.</li>
-        <li>Verify that it is the academy you expect.</li>
-        <li>Apply to join.</li>
+        <li v-for="item in tm('help_v2.student.join.steps_items')" :key="item">{{ item }}</li>
       </ol>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.student.join.know_title') }}</h2>
       <ul>
-        <li><strong>Discover Academy</strong> is useful when you want to compare academies before joining.</li>
-        <li><strong>Search Academy</strong> is the direct path for search and QR scanning.</li>
-        <li>Parents may need to think about child accounts as part of joining.</li>
+        <li v-for="item in tm('help_v2.student.join.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.student.join.next_title') }}</h2>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/student">
-          Back to Student Path
+          {{ t('help_v2.student.join.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/student/memberships">
-          Managing Memberships
+          {{ t('help_v2.student.join.next_link') }}
         </router-link>
       </div>
     </section>

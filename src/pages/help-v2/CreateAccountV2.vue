@@ -1,37 +1,41 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Account</span>
-      <h1>Create an account</h1>
+      <span class="badge">{{ t('help_v2.account.create.badge') }}</span>
+      <h1>{{ t('help_v2.account.create.title') }}</h1>
       <p class="muted">
-        Create an account before joining an academy, booking classes, or using the rest of the app.
+        {{ t('help_v2.account.create.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>Choose the right path</h2>
+      <h2>{{ t('help_v2.account.create.path_title') }}</h2>
       <ul>
-        <li>member/student path if you are training or joining an academy</li>
-        <li>admin/owner path if you are setting up or managing an academy</li>
+        <li v-for="item in tm('help_v2.account.create.path_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What you need</h2>
+      <h2>{{ t('help_v2.account.create.need_title') }}</h2>
       <ul>
-        <li>a valid email address</li>
-        <li>a password that meets the app rules</li>
+        <li v-for="item in tm('help_v2.account.create.need_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.account.create.next_title') }}</h2>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/account/sign-in">
-          Back to Sign In
+          {{ t('help_v2.account.create.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/student/join-academy">
-          Join an Academy
+          {{ t('help_v2.account.create.next_link') }}
         </router-link>
       </div>
     </section>

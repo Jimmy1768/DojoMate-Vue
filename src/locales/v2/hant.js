@@ -144,6 +144,110 @@ export default {
       paid_body: 'Timetable、Pause Cards、Staff Access 和 Analytics 都受 entitlement 控制。如果你需要啟用工具或開始 Premium，請查看 Features 頁面指南。',
       paid_link: '啟用工具與 Premium'
     },
+    owner_setup: {
+      getting_started: {
+        badge: '快速開始',
+        title: '按正確順序設定你的學院',
+        intro: '如果你是從零開始，這個頁面會給你最簡單的順序，讓後續流程更容易理解。',
+        order_title: '建議順序',
+        order_items: [
+          '建立你的學院。',
+          '把成員帶進學院。',
+          '建立會員卡模板。',
+          '發卡給活躍成員。',
+          '設定講師與員工存取權。',
+          '建立第一堂課。',
+          '準備好之後再加入付費工具。Affiliate Portal 提供 90 天免費 Premium 試用，所有工具都會解鎖。'
+        ],
+        why_title: '為什麼這個順序有幫助',
+        why_items: [
+          '成員必須先存在，你才能發卡給他們。',
+          '卡片必須先存在，預約才能正常運作。',
+          '在開始建立課程之前，應先把講師設定好。',
+          '在學院核心流程已經跑起來之後，再加入付費工具效果最好。'
+        ],
+        start_title: '如果你不確定，就從這裡開始',
+        create_link: '建立學院',
+        members_link: '帶入成員',
+        cards_link: '設定會員卡'
+      },
+      create: {
+        badge: '館主',
+        title: '建立你的學院',
+        intro: '這是館主的第一步。在你帶入成員、發卡或開始建立課程之前，先建立學院。',
+        before_title: '建立之前',
+        before_items: [
+          '先確認學院是否已經存在，避免建立重複項目。',
+          '一開始就準備好選擇正確的學院貨幣。'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '打開建立學院流程。',
+          '仔細輸入學院資訊。',
+          '選擇正確的貨幣。',
+          '提交表單以建立學院。'
+        ],
+        next_title: '下一步',
+        next_body: '學院建立後，下一項常見工作是檢查學院基本資訊，然後把人帶進學院。',
+        back_link: '返回館主路徑',
+        next_link: '前往學院基本設定'
+      },
+      basics: {
+        badge: '館主',
+        title: '更新學院基本資訊',
+        intro: '使用這個頁面保持學院資料準確，讓成員與員工看到正確的學院資訊。',
+        use_title: '在這些情況下使用',
+        use_items: [
+          '學院資訊需要修正或更新',
+          '面向學院的資訊已經改變',
+          '你想檢查學院對成員的呈現方式'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '在擴大成員和會員卡規模之前，館主應先保持學院基本資訊為最新。',
+          '如果成員透過學院訊息或入門流程加入，準確的學院資訊就很重要。'
+        ],
+        next_title: '下一步',
+        back_link: '返回建立學院',
+        next_link: '前往學院 QR'
+      },
+      qr: {
+        badge: '館主',
+        title: '分享你的學院 QR code',
+        intro: '當你希望人們不必手動搜尋學院、能更快加入時，請使用學院 QR。',
+        use_title: '最有幫助的情況',
+        use_items: [
+          '在學院現場入門時',
+          '活動、體驗課或繁忙報名日',
+          '需要讓多人快速加入的情況'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          'QR 路徑通常比要求大家手動搜尋更快。',
+          '當你想減少入門期間的加入錯誤時，它特別有用。'
+        ],
+        next_title: '下一步',
+        back_link: '返回學院基本設定',
+        next_link: '帶入成員'
+      },
+      delete: {
+        badge: '館主',
+        title: '謹慎刪除學院',
+        intro: '這是學院生命週期中的一步，不是日常任務。只有當學院確實應該被移除時才使用。',
+        before_title: '執行之前',
+        before_items: [
+          '先檢查前置條件。',
+          '確認你了解這會對目前成員造成什麼影響。',
+          '不要把刪除學院當作一般清理工作的捷徑。'
+        ],
+        meaning_title: '這代表什麼',
+        meaning_body: '刪除學院是嚴肅的館主操作。只有當學院本身不應再繼續保持活躍時才應該這樣做。',
+        help_title: '需要先求助嗎？',
+        help_body: '如果你不確定刪除是否是正確做法，請在執行最後一步前先到 DojoMate 幫助版提問。',
+        help_link: '打開 DojoMate 幫助版',
+        back_link: '返回館主路徑'
+      }
+    },
     admin_home: {
       badge: '管理員',
       title: '我協助管理學院',
@@ -862,7 +966,197 @@ export default {
         next_link: '查看 Cards 工作流'
       }
     },
+    account: {
+      sign_in: {
+        badge: 'Account',
+        title: '登入你的帳號',
+        intro: '當你的帳號已經存在，並且你想存取學院、預約、會員卡和記錄時，請使用登入。',
+        need_title: '你需要什麼',
+        need_items: ['你的電子郵件地址', '你的密碼'],
+        trouble_title: '如果無法登入',
+        trouble_items: [
+          '檢查電子郵件和密碼是否正確',
+          '必要時使用 Reset Password',
+          '如果介面看起來不熟悉，檢查語言選擇器'
+        ],
+        next_title: '下一步',
+        back_link: '返回學員路徑',
+        next_link: '重設密碼'
+      },
+      create: {
+        badge: 'Account',
+        title: '建立帳號',
+        intro: '在加入學院、預約課程或使用應用其餘功能之前，請先建立帳號。',
+        path_title: '選擇正確的路徑',
+        path_items: [
+          '如果你是在訓練或加入學院，選擇 member/student 路徑',
+          '如果你是在設定或管理學院，選擇 admin/owner 路徑'
+        ],
+        need_title: '你需要什麼',
+        need_items: ['一個有效電子郵件地址', '一個符合應用規則的密碼'],
+        next_title: '下一步',
+        back_link: '返回登入',
+        next_link: '加入學院'
+      },
+      reset: {
+        badge: 'Account',
+        title: '重設密碼',
+        intro: '當你記不起密碼，或目前密碼已不再可用時，請使用這個流程。',
+        how_title: '它如何運作',
+        how_items: [
+          '從登入介面發起重設',
+          '檢查與你的 DojoMate 登入綁定的電子郵件',
+          '郵件到達後，打開重設連結'
+        ],
+        email_title: '如果郵件沒有到達',
+        email_items: [
+          '檢查垃圾郵件或廣告郵件',
+          '確認你輸入的是正確電子郵件',
+          '再次發送重設請求'
+        ]
+      },
+      troubleshooting: {
+        badge: 'Account',
+        title: '帳號疑難排解',
+        intro: '當常見的登入或註冊問題阻止你進入帳號時，請使用這個頁面。',
+        signin_title: '無法登入',
+        signin_items: [
+          '仔細檢查電子郵件和密碼',
+          '必要時重設密碼',
+          '確認裝置已連網'
+        ],
+        email_title: '電子郵件已被使用',
+        email_body: '這通常表示帳號已經存在，你應該登入或重設密碼，而不是建立第二個帳號。',
+        role_title: '角色混淆',
+        role_body: '如果你的角色發生變化，或者帳號表現和預期不一致，請先檢查你是否使用了正確帳號和學院身份。'
+      }
+    },
+    settings: {
+      password: {
+        badge: 'Settings',
+        title: '修改密碼',
+        intro: '當你仍然知道目前密碼，並想在帳號設定中更新它時，請使用這個頁面。',
+        know_title: '需要知道的事',
+        know_items: [
+          '這和重設密碼不同。修改密碼表示你已經能進入帳號。',
+          '如果你完全無法登入，請改用 Reset Password。'
+        ]
+      },
+      language: {
+        badge: 'Settings',
+        title: '更改應用語言',
+        intro: '當你希望應用以另一種受支援語言顯示時，請使用語言設定。',
+        know_title: '需要知道的事',
+        know_body: '如果某個介面很難理解，檢查語言設定通常是最快的修復方式之一。'
+      },
+      currency: {
+        badge: 'Settings',
+        title: '選擇貨幣顯示方式',
+        intro: '使用貨幣設定來控制應用中金額的顯示方式。',
+        know_title: '需要知道的事',
+        know_items: [
+          '成員最關心的是能清楚地看到正確金額。',
+          '館主也可能會關心學院側財務設定和一致性。'
+        ]
+      },
+      privacy: {
+        badge: 'Settings',
+        title: '查看隱私設定',
+        intro: '使用隱私設定來理解並控制通知、行銷、排行榜、公開資料、預約和 analytics 相關資料是如何被處理的。',
+        main_title: '主要隱私區域',
+        main_items: [
+          '通知',
+          '行銷',
+          '排行榜參與',
+          '公開資料存取',
+          '與預約相關的設定',
+          '出勤和彙總 analytics 資料'
+        ],
+        progression_title: '與 progression 相關的控制',
+        progression_items: [
+          '排行榜參與和公開資料存取是分開的控制項。',
+          '關閉排行榜參與會把帳號排除在排名之外。',
+          '關閉公開資料存取並不會自動把帳號從所有允許的展示面移除。',
+          '行銷控制與 progression、排行榜和公開資料控制是分開的。'
+        ],
+        child_title: '兒童與受扶養帳號',
+        child_body: '兒童和受扶養記錄不會參與 progression、排行榜、公開 progression 資料以及個人化行銷。',
+        know_title: '需要知道的事',
+        know_body: '這個頁面的重點是理解和管理隱私選擇，而不只是打開或關閉訊息。'
+      },
+      delete: {
+        badge: 'Settings',
+        title: '謹慎刪除你的帳號',
+        intro: '刪除帳號是一個嚴肅操作。只有當你真的想關閉整個帳號時才這樣做，而不是只是離開一所學院。',
+        before_title: '在你這樣做之前',
+        before_items: [
+          '先檢查驗證規則',
+          '查看哪些情況會阻止刪除',
+          '考慮兒童帳號以及相關兒童會員卡關係'
+        ],
+        know_title: '需要知道的事',
+        know_body: '刪除整個帳號和離開一項學院 membership 不是一回事。如果帳號仍應保持活躍，請使用 membership 相關流程。'
+      },
+      logout: {
+        badge: 'Settings',
+        title: '登出',
+        intro: '當你在目前裝置上已經使用完應用，或想切換到另一個帳號時，請使用登出。'
+      }
+    },
+    profile: {
+      edit: {
+        badge: 'Profile',
+        title: '編輯你的資料',
+        intro: '當你的個人資料資訊需要更新時，請使用這個頁面。',
+        know_title: '需要知道的事',
+        know_items: [
+          '根據帳號的使用方式，不同使用者可能會看到與角色相關的上下文。',
+          '修改完成後，請提交表單以保存更新。'
+        ]
+      },
+      children: {
+        badge: 'Profile',
+        title: '管理兒童帳號',
+        intro: '當父母或監護人需要為兒童建立、編輯或管理帳號時，請使用兒童帳號功能。',
+        do_title: '你可以做什麼',
+        do_items: [
+          '建立兒童帳號',
+          '編輯兒童帳號資訊',
+          '在適當的時候移除兒童帳號'
+        ],
+        know_title: '需要知道的事',
+        know_body: '由父母管理的帳號關係會影響其他流程，例如加入學院和 membership 處理。'
+      }
+    },
     student: {
+      join: {
+        badge: 'Student',
+        title: '加入學院',
+        intro: '當你想把帳號連接到某個學院，並開始在應用中使用該學院時，請使用這個流程。',
+        find_title: '尋找學院的方式',
+        find_items: [
+          '使用 Discover Academy 在應用內瀏覽學院',
+          '如果你想直接搜尋或掃描學院 QR 碼，請使用 Search Academy'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '從 Academy 區域打開 Discover Academy。',
+          '瀏覽學院列表。',
+          '打開某個學院查看詳情。',
+          '查看學院資訊和圖片集。',
+          '確認這就是你要找的學院。',
+          '申請加入。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '當你想先比較幾所學院再加入時，Discover Academy 很有用。',
+          'Search Academy 是用於搜尋和 QR 掃描的直接入口。',
+          '家長在加入時可能還需要考慮兒童帳號。'
+        ],
+        next_title: '下一步',
+        back_link: '返回學員路徑',
+        next_link: '管理 Memberships'
+      },
       home: {
         badge: '學員',
         title: '我在學院訓練',
@@ -925,6 +1219,393 @@ export default {
           '內容由 AFL 建立，並由應用展示。',
           '如果取得資訊流失敗，應用目前會回退為空列表，而不是顯示單獨的錯誤狀態。',
           'Expo 中管理員側的建立介面仍處於預備階段，不應被視為目前主流程。'
+        ],
+        join_link: '加入學院',
+        alerts_link: '系統提醒'
+      },
+      memberships: {
+        badge: 'Student',
+        title: '管理學院 memberships',
+        intro: '當你的帳號屬於多所學院，或你需要在不同學院 membership 之間切換時，請使用這個頁面。',
+        when_title: '什麼時候重要',
+        when_items: [
+          '你屬於多所學院',
+          '你需要選擇目前正在哪所學院裡操作',
+          '應用目前選中的學院不對'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '屬於多所學院的成員，在預約或查看記錄前需要先選擇正確學院。',
+          '如果有內容看起來缺失，可能只是目前啟用的是錯誤學院。'
+        ],
+        next_title: '下一步',
+        back_link: '返回加入學院',
+        next_link: '預約課程'
+      },
+      booking: {
+        badge: 'Student',
+        title: '預約課程',
+        intro: '使用預約功能來選擇課程、挑選可用卡片並確認你的名額。',
+        steps_title: '步驟',
+        steps_items: [
+          '打開課表。',
+          '選擇你想上的課程。',
+          '檢查你是否符合預約條件。',
+          '選擇你想使用的卡片。',
+          '確認預約。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果你屬於多所學院，可能需要先選擇正確學院。',
+          '如果卡片沒有出現，課程和卡片可能不相容。',
+          '在規則仍然允許時，你也可以取消預約。'
+        ],
+        next_title: '下一步',
+        back_link: 'Memberships',
+        next_link: '出勤記錄'
+      },
+      alerts: {
+        badge: 'Student',
+        title: '閱讀系統提醒',
+        intro: '系統提醒幫助你跟進學院更新，以及其他重要的帳號或 membership 資訊。',
+        see_title: '你可能看到的內容',
+        see_items: [
+          '學院更新',
+          '與 membership 相關的通知',
+          '其他與你使用學院相關的系統生成提醒'
+        ],
+        know_title: '需要知道的事',
+        know_body: '這是一種系統提醒介面，不是普通聊天或訊息串。請把它看作重要的帳號和學院資訊。'
+      },
+      attendance: {
+        badge: 'Student',
+        title: '查看出勤記錄',
+        intro: '當你想查看訓練歷史，並確認某個日期範圍內發生了什麼時，請使用出勤記錄。',
+        help_title: '這個頁面能幫助什麼',
+        help_items: [
+          '快速查看近期出勤',
+          '查看更長的日期範圍',
+          '確認課程是否按你預期被記錄'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '日期範圍控件讓長時間段查看更容易。',
+          '這個頁面主要用於查看記錄，而不是修改它們。'
+        ]
+      }
+    },
+    account: {
+      sign_in: {
+        badge: '帳號',
+        title: '登入你的帳號',
+        intro: '當你的帳號已經存在，並且你想存取學院、預約、會員卡與紀錄時，請使用登入。',
+        need_title: '你需要準備',
+        need_items: ['你的電子郵件地址', '你的密碼'],
+        trouble_title: '如果無法登入',
+        trouble_items: [
+          '檢查電子郵件和密碼是否正確',
+          '需要時使用重設密碼',
+          '如果畫面看起來不熟悉，先檢查語言設定'
+        ],
+        next_title: '下一步',
+        back_link: '返回學員路徑',
+        next_link: '重設密碼'
+      },
+      create: {
+        badge: '帳號',
+        title: '建立帳號',
+        intro: '在加入學院、預約課程或使用其他功能之前，先建立帳號。',
+        path_title: '選擇正確的路徑',
+        path_items: [
+          '如果你要訓練或加入學院，請走成員/學員路徑',
+          '如果你要設定或管理學院，請走管理員/館主路徑'
+        ],
+        need_title: '你需要準備',
+        need_items: ['有效的電子郵件地址', '符合應用規則的密碼'],
+        next_title: '下一步',
+        back_link: '返回登入',
+        next_link: '加入學院'
+      },
+      reset: {
+        badge: '帳號',
+        title: '重設密碼',
+        intro: '當你不記得密碼，或目前的密碼已經無法使用時，請使用這個流程。',
+        how_title: '流程如何運作',
+        how_items: [
+          '在登入畫面提出重設請求',
+          '檢查綁定 DojoMate 登入的電子郵件信箱',
+          '收到信件後開啟重設連結'
+        ],
+        email_title: '如果信件沒有收到',
+        email_items: [
+          '檢查垃圾郵件',
+          '確認你輸入的是正確的電子郵件',
+          '再次送出重設請求'
+        ]
+      },
+      troubleshooting: {
+        badge: '帳號',
+        title: '帳號疑難排解',
+        intro: '當常見的登入或註冊問題阻礙你存取帳號時，請使用這個頁面。',
+        signin_title: '無法登入',
+        signin_items: [
+          '仔細檢查電子郵件和密碼',
+          '需要時重設密碼',
+          '確認裝置已連線'
+        ],
+        email_title: '電子郵件已被使用',
+        email_body: '這通常表示帳號已經存在，你應該登入或重設密碼，而不是建立第二個帳號。',
+        role_title: '角色混淆',
+        role_body: '如果你的角色改變了，或帳號行為和預期不一致，先確認你是否使用了正確的帳號與正確的學院關係。'
+      }
+    },
+    settings: {
+      password: {
+        badge: '設定',
+        title: '更改密碼',
+        intro: '當你仍然知道目前密碼，並想從帳號設定裡更新它時，請使用這個流程。',
+        know_title: '需要知道的事',
+        know_items: [
+          '這和重設密碼不同。更改密碼的前提是你已經可以登入帳號。',
+          '如果你完全無法登入，請改用重設密碼。'
+        ]
+      },
+      language: {
+        badge: '設定',
+        title: '更改應用語言',
+        intro: '當你想讓應用顯示成另一種支援語言時，請使用語言設定。',
+        know_title: '需要知道的事',
+        know_body: '如果某個畫面難以理解，先檢查語言設定通常是最快的修正方式之一。'
+      },
+      currency: {
+        badge: '設定',
+        title: '選擇貨幣顯示',
+        intro: '使用貨幣設定來控制應用中的金額顯示方式。',
+        know_title: '需要知道的事',
+        know_items: [
+          '成員主要在意金額是否清楚好讀。',
+          '館主也可能在意學院端的財務設定和一致性。'
+        ]
+      },
+      privacy: {
+        badge: '設定',
+        title: '查看隱私設定',
+        intro: '使用隱私設定來了解並控制通知、行銷、排行榜、公開個人頁面、預約以及與分析相關的資料處理方式。',
+        main_title: '主要隱私區域',
+        main_items: [
+          '通知',
+          '行銷',
+          '排行榜參與',
+          '公開個人頁面存取',
+          '與預約相關的設定',
+          '出勤與彙總分析資料'
+        ],
+        progression_title: '與 progression 相關的控制',
+        progression_items: [
+          '排行榜參與和公開個人頁面存取是兩個獨立控制項。',
+          '關閉排行榜參與會把帳號排除在排名之外。',
+          '關閉公開個人頁面存取，並不會自動把帳號從所有允許顯示的介面中移除。',
+          '行銷控制與 progression、排行榜和公開個人頁面控制是分開的。'
+        ],
+        child_title: '兒童與受扶養帳號',
+        child_body: '兒童與受扶養紀錄不會參與 progression、排行榜、公開 progression 個人頁面或個人化行銷。',
+        know_title: '需要知道的事',
+        know_body: '這個頁面的重點是理解並管理隱私選擇，而不只是開啟或關閉訊息。'
+      },
+      delete: {
+        badge: '設定',
+        title: '謹慎刪除帳號',
+        intro: '刪除帳號是一個嚴肅操作。只有在你確實想關閉整個帳號時才使用，而不是只是離開某一間學院。',
+        before_title: '執行之前',
+        before_items: [
+          '先檢查驗證規則',
+          '確認哪些情況會阻止刪除',
+          '考慮兒童帳號以及相關會員卡關係'
+        ],
+        know_title: '需要知道的事',
+        know_body: '刪除整個帳號，不等於離開某一個學院成員關係。如果帳號仍應保留，請使用成員關係相關流程。'
+      },
+      logout: {
+        badge: '設定',
+        title: '登出',
+        intro: '當你已經在目前裝置上使用完畢，或想切換到另一個帳號時，請使用登出。'
+      }
+    },
+    profile: {
+      edit: {
+        badge: '個人資料',
+        title: '編輯你的個人資料',
+        intro: '當你的個人資料資訊需要更新時，請使用這個頁面。',
+        know_title: '需要知道的事',
+        know_items: [
+          '某些使用者可能會依照帳號用途看到與角色相關的內容。',
+          '修改完成後，請提交表單以儲存更新。'
+        ]
+      },
+      children: {
+        badge: '個人資料',
+        title: '管理兒童帳號',
+        intro: '當家長或監護人需要為孩子建立、編輯或管理帳號時，請使用兒童帳號功能。',
+        do_title: '你可以做什麼',
+        do_items: [
+          '建立兒童帳號',
+          '編輯兒童帳號資料',
+          '在適當時移除兒童帳號'
+        ],
+        know_title: '需要知道的事',
+        know_body: '由家長管理的帳號關係，可能會影響加入學院和處理會員資格等其他流程。'
+      }
+    },
+    student: {
+      home: {
+        badge: '學員',
+        title: '我在學院訓練',
+        intro: '這一路徑適合需要帳號協助、預約協助與會員資格協助的學員、家長與學院成員。',
+        section_1: '加入學院並管理存取',
+        join_link: '加入學院',
+        memberships_link: '管理會員資格',
+        section_2: '預約、紀錄與學院更新',
+        booking_link: '預約',
+        attendance_link: '出勤紀錄',
+        broadcast_link: 'Broadcast',
+        alerts_link: '系統提醒',
+        section_3: '帳號協助',
+        sign_in_link: '登入',
+        create_account_link: '建立帳號',
+        reset_password_link: '重設密碼',
+        troubleshooting_link: '帳號疑難排解',
+        change_password_link: '更改密碼',
+        child_accounts_link: '兒童帳號',
+        still_need_title: '還需要其他內容？',
+        still_need_body: '在學員路徑進一步重建之前，少數更專門的主題可能仍保留在 Help v1。',
+        still_need_link: '打開 Help v1'
+      },
+      join: {
+        badge: '學員',
+        title: '加入學院',
+        intro: '當你想加入一間正在使用 DojoMate 的學院時，請使用這個流程。',
+        start_title: '兩種開始方式',
+        start_items: [
+          '使用 Discover Academy 瀏覽學院，查看詳細資訊和圖片後再申請加入。',
+          '使用 Search Academy 直接搜尋學院，或掃描學院 QR code。'
+        ],
+        discover_title: 'Discover Academy',
+        discover_items: [
+          '從 Academy 區域打開 Discover Academy。',
+          '瀏覽學院列表。',
+          '打開某間學院查看詳細資訊和圖庫。',
+          '確認是正確的學院後再申請加入。'
+        ],
+        search_title: 'Search Academy',
+        search_items: [
+          '如果你已經知道學院名稱，就直接搜尋。',
+          '如果學院給了你 QR code，也可以直接掃描加入。',
+          '這通常是進入正確學院的最快路徑。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '送出加入申請後，學院可能仍需要先接受你。',
+          '家長帳號可能還需要額外步驟來連結兒童帳號。'
+        ],
+        next_title: '下一步',
+        next_link: '管理會員資格'
+      },
+      memberships: {
+        badge: '學員',
+        title: '管理會員資格',
+        intro: '使用這個頁面來了解你的學院關係、會員卡，以及加入後常見的後續流程。',
+        items_title: '這裡通常包括什麼',
+        items_items: [
+          '確認你已加入正確的學院',
+          '查看你的成員狀態',
+          '了解會員卡和預約如何配合運作'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果你還沒看到正確狀態，學院可能還沒有接受你的申請。',
+          '有些與會員資格相關的操作仍然需要學院工作人員處理。'
+        ],
+        next_title: '下一步',
+        booking_link: '預約'
+      },
+      booking: {
+        badge: '學員',
+        title: '預約課程',
+        intro: '在加入學院並擁有可用會員卡之後，使用預約來參加課程。',
+        steps_title: '常見流程',
+        steps_items: [
+          '先選擇正確的學院。',
+          '打開課表並查看可預約課程。',
+          '選擇與會員卡類型相符的課程。',
+          '完成預約。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果某張卡在預約時沒有出現，請檢查卡片類型是否與課程類型相符。',
+          '預約是正常主流程，系統會依此處理課次扣減和相關紀錄。'
+        ],
+        next_title: '下一步',
+        attendance_link: '出勤紀錄'
+      },
+      alerts: {
+        badge: '學員',
+        title: '查看系統提醒',
+        intro: '使用系統提醒查看與你的帳號、學院或相關流程有關的重要更新。',
+        know_title: '需要知道的事',
+        know_items: [
+          'System Alerts 是目前的產品名稱。',
+          '它不是聊天，也不是雙向訊息工具。'
+        ]
+      },
+      attendance: {
+        badge: '學員',
+        title: '查看出勤紀錄',
+        intro: '使用出勤紀錄回顧你已經參加過的課程。',
+        know_title: '需要知道的事',
+        know_items: [
+          '這些紀錄可以幫助你確認預約和出勤是否被正確記錄。',
+          '如果某筆紀錄看起來不對，請聯絡學院。'
+        ]
+      },
+      broadcast: {
+        badge: '學員',
+        title: '在應用中閱讀學院 Broadcast',
+        intro: '在應用中使用 Broadcast 閱讀學院更新與訓練貼文。這是一個以閱讀為主的學院訊息流，不是聊天、留言或回覆。',
+        where_title: '在哪裡找到它',
+        where_items: [
+          '在成員端，從 Academy 選單打開 Broadcast。',
+          '目前圖示是擴音器。',
+          'Broadcast 會跟隨你所選擇的學院，因此請先選定學院。'
+        ],
+        actions_title: '你可以做什麼',
+        actions_items: [
+          '在 Updates 和 Training 分頁之間切換。',
+          '下拉重新整理內容流。',
+          '閱讀廣播文字與圖片說明。',
+          '點擊圖片全螢幕查看，再點空白處關閉。'
+        ],
+        screen_title: '你可能會在畫面上看到',
+        screen_items: [
+          '標題：Broadcast',
+          '頂部顯示所選學院名稱',
+          '分頁：Updates 和 Training',
+          '每張卡片可以顯示作者名稱，或回退顯示 Academy Admin',
+          '發佈日期與時間',
+          '內文、圖片縮圖與可選圖片說明'
+        ],
+        limits_title: '空狀態與目前限制',
+        limits_items: [
+          '如果尚未選擇學院，你可能會看到 Select an academy first。',
+          '空內容流可能顯示 Updates coming soon 或 No visible broadcasts are available in this stream yet。',
+          '目前成員端 Broadcast 是唯讀的。',
+          '沒有按讚、留言、回覆、反應、分享或成員發文功能。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          'Broadcast 是目前正式對外產品名稱。舊的 Newsfeed 用語已過時。',
+          '內容由 AFL 建立，由應用顯示。',
+          '如果請求失敗，應用目前會回退到空列表，而不是顯示獨立錯誤狀態。',
+          'Expo 中管理端的建立畫面仍屬分階段狀態，不應視為主要正式流程。'
         ],
         join_link: '加入學院',
         alerts_link: '系統提醒'
@@ -1051,6 +1732,62 @@ export default {
         student_link: '在應用中閱讀 Broadcast',
         support_desc: '如果你對 AFL 中的 Broadcast 工具、發布/Recall/Repost，或 entitlement 有問題，請前往 AFL 版塊。',
         support_button: '打開 AFL 版塊'
+      },
+      timetable: {
+        badge: '工具',
+        paid_badge: '付費工具',
+        title: '建立每週重複課表',
+        intro: '當你想一次建立課程模板，並在一段時間內把它們發佈到行事曆時，請使用 Timetable。',
+        use_title: '適合在這些情況下使用',
+        use_items: [
+          '你每週都會開相同的課程',
+          '你想往更遠的時間規劃，而不是手動反覆建立每堂課',
+          '你想在課程準備好時再把它們發佈到行事曆中'
+        ],
+        steps_title: '步驟',
+        steps_items: [
+          '打開 Timetable。',
+          '選擇你想要的星期幾。',
+          '按 Create Lesson。',
+          '像在一般 Schedule 畫面上一樣填寫課程表單。',
+          '為這個重複模板設定開始日期與結束日期。',
+          '儲存模板。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '模板在發佈之前，不會變成真正的行事曆課程。',
+          '你可以透過設定未來的結束日期來放心做長期規劃。',
+          '建立之後，你可以回到星期頁面並在那裡編輯模板。'
+        ],
+        publish_title: '發佈',
+        publish_body_1: '未發佈的課程會先出現在 Schedule 頁面。管理員可以在它們準備好開放預約時再發佈。',
+        publish_body_2: '成員仍然可以把未發佈課程看成未來計畫，但還不能預約。',
+        mistake_title: '常見錯誤',
+        mistake_body: '如果重複課程遇到假日，通常不需要重建 timetable。只要選擇不要發佈那一堂課即可。',
+        activate_link: '啟用工具與 Premium'
+      },
+      pause: {
+        badge: '工具',
+        paid_badge: '付費工具',
+        title: '在需要時暫停有效會員卡',
+        intro: '當你需要暫時停止卡片時間，而不是讓它照常繼續到期時，請使用 Pause Cards。',
+        modes_title: '兩種暫停方式',
+        modes_items: [
+          '個別暫停：在該成員的個人資料中暫停或取消暫停單張會員卡。',
+          '全學院暫停：館主可以暫停整個學院範圍內的會員卡。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '被暫停的會員卡不能用來預約。',
+          '如果需要，可以把某些卡模板排除在全學院暫停之外。',
+          '如果某位成員在全學院暫停前就已被個別暫停，那麼全學院暫停結束後，他們仍會維持暫停。'
+        ],
+        common_title: '最常見用途',
+        common_body: '館主經常在想保護成員時間、又不想一張一張手動延長到期日時使用這個工具。',
+        next_title: '下一步',
+        back_tools: '返回工具總覽',
+        activate_link: '啟用工具與 Premium',
+        back_cards: '返回會員卡'
       }
     },
     portal: {

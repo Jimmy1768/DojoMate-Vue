@@ -1,38 +1,41 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Student</span>
-      <h1>Manage academy memberships</h1>
+      <span class="badge">{{ t('help_v2.student.memberships.badge') }}</span>
+      <h1>{{ t('help_v2.student.memberships.title') }}</h1>
       <p class="muted">
-        Use this page when your account belongs to more than one academy or when you need to switch between academy memberships.
+        {{ t('help_v2.student.memberships.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>When this matters</h2>
+      <h2>{{ t('help_v2.student.memberships.when_title') }}</h2>
       <ul>
-        <li>you belong to more than one academy</li>
-        <li>you need to choose which academy you are acting inside</li>
-        <li>the wrong academy is currently selected in the app</li>
+        <li v-for="item in tm('help_v2.student.memberships.when_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.student.memberships.know_title') }}</h2>
       <ul>
-        <li>Multi-academy members need to select the correct academy before booking or checking records.</li>
-        <li>If something looks missing, the wrong academy may simply be active.</li>
+        <li v-for="item in tm('help_v2.student.memberships.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>Next step</h2>
+      <h2>{{ t('help_v2.student.memberships.next_title') }}</h2>
       <div class="row">
         <router-link class="btn btn--ghost" to="/help-v2/student/join-academy">
-          Back to Join Academy
+          {{ t('help_v2.student.memberships.back_link') }}
         </router-link>
         <router-link class="btn" to="/help-v2/student/booking">
-          Booking
+          {{ t('help_v2.student.memberships.next_link') }}
         </router-link>
       </div>
     </section>

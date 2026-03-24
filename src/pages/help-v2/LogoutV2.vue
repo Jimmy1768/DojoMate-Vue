@@ -1,10 +1,16 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Settings</span>
-      <h1>Log out</h1>
+      <span class="badge">{{ t('help_v2.settings.logout.badge') }}</span>
+      <h1>{{ t('help_v2.settings.logout.title') }}</h1>
       <p class="muted">
-        Use logout when you are done using the app on the current device or want to switch to a different account.
+        {{ t('help_v2.settings.logout.intro') }}
       </p>
     </div>
   </section>

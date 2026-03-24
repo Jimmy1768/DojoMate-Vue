@@ -144,6 +144,110 @@ export default {
       paid_body: 'Timetable, Pause Cards, Staff Access, and Analytics are entitlement-gated. Use the Features page guide if you need to activate tools or start Premium.',
       paid_link: 'Activate Tools and Premium'
     },
+    owner_setup: {
+      getting_started: {
+        badge: 'Getting Started',
+        title: 'Set up your academy in the right order',
+        intro: 'If you are starting fresh, this page gives you the simplest order to follow so the rest of the app makes sense.',
+        order_title: 'Recommended order',
+        order_items: [
+          'Create your academy.',
+          'Bring members into the academy.',
+          'Create membership card templates.',
+          'Issue cards to active members.',
+          'Set up instructors and staff access.',
+          'Create your first lesson.',
+          'Add paid tools when you are ready. The Affiliate Portal includes a 90-day free Premium trial with all tools unlocked.'
+        ],
+        why_title: 'Why this order helps',
+        why_items: [
+          'Members need to exist before you can issue them cards.',
+          'Cards need to exist before booking can work properly.',
+          'Instructors should be in place before you start building lessons.',
+          'Paid tools work best after the core academy workflow is already running.'
+        ],
+        start_title: 'Start here if you are not sure',
+        create_link: 'Create Academy',
+        members_link: 'Bring in Members',
+        cards_link: 'Set Up Cards'
+      },
+      create: {
+        badge: 'Owner',
+        title: 'Create your academy',
+        intro: 'This is the first owner step. Create the academy before you bring in members, issue cards, or start building lessons.',
+        before_title: 'Before you create it',
+        before_items: [
+          'Check whether the academy already exists, so you do not create a duplicate.',
+          'Be ready to choose the academy currency correctly from the start.'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open the academy creation flow.',
+          'Enter the academy details carefully.',
+          'Choose the correct currency.',
+          'Submit the form to create the academy.'
+        ],
+        next_title: 'Next step',
+        next_body: 'After the academy exists, the next common job is reviewing the basic academy information and then bringing people into the academy.',
+        back_link: 'Back to Owner Path',
+        next_link: 'Go to Academy Basics'
+      },
+      basics: {
+        badge: 'Owner',
+        title: 'Update academy basics',
+        intro: 'Use this page to keep the academy profile accurate so members and staff see the right academy information.',
+        use_title: 'Use this page when',
+        use_items: [
+          'academy details need to be corrected or refreshed',
+          'academy-facing information has changed',
+          'you want to review how the academy presents itself to members'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Owners should keep the academy basics current before scaling up members and cards.',
+          'If members are joining through academy messages or onboarding flows, accurate academy details matter.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Create Academy',
+        next_link: 'Go to Academy QR'
+      },
+      qr: {
+        badge: 'Owner',
+        title: 'Share your academy QR code',
+        intro: 'Use the academy QR when you want people to join faster without searching manually for the academy.',
+        use_title: 'When this helps most',
+        use_items: [
+          'in-person onboarding at the academy',
+          'events, intro classes, or busy registration days',
+          'situations where multiple people need to join quickly'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'The QR path is usually faster than asking people to search manually.',
+          'It is especially useful when you want to reduce joining mistakes during onboarding.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Academy Basics',
+        next_link: 'Bring in Members'
+      },
+      delete: {
+        badge: 'Owner',
+        title: 'Delete an academy carefully',
+        intro: 'This is an academy lifecycle step, not a normal daily task. Use it only when the academy should truly be removed.',
+        before_title: 'Before you do this',
+        before_items: [
+          'Review the preconditions first.',
+          'Make sure you understand what happens to current members.',
+          'Do not treat academy deletion as a shortcut for ordinary cleanup.'
+        ],
+        meaning_title: 'What this means',
+        meaning_body: 'Deleting an academy is a serious owner action. It should only happen when the academy itself should no longer remain active.',
+        help_title: 'Need help first?',
+        help_body: 'If you are unsure whether deletion is the right move, ask on the DojoMate help board before taking the final step.',
+        help_link: 'Open the DojoMate Help Board',
+        back_link: 'Back to Owner Path'
+      }
+    },
     admin_home: {
       badge: 'Admin',
       title: 'I help manage the academy',
@@ -862,6 +966,168 @@ export default {
         next_link: 'Review Cards Workflow'
       }
     },
+    account: {
+      sign_in: {
+        badge: 'Account',
+        title: 'Sign in to your account',
+        intro: 'Use sign in when your account already exists and you want to access your academy, booking, cards, and records.',
+        need_title: 'What you need',
+        need_items: ['your email address', 'your password'],
+        trouble_title: 'If sign in does not work',
+        trouble_items: [
+          'check whether the email and password are correct',
+          'use Reset Password if needed',
+          'check the language selector if the screen looks unfamiliar'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Student Path',
+        next_link: 'Reset Password'
+      },
+      create: {
+        badge: 'Account',
+        title: 'Create an account',
+        intro: 'Create an account before joining an academy, booking classes, or using the rest of the app.',
+        path_title: 'Choose the right path',
+        path_items: [
+          'member/student path if you are training or joining an academy',
+          'admin/owner path if you are setting up or managing an academy'
+        ],
+        need_title: 'What you need',
+        need_items: ['a valid email address', 'a password that meets the app rules'],
+        next_title: 'Next step',
+        back_link: 'Back to Sign In',
+        next_link: 'Join an Academy'
+      },
+      reset: {
+        badge: 'Account',
+        title: 'Reset your password',
+        intro: 'Use this when you cannot remember your password or your current password no longer works.',
+        how_title: 'How it works',
+        how_items: [
+          'request the reset from the sign-in screen',
+          'check the email account tied to your DojoMate login',
+          'follow the reset link when it arrives'
+        ],
+        email_title: 'If the email does not arrive',
+        email_items: [
+          'check spam or junk mail',
+          'make sure you entered the correct email',
+          'try sending the reset again'
+        ]
+      },
+      troubleshooting: {
+        badge: 'Account',
+        title: 'Account troubleshooting',
+        intro: 'Use this page when account access is blocked by a common sign-in or registration problem.',
+        signin_title: 'Cannot sign in',
+        signin_items: [
+          'check your email and password carefully',
+          'reset the password if needed',
+          'make sure the device is online'
+        ],
+        email_title: 'Email already in use',
+        email_body: 'This usually means the account already exists and you should sign in or reset the password instead of creating a second account.',
+        role_title: 'Role confusion',
+        role_body: 'If your role changed or the account is not behaving the way you expect, check whether you are using the correct account and academy membership first.'
+      }
+    },
+    settings: {
+      password: {
+        badge: 'Settings',
+        title: 'Change your password',
+        intro: 'Use this when you still know your current password and want to update it from inside your account settings.',
+        know_title: 'What to know',
+        know_items: [
+          'This is different from reset password. Change password assumes you can already access the account.',
+          'If you cannot sign in at all, use Reset Password instead.'
+        ]
+      },
+      language: {
+        badge: 'Settings',
+        title: 'Change app language',
+        intro: 'Use the language setting when you want the app to display in a different supported language.',
+        know_title: 'What to know',
+        know_body: 'If a screen feels hard to understand, checking the language setting is one of the fastest fixes.'
+      },
+      currency: {
+        badge: 'Settings',
+        title: 'Choose a currency view',
+        intro: 'Use the currency setting to control how money amounts are shown in the app.',
+        know_title: 'What to know',
+        know_items: [
+          'Members mainly care about reading the right money values clearly.',
+          'Owners may also care about academy-facing financial setup and consistency.'
+        ]
+      },
+      privacy: {
+        badge: 'Settings',
+        title: 'Review privacy settings',
+        intro: 'Use privacy settings to understand and control how notification, marketing, leaderboard, public profile, booking, and analytics-related data is handled.',
+        main_title: 'Main privacy areas',
+        main_items: [
+          'notifications',
+          'marketing',
+          'leaderboard participation',
+          'public profile access',
+          'booking-related settings',
+          'attendance and aggregate analytics data'
+        ],
+        progression_title: 'Progression-related controls',
+        progression_items: [
+          'Leaderboard participation and public profile access are separate controls.',
+          'Turning off leaderboard participation excludes the account from rankings.',
+          'Turning off public profile access does not automatically remove the account from every allowed surface.',
+          'Marketing controls are separate from progression, leaderboard, and public profile controls.'
+        ],
+        child_title: 'Child and dependent accounts',
+        child_body: 'Child and dependent records are excluded from progression participation, leaderboard participation, public progression profiles, and personalized marketing.',
+        know_title: 'What to know',
+        know_body: 'This page is about understanding and managing privacy choices, not just turning messages on or off.'
+      },
+      delete: {
+        badge: 'Settings',
+        title: 'Delete your account carefully',
+        intro: 'Account deletion is a serious action. Use this only when you truly want to close the account, not just leave one academy.',
+        before_title: 'Before you do this',
+        before_items: [
+          'check the validation rules first',
+          'review what can block deletion',
+          'consider child accounts and any child card relationships'
+        ],
+        know_title: 'What to know',
+        know_body: 'Deleting the whole account is not the same as leaving one academy membership. Use the membership flows when the account should remain active.'
+      },
+      logout: {
+        badge: 'Settings',
+        title: 'Log out',
+        intro: 'Use logout when you are done using the app on the current device or want to switch to a different account.'
+      }
+    },
+    profile: {
+      edit: {
+        badge: 'Profile',
+        title: 'Edit your profile',
+        intro: 'Use this page when your personal profile information needs to be updated.',
+        know_title: 'What to know',
+        know_items: [
+          'Some users may see role-related context depending on how the account is used.',
+          'After making changes, submit the form so the updates are saved.'
+        ]
+      },
+      children: {
+        badge: 'Profile',
+        title: 'Manage child accounts',
+        intro: 'Use child accounts when a parent or guardian needs to create, edit, or manage accounts for children.',
+        do_title: 'What you can do',
+        do_items: [
+          'create child accounts',
+          'edit child account details',
+          'remove child accounts when appropriate'
+        ],
+        know_title: 'What to know',
+        know_body: 'Parent-managed account relationships can affect other flows such as joining academies and membership handling.'
+      }
+    },
     student: {
       home: {
         badge: 'Student',
@@ -1051,6 +1317,62 @@ export default {
         student_link: 'Read Broadcast in the App',
         support_desc: 'Use the AFL portal board for Broadcast tool questions, publish/recall/repost problems, or entitlement issues in AFL.',
         support_button: 'Open the AFL Portal Board'
+      },
+      timetable: {
+        badge: 'Tools',
+        paid_badge: 'Paid Tool',
+        title: 'Build a recurring weekly schedule',
+        intro: 'Use Timetable when you want to create lesson templates once and publish them into the calendar over time.',
+        use_title: 'When to use this',
+        use_items: [
+          'you run the same classes every week',
+          'you want to plan farther ahead without recreating each lesson manually',
+          'you want to publish lessons into the calendar when they are ready'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Timetable.',
+          'Select the day of the week you want.',
+          'Press Create Lesson.',
+          'Fill out the lesson form the same way you would on the normal Schedule screen.',
+          'Set the start date and end date for the recurring template.',
+          'Save the template.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Templates do not become real calendar lessons until you publish them.',
+          'You can safely plan far ahead by using a future end date.',
+          'After creation, you can return to the day-of-week page and edit the template there.'
+        ],
+        publish_title: 'Publishing',
+        publish_body_1: 'Unpublished lessons appear on the Schedule page first. Admins can publish them when they are ready for booking.',
+        publish_body_2: 'Members can still see unpublished lessons as future plans, but they cannot book them yet.',
+        mistake_title: 'Common mistake',
+        mistake_body: 'If a recurring lesson falls on a holiday, you usually do not need to rebuild the timetable. Simply choose not to publish that lesson.',
+        activate_link: 'Activate Tools and Premium'
+      },
+      pause: {
+        badge: 'Tools',
+        paid_badge: 'Paid Tool',
+        title: 'Pause active cards when needed',
+        intro: 'Use Pause Cards when you need to stop card time temporarily instead of letting the card keep expiring normally.',
+        modes_title: 'Two ways to pause cards',
+        modes_items: [
+          'Individual pause: pause or unpause one member’s card from that member’s profile.',
+          'Academy-wide pause: owners can pause cards across the whole academy.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Paused cards cannot be used for booking.',
+          'Each card template can be excluded from academy-wide pause if needed.',
+          'If a member was already paused individually before an academy-wide pause, they will still be paused after the academy-wide pause ends.'
+        ],
+        common_title: 'Most common use',
+        common_body: 'Owners often use this tool when they want to protect member time without manually extending expiry dates one card at a time.',
+        next_title: 'Next step',
+        back_tools: 'Back to Tools Overview',
+        activate_link: 'Activate Tools and Premium',
+        back_cards: 'Back to Cards'
       }
     },
     portal: {

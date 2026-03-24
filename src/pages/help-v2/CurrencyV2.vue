@@ -1,18 +1,23 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Settings</span>
-      <h1>Choose a currency view</h1>
+      <span class="badge">{{ t('help_v2.settings.currency.badge') }}</span>
+      <h1>{{ t('help_v2.settings.currency.title') }}</h1>
       <p class="muted">
-        Use the currency setting to control how money amounts are shown in the app.
+        {{ t('help_v2.settings.currency.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.settings.currency.know_title') }}</h2>
       <ul>
-        <li>Members mainly care about reading the right money values clearly.</li>
-        <li>Owners may also care about academy-facing financial setup and consistency.</li>
+        <li v-for="item in tm('help_v2.settings.currency.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
   </section>

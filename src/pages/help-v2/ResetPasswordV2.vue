@@ -1,28 +1,30 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Account</span>
-      <h1>Reset your password</h1>
+      <span class="badge">{{ t('help_v2.account.reset.badge') }}</span>
+      <h1>{{ t('help_v2.account.reset.title') }}</h1>
       <p class="muted">
-        Use this when you cannot remember your password or your current password no longer works.
+        {{ t('help_v2.account.reset.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>How it works</h2>
+      <h2>{{ t('help_v2.account.reset.how_title') }}</h2>
       <ul>
-        <li>request the reset from the sign-in screen</li>
-        <li>check the email account tied to your DojoMate login</li>
-        <li>follow the reset link when it arrives</li>
+        <li v-for="item in tm('help_v2.account.reset.how_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>If the email does not arrive</h2>
+      <h2>{{ t('help_v2.account.reset.email_title') }}</h2>
       <ul>
-        <li>check spam or junk mail</li>
-        <li>make sure you entered the correct email</li>
-        <li>try sending the reset again</li>
+        <li v-for="item in tm('help_v2.account.reset.email_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
   </section>

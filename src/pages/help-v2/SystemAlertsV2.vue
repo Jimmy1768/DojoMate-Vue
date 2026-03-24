@@ -1,26 +1,30 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Student</span>
-      <h1>Read system alerts</h1>
+      <span class="badge">{{ t('help_v2.student.alerts.badge') }}</span>
+      <h1>{{ t('help_v2.student.alerts.title') }}</h1>
       <p class="muted">
-        System alerts help you keep up with academy updates and other important account or membership information.
+        {{ t('help_v2.student.alerts.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>What you may see</h2>
+      <h2>{{ t('help_v2.student.alerts.see_title') }}</h2>
       <ul>
-        <li>academy updates</li>
-        <li>membership-related notices</li>
-        <li>other system-generated alerts tied to your academy use</li>
+        <li v-for="item in tm('help_v2.student.alerts.see_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.student.alerts.know_title') }}</h2>
       <p class="muted">
-        This is a system-alert surface, not a normal chat or message thread. Treat it as important account and academy information.
+        {{ t('help_v2.student.alerts.know_body') }}
       </p>
     </section>
   </section>

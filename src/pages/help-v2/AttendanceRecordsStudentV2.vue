@@ -1,27 +1,30 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Student</span>
-      <h1>Review attendance records</h1>
+      <span class="badge">{{ t('help_v2.student.attendance.badge') }}</span>
+      <h1>{{ t('help_v2.student.attendance.title') }}</h1>
       <p class="muted">
-        Use attendance records when you want to review training history and check what happened over a selected date range.
+        {{ t('help_v2.student.attendance.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>What this page helps with</h2>
+      <h2>{{ t('help_v2.student.attendance.help_title') }}</h2>
       <ul>
-        <li>checking recent attendance quickly</li>
-        <li>reviewing a longer date range</li>
-        <li>confirming whether a class was recorded the way you expect</li>
+        <li v-for="item in tm('help_v2.student.attendance.help_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.student.attendance.know_title') }}</h2>
       <ul>
-        <li>Date range controls make longer review easier.</li>
-        <li>This page is mainly for reviewing records, not changing them.</li>
+        <li v-for="item in tm('help_v2.student.attendance.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
   </section>

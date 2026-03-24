@@ -144,6 +144,110 @@ export default {
       paid_body: 'Timetable, Pause Cards, Staff Access e Analytics são controlados por entitlement. Use o guia da página Features se precisar ativar ferramentas ou iniciar o Premium.',
       paid_link: 'Ativar ferramentas e Premium'
     },
+    owner_setup: {
+      getting_started: {
+        badge: 'Primeiros Passos',
+        title: 'Configure sua academia na ordem certa',
+        intro: 'Se você está começando do zero, esta página mostra a ordem mais simples para que o restante do app faça sentido.',
+        order_title: 'Ordem recomendada',
+        order_items: [
+          'Crie sua academia.',
+          'Traga membros para a academia.',
+          'Crie modelos de cartões de membership.',
+          'Emita cartões para membros ativos.',
+          'Configure instrutores e acesso da equipe.',
+          'Crie sua primeira aula.',
+          'Adicione ferramentas pagas quando estiver pronto. O Affiliate Portal inclui um teste gratuito de Premium por 90 dias com todas as ferramentas desbloqueadas.'
+        ],
+        why_title: 'Por que essa ordem ajuda',
+        why_items: [
+          'Os membros precisam existir antes que você possa emitir cartões para eles.',
+          'Os cartões precisam existir antes que as reservas funcionem corretamente.',
+          'Os instrutores devem estar prontos antes de você começar a criar aulas.',
+          'Ferramentas pagas funcionam melhor depois que o fluxo principal da academia já está rodando.'
+        ],
+        start_title: 'Comece aqui se não tiver certeza',
+        create_link: 'Criar Academia',
+        members_link: 'Trazer Membros',
+        cards_link: 'Configurar Cartões'
+      },
+      create: {
+        badge: 'Dono',
+        title: 'Crie sua academia',
+        intro: 'Este é o primeiro passo do dono. Crie a academia antes de trazer membros, emitir cartões ou começar a montar aulas.',
+        before_title: 'Antes de criar',
+        before_items: [
+          'Verifique se a academia já existe para não criar uma duplicata.',
+          'Esteja pronto para escolher a moeda correta da academia desde o início.'
+        ],
+        steps_title: 'Passos',
+        steps_items: [
+          'Abra o fluxo de criação da academia.',
+          'Preencha os dados da academia com cuidado.',
+          'Escolha a moeda correta.',
+          'Envie o formulário para criar a academia.'
+        ],
+        next_title: 'Próximo passo',
+        next_body: 'Depois que a academia existir, o próximo trabalho comum é revisar as informações básicas da academia e então trazer pessoas para a academia.',
+        back_link: 'Voltar para o caminho do dono',
+        next_link: 'Ir para Academy Basics'
+      },
+      basics: {
+        badge: 'Dono',
+        title: 'Atualize os dados básicos da academia',
+        intro: 'Use esta página para manter o perfil da academia correto, para que membros e equipe vejam as informações certas.',
+        use_title: 'Use esta página quando',
+        use_items: [
+          'os dados da academia precisam ser corrigidos ou atualizados',
+          'as informações visíveis da academia mudaram',
+          'você quer revisar como a academia se apresenta aos membros'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Donos devem manter os dados básicos da academia atualizados antes de ampliar membros e cartões.',
+          'Se membros entram por mensagens da academia ou fluxos de onboarding, dados corretos da academia fazem diferença.'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para Criar Academia',
+        next_link: 'Ir para Academy QR'
+      },
+      qr: {
+        badge: 'Dono',
+        title: 'Compartilhe o QR da academia',
+        intro: 'Use o QR da academia quando quiser que as pessoas entrem mais rápido sem pesquisar manualmente pela academia.',
+        use_title: 'Quando isso ajuda mais',
+        use_items: [
+          'onboarding presencial na academia',
+          'eventos, aulas introdutórias ou dias de matrícula movimentados',
+          'situações em que várias pessoas precisam entrar rapidamente'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'O caminho por QR normalmente é mais rápido do que pedir que as pessoas pesquisem manualmente.',
+          'Ele é especialmente útil quando você quer reduzir erros de entrada durante o onboarding.'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para Academy Basics',
+        next_link: 'Trazer Membros'
+      },
+      delete: {
+        badge: 'Dono',
+        title: 'Exclua uma academia com cuidado',
+        intro: 'Este é um passo do ciclo de vida da academia, não uma tarefa diária normal. Use apenas quando a academia realmente deve ser removida.',
+        before_title: 'Antes de fazer isso',
+        before_items: [
+          'Revise primeiro as pré-condições.',
+          'Tenha certeza de que entende o que acontece com os membros atuais.',
+          'Não trate a exclusão da academia como atalho para uma limpeza comum.'
+        ],
+        meaning_title: 'O que isso significa',
+        meaning_body: 'Excluir uma academia é uma ação séria do dono. Só deve acontecer quando a própria academia não deve mais permanecer ativa.',
+        help_title: 'Precisa de ajuda antes?',
+        help_body: 'Se você não tiver certeza de que excluir é a decisão correta, pergunte no fórum de ajuda do DojoMate antes de dar o passo final.',
+        help_link: 'Abrir o fórum de ajuda do DojoMate',
+        back_link: 'Voltar para o caminho do dono'
+      }
+    },
     admin_home: {
       badge: 'Administrador',
       title: 'Eu ajudo a administrar a academia',
@@ -862,7 +966,197 @@ export default {
         next_link: 'Revisar fluxo de Cards'
       }
     },
+    account: {
+      sign_in: {
+        badge: 'Account',
+        title: 'Entrar na sua conta',
+        intro: 'Use sign in quando sua conta já existe e você quer acessar sua academia, reservas, cartões e registros.',
+        need_title: 'O que você precisa',
+        need_items: ['seu endereço de email', 'sua senha'],
+        trouble_title: 'Se o login não funcionar',
+        trouble_items: [
+          'verifique se o email e a senha estão corretos',
+          'use Reset Password se necessário',
+          'verifique o seletor de idioma se a tela parecer estranha'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para o caminho do aluno',
+        next_link: 'Reset Password'
+      },
+      create: {
+        badge: 'Account',
+        title: 'Criar uma conta',
+        intro: 'Crie uma conta antes de entrar em uma academia, reservar aulas ou usar o restante do app.',
+        path_title: 'Escolha o caminho certo',
+        path_items: [
+          'caminho member/student se você está treinando ou entrando em uma academia',
+          'caminho admin/owner se você está configurando ou gerenciando uma academia'
+        ],
+        need_title: 'O que você precisa',
+        need_items: ['um endereço de email válido', 'uma senha que atenda às regras do app'],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para Sign In',
+        next_link: 'Join an Academy'
+      },
+      reset: {
+        badge: 'Account',
+        title: 'Redefinir sua senha',
+        intro: 'Use isso quando você não lembrar sua senha ou quando sua senha atual não estiver mais funcionando.',
+        how_title: 'Como funciona',
+        how_items: [
+          'solicite a redefinição pela tela de sign-in',
+          'verifique a conta de email ligada ao seu login do DojoMate',
+          'siga o link de redefinição quando ele chegar'
+        ],
+        email_title: 'Se o email não chegar',
+        email_items: [
+          'verifique spam ou lixo eletrônico',
+          'confirme que você digitou o email correto',
+          'tente enviar a redefinição novamente'
+        ]
+      },
+      troubleshooting: {
+        badge: 'Account',
+        title: 'Problemas de conta',
+        intro: 'Use esta página quando o acesso à conta estiver bloqueado por um problema comum de login ou cadastro.',
+        signin_title: 'Não consegue entrar',
+        signin_items: [
+          'verifique seu email e sua senha com cuidado',
+          'redefina a senha se necessário',
+          'confirme que o dispositivo está online'
+        ],
+        email_title: 'Email já em uso',
+        email_body: 'Isso normalmente significa que a conta já existe e que você deve entrar ou redefinir a senha em vez de criar uma segunda conta.',
+        role_title: 'Confusão de função',
+        role_body: 'Se sua função mudou ou a conta não está se comportando como você espera, verifique primeiro se você está usando a conta e a membership corretas da academia.'
+      }
+    },
+    settings: {
+      password: {
+        badge: 'Settings',
+        title: 'Alterar sua senha',
+        intro: 'Use isso quando você ainda souber sua senha atual e quiser atualizá-la dentro das configurações da conta.',
+        know_title: 'O que saber',
+        know_items: [
+          'Isso é diferente de reset password. Alterar senha assume que você já consegue acessar a conta.',
+          'Se você não consegue entrar de jeito nenhum, use Reset Password.'
+        ]
+      },
+      language: {
+        badge: 'Settings',
+        title: 'Alterar o idioma do app',
+        intro: 'Use a configuração de idioma quando quiser que o app apareça em outro idioma compatível.',
+        know_title: 'O que saber',
+        know_body: 'Se uma tela parecer difícil de entender, verificar a configuração de idioma é uma das correções mais rápidas.'
+      },
+      currency: {
+        badge: 'Settings',
+        title: 'Escolher a visualização de moeda',
+        intro: 'Use a configuração de moeda para controlar como os valores em dinheiro aparecem no app.',
+        know_title: 'O que saber',
+        know_items: [
+          'Os membros se importam principalmente em ler os valores corretos com clareza.',
+          'Os donos também podem se importar com configuração financeira da academia e consistência.'
+        ]
+      },
+      privacy: {
+        badge: 'Settings',
+        title: 'Revisar configurações de privacidade',
+        intro: 'Use as configurações de privacidade para entender e controlar como dados ligados a notificações, marketing, leaderboard, perfil público, reservas e analytics são tratados.',
+        main_title: 'Áreas principais de privacidade',
+        main_items: [
+          'notificações',
+          'marketing',
+          'participação em leaderboard',
+          'acesso a perfil público',
+          'configurações ligadas a reservas',
+          'presença e dados agregados de analytics'
+        ],
+        progression_title: 'Controles ligados a progression',
+        progression_items: [
+          'Participação em leaderboard e acesso a perfil público são controles separados.',
+          'Desligar a participação em leaderboard exclui a conta dos rankings.',
+          'Desligar o acesso ao perfil público não remove automaticamente a conta de toda superfície permitida.',
+          'Os controles de marketing são separados dos controles de progression, leaderboard e perfil público.'
+        ],
+        child_title: 'Contas de crianças e dependentes',
+        child_body: 'Registros de crianças e dependentes ficam excluídos de participation em progression, leaderboard, perfis públicos de progression e marketing personalizado.',
+        know_title: 'O que saber',
+        know_body: 'Esta página trata de entender e gerenciar escolhas de privacidade, não apenas de ligar ou desligar mensagens.'
+      },
+      delete: {
+        badge: 'Settings',
+        title: 'Excluir sua conta com cuidado',
+        intro: 'Excluir a conta é uma ação séria. Use isso apenas quando você realmente quiser fechar a conta inteira, e não apenas sair de uma academia.',
+        before_title: 'Antes de fazer isso',
+        before_items: [
+          'verifique primeiro as regras de validação',
+          'revise o que pode bloquear a exclusão',
+          'considere contas infantis e qualquer vínculo de cartão infantil'
+        ],
+        know_title: 'O que saber',
+        know_body: 'Excluir a conta inteira não é o mesmo que sair de uma membership de uma academia. Use os fluxos de membership quando a conta deve continuar ativa.'
+      },
+      logout: {
+        badge: 'Settings',
+        title: 'Sair',
+        intro: 'Use logout quando terminar de usar o app neste dispositivo ou quando quiser trocar para outra conta.'
+      }
+    },
+    profile: {
+      edit: {
+        badge: 'Profile',
+        title: 'Editar seu perfil',
+        intro: 'Use esta página quando suas informações pessoais de perfil precisarem ser atualizadas.',
+        know_title: 'O que saber',
+        know_items: [
+          'Alguns usuários podem ver contexto ligado à função dependendo de como a conta é usada.',
+          'Depois de fazer mudanças, envie o formulário para salvar as atualizações.'
+        ]
+      },
+      children: {
+        badge: 'Profile',
+        title: 'Gerenciar contas infantis',
+        intro: 'Use child accounts quando um pai, mãe ou responsável precisar criar, editar ou gerenciar contas de crianças.',
+        do_title: 'O que você pode fazer',
+        do_items: [
+          'criar contas infantis',
+          'editar detalhes das contas infantis',
+          'remover contas infantis quando apropriado'
+        ],
+        know_title: 'O que saber',
+        know_body: 'Relações de contas gerenciadas por responsáveis podem afetar outros fluxos, como entrar em academias e lidar com memberships.'
+      }
+    },
     student: {
+      join: {
+        badge: 'Student',
+        title: 'Entrar em uma academia',
+        intro: 'Use este fluxo quando quiser conectar sua conta a uma academia e começar a usar essa academia dentro do app.',
+        find_title: 'Formas de encontrar uma academia',
+        find_items: [
+          'use Discover Academy para navegar por academias dentro do app',
+          'use Search Academy se quiser pesquisar diretamente ou escanear o QR de uma academia'
+        ],
+        steps_title: 'Passos',
+        steps_items: [
+          'Abra Discover Academy na seção Academy.',
+          'Navegue pela lista de academias.',
+          'Abra a academia para ver seus detalhes.',
+          'Revise as informações da academia e a galeria.',
+          'Confirme que é a academia que você espera.',
+          'Solicite entrada.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Discover Academy é útil quando você quer comparar academias antes de entrar.',
+          'Search Academy é o caminho direto para busca e leitura de QR.',
+          'Pais e mães talvez precisem considerar contas infantis como parte da entrada.'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para o caminho do aluno',
+        next_link: 'Managing Memberships'
+      },
       home: {
         badge: 'Aluno',
         title: 'Eu treino em uma academia',
@@ -928,6 +1222,393 @@ export default {
         ],
         join_link: 'Entrar em uma academia',
         alerts_link: 'Alertas do sistema'
+      },
+      memberships: {
+        badge: 'Student',
+        title: 'Gerenciar memberships da academia',
+        intro: 'Use esta página quando sua conta pertence a mais de uma academia ou quando você precisa alternar entre memberships de academias.',
+        when_title: 'Quando isso importa',
+        when_items: [
+          'você pertence a mais de uma academia',
+          'você precisa escolher em qual academia está atuando',
+          'a academia errada está atualmente selecionada no app'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Membros de várias academias precisam escolher a academia correta antes de reservar ou verificar registros.',
+          'Se algo parecer ausente, talvez a academia ativa seja apenas a errada.'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para Join Academy',
+        next_link: 'Booking'
+      },
+      booking: {
+        badge: 'Student',
+        title: 'Reservar uma aula',
+        intro: 'Use booking para escolher uma aula, selecionar um cartão elegível e reservar sua vaga.',
+        steps_title: 'Passos',
+        steps_items: [
+          'Abra a agenda.',
+          'Escolha a aula que você quer.',
+          'Verifique se você pode reservá-la.',
+          'Selecione o cartão que quer usar.',
+          'Confirme a reserva.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Talvez você precise escolher primeiro a academia correta se fizer parte de mais de uma.',
+          'Se um cartão não aparecer, a aula e o cartão podem não ser compatíveis.',
+          'Você também pode cancelar a reserva quando as regras ainda permitirem.'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Memberships',
+        next_link: 'Attendance Records'
+      },
+      alerts: {
+        badge: 'Student',
+        title: 'Ler alertas do sistema',
+        intro: 'Alertas do sistema ajudam você a acompanhar atualizações da academia e outras informações importantes sobre conta ou membership.',
+        see_title: 'O que você pode ver',
+        see_items: [
+          'atualizações da academia',
+          'avisos ligados à membership',
+          'outros alertas gerados pelo sistema ligados ao seu uso da academia'
+        ],
+        know_title: 'O que saber',
+        know_body: 'Esta é uma superfície de alertas do sistema, não um chat normal ou uma conversa de mensagens. Trate isso como informação importante sobre conta e academia.'
+      },
+      attendance: {
+        badge: 'Student',
+        title: 'Revisar registros de presença',
+        intro: 'Use attendance records quando quiser revisar seu histórico de treino e verificar o que aconteceu em um intervalo de datas escolhido.',
+        help_title: 'No que esta página ajuda',
+        help_items: [
+          'verificar presença recente rapidamente',
+          'revisar um intervalo maior de datas',
+          'confirmar se uma aula foi registrada da forma que você espera'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Os controles de intervalo de datas facilitam revisões mais longas.',
+          'Esta página é principalmente para revisar registros, não para alterá-los.'
+        ]
+      }
+    },
+    account: {
+      sign_in: {
+        badge: 'Conta',
+        title: 'Entrar na sua conta',
+        intro: 'Use o login quando sua conta já existe e você quer acessar sua academia, reservas, cartões e registros.',
+        need_title: 'O que você precisa',
+        need_items: ['seu endereço de email', 'sua senha'],
+        trouble_title: 'Se o login não funcionar',
+        trouble_items: [
+          'confirme se o email e a senha estão corretos',
+          'use Redefinir Senha se necessário',
+          'verifique o seletor de idioma se a tela parecer estranha'
+        ],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para o caminho do aluno',
+        next_link: 'Redefinir Senha'
+      },
+      create: {
+        badge: 'Conta',
+        title: 'Criar uma conta',
+        intro: 'Crie uma conta antes de entrar em uma academia, reservar aulas ou usar o restante do app.',
+        path_title: 'Escolha o caminho certo',
+        path_items: [
+          'caminho de membro/aluno se você vai treinar ou entrar em uma academia',
+          'caminho de admin/dono se você vai configurar ou gerenciar uma academia'
+        ],
+        need_title: 'O que você precisa',
+        need_items: ['um endereço de email válido', 'uma senha que siga as regras do app'],
+        next_title: 'Próximo passo',
+        back_link: 'Voltar para Entrar',
+        next_link: 'Entrar em uma Academia'
+      },
+      reset: {
+        badge: 'Conta',
+        title: 'Redefinir sua senha',
+        intro: 'Use isto quando você não lembrar sua senha ou quando a senha atual não funcionar mais.',
+        how_title: 'Como funciona',
+        how_items: [
+          'solicite a redefinição pela tela de login',
+          'verifique o email vinculado ao seu login do DojoMate',
+          'abra o link de redefinição quando ele chegar'
+        ],
+        email_title: 'Se o email não chegar',
+        email_items: [
+          'verifique spam ou lixo eletrônico',
+          'confirme se você digitou o email correto',
+          'tente enviar a redefinição novamente'
+        ]
+      },
+      troubleshooting: {
+        badge: 'Conta',
+        title: 'Solução de problemas da conta',
+        intro: 'Use esta página quando o acesso à conta estiver bloqueado por um problema comum de login ou cadastro.',
+        signin_title: 'Não consegue entrar',
+        signin_items: [
+          'confirme seu email e senha com cuidado',
+          'redefina a senha se necessário',
+          'garanta que o dispositivo esteja online'
+        ],
+        email_title: 'Email já em uso',
+        email_body: 'Isso normalmente significa que a conta já existe e que você deve entrar ou redefinir a senha, em vez de criar uma segunda conta.',
+        role_title: 'Confusão de função',
+        role_body: 'Se sua função mudou ou a conta não está se comportando como esperado, primeiro confirme se você está usando a conta certa e a associação correta com a academia.'
+      }
+    },
+    settings: {
+      password: {
+        badge: 'Configurações',
+        title: 'Mudar sua senha',
+        intro: 'Use isto quando você ainda sabe sua senha atual e quer atualizá-la dentro das configurações da conta.',
+        know_title: 'O que saber',
+        know_items: [
+          'Isso é diferente de redefinir senha. Mudar a senha assume que você já consegue acessar a conta.',
+          'Se você não consegue entrar de jeito nenhum, use Redefinir Senha.'
+        ]
+      },
+      language: {
+        badge: 'Configurações',
+        title: 'Mudar o idioma do app',
+        intro: 'Use a configuração de idioma quando quiser que o app apareça em outro idioma compatível.',
+        know_title: 'O que saber',
+        know_body: 'Se alguma tela estiver difícil de entender, verificar o idioma costuma ser uma das soluções mais rápidas.'
+      },
+      currency: {
+        badge: 'Configurações',
+        title: 'Escolher a visualização de moeda',
+        intro: 'Use a configuração de moeda para controlar como os valores em dinheiro aparecem no app.',
+        know_title: 'O que saber',
+        know_items: [
+          'Membros querem principalmente ver os valores corretos de forma clara.',
+          'Donos também podem se importar com a configuração financeira da academia e com consistência.'
+        ]
+      },
+      privacy: {
+        badge: 'Configurações',
+        title: 'Revisar configurações de privacidade',
+        intro: 'Use as configurações de privacidade para entender e controlar como dados de notificações, marketing, leaderboard, perfil público, reservas e analytics são tratados.',
+        main_title: 'Principais áreas de privacidade',
+        main_items: [
+          'notificações',
+          'marketing',
+          'participação em leaderboard',
+          'acesso ao perfil público',
+          'configurações relacionadas a reservas',
+          'dados de presença e analytics agregados'
+        ],
+        progression_title: 'Controles ligados à progression',
+        progression_items: [
+          'Participação em leaderboard e acesso ao perfil público são controles separados.',
+          'Desativar a participação em leaderboard exclui a conta dos rankings.',
+          'Desativar o acesso ao perfil público não remove automaticamente a conta de todas as superfícies permitidas.',
+          'Controles de marketing são separados de progression, leaderboard e perfil público.'
+        ],
+        child_title: 'Contas infantis e dependentes',
+        child_body: 'Registros de crianças e dependentes são excluídos da participação em progression, de leaderboards, de perfis públicos de progression e de marketing personalizado.',
+        know_title: 'O que saber',
+        know_body: 'Esta página é para entender e gerenciar escolhas de privacidade, não apenas para ligar ou desligar mensagens.'
+      },
+      delete: {
+        badge: 'Configurações',
+        title: 'Excluir sua conta com cuidado',
+        intro: 'Excluir a conta é uma ação séria. Use isso apenas quando você realmente quiser encerrar a conta inteira, e não apenas sair de uma academia.',
+        before_title: 'Antes de fazer isso',
+        before_items: [
+          'verifique primeiro as regras de validação',
+          'revise o que pode bloquear a exclusão',
+          'considere contas infantis e relações com cartões infantis'
+        ],
+        know_title: 'O que saber',
+        know_body: 'Excluir a conta inteira não é a mesma coisa que sair de uma única academia. Use os fluxos de membership quando a conta ainda deve continuar ativa.'
+      },
+      logout: {
+        badge: 'Configurações',
+        title: 'Sair',
+        intro: 'Use sair quando terminar de usar o app neste dispositivo ou quando quiser trocar para outra conta.'
+      }
+    },
+    profile: {
+      edit: {
+        badge: 'Perfil',
+        title: 'Editar seu perfil',
+        intro: 'Use esta página quando suas informações pessoais de perfil precisarem ser atualizadas.',
+        know_title: 'O que saber',
+        know_items: [
+          'Alguns usuários podem ver contexto relacionado à função, dependendo de como a conta é usada.',
+          'Depois de fazer mudanças, envie o formulário para salvar as atualizações.'
+        ]
+      },
+      children: {
+        badge: 'Perfil',
+        title: 'Gerenciar contas infantis',
+        intro: 'Use contas infantis quando um responsável precisar criar, editar ou gerenciar contas para crianças.',
+        do_title: 'O que você pode fazer',
+        do_items: [
+          'criar contas infantis',
+          'editar dados da conta infantil',
+          'remover contas infantis quando apropriado'
+        ],
+        know_title: 'O que saber',
+        know_body: 'Relações de contas gerenciadas por responsáveis podem afetar outros fluxos, como entrar em academias e lidar com memberships.'
+      }
+    },
+    student: {
+      home: {
+        badge: 'Aluno',
+        title: 'Eu treino em uma academia',
+        intro: 'Este caminho é para alunos, pais e membros de academia que precisam de ajuda com conta, reservas e memberships.',
+        section_1: 'Entrar na academia e gerenciar acesso',
+        join_link: 'Entrar em uma Academia',
+        memberships_link: 'Gerenciar Memberships',
+        section_2: 'Reservas, registros e atualizações da academia',
+        booking_link: 'Reservas',
+        attendance_link: 'Registros de Presença',
+        broadcast_link: 'Broadcast',
+        alerts_link: 'Alertas do Sistema',
+        section_3: 'Ajuda com a conta',
+        sign_in_link: 'Entrar',
+        create_account_link: 'Criar Conta',
+        reset_password_link: 'Redefinir Senha',
+        troubleshooting_link: 'Solução de Problemas da Conta',
+        change_password_link: 'Mudar Senha',
+        child_accounts_link: 'Contas Infantis',
+        still_need_title: 'Ainda precisa de outra coisa?',
+        still_need_body: 'Alguns tópicos mais específicos ainda podem permanecer no Help v1 enquanto o caminho do aluno continua sendo reconstruído.',
+        still_need_link: 'Abrir Help v1'
+      },
+      join: {
+        badge: 'Aluno',
+        title: 'Entrar em uma academia',
+        intro: 'Use este fluxo quando quiser entrar em uma academia que usa DojoMate.',
+        start_title: 'Duas formas de começar',
+        start_items: [
+          'Use Discover Academy para navegar por academias, ver detalhes e galeria, e depois pedir para entrar.',
+          'Use Search Academy para procurar diretamente ou escanear o QR da academia.'
+        ],
+        discover_title: 'Discover Academy',
+        discover_items: [
+          'Abra Discover Academy na área Academy.',
+          'Navegue pela lista de academias.',
+          'Abra uma academia para ver detalhes e galeria.',
+          'Confirme que é a academia certa antes de pedir para entrar.'
+        ],
+        search_title: 'Search Academy',
+        search_items: [
+          'Se você já souber o nome da academia, pesquise diretamente.',
+          'Se a academia lhe deu um QR, você também pode escanear para entrar.',
+          'Isso costuma ser o caminho mais rápido para chegar à academia certa.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Depois de enviar o pedido, a academia ainda pode precisar aceitá-lo.',
+          'Contas de pais podem precisar de etapas extras para vincular contas infantis.'
+        ],
+        next_title: 'Próximo passo',
+        next_link: 'Gerenciar Memberships'
+      },
+      memberships: {
+        badge: 'Aluno',
+        title: 'Gerenciar memberships',
+        intro: 'Use esta página para entender sua relação com a academia, seus cartões e os fluxos comuns depois de entrar.',
+        items_title: 'O que isso costuma incluir',
+        items_items: [
+          'confirmar que você entrou na academia correta',
+          'ver seu status de membro',
+          'entender como cartões e reservas funcionam juntos'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Se o status correto ainda não aparecer, a academia pode ainda não ter aceitado seu pedido.',
+          'Algumas ações ligadas a memberships ainda precisam ser feitas pela equipe da academia.'
+        ],
+        next_title: 'Próximo passo',
+        booking_link: 'Reservas'
+      },
+      booking: {
+        badge: 'Aluno',
+        title: 'Reservar aulas',
+        intro: 'Depois de entrar em uma academia e ter um cartão disponível, use as reservas para participar das aulas.',
+        steps_title: 'Fluxo comum',
+        steps_items: [
+          'Escolha primeiro a academia correta.',
+          'Abra a agenda e veja as aulas disponíveis para reserva.',
+          'Escolha uma aula que combine com o tipo do seu cartão.',
+          'Conclua a reserva.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Se um cartão não aparecer durante a reserva, confira se o tipo do cartão combina com o tipo da aula.',
+          'Reservar é o fluxo normal principal, e o sistema trata a dedução de aulas e os registros relacionados a partir disso.'
+        ],
+        next_title: 'Próximo passo',
+        attendance_link: 'Registros de Presença'
+      },
+      alerts: {
+        badge: 'Aluno',
+        title: 'Ver alertas do sistema',
+        intro: 'Use alertas do sistema para ver atualizações importantes sobre sua conta, sua academia ou fluxos relacionados.',
+        know_title: 'O que saber',
+        know_items: [
+          'System Alerts é o termo atual do produto.',
+          'Não é chat nem ferramenta de mensagens em duas vias.'
+        ]
+      },
+      attendance: {
+        badge: 'Aluno',
+        title: 'Ver registros de presença',
+        intro: 'Use registros de presença para rever as aulas das quais você já participou.',
+        know_title: 'O que saber',
+        know_items: [
+          'Esses registros ajudam a confirmar se suas reservas e presenças foram registradas corretamente.',
+          'Se algum registro parecer errado, fale com a academia.'
+        ]
+      },
+      broadcast: {
+        badge: 'Aluno',
+        title: 'Ler broadcasts da academia no app',
+        intro: 'Use Broadcast no app para ler atualizações da academia e posts de treino. Este é um feed de comunicação focado em leitura, não é chat, comentários nem respostas.',
+        where_title: 'Onde encontrar',
+        where_items: [
+          'No lado do membro, abra Broadcast no menu Academy.',
+          'O ícone atual é um bullhorn.',
+          'Broadcast segue a academia selecionada, então escolha uma academia primeiro.'
+        ],
+        actions_title: 'O que você pode fazer',
+        actions_items: [
+          'alternar entre as abas Updates e Training',
+          'puxar para atualizar o feed',
+          'ler o texto e as legendas das imagens',
+          'tocar em uma imagem para abrir em tela cheia e tocar fora para fechar'
+        ],
+        screen_title: 'O que você pode ver na tela',
+        screen_items: [
+          'Título: Broadcast',
+          'nome da academia selecionada no topo',
+          'abas: Updates e Training',
+          'cada card pode mostrar o nome do autor ou Academy Admin como fallback',
+          'data e hora de publicação',
+          'texto, miniaturas de imagem e legenda opcional'
+        ],
+        limits_title: 'Estados vazios e limites atuais',
+        limits_items: [
+          'Se nenhuma academia estiver selecionada, você pode ver Select an academy first.',
+          'Um stream vazio pode mostrar Updates coming soon ou No visible broadcasts are available in this stream yet.',
+          'O feed Broadcast atual para membros é somente leitura.',
+          'Não há likes, comentários, respostas, reações, compartilhamento ou postagem por membros.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Broadcast é o termo atual enviado ao usuário. O termo antigo Newsfeed está desatualizado.',
+          'O conteúdo é criado no AFL e exibido no app.',
+          'Se a requisição falhar, o app atualmente cai para uma lista vazia em vez de mostrar um erro separado.',
+          'A tela de criação no lado admin do Expo ainda está em fase de staging e não deve ser tratada como o fluxo principal ao vivo.'
+        ],
+        join_link: 'Entrar em uma Academia',
+        alerts_link: 'Alertas do Sistema'
       }
     },
     tools: {
@@ -1051,6 +1732,62 @@ export default {
         student_link: 'Ler Broadcast no app',
         support_desc: 'Use o fórum do AFL Portal para dúvidas sobre a ferramenta Broadcast, problemas de publish/recall/repost ou questões de entitlement no AFL.',
         support_button: 'Abrir o fórum do AFL Portal'
+      },
+      timetable: {
+        badge: 'Ferramentas',
+        paid_badge: 'Ferramenta paga',
+        title: 'Montar uma agenda semanal recorrente',
+        intro: 'Use Timetable quando quiser criar modelos de aula uma vez e publicá-los no calendário ao longo do tempo.',
+        use_title: 'Quando usar isso',
+        use_items: [
+          'você oferece as mesmas aulas toda semana',
+          'você quer planejar mais à frente sem recriar cada aula manualmente',
+          'você quer publicar aulas no calendário quando estiverem prontas'
+        ],
+        steps_title: 'Passos',
+        steps_items: [
+          'Abra Timetable.',
+          'Selecione o dia da semana desejado.',
+          'Pressione Create Lesson.',
+          'Preencha o formulário da aula da mesma forma que faria na tela normal de Schedule.',
+          'Defina a data de início e a data de fim do modelo recorrente.',
+          'Salve o modelo.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Os modelos não viram aulas reais do calendário até serem publicados.',
+          'Você pode planejar com segurança para bem à frente usando uma data de fim futura.',
+          'Depois da criação, você pode voltar para a página do dia da semana e editar o modelo ali.'
+        ],
+        publish_title: 'Publicação',
+        publish_body_1: 'Aulas não publicadas aparecem primeiro na página Schedule. Admins podem publicá-las quando estiverem prontas para reserva.',
+        publish_body_2: 'Os membros ainda podem ver aulas não publicadas como planos futuros, mas ainda não podem reservá-las.',
+        mistake_title: 'Erro comum',
+        mistake_body: 'Se uma aula recorrente cair em um feriado, normalmente você não precisa refazer o timetable. Basta escolher não publicar aquela aula.',
+        activate_link: 'Ativar ferramentas e Premium'
+      },
+      pause: {
+        badge: 'Ferramentas',
+        paid_badge: 'Ferramenta paga',
+        title: 'Pausar cartões ativos quando necessário',
+        intro: 'Use Pause Cards quando precisar interromper o tempo do cartão temporariamente, em vez de deixar o cartão continuar expirando normalmente.',
+        modes_title: 'Duas formas de pausar cartões',
+        modes_items: [
+          'Pausa individual: pausar ou retomar o cartão de um membro pelo perfil desse membro.',
+          'Pausa de toda a academia: donos podem pausar cartões em toda a academia.'
+        ],
+        know_title: 'O que saber',
+        know_items: [
+          'Cartões pausados não podem ser usados para reservar.',
+          'Cada modelo de cartão pode ser excluído da pausa de toda a academia, se necessário.',
+          'Se um membro já estava pausado individualmente antes de uma pausa geral da academia, ele continuará pausado depois que a pausa geral terminar.'
+        ],
+        common_title: 'Uso mais comum',
+        common_body: 'Donos costumam usar essa ferramenta quando querem proteger o tempo do membro sem estender manualmente a validade de um cartão por vez.',
+        next_title: 'Próximo passo',
+        back_tools: 'Voltar para visão geral das ferramentas',
+        activate_link: 'Ativar ferramentas e Premium',
+        back_cards: 'Voltar para Cards'
       }
     },
     portal: {

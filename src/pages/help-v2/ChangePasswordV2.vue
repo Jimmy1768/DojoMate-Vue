@@ -1,18 +1,23 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Settings</span>
-      <h1>Change your password</h1>
+      <span class="badge">{{ t('help_v2.settings.password.badge') }}</span>
+      <h1>{{ t('help_v2.settings.password.title') }}</h1>
       <p class="muted">
-        Use this when you still know your current password and want to update it from inside your account settings.
+        {{ t('help_v2.settings.password.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.settings.password.know_title') }}</h2>
       <ul>
-        <li>This is different from reset password. Change password assumes you can already access the account.</li>
-        <li>If you cannot sign in at all, use Reset Password instead.</li>
+        <li v-for="item in tm('help_v2.settings.password.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
   </section>

@@ -144,6 +144,110 @@ export default {
       paid_body: 'Timetable、Pause Cards、Staff Access 和 Analytics 都受 entitlement 控制。如果你需要启用工具或开始 Premium，请查看 Features 页面指南。',
       paid_link: '启用工具与 Premium'
     },
+    owner_setup: {
+      getting_started: {
+        badge: '快速开始',
+        title: '按正确顺序设置你的学院',
+        intro: '如果你是从零开始，这个页面会给你最简单的顺序，让应用后续流程更容易理解。',
+        order_title: '推荐顺序',
+        order_items: [
+          '创建你的学院。',
+          '把成员带进学院。',
+          '创建会员卡模板。',
+          '向活跃成员发卡。',
+          '设置讲师和员工访问权限。',
+          '创建第一节课程。',
+          '准备好之后再添加付费工具。Affiliate Portal 提供 90 天免费 Premium 试用，所有工具都会解锁。'
+        ],
+        why_title: '为什么这个顺序有帮助',
+        why_items: [
+          '成员必须先存在，你才能给他们发卡。',
+          '卡片必须先存在，预约才能正常运作。',
+          '在开始创建课程之前，应先把讲师设置好。',
+          '在学院核心流程已经运转后，再加入付费工具效果最好。'
+        ],
+        start_title: '如果你不确定，就从这里开始',
+        create_link: '创建学院',
+        members_link: '带入成员',
+        cards_link: '设置会员卡'
+      },
+      create: {
+        badge: '馆主',
+        title: '创建你的学院',
+        intro: '这是馆主的第一步。在你引入成员、发卡或开始创建课程之前，先创建学院。',
+        before_title: '创建之前',
+        before_items: [
+          '先确认学院是否已经存在，避免创建重复项。',
+          '从一开始就准备好选择正确的学院货币。'
+        ],
+        steps_title: '步骤',
+        steps_items: [
+          '打开创建学院流程。',
+          '认真填写学院信息。',
+          '选择正确的货币。',
+          '提交表单以创建学院。'
+        ],
+        next_title: '下一步',
+        next_body: '学院创建完成后，下一项常见工作是检查学院基础信息，然后把人带进学院。',
+        back_link: '返回馆主路径',
+        next_link: '前往学院基础设置'
+      },
+      basics: {
+        badge: '馆主',
+        title: '更新学院基础信息',
+        intro: '使用这个页面保持学院资料准确，让成员和员工看到正确的学院信息。',
+        use_title: '在这些情况下使用',
+        use_items: [
+          '学院信息需要更正或更新',
+          '面向学院的信息已经发生变化',
+          '你想检查学院对成员的展示方式'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '在扩大成员和会员卡规模之前，馆主应先保持学院基础信息是最新的。',
+          '如果成员通过学院消息或入驻流程加入，准确的学院信息就很重要。'
+        ],
+        next_title: '下一步',
+        back_link: '返回创建学院',
+        next_link: '前往学院二维码'
+      },
+      qr: {
+        badge: '馆主',
+        title: '分享学院二维码',
+        intro: '当你希望人们无需手动搜索学院、能够更快加入时，请使用学院二维码。',
+        use_title: '最适合的场景',
+        use_items: [
+          '在学院现场入驻时',
+          '活动、体验课或繁忙报名日',
+          '需要让多人快速加入的场景'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '二维码路径通常比让大家手动搜索更快。',
+          '当你想减少入驻过程中的加入错误时，它尤其有用。'
+        ],
+        next_title: '下一步',
+        back_link: '返回学院基础设置',
+        next_link: '带入成员'
+      },
+      delete: {
+        badge: '馆主',
+        title: '谨慎删除学院',
+        intro: '这是学院生命周期中的一步，不是日常任务。只有当学院确实应该被移除时才使用。',
+        before_title: '执行之前',
+        before_items: [
+          '先检查前置条件。',
+          '确认你理解这会对当前成员产生什么影响。',
+          '不要把删除学院当作普通清理工作的捷径。'
+        ],
+        meaning_title: '这意味着什么',
+        meaning_body: '删除学院是一个严肃的馆主操作。只有当学院本身不应再继续保持活跃时才应该这样做。',
+        help_title: '需要先求助吗？',
+        help_body: '如果你不确定删除是否是正确做法，请在执行最后一步之前先到 DojoMate 帮助版块提问。',
+        help_link: '打开 DojoMate 帮助版块',
+        back_link: '返回馆主路径'
+      }
+    },
     admin_home: {
       badge: '管理员',
       title: '我协助管理学院',
@@ -862,7 +966,197 @@ export default {
         next_link: '查看 Cards 工作流'
       }
     },
+    account: {
+      sign_in: {
+        badge: 'Account',
+        title: '登录你的账号',
+        intro: '当你的账号已经存在，并且你想访问学院、预约、会员卡和记录时，请使用登录。',
+        need_title: '你需要什么',
+        need_items: ['你的邮箱地址', '你的密码'],
+        trouble_title: '如果无法登录',
+        trouble_items: [
+          '检查邮箱和密码是否正确',
+          '必要时使用 Reset Password',
+          '如果界面看起来不熟悉，检查语言选择器'
+        ],
+        next_title: '下一步',
+        back_link: '返回学员路径',
+        next_link: '重置密码'
+      },
+      create: {
+        badge: 'Account',
+        title: '创建账号',
+        intro: '在加入学院、预约课程或使用应用其余功能之前，请先创建账号。',
+        path_title: '选择正确的路径',
+        path_items: [
+          '如果你是在训练或加入学院，选择 member/student 路径',
+          '如果你是在设置或管理学院，选择 admin/owner 路径'
+        ],
+        need_title: '你需要什么',
+        need_items: ['一个有效邮箱地址', '一个符合应用规则的密码'],
+        next_title: '下一步',
+        back_link: '返回登录',
+        next_link: '加入学院'
+      },
+      reset: {
+        badge: 'Account',
+        title: '重置密码',
+        intro: '当你记不起密码，或当前密码已不再可用时，请使用这个流程。',
+        how_title: '它如何运作',
+        how_items: [
+          '从登录界面发起重置',
+          '检查与你的 DojoMate 登录绑定的邮箱',
+          '邮件到达后，打开重置链接'
+        ],
+        email_title: '如果邮件没有到达',
+        email_items: [
+          '检查垃圾邮件或广告邮件',
+          '确认你输入的是正确邮箱',
+          '再发送一次重置请求'
+        ]
+      },
+      troubleshooting: {
+        badge: 'Account',
+        title: '账号故障排查',
+        intro: '当常见的登录或注册问题阻止你进入账号时，请使用这个页面。',
+        signin_title: '无法登录',
+        signin_items: [
+          '仔细检查邮箱和密码',
+          '必要时重置密码',
+          '确认设备已联网'
+        ],
+        email_title: '邮箱已被使用',
+        email_body: '这通常意味着账号已经存在，你应该登录或重置密码，而不是创建第二个账号。',
+        role_title: '角色混淆',
+        role_body: '如果你的角色发生变化，或者账号表现和预期不一致，请先检查你是否使用了正确的账号和学院身份。'
+      }
+    },
+    settings: {
+      password: {
+        badge: 'Settings',
+        title: '修改密码',
+        intro: '当你仍然知道当前密码，并想在账号设置中更新它时，请使用这个页面。',
+        know_title: '需要知道的事',
+        know_items: [
+          '这和重置密码不同。修改密码意味着你已经能进入账号。',
+          '如果你完全无法登录，请改用 Reset Password。'
+        ]
+      },
+      language: {
+        badge: 'Settings',
+        title: '更改应用语言',
+        intro: '当你希望应用以另一种受支持语言显示时，请使用语言设置。',
+        know_title: '需要知道的事',
+        know_body: '如果某个界面很难理解，检查语言设置往往是最快的修复方式之一。'
+      },
+      currency: {
+        badge: 'Settings',
+        title: '选择货币显示方式',
+        intro: '使用货币设置来控制应用中金额的显示方式。',
+        know_title: '需要知道的事',
+        know_items: [
+          '成员最关心的是能清楚地看到正确金额。',
+          '馆主也可能会关心学院侧财务设置和一致性。'
+        ]
+      },
+      privacy: {
+        badge: 'Settings',
+        title: '查看隐私设置',
+        intro: '使用隐私设置来理解并控制通知、营销、排行榜、公开资料、预约和 analytics 相关数据是如何被处理的。',
+        main_title: '主要隐私区域',
+        main_items: [
+          '通知',
+          '营销',
+          '排行榜参与',
+          '公开资料访问',
+          '与预约相关的设置',
+          '出勤和汇总 analytics 数据'
+        ],
+        progression_title: '与 progression 相关的控制',
+        progression_items: [
+          '排行榜参与和公开资料访问是分开的控制项。',
+          '关闭排行榜参与会把账号排除在排名之外。',
+          '关闭公开资料访问并不会自动把账号从所有允许的展示面移除。',
+          '营销控制与 progression、排行榜和公开资料控制是分开的。'
+        ],
+        child_title: '儿童与受抚养账号',
+        child_body: '儿童和受抚养记录不会参与 progression、排行榜、公开 progression 资料以及个性化营销。',
+        know_title: '需要知道的事',
+        know_body: '这个页面的重点是理解和管理隐私选择，而不仅仅是打开或关闭消息。'
+      },
+      delete: {
+        badge: 'Settings',
+        title: '谨慎删除你的账号',
+        intro: '删除账号是一个严肃操作。只有当你真的想关闭整个账号时才这样做，而不是仅仅离开一所学院。',
+        before_title: '在你这样做之前',
+        before_items: [
+          '先检查验证规则',
+          '查看哪些情况会阻止删除',
+          '考虑儿童账号以及相关儿童会员卡关系'
+        ],
+        know_title: '需要知道的事',
+        know_body: '删除整个账号和离开一项学院 membership 不是一回事。如果账号仍应保持活跃，请使用 membership 相关流程。'
+      },
+      logout: {
+        badge: 'Settings',
+        title: '退出登录',
+        intro: '当你在当前设备上已经使用完应用，或想切换到另一个账号时，请使用退出登录。'
+      }
+    },
+    profile: {
+      edit: {
+        badge: 'Profile',
+        title: '编辑你的资料',
+        intro: '当你的个人资料信息需要更新时，请使用这个页面。',
+        know_title: '需要知道的事',
+        know_items: [
+          '根据账号的使用方式，不同用户可能会看到与角色相关的上下文。',
+          '修改完成后，请提交表单以保存更新。'
+        ]
+      },
+      children: {
+        badge: 'Profile',
+        title: '管理儿童账号',
+        intro: '当父母或监护人需要为儿童创建、编辑或管理账号时，请使用儿童账号功能。',
+        do_title: '你可以做什么',
+        do_items: [
+          '创建儿童账号',
+          '编辑儿童账号信息',
+          '在合适的时候移除儿童账号'
+        ],
+        know_title: '需要知道的事',
+        know_body: '由父母管理的账号关系会影响其他流程，例如加入学院和 membership 处理。'
+      }
+    },
     student: {
+      join: {
+        badge: 'Student',
+        title: '加入学院',
+        intro: '当你想把账号连接到某个学院，并开始在应用中使用该学院时，请使用这个流程。',
+        find_title: '寻找学院的方式',
+        find_items: [
+          '使用 Discover Academy 在应用内浏览学院',
+          '如果你想直接搜索或扫描学院二维码，请使用 Search Academy'
+        ],
+        steps_title: '步骤',
+        steps_items: [
+          '从 Academy 区域打开 Discover Academy。',
+          '浏览学院列表。',
+          '打开某个学院查看详情。',
+          '查看学院信息和图片集。',
+          '确认这就是你要找的学院。',
+          '申请加入。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '当你想先比较几所学院再加入时，Discover Academy 很有用。',
+          'Search Academy 是用于搜索和二维码扫描的直接入口。',
+          '家长在加入时可能还需要考虑儿童账号。'
+        ],
+        next_title: '下一步',
+        back_link: '返回学员路径',
+        next_link: '管理 Memberships'
+      },
       home: {
         badge: '学员',
         title: '我在学院训练',
@@ -925,6 +1219,393 @@ export default {
           '内容由 AFL 创建，并由应用展示。',
           '如果获取信息流失败，应用目前会回退为空列表，而不是显示单独的错误状态。',
           'Expo 中管理员侧的创建界面仍处于预备阶段，不应被视为当前主流程。'
+        ],
+        join_link: '加入学院',
+        alerts_link: '系统提醒'
+      },
+      memberships: {
+        badge: 'Student',
+        title: '管理学院 memberships',
+        intro: '当你的账号属于多所学院，或你需要在不同学院 membership 之间切换时，请使用这个页面。',
+        when_title: '什么时候重要',
+        when_items: [
+          '你属于多所学院',
+          '你需要选择当前正在哪所学院里操作',
+          '应用当前选中的学院不对'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '属于多所学院的成员，在预约或查看记录前需要先选择正确学院。',
+          '如果有内容看起来缺失，可能只是当前激活的是错误学院。'
+        ],
+        next_title: '下一步',
+        back_link: '返回加入学院',
+        next_link: '预约课程'
+      },
+      booking: {
+        badge: 'Student',
+        title: '预约课程',
+        intro: '使用预约功能来选择课程、挑选可用卡片并确认你的名额。',
+        steps_title: '步骤',
+        steps_items: [
+          '打开课表。',
+          '选择你想上的课程。',
+          '检查你是否符合预约条件。',
+          '选择你想使用的卡片。',
+          '确认预约。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果你属于多所学院，可能需要先选择正确学院。',
+          '如果卡片没有出现，课程和卡片可能不兼容。',
+          '在规则仍然允许时，你也可以取消预约。'
+        ],
+        next_title: '下一步',
+        back_link: 'Memberships',
+        next_link: '出勤记录'
+      },
+      alerts: {
+        badge: 'Student',
+        title: '阅读系统提醒',
+        intro: '系统提醒帮助你跟进学院更新，以及其他重要的账号或 membership 信息。',
+        see_title: '你可能看到的内容',
+        see_items: [
+          '学院更新',
+          '与 membership 相关的通知',
+          '其他与你使用学院相关的系统生成提醒'
+        ],
+        know_title: '需要知道的事',
+        know_body: '这是一种系统提醒界面，不是普通聊天或消息线程。请把它看作重要的账号和学院信息。'
+      },
+      attendance: {
+        badge: 'Student',
+        title: '查看出勤记录',
+        intro: '当你想查看训练历史，并确认某个日期范围内发生了什么时，请使用出勤记录。',
+        help_title: '这个页面能帮助什么',
+        help_items: [
+          '快速查看近期出勤',
+          '查看更长的日期范围',
+          '确认课程是否按你预期被记录'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '日期范围控件让长时间段查看更容易。',
+          '这个页面主要用于查看记录，而不是修改它们。'
+        ]
+      }
+    },
+    account: {
+      sign_in: {
+        badge: '账号',
+        title: '登录你的账号',
+        intro: '当你的账号已经存在，并且你想访问学院、预约、会员卡和记录时，请使用登录。',
+        need_title: '你需要准备',
+        need_items: ['你的邮箱地址', '你的密码'],
+        trouble_title: '如果无法登录',
+        trouble_items: [
+          '检查邮箱和密码是否正确',
+          '必要时使用重置密码',
+          '如果界面看起来陌生，先检查语言设置'
+        ],
+        next_title: '下一步',
+        back_link: '返回学员路径',
+        next_link: '重置密码'
+      },
+      create: {
+        badge: '账号',
+        title: '创建账号',
+        intro: '在加入学院、预约课程或使用应用其他功能之前，先创建账号。',
+        path_title: '选择正确的路径',
+        path_items: [
+          '如果你要训练或加入学院，请走成员/学员路径',
+          '如果你要设置或管理学院，请走管理员/馆主路径'
+        ],
+        need_title: '你需要准备',
+        need_items: ['有效的邮箱地址', '符合应用规则的密码'],
+        next_title: '下一步',
+        back_link: '返回登录',
+        next_link: '加入学院'
+      },
+      reset: {
+        badge: '账号',
+        title: '重置密码',
+        intro: '当你不记得密码，或当前密码已经无法使用时，请使用这个流程。',
+        how_title: '流程如何运作',
+        how_items: [
+          '在登录页发起重置请求',
+          '检查与你的 DojoMate 登录绑定的邮箱',
+          '收到邮件后打开重置链接'
+        ],
+        email_title: '如果邮件没有收到',
+        email_items: [
+          '检查垃圾邮件或广告邮件箱',
+          '确认输入的是正确邮箱',
+          '再次发送重置邮件'
+        ]
+      },
+      troubleshooting: {
+        badge: '账号',
+        title: '账号故障排查',
+        intro: '当常见的登录或注册问题阻碍你访问账号时，请使用这个页面。',
+        signin_title: '无法登录',
+        signin_items: [
+          '仔细检查邮箱和密码',
+          '必要时重置密码',
+          '确认设备已联网'
+        ],
+        email_title: '邮箱已被使用',
+        email_body: '这通常表示账号已经存在，你应该登录或重置密码，而不是再创建第二个账号。',
+        role_title: '身份角色混淆',
+        role_body: '如果你的角色变了，或账号行为和预期不一致，先检查你是否使用了正确的账号以及正确的学院关系。'
+      }
+    },
+    settings: {
+      password: {
+        badge: '设置',
+        title: '修改密码',
+        intro: '当你仍然知道当前密码，并想在账号设置里更新它时，请使用这个流程。',
+        know_title: '需要知道的事',
+        know_items: [
+          '这和重置密码不同。修改密码的前提是你已经可以登录账号。',
+          '如果你完全无法登录，请改用重置密码。'
+        ]
+      },
+      language: {
+        badge: '设置',
+        title: '更改应用语言',
+        intro: '当你想让应用显示为另一种受支持的语言时，请使用语言设置。',
+        know_title: '需要知道的事',
+        know_body: '如果某个界面难以理解，先检查语言设置通常是最快的解决办法之一。'
+      },
+      currency: {
+        badge: '设置',
+        title: '选择货币显示',
+        intro: '使用货币设置来控制应用中的金额显示方式。',
+        know_title: '需要知道的事',
+        know_items: [
+          '成员最关心的是金额是否清楚易读。',
+          '馆主也可能会关心学院端的财务设置和一致性。'
+        ]
+      },
+      privacy: {
+        badge: '设置',
+        title: '查看隐私设置',
+        intro: '使用隐私设置来了解并控制通知、营销、排行榜、公开资料、预约以及与分析相关的数据处理方式。',
+        main_title: '主要隐私区域',
+        main_items: [
+          '通知',
+          '营销',
+          '排行榜参与',
+          '公开资料访问',
+          '与预约相关的设置',
+          '出勤和汇总分析数据'
+        ],
+        progression_title: '与 progression 相关的控制',
+        progression_items: [
+          '排行榜参与和公开资料访问是两个独立控制项。',
+          '关闭排行榜参与会将账号排除在排名之外。',
+          '关闭公开资料访问，并不会自动把账号从所有允许显示的界面中移除。',
+          '营销控制与 progression、排行榜和公开资料控制是分开的。'
+        ],
+        child_title: '儿童和受抚养账号',
+        child_body: '儿童和受抚养记录不会参与 progression、排行榜、公开 progression 资料或个性化营销。',
+        know_title: '需要知道的事',
+        know_body: '这个页面的重点是理解和管理隐私选择，而不仅仅是打开或关闭消息。'
+      },
+      delete: {
+        badge: '设置',
+        title: '谨慎删除账号',
+        intro: '删除账号是一个严肃操作。只有在你确实想关闭整个账号时才使用，而不是仅仅离开某个学院。',
+        before_title: '执行之前',
+        before_items: [
+          '先检查验证规则',
+          '确认哪些情况会阻止删除',
+          '考虑儿童账号以及相关会员卡关系'
+        ],
+        know_title: '需要知道的事',
+        know_body: '删除整个账号，不等于离开某一个学院成员关系。如果账号仍应保留，请使用成员关系相关流程。'
+      },
+      logout: {
+        badge: '设置',
+        title: '退出登录',
+        intro: '当你已结束在当前设备上的使用，或想切换到另一个账号时，请使用退出登录。'
+      }
+    },
+    profile: {
+      edit: {
+        badge: '资料',
+        title: '编辑你的资料',
+        intro: '当你的个人资料信息需要更新时，请使用这个页面。',
+        know_title: '需要知道的事',
+        know_items: [
+          '有些用户会根据账号用途看到与角色相关的上下文。',
+          '修改完成后，请提交表单以保存更新。'
+        ]
+      },
+      children: {
+        badge: '资料',
+        title: '管理儿童账号',
+        intro: '当家长或监护人需要为孩子创建、编辑或管理账号时，请使用儿童账号功能。',
+        do_title: '你可以做什么',
+        do_items: [
+          '创建儿童账号',
+          '编辑儿童账号资料',
+          '在适当时移除儿童账号'
+        ],
+        know_title: '需要知道的事',
+        know_body: '由家长管理的账号关系，可能会影响加入学院和处理会员资格等其他流程。'
+      }
+    },
+    student: {
+      home: {
+        badge: '学员',
+        title: '我在学院训练',
+        intro: '这一路径适用于需要账号帮助、预约帮助和会员资格帮助的学员、家长与学院成员。',
+        section_1: '加入学院并管理访问',
+        join_link: '加入学院',
+        memberships_link: '管理会员资格',
+        section_2: '预约、记录和学院更新',
+        booking_link: '预约',
+        attendance_link: '出勤记录',
+        broadcast_link: 'Broadcast',
+        alerts_link: '系统提醒',
+        section_3: '账号帮助',
+        sign_in_link: '登录',
+        create_account_link: '创建账号',
+        reset_password_link: '重置密码',
+        troubleshooting_link: '账号故障排查',
+        change_password_link: '修改密码',
+        child_accounts_link: '儿童账号',
+        still_need_title: '还需要别的内容？',
+        still_need_body: '在学员路径进一步重建之前，少数更专业的主题可能仍然保留在 Help v1 中。',
+        still_need_link: '打开 Help v1'
+      },
+      join: {
+        badge: '学员',
+        title: '加入学院',
+        intro: '当你想加入一家正在使用 DojoMate 的学院时，请使用这个流程。',
+        start_title: '两种开始方式',
+        start_items: [
+          '使用 Discover Academy 浏览学院，查看详情和图片后再申请加入。',
+          '使用 Search Academy 直接搜索学院，或扫描学院二维码。'
+        ],
+        discover_title: 'Discover Academy',
+        discover_items: [
+          '从 Academy 区域打开 Discover Academy。',
+          '浏览学院列表。',
+          '打开某家学院查看详细信息和图库。',
+          '确认是正确的学院后再申请加入。'
+        ],
+        search_title: 'Search Academy',
+        search_items: [
+          '如果你已经知道学院名字，就直接搜索。',
+          '如果学院给了你二维码，也可以直接扫描加入。',
+          '这通常是进入正确学院的最快路径。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '加入申请发送后，学院可能仍需要先接受你。',
+          '家长账号可能还需要额外步骤来关联儿童账号。'
+        ],
+        next_title: '下一步',
+        next_link: '管理会员资格'
+      },
+      memberships: {
+        badge: '学员',
+        title: '管理会员资格',
+        intro: '使用这个页面了解你的学院关系、会员卡以及加入后的常见后续流程。',
+        items_title: '这里通常包括什么',
+        items_items: [
+          '确认你已加入正确的学院',
+          '查看你的成员状态',
+          '了解会员卡和预约如何配合工作'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果你还没有看到正确状态，学院可能还没有接受你的申请。',
+          '有些与会员资格相关的操作仍然需要学院工作人员来完成。'
+        ],
+        next_title: '下一步',
+        booking_link: '预约'
+      },
+      booking: {
+        badge: '学员',
+        title: '预约课程',
+        intro: '在加入学院并拥有可用会员卡后，使用预约来参加课程。',
+        steps_title: '常见流程',
+        steps_items: [
+          '先选择正确的学院。',
+          '打开课程安排并查看可预约课程。',
+          '选择与你的会员卡类型匹配的课程。',
+          '完成预约。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '如果某张卡在预约时没有出现，请检查卡类型是否与课程类型匹配。',
+          '预约是正常主流程，系统会据此处理课次扣减和相关记录。'
+        ],
+        next_title: '下一步',
+        attendance_link: '出勤记录'
+      },
+      alerts: {
+        badge: '学员',
+        title: '查看系统提醒',
+        intro: '使用系统提醒来查看与你账号、学院或相关流程有关的重要更新。',
+        know_title: '需要知道的事',
+        know_items: [
+          'System Alerts 是当前产品术语。',
+          '它不是聊天，也不是双向消息工具。'
+        ]
+      },
+      attendance: {
+        badge: '学员',
+        title: '查看出勤记录',
+        intro: '使用出勤记录来回顾你已经参加过的课程。',
+        know_title: '需要知道的事',
+        know_items: [
+          '这些记录可以帮助你确认预约和出勤是否被正确记录。',
+          '如果某条记录看起来不对，请联系学院。'
+        ]
+      },
+      broadcast: {
+        badge: '学员',
+        title: '在应用中查看学院 Broadcast',
+        intro: '在应用中使用 Broadcast 查看学院更新和训练发布内容。这是一个以阅读为主的学院沟通流，不是聊天、评论或回复。',
+        where_title: '在哪里找到它',
+        where_items: [
+          '在成员端，从 Academy 菜单中打开 Broadcast。',
+          '当前图标是喇叭。',
+          'Broadcast 跟随所选学院，因此请先选择学院。'
+        ],
+        actions_title: '你可以做什么',
+        actions_items: [
+          '在 Updates 和 Training 标签之间切换。',
+          '下拉刷新内容流。',
+          '阅读广播文字和图片说明。',
+          '点击图片全屏查看，再点空白处关闭。'
+        ],
+        screen_title: '你可能会在屏幕上看到',
+        screen_items: [
+          '标题：Broadcast',
+          '顶部显示所选学院名称',
+          '标签：Updates 和 Training',
+          '每张卡片可以显示作者名称，或回退显示 Academy Admin',
+          '发布时间',
+          '正文、图片缩略图和可选图片说明'
+        ],
+        limits_title: '空状态和当前限制',
+        limits_items: [
+          '如果尚未选择学院，你可能会看到 Select an academy first。',
+          '空内容流可能显示 Updates coming soon 或 No visible broadcasts are available in this stream yet。',
+          '当前成员端 Broadcast 是只读的。',
+          '没有点赞、评论、回复、表情、分享或成员发帖功能。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          'Broadcast 是当前正式对外产品名称。旧的 Newsfeed 说法已经过时。',
+          '内容由 AFL 创建，由应用展示。',
+          '如果内容请求失败，应用目前会回退到空列表，而不是显示独立报错状态。',
+          'Expo 中管理员端的创建界面仍处于分阶段状态，不应被当作当前主流程。'
         ],
         join_link: '加入学院',
         alerts_link: '系统提醒'
@@ -1051,6 +1732,62 @@ export default {
         student_link: '在应用中阅读 Broadcast',
         support_desc: '如果你对 AFL 中的 Broadcast 工具、发布/Recall/Repost，或 entitlement 有问题，请前往 AFL 版块。',
         support_button: '打开 AFL 版块'
+      },
+      timetable: {
+        badge: '工具',
+        paid_badge: '付费工具',
+        title: '建立每周重复课表',
+        intro: '当你想一次创建课程模板，并在一段时间内把它们发布到日历时，请使用 Timetable。',
+        use_title: '适合在这些情况下使用',
+        use_items: [
+          '你每周都会开相同的课程',
+          '你想往更远的时间计划，而不是手动反复创建每节课',
+          '你想在课程准备好时再把它们发布到日历中'
+        ],
+        steps_title: '步骤',
+        steps_items: [
+          '打开 Timetable。',
+          '选择你想要的星期几。',
+          '按 Create Lesson。',
+          '像在普通 Schedule 页面上一样填写课程表单。',
+          '为这个重复模板设置开始日期和结束日期。',
+          '保存模板。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '模板在被发布之前，不会变成真实的日历课程。',
+          '你可以通过设置未来结束日期来放心做长期计划。',
+          '创建后，你可以回到星期页面并在那里编辑模板。'
+        ],
+        publish_title: '发布',
+        publish_body_1: '未发布的课程会先出现在 Schedule 页面中。管理员可以在它们准备好预约时再发布。',
+        publish_body_2: '成员仍然可以把未发布课程看作未来计划，但他们还不能预约。',
+        mistake_title: '常见错误',
+        mistake_body: '如果重复课程碰上节假日，通常不需要重建 timetable。只要选择不发布那一节课即可。',
+        activate_link: '启用工具与 Premium'
+      },
+      pause: {
+        badge: '工具',
+        paid_badge: '付费工具',
+        title: '在需要时暂停有效会员卡',
+        intro: '当你需要暂时停止卡片时间，而不是让它按正常方式继续到期时，请使用 Pause Cards。',
+        modes_title: '两种暂停方式',
+        modes_items: [
+          '单独暂停：在该成员的资料页中暂停或取消暂停单张会员卡。',
+          '全学院暂停：馆主可以暂停整个学院范围内的会员卡。'
+        ],
+        know_title: '需要知道的事',
+        know_items: [
+          '被暂停的会员卡不能用于预约。',
+          '如果需要，可以把某些卡模板排除在全学院暂停之外。',
+          '如果某位成员在全学院暂停前就已经被单独暂停，那么全学院暂停结束后，他们仍然会保持暂停。'
+        ],
+        common_title: '最常见用途',
+        common_body: '馆主经常在想保护成员时间、又不想一张一张手动延长到期日时使用这个工具。',
+        next_title: '下一步',
+        back_tools: '返回工具总览',
+        activate_link: '启用工具与 Premium',
+        back_cards: '返回会员卡'
       }
     },
     portal: {

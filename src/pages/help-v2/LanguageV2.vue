@@ -1,17 +1,23 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Settings</span>
-      <h1>Change app language</h1>
+      <span class="badge">{{ t('help_v2.settings.language.badge') }}</span>
+      <h1>{{ t('help_v2.settings.language.title') }}</h1>
       <p class="muted">
-        Use the language setting when you want the app to display in a different supported language.
+        {{ t('help_v2.settings.language.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.settings.language.know_title') }}</h2>
       <p class="muted">
-        If a screen feels hard to understand, checking the language setting is one of the fastest fixes.
+        {{ t('help_v2.settings.language.know_body') }}
       </p>
     </section>
   </section>

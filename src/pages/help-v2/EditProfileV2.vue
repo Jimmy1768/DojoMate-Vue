@@ -1,18 +1,23 @@
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
+</script>
+
 <template>
   <section class="v2-page stack">
     <div class="stack tight">
-      <span class="badge">Profile</span>
-      <h1>Edit your profile</h1>
+      <span class="badge">{{ t('help_v2.profile.edit.badge') }}</span>
+      <h1>{{ t('help_v2.profile.edit.title') }}</h1>
       <p class="muted">
-        Use this page when your personal profile information needs to be updated.
+        {{ t('help_v2.profile.edit.intro') }}
       </p>
     </div>
 
     <section class="card stack tight">
-      <h2>What to know</h2>
+      <h2>{{ t('help_v2.profile.edit.know_title') }}</h2>
       <ul>
-        <li>Some users may see role-related context depending on how the account is used.</li>
-        <li>After making changes, submit the form so the updates are saved.</li>
+        <li v-for="item in tm('help_v2.profile.edit.know_items')" :key="item">{{ item }}</li>
       </ul>
     </section>
   </section>
