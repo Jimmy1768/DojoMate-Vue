@@ -137,7 +137,7 @@ export default {
       jobs_cards_title: 'Set up cards and members',
       jobs_cards_body: 'Bring people into the academy, issue cards, and let booking deduct lessons correctly.',
       portal_title: 'Portal workflows',
-      portal_body: 'Some workflows happen in the Affiliate Portal inside Source Combatives AFL rather than inside the day-to-day DojoMate app screens.',
+      portal_body: 'Some workflows happen in the Source Combatives Affiliate Portal rather than inside the day-to-day DojoMate app screens.',
       portal_link: 'Open Affiliate Portal Guide',
       paid_title: 'Paid features',
       paid_body: 'Timetable, Pause Cards, Staff Access, and Analytics are entitlement-gated. Use the Features page guide if you need to activate tools or start Premium.',
@@ -1187,7 +1187,7 @@ export default {
         know_title: 'What to know',
         know_items: [
           'Broadcast is the current shipped product term. Older Newsfeed wording is stale.',
-          'AFL creates the content, and the app displays it.',
+          'Affiliate creates the content, and the app displays it.',
           'If the feed request fails, the app currently falls back to an empty list instead of showing a separate error state.',
           'The admin-side create screen in Expo is still staged and should not be treated as the main live workflow.'
         ],
@@ -1209,7 +1209,7 @@ export default {
         pause_body: 'Use Pause Cards when you need to stop card time temporarily.',
         pause_link: 'Open Pause Cards',
         broadcast_title: 'Send member broadcasts',
-        broadcast_body: 'Use Broadcast when you want to publish one-way updates or training posts to members from AFL.',
+        broadcast_body: 'Use Broadcast when you want to publish one-way updates or training posts to members from the Affiliate Portal.',
         broadcast_link: 'Open Broadcast',
         know_title: 'What to know',
         know_items: [
@@ -1224,9 +1224,9 @@ export default {
         badge: 'Tools',
         paid_badge: 'Paid Tool',
         title: 'Activate tools and Premium',
-        intro: 'Use the Features page in AFL to review tool groups, start a free trial, purchase a package, and manage active package tools for your academy.',
+        intro: 'Use the Features page in the Affiliate Portal to review tool groups, start a free trial, purchase a package, and manage active package tools for your academy.',
         where_title: 'Where to go',
-        where_body: 'Open AFL System → Features. This is the current Rails-managed entry point for tool activation, package status, and trial state.',
+        where_body: 'Open Features in the Affiliate Portal. This is the current Rails-managed entry point for tool activation, package status, and trial state.',
         organized_title: 'How the page is organized',
         organized_items: [
           'Tools are available individually.',
@@ -1264,23 +1264,23 @@ export default {
         guides_title: 'Paid guides',
         staff_access: 'Staff Access',
         analytics: 'Analytics',
-        support_desc: 'Use the AFL portal board on Source Combatives for questions about Features, subscriptions, trial status, or other AFL-specific web flows.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board on Source Combatives for questions about Features, subscriptions, trial status, or other Affiliate Portal web flows.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       broadcast: {
         badge: 'Tools',
         paid_badge: 'Paid Tool',
         title: 'Send one-way broadcasts to members',
-        intro: 'Use Broadcasts in AFL when you want to publish academy updates or training posts to members. This is a one-way publishing tool, not chat, not replies, and not a social feed.',
+        intro: 'Use Broadcasts in the Affiliate Portal when you want to publish academy updates or training posts to members. This is a one-way publishing tool, not chat, not replies, and not a social feed.',
         where_title: 'Where it lives',
         where_items: [
-          'Open Broadcasts from the AFL system navigation.',
-          'In current AFL behavior, Broadcast is effectively owner-only.',
+          'Open Broadcasts from the Affiliate Portal navigation.',
+          'In the current Affiliate Portal flow, Broadcast is effectively owner-only.',
           'Broadcast is presented as a Pro tool in the Features page.'
         ],
         flow_title: 'How the authoring flow works',
         flow_steps: [
-          'Open Broadcasts in AFL.',
+          'Open Broadcasts in the Affiliate Portal.',
           'Choose the stream tab you want to post into.',
           'Write the message body.',
           'Add images by pasted URL or by file upload.',
@@ -1310,12 +1310,12 @@ export default {
           'Use Broadcast everywhere in user-facing copy. Older Newsfeed wording is stale.',
           'Broadcast is entitlement-gated and is not available by default.',
           'Images can be added either by pasted URLs or by file upload.',
-          'Broadcasts are authored in AFL and then consumed in the app.'
+          'Broadcasts are authored in the Affiliate Portal and then consumed in the app.'
         ],
         features_link: 'Features',
         student_link: 'Read Broadcast in the App',
-        support_desc: 'Use the AFL portal board for Broadcast tool questions, publish/recall/repost problems, or entitlement issues in AFL.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board for Broadcast tool questions, publish/recall/repost problems, or entitlement issues in the Affiliate Portal.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       timetable: {
         badge: 'Tools',
@@ -1377,35 +1377,35 @@ export default {
     portal: {
       overview: {
         badge: 'Portal',
-        title: 'Use the Affiliate Portal in AFL',
-        intro: 'The Affiliate Portal is a web surface in Source Combatives AFL. Use it for owner workflows that are heavier than the normal day-to-day app screens, especially registration, moderation, ranks, cards, reports, and package activation.',
-        workflows_title: 'Main AFL workflows',
+        title: 'Use the Affiliate Portal',
+        intro: 'The Affiliate Portal is the Source Combatives web surface for owner workflows that are heavier than the normal day-to-day app screens, especially registration, moderation, ranks, cards, reports, and package activation.',
+        workflows_title: 'Main Affiliate Portal workflows',
         register_title: 'Register and onboard',
         register_body: 'Use the registration wizard to create adult and parent accounts, optionally add children, and resume interrupted onboarding later.',
         members_title: 'Moderate member status',
         members_body: 'Review pending, accepted, rejected, and banned users, attach an existing account by email, or resume a parent onboarding flow.',
         ranks_title: 'Manage rank programs',
         ranks_body: 'Set up rank programs, enroll members by program, and confirm rank changes through the current review flow.',
-        cards_title: 'Manage cards in AFL',
+        cards_title: 'Manage cards in the Affiliate Portal',
         cards_body: 'Use the Templates, Assign, Active, and History views for card setup, issuing, active-card work, pause actions, and audit review.',
         reports_title: 'Review reports and tools',
         reports_body: 'Reports stay lighter because they are mostly read-only. Features is where package and trial status are managed.',
         know_title: 'What to know',
         know_items: [
-          'Most AFL pages are owner-only in practice.',
+          'Most Affiliate Portal pages are owner-only in practice.',
           'Monthly Reports is the main exception: non-owner staff can see it if they were granted report access.',
-          'AFL changes often feed the app directly, including member status, cards, rank data, and tool activation.'
+          'Changes made in the Affiliate Portal often feed the app directly, including member status, cards, rank data, and tool activation.'
         ],
-        support_desc: 'Use the AFL portal board on Source Combatives for Affiliate Portal questions, portal setup problems, and other AFL-specific web workflows.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board on Source Combatives for Affiliate Portal questions, portal setup problems, and other Affiliate Portal web workflows.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       register: {
         badge: 'Portal',
         title: 'Register in the Affiliate Portal',
-        intro: 'Use Register in AFL when you want to create a new academy member through the portal. This is a multi-step wizard, not a one-screen form.',
+        intro: 'Use Register in the Affiliate Portal when you want to create a new academy member through the portal. This is a multi-step wizard, not a one-screen form.',
         flow_title: 'How the flow works',
         flow_steps: [
-          'Open Register in AFL and fill the parent or adult details first.',
+          'Open Register in the Affiliate Portal and fill the parent or adult details first.',
           'If the person is registering as a parent, add child accounts in the child step.',
           'Review the summary and use Confirm & Create to finish.',
           'After creation, use Register Another or Go to Members if you need to continue working.'
@@ -1422,13 +1422,13 @@ export default {
         next_title: 'Next step',
         members_link: 'Members',
         cards_link: 'Cards',
-        support_desc: 'Use the AFL portal board for registration wizard questions, pending-parent recovery, or other onboarding problems in AFL.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board for registration wizard questions, pending-parent recovery, or other onboarding problems in the Affiliate Portal.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       members: {
         badge: 'Portal',
         title: 'Manage portal members',
-        intro: 'Use Members in AFL to moderate academy member status. This area is status-driven, not just a flat roster.',
+        intro: 'Use Members in the Affiliate Portal to moderate academy member status. This area is status-driven, not just a flat roster.',
         jobs_title: 'Main jobs',
         jobs_items: [
           'Review Pending Users, Recently Accepted, parent accounts, adult members, rejected users, and banned users.',
@@ -1448,13 +1448,13 @@ export default {
         next_title: 'Next step',
         register_link: 'Register',
         cards_link: 'Cards',
-        support_desc: 'Use the AFL portal board for member-status questions, parent/dependent moderation issues, or problems attaching an existing account by email.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board for member-status questions, parent/dependent moderation issues, or problems attaching an existing account by email.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       ranks: {
         badge: 'Portal',
         title: 'Manage ranks and programs',
-        intro: 'Use Ranks in AFL to configure academy rank programs and update member progression. This is now a multi-program workflow, not a single global rank setup.',
+        intro: 'Use Ranks in the Affiliate Portal to configure academy rank programs and update member progression. This is now a multi-program workflow, not a single global rank setup.',
         jobs_title: 'Main jobs',
         jobs_items: [
           'Create the owner member profile first if it does not already exist.',
@@ -1474,13 +1474,13 @@ export default {
         next_title: 'Next step',
         members_link: 'Members',
         analytics_link: 'Analytics',
-        support_desc: 'Use the AFL portal board for rank-program setup questions, roster enrollment issues, or review-modal problems in Ranks.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board for rank-program setup questions, roster enrollment issues, or review-modal problems in Ranks.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       cards: {
         badge: 'Portal',
         title: 'Use portal cards',
-        intro: 'Use Cards in AFL when you need the full web card workflow: templates, assignment, active-card management, pause controls, and history.',
+        intro: 'Use Cards in the Affiliate Portal when you need the full web card workflow: templates, assignment, active-card management, pause controls, and history.',
         areas_title: 'Main card areas',
         areas_items: [
           'Templates for creating, editing, and deleting card templates.',
@@ -1502,19 +1502,19 @@ export default {
           'If the academy is paused, individual card management is locked.',
           'Pause and unpause controls require the paid Pause tool.',
           'Deleting a card has different behaviors for Expire and Cancel, and cancel may require a reason.',
-          'Cards issued in AFL are the live cards used by the app for bookings, attendance/session deduction, and member card state.'
+          'Cards issued in the Affiliate Portal are the live cards used by the app for bookings, attendance/session deduction, and member card state.'
         ],
         next_title: 'Next step',
         members_link: 'Members',
         pause_link: 'Pause Cards',
         app_cards_link: 'Cards in the App',
-        support_desc: 'Use the AFL portal board for template, assign, active-card, pause, or history questions in the AFL Cards section.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board for template, assign, active-card, pause, or history questions in the Affiliate Portal Cards section.',
+        support_button: 'Open the Affiliate Portal Board'
       },
       reports: {
         badge: 'Portal',
         title: 'Review portal reports',
-        intro: 'Use Reports in AFL to review monthly financial reports that were already generated by the system. This page is read-only.',
+        intro: 'Use Reports in the Affiliate Portal to review monthly financial reports that were already generated by the system. This page is read-only.',
         flow_title: 'How it works',
         flow_items: [
           'If you can access more than one academy, choose the academy first.',
@@ -1529,12 +1529,12 @@ export default {
         ],
         know_title: 'What to know',
         know_items: [
-          'AFL is not calculating reports live in this screen.',
+          'The Affiliate Portal is not calculating reports live in this screen.',
           'The report data comes from the wider analytics and system pipeline.',
           'If you see a locked state, go to Features.'
         ],
-        support_desc: 'Use the AFL portal board for report-access problems, locked Analytics states, or questions about AFL monthly reports.',
-        support_button: 'Open the AFL Portal Board'
+        support_desc: 'Use the Affiliate Portal board for report-access problems, locked Analytics states, or questions about Affiliate Portal monthly reports.',
+        support_button: 'Open the Affiliate Portal Board'
       }
     }
   }

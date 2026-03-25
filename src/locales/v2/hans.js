@@ -17,7 +17,7 @@ export default {
         student: '学员',
         account_profile: '账号与资料',
         business: '业务',
-        portal: 'Portal',
+        portal: '入口网站',
         schedule: '课程安排',
         cards: '会员卡',
         members: '成员',
@@ -35,7 +35,7 @@ export default {
         memberships: '管理会员资格',
         booking: '预约课程',
         system_alerts: '系统提醒',
-        broadcast: 'Broadcast',
+        broadcast: '公告广播',
         attendance_records: '出勤记录',
         sign_in: '登录',
         create_account: '创建账号',
@@ -54,12 +54,12 @@ export default {
         choose_who_can_teach: '选择谁可以授课',
         choose_who_can_manage: '选择谁可以管理',
         track_pay_and_performance: '追踪薪酬与表现',
-        affiliate_portal: 'Affiliate Portal',
-        portal_register: 'Portal 注册',
-        portal_members: 'Portal 成员',
-        portal_ranks: 'Portal 段位',
-        portal_cards: 'Portal 会员卡',
-        portal_reports: 'Portal 报表',
+        affiliate_portal: 'Affiliate 入口网站',
+        portal_register: '入口网站注册',
+        portal_members: '入口网站成员',
+        portal_ranks: '入口网站段位',
+        portal_cards: '入口网站会员卡',
+        portal_reports: '入口网站报表',
         schedule_overview: '课程总览',
         create_a_lesson: '创建课程',
         edit_or_cancel_a_lesson: '编辑或取消课程',
@@ -78,8 +78,8 @@ export default {
         review_applications: '审核申请',
         reject_or_ban_members: '拒绝或封禁成员',
         tools_overview: '工具总览',
-        activate_tools_and_premium: '启用工具与 Premium',
-        timetable: 'Timetable',
+        activate_tools_and_premium: '启用工具与高级方案',
+        timetable: '时间表',
         pause_cards: '暂停会员卡'
       }
     },
@@ -105,7 +105,7 @@ export default {
       members_body: '把人带进学院，审核申请，并处理状态变化。',
       members_link: '打开成员总览',
       tools_title: '使用付费工具',
-      tools_body: '在核心流程稳定后再加入重复排课、暂停会员卡等工具，并在需要时通过 Features 页面启用 Premium。',
+      tools_body: '在核心流程稳定后再加入重复排课、暂停会员卡等工具，并在需要时通过功能页面启用高级方案。',
       tools_link: '打开工具总览',
       difference_title: 'v2 有什么不同',
       difference_body: 'v2 按照“人”和“要完成的任务”来组织，因此更容易判断下一步该做什么。',
@@ -130,18 +130,18 @@ export default {
       jobs_title: '主要任务',
       jobs_team_title: '设置你的团队',
       jobs_team_body: '决定谁负责授课、谁可以管理学院，以及薪酬工具如何配合使用。',
-      jobs_team_link: '打开 Business',
+      jobs_team_link: '打开业务',
       jobs_schedule_title: '运行课程与预约',
       jobs_schedule_body: '创建课程、处理变更，并在需要时协助预约。',
       jobs_schedule_link: '打开 Schedule',
       jobs_cards_title: '设置会员卡与成员',
       jobs_cards_body: '把人带进学院、发卡，并让预约正确扣减课次。',
-      portal_title: 'Portal 工作流',
-      portal_body: '有些流程发生在 Source Combatives AFL 的 Affiliate Portal 中，而不是日常 DojoMate 应用界面里。',
-      portal_link: '打开 Affiliate Portal 指南',
+      portal_title: '入口网站工作流',
+      portal_body: '有些流程发生在 Source Combatives Affiliate Portal，而不是日常 DojoMate 应用界面里。',
+      portal_link: '打开 Affiliate 入口网站指南',
       paid_title: '付费功能',
-      paid_body: 'Timetable、Pause Cards、Staff Access 和 Analytics 都受 entitlement 控制。如果你需要启用工具或开始 Premium，请查看 Features 页面指南。',
-      paid_link: '启用工具与 Premium'
+      paid_body: '时间表、暂停会员卡、员工访问和分析都受权限控制。如果你需要启用工具或开始高级方案，请查看功能页面指南。',
+      paid_link: '启用工具与高级方案'
     },
     owner_setup: {
       getting_started: {
@@ -156,7 +156,7 @@ export default {
           '向活跃成员发卡。',
           '设置讲师和员工访问权限。',
           '创建第一节课程。',
-          '准备好之后再添加付费工具。Affiliate Portal 提供 90 天免费 Premium 试用，所有工具都会解锁。'
+          '准备好之后再添加付费工具。Affiliate 入口网站提供 90 天免费高级方案试用，所有工具都会解锁。'
         ],
         why_title: '为什么这个顺序有帮助',
         why_items: [
@@ -259,7 +259,7 @@ export default {
       members_body: '审核申请、直接注册成员，并发放会员卡。',
       delegated_title: '使用委派权限',
       delegated_body: '如果馆主已经为你启用管理员权限，你的日常任务可能包括课程、成员、会员卡，有时还包括工具。',
-      delegated_link: '查看 Staff Access',
+      delegated_link: '查看员工访问',
       know_title: '需要知道的事',
       know_items: [
         '大多数管理员主题都与馆主流程重叠，因此你不需要一棵完全独立的 wiki 树。',
@@ -278,14 +278,14 @@ export default {
         cards: [
           {
             title: '选择谁可以授课',
-            body: '使用 Instructors 决定哪些人可以被安排到课程中。',
-            cta: '打开 Instructors 指南',
+            body: '使用讲师设置决定哪些人可以被安排到课程中。',
+            cta: '打开讲师设置指南',
             link: '/help-v2/business/instructors'
           },
           {
             title: '选择谁可以管理学院',
-            body: '使用 Staff Access 授予或更新管理员访问权限。',
-            cta: '打开 Staff Access 指南',
+            body: '使用员工访问授予或更新管理员访问权限。',
+            cta: '打开员工访问指南',
             link: '/help-v2/business/staff-access',
             paid: true
           },
@@ -301,7 +301,7 @@ export default {
         know_items: [
           '这些 Business 页面处理的是不同工作，因此最好先选择与你目标最匹配的页面。',
           '如果你正在设置一所新学院，先从决定谁来授课开始。',
-          '如果你不确定从哪里开始，团队设置的最佳第一步是 Instructors，然后是 Staff Access，最后是 Analytics。'
+          '如果你不确定从哪里开始，团队设置的最佳第一步是讲师设置，然后是员工访问，最后是 Analytics。'
         ],
         compare_link: '比较 Business 页面',
         next_title: '下一步',
@@ -311,30 +311,30 @@ export default {
       compare: {
         badge: 'Business',
         paid_badge: '付费',
-        title: 'Instructors、Staff Access 和 Analytics',
+        title: '讲师设置、员工访问和 Analytics',
         intro: '这三个 Business 页面支持不同的工作。当你不确定哪一个最适合当前任务时，就使用这个页面。',
         pick_title: '按工作选择页面',
         cards: [
           {
-            title: 'Instructors',
+            title: '讲师设置',
             body: '当你需要决定谁可以授课时，请使用这个页面。',
             items: [
               '把某人加入员工列表',
               '开启讲师状态',
               '为排课准备教学团队'
             ],
-            cta: '打开 Instructors',
+            cta: '打开讲师设置',
             link: '/help-v2/business/instructors'
           },
           {
-            title: 'Staff Access',
+            title: '员工访问',
             body: '当某人需要帮助管理学院时，请使用这个页面。',
             items: [
               '把成员提升为管理员',
               '查看访问范围',
               '之后移除管理员权限'
             ],
-            cta: '打开 Staff Access',
+            cta: '打开员工访问',
             link: '/help-v2/business/staff-access',
             paid: true
           },
@@ -358,15 +358,15 @@ export default {
           '如果某人既要授课又要管理，你可能需要在多个 Business 页面中设置他。'
         ],
         start_title: '如果你还在判断，从这里开始',
-        start_body: '如果你的问题是“这个人能授课吗？”，先看 Instructors。若问题是“这个人能管理学院吗？”，去 Staff Access。若问题是“我去哪里查看薪酬或报表？”，去 Analytics。',
-        instructors_link: 'Instructors',
-        staff_access_link: 'Staff Access',
+        start_body: '如果你的问题是“这个人能授课吗？”，先看讲师设置。若问题是“这个人能管理学院吗？”，去员工访问。若问题是“我去哪里查看薪酬或报表？”，去 Analytics。',
+        instructors_link: '讲师设置',
+        staff_access_link: '员工访问',
         analytics_link: 'Analytics'
       },
       instructors: {
         badge: 'Business',
         title: '选择谁可以授课',
-        intro: '使用 Business → Instructors 决定哪些人可以被安排到课程中。',
+        intro: '使用 Business → 讲师设置决定哪些人可以被安排到课程中。',
         before_title: '开始前',
         before_items: [
           '在你创建课程之前，至少需要一名讲师。',
@@ -375,7 +375,7 @@ export default {
         ],
         steps_title: '步骤',
         steps_items: [
-          '打开 Business → Instructors。',
+          '打开 Business → 讲师设置。',
           '点击 Choose Member。',
           '选择你想添加的人。',
           '点击 Add to Staff。',
@@ -393,13 +393,13 @@ export default {
         next_title: '下一步',
         next_body: '在教学团队设置好之后，下一个常见任务就是决定谁还应该拥有管理员权限。',
         back_link: '返回 Business 总览',
-        next_link: '前往 Staff Access'
+        next_link: '前往员工访问'
       },
       staff_access: {
         badge: 'Business',
         paid_badge: '付费工具',
         title: '选择谁可以管理学院',
-        intro: '使用 Business → Permissions 为团队授予或更新管理员访问权限。',
+        intro: '使用 Business → 权限设置为团队授予或更新管理员访问权限。',
         use_title: '在以下情况使用这个页面',
         use_items: [
           '某人需要帮助管理课程、成员、会员卡或 timetable 工作',
@@ -408,7 +408,7 @@ export default {
         ],
         steps_title: '步骤',
         steps_items: [
-          '打开 Business → Permissions。',
+          '打开 Business → 权限设置。',
           '找到你想更新的人。',
           '如果他们显示为 Member，点击该行并按 Confirm，使其成为管理员。',
           '再次点击这个管理员来查看访问设置。',
@@ -417,18 +417,18 @@ export default {
         know_title: '需要知道的事',
         know_items: [
           '两个徽章分别是 Member 和 Admin。',
-          'Permissions 控制的是管理员访问。它并不决定谁可以授课。',
-          '当前访问区域包括 Schedule、Members、Cards 和 Timetable。',
+          '权限设置控制的是管理员访问。它并不决定谁可以授课。',
+          '当前访问区域包括 Schedule、成员、Cards 和 Timetable。',
           '这个功能受 entitlement 控制。如果工具未启用，委派给员工的权限不会生效。'
         ],
         mistake_title: '常见错误',
-        mistake_body: '授予某人教学职责和授予某人管理员权限是两个独立步骤。教学角色用 Instructors，管理员角色用 Permissions。',
+        mistake_body: '授予某人教学职责和授予某人管理员权限是两个独立步骤。教学角色用讲师设置，管理员角色用权限设置。',
         compare_link: '比较 Business 页面',
         remove_title: '移除管理员权限',
         remove_body: '如果某人不再需要管理学院，使用 Remove Admin 把他们恢复为 Member。',
         next_title: '下一步',
         next_body: '团队角色设置完成后，下一个常见任务是到 Analytics 中查看薪酬和报表工具。',
-        back_link: '返回 Instructors',
+        back_link: '返回讲师设置',
         activate_link: '启用工具与 Premium',
         compare_pages_link: '比较页面',
         next_link: '前往 Analytics'
@@ -462,9 +462,9 @@ export default {
         know_title: '需要知道的事',
         know_items: [
           '在 Analytics 中修改薪酬并不会让某人成为讲师。',
-          '如果某人需要授课，请在 Instructors 中添加该角色。',
-          '如果某人需要管理学院，请在 Permissions 中授予该权限。',
-          '某些 analytics 界面可能会被完全锁定，而另一些仍然可见，但会显示升级提示。'
+          '如果某人需要授课，请在讲师设置中添加该角色。',
+          '如果某人需要管理学院，请在权限设置中授予该权限。',
+          '某些 Analytics 界面可能会被完全锁定，而另一些仍然可见，但会显示升级提示。'
         ],
         mistake_title: '常见错误',
         mistake_body: 'Analytics 不是决定授课角色或管理员角色的地方。它是查看业务数据和管理薪酬相关工具的地方。',
@@ -472,8 +472,8 @@ export default {
         next_title: '下一步',
         next_body: '如果你还在设置团队，先完成授课角色和管理员角色设置。如果团队已经就绪，下一个常见任务就是创建课程，并让预约承担日常工作。',
         activate_link: '启用工具与 Premium',
-        instructors_link: 'Instructors',
-        staff_access_link: 'Staff Access',
+        instructors_link: '讲师设置',
+        staff_access_link: '员工访问',
         next_link: '前往 Schedule'
       }
     },
@@ -511,7 +511,7 @@ export default {
         ],
         before_title: '开始前',
         before_body: '确保你的教学团队已经设置好，这样在创建课程时正确的讲师才会可用。',
-        before_link: '查看 Instructors'
+        before_link: '查看讲师设置'
       },
       create: {
         badge: 'Schedule',
@@ -583,7 +583,7 @@ export default {
         steps_items: [
           '打开 Schedule 并选择课程日期。',
           '打开课程，然后进入 Booking。',
-          '点击 Add Members。',
+          '点击添加成员。',
           '选择你想预约的成员。',
           '从他们可用的有效会员卡中选择一张。',
           '按 Confirm。'
@@ -611,7 +611,7 @@ export default {
     },
     cards: {
       overview: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '使用会员卡支持预约',
         intro: '主卡片流程很简单：创建卡、发卡，然后让预约自动扣减课次。',
         start_title: '先从你要完成的工作开始',
@@ -640,7 +640,7 @@ export default {
           '模板在前。卡模板存在之前，你不能发卡。',
           '会员卡的主要作用是支持预约和自动扣课。',
           '当卡用完或过期时，在发下一张卡前先删除当前有效卡。',
-          '偶尔遇到特殊情况时，你可以手动调整有效卡。最常见的用法是延长到期时间，尤其是在你没有使用 Pause Cards 的情况下。'
+          '偶尔遇到特殊情况时，你可以手动调整有效卡。最常见的用法是延长到期时间，尤其是在你没有使用会员卡暂停的情况下。'
         ],
         support_title: '支持性工作流',
         support_templates_title: '编辑或停用模板',
@@ -655,7 +655,7 @@ export default {
         records_link: '卡片记录'
       },
       flow: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '会员卡如何与预约协作',
         intro: '会员卡主要用于预约课程。学员预约后，课次会自动扣减，系统也会根据真实预约活动进行计算。',
         normal_title: '正常流程',
@@ -678,9 +678,9 @@ export default {
         issue_link: '发卡'
       },
       create_template: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '创建会员卡模板',
-        intro: '使用 Cards → Create Card Template 创建你的学院会发放的会员卡类型。',
+        intro: '使用会员卡 → 创建会员卡模板创建你的学院会发放的会员卡类型。',
         before_title: '开始前',
         before_items: [
           '先决定这张卡是用于团课还是私教课。',
@@ -690,7 +690,7 @@ export default {
         ],
         steps_title: '步骤',
         steps_items: [
-          '打开 Cards → Create Card Template。',
+          '打开会员卡 → 创建会员卡模板。',
           '输入成员和管理员都能轻松识别的卡名称。',
           '输入费用和可选描述。',
           '设置总课次数和到期天数。',
@@ -709,16 +709,16 @@ export default {
         mistake_body: '如果预约时这张卡没有出现，请检查卡类型是否与课程类型匹配。这是有意设计的，这样团课卡不会误用于私教课，私教卡也不会误用于团课。',
         next_title: '下一步',
         next_body: '模板创建好之后，下一个常见任务就是把这张卡发给一位或多位成员。',
-        back_link: '返回 Cards 总览',
+        back_link: '返回会员卡总览',
         next_link: '前往发卡'
       },
       issue: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '发放会员卡',
-        intro: '使用 Cards → Assign Cards 为一位或多位成员发放一张有效卡。',
+        intro: '使用会员卡 → 发放会员卡为一位或多位成员发放一张有效卡。',
         steps_title: '步骤',
         steps_items: [
-          '打开 Cards → Assign Cards。',
+          '打开会员卡 → 发放会员卡。',
           '选择你要发放的卡模板。',
           '选择一位或多位成员。',
           '检查已选成员。',
@@ -738,7 +738,7 @@ export default {
         next_link: '会员卡如何运作'
       },
       edit_template: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '编辑卡模板',
         intro: '当模板已经存在，而你需要更新它未来使用的设置时，请使用这个页面。',
         use_title: '在以下情况使用这个页面',
@@ -758,7 +758,7 @@ export default {
         next_link: '发卡'
       },
       delete_template: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '删除卡模板',
         intro: '当模板不应再存在，并且不再与有效卡绑定时，请使用这个页面。',
         before_title: '删除前',
@@ -770,10 +770,10 @@ export default {
         know_body: '删除模板是一种清理工作流。它应该用于某个会员产品真正退役时，而不是因为单个成员正在续费。',
         next_title: '下一步',
         back_link: '返回模板',
-        next_link: 'Cards 总览'
+        next_link: '会员卡总览'
       },
       delete_card: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '删除或取消一张有效卡',
         intro: '当一张有效卡已经走到生命周期末尾，或不应再对该成员保持有效时，请使用这个页面。',
         use_title: '最常见的用途',
@@ -791,10 +791,10 @@ export default {
         next_title: '下一步',
         next_body: '清理完成后，只有当成员确实继续新的有效会员资格时，才发下一张卡。',
         back_link: '返回发卡',
-        next_link: 'Cards 总览'
+        next_link: '会员卡总览'
       },
       records: {
-        badge: 'Cards',
+        badge: '会员卡',
         title: '查看卡片记录',
         intro: '当你需要历史、状态可见性，或跟进异常卡状态时，请使用卡片记录。',
         review_title: '你可以查看的内容',
@@ -816,33 +816,33 @@ export default {
     },
     members: {
       overview: {
-        badge: 'Members',
+        badge: '成员',
         title: '让人加入你的学院并管理成员状态',
-        intro: '使用 Members 区域处理系统中的“人”这一面：添加成员、审核申请，以及管理 accepted、rejected 或 banned 状态。',
+        intro: '使用成员区域处理系统中的“人”这一面：添加成员、审核申请，以及管理已接受、已拒绝或已封禁状态。',
         start_title: '先从你要完成的工作开始',
         cards: [
           {
             title: '直接添加成员',
             body: '当你想直接为某人注册，而不是等待正常申请流程时，使用 quick enrollment。',
-            cta: '打开 Quick Enrollment',
+            cta: '打开快速注册',
             link: '/help-v2/members/quick-enrollment'
           },
           {
             title: '审核学院申请',
             body: '接受或拒绝通过 Join Academy 提交申请的人。',
-            cta: '打开 Academy Applications',
+            cta: '打开学院申请',
             link: '/help-v2/members/applications'
           },
           {
             title: '拒绝或封禁某人',
             body: '当某位成员不应再继续保持活跃状态时，管理其状态变化。',
-            cta: '打开 Reject or Ban Members',
+            cta: '打开拒绝或封禁成员',
             link: '/help-v2/members/reject-or-ban'
           }
         ],
         know_title: '需要知道的事',
         know_items: [
-          'Quick enrollment 和 academy applications 是进入学院的两条不同路径。',
+          '快速注册和学院申请是进入学院的两条不同路径。',
           '为整个学院完成入驻需要时间，因此从长期看，最轻松的方式通常是让成员自己创建账号并自行添加你的学院。',
           '一旦成员处于活跃状态，下一步最常见的工作就是在 DojoMate 中发放会员卡。',
           '儿童账号可能需要额外审核步骤，尤其当涉及家长账号时。'
@@ -852,9 +852,9 @@ export default {
         compare_link: '比较两种成员流程'
       },
       quick: {
-        badge: 'Members',
+        badge: '成员',
         title: '直接添加成员',
-        intro: '当你想直接为某人注册，而不是等待正常的 Join Academy 申请流程时，请使用 quick enrollment。',
+        intro: '当你想直接为某人注册，而不是等待正常的 Join Academy 申请流程时，请使用快速注册。',
         when_title: '何时使用',
         when_items: [
           '你正在现场为某人办理入驻',
@@ -865,7 +865,7 @@ export default {
         ],
         path_title: '先选最轻松的路径',
         path_body_1: '如果你的学院正在增长，长期来看，最轻松的方式通常是让成员自己创建账号并自行添加你的学院。',
-        path_body_2: 'Quick enrollment 最适合那些需要额外帮助，或不太可能自己完成设置的人。',
+        path_body_2: '快速注册最适合那些需要额外帮助，或不太可能自己完成设置的人。',
         steps_title: '步骤',
         steps_items: [
           '打开 Affiliate Portal，并使用你的 DojoMate 邮箱和密码登录。',
@@ -877,7 +877,7 @@ export default {
         ],
         know_title: '需要知道的事',
         know_items: [
-          'Quick enrollment 会跳过正常的 pending 和 accepted 申请流程。',
+          '快速注册会跳过正常的待处理和已接受申请流程。',
           '这个流程对家长特别有用，因为你可以在同一次注册操作中创建多个儿童账号。',
           '创建账号时可以保存一个简单的临时密码。成员之后可以登录并修改它。',
           '有些成员可能永远不会自己登录，如果你在代管他们的账号，这也没有问题。',
@@ -885,41 +885,41 @@ export default {
           '如果这个人已经有 DojoMate 账号，请通过邮箱添加，而不是创建重复账号。'
         ],
         compare_title: '需要帮助决定是否使用这个流程？',
-        compare_link: '比较 Quick Enrollment 和 Applications',
+        compare_link: '比较快速注册和申请',
         next_title: '下一步',
         next_body: '当账号进入学院后，下一步最常见的工作就是发放会员卡。',
-        back_link: '返回 Members Overview',
-        next_link: '前往 Issue Cards'
+        back_link: '返回成员总览',
+        next_link: '前往发卡'
       },
       compare: {
-        badge: 'Members',
-        title: '在 Quick Enrollment 和 Applications 之间选择',
+        badge: '成员',
+        title: '在快速注册和申请之间选择',
         intro: '这两条流程都会把人带入学院，但它们适用于不同的场景。',
-        quick_title: '在这些情况下使用 Quick Enrollment',
+        quick_title: '在这些情况下使用快速注册',
         quick_items: [
           '你想自己创建账号',
           '这个人需要帮助完成设置',
           '这个人不擅长技术',
           '你正在为一位家长和多个儿童账号一起注册'
         ],
-        quick_link: '打开 Quick Enrollment',
-        apps_title: '在这些情况下使用 Applications',
+        quick_link: '打开快速注册',
+        apps_title: '在这些情况下使用申请',
         apps_items: [
           '你希望成员自己创建账号',
           '你希望学院在不由馆主手动创建每一个账号的情况下也能扩展',
           '成员可以自己完成 Join Academy 流程'
         ],
-        apps_link: '打开 Academy Applications',
+        apps_link: '打开学院申请',
         rule_title: '简单规则',
-        rule_body: '只要可能，就让成员自己创建账号。当他们需要额外帮助，或者你想直接处理注册时，再使用 Quick Enrollment。'
+        rule_body: '只要可能，就让成员自己创建账号。当他们需要额外帮助，或者你想直接处理注册时，再使用快速注册。'
       },
       applications: {
-        badge: 'Members',
+        badge: '成员',
         title: '审核学院申请',
         intro: '当有人通过 Join Academy 申请加入，而你需要接受或拒绝他们时，使用这个流程。',
         steps_title: '步骤',
         steps_items: [
-          '打开 Members → Add/Reject Members。',
+          '打开成员 → 添加 / 拒绝成员。',
           '查看待处理申请列表。',
           '在申请人上按 Accept 或 Reject。'
         ],
@@ -931,27 +931,27 @@ export default {
         ],
         why_title: '为什么使用 applications？',
         why_body: '当你希望成员自己创建账号并自行添加你的学院时，这是一条更适合长期使用的路径。',
-        compare_link: '比较 Applications 和 Quick Enrollment',
+        compare_link: '比较申请和快速注册',
         mistake_title: '常见错误',
         mistake_body: '如果儿童账号没有马上出现，要么是它们还没有被正确创建，要么列表没有刷新。让家长完成儿童设置，或刷新 app 视图。',
         next_title: '下一步',
         next_body: '当你接受某人进入学院后，下一步最常见的工作就是发放他们的会员卡。',
-        back_link: '返回 Members Overview',
-        next_link: '前往 Issue Cards'
+        back_link: '返回成员总览',
+        next_link: '前往发卡'
       },
       reject: {
-        badge: 'Members',
+        badge: '成员',
         title: '在需要时拒绝或封禁成员',
         intro: '当某人不应再继续作为学院活跃成员时，请使用这个流程。',
         reject_title: '拒绝如何运作',
         reject_items: [
-          '从 Members → Members List 打开该成员的资料。',
+          '从成员 → 成员列表打开该成员的资料。',
           '按 Reject 将他们从学院中移除。',
           '如果成员仍有有效卡，就必须先清理后才能拒绝。'
         ],
         ban_title: '封禁如何运作',
         ban_items: [
-          '被拒绝的成员会出现在 Members → Rejected List 中。',
+          '被拒绝的成员会出现在成员 → 已拒绝列表中。',
           '从那里你可以重新接受他们，或将他们封禁。',
           '被封禁的成员不能再通过 Join Academy 重新申请。'
         ],
@@ -961,13 +961,13 @@ export default {
           '如果你之后想撤销封禁，请前往 Banned List 并使用 Remove Ban。'
         ],
         next_title: '下一步',
-        back_link: '返回 Members Overview',
+        back_link: '返回成员总览',
         next_link: '查看 Cards 工作流'
       }
     },
     account: {
       sign_in: {
-        badge: 'Account',
+        badge: '账号',
         title: '登录你的账号',
         intro: '当你的账号已经存在，并且你想访问学院、预约、会员卡和记录时，请使用登录。',
         need_title: '你需要什么',
@@ -975,7 +975,7 @@ export default {
         trouble_title: '如果无法登录',
         trouble_items: [
           '检查邮箱和密码是否正确',
-          '必要时使用 Reset Password',
+          '需要时使用重置密码',
           '如果界面看起来不熟悉，检查语言选择器'
         ],
         next_title: '下一步',
@@ -983,7 +983,7 @@ export default {
         next_link: '重置密码'
       },
       create: {
-        badge: 'Account',
+        badge: '账号',
         title: '创建账号',
         intro: '在加入学院、预约课程或使用应用其余功能之前，请先创建账号。',
         path_title: '选择正确的路径',
@@ -998,7 +998,7 @@ export default {
         next_link: '加入学院'
       },
       reset: {
-        badge: 'Account',
+        badge: '账号',
         title: '重置密码',
         intro: '当你记不起密码，或当前密码已不再可用时，请使用这个流程。',
         how_title: '它如何运作',
@@ -1015,7 +1015,7 @@ export default {
         ]
       },
       troubleshooting: {
-        badge: 'Account',
+        badge: '账号',
         title: '账号故障排查',
         intro: '当常见的登录或注册问题阻止你进入账号时，请使用这个页面。',
         signin_title: '无法登录',
@@ -1032,24 +1032,24 @@ export default {
     },
     settings: {
       password: {
-        badge: 'Settings',
+        badge: '设置',
         title: '修改密码',
         intro: '当你仍然知道当前密码，并想在账号设置中更新它时，请使用这个页面。',
         know_title: '需要知道的事',
         know_items: [
           '这和重置密码不同。修改密码意味着你已经能进入账号。',
-          '如果你完全无法登录，请改用 Reset Password。'
+          '如果你完全无法登录，请改用重置密码。'
         ]
       },
       language: {
-        badge: 'Settings',
+        badge: '设置',
         title: '更改应用语言',
         intro: '当你希望应用以另一种受支持语言显示时，请使用语言设置。',
         know_title: '需要知道的事',
         know_body: '如果某个界面很难理解，检查语言设置往往是最快的修复方式之一。'
       },
       currency: {
-        badge: 'Settings',
+        badge: '设置',
         title: '选择货币显示方式',
         intro: '使用货币设置来控制应用中金额的显示方式。',
         know_title: '需要知道的事',
@@ -1059,9 +1059,9 @@ export default {
         ]
       },
       privacy: {
-        badge: 'Settings',
+        badge: '设置',
         title: '查看隐私设置',
-        intro: '使用隐私设置来理解并控制通知、营销、排行榜、公开资料、预约和 analytics 相关数据是如何被处理的。',
+        intro: '使用隐私设置来理解并控制通知、营销、排行榜、公开资料、预约和分析相关数据是如何被处理的。',
         main_title: '主要隐私区域',
         main_items: [
           '通知',
@@ -1069,22 +1069,22 @@ export default {
           '排行榜参与',
           '公开资料访问',
           '与预约相关的设置',
-          '出勤和汇总 analytics 数据'
+          '出勤和汇总分析数据'
         ],
-        progression_title: '与 progression 相关的控制',
+        progression_title: '与进度相关的控制',
         progression_items: [
           '排行榜参与和公开资料访问是分开的控制项。',
           '关闭排行榜参与会把账号排除在排名之外。',
           '关闭公开资料访问并不会自动把账号从所有允许的展示面移除。',
-          '营销控制与 progression、排行榜和公开资料控制是分开的。'
+          '营销控制与进度、排行榜和公开资料控制是分开的。'
         ],
         child_title: '儿童与受抚养账号',
-        child_body: '儿童和受抚养记录不会参与 progression、排行榜、公开 progression 资料以及个性化营销。',
+        child_body: '儿童和受抚养记录不会参与进度、排行榜、公开进度资料以及个性化营销。',
         know_title: '需要知道的事',
         know_body: '这个页面的重点是理解和管理隐私选择，而不仅仅是打开或关闭消息。'
       },
       delete: {
-        badge: 'Settings',
+        badge: '设置',
         title: '谨慎删除你的账号',
         intro: '删除账号是一个严肃操作。只有当你真的想关闭整个账号时才这样做，而不是仅仅离开一所学院。',
         before_title: '在你这样做之前',
@@ -1094,17 +1094,17 @@ export default {
           '考虑儿童账号以及相关儿童会员卡关系'
         ],
         know_title: '需要知道的事',
-        know_body: '删除整个账号和离开一项学院 membership 不是一回事。如果账号仍应保持活跃，请使用 membership 相关流程。'
+        know_body: '删除整个账号和离开一项学院会员资格不是一回事。如果账号仍应保持活跃，请使用会员资格相关流程。'
       },
       logout: {
-        badge: 'Settings',
+        badge: '设置',
         title: '退出登录',
         intro: '当你在当前设备上已经使用完应用，或想切换到另一个账号时，请使用退出登录。'
       }
     },
     profile: {
       edit: {
-        badge: 'Profile',
+        badge: '资料',
         title: '编辑你的资料',
         intro: '当你的个人资料信息需要更新时，请使用这个页面。',
         know_title: '需要知道的事',
@@ -1114,7 +1114,7 @@ export default {
         ]
       },
       children: {
-        badge: 'Profile',
+        badge: '资料',
         title: '管理儿童账号',
         intro: '当父母或监护人需要为儿童创建、编辑或管理账号时，请使用儿童账号功能。',
         do_title: '你可以做什么',
@@ -1124,12 +1124,12 @@ export default {
           '在合适的时候移除儿童账号'
         ],
         know_title: '需要知道的事',
-        know_body: '由父母管理的账号关系会影响其他流程，例如加入学院和 membership 处理。'
+        know_body: '由父母管理的账号关系会影响其他流程，例如加入学院和会员资格处理。'
       }
     },
     student: {
       join: {
-        badge: 'Student',
+        badge: '学员',
         title: '加入学院',
         intro: '当你想把账号连接到某个学院，并开始在应用中使用该学院时，请使用这个流程。',
         find_title: '寻找学院的方式',
@@ -1154,7 +1154,7 @@ export default {
         ],
         next_title: '下一步',
         back_link: '返回学员路径',
-        next_link: '管理 Memberships'
+        next_link: '管理会员资格'
       },
       home: {
         badge: '学员',
@@ -1215,7 +1215,7 @@ export default {
         know_title: '需要知道的事',
         know_items: [
           'Broadcast 是当前正式使用的产品名称，旧的 Newsfeed 说法已经过时。',
-          '内容由 AFL 创建，并由应用展示。',
+          '内容由 Affiliate 创建，并由应用展示。',
           '如果获取信息流失败，应用目前会回退为空列表，而不是显示单独的错误状态。',
           'Expo 中管理员侧的创建界面仍处于预备阶段，不应被视为当前主流程。'
         ],
@@ -1223,9 +1223,9 @@ export default {
         alerts_link: '系统提醒'
       },
       memberships: {
-        badge: 'Student',
-        title: '管理学院 memberships',
-        intro: '当你的账号属于多所学院，或你需要在不同学院 membership 之间切换时，请使用这个页面。',
+        badge: '学员',
+        title: '管理学院会员资格',
+        intro: '当你的账号属于多所学院，或你需要在不同学院会员资格之间切换时，请使用这个页面。',
         when_title: '什么时候重要',
         when_items: [
           '你属于多所学院',
@@ -1242,7 +1242,7 @@ export default {
         next_link: '预约课程'
       },
       booking: {
-        badge: 'Student',
+        badge: '学员',
         title: '预约课程',
         intro: '使用预约功能来选择课程、挑选可用卡片并确认你的名额。',
         steps_title: '步骤',
@@ -1260,24 +1260,24 @@ export default {
           '在规则仍然允许时，你也可以取消预约。'
         ],
         next_title: '下一步',
-        back_link: 'Memberships',
+        back_link: '会员资格',
         next_link: '出勤记录'
       },
       alerts: {
-        badge: 'Student',
+        badge: '学员',
         title: '阅读系统提醒',
-        intro: '系统提醒帮助你跟进学院更新，以及其他重要的账号或 membership 信息。',
+        intro: '系统提醒帮助你跟进学院更新，以及其他重要的账号或会员资格信息。',
         see_title: '你可能看到的内容',
         see_items: [
           '学院更新',
-          '与 membership 相关的通知',
+          '与会员资格相关的通知',
           '其他与你使用学院相关的系统生成提醒'
         ],
         know_title: '需要知道的事',
         know_body: '这是一种系统提醒界面，不是普通聊天或消息线程。请把它看作重要的账号和学院信息。'
       },
       attendance: {
-        badge: 'Student',
+        badge: '学员',
         title: '查看出勤记录',
         intro: '当你想查看训练历史，并确认某个日期范围内发生了什么时，请使用出勤记录。',
         help_title: '这个页面能帮助什么',
@@ -1399,15 +1399,15 @@ export default {
           '与预约相关的设置',
           '出勤和汇总分析数据'
         ],
-        progression_title: '与 progression 相关的控制',
+        progression_title: '与进度相关的控制',
         progression_items: [
           '排行榜参与和公开资料访问是两个独立控制项。',
           '关闭排行榜参与会将账号排除在排名之外。',
           '关闭公开资料访问，并不会自动把账号从所有允许显示的界面中移除。',
-          '营销控制与 progression、排行榜和公开资料控制是分开的。'
+          '营销控制与进度、排行榜和公开资料控制是分开的。'
         ],
         child_title: '儿童和受抚养账号',
-        child_body: '儿童和受抚养记录不会参与 progression、排行榜、公开 progression 资料或个性化营销。',
+        child_body: '儿童和受抚养记录不会参与进度、排行榜、公开进度资料或个性化营销。',
         know_title: '需要知道的事',
         know_body: '这个页面的重点是理解和管理隐私选择，而不仅仅是打开或关闭消息。'
       },
@@ -1476,8 +1476,8 @@ export default {
         change_password_link: '修改密码',
         child_accounts_link: '儿童账号',
         still_need_title: '还需要别的内容？',
-        still_need_body: '在学员路径进一步重建之前，少数更专业的主题可能仍然保留在 Help v1 中。',
-        still_need_link: '打开 Help v1'
+        still_need_body: '在学员路径进一步重建之前，少数更专业的主题可能仍然保留在帮助 v1 中。',
+        still_need_link: '打开帮助 v1'
       },
       join: {
         badge: '学员',
@@ -1602,7 +1602,7 @@ export default {
         know_title: '需要知道的事',
         know_items: [
           'Broadcast 是当前正式对外产品名称。旧的 Newsfeed 说法已经过时。',
-          '内容由 AFL 创建，由应用展示。',
+          '内容由 Affiliate 创建，由应用展示。',
           '如果内容请求失败，应用目前会回退到空列表，而不是显示独立报错状态。',
           'Expo 中管理员端的创建界面仍处于分阶段状态，不应被当作当前主流程。'
         ],
@@ -1621,49 +1621,49 @@ export default {
         timetable_body: '如果你希望每周课程重复生成，而不是一节一节重建，请使用 Timetable。',
         timetable_link: '打开 Timetable',
         pause_title: '暂停有效会员卡',
-        pause_body: '如果你需要临时停止会员卡时间，请使用 Pause Cards。',
-        pause_link: '打开 Pause Cards',
+        pause_body: '如果你需要临时停止会员卡时间，请使用会员卡暂停。',
+        pause_link: '打开会员卡暂停',
         broadcast_title: '向成员发送 Broadcast',
-        broadcast_body: '如果你想从 AFL 向成员发布单向更新或训练贴文，请使用 Broadcast。',
+        broadcast_body: '如果你想从 Affiliate Portal 向成员发布单向更新或训练贴文，请使用 Broadcast。',
         broadcast_link: '打开 Broadcast',
         know_title: '需要知道的事',
         know_items: [
-          '付费工具是在你已经使用的 Business、Schedule、Cards 和 Members 核心流程之上扩展出来的。',
-          '工具可以单独提供，也可以通过 Premium Package 获得。',
+          '付费工具是在你已经使用的 Business、Schedule、Cards 和成员核心流程之上扩展出来的。',
+          '工具可以单独提供，也可以通过高级方案套餐获得。',
           '学院馆主启用工具后，其他角色通常也可以使用它们。',
           '通常先学会基础流程，再叠加付费工具，会更容易。'
         ],
-        activate_link: '启用工具与 Premium'
+        activate_link: '启用工具与高级方案'
       },
       activate: {
         badge: '工具',
         paid_badge: '付费工具',
-        title: '启用工具与 Premium',
-        intro: '在 AFL 的 Features 页面查看工具分组、开始免费试用、购买套餐，并管理学院当前已启用的套餐工具。',
+        title: '启用工具与高级方案',
+        intro: '在 Affiliate 入口网站的功能页面查看工具分组、开始免费试用、购买套餐，并管理学院当前已启用的套餐工具。',
         where_title: '前往哪里',
-        where_body: '打开 AFL System → Features。这是当前由 Rails 管理的工具启用、套餐状态和试用状态入口。',
+        where_body: '在 Affiliate 入口网站打开功能。这是当前由 Rails 管理的工具启用、套餐状态和试用状态入口。',
         organized_title: '页面如何组织',
         organized_items: [
           '工具可以单独提供。',
-          'Features 页面会把工具归类到 Essential Tools、Advanced Tools 和套餐区域。',
-          'Premium Package 包含四个生产力工具。',
-          '当前界面也会显示 Pro Package。',
-          '首次使用者可以开始 90 天 Premium 试用。'
+          '功能页面会把工具归类到基础工具、高级工具和套餐区域。',
+          '高级方案套餐包含四个生产力工具。',
+          '当前界面也会显示专业方案套餐。',
+          '首次使用者可以开始 90 天高级方案试用。'
         ],
         groups_title: '当前工具分组',
         essential_title: 'Essential Tools',
         essential_items: ['Timetables', 'Pause Academy'],
         advanced_title: 'Advanced Tools',
-        advanced_items: ['Staff Permissions', 'Analytics'],
+        advanced_items: ['员工权限', 'Analytics'],
         packages_title: '套餐',
         packages_body: '当前界面包含 Premium Package 和 Pro Package。',
-        features_title: '你可能在 Features 页面看到的内容',
+        features_title: '你可能在功能页面看到的内容',
         features_items: [
           'Start Free Trial',
-          'Purchase Premium Package',
-          'Purchase Pro Package',
-          'Premium active!',
-          'Included in Premium',
+          '购买高级方案套餐',
+          '购买专业方案套餐',
+          '高级方案已启用',
+          '已包含在高级方案内',
           'Available in free trial',
           'Included in free trial',
           'Included in your package',
@@ -1674,28 +1674,28 @@ export default {
           '当工具未启用时，有些界面会被完全锁定。',
           '有些界面仍可打开，但付费操作会变成升级提示。',
           'Broadcast 是当前用户可见的名称，旧的 Newsfeed 说法已经过时。',
-          '套餐试用逻辑会处理重叠情况，因此 Pro 和 Premium 不会简单地互相重置。'
+          '套餐试用逻辑会处理重叠情况，因此专业方案和高级方案不会简单地互相重置。'
         ],
         guides_title: '付费指南',
-        staff_access: 'Staff Access',
+        staff_access: '员工访问',
         analytics: 'Analytics',
-        support_desc: '如果你对 Features、订阅、试用状态或其他 AFL 专属网页流程有问题，请前往 Source Combatives 的 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对功能页面、订阅、试用状态或其他 Affiliate Portal 流程有问题，请前往 Source Combatives 的 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       broadcast: {
         badge: '工具',
         paid_badge: '付费工具',
         title: '向成员发送单向 Broadcast',
-        intro: '当你想在 AFL 中向成员发布学院更新或训练贴文时，请使用 Broadcasts。这是一个单向发布工具，不是聊天、回复，也不是社交动态。',
+        intro: '当你想在 Affiliate 入口网站中向成员发布学院更新或训练贴文时，请使用 Broadcasts。这是一个单向发布工具，不是聊天、回复，也不是社交动态。',
         where_title: '它在哪里',
         where_items: [
-          '在 AFL 系统导航中打开 Broadcasts。',
-          '按当前 AFL 行为，Broadcast 实际上是馆主专用。',
-          '在 Features 页面中，Broadcast 被作为 Pro 工具展示。'
+          '在 Affiliate 入口网站的导航中打开 Broadcasts。',
+          '按当前 Affiliate 入口网站的行为，Broadcast 实际上是馆主专用。',
+          '在功能页面中，Broadcast 被作为 Pro 工具展示。'
         ],
         flow_title: '发布流程如何运作',
         flow_steps: [
-          '在 AFL 中打开 Broadcasts。',
+          '在 Affiliate 入口网站中打开 Broadcasts。',
           '选择要发布到的流标签。',
           '填写消息正文。',
           '通过粘贴图片链接或上传文件添加图片。',
@@ -1725,12 +1725,12 @@ export default {
           '面向用户的帮助文案里都应使用 Broadcast。旧的 Newsfeed 说法已经过时。',
           'Broadcast 受 entitlement 控制，并不是默认可用。',
           '图片既可以通过粘贴链接添加，也可以通过上传文件添加。',
-          'Broadcast 在 AFL 中编写，然后在应用中供成员阅读。'
+          'Broadcast 在 Affiliate 入口网站中编写，然后在应用中供成员阅读。'
         ],
-        features_link: 'Features',
+        features_link: '功能',
         student_link: '在应用中阅读 Broadcast',
-        support_desc: '如果你对 AFL 中的 Broadcast 工具、发布/Recall/Repost，或 entitlement 有问题，请前往 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对 Affiliate Portal 中的 Broadcast 工具、发布/Recall/Repost，或 entitlement 有问题，请前往 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       timetable: {
         badge: '工具',
@@ -1769,7 +1769,7 @@ export default {
         badge: '工具',
         paid_badge: '付费工具',
         title: '在需要时暂停有效会员卡',
-        intro: '当你需要暂时停止卡片时间，而不是让它按正常方式继续到期时，请使用 Pause Cards。',
+        intro: '当你需要暂时停止卡片时间，而不是让它按正常方式继续到期时，请使用会员卡暂停。',
         modes_title: '两种暂停方式',
         modes_items: [
           '单独暂停：在该成员的资料页中暂停或取消暂停单张会员卡。',
@@ -1791,85 +1791,85 @@ export default {
     },
     portal: {
       overview: {
-        badge: 'Portal',
-        title: '在 AFL 中使用 Affiliate Portal',
-        intro: 'Affiliate Portal 是 Source Combatives AFL 中的网页界面。它适合处理比日常 DojoMate 应用界面更重的馆主工作流，尤其是注册、成员审核、段位、会员卡、报表和套餐启用。',
-        workflows_title: 'AFL 主要工作流',
+        badge: '门户',
+        title: '使用 Affiliate Portal',
+        intro: 'Affiliate Portal 是 Source Combatives 的网页界面。它适合处理比日常 DojoMate 应用界面更重的馆主工作流，尤其是注册、成员审核、段位、会员卡、报表和套餐启用。',
+        workflows_title: 'Affiliate Portal 主要工作流',
         register_title: '注册与入门',
         register_body: '使用注册向导创建成人和家长账号，可选添加儿童，并在之后继续未完成的入门流程。',
         members_title: '审核成员状态',
         members_body: '查看待处理、已接受、已拒绝和已封禁用户，按邮箱附加现有账号，或继续家长入门流程。',
         ranks_title: '管理段位项目',
         ranks_body: '设置段位项目，按项目为成员注册，并通过当前审核流程确认段位变化。',
-        cards_title: '在 AFL 中管理会员卡',
+        cards_title: '在 Affiliate Portal 中管理会员卡',
         cards_body: '使用 Templates、Assign、Active 和 History 视图处理卡模板、发卡、有效卡操作、暂停动作和审计查看。',
         reports_title: '查看报表和工具',
-        reports_body: 'Reports 页面保持较轻，因为它主要是只读的。Features 是管理套餐和试用状态的地方。',
+        reports_body: '报表页面保持较轻，因为它主要是只读的。功能页面是管理套餐和试用状态的地方。',
         know_title: '需要知道的事',
         know_items: [
-          '大多数 AFL 页面在实际使用中都是馆主专用。',
-          'Monthly Reports 是主要例外：如果授予了报表权限，非馆主员工也可以看到它。',
-          'AFL 中的更改通常会直接影响应用，包括成员状态、会员卡、段位数据和工具启用。'
+          '大多数 Affiliate Portal 页面在实际使用中都是馆主专用。',
+          '月度报表是主要例外：如果授予了报表权限，非馆主员工也可以看到它。',
+          'Affiliate Portal 中的更改通常会直接影响应用，包括成员状态、会员卡、段位数据和工具启用。'
         ],
-        support_desc: '如果你对 Affiliate Portal、Portal 设置问题或其他 AFL 专属网页流程有疑问，请前往 Source Combatives 的 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对 Affiliate Portal、Portal 设置问题或其他 Affiliate Portal 专属流程有疑问，请前往 Source Combatives 的 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       register: {
-        badge: 'Portal',
+        badge: '门户',
         title: '在 Affiliate Portal 中注册',
-        intro: '当你想通过 AFL 为学院创建新成员时，请使用 Register。这是一个多步骤向导，而不是单屏表单。',
+        intro: '当你想通过 Affiliate Portal 为学院创建新成员时，请使用 Register。这是一个多步骤向导，而不是单屏表单。',
         flow_title: '流程如何运作',
         flow_steps: [
-          '在 AFL 中打开 Register，并先填写家长或成人信息。',
+          '在 Affiliate Portal 中打开 Register，并先填写家长或成人信息。',
           '如果此人是以家长身份注册，则在儿童步骤中添加儿童账号。',
           '查看摘要，然后使用 Confirm & Create 完成。',
-          '创建完成后，如需继续工作，可使用 Register Another 或 Go to Members。'
+          '创建完成后，如需继续工作，可使用再注册一位或前往成员。'
         ],
         labels_title: '你可能看到的当前标签',
-        labels_items: ['Register', 'Next', 'Back', 'Confirm & Create', 'Register Another', 'Go to Members', 'Resume Onboarding'],
+        labels_items: ['注册', '下一步', '返回', '确认并创建', '再注册一位', '前往成员', '继续入驻'],
         know_title: '需要知道的事',
         know_items: [
           '家长和成人学员的路径并不完全相同。',
           '如果家长以学员身份注册，则会跳过儿童步骤。',
-          '家长可以保持在 Pending 状态，并在之后从 Members 中继续。',
+          '家长可以保持在 Pending 状态，并在之后从成员中继续。',
           '在这里创建的账号会成为正常的 DojoMate 用户，并出现在应用使用的学院成员数据中。'
         ],
         next_title: '下一步',
-        members_link: 'Members',
+        members_link: '成员',
         cards_link: 'Cards',
-        support_desc: '如果你对注册向导、待处理家长恢复或 AFL 中其他入门问题有疑问，请前往 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对注册向导、待处理家长恢复或 Affiliate 中其他入门问题有疑问，请前往 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       members: {
-        badge: 'Portal',
-        title: '管理 portal 成员',
-        intro: '在 AFL 中使用 Members 来审核学院成员状态。这里是按状态驱动的，不只是一个平铺名单。',
+        badge: '门户',
+        title: '管理门户成员',
+        intro: '在 Affiliate Portal 中使用成员来审核学院成员状态。这里是按状态驱动的，不只是一个平铺名单。',
         jobs_title: '主要任务',
         jobs_items: [
           '查看 Pending Users、Recently Accepted、家长账号、成人成员、已拒绝用户和已封禁用户。',
           '使用 Accept、Reject 和 Ban 处理审核工作。',
-          '使用 Add Member by Email 通过邮箱附加一个现有账号。',
-          '使用 Resume Onboarding 继续一个停留在 pending 状态的家长流程。'
+          '使用通过邮箱添加成员附加一个现有账号。',
+          '使用继续入驻继续一个停留在待处理状态的家长流程。'
         ],
         labels_title: '你可能看到的当前标签',
-        labels_items: ['Members', 'Member List', 'Add Member by Email', 'Accept', 'Reject', 'Ban', 'Resume Onboarding', 'Pending、Accepted、Rejected、Banned'],
+        labels_items: ['成员', '成员列表', '通过邮箱添加成员', '接受', '拒绝', '封禁', '继续入驻', '待处理、已接受、已拒绝、已封禁'],
         confusion_title: '常见混淆',
         confusion_items: [
-          'Add Member by Email 只适用于已经存在的账号。',
-          '如果受抚养账号仍处于 accepted 状态，拒绝家长可能会被阻止。',
+          '通过邮箱添加成员只适用于已经存在的账号。',
+          '如果受抚养账号仍处于已接受状态，拒绝家长可能会被阻止。',
           '如果账号仍有有效会员卡，拒绝也可能会被阻止。',
           '这个页面也是中断注册后的恢复入口，而不仅仅是审核界面。'
         ],
         next_title: '下一步',
-        register_link: 'Register',
-        cards_link: 'Cards',
-        support_desc: '如果你对成员状态、家长/受抚养人审核，或通过邮箱附加现有账号有疑问，请前往 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        register_link: '注册',
+        cards_link: '会员卡',
+        support_desc: '如果你对成员状态、家长/受抚养人审核，或通过邮箱附加现有账号有疑问，请前往 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       ranks: {
-        badge: 'Portal',
+        badge: '门户',
         title: '管理段位与项目',
-        intro: '在 AFL 中使用 Ranks 配置学院段位项目并更新成员进度。它现在是一个多项目流程，而不是单一的全局段位设置。',
+        intro: '在 Affiliate Portal 中使用 Ranks 配置学院段位项目并更新成员进度。它现在是一个多项目流程，而不是单一的全局段位设置。',
         jobs_title: '主要任务',
         jobs_items: [
           '如果馆主成员资料尚不存在，先创建它。',
@@ -1884,18 +1884,18 @@ export default {
           '这里只有已接受的成员会出现。',
           '同一名成员在不同武术项目中的名册归属可能不同。',
           '某些段位变更在保存前需要经过带有变更类型和备注的审核步骤。',
-          '这里写入的变更会进入应用读取和显示的 progression 数据。'
+          '这里写入的变更会进入应用读取和显示的进度数据。'
         ],
         next_title: '下一步',
-        members_link: 'Members',
+        members_link: '成员',
         analytics_link: 'Analytics',
-        support_desc: '如果你对段位项目设置、名册注册或 Ranks 中的审核弹窗有问题，请前往 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对段位项目设置、名册注册或 Ranks 中的审核弹窗有问题，请前往 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       cards: {
-        badge: 'Portal',
+        badge: '门户',
         title: '使用 portal 会员卡',
-        intro: '当你需要完整的网页会员卡流程时，请在 AFL 中使用 Cards：模板、发卡、有效卡管理、暂停控制和历史记录都在这里。',
+        intro: '当你需要完整的网页会员卡流程时，请在 Affiliate Portal 中使用 Cards：模板、发卡、有效卡管理、暂停控制和历史记录都在这里。',
         areas_title: '主要卡片区域',
         areas_items: [
           'Templates：创建、编辑和删除卡模板。',
@@ -1917,19 +1917,19 @@ export default {
           '如果学院处于暂停状态，单个会员卡管理会被锁定。',
           '暂停和取消暂停控制需要付费的 Pause 工具。',
           '删除会员卡时，Expire 和 Cancel 的行为不同，而 Cancel 可能需要填写原因。',
-          '在 AFL 中发出的会员卡，就是应用用于预约、出勤/课次扣减和成员卡状态的真实会员卡。'
+          '在 Affiliate Portal 中发出的会员卡，就是应用用于预约、出勤/课次扣减和成员卡状态的真实会员卡。'
         ],
         next_title: '下一步',
-        members_link: 'Members',
-        pause_link: 'Pause Cards',
+        members_link: '成员',
+        pause_link: '会员卡暂停',
         app_cards_link: '应用中的会员卡',
-        support_desc: '如果你对 AFL Cards 区域中的模板、发卡、有效卡、暂停或历史记录有疑问，请前往 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对 Affiliate Cards 区域中的模板、发卡、有效卡、暂停或历史记录有疑问，请前往 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       },
       reports: {
-        badge: 'Portal',
+        badge: '门户',
         title: '查看 portal 报表',
-        intro: '在 AFL 中使用 Reports 查看系统已生成的月度财务报表。这个页面是只读的。',
+        intro: '在 Affiliate Portal 中使用报表查看系统已生成的月度财务报表。这个页面是只读的。',
         flow_title: '如何使用',
         flow_items: [
           '如果你可以访问多个学院，请先选择学院。',
@@ -1938,18 +1938,18 @@ export default {
         ],
         access_title: '访问与 entitlement',
         access_items: [
-          '馆主通常可以访问 Reports。',
-          '非馆主员工只有在被授予报表权限时才能访问 Reports。',
+          '馆主通常可以访问报表。',
+          '非馆主员工只有在被授予报表权限时才能访问报表。',
           '如果 Analytics entitlement 关闭，这个页面会显示锁定状态，而不是报表数据。'
         ],
         know_title: '需要知道的事',
         know_items: [
-          'AFL 并不会在这个页面中实时计算报表。',
-          '报表数据来自更广泛的 analytics 和 system pipeline。',
-          '如果看到锁定状态，请前往 Features。'
+          'Affiliate Portal 并不会在这个页面中实时计算报表。',
+          '报表数据来自更广泛的分析数据和系统流程。',
+          '如果看到锁定状态，请前往功能页面。'
         ],
-        support_desc: '如果你对报表访问、Analytics 锁定状态，或 AFL 月报有疑问，请前往 AFL 版块。',
-        support_button: '打开 AFL 版块'
+        support_desc: '如果你对报表访问、Analytics 锁定状态，或 Affiliate 月报有疑问，请前往 Affiliate 版块。',
+        support_button: '打开 Affiliate 版块'
       }
     }
   }

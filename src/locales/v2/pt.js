@@ -16,8 +16,8 @@ export default {
         owner_setup: 'Configuração do Dono',
         student: 'Aluno',
         account_profile: 'Conta e Perfil',
-        business: 'Business',
-        portal: 'Portal',
+        business: 'Gestão',
+        portal: 'Portal de Afiliados',
         schedule: 'Agenda',
         cards: 'Cartões',
         members: 'Membros',
@@ -35,7 +35,7 @@ export default {
         memberships: 'Gerenciar assinaturas',
         booking: 'Reservas',
         system_alerts: 'Alertas do sistema',
-        broadcast: 'Broadcast',
+        broadcast: 'Comunicados',
         attendance_records: 'Registros de presença',
         sign_in: 'Entrar',
         create_account: 'Criar conta',
@@ -49,17 +49,17 @@ export default {
         logout: 'Sair',
         edit_profile: 'Editar perfil',
         child_accounts: 'Contas de crianças',
-        business_overview: 'Visão geral do Business',
-        compare_business_pages: 'Comparar páginas do Business',
+        business_overview: 'Visão geral da gestão',
+        compare_business_pages: 'Comparar páginas de gestão',
         choose_who_can_teach: 'Escolher quem pode ensinar',
         choose_who_can_manage: 'Escolher quem pode gerenciar',
         track_pay_and_performance: 'Acompanhar pagamento e desempenho',
-        affiliate_portal: 'Affiliate Portal',
-        portal_register: 'Registro no Portal',
-        portal_members: 'Membros do Portal',
-        portal_ranks: 'Graduações do Portal',
-        portal_cards: 'Cartões do Portal',
-        portal_reports: 'Relatórios do Portal',
+        affiliate_portal: 'Portal de Afiliados',
+        portal_register: 'Registro no portal',
+        portal_members: 'Membros do portal',
+        portal_ranks: 'Graduações do portal',
+        portal_cards: 'Cartões do portal',
+        portal_reports: 'Relatórios do portal',
         schedule_overview: 'Visão geral da agenda',
         create_a_lesson: 'Criar uma aula',
         edit_or_cancel_a_lesson: 'Editar ou cancelar uma aula',
@@ -78,9 +78,9 @@ export default {
         review_applications: 'Revisar solicitações',
         reject_or_ban_members: 'Recusar ou banir membros',
         tools_overview: 'Visão geral das ferramentas',
-        activate_tools_and_premium: 'Ativar ferramentas e Premium',
-        timetable: 'Timetable',
-        pause_cards: 'Pause Cards'
+        activate_tools_and_premium: 'Ativar ferramentas e plano Premium',
+        timetable: 'Horários',
+        pause_cards: 'Pausar cartões'
       }
     },
     welcome: {
@@ -105,7 +105,7 @@ export default {
       members_body: 'Traga pessoas para a academia, revise solicitações e gerencie mudanças de status.',
       members_link: 'Abrir visão geral dos membros',
       tools_title: 'Usar ferramentas pagas',
-      tools_body: 'Adicione agenda recorrente e ferramentas de pausa de cartões depois que o fluxo principal já estiver funcionando, e use a página Features para ativar o Premium quando precisar.',
+      tools_body: 'Adicione agenda recorrente e ferramentas de pausa de cartões depois que o fluxo principal já estiver funcionando, e use a página de recursos para ativar o plano Premium quando precisar.',
       tools_link: 'Abrir visão geral das ferramentas',
       difference_title: 'Como a v2 é diferente',
       difference_body: 'A v2 é organizada em torno das pessoas e do que elas estão tentando concluir, então fica mais fácil decidir o que fazer em seguida.',
@@ -130,18 +130,18 @@ export default {
       jobs_title: 'Principais tarefas',
       jobs_team_title: 'Montar sua equipe',
       jobs_team_body: 'Defina quem ensina, quem pode gerenciar a academia e como as ferramentas de compensação entram nisso.',
-      jobs_team_link: 'Abrir Business',
+      jobs_team_link: 'Abrir gestão',
       jobs_schedule_title: 'Conduzir aulas e reservas',
       jobs_schedule_body: 'Crie aulas, gerencie mudanças e ajude nas reservas quando necessário.',
       jobs_schedule_link: 'Abrir Schedule',
       jobs_cards_title: 'Configurar cartões e membros',
       jobs_cards_body: 'Traga pessoas para a academia, emita cartões e deixe as reservas descontarem aulas corretamente.',
-      portal_title: 'Fluxos do Portal',
-      portal_body: 'Alguns fluxos acontecem no Affiliate Portal dentro do Source Combatives AFL, e não nas telas do app DojoMate do dia a dia.',
-      portal_link: 'Abrir guia do Affiliate Portal',
+      portal_title: 'Fluxos do portal',
+      portal_body: 'Alguns fluxos acontecem no Source Combatives Affiliate Portal, e não nas telas do app DojoMate do dia a dia.',
+      portal_link: 'Abrir guia do Portal de Afiliados',
       paid_title: 'Recursos pagos',
-      paid_body: 'Timetable, Pause Cards, Staff Access e Analytics são controlados por entitlement. Use o guia da página Features se precisar ativar ferramentas ou iniciar o Premium.',
-      paid_link: 'Ativar ferramentas e Premium'
+      paid_body: 'Horários, pausar cartões, acesso da equipe e análises são controlados por permissões. Use o guia da página de recursos se precisar ativar ferramentas ou iniciar o plano Premium.',
+      paid_link: 'Ativar ferramentas e plano Premium'
     },
     owner_setup: {
       getting_started: {
@@ -152,11 +152,11 @@ export default {
         order_items: [
           'Crie sua academia.',
           'Traga membros para a academia.',
-          'Crie modelos de cartões de membership.',
+          'Crie modelos de cartões de assinatura.',
           'Emita cartões para membros ativos.',
           'Configure instrutores e acesso da equipe.',
           'Crie sua primeira aula.',
-          'Adicione ferramentas pagas quando estiver pronto. O Affiliate Portal inclui um teste gratuito de Premium por 90 dias com todas as ferramentas desbloqueadas.'
+          'Adicione ferramentas pagas quando estiver pronto. O Portal de Afiliados inclui um teste gratuito do plano Premium por 90 dias com todas as ferramentas desbloqueadas.'
         ],
         why_title: 'Por que essa ordem ajuda',
         why_items: [
@@ -259,7 +259,7 @@ export default {
       members_body: 'Revise solicitações, cadastre membros diretamente e emita cartões.',
       delegated_title: 'Usar acesso delegado',
       delegated_body: 'Se o dono ativou acesso de administrador para você, suas tarefas diárias podem incluir agenda, membros, cartões e às vezes ferramentas.',
-      delegated_link: 'Revisar Staff Access',
+      delegated_link: 'Revisar acesso da equipe',
       know_title: 'O que saber',
       know_items: [
         'A maioria dos temas de administrador se sobrepõe ao fluxo do dono, então você não precisa de uma árvore de wiki totalmente separada.',
@@ -278,14 +278,14 @@ export default {
         cards: [
           {
             title: 'Escolher quem pode ensinar',
-            body: 'Use Instructors para decidir quais pessoas podem ser atribuídas às aulas.',
-            cta: 'Abrir o guia de Instructors',
+            body: 'Use Instrutores para decidir quais pessoas podem ser atribuídas às aulas.',
+            cta: 'Abrir o guia de Instrutores',
             link: '/help-v2/business/instructors'
           },
           {
             title: 'Escolher quem pode gerenciar a academia',
-            body: 'Use Staff Access para conceder ou atualizar acesso administrativo.',
-            cta: 'Abrir o guia de Staff Access',
+            body: 'Use Acesso da equipe para conceder ou atualizar acesso administrativo.',
+            cta: 'Abrir o guia de Acesso da equipe',
             link: '/help-v2/business/staff-access',
             paid: true
           },
@@ -301,9 +301,9 @@ export default {
         know_items: [
           'Estas páginas do Business apoiam trabalhos diferentes, então ajuda escolher a página que combina com o que você quer fazer.',
           'Se você está configurando uma academia nova, comece decidindo primeiro quem ensina.',
-          'Se não souber por onde começar, o guia de Instructors é o melhor primeiro passo para configurar a equipe, seguido por Staff Access e depois Analytics.'
+          'Se não souber por onde começar, o guia de Instrutores é o melhor primeiro passo para configurar a equipe, seguido por Acesso da equipe e depois Analytics.'
         ],
-        compare_link: 'Comparar páginas do Business',
+        compare_link: 'Comparar páginas de gestão',
         next_title: 'Próximo passo',
         next_body: 'Comece por Escolher quem pode ensinar se você estiver montando sua equipe de ensino.',
         next_link: 'Ir para Escolher quem pode ensinar'
@@ -311,30 +311,30 @@ export default {
       compare: {
         badge: 'Business',
         paid_badge: 'Pago',
-        title: 'Instructors, Staff Access e Analytics',
+        title: 'Instrutores, Acesso da equipe e Analytics',
         intro: 'Estas três páginas do Business apoiam trabalhos diferentes. Use esta página quando não tiver certeza de qual delas combina com o que você precisa fazer.',
         pick_title: 'Escolha a página pelo trabalho',
         cards: [
           {
-            title: 'Instructors',
+            title: 'Instrutores',
             body: 'Use esta página quando precisar decidir quem pode dar aulas.',
             items: [
               'adicionar alguém à equipe',
               'ativar o status de instructor',
               'preparar sua equipe de ensino para a agenda'
             ],
-            cta: 'Abrir Instructors',
+            cta: 'Abrir Instrutores',
             link: '/help-v2/business/instructors'
           },
           {
-            title: 'Staff Access',
+            title: 'Acesso da equipe',
             body: 'Use esta página quando alguém deve ajudar a gerenciar a academia.',
             items: [
               'promover um membro a administrador',
               'revisar áreas de acesso',
               'remover o acesso administrativo depois'
             ],
-            cta: 'Abrir Staff Access',
+            cta: 'Abrir Acesso da equipe',
             link: '/help-v2/business/staff-access',
             paid: true
           },
@@ -358,15 +358,15 @@ export default {
           'Se alguém deve tanto ensinar quanto gerenciar, talvez você precise configurá-lo em mais de uma página do Business.'
         ],
         start_title: 'Comece aqui se ainda estiver decidindo',
-        start_body: 'Se a pergunta é “Essa pessoa pode ensinar?”, comece por Instructors. Se a pergunta é “Essa pessoa pode gerenciar a academia?”, vá para Staff Access. Se a pergunta é “Onde vejo pagamento ou relatórios?”, vá para Analytics.',
-        instructors_link: 'Instructors',
-        staff_access_link: 'Staff Access',
+        start_body: 'Se a pergunta é “Essa pessoa pode ensinar?”, comece por Instrutores. Se a pergunta é “Essa pessoa pode gerenciar a academia?”, vá para Acesso da equipe. Se a pergunta é “Onde vejo pagamento ou relatórios?”, vá para Analytics.',
+        instructors_link: 'Instrutores',
+        staff_access_link: 'Acesso da equipe',
         analytics_link: 'Analytics'
       },
       instructors: {
         badge: 'Business',
         title: 'Escolher quem pode ensinar',
-        intro: 'Use Business → Instructors para decidir quais pessoas podem ser atribuídas às aulas.',
+        intro: 'Use Business → Instrutores para decidir quais pessoas podem ser atribuídas às aulas.',
         before_title: 'Antes de começar',
         before_items: [
           'Você precisa de pelo menos um instructor antes de poder criar aulas.',
@@ -375,7 +375,7 @@ export default {
         ],
         steps_title: 'Passos',
         steps_items: [
-          'Abra Business → Instructors.',
+          'Abra Business → Instrutores.',
           'Toque em Choose Member.',
           'Selecione a pessoa que deseja adicionar.',
           'Toque em Add to Staff.',
@@ -393,13 +393,13 @@ export default {
         next_title: 'Próximo passo',
         next_body: 'Depois que sua equipe de ensino estiver definida, a próxima tarefa comum é decidir quem também deve ter acesso administrativo.',
         back_link: 'Voltar para a visão geral do Business',
-        next_link: 'Ir para Staff Access'
+        next_link: 'Ir para Acesso da equipe'
       },
       staff_access: {
         badge: 'Business',
         paid_badge: 'Ferramenta paga',
         title: 'Escolher quem pode gerenciar a academia',
-        intro: 'Use Business → Permissions para conceder ou atualizar acesso administrativo da sua equipe.',
+        intro: 'Use Business → Permissões para conceder ou atualizar acesso administrativo da sua equipe.',
         use_title: 'Use esta página quando',
         use_items: [
           'alguém deve ajudar a gerenciar aulas, membros, cartões ou trabalho de timetable',
@@ -408,7 +408,7 @@ export default {
         ],
         steps_title: 'Passos',
         steps_items: [
-          'Abra Business → Permissions.',
+          'Abra Business → Permissões.',
           'Encontre a pessoa que você quer atualizar.',
           'Se ela aparecer como Member, toque na linha e pressione Confirm para torná-la administradora.',
           'Toque no administrador novamente para revisar os valores de acesso.',
@@ -417,19 +417,19 @@ export default {
         know_title: 'O que saber',
         know_items: [
           'Os dois badges são Member e Admin.',
-          'Permissions controla acesso administrativo. Não decide quem pode ensinar.',
-          'As áreas atuais de acesso são Schedule, Members, Cards e Timetable.',
+          'Permissões controla o acesso administrativo. Não decide quem pode ensinar.',
+          'As áreas atuais de acesso são Schedule, Membros, Cards e Timetable.',
           'Este recurso é controlado por entitlement. Se a ferramenta estiver inativa, as permissões delegadas à equipe não entrarão em vigor.'
         ],
         mistake_title: 'Erro comum',
-        mistake_body: 'Dar responsabilidade de ensino a alguém e dar acesso administrativo são etapas separadas. Use Instructors para funções de ensino e Permissions para funções administrativas.',
+        mistake_body: 'Dar responsabilidade de ensino a alguém e dar acesso administrativo são etapas separadas. Use Instrutores para funções de ensino e Permissões para funções administrativas.',
         compare_link: 'Comparar páginas do Business',
         remove_title: 'Remover acesso administrativo',
         remove_body: 'Se alguém não deve mais gerenciar a academia, use Remove Admin para devolvê-lo ao status Member.',
         next_title: 'Próximo passo',
         next_body: 'Depois que as funções da equipe estiverem definidas, a próxima tarefa comum é revisar ferramentas de compensação e relatórios no Analytics.',
-        back_link: 'Voltar para Instructors',
-        activate_link: 'Ativar ferramentas e Premium',
+        back_link: 'Voltar para Instrutores',
+        activate_link: 'Ativar ferramentas e plano Premium',
         compare_pages_link: 'Comparar páginas',
         next_link: 'Ir para Analytics'
       },
@@ -462,9 +462,9 @@ export default {
         know_title: 'O que saber',
         know_items: [
           'Alterar compensação no Analytics não transforma alguém em instructor.',
-          'Se alguém deve ensinar, adicione esse papel em Instructors.',
-          'Se alguém deve gerenciar a academia, conceda esse acesso em Permissions.',
-          'Algumas telas de analytics podem ficar totalmente bloqueadas, enquanto outras continuam visíveis e mostram prompts de upgrade.'
+          'Se alguém deve ensinar, adicione esse papel em Instrutores.',
+          'Se alguém deve gerenciar a academia, conceda esse acesso em Permissões.',
+          'Algumas telas do Analytics podem ficar totalmente bloqueadas, enquanto outras continuam visíveis e mostram avisos de upgrade.'
         ],
         mistake_title: 'Erro comum',
         mistake_body: 'Analytics não é o lugar para decidir funções de ensino ou de administração. É o lugar para revisar métricas do negócio e gerenciar ferramentas relacionadas a pagamento.',
@@ -472,16 +472,16 @@ export default {
         next_title: 'Próximo passo',
         next_body: 'Se você ainda está montando sua equipe, termine primeiro as etapas de função de ensino e função administrativa. Se a equipe já estiver pronta, a próxima tarefa comum é criar aulas e deixar as reservas fazerem o trabalho diário.',
         activate_link: 'Ativar ferramentas e Premium',
-        instructors_link: 'Instructors',
-        staff_access_link: 'Staff Access',
-        next_link: 'Ir para Schedule'
+        instructors_link: 'Instrutores',
+        staff_access_link: 'Acesso da equipe',
+        next_link: 'Ir para Agenda'
       }
     },
     schedule: {
       overview: {
-        badge: 'Schedule',
+        badge: 'Agenda',
         title: 'Planejar, conduzir e gerenciar aulas',
-        intro: 'Use a área Schedule para criar aulas, ajustar detalhes das aulas e ajudar alunos a reservar quando necessário.',
+        intro: 'Use a área de agenda para criar aulas, ajustar detalhes das aulas e ajudar alunos a reservar quando necessário.',
         start_title: 'Comece pela tarefa que você precisa fazer',
         cards: [
           {
@@ -511,16 +511,16 @@ export default {
         ],
         before_title: 'Antes de começar',
         before_body: 'Garanta que sua equipe de ensino já esteja configurada para que os instructors corretos estejam disponíveis quando você criar aulas.',
-        before_link: 'Revisar Instructors'
+        before_link: 'Revisar Instrutores'
       },
       create: {
-        badge: 'Schedule',
+        badge: 'Agenda',
         title: 'Criar uma aula',
-        intro: 'Use Schedule para adicionar uma aula no dia em que você quer que os alunos possam reservar.',
+        intro: 'Use a agenda para adicionar uma aula no dia em que você quer que os alunos possam reservar.',
         before_title: 'Antes de começar',
         before_items: [
           'Você precisa ter pelo menos um instructor selecionado antes de criar uma aula.',
-          'Escolha a data correta primeiro, porque Schedule abre em hoje por padrão.',
+          'Escolha a data correta primeiro, porque a agenda abre em hoje por padrão.',
           'Decida quais cartões de assinatura devem poder reservar essa aula.'
         ],
         steps_title: 'Passos',
@@ -583,7 +583,7 @@ export default {
         steps_items: [
           'Abra Schedule e escolha a data da aula.',
           'Abra a aula e depois vá para Booking.',
-          'Toque em Add Members.',
+          'Toque em Adicionar membros.',
           'Escolha o membro que você quer reservar.',
           'Selecione um dos cartões ativos permitidos dessa pessoa.',
           'Pressione Confirm.'
@@ -611,7 +611,7 @@ export default {
     },
     cards: {
       overview: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Usar cartões para apoiar as reservas',
         intro: 'O fluxo principal de cartões é simples: criar o cartão, emiti-lo e depois deixar que as reservas descontem as aulas automaticamente.',
         start_title: 'Comece pela tarefa que você precisa fazer',
@@ -631,7 +631,7 @@ export default {
           {
             title: 'Emitir um cartão para um membro',
             body: 'Atribua um cartão de assinatura ativo usando um dos seus modelos.',
-            cta: 'Abrir o guia de Issue Cards',
+            cta: 'Abrir o guia de emissão de cartões',
             link: '/help-v2/cards/issue-cards'
           }
         ],
@@ -640,7 +640,7 @@ export default {
           'Os modelos vêm primeiro. Você não pode emitir um cartão até que o modelo já exista.',
           'Os cartões existem principalmente para apoiar reservas e o desconto automático de aulas.',
           'Quando um cartão for totalmente usado ou expirar, exclua o cartão ativo antes de emitir o próximo.',
-          'Para exceções ocasionais, você pode ajustar um cartão ativo manualmente. O uso mais comum é estender o prazo de validade, especialmente se você não estiver usando Pause Cards.'
+          'Para exceções ocasionais, você pode ajustar um cartão ativo manualmente. O uso mais comum é estender o prazo de validade, especialmente se você não estiver usando pausa de cartões.'
         ],
         support_title: 'Fluxos de apoio',
         support_templates_title: 'Editar ou aposentar modelos',
@@ -649,13 +649,13 @@ export default {
         delete_templates_link: 'Delete Templates',
         support_cleanup_title: 'Limpar cartões finalizados',
         support_cleanup_body: 'Exclua ou cancele cartões ativos quando estiverem totalmente usados, expirados ou sendo substituídos.',
-        delete_cards_link: 'Delete Cards',
+        delete_cards_link: 'Excluir cartões',
         support_records_title: 'Revisar histórico de cartões',
         support_records_body: 'Use records quando precisar de histórico, revisão de status ou acompanhamento de estados incomuns de cartões.',
-        records_link: 'Card Records'
+        records_link: 'Registros de cartões'
       },
       flow: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Como os cartões funcionam com reservas',
         intro: 'Cartões de assinatura servem principalmente para reservar aulas. Os alunos reservam, as aulas são descontadas automaticamente e o sistema calcula com base na atividade real de reservas.',
         normal_title: 'Fluxo normal',
@@ -675,12 +675,12 @@ export default {
         ],
         next_title: 'Próximo passo',
         create_link: 'Criar um modelo de cartão',
-        issue_link: 'Issue Cards'
+        issue_link: 'Emitir cartões'
       },
       create_template: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Criar um modelo de cartão de assinatura',
-        intro: 'Use Cards → Create Card Template para montar os tipos de cartão que a sua academia vai emitir.',
+        intro: 'Use Cartões → Criar modelo de cartão para montar os tipos de cartão que a sua academia vai emitir.',
         before_title: 'Antes de começar',
         before_items: [
           'Decida se este cartão é para aulas em grupo ou aulas particulares.',
@@ -690,7 +690,7 @@ export default {
         ],
         steps_title: 'Passos',
         steps_items: [
-          'Abra Cards → Create Card Template.',
+          'Abra Cartões → Criar modelo de cartão.',
           'Digite um nome de cartão que membros e administradores reconheçam facilmente.',
           'Digite o valor e uma descrição opcional.',
           'Defina o total de sessões e os dias de validade.',
@@ -709,16 +709,16 @@ export default {
         mistake_body: 'Se o cartão não aparecer durante a reserva, verifique se o tipo de cartão corresponde ao tipo de aula. Isso é intencional, para que cartões Group não sejam usados em aulas Private por engano, e cartões Private não sejam usados em aulas Group por engano.',
         next_title: 'Próximo passo',
         next_body: 'Depois que o modelo existir, a próxima tarefa comum é emitir esse cartão para um ou mais membros.',
-        back_link: 'Voltar para Cards Overview',
-        next_link: 'Ir para Issue Cards'
+        back_link: 'Voltar para a visão geral de cartões',
+        next_link: 'Ir para emitir cartões'
       },
       issue: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Emitir um cartão de assinatura',
-        intro: 'Use Cards → Assign Cards para dar um cartão ativo a um ou mais membros.',
+        intro: 'Use Cartões → Emitir cartões para dar um cartão ativo a um ou mais membros.',
         steps_title: 'Passos',
         steps_items: [
-          'Abra Cards → Assign Cards.',
+          'Abra Cartões → Emitir cartões.',
           'Escolha o modelo de cartão que você quer emitir.',
           'Escolha um ou mais membros.',
           'Revise os membros selecionados.',
@@ -735,10 +735,10 @@ export default {
         next_title: 'Próximo passo',
         next_body: 'Depois que um cartão é emitido, o próximo passo normal é usar esse cartão para reservar aulas.',
         back_link: 'Voltar para Templates',
-        next_link: 'How Cards Work'
+        next_link: 'Como os cartões funcionam'
       },
       edit_template: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Editar um modelo de cartão',
         intro: 'Use isso quando um modelo já existe e você precisa atualizar suas configurações para uso futuro.',
         use_title: 'Use esta página quando',
@@ -754,11 +754,11 @@ export default {
           'Se a mudança for grande o bastante para representar um produto de assinatura diferente, pode ser mais limpo criar um novo modelo.'
         ],
         next_title: 'Próximo passo',
-        back_link: 'Voltar para Create Template',
-        next_link: 'Issue Cards'
+        back_link: 'Voltar para criar modelo',
+        next_link: 'Emitir cartões'
       },
       delete_template: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Excluir um modelo de cartão',
         intro: 'Use isso quando um modelo não deve mais existir e já não está ligado a cartões ativos.',
         before_title: 'Antes de excluir',
@@ -769,11 +769,11 @@ export default {
         know_title: 'O que saber',
         know_body: 'A exclusão de modelo é um fluxo de limpeza. Deve ser usada quando uma oferta de assinatura foi realmente aposentada, e não apenas porque um membro está renovando.',
         next_title: 'Próximo passo',
-        back_link: 'Voltar para Templates',
-        next_link: 'Cards Overview'
+        back_link: 'Voltar para modelos',
+        next_link: 'Visão geral de cartões'
       },
       delete_card: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Excluir ou cancelar um cartão ativo',
         intro: 'Use isso quando um cartão ativo chegou ao fim da sua vida útil ou não deve mais permanecer ativo para aquele membro.',
         use_title: 'Uso mais comum',
@@ -790,13 +790,13 @@ export default {
         ],
         next_title: 'Próximo passo',
         next_body: 'Depois da limpeza, emita o próximo cartão apenas se o membro realmente for continuar com uma nova assinatura ativa.',
-        back_link: 'Voltar para Issue Cards',
-        next_link: 'Cards Overview'
+        back_link: 'Voltar para emitir cartões',
+        next_link: 'Visão geral de cartões'
       },
       records: {
-        badge: 'Cards',
+        badge: 'Cartões',
         title: 'Revisar registros de cartões',
-        intro: 'Use card records quando precisar de histórico, visibilidade de status ou acompanhamento de estados incomuns de cartões.',
+        intro: 'Use os registros de cartões quando precisar de histórico, visibilidade de status ou acompanhamento de estados incomuns de cartões.',
         review_title: 'O que você pode revisar',
         review_items: [
           'cartões atuais',
@@ -811,38 +811,38 @@ export default {
           'você está acompanhando uma dívida ou divergência de registro'
         ],
         know_title: 'O que saber',
-        know_body: 'Card records é principalmente um fluxo de revisão e auditoria. O fluxo diário normal de cartões continua sendo: criar o modelo, emitir o cartão, reservar aulas e depois limpar o cartão quando ele termina.'
+        know_body: 'Os registros de cartões servem principalmente para revisão e auditoria. O fluxo diário normal de cartões continua sendo: criar o modelo, emitir o cartão, reservar aulas e depois limpar o cartão quando ele termina.'
       }
     },
     members: {
       overview: {
-        badge: 'Members',
+        badge: 'Membros',
         title: 'Trazer pessoas para a academia e gerenciar o status de membros',
-        intro: 'Use a área Members para o lado humano do sistema: adicionar membros, revisar solicitações e gerenciar status accepted, rejected ou banned.',
+        intro: 'Use a área de membros para o lado humano do sistema: adicionar membros, revisar solicitações e gerenciar status aceito, rejeitado ou banido.',
         start_title: 'Comece pela tarefa que você precisa fazer',
         cards: [
           {
             title: 'Adicionar um membro diretamente',
             body: 'Use quick enrollment quando quiser registrar alguém diretamente em vez de esperar o fluxo normal de solicitação.',
-            cta: 'Abrir Quick Enrollment',
+            cta: 'Abrir cadastro rápido',
             link: '/help-v2/members/quick-enrollment'
           },
           {
             title: 'Revisar solicitações da academia',
             body: 'Aceite ou recuse pessoas que se candidataram pelo Join Academy.',
-            cta: 'Abrir Academy Applications',
+            cta: 'Abrir solicitações da academia',
             link: '/help-v2/members/applications'
           },
           {
             title: 'Recusar ou banir alguém',
             body: 'Gerencie mudanças de status quando um membro não deve mais permanecer ativo na academia.',
-            cta: 'Abrir Reject or Ban Members',
+            cta: 'Abrir recusar ou banir membros',
             link: '/help-v2/members/reject-or-ban'
           }
         ],
         know_title: 'O que saber',
         know_items: [
-          'Quick enrollment e academy applications são caminhos de entrada diferentes para a academia.',
+          'Cadastro rápido e solicitações da academia são caminhos de entrada diferentes para a academia.',
           'Leva tempo para colocar uma academia inteira para dentro, então a abordagem de longo prazo mais fácil costuma ser deixar que os membros criem suas próprias contas e adicionem sua academia por conta própria.',
           'Depois que os membros estão ativos, o próximo passo comum é emitir cartões de assinatura no DojoMate.',
           'Contas infantis podem exigir etapas extras de revisão, especialmente quando uma conta de responsável está envolvida.'
@@ -852,9 +852,9 @@ export default {
         compare_link: 'Comparar os dois fluxos de membros'
       },
       quick: {
-        badge: 'Members',
+        badge: 'Membros',
         title: 'Adicionar um membro diretamente',
-        intro: 'Use quick enrollment quando quiser registrar alguém diretamente em vez de esperar o fluxo normal de solicitação do Join Academy.',
+        intro: 'Use cadastro rápido quando quiser registrar alguém diretamente em vez de esperar o fluxo normal de solicitação do Join Academy.',
         when_title: 'Quando usar isso',
         when_items: [
           'você está fazendo onboarding de alguém pessoalmente',
@@ -865,7 +865,7 @@ export default {
         ],
         path_title: 'Comece pelo caminho mais fácil',
         path_body_1: 'Se sua academia está crescendo, a abordagem de longo prazo mais fácil costuma ser deixar que os membros criem suas próprias contas e adicionem sua academia por conta própria.',
-        path_body_2: 'Quick enrollment funciona melhor para pessoas que precisam de ajuda extra ou que provavelmente não vão concluir a configuração sozinhas.',
+        path_body_2: 'Cadastro rápido funciona melhor para pessoas que precisam de ajuda extra ou que provavelmente não vão concluir a configuração sozinhas.',
         steps_title: 'Passos',
         steps_items: [
           'Abra o Affiliate Portal e entre com seu email e senha do DojoMate.',
@@ -877,7 +877,7 @@ export default {
         ],
         know_title: 'O que saber',
         know_items: [
-          'Quick enrollment pula o fluxo normal de solicitação pending e accepted.',
+          'Cadastro rápido pula o fluxo normal de solicitação pendente e aceita.',
           'Esse fluxo é especialmente útil para responsáveis, porque você pode criar várias contas de crianças como parte da mesma ação de registro.',
           'Você pode salvar uma senha temporária simples ao criar a conta. O membro pode entrar depois e alterá-la.',
           'Alguns membros talvez nunca entrem por conta própria, e isso continua sendo aceitável se você estiver gerenciando a conta para eles.',
@@ -885,41 +885,41 @@ export default {
           'Se a pessoa já tiver uma conta DojoMate, adicione-a por email em vez de criar uma conta duplicada.'
         ],
         compare_title: 'Precisa de ajuda para escolher este fluxo?',
-        compare_link: 'Comparar Quick Enrollment e Applications',
+        compare_link: 'Comparar cadastro rápido e solicitações',
         next_title: 'Próximo passo',
         next_body: 'Depois que a conta estiver na academia, a próxima tarefa comum é emitir um cartão de assinatura.',
-        back_link: 'Voltar para Members Overview',
-        next_link: 'Ir para Issue Cards'
+        back_link: 'Voltar para a visão geral de membros',
+        next_link: 'Ir para emitir cartões'
       },
       compare: {
-        badge: 'Members',
-        title: 'Escolher entre Quick Enrollment e Applications',
+        badge: 'Membros',
+        title: 'Escolher entre cadastro rápido e solicitações',
         intro: 'Ambos os fluxos trazem pessoas para a academia, mas foram feitos para situações diferentes.',
-        quick_title: 'Use Quick Enrollment quando',
+        quick_title: 'Use cadastro rápido quando',
         quick_items: [
           'você quer criar a conta por conta própria',
           'a pessoa precisa de ajuda com a configuração',
           'a pessoa tem resistência à tecnologia',
           'você está registrando um responsável e várias contas de crianças juntas'
         ],
-        quick_link: 'Abrir Quick Enrollment',
-        apps_title: 'Use Applications quando',
+        quick_link: 'Abrir cadastro rápido',
+        apps_title: 'Use solicitações quando',
         apps_items: [
           'você quer que os membros criem suas próprias contas',
           'você quer que a academia cresça sem que o dono crie cada conta manualmente',
           'o membro consegue seguir o fluxo Join Academy sozinho'
         ],
-        apps_link: 'Abrir Academy Applications',
+        apps_link: 'Abrir solicitações da academia',
         rule_title: 'A regra simples',
-        rule_body: 'Deixe os membros se criarem sozinhos sempre que possível. Use Quick Enrollment quando eles precisarem de ajuda extra ou quando você quiser lidar com o registro diretamente.'
+        rule_body: 'Deixe os membros criarem as próprias contas sempre que possível. Use cadastro rápido quando eles precisarem de ajuda extra ou quando você quiser lidar com o registro diretamente.'
       },
       applications: {
-        badge: 'Members',
+        badge: 'Membros',
         title: 'Revisar solicitações da academia',
         intro: 'Use este fluxo quando alguém se candidata pelo Join Academy e você precisa aceitá-lo ou recusá-lo.',
         steps_title: 'Passos',
         steps_items: [
-          'Abra Members → Add/Reject Members.',
+          'Abra Membros → Adicionar / Recusar membros.',
           'Revise a lista de solicitações pendentes.',
           'Pressione Accept ou Reject no candidato.'
         ],
@@ -931,27 +931,27 @@ export default {
         ],
         why_title: 'Por que usar applications?',
         why_body: 'Este é o melhor caminho de longo prazo quando você quer que os membros criem suas próprias contas e adicionem sua academia por conta própria.',
-        compare_link: 'Comparar Applications e Quick Enrollment',
+        compare_link: 'Comparar solicitações e cadastro rápido',
         mistake_title: 'Erro comum',
         mistake_body: 'Se as contas infantis não aparecerem imediatamente, ou elas ainda não foram criadas corretamente ou a lista está desatualizada. Peça ao responsável para concluir a configuração das crianças ou atualize a visualização do app.',
         next_title: 'Próximo passo',
         next_body: 'Depois que você aceita alguém na academia, a próxima tarefa comum é emitir o cartão de assinatura dessa pessoa.',
-        back_link: 'Voltar para Members Overview',
-        next_link: 'Ir para Issue Cards'
+        back_link: 'Voltar para a visão geral de membros',
+        next_link: 'Ir para emitir cartões'
       },
       reject: {
-        badge: 'Members',
+        badge: 'Membros',
         title: 'Recusar ou banir um membro quando necessário',
         intro: 'Use este fluxo quando alguém não deve mais permanecer ativo na academia.',
         reject_title: 'Como a recusa funciona',
         reject_items: [
-          'Abra o perfil do membro em Members → Members List.',
+          'Abra o perfil do membro em Membros → Lista de membros.',
           'Pressione Reject para removê-lo da academia.',
           'Um membro com cartões ativos precisa ser limpo antes que a recusa possa acontecer.'
         ],
         ban_title: 'Como o ban funciona',
         ban_items: [
-          'Membros recusados aparecem em Members → Rejected List.',
+          'Membros recusados aparecem em Membros → Lista de recusados.',
           'A partir dali você pode aceitá-los novamente ou bani-los.',
           'Membros banidos não podem se candidatar novamente pelo Join Academy.'
         ],
@@ -961,13 +961,13 @@ export default {
           'Se você quiser desfazer um ban depois, vá para Banned List e use Remove Ban.'
         ],
         next_title: 'Próximo passo',
-        back_link: 'Voltar para Members Overview',
+        back_link: 'Voltar para a visão geral de membros',
         next_link: 'Revisar fluxo de Cards'
       }
     },
     account: {
       sign_in: {
-        badge: 'Account',
+        badge: 'Conta',
         title: 'Entrar na sua conta',
         intro: 'Use sign in quando sua conta já existe e você quer acessar sua academia, reservas, cartões e registros.',
         need_title: 'O que você precisa',
@@ -975,15 +975,15 @@ export default {
         trouble_title: 'Se o login não funcionar',
         trouble_items: [
           'verifique se o email e a senha estão corretos',
-          'use Reset Password se necessário',
+          'use Redefinir Senha se necessário',
           'verifique o seletor de idioma se a tela parecer estranha'
         ],
         next_title: 'Próximo passo',
         back_link: 'Voltar para o caminho do aluno',
-        next_link: 'Reset Password'
+        next_link: 'Redefinir Senha'
       },
       create: {
-        badge: 'Account',
+        badge: 'Conta',
         title: 'Criar uma conta',
         intro: 'Crie uma conta antes de entrar em uma academia, reservar aulas ou usar o restante do app.',
         path_title: 'Escolha o caminho certo',
@@ -994,11 +994,11 @@ export default {
         need_title: 'O que você precisa',
         need_items: ['um endereço de email válido', 'uma senha que atenda às regras do app'],
         next_title: 'Próximo passo',
-        back_link: 'Voltar para Sign In',
-        next_link: 'Join an Academy'
+        back_link: 'Voltar para Entrar',
+        next_link: 'Entrar em uma academia'
       },
       reset: {
-        badge: 'Account',
+        badge: 'Conta',
         title: 'Redefinir sua senha',
         intro: 'Use isso quando você não lembrar sua senha ou quando sua senha atual não estiver mais funcionando.',
         how_title: 'Como funciona',
@@ -1015,7 +1015,7 @@ export default {
         ]
       },
       troubleshooting: {
-        badge: 'Account',
+        badge: 'Conta',
         title: 'Problemas de conta',
         intro: 'Use esta página quando o acesso à conta estiver bloqueado por um problema comum de login ou cadastro.',
         signin_title: 'Não consegue entrar',
@@ -1027,29 +1027,29 @@ export default {
         email_title: 'Email já em uso',
         email_body: 'Isso normalmente significa que a conta já existe e que você deve entrar ou redefinir a senha em vez de criar uma segunda conta.',
         role_title: 'Confusão de função',
-        role_body: 'Se sua função mudou ou a conta não está se comportando como você espera, verifique primeiro se você está usando a conta e a membership corretas da academia.'
+        role_body: 'Se sua função mudou ou a conta não está se comportando como você espera, verifique primeiro se você está usando a conta e a associação corretas da academia.'
       }
     },
     settings: {
       password: {
-        badge: 'Settings',
+        badge: 'Configurações',
         title: 'Alterar sua senha',
         intro: 'Use isso quando você ainda souber sua senha atual e quiser atualizá-la dentro das configurações da conta.',
         know_title: 'O que saber',
         know_items: [
           'Isso é diferente de reset password. Alterar senha assume que você já consegue acessar a conta.',
-          'Se você não consegue entrar de jeito nenhum, use Reset Password.'
+          'Se você não consegue entrar de jeito nenhum, use Redefinir Senha.'
         ]
       },
       language: {
-        badge: 'Settings',
+        badge: 'Configurações',
         title: 'Alterar o idioma do app',
         intro: 'Use a configuração de idioma quando quiser que o app apareça em outro idioma compatível.',
         know_title: 'O que saber',
         know_body: 'Se uma tela parecer difícil de entender, verificar a configuração de idioma é uma das correções mais rápidas.'
       },
       currency: {
-        badge: 'Settings',
+        badge: 'Configurações',
         title: 'Escolher a visualização de moeda',
         intro: 'Use a configuração de moeda para controlar como os valores em dinheiro aparecem no app.',
         know_title: 'O que saber',
@@ -1059,32 +1059,32 @@ export default {
         ]
       },
       privacy: {
-        badge: 'Settings',
+        badge: 'Configurações',
         title: 'Revisar configurações de privacidade',
-        intro: 'Use as configurações de privacidade para entender e controlar como dados ligados a notificações, marketing, leaderboard, perfil público, reservas e analytics são tratados.',
+        intro: 'Use as configurações de privacidade para entender e controlar como dados ligados a notificações, marketing, ranking, perfil público, reservas e análises são tratados.',
         main_title: 'Áreas principais de privacidade',
         main_items: [
           'notificações',
           'marketing',
-          'participação em leaderboard',
+          'participação em rankings',
           'acesso a perfil público',
           'configurações ligadas a reservas',
-          'presença e dados agregados de analytics'
+          'presença e dados agregados de análises'
         ],
-        progression_title: 'Controles ligados a progression',
+        progression_title: 'Controles ligados à progressão',
         progression_items: [
-          'Participação em leaderboard e acesso a perfil público são controles separados.',
-          'Desligar a participação em leaderboard exclui a conta dos rankings.',
+          'Participação em rankings e acesso a perfil público são controles separados.',
+          'Desligar a participação em rankings exclui a conta dos rankings.',
           'Desligar o acesso ao perfil público não remove automaticamente a conta de toda superfície permitida.',
-          'Os controles de marketing são separados dos controles de progression, leaderboard e perfil público.'
+          'Os controles de marketing são separados dos controles de progressão, ranking e perfil público.'
         ],
         child_title: 'Contas de crianças e dependentes',
-        child_body: 'Registros de crianças e dependentes ficam excluídos de participation em progression, leaderboard, perfis públicos de progression e marketing personalizado.',
+        child_body: 'Registros de crianças e dependentes ficam excluídos da participação em progressão, em rankings, em perfis públicos de progressão e em marketing personalizado.',
         know_title: 'O que saber',
         know_body: 'Esta página trata de entender e gerenciar escolhas de privacidade, não apenas de ligar ou desligar mensagens.'
       },
       delete: {
-        badge: 'Settings',
+        badge: 'Configurações',
         title: 'Excluir sua conta com cuidado',
         intro: 'Excluir a conta é uma ação séria. Use isso apenas quando você realmente quiser fechar a conta inteira, e não apenas sair de uma academia.',
         before_title: 'Antes de fazer isso',
@@ -1094,17 +1094,17 @@ export default {
           'considere contas infantis e qualquer vínculo de cartão infantil'
         ],
         know_title: 'O que saber',
-        know_body: 'Excluir a conta inteira não é o mesmo que sair de uma membership de uma academia. Use os fluxos de membership quando a conta deve continuar ativa.'
+        know_body: 'Excluir a conta inteira não é o mesmo que sair da associação com uma academia. Use os fluxos de associação quando a conta deve continuar ativa.'
       },
       logout: {
-        badge: 'Settings',
+        badge: 'Configurações',
         title: 'Sair',
         intro: 'Use logout quando terminar de usar o app neste dispositivo ou quando quiser trocar para outra conta.'
       }
     },
     profile: {
       edit: {
-        badge: 'Profile',
+        badge: 'Perfil',
         title: 'Editar seu perfil',
         intro: 'Use esta página quando suas informações pessoais de perfil precisarem ser atualizadas.',
         know_title: 'O que saber',
@@ -1114,7 +1114,7 @@ export default {
         ]
       },
       children: {
-        badge: 'Profile',
+        badge: 'Perfil',
         title: 'Gerenciar contas infantis',
         intro: 'Use child accounts quando um pai, mãe ou responsável precisar criar, editar ou gerenciar contas de crianças.',
         do_title: 'O que você pode fazer',
@@ -1124,22 +1124,22 @@ export default {
           'remover contas infantis quando apropriado'
         ],
         know_title: 'O que saber',
-        know_body: 'Relações de contas gerenciadas por responsáveis podem afetar outros fluxos, como entrar em academias e lidar com memberships.'
+        know_body: 'Relações de contas gerenciadas por responsáveis podem afetar outros fluxos, como entrar em academias e lidar com associações.'
       }
     },
     student: {
       join: {
-        badge: 'Student',
+        badge: 'Aluno',
         title: 'Entrar em uma academia',
         intro: 'Use este fluxo quando quiser conectar sua conta a uma academia e começar a usar essa academia dentro do app.',
         find_title: 'Formas de encontrar uma academia',
         find_items: [
-          'use Discover Academy para navegar por academias dentro do app',
-          'use Search Academy se quiser pesquisar diretamente ou escanear o QR de uma academia'
+          'use Descobrir academias para navegar por academias dentro do app',
+          'use Buscar academia se quiser pesquisar diretamente ou escanear o QR de uma academia'
         ],
         steps_title: 'Passos',
         steps_items: [
-          'Abra Discover Academy na seção Academy.',
+          'Abra Descobrir academias na seção Academia.',
           'Navegue pela lista de academias.',
           'Abra a academia para ver seus detalhes.',
           'Revise as informações da academia e a galeria.',
@@ -1148,13 +1148,13 @@ export default {
         ],
         know_title: 'O que saber',
         know_items: [
-          'Discover Academy é útil quando você quer comparar academias antes de entrar.',
-          'Search Academy é o caminho direto para busca e leitura de QR.',
+          'Descobrir academias é útil quando você quer comparar academias antes de entrar.',
+          'Buscar academia é o caminho direto para busca e leitura de QR.',
           'Pais e mães talvez precisem considerar contas infantis como parte da entrada.'
         ],
         next_title: 'Próximo passo',
         back_link: 'Voltar para o caminho do aluno',
-        next_link: 'Managing Memberships'
+        next_link: 'Gerenciar associações'
       },
       home: {
         badge: 'Aluno',
@@ -1215,7 +1215,7 @@ export default {
         know_title: 'O que saber',
         know_items: [
           'Broadcast é o termo oficial atual do produto. A antiga linguagem Newsfeed está desatualizada.',
-          'O conteúdo é criado no AFL e exibido no app.',
+          'O conteúdo é criado no Affiliate Portal e exibido no app.',
           'Se a busca do feed falhar, o app atualmente volta para uma lista vazia em vez de mostrar um estado de erro separado.',
           'A tela de criação do lado administrativo no Expo ainda está em preparação e não deve ser tratada como o fluxo principal atual.'
         ],
@@ -1223,9 +1223,9 @@ export default {
         alerts_link: 'Alertas do sistema'
       },
       memberships: {
-        badge: 'Student',
-        title: 'Gerenciar memberships da academia',
-        intro: 'Use esta página quando sua conta pertence a mais de uma academia ou quando você precisa alternar entre memberships de academias.',
+        badge: 'Aluno',
+        title: 'Gerenciar associações da academia',
+        intro: 'Use esta página quando sua conta pertence a mais de uma academia ou quando você precisa alternar entre associações de academias.',
         when_title: 'Quando isso importa',
         when_items: [
           'você pertence a mais de uma academia',
@@ -1239,10 +1239,10 @@ export default {
         ],
         next_title: 'Próximo passo',
         back_link: 'Voltar para Join Academy',
-        next_link: 'Booking'
+        next_link: 'Reservas'
       },
       booking: {
-        badge: 'Student',
+        badge: 'Aluno',
         title: 'Reservar uma aula',
         intro: 'Use booking para escolher uma aula, selecionar um cartão elegível e reservar sua vaga.',
         steps_title: 'Passos',
@@ -1260,24 +1260,24 @@ export default {
           'Você também pode cancelar a reserva quando as regras ainda permitirem.'
         ],
         next_title: 'Próximo passo',
-        back_link: 'Memberships',
-        next_link: 'Attendance Records'
+        back_link: 'Associações',
+        next_link: 'Registros de presença'
       },
       alerts: {
-        badge: 'Student',
+        badge: 'Aluno',
         title: 'Ler alertas do sistema',
-        intro: 'Alertas do sistema ajudam você a acompanhar atualizações da academia e outras informações importantes sobre conta ou membership.',
+        intro: 'Alertas do sistema ajudam você a acompanhar atualizações da academia e outras informações importantes sobre conta ou associação.',
         see_title: 'O que você pode ver',
         see_items: [
           'atualizações da academia',
-          'avisos ligados à membership',
+          'avisos ligados à associação',
           'outros alertas gerados pelo sistema ligados ao seu uso da academia'
         ],
         know_title: 'O que saber',
         know_body: 'Esta é uma superfície de alertas do sistema, não um chat normal ou uma conversa de mensagens. Trate isso como informação importante sobre conta e academia.'
       },
       attendance: {
-        badge: 'Student',
+        badge: 'Aluno',
         title: 'Revisar registros de presença',
         intro: 'Use attendance records quando quiser revisar seu histórico de treino e verificar o que aconteceu em um intervalo de datas escolhido.',
         help_title: 'No que esta página ajuda',
@@ -1389,25 +1389,25 @@ export default {
       privacy: {
         badge: 'Configurações',
         title: 'Revisar configurações de privacidade',
-        intro: 'Use as configurações de privacidade para entender e controlar como dados de notificações, marketing, leaderboard, perfil público, reservas e analytics são tratados.',
+        intro: 'Use as configurações de privacidade para entender e controlar como dados de notificações, marketing, ranking, perfil público, reservas e análises são tratados.',
         main_title: 'Principais áreas de privacidade',
         main_items: [
           'notificações',
           'marketing',
-          'participação em leaderboard',
+          'participação em rankings',
           'acesso ao perfil público',
           'configurações relacionadas a reservas',
-          'dados de presença e analytics agregados'
+          'dados de presença e análises agregadas'
         ],
-        progression_title: 'Controles ligados à progression',
+        progression_title: 'Controles ligados à progressão',
         progression_items: [
-          'Participação em leaderboard e acesso ao perfil público são controles separados.',
-          'Desativar a participação em leaderboard exclui a conta dos rankings.',
+          'Participação em rankings e acesso ao perfil público são controles separados.',
+          'Desativar a participação em rankings exclui a conta dos rankings.',
           'Desativar o acesso ao perfil público não remove automaticamente a conta de todas as superfícies permitidas.',
-          'Controles de marketing são separados de progression, leaderboard e perfil público.'
+          'Controles de marketing são separados de progressão, ranking e perfil público.'
         ],
         child_title: 'Contas infantis e dependentes',
-        child_body: 'Registros de crianças e dependentes são excluídos da participação em progression, de leaderboards, de perfis públicos de progression e de marketing personalizado.',
+        child_body: 'Registros de crianças e dependentes são excluídos da participação em progressão, de rankings, de perfis públicos de progressão e de marketing personalizado.',
         know_title: 'O que saber',
         know_body: 'Esta página é para entender e gerenciar escolhas de privacidade, não apenas para ligar ou desligar mensagens.'
       },
@@ -1422,7 +1422,7 @@ export default {
           'considere contas infantis e relações com cartões infantis'
         ],
         know_title: 'O que saber',
-        know_body: 'Excluir a conta inteira não é a mesma coisa que sair de uma única academia. Use os fluxos de membership quando a conta ainda deve continuar ativa.'
+        know_body: 'Excluir a conta inteira não é a mesma coisa que sair de uma única academia. Use os fluxos de associação quando a conta ainda deve continuar ativa.'
       },
       logout: {
         badge: 'Configurações',
@@ -1462,7 +1462,7 @@ export default {
         intro: 'Este caminho é para alunos, pais e membros de academia que precisam de ajuda com conta, reservas e memberships.',
         section_1: 'Entrar na academia e gerenciar acesso',
         join_link: 'Entrar em uma Academia',
-        memberships_link: 'Gerenciar Memberships',
+        memberships_link: 'Gerenciar associações',
         section_2: 'Reservas, registros e atualizações da academia',
         booking_link: 'Reservas',
         attendance_link: 'Registros de Presença',
@@ -1476,8 +1476,8 @@ export default {
         change_password_link: 'Mudar Senha',
         child_accounts_link: 'Contas Infantis',
         still_need_title: 'Ainda precisa de outra coisa?',
-        still_need_body: 'Alguns tópicos mais específicos ainda podem permanecer no Help v1 enquanto o caminho do aluno continua sendo reconstruído.',
-        still_need_link: 'Abrir Help v1'
+        still_need_body: 'Alguns tópicos mais específicos ainda podem permanecer na ajuda v1 enquanto o caminho do aluno continua sendo reconstruído.',
+        still_need_link: 'Abrir ajuda v1'
       },
       join: {
         badge: 'Aluno',
@@ -1485,17 +1485,17 @@ export default {
         intro: 'Use este fluxo quando quiser entrar em uma academia que usa DojoMate.',
         start_title: 'Duas formas de começar',
         start_items: [
-          'Use Discover Academy para navegar por academias, ver detalhes e galeria, e depois pedir para entrar.',
-          'Use Search Academy para procurar diretamente ou escanear o QR da academia.'
+          'Use Descobrir academias para navegar por academias, ver detalhes e galeria, e depois pedir para entrar.',
+          'Use Buscar academia para procurar diretamente ou escanear o QR da academia.'
         ],
-        discover_title: 'Discover Academy',
+        discover_title: 'Descobrir academias',
         discover_items: [
-          'Abra Discover Academy na área Academy.',
+          'Abra Descobrir academias na área Academia.',
           'Navegue pela lista de academias.',
           'Abra uma academia para ver detalhes e galeria.',
           'Confirme que é a academia certa antes de pedir para entrar.'
         ],
-        search_title: 'Search Academy',
+        search_title: 'Buscar academia',
         search_items: [
           'Se você já souber o nome da academia, pesquise diretamente.',
           'Se a academia lhe deu um QR, você também pode escanear para entrar.',
@@ -1507,11 +1507,11 @@ export default {
           'Contas de pais podem precisar de etapas extras para vincular contas infantis.'
         ],
         next_title: 'Próximo passo',
-        next_link: 'Gerenciar Memberships'
+        next_link: 'Gerenciar associações'
       },
       memberships: {
         badge: 'Aluno',
-        title: 'Gerenciar memberships',
+        title: 'Gerenciar associações',
         intro: 'Use esta página para entender sua relação com a academia, seus cartões e os fluxos comuns depois de entrar.',
         items_title: 'O que isso costuma incluir',
         items_items: [
@@ -1573,7 +1573,7 @@ export default {
         where_title: 'Onde encontrar',
         where_items: [
           'No lado do membro, abra Broadcast no menu Academy.',
-          'O ícone atual é um bullhorn.',
+          'O ícone atual é um megafone.',
           'Broadcast segue a academia selecionada, então escolha uma academia primeiro.'
         ],
         actions_title: 'O que você pode fazer',
@@ -1602,7 +1602,7 @@ export default {
         know_title: 'O que saber',
         know_items: [
           'Broadcast é o termo atual enviado ao usuário. O termo antigo Newsfeed está desatualizado.',
-          'O conteúdo é criado no AFL e exibido no app.',
+          'O conteúdo é criado no Affiliate Portal e exibido no app.',
           'Se a requisição falhar, o app atualmente cai para uma lista vazia em vez de mostrar um erro separado.',
           'A tela de criação no lado admin do Expo ainda está em fase de staging e não deve ser tratada como o fluxo principal ao vivo.'
         ],
@@ -1614,56 +1614,56 @@ export default {
       overview: {
         badge: 'Ferramentas',
         title: 'Use ferramentas pagas para ampliar o fluxo da academia',
-        intro: 'Ferramentas pagas adicionam sistemas extras em cima do fluxo principal da academia, como agenda recorrente, pausa de cartões, acesso de equipe, analytics e Broadcast.',
+        intro: 'Ferramentas pagas adicionam sistemas extras em cima do fluxo principal da academia, como agenda recorrente, pausa de cartões, acesso de equipe, análises e Broadcast.',
         start_badge: 'Ferramenta paga',
         start_title: 'Comece pela ferramenta de que você precisa',
         timetable_title: 'Criar uma agenda recorrente',
         timetable_body: 'Use Timetable quando quiser aulas semanais repetidas sem recriá-las uma por uma.',
         timetable_link: 'Abrir Timetable',
         pause_title: 'Pausar cartões ativos',
-        pause_body: 'Use Pause Cards quando precisar interromper temporariamente o tempo do cartão.',
-        pause_link: 'Abrir Pause Cards',
+        pause_body: 'Use pausa de cartões quando precisar interromper temporariamente o tempo do cartão.',
+        pause_link: 'Abrir pausa de cartões',
         broadcast_title: 'Enviar Broadcasts para membros',
-        broadcast_body: 'Use Broadcast quando quiser publicar atualizações ou posts de treino em mão única para membros a partir do AFL.',
+        broadcast_body: 'Use Broadcast quando quiser publicar atualizações ou posts de treino em mão única para membros a partir do Affiliate.',
         broadcast_link: 'Abrir Broadcast',
         know_title: 'O que saber',
         know_items: [
-          'Ferramentas pagas ampliam os fluxos principais que você já usa em Business, Schedule, Cards e Members.',
-          'As ferramentas podem estar disponíveis individualmente ou dentro do Premium Package.',
+          'Ferramentas pagas ampliam os fluxos principais que você já usa em Business, Schedule, Cards e Membros.',
+          'As ferramentas podem estar disponíveis individualmente ou dentro do pacote Premium.',
           'Outras funções geralmente podem usar as ferramentas depois que o dono da academia as ativa.',
           'Normalmente é mais fácil aprender primeiro o fluxo básico e depois adicionar as ferramentas pagas.'
         ],
-        activate_link: 'Ativar ferramentas e Premium'
+        activate_link: 'Ativar ferramentas e plano Premium'
       },
       activate: {
         badge: 'Ferramentas',
         paid_badge: 'Ferramenta paga',
-        title: 'Ativar ferramentas e Premium',
-        intro: 'Use a página Features no AFL para revisar grupos de ferramentas, iniciar teste grátis, comprar pacote e gerenciar ferramentas ativas de pacote na sua academia.',
+        title: 'Ativar ferramentas e plano Premium',
+        intro: 'Use a página de recursos no Affiliate Portal para revisar grupos de ferramentas, iniciar teste grátis, comprar pacote e gerenciar ferramentas ativas de pacote na sua academia.',
         where_title: 'Para onde ir',
-        where_body: 'Abra AFL System → Features. Este é o ponto de entrada atual, gerenciado pelo Rails, para ativação de ferramentas, status de pacote e status de teste.',
+        where_body: 'Abra Recursos no Affiliate Portal. Este é o ponto de entrada atual, gerenciado pelo Rails, para ativação de ferramentas, status de pacote e status de teste.',
         organized_title: 'Como a página é organizada',
         organized_items: [
           'As ferramentas estão disponíveis individualmente.',
-          'A página Features agrupa ferramentas em Essential Tools, Advanced Tools e seções de pacotes.',
-          'O Premium Package inclui as quatro ferramentas de produtividade.',
-          'O Pro Package também aparece na interface atual.',
+          'A página de recursos agrupa ferramentas em ferramentas básicas, ferramentas avançadas e seções de pacotes.',
+          'O pacote Premium inclui as quatro ferramentas de produtividade.',
+          'O pacote Pro também aparece na interface atual.',
           'Usuários de primeira vez podem iniciar um teste Premium de 90 dias.'
         ],
         groups_title: 'Grupos atuais de ferramentas',
-        essential_title: 'Essential Tools',
+        essential_title: 'Ferramentas básicas',
         essential_items: ['Timetables', 'Pause Academy'],
-        advanced_title: 'Advanced Tools',
-        advanced_items: ['Staff Permissions', 'Analytics'],
+        advanced_title: 'Ferramentas avançadas',
+        advanced_items: ['Permissões da equipe', 'Analytics'],
         packages_title: 'Pacotes',
-        packages_body: 'A interface atual inclui Premium Package e Pro Package.',
-        features_title: 'O que você pode ver na página Features',
+        packages_body: 'A interface atual inclui o pacote Premium e o pacote Pro.',
+        features_title: 'O que você pode ver na página de recursos',
         features_items: [
           'Start Free Trial',
-          'Purchase Premium Package',
-          'Purchase Pro Package',
-          'Premium active!',
-          'Included in Premium',
+          'Comprar pacote Premium',
+          'Comprar pacote Pro',
+          'Premium ativo!',
+          'Incluído no Premium',
           'Available in free trial',
           'Included in free trial',
           'Included in your package',
@@ -1677,25 +1677,25 @@ export default {
           'O comportamento do teste de pacotes considera sobreposição, então Pro e Premium não simplesmente reiniciam um ao outro.'
         ],
         guides_title: 'Guias pagos',
-        staff_access: 'Staff Access',
+        staff_access: 'Acesso da equipe',
         analytics: 'Analytics',
-        support_desc: 'Use o fórum do AFL Portal no Source Combatives para dúvidas sobre Features, assinaturas, status de teste ou outros fluxos web específicos do AFL.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal no Source Combatives para dúvidas sobre a página de recursos, assinaturas, status de teste ou outros fluxos web do Affiliate Portal.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       broadcast: {
         badge: 'Ferramentas',
         paid_badge: 'Ferramenta paga',
         title: 'Enviar Broadcasts de mão única para membros',
-        intro: 'Use Broadcasts no AFL quando quiser publicar atualizações da academia ou posts de treino para membros. Esta é uma ferramenta de publicação em mão única, não é chat, nem respostas, nem feed social.',
+        intro: 'Use Broadcasts no Affiliate Portal quando quiser publicar atualizações da academia ou posts de treino para membros. Esta é uma ferramenta de publicação em mão única, não é chat, nem respostas, nem feed social.',
         where_title: 'Onde fica',
         where_items: [
-          'Abra Broadcasts pela navegação do sistema no AFL.',
-          'No comportamento atual do AFL, Broadcast é na prática só para o dono.',
-          'Broadcast aparece como uma ferramenta Pro na página Features.'
+          'Abra Broadcasts pela navegação do Affiliate Portal.',
+          'No comportamento atual do Affiliate Portal, Broadcast é na prática só para o dono.',
+          'Broadcast aparece como uma ferramenta Pro na página de recursos.'
         ],
         flow_title: 'Como o fluxo de publicação funciona',
         flow_steps: [
-          'Abra Broadcasts no AFL.',
+          'Abra Broadcasts no Affiliate Portal.',
           'Escolha a aba de stream em que deseja publicar.',
           'Escreva o corpo da mensagem.',
           'Adicione imagens por URL colada ou por upload de arquivo.',
@@ -1725,12 +1725,12 @@ export default {
           'Use Broadcast em toda a cópia voltada ao usuário. A antiga linguagem Newsfeed está desatualizada.',
           'Broadcast é controlado por entitlement e não fica disponível por padrão.',
           'Imagens podem ser adicionadas tanto por URL colada quanto por upload de arquivo.',
-          'Os Broadcasts são criados no AFL e depois consumidos no app.'
+          'Os Broadcasts são criados no Affiliate Portal e depois consumidos no app.'
         ],
-        features_link: 'Features',
+        features_link: 'Recursos',
         student_link: 'Ler Broadcast no app',
-        support_desc: 'Use o fórum do AFL Portal para dúvidas sobre a ferramenta Broadcast, problemas de publish/recall/repost ou questões de entitlement no AFL.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal para dúvidas sobre a ferramenta Broadcast, problemas de publish/recall/repost ou questões de entitlement no Affiliate Portal.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       timetable: {
         badge: 'Ferramentas',
@@ -1769,7 +1769,7 @@ export default {
         badge: 'Ferramentas',
         paid_badge: 'Ferramenta paga',
         title: 'Pausar cartões ativos quando necessário',
-        intro: 'Use Pause Cards quando precisar interromper o tempo do cartão temporariamente, em vez de deixar o cartão continuar expirando normalmente.',
+        intro: 'Use pausa de cartões quando precisar interromper o tempo do cartão temporariamente, em vez de deixar o cartão continuar expirando normalmente.',
         modes_title: 'Duas formas de pausar cartões',
         modes_items: [
           'Pausa individual: pausar ou retomar o cartão de um membro pelo perfil desse membro.',
@@ -1792,84 +1792,84 @@ export default {
     portal: {
       overview: {
         badge: 'Portal',
-        title: 'Usar o Affiliate Portal no AFL',
-        intro: 'O Affiliate Portal é uma superfície web dentro do Source Combatives AFL. Use-o para fluxos de dono mais pesados do que as telas normais do app do dia a dia, especialmente registro, moderação, graduações, cartões, relatórios e ativação de pacotes.',
-        workflows_title: 'Principais fluxos do AFL',
+        title: 'Usar o Portal de Afiliados',
+        intro: 'O Portal de Afiliados é a superfície web da Source Combatives para fluxos de dono mais pesados do que as telas normais do app do dia a dia, especialmente registro, moderação, graduações, cartões, relatórios e ativação de pacotes.',
+        workflows_title: 'Principais fluxos do Portal de Afiliados',
         register_title: 'Registrar e fazer onboarding',
         register_body: 'Use o assistente de registro para criar contas de adultos e responsáveis, adicionar crianças opcionalmente e retomar depois um onboarding interrompido.',
         members_title: 'Moderar status de membros',
         members_body: 'Revise usuários pendentes, aceitos, rejeitados e banidos, vincule uma conta existente por email ou retome o fluxo de onboarding de um responsável.',
         ranks_title: 'Gerenciar programas de graduação',
         ranks_body: 'Configure programas de graduação, inscreva membros por programa e confirme mudanças de faixa/grau pelo fluxo atual de revisão.',
-        cards_title: 'Gerenciar cartões no AFL',
+        cards_title: 'Gerenciar cartões no Portal de Afiliados',
         cards_body: 'Use as visões Templates, Assign, Active e History para configuração de cartões, emissão, trabalho com cartões ativos, ações de pausa e revisão de auditoria.',
         reports_title: 'Revisar relatórios e ferramentas',
-        reports_body: 'Reports continua mais leve porque é principalmente somente leitura. Features é onde o status de pacotes e de testes é gerenciado.',
+        reports_body: 'Relatórios continua mais leve porque é principalmente somente leitura. A página de recursos é onde o status de pacotes e de testes é gerenciado.',
         know_title: 'O que saber',
         know_items: [
-          'Na prática, a maioria das páginas do AFL é exclusiva do dono.',
-          'Monthly Reports é a principal exceção: funcionários não donos podem vê-la se tiverem acesso a relatórios.',
-          'Mudanças feitas no AFL costumam alimentar diretamente o app, incluindo status de membros, cartões, dados de graduação e ativação de ferramentas.'
+          'Na prática, a maioria das páginas do Portal de Afiliados é exclusiva do dono.',
+          'Relatórios mensais é a principal exceção: funcionários não donos podem vê-los se tiverem acesso a relatórios.',
+          'Mudanças feitas no Portal de Afiliados costumam alimentar diretamente o app, incluindo status de membros, cartões, dados de graduação e ativação de ferramentas.'
         ],
-        support_desc: 'Use o fórum do AFL Portal no Source Combatives para dúvidas sobre o Affiliate Portal, problemas de configuração do portal e outros fluxos web específicos do AFL.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal no Source Combatives para dúvidas sobre o Portal de Afiliados, problemas de configuração do portal e outros fluxos web do Affiliate Portal.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       register: {
         badge: 'Portal',
-        title: 'Registrar no Affiliate Portal',
-        intro: 'Use Register no AFL quando quiser criar um novo membro da academia pelo portal. Este é um assistente de várias etapas, não um formulário de uma única tela.',
+        title: 'Registrar no Portal de Afiliados',
+        intro: 'Use Register no Portal de Afiliados quando quiser criar um novo membro da academia pelo portal. Este é um assistente de várias etapas, não um formulário de uma única tela.',
         flow_title: 'Como o fluxo funciona',
         flow_steps: [
-          'Abra Register no AFL e preencha primeiro os dados do responsável ou do adulto.',
+          'Abra Register no Portal de Afiliados e preencha primeiro os dados do responsável ou do adulto.',
           'Se a pessoa estiver se registrando como responsável, adicione as contas das crianças na etapa de crianças.',
           'Revise o resumo e use Confirm & Create para concluir.',
-          'Depois da criação, use Register Another ou Go to Members se precisar continuar trabalhando.'
+          'Depois da criação, use Registrar mais um ou Ir para membros se precisar continuar trabalhando.'
         ],
         labels_title: 'Rótulos atuais que você pode ver',
-        labels_items: ['Register', 'Next', 'Back', 'Confirm & Create', 'Register Another', 'Go to Members', 'Resume Onboarding'],
+        labels_items: ['Registrar', 'Próximo', 'Voltar', 'Confirmar e criar', 'Registrar mais um', 'Ir para membros', 'Retomar cadastro'],
         know_title: 'O que saber',
         know_items: [
           'Responsáveis e alunos adultos não seguem exatamente o mesmo caminho.',
           'Se um responsável estiver se registrando como aluno, a etapa de crianças é ignorada.',
-          'Um responsável pode permanecer em Pending e ser retomado depois a partir de Members.',
+          'Um responsável pode permanecer em Pending e ser retomado depois a partir de Membros.',
           'As contas criadas aqui viram usuários normais do DojoMate e aparecem nos dados de membros da academia usados pelo app.'
         ],
         next_title: 'Próximo passo',
-        members_link: 'Members',
+        members_link: 'Membros',
         cards_link: 'Cards',
-        support_desc: 'Use o fórum do AFL Portal para dúvidas sobre o assistente de registro, recuperação de responsável pendente ou outros problemas de onboarding no AFL.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal para dúvidas sobre o assistente de registro, recuperação de responsável pendente ou outros problemas de onboarding no Portal de Afiliados.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       members: {
         badge: 'Portal',
         title: 'Gerenciar membros do portal',
-        intro: 'Use Members no AFL para moderar o status dos membros da academia. Esta área é orientada por status, não apenas uma lista simples.',
+        intro: 'Use membros no Portal de Afiliados para moderar o status dos membros da academia. Esta área é orientada por status, não apenas uma lista simples.',
         jobs_title: 'Principais tarefas',
         jobs_items: [
           'Revisar Pending Users, Recently Accepted, contas de responsáveis, membros adultos, usuários rejeitados e usuários banidos.',
           'Usar Accept, Reject e Ban para o trabalho de moderação.',
-          'Usar Add Member by Email para vincular uma conta existente por email.',
-          'Usar Resume Onboarding para continuar um fluxo de responsável que ficou pendente.'
+          'Usar adicionar membro por email para vincular uma conta existente por email.',
+          'Usar retomar cadastro para continuar um fluxo de responsável que ficou pendente.'
         ],
         labels_title: 'Rótulos atuais que você pode ver',
-        labels_items: ['Members', 'Member List', 'Add Member by Email', 'Accept', 'Reject', 'Ban', 'Resume Onboarding', 'Pending, Accepted, Rejected, Banned'],
+        labels_items: ['Membros', 'Lista de membros', 'Adicionar membro por email', 'Aceitar', 'Recusar', 'Banir', 'Retomar cadastro', 'Pendente, Aceito, Rejeitado, Banido'],
         confusion_title: 'Confusões comuns',
         confusion_items: [
-          'Add Member by Email só funciona para uma conta que já existe.',
+          'Adicionar membro por email só funciona para uma conta que já existe.',
           'Recusar um responsável pode ser bloqueado se contas dependentes ainda estiverem aceitas.',
           'A recusa também pode ser bloqueada se a conta ainda tiver um cartão ativo.',
           'Esta página também é o ponto de recuperação para um registro interrompido, não apenas uma tela de moderação.'
         ],
         next_title: 'Próximo passo',
-        register_link: 'Register',
-        cards_link: 'Cards',
-        support_desc: 'Use o fórum do AFL Portal para dúvidas sobre status de membros, moderação de responsáveis/dependentes ou problemas ao vincular uma conta existente por email.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        register_link: 'Registrar',
+        cards_link: 'Cartões',
+        support_desc: 'Use o fórum do Affiliate Portal para dúvidas sobre status de membros, moderação de responsáveis/dependentes ou problemas ao vincular uma conta existente por email.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       ranks: {
         badge: 'Portal',
         title: 'Gerenciar graduações e programas',
-        intro: 'Use Ranks no AFL para configurar programas de graduação da academia e atualizar a progressão dos membros. Agora este é um fluxo com vários programas, não uma única configuração global de graduação.',
+        intro: 'Use Ranks no Portal de Afiliados para configurar programas de graduação da academia e atualizar a progressão dos membros. Agora este é um fluxo com vários programas, não uma única configuração global de graduação.',
         jobs_title: 'Principais tarefas',
         jobs_items: [
           'Crie primeiro o perfil de membro do dono se ele ainda não existir.',
@@ -1887,15 +1887,15 @@ export default {
           'As mudanças registradas aqui alimentam os dados de progressão que o app lê e exibe.'
         ],
         next_title: 'Próximo passo',
-        members_link: 'Members',
+        members_link: 'Membros',
         analytics_link: 'Analytics',
-        support_desc: 'Use o fórum do AFL Portal para dúvidas sobre configuração de programas de graduação, problemas de inscrição em roster ou problemas com o modal de revisão em Ranks.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal para dúvidas sobre configuração de programas de graduação, problemas de inscrição em roster ou problemas com o modal de revisão em Ranks.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       cards: {
         badge: 'Portal',
         title: 'Usar cartões no portal',
-        intro: 'Use Cards no AFL quando precisar do fluxo web completo de cartões: modelos, atribuição, gestão de cartões ativos, controles de pausa e histórico.',
+        intro: 'Use cartões no Portal de Afiliados quando precisar do fluxo web completo de cartões: modelos, atribuição, gestão de cartões ativos, controles de pausa e histórico.',
         areas_title: 'Principais áreas de cartões',
         areas_items: [
           'Templates para criar, editar e excluir modelos de cartões.',
@@ -1917,19 +1917,19 @@ export default {
           'Se a academia estiver pausada, a gestão individual de cartões fica bloqueada.',
           'Os controles de pausa e retomada exigem a ferramenta paga Pause.',
           'Excluir um cartão tem comportamentos diferentes para Expire e Cancel, e Cancel pode exigir um motivo.',
-          'Os cartões emitidos no AFL são os cartões reais usados pelo app em reservas, desconto de presença/sessão e estado do cartão do membro.'
+          'Os cartões emitidos no Portal de Afiliados são os cartões reais usados pelo app em reservas, desconto de presença/sessão e estado do cartão do membro.'
         ],
         next_title: 'Próximo passo',
-        members_link: 'Members',
-        pause_link: 'Pause Cards',
+        members_link: 'Membros',
+        pause_link: 'Pausa de cartões',
         app_cards_link: 'Cartões no app',
-        support_desc: 'Use o fórum do AFL Portal para dúvidas sobre modelos, emissão, cartões ativos, pausa ou histórico na seção Cards do AFL.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal para dúvidas sobre modelos, emissão, cartões ativos, pausa ou histórico na seção Cards do Portal de Afiliados.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       },
       reports: {
         badge: 'Portal',
         title: 'Revisar relatórios do portal',
-        intro: 'Use Reports no AFL para revisar relatórios financeiros mensais que já foram gerados pelo sistema. Esta página é somente leitura.',
+        intro: 'Use Relatórios no Portal de Afiliados para revisar relatórios financeiros mensais que já foram gerados pelo sistema. Esta página é somente leitura.',
         flow_title: 'Como funciona',
         flow_items: [
           'Se você puder acessar mais de uma academia, escolha primeiro a academia.',
@@ -1938,18 +1938,18 @@ export default {
         ],
         access_title: 'Acesso e entitlement',
         access_items: [
-          'Donos normalmente podem acessar Reports.',
-          'Funcionários que não são donos só podem acessar Reports se tiverem recebido acesso a relatórios.',
+          'Donos normalmente podem acessar Relatórios.',
+          'Funcionários que não são donos só podem acessar Relatórios se tiverem recebido acesso a relatórios.',
           'Se o entitlement de Analytics estiver desligado, esta página mostra um estado bloqueado em vez dos dados.'
         ],
         know_title: 'O que saber',
         know_items: [
-          'O AFL não está calculando os relatórios ao vivo nesta tela.',
-          'Os dados do relatório vêm do pipeline mais amplo de analytics e sistema.',
-          'Se você vir um estado bloqueado, vá para Features.'
+          'O Portal de Afiliados não está calculando os relatórios ao vivo nesta tela.',
+          'Os dados do relatório vêm do pipeline mais amplo de análises e do sistema.',
+          'Se você vir um estado bloqueado, vá para a página de recursos.'
         ],
-        support_desc: 'Use o fórum do AFL Portal para problemas de acesso a relatórios, estados bloqueados de Analytics ou dúvidas sobre relatórios mensais do AFL.',
-        support_button: 'Abrir o fórum do AFL Portal'
+        support_desc: 'Use o fórum do Affiliate Portal para problemas de acesso a relatórios, estados bloqueados de Analytics ou dúvidas sobre relatórios mensais do Portal de Afiliados.',
+        support_button: 'Abrir o fórum do Affiliate Portal'
       }
     }
   }

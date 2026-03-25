@@ -16,8 +16,8 @@ export default {
         owner_setup: 'オーナー設定',
         student: '受講者',
         account_profile: 'アカウントとプロフィール',
-        business: 'Business',
-        portal: 'Portal',
+        business: 'ビジネス',
+        portal: 'ポータル',
         schedule: 'スケジュール',
         cards: 'カード',
         members: 'メンバー',
@@ -32,10 +32,10 @@ export default {
         academy_qr: '道場 QR',
         delete_academy: '道場を削除する',
         join_academy: '道場に参加する',
-        memberships: 'Membership の管理',
+        memberships: '会員資格を管理する',
         booking: '予約',
         system_alerts: 'システム通知',
-        broadcast: 'Broadcast',
+        broadcast: 'お知らせ配信',
         attendance_records: '出席記録',
         sign_in: 'サインイン',
         create_account: 'アカウント作成',
@@ -49,17 +49,17 @@ export default {
         logout: 'ログアウト',
         edit_profile: 'プロフィール編集',
         child_accounts: '子どもアカウント',
-        business_overview: 'Business 概要',
-        compare_business_pages: 'Business ページの比較',
+        business_overview: 'ビジネス概要',
+        compare_business_pages: 'ビジネスページを比較する',
         choose_who_can_teach: '教えられる人を決める',
         choose_who_can_manage: '管理できる人を決める',
         track_pay_and_performance: '報酬と実績を確認する',
-        affiliate_portal: 'Affiliate Portal',
-        portal_register: 'Portal 登録',
-        portal_members: 'Portal メンバー',
-        portal_ranks: 'Portal ランク',
-        portal_cards: 'Portal カード',
-        portal_reports: 'Portal レポート',
+        affiliate_portal: 'アフィリエイトポータル',
+        portal_register: 'ポータル登録',
+        portal_members: 'ポータルメンバー',
+        portal_ranks: 'ポータルランク',
+        portal_cards: 'ポータルカード',
+        portal_reports: 'ポータルレポート',
         schedule_overview: 'スケジュール概要',
         create_a_lesson: 'レッスンを作成する',
         edit_or_cancel_a_lesson: 'レッスンを編集またはキャンセルする',
@@ -78,9 +78,9 @@ export default {
         review_applications: '申請を確認する',
         reject_or_ban_members: 'メンバーを拒否または禁止する',
         tools_overview: 'ツール概要',
-        activate_tools_and_premium: 'ツールと Premium を有効化する',
-        timetable: 'Timetable',
-        pause_cards: 'Pause Cards'
+        activate_tools_and_premium: 'ツールとプレミアムを有効化する',
+        timetable: '時間割',
+        pause_cards: 'カードを一時停止する'
       }
     },
     welcome: {
@@ -95,17 +95,17 @@ export default {
       admin_body: 'レッスン、メンバー、カード、日々の運営を支えるスタッフならここから始めてください。',
       admin_link: '管理者向けを開く',
       student_title: '道場でトレーニングしている',
-      student_body: '受講者、保護者、または道場メンバーとして、アカウント、予約、Membership の案内が必要ならここから始めてください。',
+      student_body: '受講者、保護者、または道場メンバーとして、アカウント、予約、会員資格の案内が必要ならここから始めてください。',
       student_link: '受講者向けを開く',
       jobs_title: 'または作業から直接選ぶ',
-      cards_title: 'Membership カードを設定する',
+      cards_title: '会員カードを設定する',
       cards_body: 'カードが予約をどう支えるかを理解してから、テンプレートを作成して発行します。',
       cards_link: 'カード概要を開く',
       members_title: 'メンバーを追加・管理する',
       members_body: '道場に人を迎え入れ、申請を確認し、ステータス変更を管理します。',
       members_link: 'メンバー概要を開く',
       tools_title: '有料ツールを使う',
-      tools_body: '基本ワークフローが整ってから、定期スケジュールやカード一時停止ツールを追加し、必要に応じて Features ページから Premium を有効化します。',
+      tools_body: '基本ワークフローが整ってから、定期スケジュールやカード一時停止ツールを追加し、必要に応じて機能ページからプレミアムを有効化します。',
       tools_link: 'ツール概要を開く',
       difference_title: 'v2 の違い',
       difference_body: 'v2 は人とその人が終わらせたい仕事を軸に整理されているので、次に何をすべきか判断しやすくなっています。',
@@ -130,18 +130,18 @@ export default {
       jobs_title: '主な仕事',
       jobs_team_title: 'チームを整える',
       jobs_team_body: '誰が教え、誰が道場を管理し、報酬ツールをどう使うかを決めます。',
-      jobs_team_link: 'Business を開く',
+      jobs_team_link: 'ビジネスを開く',
       jobs_schedule_title: 'レッスンと予約を回す',
       jobs_schedule_body: 'レッスンを作成し、変更に対応し、必要に応じて予約を支援します。',
       jobs_schedule_link: 'Schedule を開く',
       jobs_cards_title: 'カードとメンバーを整える',
       jobs_cards_body: '人を道場に迎え、カードを発行し、予約によって正しく回数が消化される状態を作ります。',
-      portal_title: 'Portal ワークフロー',
-      portal_body: '一部の作業は、日常の DojoMate アプリ画面ではなく、Source Combatives AFL の Affiliate Portal で行います。',
-      portal_link: 'Affiliate Portal ガイドを開く',
+      portal_title: 'ポータルの作業',
+      portal_body: '一部の作業は、日常の DojoMate アプリ画面ではなく、Source Combatives Affiliate Portal で行います。',
+      portal_link: 'アフィリエイトポータルガイドを開く',
       paid_title: '有料機能',
-      paid_body: 'Timetable、Pause Cards、Staff Access、Analytics は entitlement で管理されます。ツールの有効化や Premium 開始が必要なら、Features ページのガイドを確認してください。',
-      paid_link: 'ツールと Premium を有効化する'
+      paid_body: '時間割、カード一時停止、スタッフアクセス、分析は利用権限で管理されます。ツールの有効化やプレミアム開始が必要なら、機能ページのガイドを確認してください。',
+      paid_link: 'ツールとプレミアムを有効化する'
     },
     owner_setup: {
       getting_started: {
@@ -152,11 +152,11 @@ export default {
         order_items: [
           '道場を作成する。',
           'メンバーを道場に迎え入れる。',
-          'Membership カードテンプレートを作成する。',
+          '会員カードテンプレートを作成する。',
           'アクティブなメンバーにカードを発行する。',
           '講師とスタッフ権限を設定する。',
           '最初のレッスンを作成する。',
-          '準備ができたら有料ツールを追加する。Affiliate Portal には、すべてのツールが使える 90 日間の無料 Premium トライアルがあります。'
+          '準備ができたら有料ツールを追加する。アフィリエイトポータルには、すべてのツールが使える 90 日間の無料プレミアムトライアルがあります。'
         ],
         why_title: 'この順番が役立つ理由',
         why_items: [
@@ -259,14 +259,14 @@ export default {
       members_body: '申請を確認し、メンバーを直接登録し、カードを発行します。',
       delegated_title: '委譲された権限を使う',
       delegated_body: 'オーナーから管理権限が付与されていれば、日常業務にスケジュール、メンバー、カード、場合によってはツールも含まれます。',
-      delegated_link: 'Staff Access を確認する',
+      delegated_link: 'スタッフアクセスを確認する',
       know_title: '知っておくこと',
       know_items: [
         '管理者向けの多くの内容はオーナー向け導線と重なるため、完全に別の wiki ツリーは必要ありません。',
         'アカウントに機能が見当たらない場合、オーナーが権限付与や必要ツールの有効化を行う必要があるかもしれません。'
       ],
       compare_link: 'Business ページを比較する',
-      tools_link: 'ツールと Premium を有効化する'
+      tools_link: 'ツールとプレミアムを有効化する'
     },
     business: {
       overview: {
@@ -278,14 +278,14 @@ export default {
         cards: [
           {
             title: '誰が教えられるか決める',
-            body: 'Instructors を使って、誰をレッスンに割り当てられるかを決めます。',
-            cta: 'Instructors ガイドを開く',
+            body: '講師設定を使って、誰をレッスンに割り当てられるかを決めます。',
+            cta: '講師設定ガイドを開く',
             link: '/help-v2/business/instructors'
           },
           {
             title: '誰が道場を管理できるか決める',
-            body: 'Staff Access を使って管理者権限を付与または更新します。',
-            cta: 'Staff Access ガイドを開く',
+            body: 'スタッフアクセスを使って管理者権限を付与または更新します。',
+            cta: 'スタッフアクセスガイドを開く',
             link: '/help-v2/business/staff-access',
             paid: true
           },
@@ -301,9 +301,9 @@ export default {
         know_items: [
           'これらの Business ページはそれぞれ異なる仕事を支えるので、やりたいことに合ったページを選ぶのが大切です。',
           '新しい道場を立ち上げるなら、まず誰が教えるかを決めるところから始めてください。',
-          'どこから始めるべきか迷うなら、チーム設定の最初の一歩としては Instructors が最適で、その次が Staff Access、最後が Analytics です。'
+          'どこから始めるべきか迷うなら、チーム設定の最初の一歩としては講師設定が最適で、その次がスタッフアクセス、最後が Analytics です。'
         ],
-        compare_link: 'Business ページを比較する',
+        compare_link: 'ビジネスページを比較する',
         next_title: '次のステップ',
         next_body: '教えるチームを設定するなら、まず「誰が教えられるか決める」から始めてください。',
         next_link: '「誰が教えられるか決める」へ進む'
@@ -311,30 +311,30 @@ export default {
       compare: {
         badge: 'Business',
         paid_badge: '有料',
-        title: 'Instructors、Staff Access、Analytics',
+        title: '講師設定、スタッフアクセス、Analytics',
         intro: 'この 3 つの Business ページはそれぞれ異なる仕事を支えます。どれが今の作業に合うか迷うときにこのページを使ってください。',
         pick_title: '仕事からページを選ぶ',
         cards: [
           {
-            title: 'Instructors',
+            title: '講師設定',
             body: '誰がレッスンを教えられるかを決めたいときに使います。',
             items: [
               'スタッフに追加する',
               '講師ステータスを有効にする',
               'スケジュール用に教えるチームを整える'
             ],
-            cta: 'Instructors を開く',
+            cta: '講師設定を開く',
             link: '/help-v2/business/instructors'
           },
           {
-            title: 'Staff Access',
+            title: 'スタッフアクセス',
             body: '誰かに道場運営を手伝ってもらうときに使います。',
             items: [
               'メンバーを管理者に昇格する',
               'アクセス範囲を確認する',
               '後で管理者権限を外す'
             ],
-            cta: 'Staff Access を開く',
+            cta: 'スタッフアクセスを開く',
             link: '/help-v2/business/staff-access',
             paid: true
           },
@@ -358,15 +358,15 @@ export default {
           '教えることと管理することの両方を任せたい場合は、複数の Business ページで設定が必要になることがあります。'
         ],
         start_title: 'まだ迷うならここから',
-        start_body: '「この人は教えられるのか？」が疑問なら Instructors から始めます。「この人は道場を管理できるのか？」なら Staff Access へ。「報酬やレポートはどこで見るのか？」なら Analytics へ進みます。',
-        instructors_link: 'Instructors',
-        staff_access_link: 'Staff Access',
+        start_body: '「この人は教えられるのか？」が疑問なら講師設定から始めます。「この人は道場を管理できるのか？」ならスタッフアクセスへ。「報酬やレポートはどこで見るのか？」なら Analytics へ進みます。',
+        instructors_link: '講師設定',
+        staff_access_link: 'スタッフアクセス',
         analytics_link: 'Analytics'
       },
       instructors: {
         badge: 'Business',
         title: '誰が教えられるか決める',
-        intro: 'Business → Instructors を使って、誰をレッスンに割り当てられるかを決めます。',
+        intro: 'Business → 講師設定を使って、誰をレッスンに割り当てられるかを決めます。',
         before_title: '始める前に',
         before_items: [
           'レッスンを作成する前に、少なくとも 1 人の講師が必要です。',
@@ -375,7 +375,7 @@ export default {
         ],
         steps_title: '手順',
         steps_items: [
-          'Business → Instructors を開きます。',
+          'Business → 講師設定を開きます。',
           'Choose Member を押します。',
           '追加したい人を選びます。',
           'Add to Staff を押します。',
@@ -393,13 +393,13 @@ export default {
         next_title: '次のステップ',
         next_body: '教えるチームの設定が終わったら、次によく行うのは誰に管理者権限も付与するかを決めることです。',
         back_link: 'Business 概要へ戻る',
-        next_link: 'Staff Access へ進む'
+        next_link: 'スタッフアクセスへ進む'
       },
       staff_access: {
         badge: 'Business',
         paid_badge: '有料ツール',
         title: '誰が道場を管理できるか決める',
-        intro: 'Business → Permissions を使って、チームに管理者権限を付与または更新します。',
+        intro: 'Business → 権限設定を使って、チームに管理者権限を付与または更新します。',
         use_title: 'このページを使う場面',
         use_items: [
           '誰かがレッスン、メンバー、カード、timetable 作業を手伝うとき',
@@ -408,7 +408,7 @@ export default {
         ],
         steps_title: '手順',
         steps_items: [
-          'Business → Permissions を開きます。',
+          'Business → 権限設定を開きます。',
           '更新したい人を探します。',
           'Member と表示されているなら、その行を押して Confirm を押し、管理者にします。',
           'その管理者をもう一度押してアクセス設定を確認します。',
@@ -417,19 +417,19 @@ export default {
         know_title: '知っておくこと',
         know_items: [
           'バッジは Member と Admin の 2 種類です。',
-          'Permissions は管理者権限を制御します。誰が教えるかを決めるページではありません。',
-          '現在のアクセス領域は Schedule、Members、Cards、Timetable です。',
+          '権限設定は管理者権限を制御します。誰が教えるかを決めるページではありません。',
+          '現在のアクセス領域は Schedule、メンバー、Cards、Timetable です。',
           'この機能は entitlement で制御されます。ツールが無効な場合、委譲したスタッフ権限は有効になりません。'
         ],
         mistake_title: 'よくある間違い',
-        mistake_body: '教える役割を与えることと管理者権限を与えることは別の設定です。教える役割には Instructors、管理者役割には Permissions を使います。',
+        mistake_body: '教える役割を与えることと管理者権限を与えることは別の設定です。教える役割には講師設定、管理者役割には権限設定を使います。',
         compare_link: 'Business ページを比較する',
         remove_title: '管理者権限を外す',
         remove_body: 'その人がもう道場を管理しない場合は、Remove Admin を使って Member に戻します。',
         next_title: '次のステップ',
         next_body: 'チームの役割設定が終わったら、次によく行うのは Analytics で報酬やレポート系ツールを確認することです。',
-        back_link: 'Instructors に戻る',
-        activate_link: 'ツールと Premium を有効化する',
+        back_link: '講師設定に戻る',
+        activate_link: 'ツールとプレミアムを有効化する',
         compare_pages_link: 'ページを比較する',
         next_link: 'Analytics へ進む'
       },
@@ -462,26 +462,26 @@ export default {
         know_title: '知っておくこと',
         know_items: [
           'Analytics で報酬を変更しても、その人が講師になるわけではありません。',
-          'その人が教える必要があるなら、Instructors でその役割を追加します。',
-          'その人が道場を管理する必要があるなら、Permissions で権限を付与します。',
-          '一部の analytics 画面は完全にロックされることがあり、別の画面は見えたままアップグレード案内が表示される場合があります。'
+          'その人が教える必要があるなら、講師設定でその役割を追加します。',
+          'その人が道場を管理する必要があるなら、権限設定で権限を付与します。',
+          '一部の Analytics 画面は完全にロックされることがあり、別の画面は見えたままアップグレード案内が表示される場合があります。'
         ],
         mistake_title: 'よくある間違い',
         mistake_body: 'Analytics は教える役割や管理者役割を決める場所ではありません。経営指標を確認し、報酬関連ツールを管理する場所です。',
-        compare_link: 'Business ページを比較する',
+        compare_link: 'ビジネスページを比較する',
         next_title: '次のステップ',
         next_body: 'まだチーム設定中なら、先に教える役割と管理者役割の設定を終えてください。チームがすでに整っているなら、次によく行うのはレッスンを作り、日々の動きは予約に任せることです。',
-        activate_link: 'ツールと Premium を有効化する',
-        instructors_link: 'Instructors',
-        staff_access_link: 'Staff Access',
-        next_link: 'Schedule へ進む'
+        activate_link: 'ツールとプレミアムを有効化する',
+        instructors_link: '講師設定',
+        staff_access_link: 'スタッフアクセス',
+        next_link: 'スケジュールへ進む'
       }
     },
     schedule: {
       overview: {
-        badge: 'Schedule',
+        badge: 'スケジュール',
         title: 'レッスンを計画し、運用し、管理する',
-        intro: 'Schedule エリアでは、レッスン作成、レッスン詳細の調整、必要時の予約補助を行います。',
+        intro: 'スケジュールエリアでは、レッスン作成、レッスン詳細の調整、必要時の予約補助を行います。',
         start_title: 'やるべき仕事から始める',
         cards: [
           {
@@ -511,16 +511,16 @@ export default {
         ],
         before_title: '始める前に',
         before_body: 'レッスン作成時に正しい講師が選べるよう、教えるチームがすでに設定されていることを確認してください。',
-        before_link: 'Instructors を確認する'
+        before_link: '講師設定を確認する'
       },
       create: {
-        badge: 'Schedule',
+        badge: 'スケジュール',
         title: 'レッスンを作成する',
-        intro: '受講者に予約してほしい日にレッスンを追加するには Schedule を使います。',
+        intro: '受講者に予約してほしい日にレッスンを追加するにはスケジュールを使います。',
         before_title: '始める前に',
         before_items: [
           'レッスン作成前に少なくとも 1 人の講師が選ばれている必要があります。',
-          'Schedule は初期状態で今日の日付を開くので、まず正しい日付を選んでください。',
+          'スケジュールは初期状態で今日の日付を開くので、まず正しい日付を選んでください。',
           'このレッスンを予約できる Membership カードを決めておいてください。'
         ],
         steps_title: '手順',
@@ -583,7 +583,7 @@ export default {
         steps_items: [
           'Schedule を開いてレッスン日を選びます。',
           'レッスンを開き、Booking に進みます。',
-          'Add Members を押します。',
+          'メンバー追加を押します。',
           '予約したいメンバーを選びます。',
           'その人が使える有効なカードを 1 つ選びます。',
           'Confirm を押します。'
@@ -611,7 +611,7 @@ export default {
     },
     cards: {
       overview: {
-        badge: 'Cards',
+        badge: 'カード',
         title: '予約を支えるためにカードを使う',
         intro: 'カードの基本フローはシンプルです。カードを作成し、発行し、その後は予約に合わせて自動でレッスンが差し引かれます。',
         start_title: 'やるべき仕事から始める',
@@ -631,7 +631,7 @@ export default {
           {
             title: 'メンバーにカードを発行する',
             body: 'テンプレートの 1 つを使って有効な Membership カードを割り当てます。',
-            cta: 'Issue Cards ガイドを開く',
+            cta: 'カード発行ガイドを開く',
             link: '/help-v2/cards/issue-cards'
           }
         ],
@@ -640,7 +640,7 @@ export default {
           'まずテンプレートが必要です。カードテンプレートが存在しないとカードは発行できません。',
           'カードは主に予約と自動レッスン差し引きを支えるために存在します。',
           'カードを使い切った、または有効期限が切れたら、次のカードを発行する前に現在の有効カードを削除してください。',
-          '例外的なケースでは有効カードを手動調整することもできます。最もよくあるのは有効期限の延長で、特に Pause Cards を使っていない場合です。'
+          '例外的なケースでは有効カードを手動調整することもできます。最もよくあるのは有効期限の延長で、特にカード一時停止を使っていない場合です。'
         ],
         support_title: '補助ワークフロー',
         support_templates_title: 'テンプレートを編集または引退させる',
@@ -649,13 +649,13 @@ export default {
         delete_templates_link: 'Delete Templates',
         support_cleanup_title: '終了したカードを整理する',
         support_cleanup_body: '使い切った、期限切れの、または入れ替え対象の有効カードを削除またはキャンセルします。',
-        delete_cards_link: 'Delete Cards',
+        delete_cards_link: 'カードを削除する',
         support_records_title: 'カード履歴を確認する',
         support_records_body: '履歴確認、状態確認、異常なカード状態の追跡が必要なときに records を使います。',
-        records_link: 'Card Records'
+        records_link: 'カード記録'
       },
       flow: {
-        badge: 'Cards',
+        badge: 'カード',
         title: 'カードが予約とどう連動するか',
         intro: 'Membership カードは主にレッスン予約のためにあります。受講者が予約するとレッスンは自動で差し引かれ、システムは実際の予約活動に基づいて計算します。',
         normal_title: '通常の流れ',
@@ -675,12 +675,12 @@ export default {
         ],
         next_title: '次のステップ',
         create_link: 'カードテンプレートを作成する',
-        issue_link: 'Issue Cards'
+        issue_link: 'カードを発行する'
       },
       create_template: {
-        badge: 'Cards',
+        badge: 'カード',
         title: 'Membership カードテンプレートを作成する',
-        intro: 'Cards → Create Card Template を使って、道場で発行するカード種別を作成します。',
+        intro: 'カード → カードテンプレート作成 を使って、道場で発行するカード種別を作成します。',
         before_title: '始める前に',
         before_items: [
           'このカードがグループレッスン用かプライベートレッスン用かを決めてください。',
@@ -690,7 +690,7 @@ export default {
         ],
         steps_title: '手順',
         steps_items: [
-          'Cards → Create Card Template を開きます。',
+          'カード → カードテンプレート作成 を開きます。',
           'メンバーと管理者の両方が分かりやすく識別できるカード名を入力します。',
           '料金と任意の説明を入力します。',
           '総回数と有効日数を設定します。',
@@ -709,16 +709,16 @@ export default {
         mistake_body: '予約時にカードが表示されない場合は、カード種別とレッスン種別が一致しているか確認してください。これは意図的な仕様で、Group カードが誤って Private レッスンに使われたり、その逆が起きたりしないようにしています。',
         next_title: '次のステップ',
         next_body: 'テンプレートができたら、次によく行うのはそのカードを 1 人以上のメンバーに発行することです。',
-        back_link: 'Cards 概要へ戻る',
-        next_link: 'Issue Cards へ進む'
+        back_link: 'カード概要へ戻る',
+        next_link: 'カード発行へ進む'
       },
       issue: {
-        badge: 'Cards',
+        badge: 'カード',
         title: 'Membership カードを発行する',
-        intro: 'Cards → Assign Cards を使って、1 人以上のメンバーに有効カードを付与します。',
+        intro: 'カード → カード発行 を使って、1 人以上のメンバーに有効カードを付与します。',
         steps_title: '手順',
         steps_items: [
-          'Cards → Assign Cards を開きます。',
+          'カード → カード発行 を開きます。',
           '発行したいカードテンプレートを選びます。',
           '1 人以上のメンバーを選びます。',
           '選択したメンバーを確認します。',
@@ -735,10 +735,10 @@ export default {
         next_title: '次のステップ',
         next_body: 'カードを発行した後の通常の次のステップは、そのカードでレッスンを予約することです。',
         back_link: 'Templates に戻る',
-        next_link: 'How Cards Work'
+        next_link: 'カードの仕組み'
       },
       edit_template: {
-        badge: 'Cards',
+        badge: 'カード',
         title: 'カードテンプレートを編集する',
         intro: 'テンプレートがすでに存在し、今後の利用に向けて設定を更新する必要があるときに使います。',
         use_title: 'このページを使う場面',
@@ -755,10 +755,10 @@ export default {
         ],
         next_title: '次のステップ',
         back_link: 'Create Template に戻る',
-        next_link: 'Issue Cards'
+        next_link: 'カードを発行する'
       },
       delete_template: {
-        badge: 'Cards',
+        badge: 'カード',
         title: 'カードテンプレートを削除する',
         intro: 'テンプレートがもう存在すべきでなく、かつ有効カードにまだ紐づいていないときに使います。',
         before_title: '削除前に',
@@ -770,10 +770,10 @@ export default {
         know_body: 'テンプレート削除は整理のためのワークフローです。1 人のメンバーが更新するだけで使うのではなく、その Membership 商品自体を本当に終了させるときに使うべきです。',
         next_title: '次のステップ',
         back_link: 'Templates に戻る',
-        next_link: 'Cards 概要'
+        next_link: 'カード概要'
       },
       delete_card: {
-        badge: 'Cards',
+        badge: 'カード',
         title: '有効カードを削除またはキャンセルする',
         intro: '有効カードが寿命の終わりに達した、またはそのメンバーに対してもう有効であるべきでない場合に使います。',
         use_title: '最もよくある用途',
@@ -790,11 +790,11 @@ export default {
         ],
         next_title: '次のステップ',
         next_body: '整理後は、そのメンバーが新しい有効な Membership を継続する場合にのみ次のカードを発行してください。',
-        back_link: 'Issue Cards に戻る',
-        next_link: 'Cards 概要'
+        back_link: 'カード発行に戻る',
+        next_link: 'カード概要'
       },
       records: {
-        badge: 'Cards',
+        badge: 'カード',
         title: 'カード記録を確認する',
         intro: '履歴確認、状態の見える化、異常なカード状態の追跡が必要なときに card records を使います。',
         review_title: '確認できるもの',
@@ -816,33 +816,33 @@ export default {
     },
     members: {
       overview: {
-        badge: 'Members',
+        badge: 'メンバー',
         title: '人を道場に迎え入れ、メンバー状態を管理する',
-        intro: 'Members エリアは、人に関する側面を扱います。メンバー追加、申請確認、accepted・rejected・banned 状態の管理に使います。',
+        intro: 'メンバーエリアは、人に関する側面を扱います。メンバー追加、申請確認、承認済み・拒否済み・禁止済み状態の管理に使います。',
         start_title: 'やるべき仕事から始める',
         cards: [
           {
             title: 'メンバーを直接追加する',
             body: '通常の申請フローを待たずに直接登録したいときは quick enrollment を使います。',
-            cta: 'Quick Enrollment を開く',
+            cta: 'クイック登録を開く',
             link: '/help-v2/members/quick-enrollment'
           },
           {
             title: '道場への申請を確認する',
             body: 'Join Academy 経由で申請してきた人を承認または拒否します。',
-            cta: 'Academy Applications を開く',
+            cta: '学院申請を開く',
             link: '/help-v2/members/applications'
           },
           {
             title: '誰かを拒否または BAN する',
             body: 'そのメンバーを今後アクティブにすべきでない場合の状態変更を管理します。',
-            cta: 'Reject or Ban Members を開く',
+            cta: '拒否または禁止管理を開く',
             link: '/help-v2/members/reject-or-ban'
           }
         ],
         know_title: '知っておくこと',
         know_items: [
-          'Quick enrollment と academy applications は、道場に入るための別々の入口です。',
+          'クイック登録と学院申請は、道場に入るための別々の入口です。',
           '道場全体をオンボードするには時間がかかるので、長期的にはメンバー自身にアカウントを作成して道場を追加してもらうのが最も楽な方法であることが多いです。',
           'メンバーがアクティブになった後によく行う次の作業は、DojoMate で Membership カードを発行することです。',
           '子どもアカウントは、特に保護者アカウントが関係する場合、追加の確認手順が必要になることがあります。'
@@ -852,9 +852,9 @@ export default {
         compare_link: '2 つのメンバーフローを比較する'
       },
       quick: {
-        badge: 'Members',
+        badge: 'メンバー',
         title: 'メンバーを直接追加する',
-        intro: '通常の Join Academy 申請フローを待たずに直接登録したいときは quick enrollment を使います。',
+        intro: '通常の Join Academy 申請フローを待たずに直接登録したいときはクイック登録を使います。',
         when_title: 'この方法を使う場面',
         when_items: [
           '対面でオンボードしているとき',
@@ -865,7 +865,7 @@ export default {
         ],
         path_title: 'まずは一番楽な方法から',
         path_body_1: '道場が成長しているなら、長期的に最も楽なのは、メンバー自身にアカウントを作って道場を追加してもらう方法であることが多いです。',
-        path_body_2: 'Quick enrollment は、追加の助けが必要な人や、自力で設定を完了しそうにない人に向いています。',
+        path_body_2: 'クイック登録は、追加の助けが必要な人や、自力で設定を完了しそうにない人に向いています。',
         steps_title: '手順',
         steps_items: [
           'Affiliate Portal を開き、DojoMate のメールアドレスとパスワードでサインインします。',
@@ -877,7 +877,7 @@ export default {
         ],
         know_title: '知っておくこと',
         know_items: [
-          'Quick enrollment は通常の pending / accepted 申請フローを通りません。',
+          'クイック登録は通常の保留中 / 承認済み申請フローを通りません。',
           'このフローは特に保護者に便利で、1 回の登録操作で複数の子どもアカウントを作成できます。',
           'アカウント作成時に簡単な仮パスワードを設定できます。メンバーは後でサインインして変更できます。',
           '中には自分でログインしないメンバーもいますが、あなたがそのアカウントを管理しているならそれでも問題ありません。',
@@ -885,41 +885,41 @@ export default {
           'その人がすでに DojoMate アカウントを持っているなら、重複アカウントを作るのではなくメールで追加してください。'
         ],
         compare_title: 'この流れを使うか迷っていますか？',
-        compare_link: 'Quick Enrollment と Applications を比較する',
+        compare_link: 'クイック登録と申請を比較する',
         next_title: '次のステップ',
         next_body: 'アカウントが道場に入った後によく行う次の作業は Membership カードの発行です。',
-        back_link: 'Members Overview に戻る',
-        next_link: 'Issue Cards へ進む'
+        back_link: 'メンバー概要に戻る',
+        next_link: 'カード発行へ進む'
       },
       compare: {
-        badge: 'Members',
-        title: 'Quick Enrollment と Applications のどちらを使うか選ぶ',
+        badge: 'メンバー',
+        title: 'クイック登録と申請のどちらを使うか選ぶ',
         intro: 'どちらのフローでも人を道場に入れられますが、向いている状況は異なります。',
-        quick_title: 'Quick Enrollment を使うのはこんなとき',
+        quick_title: 'クイック登録を使うのはこんなとき',
         quick_items: [
           '自分でアカウントを作成したい',
           'その人が設定の助けを必要としている',
           'その人がテクノロジーに不慣れ',
           '保護者を登録し、複数の子どもアカウントも一緒に作る'
         ],
-        quick_link: 'Quick Enrollment を開く',
-        apps_title: 'Applications を使うのはこんなとき',
+        quick_link: 'クイック登録を開く',
+        apps_title: '申請を使うのはこんなとき',
         apps_items: [
           'メンバー自身にアカウントを作ってほしい',
           'オーナーが 1 人ずつ手で作らなくても道場を拡大したい',
           'そのメンバーが Join Academy フローを自分で進められる'
         ],
-        apps_link: 'Academy Applications を開く',
+        apps_link: '学院申請を開く',
         rule_title: 'シンプルなルール',
-        rule_body: '可能な限りメンバー自身に作成してもらってください。追加の助けが必要なとき、または登録をこちらで直接処理したいときに Quick Enrollment を使います。'
+        rule_body: '可能な限りメンバー自身に作成してもらってください。追加の助けが必要なとき、または登録をこちらで直接処理したいときにクイック登録を使います。'
       },
       applications: {
-        badge: 'Members',
+        badge: 'メンバー',
         title: '道場への申請を確認する',
         intro: '誰かが Join Academy 経由で申請し、あなたが承認または拒否する必要があるときにこのフローを使います。',
         steps_title: '手順',
         steps_items: [
-          'Members → Add/Reject Members を開きます。',
+          'メンバー → 追加 / 拒否メンバー を開きます。',
           '保留中の申請一覧を確認します。',
           '申請者に対して Accept または Reject を押します。'
         ],
@@ -931,27 +931,27 @@ export default {
         ],
         why_title: 'なぜ applications を使うのか？',
         whyBody: 'メンバー自身にアカウントを作り、自分で道場を追加してもらいたいなら、長期的にはこちらの方が良い経路です。',
-        compare_link: 'Applications と Quick Enrollment を比較する',
+        compare_link: '申請とクイック登録を比較する',
         mistake_title: 'よくある間違い',
         mistake_body: '子どもアカウントがすぐに表示されない場合、それらがまだ正しく作成されていないか、一覧が古い可能性があります。保護者に子ども設定を完了してもらうか、アプリ表示を更新してください。',
         next_title: '次のステップ',
         next_body: '誰かを道場に承認した後によく行う次の作業は、その人の Membership カード発行です。',
-        back_link: 'Members Overview に戻る',
-        next_link: 'Issue Cards へ進む'
+        back_link: 'メンバー概要に戻る',
+        next_link: 'カード発行へ進む'
       },
       reject: {
-        badge: 'Members',
+        badge: 'メンバー',
         title: '必要に応じてメンバーを拒否または BAN する',
         intro: 'その人を今後道場のアクティブメンバーとして残すべきでない場合にこのフローを使います。',
         reject_title: '拒否の流れ',
         reject_items: [
-          'Members → Members List からそのメンバーのプロフィールを開きます。',
+          'メンバー → メンバー一覧 からそのメンバーのプロフィールを開きます。',
           'Reject を押して道場から外します。',
           '有効カードを持つメンバーは、拒否前に先に整理する必要があります。'
         ],
         ban_title: 'BAN の流れ',
         ban_items: [
-          '拒否されたメンバーは Members → Rejected List に表示されます。',
+          '拒否されたメンバーはメンバー → 拒否済み一覧に表示されます。',
           'そこから再承認するか、BAN するかを選べます。',
           'BAN されたメンバーは Join Academy から再申請できません。'
         ],
@@ -961,13 +961,13 @@ export default {
           '後で BAN を解除したい場合は、Banned List に行って Remove Ban を使います。'
         ],
         next_title: '次のステップ',
-        back_link: 'Members Overview に戻る',
+        back_link: 'メンバー概要に戻る',
         next_link: 'Cards ワークフローを確認する'
       }
     },
     account: {
       sign_in: {
-        badge: 'Account',
+        badge: 'アカウント',
         title: 'アカウントにサインインする',
         intro: 'アカウントがすでに存在し、道場、予約、カード、記録にアクセスしたいときに使います。',
         need_title: '必要なもの',
@@ -975,15 +975,15 @@ export default {
         trouble_title: 'サインインできない場合',
         trouble_items: [
           'メールアドレスとパスワードが正しいか確認する',
-          '必要なら Reset Password を使う',
+          '必要ならパスワード再設定を使う',
           '画面が見慣れない場合は言語設定を確認する'
         ],
         next_title: '次のステップ',
-        back_link: 'Student Path に戻る',
-        next_link: 'Reset Password'
+        back_link: '受講者導線に戻る',
+        next_link: 'パスワード再設定'
       },
       create: {
-        badge: 'Account',
+        badge: 'アカウント',
         title: 'アカウントを作成する',
         intro: '道場参加、クラス予約、その他のアプリ利用の前にアカウントを作成します。',
         path_title: '正しい経路を選ぶ',
@@ -994,11 +994,11 @@ export default {
         need_title: '必要なもの',
         need_items: ['有効なメールアドレス', 'アプリの条件を満たすパスワード'],
         next_title: '次のステップ',
-        back_link: 'Sign In に戻る',
-        next_link: 'Join an Academy'
+        back_link: 'サインインに戻る',
+        next_link: '道場に参加する'
       },
       reset: {
-        badge: 'Account',
+        badge: 'アカウント',
         title: 'パスワードをリセットする',
         intro: 'パスワードを思い出せない、または今のパスワードが使えないときに使います。',
         how_title: '流れ',
@@ -1015,7 +1015,7 @@ export default {
         ]
       },
       troubleshooting: {
-        badge: 'Account',
+        badge: 'アカウント',
         title: 'アカウントのトラブル対応',
         intro: 'よくあるサインインや登録の問題でアカウントに入れないときにこのページを使います。',
         signin_title: 'サインインできない',
@@ -1027,29 +1027,29 @@ export default {
         email_title: 'メールがすでに使われている',
         email_body: '通常これはアカウントがすでに存在することを意味します。2 つ目のアカウントを作るのではなく、サインインまたはパスワードリセットを行ってください。',
         role_title: '役割の混乱',
-        role_body: '役割が変わった、またはアカウントの挙動が想定と違う場合は、まず正しいアカウントと道場 membership を使っているか確認してください。'
+        role_body: '役割が変わった、またはアカウントの挙動が想定と違う場合は、まず正しいアカウントと道場の会員資格を使っているか確認してください。'
       }
     },
     settings: {
       password: {
-        badge: 'Settings',
+        badge: '設定',
         title: 'パスワードを変更する',
         intro: '現在のパスワードをまだ知っていて、アカウント設定内から更新したいときに使います。',
         know_title: '知っておくこと',
         know_items: [
           'これはパスワードリセットとは別です。変更はすでにアカウントへアクセスできる前提です。',
-          'まったくサインインできない場合は Reset Password を使ってください。'
+          'まったくサインインできない場合はパスワード再設定を使ってください。'
         ]
       },
       language: {
-        badge: 'Settings',
+        badge: '設定',
         title: 'アプリの言語を変更する',
         intro: 'アプリを別の対応言語で表示したいときに言語設定を使います。',
         know_title: '知っておくこと',
         know_body: '画面が理解しづらいと感じたら、言語設定を確認するのが最も早い解決の一つです。'
       },
       currency: {
-        badge: 'Settings',
+        badge: '設定',
         title: '通貨表示を選ぶ',
         intro: 'アプリ内のお金の表示方法を通貨設定で調整します。',
         know_title: '知っておくこと',
@@ -1059,9 +1059,9 @@ export default {
         ]
       },
       privacy: {
-        badge: 'Settings',
+        badge: '設定',
         title: 'プライバシー設定を確認する',
-        intro: '通知、マーケティング、ランキング、公開プロフィール、予約、analytics 関連データがどう扱われるかを理解し、管理するためにプライバシー設定を使います。',
+        intro: '通知、マーケティング、ランキング、公開プロフィール、予約、分析関連データがどう扱われるかを理解し、管理するためにプライバシー設定を使います。',
         main_title: '主なプライバシー領域',
         main_items: [
           '通知',
@@ -1069,22 +1069,22 @@ export default {
           'ランキング参加',
           '公開プロフィールアクセス',
           '予約関連設定',
-          '出席と集計 analytics データ'
+          '出席と集計分析データ'
         ],
-        progression_title: 'progression 関連のコントロール',
+        progression_title: '進捗関連のコントロール',
         progression_items: [
           'ランキング参加と公開プロフィールアクセスは別々の設定です。',
           'ランキング参加をオフにすると、そのアカウントはランキングから除外されます。',
           '公開プロフィールアクセスをオフにしても、すべての許可された表示面から自動で消えるわけではありません。',
-          'マーケティング設定は progression、ランキング、公開プロフィール設定とは別です。'
+          'マーケティング設定は進捗、ランキング、公開プロフィール設定とは別です。'
         ],
-        child_title: '子どもと dependent アカウント',
-        child_body: '子どもと dependent の記録は、progression 参加、ランキング参加、公開 progression プロフィール、個別マーケティングから除外されます。',
+        child_title: '子どもと扶養アカウント',
+        child_body: '子どもと扶養アカウントの記録は、進捗への参加、ランキングへの参加、公開進捗プロフィール、個別マーケティングから除外されます。',
         know_title: '知っておくこと',
         know_body: 'このページは、単にメッセージをオンオフすることではなく、プライバシーの選択を理解し管理するためのものです。'
       },
       delete: {
-        badge: 'Settings',
+        badge: '設定',
         title: 'アカウント削除は慎重に',
         intro: 'アカウント削除は重大な操作です。1 つの道場を離れたいだけではなく、本当にアカウント自体を閉じたい場合にだけ使ってください。',
         before_title: '実行前に',
@@ -1094,17 +1094,17 @@ export default {
           '子どもアカウントとそれに紐づくカード関係を考慮する'
         ],
         know_title: '知っておくこと',
-        know_body: 'アカウント全体を削除することと、1 つの道場 membership を離れることは同じではありません。アカウントを残すべきなら membership の流れを使ってください。'
+        knowBody: 'アカウント全体を削除することと、1 つの道場の会員資格を離れることは同じではありません。アカウントを残すべきなら会員資格の導線を使ってください。'
       },
       logout: {
-        badge: 'Settings',
+        badge: '設定',
         title: 'ログアウトする',
         intro: '現在の端末での利用を終えたとき、または別のアカウントに切り替えたいときに使います。'
       }
     },
     profile: {
       edit: {
-        badge: 'Profile',
+        badge: 'プロフィール',
         title: 'プロフィールを編集する',
         intro: '個人プロフィール情報を更新する必要があるときに使います。',
         know_title: '知っておくこと',
@@ -1114,7 +1114,7 @@ export default {
         ]
       },
       children: {
-        badge: 'Profile',
+        badge: 'プロフィール',
         title: '子どもアカウントを管理する',
         intro: '保護者やガーディアンが子どものアカウントを作成、編集、管理する必要があるときに使います。',
         do_title: 'できること',
@@ -1124,22 +1124,22 @@ export default {
           '必要に応じて子どもアカウントを削除する'
         ],
         know_title: '知っておくこと',
-        know_body: '保護者管理のアカウント関係は、道場参加や membership 処理など他の流れにも影響します。'
+        know_body: '保護者管理のアカウント関係は、道場参加や会員資格の処理など他の流れにも影響します。'
       }
     },
     student: {
       join: {
-        badge: 'Student',
+        badge: '受講者',
         title: '道場に参加する',
         intro: 'アカウントを道場に接続し、その道場をアプリ内で使い始めたいときにこの流れを使います。',
         find_title: '道場を探す方法',
         find_items: [
-          'Discover Academy を使ってアプリ内で道場を探す',
-          '直接検索したい、または道場 QR を読み取りたい場合は Search Academy を使う'
+          '道場を見つける を使ってアプリ内で道場を探す',
+          '直接検索したい、または道場 QR を読み取りたい場合は 道場を検索 を使う'
         ],
         steps_title: '手順',
         steps_items: [
-          'Academy セクションから Discover Academy を開く。',
+          '道場セクションから 道場を見つける を開く。',
           '道場一覧を閲覧する。',
           '道場を開いて詳細を見る。',
           '道場情報とギャラリーを確認する。',
@@ -1148,21 +1148,21 @@ export default {
         ],
         know_title: '知っておくこと',
         know_items: [
-          '参加前に道場を比較したいときは Discover Academy が便利です。',
-          'Search Academy は検索と QR 読み取りのための直接経路です。',
+          '参加前に道場を比較したいときは 道場を見つける が便利です。',
+          '道場を検索 は検索と QR 読み取りのための直接経路です。',
           '保護者は参加時に子どもアカウントも考慮する必要がある場合があります。'
         ],
         next_title: '次のステップ',
-        back_link: 'Student Path に戻る',
-        next_link: 'Memberships を管理する'
+        back_link: '受講者導線に戻る',
+        next_link: '会員資格を管理する'
       },
       home: {
         badge: '受講者',
         title: '道場でトレーニングしている',
-        intro: 'この導線は、アカウント、予約、Membership の案内が必要な受講者、保護者、道場メンバー向けです。',
+        intro: 'この導線は、アカウント、予約、会員資格の案内が必要な受講者、保護者、道場メンバー向けです。',
         section_1: '道場に参加し、アクセスを管理する',
         join_link: '道場に参加する',
-        memberships_link: 'Membership を管理する',
+        memberships_link: '会員資格を管理する',
         section_2: '予約、記録、道場からの更新',
         booking_link: '予約',
         attendance_link: '出席記録',
@@ -1186,7 +1186,7 @@ export default {
         where_title: '見つける場所',
         where_items: [
           'メンバー側で Academy メニューを開き、Broadcast を押します。',
-          '現在のアイコンは bullhorn です。',
+          '現在のアイコンはメガホンです。',
           'Broadcast は選択中の道場に紐づくため、先に道場を選択してください。'
         ],
         actions_title: 'できること',
@@ -1215,7 +1215,7 @@ export default {
         know_title: '知っておくこと',
         know_items: [
           'Broadcast が現在の正式な製品名です。以前の Newsfeed という表現は古くなっています。',
-          'コンテンツは AFL 側で作成され、アプリで表示されます。',
+          'コンテンツは Affiliate 側で作成され、アプリで表示されます。',
           'フィード取得に失敗した場合、現在のアプリは専用エラー表示ではなく空リストにフォールバックします。',
           'Expo の管理者側作成画面はまだ準備段階であり、現行の主ワークフローとして扱うべきではありません。'
         ],
@@ -1223,9 +1223,9 @@ export default {
         alerts_link: 'システム通知'
       },
       memberships: {
-        badge: 'Student',
-        title: '道場 memberships を管理する',
-        intro: 'アカウントが複数の道場に属している場合や、どの道場 membership で動くかを切り替えたい場合に使います。',
+        badge: '受講者',
+        title: '道場の会員資格を管理する',
+        intro: 'アカウントが複数の道場に属している場合や、どの道場の会員資格で動くかを切り替えたい場合に使います。',
         when_title: '重要になる場面',
         when_items: [
           '複数の道場に所属している',
@@ -1239,10 +1239,10 @@ export default {
         ],
         next_title: '次のステップ',
         back_link: 'Join Academy に戻る',
-        next_link: 'Booking'
+        next_link: '予約'
       },
       booking: {
-        badge: 'Student',
+        badge: '受講者',
         title: 'レッスンを予約する',
         intro: '予約ではレッスンを選び、使えるカードを選択し、枠を確保します。',
         steps_title: '手順',
@@ -1260,24 +1260,24 @@ export default {
           'ルールが許す間は予約解除もできます。'
         ],
         next_title: '次のステップ',
-        back_link: 'Memberships',
-        next_link: 'Attendance Records'
+        back_link: '会員資格',
+        next_link: '出席記録'
       },
       alerts: {
-        badge: 'Student',
+        badge: '受講者',
         title: 'システム通知を読む',
-        intro: 'システム通知は、道場からの更新やアカウント・membership に関する重要情報を把握するのに役立ちます。',
+        intro: 'システム通知は、道場からの更新やアカウント・会員資格に関する重要情報を把握するのに役立ちます。',
         see_title: '表示されることがあるもの',
         see_items: [
           '道場の更新',
-          'membership 関連のお知らせ',
+          '会員資格に関するお知らせ',
           '道場利用に紐づくその他のシステム生成通知'
         ],
         know_title: '知っておくこと',
         know_body: 'これは通常のチャットやメッセージスレッドではなく、システム通知の画面です。重要なアカウント情報・道場情報として扱ってください。'
       },
       attendance: {
-        badge: 'Student',
+        badge: '受講者',
         title: '出席記録を確認する',
         intro: 'トレーニング履歴を見返し、指定期間に何が起きたかを確認したいときに使います。',
         help_title: 'このページでできること',
@@ -1399,15 +1399,15 @@ export default {
           '予約に関する設定',
           '出席と集計分析データ'
         ],
-        progression_title: 'progression 関連のコントロール',
+        progression_title: '進捗関連のコントロール',
         progression_items: [
           'ランキング参加と公開プロフィールアクセスは別々の設定です。',
           'ランキング参加をオフにすると、ランキングから除外されます。',
           '公開プロフィールアクセスをオフにしても、許可されたすべての表示面から自動的に消えるわけではありません。',
-          'マーケティング設定は progression、ランキング、公開プロフィール設定とは別です。'
+          'マーケティング設定は進捗、ランキング、公開プロフィール設定とは別です。'
         ],
         child_title: '子ども・扶養アカウント',
-        child_body: '子どもと扶養アカウントの記録は、progression 参加、ランキング参加、公開 progression プロフィール、個別マーケティングの対象外です。',
+        child_body: '子どもと扶養アカウントの記録は、進捗への参加、ランキングへの参加、公開進捗プロフィール、個別マーケティングの対象外です。',
         know_title: '知っておくこと',
         know_body: 'このページは、単にメッセージをオンオフするだけでなく、プライバシーの選択肢を理解して管理するためのものです。'
       },
@@ -1462,7 +1462,7 @@ export default {
         intro: 'この導線は、アカウント、予約、メンバーシップの案内を必要とする受講者、保護者、道場メンバー向けです。',
         section_1: '道場に参加してアクセスを管理する',
         join_link: '道場に参加する',
-        memberships_link: 'Membership を管理する',
+        memberships_link: '会員資格を管理する',
         section_2: '予約、記録、道場からのお知らせ',
         booking_link: '予約',
         attendance_link: '出席記録',
@@ -1476,8 +1476,8 @@ export default {
         change_password_link: 'パスワード変更',
         child_accounts_link: '子どもアカウント',
         still_need_title: '他にも必要ですか？',
-        still_need_body: '受講者導線の再構築が進むまで、一部の専門的なトピックは Help v1 に残っています。',
-        still_need_link: 'Help v1 を開く'
+        still_need_body: '受講者導線の再構築が進むまで、一部の専門的なトピックはヘルプ v1 に残っています。',
+        still_need_link: 'ヘルプ v1 を開く'
       },
       join: {
         badge: '受講者',
@@ -1485,17 +1485,17 @@ export default {
         intro: 'DojoMate を使っている道場に参加したいときにこの導線を使います。',
         start_title: '始め方は2つ',
         start_items: [
-          'Discover Academy を使って道場を探し、詳細やギャラリーを見てから参加申請する。',
-          'Search Academy を使って直接検索するか、道場の QR コードを読み取る。'
+          '道場を見つける を使って道場を探し、詳細やギャラリーを見てから参加申請する。',
+          '道場を検索 を使って直接検索するか、道場の QR コードを読み取る。'
         ],
-        discover_title: 'Discover Academy',
+        discover_title: '道場を見つける',
         discover_items: [
-          'Academy エリアから Discover Academy を開く。',
+          '道場エリアから 道場を見つける を開く。',
           '道場一覧を閲覧する。',
           '道場を開いて詳細情報とギャラリーを見る。',
           '正しい道場だと確認してから参加申請する。'
         ],
-        search_title: 'Search Academy',
+        search_title: '道場を検索',
         search_items: [
           '道場名がわかっているなら直接検索する。',
           'QR コードを渡されているなら、そのまま読み取って参加する。',
@@ -1507,11 +1507,11 @@ export default {
           '保護者アカウントでは子どもアカウントの関連付けに追加手順が必要なことがあります。'
         ],
         next_title: '次のステップ',
-        next_link: 'Membership を管理する'
+        next_link: '会員資格を管理する'
       },
       memberships: {
         badge: '受講者',
-        title: 'Membership を管理する',
+        title: '会員資格を管理する',
         intro: 'このページでは、道場との関係、カード、参加後によくある次の流れを確認できます。',
         items_title: 'ここで扱うこと',
         items_items: [
@@ -1573,7 +1573,7 @@ export default {
         where_title: 'どこにあるか',
         where_items: [
           'メンバー側では、Academy メニューから Broadcast を開きます。',
-          '現在のアイコンは bullhorn です。',
+          '現在のアイコンはメガホンです。',
           'Broadcast は選択中の道場に紐づくので、先に道場を選んでください。'
         ],
         actions_title: 'できること',
@@ -1602,7 +1602,7 @@ export default {
         know_title: '知っておくこと',
         know_items: [
           'Broadcast が現在の正式な製品名です。古い Newsfeed という言い方は使いません。',
-          '内容は AFL 側で作成され、アプリで表示されます。',
+          '内容は Affiliate 側で作成され、アプリで表示されます。',
           '取得に失敗した場合、アプリは現状では専用エラーではなく空リスト表示にフォールバックします。',
           'Expo の管理側作成画面はまだ段階的であり、正式な主導線として扱うべきではありません。'
         ],
@@ -1621,49 +1621,49 @@ export default {
         timetable_body: '毎週繰り返すレッスンを、一つずつ作り直さずに運用したい場合は Timetable を使います。',
         timetable_link: 'Timetable を開く',
         pause_title: '有効なカードを一時停止する',
-        pause_body: 'カード期間を一時的に止めたい場合は Pause Cards を使います。',
-        pause_link: 'Pause Cards を開く',
+        pause_body: 'カード期間を一時的に止めたい場合はカード一時停止を使います。',
+        pause_link: 'カード一時停止を開く',
         broadcast_title: 'メンバーに Broadcast を送る',
-        broadcast_body: 'AFL からメンバーへ一方向の更新やトレーニング投稿を配信したい場合は Broadcast を使います。',
+        broadcast_body: 'Affiliate Portal からメンバーへ一方向の更新やトレーニング投稿を配信したい場合は Broadcast を使います。',
         broadcast_link: 'Broadcast を開く',
         know_title: '知っておくこと',
         know_items: [
-          '有料ツールは、Business、Schedule、Cards、Members で使っている基本ワークフローを拡張するものです。',
-          'ツールは個別に提供される場合もあれば、Premium Package に含まれる場合もあります。',
+          '有料ツールは、ビジネス、スケジュール、カード、メンバーで使っている基本ワークフローを拡張するものです。',
+          'ツールは個別に提供される場合もあれば、プレミアムパッケージに含まれる場合もあります。',
           '道場オーナーが有効化すれば、他の役割でも利用できることが多いです。',
           '通常は先に基本ワークフローを理解してから、有料ツールを重ねるほうが分かりやすいです。'
         ],
-        activate_link: 'ツールと Premium を有効化する'
+        activate_link: 'ツールとプレミアムを有効化する'
       },
       activate: {
         badge: 'ツール',
         paid_badge: '有料ツール',
-        title: 'ツールと Premium を有効化する',
-        intro: 'AFL の Features ページで、ツールグループの確認、無料トライアル開始、パッケージ購入、道場で有効なパッケージツールの管理を行います。',
+        title: 'ツールとプレミアムを有効化する',
+        intro: 'Affiliate Portal の機能ページで、ツールグループの確認、無料トライアル開始、パッケージ購入、道場で有効なパッケージツールの管理を行います。',
         where_title: '移動先',
-        where_body: 'AFL System → Features を開きます。ここが現在の Rails 管理下にある、ツール有効化、パッケージ状態、トライアル状態の入口です。',
+        where_body: 'Affiliate Portal で 機能 を開きます。ここが現在の Rails 管理下にある、ツール有効化、パッケージ状態、トライアル状態の入口です。',
         organized_title: 'ページの構成',
         organized_items: [
           'ツールは個別でも利用できます。',
-          'Features ページでは、Essential Tools、Advanced Tools、各パッケージセクションに分かれています。',
-          'Premium Package には 4 つの productivity ツールが含まれます。',
-          '現在の UI には Pro Package も表示されます。',
-          '初回ユーザーは 90 日間の Premium トライアルを開始できます。'
+          '機能ページでは、基本ツール、高度なツール、各パッケージセクションに分かれています。',
+          'プレミアムパッケージには 4 つの生産性ツールが含まれます。',
+          '現在の UI にはプロパッケージも表示されます。',
+          '初回ユーザーは 90 日間のプレミアムトライアルを開始できます。'
         ],
         groups_title: '現在のツールグループ',
-        essential_title: 'Essential Tools',
+        essential_title: '基本ツール',
         essential_items: ['Timetables', 'Pause Academy'],
-        advanced_title: 'Advanced Tools',
-        advanced_items: ['Staff Permissions', 'Analytics'],
+        advanced_title: '高度なツール',
+        advanced_items: ['スタッフ権限', 'Analytics'],
         packages_title: 'パッケージ',
-        packages_body: '現在の UI には Premium Package と Pro Package が含まれます。',
-        features_title: 'Features ページに表示されるもの',
+        packages_body: '現在の UI にはプレミアムパッケージとプロパッケージが含まれます。',
+        features_title: '機能ページに表示されるもの',
         features_items: [
           'Start Free Trial',
-          'Purchase Premium Package',
-          'Purchase Pro Package',
-          'Premium active!',
-          'Included in Premium',
+          'プレミアムパッケージを購入',
+          'プロパッケージを購入',
+          'プレミアム有効',
+          'プレミアムに含まれる',
           'Available in free trial',
           'Included in free trial',
           'Included in your package',
@@ -1674,28 +1674,28 @@ export default {
           'ツールが無効なとき、完全にロックされる画面もあります。',
           '画面自体は開けても、有料アクションだけがアップグレード案内に置き換わる場合もあります。',
           'この UI での現在の利用者向け名称は Broadcast であり、古い Newsfeed 表記ではありません。',
-          'パッケージのトライアル動作は重複を考慮しているため、Pro と Premium は単純に互いをリセットしません。'
+          'パッケージのトライアル動作は重複を考慮しているため、プロとプレミアムは単純に互いをリセットしません。'
         ],
         guides_title: '有料ツールのガイド',
-        staff_access: 'Staff Access',
+        staff_access: 'スタッフアクセス',
         analytics: 'Analytics',
-        support_desc: 'Features、購読、トライアル状態、その他 AFL 固有のウェブ導線に関する質問は、Source Combatives の AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        support_desc: '機能ページ、購読、トライアル状態、その他 Affiliate Portal のウェブ導線に関する質問は、Source Combatives の Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       broadcast: {
         badge: 'ツール',
         paid_badge: '有料ツール',
         title: 'メンバーへ一方向の Broadcast を送る',
-        intro: 'AFL の Broadcasts は、道場の更新やトレーニング投稿をメンバーに公開したいときに使います。これは一方向の配信ツールであり、チャット、返信、ソーシャルフィードではありません。',
+        intro: 'Affiliate Portal の Broadcasts は、道場の更新やトレーニング投稿をメンバーに公開したいときに使います。これは一方向の配信ツールであり、チャット、返信、ソーシャルフィードではありません。',
         where_title: '場所',
         where_items: [
-          'AFL のシステムナビゲーションから Broadcasts を開きます。',
-          '現在の AFL では、Broadcast は実質オーナー専用です。',
-          'Features ページでは Broadcast は Pro ツールとして表示されます。'
+          'Affiliate Portal のナビゲーションから Broadcasts を開きます。',
+          '現在の Affiliate Portal では、Broadcast は実質オーナー専用です。',
+          '機能ページでは Broadcast は Pro ツールとして表示されます。'
         ],
         flow_title: '投稿の流れ',
         flow_steps: [
-          'AFL で Broadcasts を開く。',
+          'Affiliate Portal で Broadcasts を開く。',
           '投稿先の stream タブを選ぶ。',
           'メッセージ本文を書く。',
           '画像を URL 貼り付けまたはファイルアップロードで追加する。',
@@ -1725,12 +1725,12 @@ export default {
           'ユーザー向けの表記は常に Broadcast を使ってください。古い Newsfeed 表記は古くなっています。',
           'Broadcast は entitlement で管理されており、初期状態では使えません。',
           '画像は URL 貼り付けでもファイルアップロードでも追加できます。',
-          'Broadcast は AFL で作成され、その後アプリで閲覧されます。'
+          'Broadcast は Affiliate Portal で作成され、その後アプリで閲覧されます。'
         ],
-        features_link: 'Features',
+        features_link: '機能',
         student_link: 'アプリで Broadcast を読む',
-        support_desc: 'Broadcast ツール、公開・Recall・Repost の問題、または AFL 上の entitlement に関する質問は、AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        support_desc: 'Broadcast ツール、公開・Recall・Repost の問題、または Affiliate 上の entitlement に関する質問は、Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       timetable: {
         badge: 'ツール',
@@ -1769,7 +1769,7 @@ export default {
         badge: 'ツール',
         paid_badge: '有料ツール',
         title: '必要なときにアクティブなカードを一時停止する',
-        intro: 'Pause Cards は、カードの有効期限を通常どおり進めるのではなく、一時的に止めたいときに使います。',
+        intro: 'カード一時停止は、カードの有効期限を通常どおり進めるのではなく、一時的に止めたいときに使います。',
         modes_title: 'カードを止める2つの方法',
         modes_items: [
           '個別停止: そのメンバーのプロフィールから1人分のカードを停止または再開する。',
@@ -1791,85 +1791,85 @@ export default {
     },
     portal: {
       overview: {
-        badge: 'Portal',
-        title: 'AFL の Affiliate Portal を使う',
-        intro: 'Affiliate Portal は Source Combatives AFL 上のウェブ画面です。通常の日常アプリ画面より重いオーナー向け作業、特に登録、審査、ランク、カード、レポート、パッケージ有効化に使います。',
-        workflows_title: '主な AFL ワークフロー',
+        badge: 'ポータル',
+        title: 'Affiliate Portal を使う',
+        intro: 'Affiliate Portal は Source Combatives のウェブ画面です。通常の日常アプリ画面より重いオーナー向け作業、特に登録、審査、ランク、カード、レポート、パッケージ有効化に使います。',
+        workflows_title: '主な Affiliate Portal ワークフロー',
         register_title: '登録とオンボーディング',
         register_body: '登録ウィザードを使って大人や保護者アカウントを作成し、必要に応じて子どもを追加し、中断したオンボーディングを後から再開できます。',
         members_title: 'メンバーステータスを管理する',
         members_body: '保留、承認済み、拒否済み、禁止済みユーザーを確認し、既存アカウントをメールで紐付けたり、保護者のオンボーディングを再開したりできます。',
         ranks_title: 'ランクプログラムを管理する',
         ranks_body: 'ランクプログラムを設定し、プログラムごとにメンバーを登録し、現在の確認フローを通じてランク変更を確定します。',
-        cards_title: 'AFL でカードを管理する',
+        cards_title: 'Affiliate Portal でカードを管理する',
         cards_body: 'Templates、Assign、Active、History を使って、カード設定、発行、有効カード作業、一時停止、監査確認を行います。',
         reports_title: 'レポートとツールを確認する',
-        reports_body: 'Reports は主に読み取り専用なので軽めの導線です。Features ではパッケージやトライアル状態を管理します。',
+        reports_body: 'レポートは主に読み取り専用なので軽めの導線です。機能ページではパッケージやトライアル状態を管理します。',
         know_title: '知っておくこと',
         know_items: [
-          '多くの AFL ページは実質オーナー専用です。',
-          '主な例外は Monthly Reports で、レポート権限が付与されていれば非オーナースタッフも確認できます。',
-          'AFL での変更は、メンバーステータス、カード、ランクデータ、ツール有効化などを通じてアプリに直接反映されることが多いです。'
+          '多くの Affiliate Portal ページは実質オーナー専用です。',
+          '主な例外は月次レポートで、レポート権限が付与されていれば非オーナースタッフも確認できます。',
+          'Affiliate Portal での変更は、メンバーステータス、カード、ランクデータ、ツール有効化などを通じてアプリに直接反映されることが多いです。'
         ],
-        support_desc: 'Affiliate Portal、初期設定、その他 AFL 固有のウェブワークフローに関する質問は、Source Combatives の AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        support_desc: 'アフィリエイトポータル、初期設定、その他 Affiliate Portal のウェブワークフローに関する質問は、Source Combatives の Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       register: {
-        badge: 'Portal',
-        title: 'Affiliate Portal で登録する',
-        intro: 'AFL の Register は、Portal から新しい道場メンバーを作成したいときに使います。これは 1 画面フォームではなく、複数ステップのウィザードです。',
+        badge: 'ポータル',
+        title: 'アフィリエイトポータルで登録する',
+        intro: 'Affiliate Portal の Register は、ポータルから新しい道場メンバーを作成したいときに使います。これは 1 画面フォームではなく、複数ステップのウィザードです。',
         flow_title: '流れ',
         flow_steps: [
-          'AFL で Register を開き、最初に保護者または大人の情報を入力します。',
+          'Affiliate Portal で Register を開き、最初に保護者または大人の情報を入力します。',
           '保護者として登録する場合は、子どもステップで子どもアカウントを追加します。',
           '内容を確認し、Confirm & Create で完了します。',
-          '作成後は、引き続き作業するなら Register Another または Go to Members を使います。'
+          '作成後は、引き続き作業するならもう 1 人登録またはメンバーへ移動を使います。'
         ],
         labels_title: '現在表示されるラベル',
-        labels_items: ['Register', 'Next', 'Back', 'Confirm & Create', 'Register Another', 'Go to Members', 'Resume Onboarding'],
+        labels_items: ['登録', '次へ', '戻る', '確認して作成', 'もう 1 人登録', 'メンバーへ移動', '登録を再開'],
         know_title: '知っておくこと',
         know_items: [
           '保護者と成人受講者は完全に同じ導線ではありません。',
           '保護者が受講者として登録する場合、子どもステップはスキップされます。',
-          '保護者は Pending のまま残り、後から Members で再開できます。',
+          '保護者は Pending のまま残り、後からメンバーで再開できます。',
           'ここで作成したアカウントは通常の DojoMate ユーザーとなり、アプリが使う道場メンバーデータにも現れます。'
         ],
         next_title: '次のステップ',
-        members_link: 'Members',
+        members_link: 'メンバー',
         cards_link: 'Cards',
-        support_desc: '登録ウィザード、Pending 保護者の再開、その他 AFL オンボーディングの問題は AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        support_desc: '登録ウィザード、Pending 保護者の再開、その他 Affiliate オンボーディングの問題は Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       members: {
-        badge: 'Portal',
-        title: 'Portal のメンバーを管理する',
-        intro: 'AFL の Members は、道場メンバーのステータスを審査するために使います。これは単なる一覧ではなく、ステータス中心の画面です。',
+        badge: 'ポータル',
+        title: 'ポータルのメンバーを管理する',
+        intro: 'Affiliate Portal のメンバーは、道場メンバーのステータスを審査するために使います。これは単なる一覧ではなく、ステータス中心の画面です。',
         jobs_title: '主な仕事',
         jobs_items: [
           'Pending Users、Recently Accepted、保護者アカウント、成人メンバー、拒否済みユーザー、禁止済みユーザーを確認する。',
           '審査作業には Accept、Reject、Ban を使う。',
-          '既存アカウントをメールで紐付けるには Add Member by Email を使う。',
-          'Pending の保護者フローを再開するには Resume Onboarding を使う。'
+          '既存アカウントをメールで紐付けるにはメールでメンバー追加を使う。',
+          '保留中の保護者フローを再開するには登録を再開を使う。'
         ],
         labels_title: '現在表示されるラベル',
-        labels_items: ['Members', 'Member List', 'Add Member by Email', 'Accept', 'Reject', 'Ban', 'Resume Onboarding', 'Pending, Accepted, Rejected, Banned'],
+        labels_items: ['メンバー', 'メンバー一覧', 'メールでメンバー追加', '承認', '拒否', '禁止', '登録を再開', '保留中, 承認済み, 拒否済み, 禁止済み'],
         confusion_title: 'よくある混乱',
         confusion_items: [
-          'Add Member by Email は、すでに存在するアカウントにしか使えません。',
+          'メールでメンバー追加は、すでに存在するアカウントにしか使えません。',
           '子どもアカウントがまだ承認済みだと、保護者の Reject がブロックされる場合があります。',
           'アクティブなカードが残っている場合も Reject がブロックされることがあります。',
           'このページは単なる審査画面ではなく、中断した登録を再開する場所でもあります。'
         ],
         next_title: '次のステップ',
-        register_link: 'Register',
-        cards_link: 'Cards',
-        support_desc: 'メンバーステータス、保護者・子どもの審査、既存アカウントのメール紐付けに関する問題は AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        register_link: '登録',
+        cards_link: 'カード',
+        support_desc: 'メンバーステータス、保護者・子どもの審査、既存アカウントのメール紐付けに関する問題は Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       ranks: {
-        badge: 'Portal',
+        badge: 'ポータル',
         title: 'ランクとプログラムを管理する',
-        intro: 'AFL の Ranks では、道場のランクプログラムを設定し、メンバーの progression を更新します。これは単一のグローバル設定ではなく、複数プログラムのワークフローです。',
+        intro: 'Affiliate Portal の Ranks では、道場のランクプログラムを設定し、メンバーの進捗を更新します。これは単一のグローバル設定ではなく、複数プログラムのワークフローです。',
         jobs_title: '主な仕事',
         jobs_items: [
           '必要なら最初にオーナーのメンバープロフィールを作成する。',
@@ -1884,18 +1884,18 @@ export default {
           'ここに表示されるのは承認済みメンバーだけです。',
           'プログラムごとの roster は、武道トラックごとに異なる場合があります。',
           '一部のランク変更は、保存前に change type と notes を含む review ステップが必要です。',
-          'ここでの変更は、アプリが読む progression データに反映されます。'
+          'ここでの変更は、アプリが読む進捗データに反映されます。'
         ],
         next_title: '次のステップ',
-        members_link: 'Members',
+        members_link: 'メンバー',
         analytics_link: 'Analytics',
-        support_desc: 'ランクプログラム設定、roster 登録、Ranks の review モーダルに関する問題は AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        support_desc: 'ランクプログラム設定、roster 登録、Ranks の review モーダルに関する問題は Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       cards: {
-        badge: 'Portal',
-        title: 'Portal のカードを使う',
-        intro: 'AFL の Cards は、テンプレート、発行、有効カード管理、一時停止、履歴まで含むフルのウェブカード導線が必要なときに使います。',
+        badge: 'ポータル',
+        title: 'ポータルのカードを使う',
+        intro: 'Affiliate Portal のカードは、テンプレート、発行、有効カード管理、一時停止、履歴まで含むフルのウェブカード導線が必要なときに使います。',
         areas_title: '主なカード領域',
         areas_items: [
           'Templates ではカードテンプレートの作成、編集、削除を行う。',
@@ -1917,19 +1917,19 @@ export default {
           '道場全体が一時停止中の場合、個別カード管理はロックされます。',
           'Pause と Unpause の操作には有料の Pause ツールが必要です。',
           'カード削除には Expire と Cancel があり、Cancel では理由が必要になることがあります。',
-          'AFL で発行したカードは、アプリの予約、出席・回数消化、メンバーカード状態に使われる実運用カードです。'
+          'Affiliate Portal で発行したカードは、アプリの予約、出席・回数消化、メンバーカード状態に使われる実運用カードです。'
         ],
         next_title: '次のステップ',
-        members_link: 'Members',
-        pause_link: 'Pause Cards',
-        app_cards_link: 'アプリの Cards',
-        support_desc: 'AFL Cards 内のテンプレート、発行、有効カード、一時停止、履歴に関する質問は AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        members_link: 'メンバー',
+        pause_link: 'カード一時停止',
+        app_cards_link: 'アプリのカード',
+        support_desc: 'Affiliate Cards 内のテンプレート、発行、有効カード、一時停止、履歴に関する質問は Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       },
       reports: {
-        badge: 'Portal',
-        title: 'Portal レポートを確認する',
-        intro: 'AFL の Reports は、システムで生成済みの月次財務レポートを確認するために使います。このページは読み取り専用です。',
+        badge: 'ポータル',
+        title: 'ポータルのレポートを確認する',
+        intro: 'Affiliate Portal のレポートは、システムで生成済みの月次財務レポートを確認するために使います。このページは読み取り専用です。',
         flow_title: '使い方',
         flow_items: [
           '複数の道場にアクセスできる場合は、最初に道場を選択します。',
@@ -1938,18 +1938,18 @@ export default {
         ],
         access_title: 'アクセスと entitlement',
         access_items: [
-          '通常はオーナーが Reports にアクセスできます。',
+          '通常はオーナーがレポートにアクセスできます。',
           '非オーナースタッフは、レポート権限が付与されている場合のみアクセスできます。',
           'Analytics entitlement が無効な場合、このページはレポートではなくロック状態を表示します。'
         ],
         know_title: '知っておくこと',
         know_items: [
-          'この画面で AFL がレポートをリアルタイム計算しているわけではありません。',
-          'レポートデータは、より広い analytics とシステムパイプラインから来ています。',
-          'ロック状態が表示される場合は Features に移動してください。'
+          'この画面で Affiliate Portal がレポートをリアルタイム計算しているわけではありません。',
+          'レポートデータは、より広い分析データとシステムパイプラインから来ています。',
+          'ロック状態が表示される場合は機能ページに移動してください。'
         ],
-        support_desc: 'レポートアクセス、Analytics のロック状態、AFL 月次レポートに関する質問は AFL Portal 掲示板をご利用ください。',
-        support_button: 'AFL Portal 掲示板を開く'
+        support_desc: 'レポートアクセス、Analytics のロック状態、Affiliate 月次レポートに関する質問は Affiliate Portal 掲示板をご利用ください。',
+        support_button: 'Affiliate Portal 掲示板を開く'
       }
     }
   }
