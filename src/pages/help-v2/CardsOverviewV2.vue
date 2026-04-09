@@ -70,7 +70,7 @@ const { t, tm } = useI18n()
           <p class="muted">
             {{ t('help_v2.cards.overview.support_records_body') }}
           </p>
-          <router-link class="link" to="/help-v2/cards/records">
+          <router-link class="link" to="/help-v2/cards/disputes">
             {{ t('help_v2.cards.overview.records_link') }}
           </router-link>
         </article>

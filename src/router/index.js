@@ -44,7 +44,7 @@ import IssueCardsV2 from '../pages/help-v2/IssueCardsV2.vue'
 import EditCardTemplatesV2 from '../pages/help-v2/EditCardTemplatesV2.vue'
 import DeleteCardTemplatesV2 from '../pages/help-v2/DeleteCardTemplatesV2.vue'
 import DeleteCardsV2 from '../pages/help-v2/DeleteCardsV2.vue'
-import CardRecordsV2 from '../pages/help-v2/CardRecordsV2.vue'
+import CardDisputesV2 from '../pages/help-v2/CardRecordsV2.vue'
 import MembersOverviewV2 from '../pages/help-v2/MembersOverviewV2.vue'
 import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
 import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
@@ -288,7 +288,8 @@ const router = createRouter({
         { path: 'cards/edit-templates', component: EditCardTemplatesV2 },
         { path: 'cards/delete-templates', component: DeleteCardTemplatesV2 },
         { path: 'cards/delete-cards', component: DeleteCardsV2 },
-        { path: 'cards/records', component: CardRecordsV2 },
+        { path: 'cards/disputes', component: CardDisputesV2 },
+        { path: 'cards/records', redirect: '/help-v2/cards/disputes' },
         { path: 'members', component: MembersOverviewV2 },
         { path: 'members/quick-enrollment', component: QuickEnrollmentV2 },
         { path: 'members/quick-enrollment-vs-applications', component: EnrollmentVsApplicationsV2 },

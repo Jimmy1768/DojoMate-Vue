@@ -48,7 +48,7 @@ const searchPages = [
   { path: '/help-v2/cards/edit-templates', titleKey: 'help_v2.cards.edit_template.title', bodyKeys: ['help_v2.cards.edit_template.intro'] },
   { path: '/help-v2/cards/delete-templates', titleKey: 'help_v2.cards.delete_template.title', bodyKeys: ['help_v2.cards.delete_template.intro'] },
   { path: '/help-v2/cards/delete-cards', titleKey: 'help_v2.cards.delete_card.title', bodyKeys: ['help_v2.cards.delete_card.intro'] },
-  { path: '/help-v2/cards/records', titleKey: 'help_v2.cards.records.title', bodyKeys: ['help_v2.cards.records.intro'] },
+  { path: '/help-v2/cards/disputes', titleKey: 'help_v2.cards.records.title', bodyKeys: ['help_v2.cards.records.intro'] },
   { path: '/help-v2/members', titleKey: 'help_v2.members.overview.title', bodyKeys: ['help_v2.members.overview.intro'] },
   { path: '/help-v2/members/quick-enrollment', titleKey: 'help_v2.members.quick.title', bodyKeys: ['help_v2.members.quick.intro'] },
   { path: '/help-v2/members/quick-enrollment-vs-applications', titleKey: 'help_v2.members.compare.title', bodyKeys: ['help_v2.members.compare.intro'] },

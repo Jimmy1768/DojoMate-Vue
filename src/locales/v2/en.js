@@ -71,7 +71,7 @@ export default {
         edit_templates: 'Edit Templates',
         delete_templates: 'Delete Templates',
         delete_cards: 'Delete Cards',
-        card_records: 'Card Records',
+        card_records: 'Disputes',
         members_overview: 'Members Overview',
         add_a_member_directly: 'Add a Member Directly',
         enrollment_vs_applications: 'Enrollment vs Applications',
@@ -258,12 +258,13 @@ export default {
       members_title: 'Manage members and cards',
       members_body: 'Review applications, register members directly, and issue cards.',
       delegated_title: 'Use delegated access',
-      delegated_body: 'If the owner enabled admin access for you, your daily tasks can include schedule, members, cards, and sometimes tools.',
+      delegated_body: 'If the owner enabled admin access for you, your daily tasks can include schedule, members, cards, and selected owner-enabled tools. The owner-only Operations dashboard is separate.',
       delegated_link: 'Review Staff Access',
       know_title: 'What to know',
       know_items: [
         'Most admin topics overlap with the owner workflow, so you do not need a completely separate wiki tree.',
-        'If something is missing from your account, the owner may need to grant access or activate the required tool first.'
+        'If something is missing from your account, the owner may need to grant access or activate the required tool first.',
+        'Analytics and other owner/pro oversight screens may live in the separate Operations dashboard instead of the main admin dashboard.'
       ],
       compare_link: 'Compare Business Pages',
       tools_link: 'Activate Tools and Premium'
@@ -273,7 +274,7 @@ export default {
         badge: 'Business',
         paid_badge: 'Paid',
         title: 'Run the business side of your academy',
-        intro: 'The Business area helps you set up your team, decide who can manage the academy, and review pay and performance tools.',
+        intro: 'The Business area helps you set up your team and decide who can manage the academy. Some owner/pro reporting and oversight tools now live in the separate Operations dashboard.',
         start_title: 'Start with the job you need to do',
         cards: [
           {
@@ -291,7 +292,7 @@ export default {
           },
           {
             title: 'Track Pay, Time, and Performance',
-            body: 'Use Analytics for compensation, reports, timesheets, and payroll-related tools.',
+            body: 'Use Analytics for compensation, reports, timesheets, and payroll-related tools in the owner/pro Operations dashboard.',
             cta: 'Open the Analytics guide',
             link: '/help-v2/business/analytics',
             paid: true
@@ -301,7 +302,8 @@ export default {
         know_items: [
           'These Business pages support different jobs, so it helps to choose the page that matches what you are trying to do.',
           'If you are setting up a new academy, start by deciding who teaches first.',
-          'If you are unsure where to begin, the Instructors guide is the best first step for team setup, followed by Staff Access and then Analytics.'
+          'If you are unsure where to begin, the Instructors guide is the best first step for team setup, followed by Staff Access.',
+          'Analytics is still related to team and academy operations, but the live app surface now sits in the separate owner/pro Operations dashboard.'
         ],
         compare_link: 'Compare Business Pages',
         next_title: 'Next step',
@@ -312,7 +314,7 @@ export default {
         badge: 'Business',
         paid_badge: 'Paid',
         title: 'Instructors, Staff Access, and Analytics',
-        intro: 'These three Business pages support different jobs. Use this page when you are not sure which one matches what you need to do.',
+        intro: 'These three workflows support different jobs. Use this page when you are not sure which one matches what you need to do.',
         pick_title: 'Choose the page by the job',
         cards: [
           {
@@ -340,7 +342,7 @@ export default {
           },
           {
             title: 'Analytics',
-            body: 'Use this page when you want business numbers, pay settings, or time records.',
+            body: 'Use this workflow when you want business numbers, pay settings, or time records in the owner/pro Operations dashboard.',
             items: [
               'review reports',
               'set compensation',
@@ -355,10 +357,11 @@ export default {
         rules_items: [
           'Changing compensation in Analytics does not make someone an instructor.',
           'Giving someone admin access does not make them an instructor either.',
-          'If someone should both teach and manage, you may need to set them up in more than one Business page.'
+          'If someone should both teach and manage, you may need to set them up in more than one workflow.',
+          'In the live app, the compact button for permissions can appear as Access.'
         ],
         start_title: 'Start here if you are still deciding',
-        start_body: 'If the question is “Can this person teach?”, start with Instructors. If the question is “Can this person manage the academy?”, go to Staff Access. If the question is “Where do I check pay or reports?”, go to Analytics.',
+        start_body: 'If the question is “Can this person teach?”, start with Instructors. If the question is “Can this person manage the academy?”, go to Staff Access. If the question is “Where do I check pay or reports?”, go to Analytics in the owner/pro Operations dashboard.',
         instructors_link: 'Instructors',
         staff_access_link: 'Staff Access',
         analytics_link: 'Analytics'
@@ -399,7 +402,7 @@ export default {
         badge: 'Business',
         paid_badge: 'Paid Tool',
         title: 'Choose who can manage the academy',
-        intro: 'Use Business → Permissions to grant or update admin access for your team.',
+        intro: 'Use the access-management screen to grant or update admin access for your team. In the live app, the compact button may say Access even when fuller copy says Permissions.',
         use_title: 'Use this page when',
         use_items: [
           'someone should help manage lessons, members, cards, or timetable work',
@@ -408,7 +411,7 @@ export default {
         ],
         steps_title: 'Steps',
         steps_items: [
-          'Open Business → Permissions.',
+          'Open the Business area and choose Access.',
           'Find the person you want to update.',
           'If they show as Member, tap their row and press Confirm to make them an admin.',
           'Tap the admin again to review access values.',
@@ -417,17 +420,17 @@ export default {
         know_title: 'What to know',
         know_items: [
           'The two badges are Member and Admin.',
-          'Permissions controls admin access. It does not decide who can teach.',
+          'Access or Permissions controls admin access. It does not decide who can teach.',
           'The current access areas are Schedule, Members, Cards, and Timetable.',
           'This feature is entitlement-gated. If the tool is inactive, delegated staff permissions will not take effect.'
         ],
         mistake_title: 'Common mistake',
-        mistake_body: 'Giving someone teaching responsibility and giving someone admin access are separate setup steps. Use Instructors for teaching roles and Permissions for admin roles.',
+        mistake_body: 'Giving someone teaching responsibility and giving someone admin access are separate setup steps. Use Instructors for teaching roles and Access or Permissions for admin roles.',
         compare_link: 'Compare Business Pages',
         remove_title: 'Remove admin access',
         remove_body: 'If someone should no longer manage the academy, use Remove Admin to return them to Member.',
         next_title: 'Next step',
-        next_body: 'After team roles are set, the next common job is reviewing compensation and reporting tools in Analytics.',
+        next_body: 'After team roles are set, the next common owner job is reviewing compensation and reporting tools in the Operations dashboard.',
         back_link: 'Back to Instructors',
         activate_link: 'Activate Tools and Premium',
         compare_pages_link: 'Compare Pages',
@@ -437,7 +440,7 @@ export default {
         badge: 'Business',
         paid_badge: 'Paid Tool',
         title: 'Track pay, time, and performance',
-        intro: 'Use Business → Analytics for compensation, reports, timesheets, and payroll-related tools.',
+        intro: 'Use Analytics in the owner/pro Operations dashboard for compensation, reports, timesheets, and payroll-related tools.',
         use_title: 'Use this page when',
         use_items: [
           'you want to review academy metrics and reports',
@@ -461,9 +464,10 @@ export default {
         ],
         know_title: 'What to know',
         know_items: [
+          'This workflow now lives in the separate Operations dashboard rather than the main admin Business area.',
           'Changing compensation in Analytics does not make someone an instructor.',
           'If someone should teach, add that role in Instructors.',
-          'If someone should manage the academy, grant that access in Permissions.',
+          'If someone should manage the academy, grant that access in Access or Permissions.',
           'Some analytics screens may be fully locked, while others can stay visible and show upgrade prompts instead.'
         ],
         mistake_title: 'Common mistake',
@@ -650,9 +654,9 @@ export default {
         support_cleanup_title: 'Clean up finished cards',
         support_cleanup_body: 'Delete or cancel active cards when they are fully used, expired, or being replaced.',
         delete_cards_link: 'Delete Cards',
-        support_records_title: 'Review card history',
-        support_records_body: 'Use records when you need history, status review, or follow-up on unusual card states.',
-        records_link: 'Card Records'
+        support_records_title: 'Review disputes and unusual card cases',
+        support_records_body: 'Use Disputes when a card removal, expired value, or other unusual card state needs follow-up.',
+        records_link: 'Disputes'
       },
       flow: {
         badge: 'Cards',
@@ -795,23 +799,24 @@ export default {
       },
       records: {
         badge: 'Cards',
-        title: 'Review card records',
-        intro: 'Use card records when you need history, status visibility, or follow-up on unusual card states.',
-        review_title: 'What you can review',
+        title: 'Review card disputes',
+        intro: 'Use Disputes when a card case needs review, such as an expired-value claim, a removed-card disagreement, or another unusual card outcome that should be checked instead of ignored.',
+        review_title: 'What this workflow covers',
         review_items: [
-          'current cards',
-          'issued cards',
-          'canceled cards',
-          'debt-related card states'
+          'open dispute cases that still need review',
+          'resolved disputes and past updates',
+          'removed-card cases that members may question',
+          'other unusual card states that need follow-up rather than routine cleanup'
         ],
-        when_title: 'When this helps most',
+        when_title: 'When to use it',
         when_items: [
-          'you need to understand what happened to a specific card',
-          'you are checking whether a card was canceled, settled, or cleared',
-          'you are following up on a debt or record discrepancy'
+          'a member says a card was removed incorrectly',
+          'a member disputes the value or outcome of an expired card',
+          'you need to review or resolve an open dispute queue item',
+          'a card case needs a human decision instead of ordinary renew/delete flow'
         ],
         know_title: 'What to know',
-        know_body: 'Card records are mainly a review and audit workflow. The normal daily card flow is still: create the template, issue the card, book lessons, then clean up the card when it ends.'
+        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. The older issue, delete, and audit record views are no longer part of the general admin dashboard. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
       }
     },
     members: {
@@ -1480,17 +1485,18 @@ export default {
       cards: {
         badge: 'Portal',
         title: 'Use portal cards',
-        intro: 'Use Cards in the Affiliate Portal when you need the full web card workflow: templates, assignment, active-card management, pause controls, and history.',
+        intro: 'Use Cards in the Affiliate Portal when you need the full web card workflow: templates, assignment, active-card management, pause controls, lesson booking adjustments, and deeper historical review.',
         areas_title: 'Main card areas',
         areas_items: [
           'Templates for creating, editing, and deleting card templates.',
           'Assign for issuing a card to an accepted member.',
           'Active for live card state, pause work, and delete or expire actions.',
-          'History for issue, delete, and audit review.'
+          'Lesson Booking Adjustments for member disputes and booking-related card corrections.',
+          'History for web-side historical review and reconciliation.'
         ],
         labels_title: 'Current labels you may see',
         labels_items: [
-          'Templates, Assign, Active, History',
+          'Templates, Assign, Active, History, Lesson Booking Adjustments',
           'New Template, Create, Update',
           'Issue Card, Manage, Delete',
           'Pause Academy, Unpause Academy, Pause Member, Unpause Member',

@@ -273,7 +273,7 @@ const results = computed(() => {
               <V2Icon name="cards" :size="16" />
               {{ t('help_v2.layout.nav.delete_cards') }}
             </router-link>
-            <router-link class="v2-nav-link" to="/help-v2/cards/records">
+            <router-link class="v2-nav-link" to="/help-v2/cards/disputes">
               <V2Icon name="cards" :size="16" />
               {{ t('help_v2.layout.nav.card_records') }}
             </router-link>
