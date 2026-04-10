@@ -793,7 +793,7 @@ export default {
         back_link: '返回发卡',
         next_link: '会员卡总览'
       },
-      records: {
+      disputes: {
         badge: '会员卡',
         title: '查看卡片记录',
         intro: '当你需要历史、状态可见性，或跟进异常卡状态时，请使用卡片记录。',

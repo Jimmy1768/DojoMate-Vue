@@ -44,7 +44,7 @@ import IssueCardsV2 from '../pages/help-v2/IssueCardsV2.vue'
 import EditCardTemplatesV2 from '../pages/help-v2/EditCardTemplatesV2.vue'
 import DeleteCardTemplatesV2 from '../pages/help-v2/DeleteCardTemplatesV2.vue'
 import DeleteCardsV2 from '../pages/help-v2/DeleteCardsV2.vue'
-import CardDisputesV2 from '../pages/help-v2/CardRecordsV2.vue'
+import CardDisputesV2 from '../pages/help-v2/CardDisputesV2.vue'
 import MembersOverviewV2 from '../pages/help-v2/MembersOverviewV2.vue'
 import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
 import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
@@ -62,6 +62,8 @@ import PortalMembersV2 from '../pages/help-v2/PortalMembersV2.vue'
 import PortalRanksV2 from '../pages/help-v2/PortalRanksV2.vue'
 import PortalCardsV2 from '../pages/help-v2/PortalCardsV2.vue'
 import PortalReportsV2 from '../pages/help-v2/PortalReportsV2.vue'
+import PortalCloudUsageV2 from '../pages/help-v2/PortalCloudUsageV2.vue'
+import PortalPayoutsV2 from '../pages/help-v2/PortalPayoutsV2.vue'
 import CreateAcademyV2 from '../pages/help-v2/CreateAcademyV2.vue'
 import AcademyBasicsV2 from '../pages/help-v2/AcademyBasicsV2.vue'
 import AcademyQRV2 from '../pages/help-v2/AcademyQRV2.vue'
@@ -277,6 +279,8 @@ const router = createRouter({
         { path: 'portal/ranks', component: PortalRanksV2 },
         { path: 'portal/cards', component: PortalCardsV2 },
         { path: 'portal/reports', component: PortalReportsV2 },
+        { path: 'portal/cloud-usage', component: PortalCloudUsageV2 },
+        { path: 'portal/payouts', component: PortalPayoutsV2 },
         { path: 'schedule', component: ScheduleOverviewV2 },
         { path: 'schedule/create-lesson', component: CreateLessonV2 },
         { path: 'schedule/manage-lesson', component: ManageLessonV2 },

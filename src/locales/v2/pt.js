@@ -793,7 +793,7 @@ export default {
         back_link: 'Voltar para emitir cartões',
         next_link: 'Visão geral de cartões'
       },
-      records: {
+      disputes: {
         badge: 'Cartões',
         title: 'Revisar registros de cartões',
         intro: 'Use os registros de cartões quando precisar de histórico, visibilidade de status ou acompanhamento de estados incomuns de cartões.',

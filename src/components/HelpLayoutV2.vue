@@ -227,6 +227,14 @@ const results = computed(() => {
               <V2Icon name="tools" :size="16" />
               {{ t('help_v2.layout.nav.portal_reports') }}
             </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/cloud-usage">
+              <V2Icon name="tools" :size="16" />
+              {{ t('help_v2.layout.nav.portal_cloud_usage') }}
+            </router-link>
+            <router-link class="v2-nav-link" to="/help-v2/portal/payouts">
+              <V2Icon name="tools" :size="16" />
+              {{ t('help_v2.layout.nav.portal_payouts') }}
+            </router-link>
             <h3 class="v2-nav-title">{{ t('help_v2.layout.nav.schedule') }}</h3>
             <router-link class="v2-nav-link" to="/help-v2/schedule">
               <V2Icon name="schedule" :size="16" />

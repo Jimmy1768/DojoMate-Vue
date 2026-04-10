@@ -7,7 +7,7 @@ export default {
     },
     layout: {
       preview_badge: 'Help v2',
-      intro: 'A task-first guide for owners and admins. v1 remains live while this version is being built.',
+      intro: 'A task-first guide for owners, admins, and students.',
       open_v1: 'Open Help v1',
       search_placeholder: 'Search help',
       search_no_results: 'No results found',
@@ -60,6 +60,8 @@ export default {
         portal_ranks: 'Portal Ranks',
         portal_cards: 'Portal Cards',
         portal_reports: 'Portal Reports',
+        portal_cloud_usage: 'Portal Cloud Usage',
+        portal_payouts: 'Portal Billing Payments',
         schedule_overview: 'Schedule Overview',
         create_a_lesson: 'Create a Lesson',
         edit_or_cancel_a_lesson: 'Edit or Cancel a Lesson',
@@ -78,15 +80,15 @@ export default {
         review_applications: 'Review Applications',
         reject_or_ban_members: 'Reject or Ban Members',
         tools_overview: 'Tools Overview',
-        activate_tools_and_premium: 'Activate Tools and Premium',
+        activate_tools_and_premium: 'Review Tool Status',
         timetable: 'Timetable',
         pause_cards: 'Pause Cards'
       }
     },
     welcome: {
-      badge: 'Preview',
+      badge: 'Guide',
       title: 'Help Guide v2',
-      intro: 'This version is being rebuilt around the person using DojoMate, not just the screen they happen to be on.',
+      intro: 'This guide is organized around the person using DojoMate, not just the screen they happen to be on.',
       who_title: 'Start with who you are',
       owner_title: 'I run the academy',
       owner_body: 'Start here if you own the academy and need setup, team, cards, schedule, or tools guidance.',
@@ -104,12 +106,12 @@ export default {
       members_title: 'Add and manage members',
       members_body: 'Bring people into the academy, review applications, and manage status changes.',
       members_link: 'Open Members Overview',
-      tools_title: 'Use paid tools',
-      tools_body: 'Add recurring scheduling and card-pausing tools after the core workflow is in place, and use the Features page to activate Premium when needed.',
+      tools_title: 'Use optional tools',
+      tools_body: 'Add recurring scheduling and card-pausing tools after the core workflow is in place, and use the Features page when you need to review tool status.',
       tools_link: 'Open Tools Overview',
       difference_title: 'How v2 is different',
       difference_body: 'v2 is organized around people and the jobs they are trying to finish, so it is easier to decide what to do next.',
-      difference_v1: 'Prefer the classic guide with search? Open Help v1',
+      difference_v1: 'Need the classic guide too? Open Help v1',
       difference_start: 'Start Here'
     },
     owner_home: {
@@ -139,31 +141,32 @@ export default {
       portal_title: 'Portal workflows',
       portal_body: 'Some workflows happen in the Source Combatives Affiliate Portal rather than inside the day-to-day DojoMate app screens.',
       portal_link: 'Open Affiliate Portal Guide',
-      paid_title: 'Paid features',
-      paid_body: 'Timetable, Pause Cards, Staff Access, and Analytics are entitlement-gated. Use the Features page guide if you need to activate tools or start Premium.',
-      paid_link: 'Activate Tools and Premium'
+      paid_title: 'Optional features',
+      paid_body: 'Timetable, Pause Cards, Staff Access, and Analytics are entitlement-gated. Use the Features page guide if you need to review which optional systems your academy can use.',
+      paid_link: 'Review Tool Status'
     },
     owner_setup: {
       getting_started: {
         badge: 'Getting Started',
-        title: 'Set up your academy in the right order',
-        intro: 'If you are starting fresh, this page gives you the simplest order to follow so the rest of the app makes sense.',
+        title: 'Follow the guided owner setup path',
+        intro: 'If you are starting fresh, the live app now uses a guided setup path for new academy owners. The Business area can temporarily switch into academy-creation mode before you return to the normal admin dashboard flow.',
         order_title: 'Recommended order',
         order_items: [
-          'Create your academy.',
-          'Bring members into the academy.',
+          'Create your academy or enter academy-creation mode from Business.',
+          'Set up or confirm your first instructor.',
           'Create membership card templates.',
-          'Issue cards to active members.',
-          'Set up instructors and staff access.',
-          'Create your first lesson.',
-          'Add paid tools when you are ready. The Affiliate Portal includes a 90-day free Premium trial with all tools unlocked.'
+          'Issue the first active cards.',
+          'Create your first lesson and begin booking.',
+          'Keep building lessons until the guided onboarding flow is complete.',
+          'After the core workflow is stable, expand into members, portal workflows, operations, and optional tools as needed.'
         ],
         why_title: 'Why this order helps',
         why_items: [
-          'Members need to exist before you can issue them cards.',
-          'Cards need to exist before booking can work properly.',
-          'Instructors should be in place before you start building lessons.',
-          'Paid tools work best after the core academy workflow is already running.'
+          'The Expo owner flow now guides setup in stages instead of expecting every system to be configured at once.',
+          'Cards need templates before they can be issued.',
+          'Active cards need to exist before the normal booking flow makes sense.',
+          'Schedule setup becomes easier after instructors, cards, and first lessons are in place.',
+          'Optional tools make more sense after the academy can already run the base teaching workflow.'
         ],
         start_title: 'Start here if you are not sure',
         create_link: 'Create Academy',
@@ -173,7 +176,7 @@ export default {
       create: {
         badge: 'Owner',
         title: 'Create your academy',
-        intro: 'This is the first owner step. Create the academy before you bring in members, issue cards, or start building lessons.',
+        intro: 'This is the first owner step. Create the academy before you bring in members, issue cards, or start building lessons. In the live app, this can appear as a dedicated creation mode inside Business.',
         before_title: 'Before you create it',
         before_items: [
           'Check whether the academy already exists, so you do not create a duplicate.',
@@ -181,10 +184,18 @@ export default {
         ],
         steps_title: 'Steps',
         steps_items: [
-          'Open the academy creation flow.',
+          'Open Business and enter the academy creation flow.',
+          'If the app shows a choose-your-path gate first, select the create-academy path.',
           'Enter the academy details carefully.',
           'Choose the correct currency.',
           'Submit the form to create the academy.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'If no academy is selected yet, Business can open directly into academy-creation mode instead of the usual admin menu layout.',
+          'Some admin users may see a gate that lets them choose between working as an admin or creating an academy.',
+          'When the full-screen creation mode shows Cancel Creation, that action returns you to the admin/staff gate instead of leaving you inside academy creation.',
+          'After a successful create, the new academy becomes the selected admin academy and the guided owner onboarding flow continues.'
         ],
         next_title: 'Next step',
         next_body: 'After the academy exists, the next common job is reviewing the basic academy information and then bringing people into the academy.',
@@ -212,18 +223,22 @@ export default {
       },
       qr: {
         badge: 'Owner',
-        title: 'Share your academy QR code',
-        intro: 'Use the academy QR when you want people to join faster without searching manually for the academy.',
+        title: 'Use academy QR and academy switching',
+        intro: 'Use the academy QR area when you want people to join faster without searching manually, or when you need to load a different academy into the admin dashboard.',
         use_title: 'When this helps most',
         use_items: [
           'in-person onboarding at the academy',
           'events, intro classes, or busy registration days',
-          'situations where multiple people need to join quickly'
+          'situations where multiple people need to join quickly',
+          'owner or staff accounts that can access more than one academy'
         ],
         know_title: 'What to know',
         know_items: [
           'The QR path is usually faster than asking people to search manually.',
-          'It is especially useful when you want to reduce joining mistakes during onboarding.'
+          'It is especially useful when you want to reduce joining mistakes during onboarding.',
+          'If more than one academy is available, the QR area can also act as the academy-switching surface.',
+          'Loading another academy changes which academy the admin dashboard is currently managing.',
+          'If you need to pop back out of the current academy completely, the admin settings flow can return you to academy selection or academy creation mode.'
         ],
         next_title: 'Next step',
         back_link: 'Back to Academy Basics',
@@ -263,18 +278,20 @@ export default {
       know_title: 'What to know',
       know_items: [
         'Most admin topics overlap with the owner workflow, so you do not need a completely separate wiki tree.',
+        'If your account can access more than one academy, make sure the correct academy is loaded before changing members, cards, or schedule data.',
+        'If you are already inside one academy and need to choose a different one from scratch, the admin settings flow can pop you back out to the Business bootstrap path.',
         'If something is missing from your account, the owner may need to grant access or activate the required tool first.',
-        'Analytics and other owner/pro oversight screens may live in the separate Operations dashboard instead of the main admin dashboard.'
+        'Analytics and other owner-only, Pro-gated oversight screens may live in the separate Operations dashboard instead of the main admin dashboard.'
       ],
       compare_link: 'Compare Business Pages',
-      tools_link: 'Activate Tools and Premium'
+      tools_link: 'Review Tool Status'
     },
     business: {
       overview: {
         badge: 'Business',
         paid_badge: 'Paid',
         title: 'Run the business side of your academy',
-        intro: 'The Business area helps you set up your team and decide who can manage the academy. Some owner/pro reporting and oversight tools now live in the separate Operations dashboard.',
+        intro: 'The Business area helps you set up your team, decide who can manage the academy, switch the active academy when needed, and enter academy-creation mode when the app allows it. Some owner/pro reporting and oversight tools now live in the separate Operations dashboard.',
         start_title: 'Start with the job you need to do',
         cards: [
           {
@@ -302,6 +319,7 @@ export default {
         know_items: [
           'These Business pages support different jobs, so it helps to choose the page that matches what you are trying to do.',
           'If you are setting up a new academy, start by deciding who teaches first.',
+          'If you can access more than one academy, confirm that the correct academy is currently loaded before you edit business details or staff setup.',
           'If you are unsure where to begin, the Instructors guide is the best first step for team setup, followed by Staff Access.',
           'Analytics is still related to team and academy operations, but the live app surface now sits in the separate owner/pro Operations dashboard.'
         ],
@@ -400,7 +418,7 @@ export default {
       },
       staff_access: {
         badge: 'Business',
-        paid_badge: 'Paid Tool',
+        paid_badge: 'Optional Tool',
         title: 'Choose who can manage the academy',
         intro: 'Use the access-management screen to grant or update admin access for your team. In the live app, the compact button may say Access even when fuller copy says Permissions.',
         use_title: 'Use this page when',
@@ -432,13 +450,13 @@ export default {
         next_title: 'Next step',
         next_body: 'After team roles are set, the next common owner job is reviewing compensation and reporting tools in the Operations dashboard.',
         back_link: 'Back to Instructors',
-        activate_link: 'Activate Tools and Premium',
+        activate_link: 'Review Tool Status',
         compare_pages_link: 'Compare Pages',
         next_link: 'Go to Analytics'
       },
       analytics: {
         badge: 'Business',
-        paid_badge: 'Paid Tool',
+        paid_badge: 'Optional Tool',
         title: 'Track pay, time, and performance',
         intro: 'Use Analytics in the owner/pro Operations dashboard for compensation, reports, timesheets, and payroll-related tools.',
         use_title: 'Use this page when',
@@ -465,6 +483,7 @@ export default {
         know_title: 'What to know',
         know_items: [
           'This workflow now lives in the separate Operations dashboard rather than the main admin Business area.',
+          'The Operations dashboard is owner-only and currently requires the higher-level Pro access state, so normal admins should not expect to open it.',
           'Changing compensation in Analytics does not make someone an instructor.',
           'If someone should teach, add that role in Instructors.',
           'If someone should manage the academy, grant that access in Access or Permissions.',
@@ -475,7 +494,7 @@ export default {
         compare_link: 'Compare Business Pages',
         next_title: 'Next step',
         next_body: 'If you are still setting up your team, finish the teaching role and admin role steps first. If the team is already set, the next common job is creating lessons and letting booking do the daily work.',
-        activate_link: 'Activate Tools and Premium',
+        activate_link: 'Review Tool Status',
         instructors_link: 'Instructors',
         staff_access_link: 'Staff Access',
         next_link: 'Go to Schedule'
@@ -797,7 +816,7 @@ export default {
         back_link: 'Back to Issue Cards',
         next_link: 'Cards Overview'
       },
-      records: {
+      disputes: {
         badge: 'Cards',
         title: 'Review card disputes',
         intro: 'Use Disputes when a card case needs review, such as an expired-value claim, a removed-card disagreement, or another unusual card outcome that should be checked instead of ignored.',
@@ -816,7 +835,7 @@ export default {
           'a card case needs a human decision instead of ordinary renew/delete flow'
         ],
         know_title: 'What to know',
-        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. The older issue, delete, and audit record views are no longer part of the general admin dashboard. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
+        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. The general admin cards area no longer carries the old issue-records, delete-records, or audit-log review screens. If those review surfaces still need to be checked, they belong under the owner-side Operations -> Oversight model instead, with audit logs reserved there. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
       }
     },
     members: {
@@ -882,7 +901,8 @@ export default {
         ],
         know_title: 'What to know',
         know_items: [
-          'Quick enrollment skips the normal pending and accepted application flow.',
+          'Quick enrollment is a direct registration flow, but parent-role onboarding still creates a pending parent member row before final confirm.',
+          'Student-role onboarding is accepted immediately, while parent-role onboarding can stay pending until the child step is completed.',
           'This flow is especially useful for parents, because you can create multiple child accounts as part of the same registration action.',
           'You can save a simple temporary password when you create the account. The member can sign in later and change it.',
           'Some members may never log in themselves, and that is still fine if you are managing the account for them.',
@@ -924,15 +944,16 @@ export default {
         intro: 'Use this flow when someone applies through Join Academy and you need to accept or reject them.',
         steps_title: 'Steps',
         steps_items: [
-          'Open Members → Add/Reject Members.',
-          'Review the pending application list.',
+          'Open Members and review the Pending Users area.',
+          'Review the pending account or parent row.',
           'Press Accept or Reject on the applicant.'
         ],
         know_title: 'What to know',
         know_items: [
           'If no pending account appears, the person may not have applied correctly.',
           'They may need to scan the academy QR code again or search your academy name again.',
-          'Linked child accounts may need extra acceptance steps through the parent’s profile.'
+          'Linked child accounts may need extra acceptance steps through the parent’s profile.',
+          'The live Members screen is status-driven, so accepted, rejected, and banned users are separated from Pending Users.'
         ],
         why_title: 'Why use applications?',
         why_body: 'This is the better long-term path when you want members to create their own accounts and add your academy themselves.',
@@ -1153,8 +1174,30 @@ export default {
         change_password_link: 'Change Password',
         child_accounts_link: 'Child Accounts',
         still_need_title: 'Still need something else?',
-        still_need_body: 'A few specialized topics may still live in Help v1 while the student path is being rebuilt further.',
+        still_need_body: 'A few specialized topics may still live in Help v1.',
         still_need_link: 'Open Help v1'
+      },
+      booking: {
+        badge: 'Student',
+        title: 'Book a lesson',
+        intro: 'Use booking to choose a lesson, select an eligible card, and reserve your place.',
+        steps_title: 'Steps',
+        steps_items: [
+          'Open Schedule.',
+          'Choose the lesson you want.',
+          'Check whether booking is allowed.',
+          'Select the card you want to use.',
+          'Confirm the booking.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'You may need to choose the correct academy first if you belong to more than one.',
+          'If a card does not appear, the lesson and the card may not be compatible.',
+          'You can also cancel the booking later if the rules still allow it.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Memberships',
+        next_link: 'Attendance Records'
       },
       broadcast: {
         badge: 'Student',
@@ -1193,8 +1236,8 @@ export default {
         know_items: [
           'Broadcast is the current shipped product term. Older Newsfeed wording is stale.',
           'Affiliate creates the content, and the app displays it.',
-          'If the feed request fails, the app currently falls back to an empty list instead of showing a separate error state.',
-          'The admin-side create screen in Expo is still staged and should not be treated as the main live workflow.'
+          'If the feed request fails, the app can fall back to an empty list instead of showing a separate error state.',
+          'The main live authoring flow is the Affiliate Portal.'
         ],
         join_link: 'Join Academy',
         alerts_link: 'System Alerts'
@@ -1203,9 +1246,9 @@ export default {
     tools: {
       overview: {
         badge: 'Tools',
-        title: 'Use paid tools to extend your academy workflow',
-        intro: 'Paid tools add extra systems on top of the core academy workflow, such as recurring schedules, card pausing, staff access, analytics, and broadcasts.',
-        start_badge: 'Paid Tool',
+        title: 'Use optional tools to extend your academy workflow',
+        intro: 'Optional tools add extra systems on top of the core academy workflow, such as recurring schedules, card pausing, staff access, and analytics. Broadcast follows its own academy billing and readiness path.',
+        start_badge: 'Optional Tool',
         start_title: 'Start with the tool you need',
         timetable_title: 'Build a recurring schedule',
         timetable_body: 'Use Timetable when you want repeating weekly lessons without recreating them one by one.',
@@ -1214,74 +1257,70 @@ export default {
         pause_body: 'Use Pause Cards when you need to stop card time temporarily.',
         pause_link: 'Open Pause Cards',
         broadcast_title: 'Send member broadcasts',
-        broadcast_body: 'Use Broadcast when you want to publish one-way updates or training posts to members from the Affiliate Portal.',
+        broadcast_body: 'Use Broadcast when you want to publish one-way updates or training posts to members from the Affiliate Portal after academy billing and broadcast readiness are set up.',
         broadcast_link: 'Open Broadcast',
         know_title: 'What to know',
         know_items: [
-          'Paid tools extend the core workflows you already use in Business, Schedule, Cards, and Members.',
-          'Tools can be available individually, or through the Premium Package.',
+          'Optional tools extend the core workflows you already use in Business, Schedule, Cards, and Members.',
+          'Help should teach what each tool does, not the old package or trial flow.',
           'Other roles can often use the tools after the academy owner enables them.',
-          'It is usually easier to learn the base workflow first, then add paid tools on top.'
+          'It is usually easier to learn the base workflow first, then add optional tools on top.'
         ],
-        activate_link: 'Activate Tools and Premium'
+        activate_link: 'Review Tool Status'
       },
       activate: {
         badge: 'Tools',
-        paid_badge: 'Paid Tool',
-        title: 'Activate tools and Premium',
-        intro: 'Use the Features page in the Affiliate Portal to review tool groups, start a free trial, purchase a package, and manage active package tools for your academy.',
+        paid_badge: 'Optional Tool',
+        title: 'Review tools and academy capabilities',
+        intro: 'Use the Features page in the Affiliate Portal to review tool status and academy capabilities.',
         where_title: 'Where to go',
-        where_body: 'Open Features in the Affiliate Portal. This is the current Rails-managed entry point for tool activation, package status, and trial state.',
+        where_body: 'Open Features in the Affiliate Portal. This is still the main Rails-managed review surface for tool status and related academy capability checks.',
         organized_title: 'How the page is organized',
         organized_items: [
-          'Tools are available individually.',
-          'The Features page groups tools under Essential Tools, Advanced Tools, and package sections.',
-          'Premium Package includes the four productivity tools.',
-          'Pro Package also appears in the current UI.',
-          'First-time users can start a 90-day Premium trial.'
+          'Timetable, Pause Cards, Staff Access, and Analytics remain the main Help v2 tool workflows.',
+          'Broadcast is reviewed separately from the main tool workflow because it depends on academy billing and readiness.',
+          'Some academy capability items can appear beside tool items on the page.'
         ],
         groups_title: 'Current tool groups',
         essential_title: 'Essential Tools',
         essential_items: ['Timetables', 'Pause Academy'],
         advanced_title: 'Advanced Tools',
-        advanced_items: ['Staff Permissions', 'Analytics'],
-        packages_title: 'Packages',
-        packages_body: 'The current UI includes Premium Package and Pro Package.',
+        advanced_items: ['Staff Access', 'Analytics'],
+        packages_title: 'Package labels',
+        packages_body: 'If package labels appear on the live page, use them as page labels, but follow the workflow guidance in this help.',
         features_title: 'What you may see on the Features page',
         features_items: [
-          'Start Free Trial',
-          'Purchase Premium Package',
-          'Purchase Pro Package',
-          'Premium active!',
-          'Included in Premium',
-          'Available in free trial',
-          'Included in free trial',
-          'Included in your package',
-          'Manage'
+          'Tool cards or grouped capability cards',
+          'Current status labels',
+          'Manage',
+          'Broadcast readiness or academy billing prompts',
+          'Academy slot add-on references',
+          'Included in your package'
         ],
         know_title: 'What to know',
         know_items: [
           'Some screens are fully locked when a tool is inactive.',
           'Some screens still load but replace paid actions with upgrade prompts.',
-          'Broadcast is the current user-facing term in this UI, not the older Newsfeed wording.',
-          'Package trial behavior is overlap-aware, so Pro and Premium do not simply reset each other.'
+          'Broadcast is the current user-facing term in this UI.',
+          'Broadcast follows academy payment and readiness setup, so it should be understood separately from the main tool workflow.',
+          'Use this page to understand status and capability, not as the main place to learn each workflow.'
         ],
-        guides_title: 'Paid guides',
+        guides_title: 'Related guides',
         staff_access: 'Staff Access',
         analytics: 'Analytics',
-        support_desc: 'Use the Affiliate Portal board on Source Combatives for questions about Features, subscriptions, trial status, or other Affiliate Portal web flows.',
+        support_desc: 'Use the Affiliate Portal board on Source Combatives for questions about Features, academy capabilities, billing/readiness status, or other Affiliate Portal web flows.',
         support_button: 'Open the Affiliate Portal Board'
       },
       broadcast: {
         badge: 'Tools',
-        paid_badge: 'Paid Tool',
+        paid_badge: 'Optional Tool',
         title: 'Send one-way broadcasts to members',
         intro: 'Use Broadcasts in the Affiliate Portal when you want to publish academy updates or training posts to members. This is a one-way publishing tool, not chat, not replies, and not a social feed.',
         where_title: 'Where it lives',
         where_items: [
           'Open Broadcasts from the Affiliate Portal navigation.',
           'In the current Affiliate Portal flow, Broadcast is effectively owner-only.',
-          'Broadcast is presented as a Pro tool in the Features page.'
+          'Broadcast access depends on academy billing and broadcast readiness.'
         ],
         flow_title: 'How the authoring flow works',
         flow_steps: [
@@ -1312,8 +1351,8 @@ export default {
         ],
         know_title: 'What to know',
         know_items: [
-          'Use Broadcast everywhere in user-facing copy. Older Newsfeed wording is stale.',
-          'Broadcast is entitlement-gated and is not available by default.',
+          'Use Broadcast everywhere in user-facing copy.',
+          'Broadcast should be treated separately from the main tool workflow because it depends on academy billing and readiness.',
           'Images can be added either by pasted URLs or by file upload.',
           'Broadcasts are authored in the Affiliate Portal and then consumed in the app.'
         ],
@@ -1324,7 +1363,7 @@ export default {
       },
       timetable: {
         badge: 'Tools',
-        paid_badge: 'Paid Tool',
+        paid_badge: 'Optional Tool',
         title: 'Build a recurring weekly schedule',
         intro: 'Use Timetable when you want to create lesson templates once and publish them into the calendar over time.',
         use_title: 'When to use this',
@@ -1353,11 +1392,11 @@ export default {
         publish_body_2: 'Members can still see unpublished lessons as future plans, but they cannot book them yet.',
         mistake_title: 'Common mistake',
         mistake_body: 'If a recurring lesson falls on a holiday, you usually do not need to rebuild the timetable. Simply choose not to publish that lesson.',
-        activate_link: 'Activate Tools and Premium'
+        activate_link: 'Review Tool Status'
       },
       pause: {
         badge: 'Tools',
-        paid_badge: 'Paid Tool',
+        paid_badge: 'Optional Tool',
         title: 'Pause active cards when needed',
         intro: 'Use Pause Cards when you need to stop card time temporarily instead of letting the card keep expiring normally.',
         modes_title: 'Two ways to pause cards',
@@ -1375,7 +1414,7 @@ export default {
         common_body: 'Owners often use this tool when they want to protect member time without manually extending expiry dates one card at a time.',
         next_title: 'Next step',
         back_tools: 'Back to Tools Overview',
-        activate_link: 'Activate Tools and Premium',
+        activate_link: 'Review Tool Status',
         back_cards: 'Back to Cards'
       }
     },
@@ -1383,7 +1422,7 @@ export default {
       overview: {
         badge: 'Portal',
         title: 'Use the Affiliate Portal',
-        intro: 'The Affiliate Portal is the Source Combatives web surface for owner workflows that are heavier than the normal day-to-day app screens, especially registration, moderation, ranks, cards, reports, and package activation.',
+        intro: 'The Affiliate Portal is the Source Combatives web surface for owner workflows that are heavier than the normal day-to-day app screens, especially registration, moderation, ranks, cards, reports, access grants, and academy capability review.',
         workflows_title: 'Main Affiliate Portal workflows',
         register_title: 'Register and onboard',
         register_body: 'Use the registration wizard to create adult and parent accounts, optionally add children, and resume interrupted onboarding later.',
@@ -1393,13 +1432,18 @@ export default {
         ranks_body: 'Set up rank programs, enroll members by program, and confirm rank changes through the current review flow.',
         cards_title: 'Manage cards in the Affiliate Portal',
         cards_body: 'Use the Templates, Assign, Active, and History views for card setup, issuing, active-card work, pause actions, and audit review.',
-        reports_title: 'Review reports and tools',
-        reports_body: 'Reports stay lighter because they are mostly read-only. Features is where package and trial status are managed.',
+        reports_title: 'Review reports and report access',
+        reports_body: 'Monthly Reports is read-only, but owner-side Shareholders controls who can receive financial or operational report access.',
+        capability_title: 'Manage owner-only capability setup',
+        capability_body: 'Owner web setup also includes Features, Cloud Usage, and Billing Payments or Payouts for academy capability review, media billing readiness, and payment collection onboarding.',
+        capability_cloud_link: 'Portal Cloud Usage',
+        capability_payouts_link: 'Portal Billing Payments',
         know_title: 'What to know',
         know_items: [
           'Most Affiliate Portal pages are owner-only in practice.',
-          'Monthly Reports is the main exception: non-owner staff can see it if they were granted report access.',
-          'Changes made in the Affiliate Portal often feed the app directly, including member status, cards, rank data, and tool activation.'
+          'Monthly Reports is the main exception: non-owner staff can see it only if they were granted report access.',
+          'Changes made in the Affiliate Portal often feed the app directly, including member status, cards, rank data, report visibility, and academy capabilities.',
+          'Features, Cloud Usage, and Billing Payments or Payouts work together as the broader owner capability model, not as one single settings page.'
         ],
         support_desc: 'Use the Affiliate Portal board on Source Combatives for Affiliate Portal questions, portal setup problems, and other Affiliate Portal web workflows.',
         support_button: 'Open the Affiliate Portal Board'
@@ -1411,6 +1455,7 @@ export default {
         flow_title: 'How the flow works',
         flow_steps: [
           'Open Register in the Affiliate Portal and fill the parent or adult details first.',
+          'A parent-role registration creates the parent member row immediately and leaves it Pending while the wizard continues.',
           'If the person is registering as a parent, add child accounts in the child step.',
           'Review the summary and use Confirm & Create to finish.',
           'After creation, use Register Another or Go to Members if you need to continue working.'
@@ -1422,6 +1467,7 @@ export default {
           'Parents and adult students do not follow exactly the same path.',
           'If a parent is registering as a student, the children step is skipped.',
           'A parent can remain in Pending and be resumed later from Members.',
+          'Resume Onboarding currently returns to the children step, not directly to review.',
           'Accounts created here become normal DojoMate users and appear in academy member data used by the app.'
         ],
         next_title: 'Next step',
@@ -1436,13 +1482,13 @@ export default {
         intro: 'Use Members in the Affiliate Portal to moderate academy member status. This area is status-driven, not just a flat roster.',
         jobs_title: 'Main jobs',
         jobs_items: [
-          'Review Pending Users, Recently Accepted, parent accounts, adult members, rejected users, and banned users.',
+          'Review Pending Users, Recently Accepted, Accepted Parents, Accepted Adults, Rejected Users, and Banned Users.',
           'Use Accept, Reject, and Ban for moderation work.',
           'Use Add Member by Email to attach an existing account by email.',
           'Use Resume Onboarding to continue a parent flow that was left pending.'
         ],
         labels_title: 'Current labels you may see',
-        labels_items: ['Members', 'Member List', 'Add Member by Email', 'Accept', 'Reject', 'Ban', 'Resume Onboarding', 'Pending, Accepted, Rejected, Banned'],
+        labels_items: ['Members', 'Add Member by Email', 'Accept', 'Reject', 'Ban', 'Resume Onboarding', 'Pending Users', 'Recently Accepted', 'Accepted Parents', 'Accepted Adults', 'Rejected Users', 'Banned Users'],
         confusion_title: 'Common confusion',
         confusion_items: [
           'Add Member by Email only works for an account that already exists.',
@@ -1520,7 +1566,7 @@ export default {
       reports: {
         badge: 'Portal',
         title: 'Review portal reports',
-        intro: 'Use Reports in the Affiliate Portal to review monthly financial reports that were already generated by the system. This page is read-only.',
+        intro: 'Use Reports in the Affiliate Portal to review monthly financial reports that were already generated by the system. This page is read-only, and visibility depends on both analytics entitlement and explicit report access.',
         flow_title: 'How it works',
         flow_items: [
           'If you can access more than one academy, choose the academy first.',
@@ -1530,16 +1576,81 @@ export default {
         access_title: 'Access and entitlement',
         access_items: [
           'Owners can normally access Reports.',
-          'Non-owner staff can only access Reports if they were granted report access.',
+          'Non-owner staff do not automatically receive Reports access.',
+          'Non-owner staff can only access Reports if the owner granted report access.',
           'If the Analytics entitlement is off, this page shows a locked state instead of report data.'
+        ],
+        grants_title: 'How report access is managed',
+        grants_items: [
+          'Owners manage report viewers from the Shareholders page in the Affiliate Portal.',
+          'Shareholders currently exposes Financial and Operational report toggles for accepted adult members with linked user accounts.',
+          'Granting access affects future generated reports; it does not backfill old report rows.'
         ],
         know_title: 'What to know',
         know_items: [
           'The Affiliate Portal is not calculating reports live in this screen.',
-          'The report data comes from the wider analytics and system pipeline.',
-          'If you see a locked state, go to Features.'
+          'The report data is delivered from generated analytics messages, not from a separate live reports table.',
+          'If you see a locked state, check Analytics entitlement and the current report-access grant model.'
         ],
-        support_desc: 'Use the Affiliate Portal board for report-access problems, locked Analytics states, or questions about Affiliate Portal monthly reports.',
+        support_desc: 'Use the Affiliate Portal board for report-access problems, Shareholders questions, locked Analytics states, or questions about Affiliate Portal monthly reports.',
+        support_button: 'Open the Affiliate Portal Board'
+      },
+      cloud_usage: {
+        badge: 'Portal',
+        title: 'Manage portal cloud usage and media billing',
+        intro: 'Use Cloud Usage in the Affiliate Portal when you need to prepare academy media billing, complete billing-method onboarding, review readiness, or dispute a statement. This is an owner-only capability page, not a normal daily admin screen.',
+        setup_title: 'What you do here',
+        setup_items: [
+          'Review setup progress for academy media billing readiness.',
+          'Save the billing contact email, billing country, currency, and billing acknowledgement details.',
+          'Start or continue the billing-method onboarding flow.',
+          'Review current statement estimates, storage, bandwidth, and usage totals.',
+          'Open billing support or dispute a statement when the latest charge looks wrong.'
+        ],
+        billing_title: 'How this relates to other owner tools',
+        billing_items: [
+          'Cloud Usage controls academy media and broadcast billing readiness.',
+          'Features may show capability status, but Cloud Usage is the owner workflow for billing-profile setup and payment-method onboarding.',
+          'If Cloud Usage is not ready, broadcast/media access can remain blocked even when other tool wording looks available.',
+          'This page is academy-scoped, so owners should confirm the current academy before making changes.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Billing readiness is staged: save the profile first, then complete the billing-method onboarding flow.',
+          'This page is not only for invoices. It also controls whether academy media and related broadcast capabilities can move into a ready state.',
+          'Statement disputes and billing-support cases belong here, not in the general cards or reports workflows.',
+          'This is owner-side web setup, so normal admins should not expect to manage it from the app.'
+        ],
+        support_desc: 'Use the Affiliate Portal board for Cloud Usage questions, broadcast billing-readiness issues, billing-method onboarding problems, or statement disputes.',
+        support_button: 'Open the Affiliate Portal Board'
+      },
+      payouts: {
+        badge: 'Portal',
+        title: 'Manage portal billing payments and payouts',
+        intro: 'Use Billing Payments or Payouts in the Affiliate Portal when you need to connect the academy for tuition collection and payout readiness. This is owner-side payment setup, not a member-management workflow.',
+        setup_title: 'What you do here',
+        setup_items: [
+          'Review whether the academy is ready to collect payments.',
+          'Save required academy business or support details for the payout provider.',
+          'Start or continue the provider onboarding flow, such as Stripe onboarding.',
+          'Check whether charges and payouts are enabled or still pending.',
+          'Review any blocked setup requirement before trying to collect tuition.'
+        ],
+        readiness_title: 'What readiness means',
+        readiness_items: [
+          'This page is about academy payment-collection readiness, not report access or media billing readiness.',
+          'The payout and payment provider can vary by country, so the exact setup path is not always identical.',
+          'If onboarding is incomplete, tuition collection should be treated as not ready yet.',
+          'Owners should use this page for payment onboarding and use Cloud Usage separately for media and broadcast billing readiness.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Billing Payments or Payouts is an owner workflow because it affects how academy money flows.',
+          'This setup is broader than one button click; blocked requirements can come from academy details, agreement acceptance, or provider onboarding state.',
+          'The live page can show readiness, pending, or blocked states before the academy is fully payment-ready.',
+          'If you are troubleshooting broadcast/media readiness, use Cloud Usage instead of this page.'
+        ],
+        support_desc: 'Use the Affiliate Portal board for Billing Payments or Payouts questions, Stripe or provider onboarding problems, or academy payment-readiness issues.',
         support_button: 'Open the Affiliate Portal Board'
       }
     }

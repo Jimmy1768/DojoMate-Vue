@@ -548,15 +548,18 @@ This chunk is now high priority because the cards area has a newer ownership spl
 
 ### Product Direction Confirmed
 
-- [x] Admins should no longer be taught that they can review owner-only card records such as:
+- [x] Admins should no longer be taught that the general admin cards area includes the older review surfaces for:
   - issue records
   - delete records
   - audit logs
-- [x] Those owner-only items now belong with the owner-side operations / oversight model.
+- [x] Those review surfaces now belong with the owner-side Operations -> Oversight model.
 - [x] A new `Disputes` system now exists and should be treated as a first-class current workflow.
 - [x] General admin Help v2 sections must not refer to issue/delete/audit record workflows.
 - [x] `Card Records` no longer exists as a current product surface.
-- [x] The old historical record model has been refactored into owner-side buttons under Operations -> Oversight.
+- [x] The old historical record model has been refactored into owner-side buttons under Operations -> Oversight:
+  - issue records
+  - delete records
+  - audit logs
 
 ### Current Help V2 Claims That Look Drifted
 
@@ -608,16 +611,12 @@ Primary upstream sources:
 
 ### Important Drift / Cleanup Notes
 
-- [ ] The old owner-only record surfaces still appear in Expo code:
+- [x] The owner-side record review surfaces still exist as intended product surfaces:
   - `Issue Records`
   - `Delete Records`
   - `Audit Logs`
-- [ ] Operations permissions menu still lists those older record views:
-  - `OperationsPermissionsIssueRecords`
-  - `OperationsPermissionsDeleteRecords`
-  - `OperationsPermissionsAuditLogs`
-- [ ] `CardsRecord` still exists in Expo code and still supports audit / issue / delete modes.
-- [ ] Help rewrite should follow product direction, not stale leftover code paths.
+- [x] These belong under Operations -> Oversight, not the general admin cards area.
+- [ ] Help rewrite should follow this ownership split clearly and avoid flattening them back into generic admin cards help.
 
 ### Likely Rewrite Direction
 
@@ -627,7 +626,7 @@ Primary upstream sources:
   - Disputes
   - Active-card management
 - [x] Remove issue/delete/audit record language from general admin-facing help.
-- [ ] If older record-review workflows still need any mention, describe them only as owner-side Operations -> Oversight actions.
+- [x] If older record-review workflows need mention, describe them only as owner-side Operations -> Oversight actions.
 - [x] Add a dedicated Help v2 page or section for `Disputes`.
 - [ ] Clarify member-side dispute flow separately from admin dispute review flow if both should be documented.
 
@@ -643,7 +642,10 @@ Primary upstream sources:
 ### Focus Questions For Second Pass
 
 - [x] Should `Card Records` be removed from Help v2 entirely, or retained as owner-only reference language?
-  - Remove as a current product surface.
+  - Remove as a current product surface, but keep the owner-side Operations -> Oversight review buttons understood as:
+    - issue records
+    - delete records
+    - audit logs
 - [x] Should `Disputes` replace `Card Records` as the main support/audit workflow in Help v2?
   - Yes, for the current admin cards support model.
 - [ ] Do we want:
@@ -656,3 +658,185 @@ Primary upstream sources:
 - [x] Rewrite cards support/help copy around the new owner/admin split.
 - [x] Add dispute coverage to the checklist-backed Help v2 plan.
 - [ ] Flag stale Expo owner-only record surfaces for separate product/code cleanup if they are no longer intended to ship.
+
+## Chunk 4 Working Notes: Owner Guided Onboarding And Tools
+
+### Confirmed Drift
+
+- [x] Help v2 owner onboarding still taught the older setup order and ended in package/trial language.
+- [x] Expo now has a guided owner onboarding/tutorial path that stages setup instead of treating tools/packages as the main next step.
+- [x] Help v2 Tools/Features copy still taught older package, trial, and Broadcast entitlement assumptions.
+
+### Current Product Direction
+
+- [x] New academy owners are guided through staged setup in Expo.
+- [x] The guided path prioritizes:
+  - first instructor setup
+  - first card template
+  - first active card
+  - first scheduled lessons / booking
+- [x] Help v2 should describe tool workflows without teaching old unlock/trial steps.
+- [x] Broadcast should be described separately from the older normal package-tool model.
+
+### Source References
+
+- `DojoMate-Expo/src/utils/adminOnboardingLanding.js`
+- `DojoMate-Expo/src/utils/adminOnboardingState.js`
+- `DojoMate-Expo/src/screens/admin/business/BusinessLayout.js`
+- `DojoMate-Expo/src/screens/admin/business/BusinessAdminGate.js`
+- `DojoMate-Expo/src/screens/admin/business/BusinessInstructorSetup.js`
+- `DojoMate-Vue/src/locales/v2/en.js`
+
+### First-Pass Output
+
+- [x] Rewrite owner Getting Started copy around the guided setup path.
+- [x] Remove old free-trial / Premium-teaching language from the owner onboarding sequence.
+- [x] Rewrite Tools / Features help to focus on workflow meaning instead of package purchase instructions.
+- [ ] Second-pass product decisions still needed for the final 2.0.0 tool wording once Expo and Rails monetization surfaces are fully aligned.
+
+## Chunk 5 Working Notes: Portal Register, Portal Members, And Quick Enrollment
+
+### Confirmed Drift
+
+- [x] Help v2 Quick Enrollment said the flow skips normal pending/accepted handling.
+- [x] Rails reference confirms parent-role onboarding creates a pending parent member row immediately.
+- [x] Portal Register needed stronger wording about pending parent creation and resume behavior.
+- [x] Portal Members wording was close, but still understated the status-driven split now used by the live Members UI.
+
+### Current Product Direction
+
+- [x] Parent-role registration creates a pending parent row immediately.
+- [x] Student-role registration creates an accepted student row immediately.
+- [x] Resume Onboarding is recovered from Members and currently returns to the children step.
+- [x] Members is organized by status areas:
+  - Pending Users
+  - Recently Accepted
+  - Accepted Parents
+  - Accepted Adults
+  - Rejected Users
+  - Banned Users
+
+### Source References
+
+- `Combatives-Rails/ops/docs/reference/afl_registration_reference.md`
+- `Combatives-Rails/app/views/afl/members/index.html.erb`
+- `DojoMate-Vue/src/locales/v2/en.js`
+
+### First-Pass Output
+
+- [x] Rewrite Quick Enrollment help to stop saying parent registration skips pending flow.
+- [x] Tighten Applications wording around the status-driven Members surface.
+- [x] Tighten Portal Register wording around pending parent creation and resume behavior.
+- [x] Tighten Portal Members wording around the current status buckets and labels.
+
+## Chunk 6 Working Notes: Portal Reports And Shareholders
+
+### Confirmed Drift
+
+- [x] Help v2 described Portal Reports too generically.
+- [x] Help v2 did not clearly teach the owner-side Shareholders surface for report access grants.
+- [x] The live reporting model is grant-driven, not automatic for admins.
+
+### Current Product Direction
+
+- [x] Monthly Reports is read-only and entitlement-gated.
+- [x] Reports are delivered from generated `SystemMessage` insight rows, not live report computation.
+- [x] Non-owner staff do not automatically receive financial or operational report visibility.
+- [x] Owners manage report viewers through AFL Shareholders.
+- [x] Shareholders currently exposes:
+  - Financial
+  - Operational
+  - Advice as a disabled coming-soon placeholder
+
+### Source References
+
+- `Combatives-Rails/ops/docs/reference/analytics_reports_reference.md`
+- `Combatives-Rails/app/views/afl/academy_access_grants/index.html.erb`
+- `DojoMate-Vue/src/locales/v2/en.js`
+
+### First-Pass Output
+
+- [x] Tighten Portal overview language around reports and report access.
+- [x] Rewrite Portal Reports to explain entitlement + grant-based visibility.
+- [x] Add Shareholders/report-access grant wording to Help v2.
+
+## Chunk 7 Working Notes: Terminology Sweep
+
+### Confirmed Drift
+
+- [x] Help v2 still had older labels such as `Activate Tools and Premium`, `paid tools`, and `Paid Tool`.
+- [x] Some tool and portal wording still leaned on older package-era naming even after workflow copy was updated.
+
+### First-Pass Output
+
+- [x] Rename user-facing help labels toward lighter `optional tools / tool status` wording.
+- [x] Remove obvious leftover `paid tools` / `Paid Tool` / `Activate Tools and Premium` terminology from Help v2 English where it was just label drift.
+- [ ] Second-pass polish may still be needed once Expo/Rails naming settles fully for 2.0.0.
+
+## Chunk 8 Working Notes: Owner Web Capabilities
+
+### Confirmed Drift
+
+- [x] Help v2 still underrepresents owner-only web surfaces beyond the core portal pages.
+- [x] `Cloud Usage` is now a real owner workflow for academy media billing readiness, billing-method onboarding, and statement disputes.
+- [x] `Billing Payments` / `Payouts` is a real owner workflow for academy payment-collection readiness and payout onboarding.
+- [x] AFL nav exposes these owner surfaces directly, but Help v2 barely mentions them.
+
+### Current Product Direction
+
+- [x] `Features` is not the whole owner capability story anymore.
+- [x] `Cloud Usage` controls academy media/broadcast billing readiness.
+- [x] `Payouts` / `Billing Payments` controls academy payment-collection onboarding/readiness.
+- [x] These are owner-side web workflows, not normal admin/mobile flows.
+
+### Source References
+
+- `Combatives-Rails/app/views/layouts/afl.html.erb`
+- `Combatives-Rails/app/controllers/afl/cloud_usage_controller.rb`
+- `Combatives-Rails/app/views/afl/cloud_usage/show.html.erb`
+- `Combatives-Rails/app/controllers/afl/payouts_controller.rb`
+- `DojoMate-Vue/src/locales/v2/en.js`
+
+### First-Pass Output
+
+- [x] Expand Portal Overview to mention owner-side capability pages beyond the old core sections.
+- [ ] Decide whether Help v2 should add dedicated first-pass pages for:
+  - Cloud Usage
+  - Billing Payments / Payouts
+- [ ] Second-pass refine how Broadcast, Features, Cloud Usage, and Payouts cross-link as one owner capability model.
+
+## Chunk 9 Working Notes: Academy Switching And Creation Mode
+
+### Confirmed Drift
+
+- [x] Help v2 treated `Create Academy` like a simple standalone page, but Expo now uses a Business bootstrap flow that can switch users into academy-creation mode.
+- [x] Admin users without a selected academy can hit a Business gate that offers a create-academy path or a work-as-admin path.
+- [x] Full-screen creation mode now has an explicit `Cancel Creation` action that returns the user to the admin/staff gate instead of leaving them inside owner setup.
+- [x] `Academy QR` is no longer only about sharing a join code; it also acts as an academy-switching surface when the account can access more than one academy.
+- [x] Once already inside an academy, Admin Settings can pop the user back out to academy selection or academy creation bootstrap flow.
+
+### Current Product Direction
+
+- [x] Business can enter a bootstrap state before an academy is selected.
+- [x] The correct active academy matters before admins change members, cards, or schedule data.
+- [x] Switching academies is part of normal admin/owner workflow when the account has more than one academy available.
+- [x] Creation-mode entry and exit should be documented as mode changes, not just page links.
+- [x] Operations access is stricter than general admin access: it is owner-only and currently Pro-gated.
+
+### Source References
+
+- `DojoMate-Expo/src/screens/admin/business/BusinessLayout.js`
+- `DojoMate-Expo/src/screens/admin/business/BusinessAdminGate.js`
+- `DojoMate-Expo/src/screens/admin/business/BusinessCreate.js`
+- `DojoMate-Expo/src/screens/admin/business/BusinessQR.js`
+- `DojoMate-Expo/src/screens/admin/admin/AdminSettings.js`
+- `DojoMate-Vue/src/locales/v2/en.js`
+
+### First-Pass Output
+
+- [x] Update `Getting Started` to mention Business bootstrap / creation mode.
+- [x] Update `Create Academy` to explain gate entry, full-screen creation mode, and cancel behavior.
+- [x] Update `Academy QR` to explain academy switching as well as QR sharing.
+- [x] Update `Business Overview` and `Admin Home` to remind users to confirm the currently loaded academy.
+- [x] Add first-pass wording that Admin Settings can pop users back out into the Business bootstrap flow.
+- [x] Tighten `Analytics` / `Operations` wording so Help does not imply ordinary admins can access that dashboard.

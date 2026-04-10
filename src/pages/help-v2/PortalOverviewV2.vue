@@ -71,6 +71,22 @@ const { t, tm } = useI18n()
             <p class="muted">{{ t('help_v2.portal.overview.reports_body') }}</p>
           </div>
         </article>
+
+        <article class="v2-panel">
+          <h3>{{ t('help_v2.portal.overview.capability_title') }}</h3>
+          <div class="stack tight">
+            <router-link class="link" to="/help-v2/portal/cloud-usage">
+              {{ t('help_v2.portal.overview.capability_cloud_link') }}
+            </router-link>
+            <router-link class="link" to="/help-v2/portal/payouts">
+              {{ t('help_v2.portal.overview.capability_payouts_link') }}
+            </router-link>
+            <router-link class="link" to="/help-v2/tools/activate">
+              Features
+            </router-link>
+            <p class="muted">{{ t('help_v2.portal.overview.capability_body') }}</p>
+          </div>
+        </article>
       </div>
     </section>
 

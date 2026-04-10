@@ -793,7 +793,7 @@ export default {
         back_link: '카드 발급으로 돌아가기',
         next_link: 'Cards 개요'
       },
-      records: {
+      disputes: {
         badge: '카드',
         title: '카드 기록 검토하기',
         intro: '기록, 상태 가시성, 비정상 카드 상태 후속 확인이 필요할 때 card records를 사용하세요.',

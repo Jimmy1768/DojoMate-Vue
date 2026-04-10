@@ -793,7 +793,7 @@ export default {
         back_link: 'カード発行に戻る',
         next_link: 'カード概要'
       },
-      records: {
+      disputes: {
         badge: 'カード',
         title: 'カード記録を確認する',
         intro: '履歴確認、状態の見える化、異常なカード状態の追跡が必要なときに card records を使います。',
