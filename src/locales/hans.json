@@ -1,4 +1,9 @@
 {
+  "trademark_notice_html": "DojoMate<sup>TM</sup> 和 Source Combatives<sup>TM</sup> 是 SourceGrid Labs Pte. Ltd. 的商标。",
+  "nav": {
+    "home": "首页",
+    "upgrade": "升级"
+  },
   "copyright_footer": "© 2026 SourceGrid Labs Pte. Ltd. 版权所有。",
   "home": {
     "welcome": "欢迎使用 DojoMate",

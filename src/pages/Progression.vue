@@ -6,6 +6,7 @@ const { t } = useI18n()
 <template>
   <main class="stack">
     <h1>{{ t('progression.title') }}</h1>
+    <p class="muted" v-html="t('trademark_notice_html')"></p>
     <p class="muted">{{ t('progression.effective_date') }}</p>
 
     <p>{{ t('progression.intro') }}</p>

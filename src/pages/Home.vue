@@ -14,6 +14,7 @@ const isHans = computed(() => {
 <template>
   <section class="stack tight text-center">
     <h1>{{ t('home.welcome') }}</h1>
+    <p class="muted trademark-note" v-html="t('trademark_notice_html')"></p>
     <p class="muted">{{ t('home.desc_1') }}</p>
     <p class="muted">{{ t('home.desc_2') }}</p>
   </section>
@@ -115,6 +116,16 @@ const isHans = computed(() => {
   grid-template-columns: repeat(3, minmax(0, 1fr)); /* [][][] */
   gap: var(--space-4);
   align-items: stretch; /* even heights if content differs */
+}
+
+.trademark-note {
+  margin-top: -0.25rem;
+  font-size: 0.95rem;
+}
+
+.trademark-note sup {
+  font-size: 0.65em;
+  vertical-align: super;
 }
 
 /* Stack on phones */

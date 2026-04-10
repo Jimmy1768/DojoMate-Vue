@@ -7,6 +7,7 @@ const { t } = useI18n()
 <template>
   <main class="stack">
     <h1>{{ t('deletion.title') }}</h1>
+    <p class="muted" v-html="t('trademark_notice_html')"></p>
     <p>{{ t('deletion.intro_primary') }}</p>
     <p>{{ t('deletion.intro_secondary') }}</p>
 

@@ -13,8 +13,8 @@ const { locale, t } = useI18n()
 
     <div class="topbar">
       <div class="links">
-        <router-link to="/" class="link">Home</router-link>
-        <a href="https://sourcecombatives.com/afl" target="_blank" rel="noopener noreferrer" class="link">Upgrade</a>
+        <router-link to="/" class="link">{{ t('nav.home') }}</router-link>
+        <a href="https://sourcecombatives.com/afl" target="_blank" rel="noopener noreferrer" class="link">{{ t('nav.upgrade') }}</a>
       </div>
 
       <div class="lang">
