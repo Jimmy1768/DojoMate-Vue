@@ -1235,9 +1235,9 @@ export default {
         know_title: 'What to know',
         know_items: [
           'Broadcast is the current shipped product term. Older Newsfeed wording is stale.',
-          'Affiliate creates the content, and the app displays it.',
+          'Broadcast content can now be authored from the app or from the Affiliate Portal, depending on academy setup and role access.',
           'If the feed request fails, the app can fall back to an empty list instead of showing a separate error state.',
-          'The main live authoring flow is the Affiliate Portal.'
+          'App-side Broadcast authoring depends on academy media/cloud billing readiness being set up first.'
         ],
         join_link: 'Join Academy',
         alerts_link: 'System Alerts'
@@ -1315,16 +1315,16 @@ export default {
         badge: 'Tools',
         paid_badge: 'Optional Tool',
         title: 'Send one-way broadcasts to members',
-        intro: 'Use Broadcasts in the Affiliate Portal when you want to publish academy updates or training posts to members. This is a one-way publishing tool, not chat, not replies, and not a social feed.',
+        intro: 'Use Broadcast when you want to publish academy updates or training posts to members. This is a one-way publishing tool, not chat, not replies, and not a social feed.',
         where_title: 'Where it lives',
         where_items: [
-          'Open Broadcasts from the Affiliate Portal navigation.',
-          'In the current Affiliate Portal flow, Broadcast is effectively owner-only.',
+          'Broadcast authoring can be available in the DojoMate app or in the Affiliate Portal, depending on academy setup and role access.',
+          'In the app, authoring depends on academy media/cloud billing readiness being set up first.',
           'Broadcast access depends on academy billing and broadcast readiness.'
         ],
         flow_title: 'How the authoring flow works',
         flow_steps: [
-          'Open Broadcasts in the Affiliate Portal.',
+          'Open the Broadcast authoring surface available to your role, either in DojoMate or in the Affiliate Portal.',
           'Choose the stream tab you want to post into.',
           'Write the message body.',
           'Add images by pasted URL or by file upload.',
@@ -1354,7 +1354,7 @@ export default {
           'Use Broadcast everywhere in user-facing copy.',
           'Broadcast should be treated separately from the main tool workflow because it depends on academy billing and readiness.',
           'Images can be added either by pasted URLs or by file upload.',
-          'Broadcasts are authored in the Affiliate Portal and then consumed in the app.'
+          'Broadcasts can now be authored in DojoMate or in the Affiliate Portal, then consumed in the app feed.'
         ],
         features_link: 'Features',
         student_link: 'Read Broadcast in the App',

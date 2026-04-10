@@ -100,15 +100,17 @@ Status: working checklist for the second pass. This is intentionally broader tha
   - Notes:
     - application review copy should probably stop describing one older list name as the main entry point
 
-- [ ] Student Broadcast help is outdated about Expo authoring status.
-  - Vue help says the Expo admin-side create screen is still staged and should not be treated as the main live workflow.
-  - Expo reference now documents Broadcast authoring in Expo as shipped for owner/staff.
+- [x] Student Broadcast help was outdated about Expo authoring status.
+  - Vue help previously implied the Expo admin-side create screen was still staged and that Affiliate Portal was the only main live workflow.
+  - Product direction now says Broadcast authoring can happen in DojoMate as well, when Cloud Usage / academy media billing readiness is set up.
+  - Affiliate Portal is still a live authoring path, but it is not the only one anymore.
   - Vue source:
     - `src/locales/v2/en.js` student broadcast section
   - Upstream sources:
     - `DojoMate-Expo/docs/reference/broadcast-authoring-reference.md`
   - Notes:
-    - member-facing read-only help is still mostly right, but the “admin create is staged” warning appears stale
+    - member-facing read-only help is still mostly right
+    - owner/staff authoring help should describe both DojoMate and Affiliate Portal, while keeping Cloud Usage/media readiness explicit
 
 ## Medium-Confidence Drift
 
@@ -295,7 +297,7 @@ Status: working checklist for the second pass. This is intentionally broader tha
 - [ ] Rewrite Portal Register + Quick Enrollment together
 - [ ] Rewrite Portal Members + Applications together
 - [ ] Update Portal Cards with adjustments and lifecycle caveats
-- [ ] Fix Student Broadcast wording about Expo authoring
+- [x] Fix Student Broadcast wording about Expo authoring
 - [ ] Revisit Portal Reports / Shareholders
 - [ ] Do terminology sweep last
 
@@ -306,10 +308,12 @@ Status: working checklist for the second pass. This is intentionally broader tha
   - Pro only?
   - both?
   - trial scope exactly?
-- [ ] Should Help v2 teach Expo Broadcast authoring at all, or still point owners primarily to AFL Broadcasts?
+- [x] Should Help v2 teach Expo Broadcast authoring at all, or still point owners primarily to AFL Broadcasts?
+  - Teach both paths.
 - [ ] For timetable-derived unpublished lessons, what exactly should members see today?
 - [ ] Should Shareholders be presented as a standalone portal workflow in Help v2, or just mentioned under Reports?
 - [ ] Do we want Help v2 to mention Cloud Usage / media gating where Broadcasts depend on it?
+  - Yes. Broadcast authoring in DojoMate depends on Cloud Usage / academy media billing readiness.
 
 ## File Targets Likely Affected Later
 
