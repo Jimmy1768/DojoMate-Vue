@@ -439,7 +439,7 @@ export default {
         know_items: [
           'The two badges are Member and Admin.',
           'Access or Permissions controls admin access. It does not decide who can teach.',
-          'The current access areas are Schedule, Members, Cards, and Timetable.',
+          'The current access areas are Schedule, Members, Cards, Timetable, plus owner-side oversight workflows such as disputes and audit review.',
           'This feature is entitlement-gated. If the tool is inactive, delegated staff permissions will not take effect.'
         ],
         mistake_title: 'Common mistake',
@@ -835,7 +835,7 @@ export default {
           'a card case needs a human decision instead of ordinary renew/delete flow'
         ],
         know_title: 'What to know',
-        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. The general admin cards area no longer carries the old issue-records, delete-records, or audit-log review screens. If those review surfaces still need to be checked, they belong under the owner-side Operations -> Oversight model instead, with audit logs reserved there. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
+        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. Issue Records and Delete Records stay in Cards for card lifecycle review, while Audit Logs belong under owner-side Operations -> Oversight. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
       }
     },
     members: {
@@ -1431,7 +1431,7 @@ export default {
         ranks_title: 'Manage rank programs',
         ranks_body: 'Set up rank programs, enroll members by program, and confirm rank changes through the current review flow.',
         cards_title: 'Manage cards in the Affiliate Portal',
-        cards_body: 'Use the Templates, Assign, Active, and History views for card setup, issuing, active-card work, pause actions, and audit review.',
+        cards_body: 'Use the Templates, Assign, Active, and History views for card setup, issuing, active-card work, pause actions, and card record review. Use Operations -> Oversight when you need owner-side audit logs.',
         reports_title: 'Review reports and report access',
         reports_body: 'Monthly Reports is read-only, but owner-side Shareholders controls who can receive financial or operational report access.',
         capability_title: 'Manage owner-only capability setup',
