@@ -1,4 +1,4 @@
-const searchPages = [
+export const searchPages = [
   { path: '/help-v3', titleKey: 'help_v3.welcome.title', bodyKeys: ['help_v3.welcome.intro'] },
   { path: '/help-v3/member', titleKey: 'help_v3.member.home.title', bodyKeys: ['help_v3.member.home.intro'] },
   { path: '/help-v3/member/join-academy', titleKey: 'help_v3.member.join_academy.title', bodyKeys: ['help_v3.member.join_academy.intro', 'help_v3.member.join_academy.what_items', 'help_v3.member.join_academy.limits_items'] },

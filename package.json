@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "check:help-v3": "node scripts/check-help-v3.mjs",
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
