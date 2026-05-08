@@ -1,4 +1,1456 @@
 export default {
+  help_v3: {
+    support: {
+      heading: 'Need more help?',
+      default_description: 'Use the DojoMate help board on Source Combatives for follow-up questions, edge cases, or cross-product workflows that continue outside the app.',
+      default_button: 'Open the DojoMate Help Board'
+    },
+    layout: {
+      badge: 'Help v3',
+      intro: 'A workflow guide organized by dashboard and role, based on current DojoMate behavior.',
+      open_v2: 'Open Help v2',
+      search_placeholder: 'Search help v3',
+      search_no_results: 'No results found',
+      nav: {
+        start_here: 'Start Here',
+        home: 'Help v3 Home',
+        member_home: 'Member Guide',
+        admin_home: 'Admin Guide',
+        owner_home: 'Owner Guide',
+        account_home: 'Account Guide',
+        member: 'Member',
+        admin: 'Admin / Staff',
+        owner: 'Owner / Operations',
+        account: 'Account / Settings',
+        join_academy: 'Join Academy',
+        memberships: 'Memberships',
+        member_cards: 'Cards',
+        card_disputes: 'Card Disputes',
+        booking: 'Booking',
+        attendance_records: 'Attendance Records',
+        system_alerts: 'System Alerts',
+        broadcasts: 'Broadcasts',
+        online_learning: 'Online Learning',
+        events: 'Events',
+        academy_context: 'Academy Context',
+        admin_members: 'Members',
+        admin_cards: 'Cards',
+        session_debt: 'Session Debt',
+        lessons: 'Lessons',
+        schedule: 'Schedule',
+        admin_booking: 'Admin Booking',
+        admin_broadcasts: 'Broadcast Authoring',
+        alerts_qr: 'Alerts and QR',
+        create_academy: 'Create Academy',
+        onboarding: 'Onboarding',
+        business_management: 'Business Management',
+        instructors: 'Instructors',
+        access: 'Access',
+        operations_analytics: 'Operations Analytics',
+        timesheets_salaries: 'Timesheets and Salaries',
+        oversight: 'Oversight',
+        owner_tools: 'Tools',
+        sign_in: 'Sign In',
+        create_account: 'Create Account',
+        reset_password: 'Reset Password',
+        change_password: 'Change Password',
+        profile: 'Profile',
+        child_accounts: 'Child Accounts',
+        privacy_progression: 'Privacy and Progression',
+        preferences: 'Preferences',
+        delete_account: 'Delete Account',
+        logout: 'Logout'
+      }
+    },
+    welcome: {
+      badge: 'Help v3',
+      title: 'Current Workflow Guide',
+      intro: 'Use Help v3 when you want current task guidance grouped by the dashboard or role you are working in.',
+      areas_title: 'Choose the area that matches your job',
+      member_title: 'Member',
+      member_body: 'Joining academies, cards, booking, alerts, broadcasts, online learning, and events.',
+      member_link: 'Open Member Guide',
+      admin_title: 'Admin / Staff',
+      admin_body: 'Members, cards, scheduling, booking for students, broadcasts, and academy-side daily work.',
+      admin_link: 'Open Admin Guide',
+      owner_title: 'Owner / Operations',
+      owner_body: 'Academy creation, onboarding, owner-only business management, access, and operations workflows.',
+      owner_link: 'Open Owner Guide',
+      account_title: 'Account / Settings',
+      account_body: 'Sign in, password recovery, profile updates, privacy settings, preferences, and logout.',
+      account_link: 'Open Account Guide',
+      note_title: 'What changed in v3',
+      note_body: 'This structure follows current DojoMate workflow ownership more closely than the older mixed v2 tree, which makes it better for both human guidance and assistant ingestion.',
+      note_button: 'Compare with Help v2'
+    },
+    member: {
+      home: {
+        badge: 'Member',
+        title: 'Member Guide',
+        intro: 'Use this guide when you train at an academy and need help with joining, memberships, cards, booking, alerts, broadcasts, online learning, or events.',
+        areas_title: 'Member topics',
+        links: [
+          {
+            title: 'Academy access',
+            body: 'Choose the right academy, join it, and understand how memberships affect the rest of the app.',
+            links: [
+              { label: 'Join Academy', to: '/help-v3/member/join-academy' },
+              { label: 'Memberships', to: '/help-v3/member/memberships' }
+            ]
+          },
+          {
+            title: 'Cards and classes',
+            body: 'Review your cards, book classes, and check attendance after you train.',
+            links: [
+              { label: 'Cards', to: '/help-v3/member/cards' },
+              { label: 'Card Disputes', to: '/help-v3/member/card-disputes' },
+              { label: 'Booking', to: '/help-v3/member/booking' },
+              { label: 'Attendance Records', to: '/help-v3/member/attendance-records' }
+            ]
+          },
+          {
+            title: 'Academy updates',
+            body: 'Read system-driven updates, academy broadcasts, online learning content, and event information.',
+            links: [
+              { label: 'System Alerts', to: '/help-v3/member/system-alerts' },
+              { label: 'Broadcasts', to: '/help-v3/member/broadcasts' },
+              { label: 'Online Learning', to: '/help-v3/member/online-learning' },
+              { label: 'Events', to: '/help-v3/member/events' }
+            ]
+          }
+        ]
+      },
+      join_academy: {
+        badge: 'Member',
+        title: 'Join an academy',
+        intro: 'Use this flow when you want to connect your account to an academy that uses DojoMate.',
+        what_title: 'What you can do',
+        what_items: [
+          'Browse academies in Discover.',
+          'Search by academy name.',
+          'Scan an academy QR code when the academy gives you one.',
+          'Open academy details before you decide to join.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Open Discover Academy when you want to browse options first.',
+          'Open Academy Search when you already know the academy or want to scan a QR code.',
+          'Use the academy details page to confirm you found the correct academy.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Joining can still require academy acceptance.',
+          'Parent-managed and child-linked membership flows can require extra steps after the first join action.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the academy appears in your academy list or pending state.',
+          'If the academy has not accepted you yet, later member actions may stay limited until that approval happens.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Memberships', to: '/help-v3/member/memberships' },
+          { label: 'Cards', to: '/help-v3/member/cards' }
+        ]
+      },
+      memberships: {
+        badge: 'Member',
+        title: 'Manage memberships and academy context',
+        intro: 'Use this page when you belong to one or more academies and need to confirm which academy is currently active.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review the academies linked to your account.',
+          'Switch the selected academy before cards, booking, or broadcasts.',
+          'Confirm whether you are looking at the correct academy when something seems missing.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the joined academy list and member academy context surfaces.',
+          'Re-check the selected academy before assuming a card or class is missing.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'A wrong selected academy can make cards, schedules, and broadcasts look unavailable even when they exist elsewhere.',
+          'Membership status can still depend on academy approval or linked child-account state.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After you choose the correct academy, later member screens load data for that academy.',
+          'If the wrong academy stays selected, booking and cards can continue to look inconsistent.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Cards', to: '/help-v3/member/cards' },
+          { label: 'Booking', to: '/help-v3/member/booking' }
+        ]
+      },
+      cards: {
+        badge: 'Member',
+        title: 'Review your cards and pending payments',
+        intro: 'Use member cards when you need to confirm what cards you can use, whether payment is still pending, or whether a card problem needs follow-up.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review active cards for the selected academy.',
+          'Open a pending card payment flow when checkout is still required.',
+          'Check whether you have a usable card before trying to book.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use member card screens such as Academy Cards and any pending-card payment flow.',
+          'Return here first when booking says you do not have an eligible card.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Member cards are academy-scoped and depend on the selected academy.',
+          'This is not the owner or admin audit-review area.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After a successful pending payment, the card can move into a usable state.',
+          'If the card still looks wrong after payment or assignment changes, use the disputes workflow instead of guessing.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Card Disputes', to: '/help-v3/member/card-disputes' },
+          { label: 'Booking', to: '/help-v3/member/booking' }
+        ]
+      },
+      card_disputes: {
+        badge: 'Member',
+        title: 'Raise a card dispute',
+        intro: 'Use card disputes when a card, card deletion, or card-related change looks wrong from the member side and needs academy follow-up.',
+        what_title: 'What you can do',
+        what_items: [
+          'Create a dispute record tied to the card problem you noticed.',
+          'Explain what looks wrong from the member side.',
+          'Keep the issue in a dedicated follow-up path instead of mixing it into booking or profile questions.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use member cards and disputes screens such as Academy Disputes.',
+          'Start from the card that looks wrong when possible.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'A dispute does not instantly fix the card.',
+          'Owner-only review tools like audit logs are not part of the member dispute flow.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the dispute becomes a follow-up item for the academy side.',
+          'You may still need to wait for academy review before the visible card state changes.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Cards', to: '/help-v3/member/cards' },
+          { label: 'Attendance Records', to: '/help-v3/member/attendance-records' }
+        ]
+      },
+      booking: {
+        badge: 'Member',
+        title: 'Book or unbook a class',
+        intro: 'Use booking when you want to open the academy schedule, inspect a class, choose a valid card, and confirm your place.',
+        steps_title: 'Typical steps',
+        steps_items: [
+          'Open the academy schedule for the selected academy.',
+          'Choose a scheduled lesson and review the lesson details.',
+          'Open card selection, choose an eligible card, and decide whether the booking should be anonymous in the member roster.',
+          'Confirm the booking or unbooking action.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use Academy Schedule, Academy Booking, and Academy Card Selection.',
+          'Return to the selected academy context first if the wrong classes or cards appear.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Booking uses the current scheduled-lesson booking flow, not generic lesson editing.',
+          'Card eligibility and booking guard rules come from the backend.',
+          'Anonymous booking hides identity from other members in the member-facing roster, but academy staff still see the real booking.',
+          'Canceled or processed lessons can stay readable even when the booking action itself is blocked.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, your booking state and visible roster update.',
+          'Expected guard failures should explain why the action is blocked, such as booking having closed or the lesson already having started.',
+          'Uncertain failures can require refresh and retry before you trust the current state, because the app may not be able to confirm whether the booking reached the server.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Attendance Records', to: '/help-v3/member/attendance-records' },
+          { label: 'System Alerts', to: '/help-v3/member/system-alerts' }
+        ]
+      },
+      attendance_records: {
+        badge: 'Member',
+        title: 'Review attendance records',
+        intro: 'Use attendance records when you want to confirm whether a past class was recorded the way you expected.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review past attendance for the selected academy.',
+          'Check whether a class appears in your history.',
+          'Use the record as confirmation after booking and training.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use member attendance or academy records surfaces.',
+          'Start here when you want to confirm the outcome of a previous booking or visit.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Attendance records are for review, not member-side editing.',
+          'If a record is wrong, the academy needs to correct it.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'A normal record confirms that the class was logged.',
+          'A missing or incorrect record should send you into academy follow-up, not self-service correction.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Booking', to: '/help-v3/member/booking' },
+          { label: 'Card Disputes', to: '/help-v3/member/card-disputes' }
+        ]
+      },
+      system_alerts: {
+        badge: 'Member',
+        title: 'Read system alerts',
+        intro: 'Use system alerts when you need to read important updates tied to your account, academy, or related member workflows.',
+        what_title: 'What you can do',
+        what_items: [
+          'Read important system-generated account or academy updates.',
+          'Use alerts as a safe fallback surface when a push notification cannot deep-link into a more specific screen.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use member alert surfaces such as Academy Alerts.',
+          'If a notification tap cannot open an exact target, the app can land here instead.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'System Alerts is not chat.',
+          'Not every notification type has a precise deep-link target yet.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After you read an alert, its read state can update.',
+          'If the alert points to a workflow, use the linked app area next rather than staying in alerts.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Broadcasts', to: '/help-v3/member/broadcasts' },
+          { label: 'Booking', to: '/help-v3/member/booking' }
+        ]
+      },
+      broadcasts: {
+        badge: 'Member',
+        title: 'Read academy broadcasts',
+        intro: 'Use Broadcast to read academy posts in the current selected academy. The member feed is read-only and meant for academy updates and training posts.',
+        what_title: 'What you can do',
+        what_items: [
+          'Switch between Updates and Training streams.',
+          'Read text, images, and academy broadcast posts.',
+          'Open images for larger viewing and consume academy content without leaving the member dashboard.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use member Broadcast screens tied to the selected academy.',
+          'Re-check the selected academy first when the wrong feed appears.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Member Broadcast is read-only.',
+          'There are no comments, replies, likes, or member-authored posts in this flow.',
+          'An empty feed does not mean the feature is broken; it can simply mean the academy has not published visible posts yet.',
+          'Broadcast content is authored by academy-side staff or owner workflows, not by member-side posting.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'A successful feed load shows the selected academy stream.',
+          'If you are looking for account or system status, use System Alerts instead of Broadcast.',
+          'If the academy has online learning access as well, Broadcast and Online remain separate surfaces with different content ownership.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'System Alerts', to: '/help-v3/member/system-alerts' },
+          { label: 'Online Learning', to: '/help-v3/member/online-learning' }
+        ]
+      },
+      online_learning: {
+        badge: 'Member',
+        title: 'Use online learning',
+        intro: 'Use Online when your member account has online access and you want to browse curriculum, open lessons, watch clips, and complete homework.',
+        what_title: 'What you can do',
+        what_items: [
+          'Open Online from the member dashboard when access is granted.',
+          'Browse curriculum, catalog, and lesson layers.',
+          'Watch teaching clips and attached tip videos.',
+          'Open and submit homework from the owning lesson flow.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use Online Home, Curriculum, Catalog, Lesson, Video, and Homework screens.',
+          'Follow the lesson flow from curriculum down to the slice you want to watch.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'The Online tile appears only when entitlement grants access.',
+          'Expo is a consumer-only online surface here, not an online-admin area.',
+          'Homework and tip videos stay tied to the owning lesson and slice, rather than living as a separate academy-wide feed.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'When access exists, the dashboard reveals the Online entry.',
+          'Homework and tip content stay tied to the owning lesson and slice instead of living as separate free-floating content.',
+          'If access is missing, the correct expectation is that the Online entry does not appear rather than a partially working empty screen.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Events', to: '/help-v3/member/events' },
+          { label: 'Broadcasts', to: '/help-v3/member/broadcasts' }
+        ]
+      },
+      events: {
+        badge: 'Member',
+        title: 'Browse events and registrations',
+        intro: 'Use Events when you want to browse competition events, maintain your competition profile, or manage registration steps for an event.',
+        what_title: 'What you can do',
+        what_items: [
+          'Browse available competition events.',
+          'Open event detail before registration.',
+          'Create or update your competition profile.',
+          'Manage registration and payment steps when the event supports them.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use event list, detail, profile, and registration screens.',
+          'Some event flows hand off to external providers such as federation or event websites outside the main app.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'External provider flows do not stay fully inside the DojoMate app.',
+          'Registration state can depend on event-specific requirements outside the usual academy membership flow.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, your profile or registration state updates.',
+          'If the event uses an external provider, expect a handoff instead of a full in-app form.',
+          'Competition-profile updates can become part of later event-registration readiness rather than staying isolated to one screen.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Memberships', to: '/help-v3/member/memberships' },
+          { label: 'System Alerts', to: '/help-v3/member/system-alerts' }
+        ]
+      }
+    },
+    admin: {
+      home: {
+        badge: 'Admin',
+        title: 'Admin and staff guide',
+        intro: 'Use this guide when you help run an academy from the academy-scoped admin dashboard.',
+        areas_title: 'Admin topics',
+        links: [
+          {
+            title: 'Academy context',
+            body: 'Confirm the selected academy and the correct admin relationship before changing members, cards, or schedules.',
+            links: [
+              { label: 'Academy Context', to: '/help-v3/admin/academy-context' },
+              { label: 'Members', to: '/help-v3/admin/members' }
+            ]
+          },
+          {
+            title: 'Daily academy operations',
+            body: 'Manage cards, debt, lessons, schedule, and booking-for-students from the admin surface.',
+            links: [
+              { label: 'Cards', to: '/help-v3/admin/cards' },
+              { label: 'Session Debt', to: '/help-v3/admin/session-debt' },
+              { label: 'Lessons', to: '/help-v3/admin/lessons' },
+              { label: 'Schedule', to: '/help-v3/admin/schedule' },
+              { label: 'Admin Booking', to: '/help-v3/admin/admin-booking' }
+            ]
+          },
+          {
+            title: 'Communication and support',
+            body: 'Use the current admin-side Broadcast flow plus academy alerts and QR tools.',
+            links: [
+              { label: 'Broadcast Authoring', to: '/help-v3/admin/broadcasts' },
+              { label: 'Alerts and QR', to: '/help-v3/admin/alerts-qr' }
+            ]
+          }
+        ]
+      },
+      academy_context: {
+        badge: 'Admin',
+        title: 'Work in the correct academy context',
+        intro: 'Use this topic when you need to confirm whether you are working in the correct academy and correct relationship before changing academy data.',
+        what_title: 'What you can do',
+        what_items: [
+          'Check which academy is selected.',
+          'Confirm whether the selected relationship is admin or owner.',
+          'Switch academies before editing academy-scoped data.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the shared academy switcher and admin entry flow.',
+          'Re-check context before changing members, cards, or schedule.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Admin work is academy-scoped.',
+          'Owner-only business actions should not be treated as ordinary admin powers.',
+          'Owning one academy does not automatically make every selected academy an owner context.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the correct admin dashboard data loads for that academy.',
+          'If the wrong academy stays selected, later updates can land in the wrong academy scope.',
+          'If you deliberately switch into an owner-selected academy, the app should route you into the owner-side Business area instead of staying in the admin mental model.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Members', to: '/help-v3/admin/members' },
+          { label: 'Cards', to: '/help-v3/admin/cards' }
+        ]
+      },
+      members: {
+        badge: 'Admin',
+        title: 'Manage members',
+        intro: 'Use Members when you need to review pending, accepted, rejected, or banned academy members and inspect member-side academy participation.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review pending and accepted memberships.',
+          'Reject, ban, or otherwise update membership status where the screen allows it.',
+          'Open member profile and attendance context.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use members status screens such as Pending, Accepted, Rejected, and Banned.',
+          'Open member detail or attendance from the member-side admin area.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Member, instructor, and admin access are not the same concept.',
+          'Accepted instructor rows should not be taught as ordinary adult-member rows.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful updates move the person into the correct visible membership state.',
+          'Related admin screens refresh around the new member state.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Cards', to: '/help-v3/admin/cards' },
+          { label: 'Admin Booking', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      cards: {
+        badge: 'Admin',
+        title: 'Create and assign cards',
+        intro: 'Use admin cards when you need to create templates, issue active cards, review current cards, or change card availability for academy members.',
+        what_title: 'What you can do',
+        what_items: [
+          'Create card templates.',
+          'Review existing templates.',
+          'Assign active cards to members.',
+          'Review active cards and pause-related card state where the screen allows it.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use cards creation, template, assignment, and active-card screens.',
+          'Return here when a member-booking issue is really a missing or wrong active card.',
+          'During onboarding, the app can route straight into cards work because first-card milestones are part of the academy setup path.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Templates and active cards are different layers.',
+          'Owner-only oversight tools like audit logs do not belong in normal admin cards guidance.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful changes refresh cards-related admin and member flows.',
+          'Booking eligibility changes can appear after the card update reaches the right academy context.',
+          'If the card was created only for internal onboarding or staff testing, it can still count toward the onboarding path without representing live tuition setup.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Session Debt', to: '/help-v3/admin/session-debt' },
+          { label: 'Admin Booking', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      session_debt: {
+        badge: 'Admin',
+        title: 'Settle session debt',
+        intro: 'Use the session debt workflow when a card or booking history has created a debt state that needs staff-side settlement.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review open session debt entries.',
+          'Settle debt through the current admin-side settlement workflow.',
+          'Keep debt handling separate from member disputes and owner oversight.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the admin debt or card-debt surface that belongs to current cards tooling.',
+          'Open it from admin card operations rather than from member profile assumptions.',
+          'Keep the debt workflow tied to the academy card context instead of treating it like a general accounting dashboard.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Debt handling is not the same as a member-facing dispute.',
+          'Owner review tools remain separate from this day-to-day admin settlement flow.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After settlement, the debt status updates and related card context should reflect the change.',
+          'If the underlying record is disputed rather than simply owed, switch to the correct dispute or oversight path.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Cards', to: '/help-v3/admin/cards' },
+          { label: 'Members', to: '/help-v3/admin/members' }
+        ]
+      },
+      lessons: {
+        badge: 'Admin',
+        title: 'Manage lesson templates',
+        intro: 'Use lessons when you need to create, edit, or remove lesson templates before they are published into the live academy schedule.',
+        what_title: 'What you can do',
+        what_items: [
+          'Create lesson templates.',
+          'Edit the teaching and schedule details stored in the template.',
+          'Delete templates that should no longer be available for publishing.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use lesson-template screens such as lesson-day views and create/edit lesson forms.',
+          'Work here before moving into live schedule publishing.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Lesson templates are not the same as published scheduled lessons.',
+          'Template changes do not automatically explain every published-schedule outcome without the schedule layer.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the lesson template becomes available for later schedule use.',
+          'If the live event already exists, schedule editing can still be a separate step.',
+          'Template changes are most useful before the class is published into the academy schedule window that members and staff actually act on.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Schedule', to: '/help-v3/admin/schedule' },
+          { label: 'Admin Booking', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      schedule: {
+        badge: 'Admin',
+        title: 'Publish and manage the schedule',
+        intro: 'Use schedule tools when you need to publish a lesson, edit a scheduled lesson, cancel it, or delete it from the live academy schedule.',
+        what_title: 'What you can do',
+        what_items: [
+          'Publish scheduled lessons from templates.',
+          'Edit or cancel scheduled lessons.',
+          'Review scheduled lesson detail and roster state.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use schedule layout and create/edit event flows.',
+          'Open the specific scheduled lesson detail when you need to inspect its current state.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Canceled or processed lessons should remain reviewable instead of disappearing from review workflows.',
+          'Only the live booking action itself should be blocked when guard rules require it.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the academy schedule refreshes to reflect the scheduled lesson state.',
+          'If the lesson is canceled, the detail can still be useful for review even though booking is no longer open.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Lessons', to: '/help-v3/admin/lessons' },
+          { label: 'Admin Booking', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      admin_booking: {
+        badge: 'Admin',
+        title: 'Book for a student or member',
+        intro: 'Use admin booking when staff needs to create or remove a booking on behalf of a member from the admin schedule side.',
+        what_title: 'What you can do',
+        what_items: [
+          'Open a scheduled lesson from the admin side.',
+          'Select a target member and a valid card.',
+          'Create or remove the booking using the current booking action flow.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use Admin Booking and the related card-selection flow.',
+          'Start from the scheduled lesson you are working on instead of from general member search.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Admin cannot create anonymous bookings.',
+          'Backend booking guard codes still control whether a booking is allowed.',
+          'Unexpected failures can require refresh-and-retry behavior even when the roster detail stays visible.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the lesson roster and booking state update.',
+          'If the action is blocked, the screen should explain the guard condition instead of pretending the lesson vanished.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Schedule', to: '/help-v3/admin/schedule' },
+          { label: 'Members', to: '/help-v3/admin/members' }
+        ]
+      },
+      broadcasts: {
+        badge: 'Admin',
+        title: 'Author broadcasts',
+        intro: 'Use the current admin Broadcast flow when you want to publish academy updates or training posts from the app.',
+        what_title: 'What you can do',
+        what_items: [
+          'Create a Broadcast with text and images.',
+          'Create a Broadcast with text and one MP4 video.',
+          'Publish immediately into the selected academy stream.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use Broadcast authoring inside the admin Members area.',
+          'Work inside the selected academy context before publishing.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Current authoring has no draft-save split.',
+          'The app supports one video per Broadcast and no mixed image-plus-video post.',
+          'Authorization still depends on academy role and access.',
+          'The current app-side publish flow expects a non-empty text body before publish.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'A successful create action publishes the Broadcast immediately.',
+          'If media or authorization is invalid, the create action should fail instead of creating a hidden draft.',
+          'Once published, members see the post through the selected academy Broadcast feed rather than through system alerts.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Alerts and QR', to: '/help-v3/admin/alerts-qr' },
+          { label: 'Academy Context', to: '/help-v3/admin/academy-context' }
+        ]
+      },
+      alerts_qr: {
+        badge: 'Admin',
+        title: 'Use alerts and QR tools',
+        intro: 'Use these admin-side support surfaces when you need academy alerts, QR-related actions, or recovery actions tied to the current academy context.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review admin or business alerts that belong to the academy.',
+          'Open QR-related tools.',
+          'Use academy-context support flows when you need to recover or switch.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use admin alerts screens and QR entry points from the academy-side menus.',
+          'Return to the academy switcher when the current academy is wrong.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'These flows support academy work, but they do not replace owner-only business management.',
+          'Some recovery actions belong to the broader bootstrap or settings path rather than the normal daily menu.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'The right alert or QR action should send you into the relevant academy workflow next.',
+          'If the wrong academy is loaded, switch context before taking action.',
+          'If the current problem is actually owner-only business setup, the next step is usually to move into the owner-side business area rather than staying inside admin alerts.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Academy Context', to: '/help-v3/admin/academy-context' },
+          { label: 'Broadcast Authoring', to: '/help-v3/admin/broadcasts' }
+        ]
+      }
+    },
+    owner: {
+      home: {
+        badge: 'Owner',
+        title: 'Owner and operations guide',
+        intro: 'Use this guide when you create academies, manage owner-only academy settings, control access, or work in operations and oversight surfaces.',
+        areas_title: 'Owner topics',
+        links: [
+          {
+            title: 'Academy setup',
+            body: 'Create academies, complete milestone-based onboarding, and reach the normal admin/business workflow.',
+            links: [
+              { label: 'Create Academy', to: '/help-v3/owner/create-academy' },
+              { label: 'Onboarding', to: '/help-v3/owner/onboarding' }
+            ]
+          },
+          {
+            title: 'Business ownership',
+            body: 'Manage academy details, instructors, and academy admin access from the owner side.',
+            links: [
+              { label: 'Business Management', to: '/help-v3/owner/business-management' },
+              { label: 'Instructors', to: '/help-v3/owner/instructors' },
+              { label: 'Access', to: '/help-v3/owner/access' }
+            ]
+          },
+          {
+            title: 'Operations and oversight',
+            body: 'Use operations, compensation, oversight, and gated tools only where owner access applies.',
+            links: [
+              { label: 'Operations Analytics', to: '/help-v3/owner/operations-analytics' },
+              { label: 'Timesheets and Salaries', to: '/help-v3/owner/timesheets-salaries' },
+              { label: 'Oversight', to: '/help-v3/owner/oversight' },
+              { label: 'Tools', to: '/help-v3/owner/tools' }
+            ]
+          }
+        ]
+      },
+      create_academy: {
+        badge: 'Owner',
+        title: 'Create an academy',
+        intro: 'Use academy creation when you are starting the first academy or when your account is allowed to create an additional academy.',
+        steps_title: 'Typical steps',
+        steps_items: [
+          'Enter the create-academy flow from the current bootstrap intent.',
+          'Complete the academy details required for creation.',
+          'Finish creation and let the app continue into the guided next step.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the create-academy flow from the business/admin bootstrap path.',
+          'Use the shared switcher later when you need to move between owned academies and admin academies.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Create availability depends on the current bootstrap intent and owner-slot rules.',
+          'Cancel Creation exists when you entered fullscreen creation from the admin bootstrap path.',
+          'Creating an academy is not proof that billing or online payments are configured.',
+          'If academy-creation is currently blocked by slot rules, the app should hide or block that path instead of acting as if creation already started.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the new academy becomes the selected academy and onboarding continues.',
+          'After canceling from admin bootstrap, the app returns to the admin bootstrap path instead of pretending creation finished.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Onboarding', to: '/help-v3/owner/onboarding' },
+          { label: 'Business Management', to: '/help-v3/owner/business-management' }
+        ]
+      },
+      onboarding: {
+        badge: 'Owner',
+        title: 'Follow the first-academy onboarding flow',
+        intro: 'Use this topic to understand how the current first-academy tutorial progresses after academy creation.',
+        steps_title: 'Milestone order',
+        steps_items: [
+          'Create the academy.',
+          'Add the first instructor or decide the head-instructor path.',
+          'Create the first card template.',
+          'Issue the first active card.',
+          'Create the first scheduled lesson.',
+          'Complete the first admin-side booking.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Follow the guided dashboard and fullscreen onboarding screens.',
+          'Use the highlighted section that the app surfaces for the next milestone.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Onboarding is milestone-driven and backed by durable usage-history state.',
+          'Tutorial completion does not require a real paying student or fully configured online payments.',
+          'Onboarding completion is not the same thing as billing readiness.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After each milestone, the app reveals the next preferred section.',
+          'After onboarding completion, the broader admin dashboard opens up and more tools can appear if entitlement allows them.',
+          'The tutorial can be completed with self or staff test flows rather than requiring a real paying member to exist first.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Instructors', to: '/help-v3/owner/instructors' },
+          { label: 'Access', to: '/help-v3/owner/access' }
+        ]
+      },
+      business_management: {
+        badge: 'Owner',
+        title: 'Manage academy business details',
+        intro: 'Use owner business management when you need to edit or delete an academy or maintain academy presentation media such as logo, banner, gallery, and training media.',
+        what_title: 'What you can do',
+        what_items: [
+          'Edit academy business details.',
+          'Delete an academy when owner-side deletion is the correct action.',
+          'Upload and maintain owner-managed academy media.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use owner-side business edit and delete flows.',
+          'Use academy business media tools when you need to change visual academy presentation.',
+          'Treat media upload and business-detail editing as owner maintenance work rather than as member or daily staff operations.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'These are owner-scoped academy actions, not normal staff actions.',
+          'Deleting an academy is broader than removing a member or changing a class.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful edits update the owner-side academy state and presentation.',
+          'Deletion removes the academy itself, not just one user relationship.',
+          'Media changes become part of what later users see in academy details, discovery, and related academy information screens.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Instructors', to: '/help-v3/owner/instructors' },
+          { label: 'Access', to: '/help-v3/owner/access' }
+        ]
+      },
+      instructors: {
+        badge: 'Owner',
+        title: 'Manage instructors',
+        intro: 'Use Instructors when you need to manage the teaching identity side of academy staffing.',
+        what_title: 'What you can do',
+        what_items: [
+          'Add or maintain instructor identity in the academy.',
+          'Support head-instructor and teaching-staff setup during onboarding and later academy management.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the Business Instructors surface from the owner-side academy area.',
+          'Return here when the issue is about teaching identity rather than admin access.',
+          'This is also the correct onboarding stop when the app is guiding the academy through the first instructor milestone.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Instructor identity is not the same as academy admin access.',
+          'Instructor identity is not the same as payroll or salary ownership.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful instructor setup satisfies the teaching-identity side of onboarding and academy staffing.',
+          'If the question is about who can manage the academy instead of who teaches, use Access instead.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Access', to: '/help-v3/owner/access' },
+          { label: 'Onboarding', to: '/help-v3/owner/onboarding' }
+        ]
+      },
+      access: {
+        badge: 'Owner',
+        title: 'Manage access and permissions',
+        intro: 'Use Access when you need to decide which accepted adult members can work in the academy-admin side of the selected academy.',
+        what_title: 'What you can do',
+        what_items: [
+          'Grant academy admin access to eligible accepted adult members.',
+          'Update or remove academy-specific permission rows.',
+          'Keep access management separate from teaching identity.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the owner-side permissions or access surface.',
+          'Look for the compact `Access` label in width-constrained menus.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Removing one academy permission row does not automatically remove broader multi-academy admin role state.',
+          'This surface manages academy access, not instructor identity.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful changes affect which academy-admin features that person can open for the selected academy.',
+          'If the person still needs teaching identity, use Instructors separately.',
+          'If the user also belongs to another academy, broader admin role state can still survive outside the one academy you just changed.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Instructors', to: '/help-v3/owner/instructors' },
+          { label: 'Operations Analytics', to: '/help-v3/owner/operations-analytics' }
+        ]
+      },
+      operations_analytics: {
+        badge: 'Owner',
+        title: 'Use operations and analytics',
+        intro: 'Use Operations when you need owner-level metrics, realtime academy reporting, trends, or monthly reporting rather than ordinary academy-admin work.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review realtime and summary academy metrics.',
+          'Open insights, trend, and monthly reporting surfaces.',
+          'Use owner-facing operations views instead of ordinary admin dashboards for high-level reporting.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use owner operations dashboards and reporting surfaces.',
+          'Stay in the owner-side selected academy context when interpreting academy-specific analytics.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Operations and analytics are owner or operations territory, not ordinary admin/staff territory.',
+          'Analytics is separate from instructor identity and access identity.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful access loads the owner reporting and operations context for the selected academy.',
+          'If the surface is missing, role or entitlement can be the reason rather than bad academy data.',
+          'Operational reporting should stay separate from normal member/admin alert reading, even when both are ultimately academy-related.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Timesheets and Salaries', to: '/help-v3/owner/timesheets-salaries' },
+          { label: 'Oversight', to: '/help-v3/owner/oversight' }
+        ]
+      },
+      timesheets_salaries: {
+        badge: 'Owner',
+        title: 'Manage timesheets and salaries',
+        intro: 'Use these owner operations tools when you need to track staff time or manage compensation-related academy data.',
+        what_title: 'What you can do',
+        what_items: [
+          'Clock staff in and out or review recorded staff time.',
+          'Review and manage salary or compensation-related data.',
+          'Keep compensation concerns separate from instructor identity and admin access.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use owner operations screens such as staff time and staff salaries.',
+          'Return here when the question is about compensation instead of teaching status.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Compensation surfaces do not define who is an instructor.',
+          'Compensation surfaces do not replace access or permissions management.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Successful updates change owner-side time or compensation data.',
+          'If the staff problem is really role assignment, switch back to Instructors or Access.',
+          'These results feed owner operations understanding, not member-visible academy status.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Operations Analytics', to: '/help-v3/owner/operations-analytics' },
+          { label: 'Access', to: '/help-v3/owner/access' }
+        ]
+      },
+      oversight: {
+        badge: 'Owner',
+        title: 'Use owner oversight',
+        intro: 'Use Oversight when you need owner-only review tools such as issue records, delete records, or audit logs.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review issue records.',
+          'Review delete records.',
+          'Review audit logs in the owner-only oversight area.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the owner operations oversight section rather than the general admin dashboard.',
+          'Open these review tools only when the current question is about historical or operational review.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'These screens are owner-only oversight tools.',
+          'They are not part of the normal admin cards workflow.',
+          'Member disputes and day-to-day admin card actions should stay in their own surfaces.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Oversight review helps owners confirm what happened historically or operationally.',
+          'If a follow-up action is needed, it usually returns to the correct admin or member workflow afterward.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Operations Analytics', to: '/help-v3/owner/operations-analytics' },
+          { label: 'Tools', to: '/help-v3/owner/tools' }
+        ]
+      },
+      tools: {
+        badge: 'Owner',
+        title: 'Use owner tools and gated features',
+        intro: 'Use this topic when you need to understand what optional owner-side tools do and where those workflows appear once access is available.',
+        what_title: 'What you can do',
+        what_items: [
+          'Open the owner tool or gated feature that matches the academy workflow you need.',
+          'Use owner tools on top of the core academy workflow rather than instead of it.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the relevant owner or operations dashboard entry after access is available.',
+          'Keep the selected academy in mind before assuming a tool is missing.',
+          'Treat the tool entry as an extension of the academy workflow it supports rather than as a standalone business area with no academy context.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Help should explain tool purpose and workflow, not stale purchase mechanics.',
+          'Old bundle assumptions should not be treated as product truth.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'Once the relevant access exists, the tool opens its own workflow surface.',
+          'If access is missing, the absence is usually role or entitlement related rather than a broken route.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Operations Analytics', to: '/help-v3/owner/operations-analytics' },
+          { label: 'Business Management', to: '/help-v3/owner/business-management' }
+        ]
+      }
+    },
+    account: {
+      home: {
+        badge: 'Account',
+        title: 'Account and settings guide',
+        intro: 'Use this guide for sign-in, password recovery, profile updates, privacy settings, preferences, and session actions.',
+        areas_title: 'Account topics',
+        links: [
+          {
+            title: 'Access your account',
+            body: 'Use the account entry and recovery topics when you need to sign in, create an account, or recover a password.',
+            links: [
+              { label: 'Sign In', to: '/help-v3/account/sign-in' },
+              { label: 'Create Account', to: '/help-v3/account/create-account' },
+              { label: 'Reset Password', to: '/help-v3/account/reset-password' },
+              { label: 'Change Password', to: '/help-v3/account/change-password' }
+            ]
+          },
+          {
+            title: 'Profile and relationships',
+            body: 'Use profile and child-account topics when the account information itself needs to change.',
+            links: [
+              { label: 'Profile', to: '/help-v3/account/profile' },
+              { label: 'Child Accounts', to: '/help-v3/account/child-accounts' }
+            ]
+          },
+          {
+            title: 'Settings and exit actions',
+            body: 'Use privacy, preferences, deletion, and logout topics when the question is about settings or ending access.',
+            links: [
+              { label: 'Privacy and Progression', to: '/help-v3/account/privacy-progression' },
+              { label: 'Preferences', to: '/help-v3/account/preferences' },
+              { label: 'Delete Account', to: '/help-v3/account/delete-account' },
+              { label: 'Logout', to: '/help-v3/account/logout' }
+            ]
+          }
+        ]
+      },
+      sign_in: {
+        badge: 'Account',
+        title: 'Sign in',
+        intro: 'Use Sign In when the account already exists and you want to begin a normal session in DojoMate.',
+        what_title: 'What you can do',
+        what_items: [
+          'Sign in with existing account credentials.',
+          'Start a normal member, admin, or owner session from the app.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the Sign In screen as the main entry point.',
+          'Switch to password-reset help if the problem is lost credentials rather than ordinary sign-in.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Auth outcomes are normalized by current app rules rather than guessed from old error text.',
+          'Some account-integrity problems are support flows, not just bad-password states.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the app starts the current user session.',
+          'If the session cannot be started normally, the app can route into recovery or support instead of pretending credentials were the only issue.',
+          'Later protected requests rely on the current refresh-token flow rather than the older removed compatibility path.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Reset Password', to: '/help-v3/account/reset-password' },
+          { label: 'Create Account', to: '/help-v3/account/create-account' }
+        ]
+      },
+      create_account: {
+        badge: 'Account',
+        title: 'Create an account',
+        intro: 'Use account creation when you do not have a DojoMate account yet and need to start the correct member or admin journey.',
+        what_title: 'What you can do',
+        what_items: [
+          'Create a new DojoMate account.',
+          'Choose the role path that matches your real workflow.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the account creation screen from the auth entry flow.',
+          'Decide whether you are joining and training, or setting up and managing an academy.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Choosing the wrong journey can create confusion later about which help path to follow.',
+          'If the email already belongs to an existing account, sign in or reset the password instead of making duplicates.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the app continues into the relevant member or admin workflow.',
+          'If registration fails, the app should use current normalized auth behavior rather than vague historical copy.',
+          'The next useful step is usually role-specific, such as joining an academy or beginning academy setup.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Sign In', to: '/help-v3/account/sign-in' },
+          { label: 'Join Academy', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      reset_password: {
+        badge: 'Account',
+        title: 'Reset your password',
+        intro: 'Use password reset when you cannot access the account because the current password is lost or no longer usable.',
+        steps_title: 'Typical steps',
+        steps_items: [
+          'Open the reset-password flow from the sign-in area.',
+          'Request the reset email using the account email address.',
+          'Open the reset link from the email and continue the recovery flow.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Start from the sign-in area.',
+          'Use the email inbox tied to the DojoMate account.',
+          'Treat the reset email as the recovery handoff rather than expecting the app itself to complete the whole reset inline.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'This is for password recovery, not ordinary in-session password change.',
+          'If the email does not arrive, the problem can be inbox routing rather than a broken account.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, you can return to sign in with the updated password.',
+          'If recovery is blocked, check the email path before assuming the account itself is gone.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Sign In', to: '/help-v3/account/sign-in' },
+          { label: 'Change Password', to: '/help-v3/account/change-password' }
+        ]
+      },
+      change_password: {
+        badge: 'Account',
+        title: 'Change your password',
+        intro: 'Use change password when you are already signed in and want to replace the current password without using the reset-email flow.',
+        what_title: 'What you can do',
+        what_items: [
+          'Submit the current password and a new password from account settings.',
+          'Revoke other sessions while preserving the current device when the current contract allows it.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the signed-in account settings surface.',
+          'Stay in the active session rather than leaving to the sign-in flow first.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'The current password is required.',
+          'If session preservation cannot be kept, the app can clear the local session instead of pretending the old state survived.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the current session can remain active while other sessions are revoked.',
+          'If the current password is wrong, the app should show the current structured failure behavior instead of a vague generic response.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Preferences', to: '/help-v3/account/preferences' },
+          { label: 'Logout', to: '/help-v3/account/logout' }
+        ]
+      },
+      profile: {
+        badge: 'Account',
+        title: 'Edit your profile',
+        intro: 'Use Profile when your adult account details need to be reviewed or updated.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review profile details tied to the adult account.',
+          'Update profile fields from the signed-in account flow.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the profile user and edit-profile surfaces.',
+          'Return here when the account identity details are wrong, not when academy membership is wrong.',
+          'Profile is the correct surface for the adult account itself, even when the academy relationship later depends on it.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Profile edits do not replace academy membership decisions.',
+          'Child-account relationships are a separate flow.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the account profile reflects the latest saved values.',
+          'If the issue is actually with a child or membership relationship, switch to the correct topic instead.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Child Accounts', to: '/help-v3/account/child-accounts' },
+          { label: 'Privacy and Progression', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      child_accounts: {
+        badge: 'Account',
+        title: 'Manage child accounts',
+        intro: 'Use Child Accounts when a parent or guardian needs to create, edit, or remove a child-linked account relationship.',
+        what_title: 'What you can do',
+        what_items: [
+          'Create a child account.',
+          'Edit a child account.',
+          'Remove a child account when the relationship should no longer exist.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use child-account profile and management screens from the signed-in account path.',
+          'Return here when a parent-managed account relationship affects membership or joining.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Child-account relationships can affect academy-joining and membership behavior.',
+          'This is an account relationship flow, not a general academy roster edit.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the parent-managed account relationship updates for later member workflows.',
+          'If academy membership still looks wrong, continue in the relevant member or admin topic next.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Join Academy', to: '/help-v3/member/join-academy' },
+          { label: 'Memberships', to: '/help-v3/member/memberships' }
+        ]
+      },
+      privacy_progression: {
+        badge: 'Account',
+        title: 'Manage privacy and progression settings',
+        intro: 'Use privacy and progression settings when the question is about visibility, ranking participation, profile exposure, or account-level privacy choices.',
+        what_title: 'What you can do',
+        what_items: [
+          'Review privacy-related account settings.',
+          'Control progression or profile-visibility style settings where the app exposes them.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use settings privacy and progression surfaces from the signed-in account path.',
+          'Return here when the question is about visibility rather than roster or booking logic.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Anonymous booking is not the same thing as privacy settings.',
+          'Academy-side member visibility and account privacy are related but not identical ideas.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the app uses the latest saved privacy or progression settings.',
+          'If the problem is booking-roster anonymity specifically, use Booking instead.',
+          'Child and dependent-account behavior can remain more restricted than ordinary adult visibility settings.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Booking', to: '/help-v3/member/booking' },
+          { label: 'Preferences', to: '/help-v3/account/preferences' }
+        ]
+      },
+      preferences: {
+        badge: 'Account',
+        title: 'Manage preferences',
+        intro: 'Use Preferences when you want to change app language, currency, theme, or other presentation-level account preferences.',
+        what_title: 'What you can do',
+        what_items: [
+          'Change the app language.',
+          'Change the currency display.',
+          'Change the visual theme or similar user-preference settings.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the signed-in settings area for preferences.',
+          'Return here when the app presentation feels wrong even though the account itself is fine.',
+          'Language and related settings are user-preference concerns, not academy-configuration concerns.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Preferences change app presentation, not academy business setup.',
+          'If the issue is authentication or profile identity, use the account access topics instead.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the app uses the updated preference values for later screens.',
+          'English fallback still protects missing localized copy if a locale is incomplete.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Profile', to: '/help-v3/account/profile' },
+          { label: 'Logout', to: '/help-v3/account/logout' }
+        ]
+      },
+      delete_account: {
+        badge: 'Account',
+        title: 'Delete your account',
+        intro: 'Use account deletion only when you intend to remove the whole account rather than leaving one academy or changing one membership relationship.',
+        what_title: 'What you can do',
+        what_items: [
+          'Start the account-deletion flow from the signed-in settings path.',
+          'Review whether account deletion is truly the action you mean.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use delete-account settings surfaces rather than academy roster tools.',
+          'Re-check the goal before you submit deletion.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Deleting the whole account is not the same as leaving a single academy.',
+          'If you only need a membership change, use the academy or member workflow instead.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the account access itself is removed.',
+          'If the real need was only to change one academy relationship, deletion is too broad.',
+          'Deletion should be treated as the last step after confirming you do not merely need membership, password, or session changes.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Logout', to: '/help-v3/account/logout' },
+          { label: 'Memberships', to: '/help-v3/member/memberships' }
+        ]
+      },
+      logout: {
+        badge: 'Account',
+        title: 'Log out',
+        intro: 'Use Logout when you want to end the current device session and leave the signed-in app state cleanly.',
+        what_title: 'What you can do',
+        what_items: [
+          'End the current signed-in app session.',
+          'Prepare the device for another account or later re-entry.'
+        ],
+        where_title: 'Where you do it',
+        where_items: [
+          'Use the signed-in account settings area.',
+          'Choose logout instead of account deletion when you only want to stop using the current session.'
+        ],
+        limits_title: 'Important limits',
+        limits_items: [
+          'Logout ends the current session, but it does not delete the account.',
+          'If the password itself needs to change, use Change Password instead.'
+        ],
+        results_title: 'What happens next',
+        results_items: [
+          'After success, the app clears the current signed-in state on this device.',
+          'You can return to sign in later with the same or a different account.',
+          'Logout is the safe session-ending path when you do not need the stronger account-wide effects of password change or deletion.'
+        ],
+        next_title: 'Next topics',
+        next_links: [
+          { label: 'Sign In', to: '/help-v3/account/sign-in' },
+          { label: 'Create Account', to: '/help-v3/account/create-account' }
+        ]
+      }
+    }
+  },
   help_v2: {
     support: {
       heading: 'Need more help?',
