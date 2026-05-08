@@ -1154,6 +1154,54 @@ export default {
       }
     },
     student: {
+      join: {
+        badge: 'Student',
+        title: 'Join an academy',
+        intro: 'Use this path when you need to find an academy, confirm it is the right one, and request entry.',
+        find_title: 'How to find an academy',
+        find_items: [
+          'Open the academy area and use the join/discovery flow.',
+          'Search by academy name when needed.',
+          'Use the academy QR path when the academy gives you one.',
+          'Open the academy details before you request entry if you need to confirm it first.'
+        ],
+        steps_title: 'Steps',
+        steps_items: [
+          'Open the academy discovery or join flow.',
+          'Browse or search for the academy.',
+          'Open the academy to review its details.',
+          'Confirm it is the academy you expect.',
+          'Request entry.'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Discovery is useful when you want to compare academies before joining.',
+          'Direct search or QR is faster when you already know the academy.',
+          'Parents may also need to think about child-account relationships during joining.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Student Path',
+        next_link: 'Managing Memberships'
+      },
+      memberships: {
+        badge: 'Student',
+        title: 'Manage academy memberships',
+        intro: 'Use this page when your account belongs to more than one academy or when you need to switch between academy memberships.',
+        when_title: 'When this matters',
+        when_items: [
+          'you belong to more than one academy',
+          'you need to choose which academy you are acting inside',
+          'the wrong academy is currently selected in the app'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Members of multiple academies need to select the correct academy before booking or checking records.',
+          'If something looks missing, the active academy may simply be the wrong one.'
+        ],
+        next_title: 'Next step',
+        back_link: 'Back to Join Academy',
+        next_link: 'Booking'
+      },
       home: {
         badge: 'Student',
         title: 'I train at an academy',
@@ -1198,6 +1246,35 @@ export default {
         next_title: 'Next step',
         back_link: 'Memberships',
         next_link: 'Attendance Records'
+      },
+      alerts: {
+        badge: 'Student',
+        title: 'Read system alerts',
+        intro: 'System alerts help you keep up with academy updates and other important account or membership information.',
+        see_title: 'What you may see',
+        see_items: [
+          'academy updates',
+          'membership-related notices',
+          'other system-generated alerts tied to your academy usage'
+        ],
+        know_title: 'What to know',
+        know_body: 'This is a system-alert surface, not a normal chat or message thread. Treat it as important account and academy information.'
+      },
+      attendance: {
+        badge: 'Student',
+        title: 'Review attendance records',
+        intro: 'Use attendance records when you want to review your training history and confirm what happened across a chosen date range.',
+        help_title: 'What this page helps with',
+        help_items: [
+          'quickly checking recent attendance',
+          'reviewing a longer date range',
+          'confirming whether a lesson was recorded the way you expected'
+        ],
+        know_title: 'What to know',
+        know_items: [
+          'Date-range controls make longer reviews easier.',
+          'This page is mainly for reviewing records, not changing them.'
+        ]
       },
       broadcast: {
         badge: 'Student',
