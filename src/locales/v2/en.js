@@ -123,29 +123,32 @@ export default {
       join_academy: {
         badge: 'Member',
         title: 'Join an academy',
-        intro: 'Use this flow when you want to connect your account to an academy that uses DojoMate.',
+        intro: 'Use this flow when you want to connect your account to an academy that uses DojoMate, whether you found it by browsing, search, or academy QR.',
         what_title: 'What you can do',
         what_items: [
           'Browse academies in Discover.',
           'Search by academy name.',
           'Scan an academy QR code when the academy gives you one.',
-          'Open academy details before you decide to join.'
+          'Open academy details, media, and training previews before you decide to join.',
+          'Submit the join action from the academy details screen.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Open Discover Academy when you want to browse options first.',
           'Open Academy Search when you already know the academy or want to scan a QR code.',
-          'Use the academy details page to confirm you found the correct academy.'
+          'Use the academy details page to confirm you found the correct academy before you submit the join action.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Joining can still require academy acceptance.',
-          'Parent-managed and child-linked membership flows can require extra steps after the first join action.'
+          'Parent-managed and child-linked membership flows can require extra steps after the first join action.',
+          'A successful first tap does not always mean you can book or use cards immediately.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the academy appears in your academy list or pending state.',
-          'If the academy has not accepted you yet, later member actions may stay limited until that approval happens.'
+          'If the academy has not accepted you yet, later member actions may stay limited until that approval happens.',
+          'If the join path needs parent or child follow-up, the app can continue into those extra onboarding steps instead of stopping at a simple accepted state.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -156,27 +159,31 @@ export default {
       memberships: {
         badge: 'Member',
         title: 'Manage memberships and academy context',
-        intro: 'Use this page when you belong to one or more academies and need to confirm which academy is currently active.',
+        intro: 'Use this page when you belong to one or more academies and need to confirm which academy is currently active before you use cards, booking, alerts, or broadcasts.',
         what_title: 'What you can do',
         what_items: [
           'Review the academies linked to your account.',
           'Switch the selected academy before cards, booking, or broadcasts.',
-          'Confirm whether you are looking at the correct academy when something seems missing.'
+          'Confirm whether you are looking at the correct academy when something seems missing.',
+          'Use the joined academy list as the first recovery check when member data looks wrong.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the joined academy list and member academy context surfaces.',
-          'Re-check the selected academy before assuming a card or class is missing.'
+          'Re-check the selected academy before assuming a card, class, or Broadcast is missing.',
+          'Return here when notifications or deep links seem to land in the wrong academy context.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'A wrong selected academy can make cards, schedules, and broadcasts look unavailable even when they exist elsewhere.',
-          'Membership status can still depend on academy approval or linked child-account state.'
+          'Membership status can still depend on academy approval or linked child-account state.',
+          'Switching academies changes which member data the next screens load; it does not merge data from multiple academies into one view.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After you choose the correct academy, later member screens load data for that academy.',
-          'If the wrong academy stays selected, booking and cards can continue to look inconsistent.'
+          'If the wrong academy stays selected, booking, cards, and broadcasts can continue to look inconsistent.',
+          'When the selected academy is right, later problems are more likely to be true status or permission issues rather than simple context drift.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -187,27 +194,31 @@ export default {
       cards: {
         badge: 'Member',
         title: 'Review your cards and pending payments',
-        intro: 'Use member cards when you need to confirm what cards you can use, whether payment is still pending, or whether a card problem needs follow-up.',
+        intro: 'Use member cards when you need to confirm what cards you can use, whether payment is still pending, or whether a card problem needs follow-up in the selected academy.',
         what_title: 'What you can do',
         what_items: [
           'Review active cards for the selected academy.',
           'Open a pending card payment flow when checkout is still required.',
-          'Check whether you have a usable card before trying to book.'
+          'Check whether you have a usable card before trying to book.',
+          'Use card details as the first check when booking says a lesson cannot use your current card.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use member card screens such as Academy Cards and any pending-card payment flow.',
-          'Return here first when booking says you do not have an eligible card.'
+          'Return here first when booking says you do not have an eligible card.',
+          'Stay in the selected academy context before assuming a card is missing.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Member cards are academy-scoped and depend on the selected academy.',
-          'This is not the owner or admin audit-review area.'
+          'This is not the owner or admin audit-review area.',
+          'A pending payment or stale member refresh can still leave the visible card state behind the real backend state for a moment.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After a successful pending payment, the card can move into a usable state.',
-          'If the card still looks wrong after payment or assignment changes, use the disputes workflow instead of guessing.'
+          'If the card still looks wrong after payment or assignment changes, use the disputes workflow instead of guessing.',
+          'If the selected academy is right and the card still cannot be used, the next likely cause is eligibility or booking guard logic rather than a missing help step.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -223,22 +234,26 @@ export default {
         what_items: [
           'Create a dispute record tied to the card problem you noticed.',
           'Explain what looks wrong from the member side.',
-          'Keep the issue in a dedicated follow-up path instead of mixing it into booking or profile questions.'
+          'Keep the issue in a dedicated follow-up path instead of mixing it into booking or profile questions.',
+          'Start from the current card state when the problem is tied to deletion, remaining value, or another unusual card outcome.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use member cards and disputes screens such as Academy Disputes.',
-          'Start from the card that looks wrong when possible.'
+          'Start from the card that looks wrong when possible.',
+          'Use the selected academy context that owns the card rather than a different joined academy.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'A dispute does not instantly fix the card.',
-          'Owner-only review tools like audit logs are not part of the member dispute flow.'
+          'Owner-only review tools like audit logs are not part of the member dispute flow.',
+          'A dispute is the follow-up path for unusual card outcomes, not the normal way to handle every booking error.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the dispute becomes a follow-up item for the academy side.',
-          'You may still need to wait for academy review before the visible card state changes.'
+          'You may still need to wait for academy review before the visible card state changes.',
+          'If the visible problem was only stale member state, the academy-side review can still confirm that no deeper card correction is required.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -260,20 +275,23 @@ export default {
         where_title: 'Where you do it',
         where_items: [
           'Use Academy Schedule, Academy Booking, and Academy Card Selection.',
-          'Return to the selected academy context first if the wrong classes or cards appear.'
+          'Return to the selected academy context first if the wrong classes or cards appear.',
+          'Use the lesson detail and member-facing roster as the source of truth for what the current class is showing.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Booking uses the current scheduled-lesson booking flow, not generic lesson editing.',
           'Card eligibility and booking guard rules come from the backend.',
           'Anonymous booking hides identity from other members in the member-facing roster, but academy staff still see the real booking.',
-          'Canceled or processed lessons can stay readable even when the booking action itself is blocked.'
+          'Canceled or processed lessons can stay readable even when the booking action itself is blocked.',
+          'A network timeout can leave the app unsure whether the booking actually finished, so not every failure means the booking definitely failed.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, your booking state and visible roster update.',
           'Expected guard failures should explain why the action is blocked, such as booking having closed or the lesson already having started.',
-          'Uncertain failures can require refresh and retry before you trust the current state, because the app may not be able to confirm whether the booking reached the server.'
+          'Uncertain failures can require refresh and retry before you trust the current state, because the app may not be able to confirm whether the booking reached the server.',
+          'If the result is unclear, treat the refreshed lesson state as more trustworthy than the old button state you just left.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -483,29 +501,33 @@ export default {
       academy_context: {
         badge: 'Admin',
         title: 'Work in the correct academy context',
-        intro: 'Use this topic when you need to confirm whether you are working in the correct academy and correct relationship before changing academy data.',
+        intro: 'Use this topic when you need to confirm whether you are working in the correct academy and correct relationship before changing academy data, or when admin recovery actions need to route you back through academy selection.',
         what_title: 'What you can do',
         what_items: [
           'Check which academy is selected.',
           'Confirm whether the selected relationship is admin or owner.',
-          'Switch academies before editing academy-scoped data.'
+          'Switch academies before editing academy-scoped data.',
+          'Use admin settings recovery actions such as Reload Academy or Work as an admin when the current academy state is stale or wrong.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the shared academy switcher and admin entry flow.',
+          'Use the admin-selected academy Settings page for bootstrap and recovery actions.',
           'Re-check context before changing members, cards, or schedule.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Admin work is academy-scoped.',
           'Owner-only business actions should not be treated as ordinary admin powers.',
-          'Owning one academy does not automatically make every selected academy an owner context.'
+          'Owning one academy does not automatically make every selected academy an owner context.',
+          'Recovery actions belong in the admin settings/bootstrap path, not as mixed create-or-switch shortcuts on every daily admin screen.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the correct admin dashboard data loads for that academy.',
           'If the wrong academy stays selected, later updates can land in the wrong academy scope.',
-          'If you deliberately switch into an owner-selected academy, the app should route you into the owner-side Business area instead of staying in the admin mental model.'
+          'If you deliberately switch into an owner-selected academy, the app should route you into the owner-side Business area instead of staying in the admin mental model.',
+          'If there is only one admin academy and the state is stale, Reload Academy should behave like a recovery action rather than a new intent choice.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -516,27 +538,31 @@ export default {
       members: {
         badge: 'Admin',
         title: 'Manage members',
-        intro: 'Use Members when you need to review pending, accepted, rejected, or banned academy members and inspect member-side academy participation.',
+        intro: 'Use Members when you need to review pending, accepted, rejected, or banned academy members, inspect member-side academy participation, or move someone into the correct visible membership state.',
         what_title: 'What you can do',
         what_items: [
-          'Review pending and accepted memberships.',
+          'Review pending, accepted, rejected, and banned memberships.',
           'Reject, ban, or otherwise update membership status where the screen allows it.',
-          'Open member profile and attendance context.'
+          'Open member profile and attendance context.',
+          'Use the accepted-members area as the source for member-level admin follow-up, not as a mixed instructor or permissions roster.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use members status screens such as Pending, Accepted, Rejected, and Banned.',
-          'Open member detail or attendance from the member-side admin area.'
+          'Open member detail or attendance from the member-side admin area.',
+          'Use the members cache-backed roster screens rather than assuming every member action belongs to one generic list.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Member, instructor, and admin access are not the same concept.',
-          'Accepted instructor rows should not be taught as ordinary adult-member rows.'
+          'Accepted instructor rows should not be taught as ordinary adult-member rows.',
+          'Changing academy member status is different from changing teaching identity or owner-side access.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Successful updates move the person into the correct visible membership state.',
-          'Related admin screens refresh around the new member state.'
+          'Related admin screens refresh around the new member state.',
+          'If the next task is cards, booking, or profile review, continue from the member state the person now appears in rather than from the previous screen.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -553,24 +579,28 @@ export default {
           'Create card templates.',
           'Review existing templates.',
           'Assign active cards to members.',
-          'Review active cards and pause-related card state where the screen allows it.'
+          'Review active cards and pause-related card state where the screen allows it.',
+          'Use card assignment and active-card views when a booking problem is really a card-state problem.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use cards creation, template, assignment, and active-card screens.',
           'Return here when a member-booking issue is really a missing or wrong active card.',
-          'During onboarding, the app can route straight into cards work because first-card milestones are part of the academy setup path.'
+          'During onboarding, the app can route straight into cards work because first-card milestones are part of the academy setup path.',
+          'Treat active-card views, assignment views, and template views as separate layers even when they all live in Cards.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Templates and active cards are different layers.',
-          'Owner-only oversight tools like audit logs do not belong in normal admin cards guidance.'
+          'Owner-only oversight tools like audit logs do not belong in normal admin cards guidance.',
+          'The live app now relies on targeted cards caches rather than one old bulk records payload.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Successful changes refresh cards-related admin and member flows.',
           'Booking eligibility changes can appear after the card update reaches the right academy context.',
-          'If the card was created only for internal onboarding or staff testing, it can still count toward the onboarding path without representing live tuition setup.'
+          'If the card was created only for internal onboarding or staff testing, it can still count toward the onboarding path without representing live tuition setup.',
+          'When card changes affect booking availability, the refreshed card or lesson state is more trustworthy than the stale screen you just left.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -586,23 +616,27 @@ export default {
         what_items: [
           'Review open session debt entries.',
           'Settle debt through the current admin-side settlement workflow.',
-          'Keep debt handling separate from member disputes and owner oversight.'
+          'Keep debt handling separate from member disputes and owner oversight.',
+          'Use debt handling for owed session cleanup rather than as a generic card-history browser.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the admin debt or card-debt surface that belongs to current cards tooling.',
           'Open it from admin card operations rather than from member profile assumptions.',
-          'Keep the debt workflow tied to the academy card context instead of treating it like a general accounting dashboard.'
+          'Keep the debt workflow tied to the academy card context instead of treating it like a general accounting dashboard.',
+          'Treat debt entries as operational card and booking cleanup items inside the selected academy.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Debt handling is not the same as a member-facing dispute.',
-          'Owner review tools remain separate from this day-to-day admin settlement flow.'
+          'Owner review tools remain separate from this day-to-day admin settlement flow.',
+          'If the real question is whether a deletion or unusual card outcome was correct, that is a different review path than simple debt settlement.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After settlement, the debt status updates and related card context should reflect the change.',
-          'If the underlying record is disputed rather than simply owed, switch to the correct dispute or oversight path.'
+          'If the underlying record is disputed rather than simply owed, switch to the correct dispute or oversight path.',
+          'If later mutations are still blocked, re-check whether another unresolved card or debt blocker still exists.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -681,23 +715,27 @@ export default {
         what_items: [
           'Open a scheduled lesson from the admin side.',
           'Select a target member and a valid card.',
-          'Create or remove the booking using the current booking action flow.'
+          'Create or remove the booking using the current booking action flow.',
+          'Use the admin member-and-card picker rather than member-facing anonymous booking controls.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use Admin Booking and the related card-selection flow.',
-          'Start from the scheduled lesson you are working on instead of from general member search.'
+          'Start from the scheduled lesson you are working on instead of from general member search.',
+          'Treat the admin picker as a cache-backed academy tool rather than a free-form global member search.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Admin cannot create anonymous bookings.',
           'Backend booking guard codes still control whether a booking is allowed.',
-          'Unexpected failures can require refresh-and-retry behavior even when the roster detail stays visible.'
+          'Unexpected failures can require refresh-and-retry behavior even when the roster detail stays visible.',
+          'Admin-side unknown-result failures need a deliberate roster refresh before you assume the booking definitely failed.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the lesson roster and booking state update.',
-          'If the action is blocked, the screen should explain the guard condition instead of pretending the lesson vanished.'
+          'If the action is blocked, the screen should explain the guard condition instead of pretending the lesson vanished.',
+          'If the outcome is unclear, refresh the lesson and trust the refreshed roster state before trying the action again.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -708,16 +746,18 @@ export default {
       broadcasts: {
         badge: 'Admin',
         title: 'Author broadcasts',
-        intro: 'Use the current admin Broadcast flow when you want to publish academy updates or training posts from the app.',
+        intro: 'Use the current admin Broadcast flow when you want to publish academy updates or training posts from the app inside the selected academy context.',
         what_title: 'What you can do',
         what_items: [
           'Create a Broadcast with text and images.',
           'Create a Broadcast with text and one MP4 video.',
-          'Publish immediately into the selected academy stream.'
+          'Publish immediately into the selected academy stream.',
+          'Return to the admin feed and see the newly created Broadcast at the top.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use Broadcast authoring inside the admin Members area.',
+          'Open the create flow from the admin Members Broadcast screens.',
           'Work inside the selected academy context before publishing.'
         ],
         limits_title: 'Important limits',
@@ -725,13 +765,15 @@ export default {
           'Current authoring has no draft-save split.',
           'The app supports one video per Broadcast and no mixed image-plus-video post.',
           'Authorization still depends on academy role and access.',
+          'Allowed users are academy owners and staff with academy member access.',
           'The current app-side publish flow expects a non-empty text body before publish.'
         ],
         results_title: 'What happens next',
         results_items: [
           'A successful create action publishes the Broadcast immediately.',
           'If media or authorization is invalid, the create action should fail instead of creating a hidden draft.',
-          'Once published, members see the post through the selected academy Broadcast feed rather than through system alerts.'
+          'Once published, members see the post through the selected academy Broadcast feed rather than through system alerts.',
+          'When you return from the create screen, the new Broadcast is added to the admin-side feed for that academy.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -811,29 +853,33 @@ export default {
       create_academy: {
         badge: 'Owner',
         title: 'Create an academy',
-        intro: 'Use academy creation when you are starting the first academy or when your account is allowed to create an additional academy.',
+        intro: 'Use academy creation when you are starting the first academy or when your account is allowed to create an additional academy under the current bootstrap intent.',
         steps_title: 'Typical steps',
         steps_items: [
           'Enter the create-academy flow from the current bootstrap intent.',
           'Complete the academy details required for creation.',
-          'Finish creation and let the app continue into the guided next step.'
+          'Finish creation and let the app continue into the guided next step.',
+          'If you entered fullscreen creation from the admin bootstrap path, use Cancel Creation only when you intend to leave creation and return to admin bootstrap.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the create-academy flow from the business/admin bootstrap path.',
-          'Use the shared switcher later when you need to move between owned academies and admin academies.'
+          'Use the shared switcher later when you need to move between owned academies and admin academies.',
+          'Treat create-first-academy and create-additional-academy intents as separate startup paths, not as the same owner screen with a different button.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Create availability depends on the current bootstrap intent and owner-slot rules.',
           'Cancel Creation exists when you entered fullscreen creation from the admin bootstrap path.',
           'Creating an academy is not proof that billing or online payments are configured.',
-          'If academy-creation is currently blocked by slot rules, the app should hide or block that path instead of acting as if creation already started.'
+          'If academy-creation is currently blocked by slot rules, the app should hide or block that path instead of acting as if creation already started.',
+          'The fullscreen first-academy create screen is a first-time path, not a generic screen that should keep reappearing after the milestone is already satisfied.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the new academy becomes the selected academy and onboarding continues.',
-          'After canceling from admin bootstrap, the app returns to the admin bootstrap path instead of pretending creation finished.'
+          'After canceling from admin bootstrap, the app returns to the admin bootstrap path instead of pretending creation finished.',
+          'After create-first-academy success, the app should continue into the first-academy onboarding path rather than dropping you into an unrelated owner page.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -844,7 +890,7 @@ export default {
       onboarding: {
         badge: 'Owner',
         title: 'Follow the first-academy onboarding flow',
-        intro: 'Use this topic to understand how the current first-academy tutorial progresses after academy creation.',
+        intro: 'Use this topic to understand how the current first-academy tutorial progresses after academy creation and how the app resumes the next milestone after reload or re-entry.',
         steps_title: 'Milestone order',
         steps_items: [
           'Create the academy.',
@@ -857,19 +903,22 @@ export default {
         where_title: 'Where you do it',
         where_items: [
           'Follow the guided dashboard and fullscreen onboarding screens.',
-          'Use the highlighted section that the app surfaces for the next milestone.'
+          'Use the highlighted section that the app surfaces for the next milestone.',
+          'Expect the app to resume the next required section after reload based on onboarding milestone history, not just the last screen you happened to touch.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Onboarding is milestone-driven and backed by durable usage-history state.',
           'Tutorial completion does not require a real paying student or fully configured online payments.',
-          'Onboarding completion is not the same thing as billing readiness.'
+          'Onboarding completion is not the same thing as billing readiness.',
+          'Member self-booking does not satisfy the admin-booking milestone; the counted booking step is the admin-side booking action.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After each milestone, the app reveals the next preferred section.',
           'After onboarding completion, the broader admin dashboard opens up and more tools can appear if entitlement allows them.',
-          'The tutorial can be completed with self or staff test flows rather than requiring a real paying member to exist first.'
+          'The tutorial can be completed with self or staff test flows rather than requiring a real paying member to exist first.',
+          'The final completion state still comes from the backend, and the wider tutorial should not be treated as finished just because one local screen looked complete.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -885,24 +934,28 @@ export default {
         what_items: [
           'Edit academy business details.',
           'Delete an academy when owner-side deletion is the correct action.',
-          'Upload and maintain owner-managed academy media.'
+          'Upload and maintain owner-managed academy media.',
+          'Keep academy presentation and owner maintenance work separate from daily admin roster or schedule work.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use owner-side business edit and delete flows.',
           'Use academy business media tools when you need to change visual academy presentation.',
-          'Treat media upload and business-detail editing as owner maintenance work rather than as member or daily staff operations.'
+          'Treat media upload and business-detail editing as owner maintenance work rather than as member or daily staff operations.',
+          'Stay in the owner-selected academy surface instead of trying to manage these actions from the admin-selected academy path.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'These are owner-scoped academy actions, not normal staff actions.',
-          'Deleting an academy is broader than removing a member or changing a class.'
+          'Deleting an academy is broader than removing a member or changing a class.',
+          'Owner-side business maintenance is different from operations analytics, even when both belong to the same academy.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Successful edits update the owner-side academy state and presentation.',
           'Deletion removes the academy itself, not just one user relationship.',
-          'Media changes become part of what later users see in academy details, discovery, and related academy information screens.'
+          'Media changes become part of what later users see in academy details, discovery, and related academy information screens.',
+          'If the next issue is teaching identity or admin access rather than academy details, continue in Instructors or Access instead of staying in business edit flows.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -917,23 +970,27 @@ export default {
         what_title: 'What you can do',
         what_items: [
           'Add or maintain instructor identity in the academy.',
-          'Support head-instructor and teaching-staff setup during onboarding and later academy management.'
+          'Support head-instructor and teaching-staff setup during onboarding and later academy management.',
+          'Use the instructor path for accepted member rows that should become teaching staff.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the Business Instructors surface from the owner-side academy area.',
           'Return here when the issue is about teaching identity rather than admin access.',
-          'This is also the correct onboarding stop when the app is guiding the academy through the first instructor milestone.'
+          'This is also the correct onboarding stop when the app is guiding the academy through the first instructor milestone.',
+          'Expect the instructor roster to stay separate from the general adult-member or permissions candidate lists.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Instructor identity is not the same as academy admin access.',
-          'Instructor identity is not the same as payroll or salary ownership.'
+          'Instructor identity is not the same as payroll or salary ownership.',
+          'Do not use instructor setup as a substitute for owner-side access or compensation screens.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Successful instructor setup satisfies the teaching-identity side of onboarding and academy staffing.',
-          'If the question is about who can manage the academy instead of who teaches, use Access instead.'
+          'If the question is about who can manage the academy instead of who teaches, use Access instead.',
+          'If the next question is compensation, timesheets, or owner reporting, switch to the operations topics rather than staying in the instructor roster.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -949,23 +1006,27 @@ export default {
         what_items: [
           'Grant academy admin access to eligible accepted adult members.',
           'Update or remove academy-specific permission rows.',
-          'Keep access management separate from teaching identity.'
+          'Keep access management separate from teaching identity.',
+          'Use the single academy-admin toggle that the live permissions modal supports.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the owner-side permissions or access surface.',
-          'Look for the compact `Access` label in width-constrained menus.'
+          'Look for the compact `Access` label in width-constrained menus.',
+          'Choose candidates from accepted adult members rather than from a mixed instructor or owner roster.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Removing one academy permission row does not automatically remove broader multi-academy admin role state.',
-          'This surface manages academy access, not instructor identity.'
+          'This surface manages academy access, not instructor identity.',
+          'Do not treat academy access as a second separate global-dashboard toggle for the same person in the same academy.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Successful changes affect which academy-admin features that person can open for the selected academy.',
           'If the person still needs teaching identity, use Instructors separately.',
-          'If the user also belongs to another academy, broader admin role state can still survive outside the one academy you just changed.'
+          'If the user also belongs to another academy, broader admin role state can still survive outside the one academy you just changed.',
+          'If access still looks wrong afterward, check whether the person is actually missing accepted-member status or is still operating in the wrong academy context.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -981,23 +1042,27 @@ export default {
         what_items: [
           'Review realtime and summary academy metrics.',
           'Open insights, trend, and monthly reporting surfaces.',
-          'Use owner-facing operations views instead of ordinary admin dashboards for high-level reporting.'
+          'Use owner-facing operations views instead of ordinary admin dashboards for high-level reporting.',
+          'Stay inside the owner-only operations namespace for reporting, time, salary, and oversight work.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use owner operations dashboards and reporting surfaces.',
-          'Stay in the owner-side selected academy context when interpreting academy-specific analytics.'
+          'Stay in the owner-side selected academy context when interpreting academy-specific analytics.',
+          'Treat the operations dashboard as a separate owner stack, not as a generic admin page with extra buttons.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Operations and analytics are owner or operations territory, not ordinary admin/staff territory.',
-          'Analytics is separate from instructor identity and access identity.'
+          'Analytics is separate from instructor identity and access identity.',
+          'Paid entitlement alone should not make operations visible to a non-owner admin.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Successful access loads the owner reporting and operations context for the selected academy.',
           'If the surface is missing, role or entitlement can be the reason rather than bad academy data.',
-          'Operational reporting should stay separate from normal member/admin alert reading, even when both are ultimately academy-related.'
+          'Operational reporting should stay separate from normal member/admin alert reading, even when both are ultimately academy-related.',
+          'Once inside Operations, continue to the specific sub-surface that matches the job: analytics, timesheets, salaries, or oversight.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -1072,27 +1137,31 @@ export default {
       tools: {
         badge: 'Owner',
         title: 'Use owner tools and gated features',
-        intro: 'Use this topic when you need to understand what optional owner-side tools do and where those workflows appear once access is available.',
+        intro: 'Use this topic when you need to understand what optional owner-side tools do, where those workflows appear, and which surfaces stay role-gated or entitlement-gated.',
         what_title: 'What you can do',
         what_items: [
           'Open the owner tool or gated feature that matches the academy workflow you need.',
-          'Use owner tools on top of the core academy workflow rather than instead of it.'
+          'Use owner tools on top of the core academy workflow rather than instead of it.',
+          'Treat monetized or gated surfaces as capability entry points, not as the main explanation of the workflow itself.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the relevant owner or operations dashboard entry after access is available.',
           'Keep the selected academy in mind before assuming a tool is missing.',
-          'Treat the tool entry as an extension of the academy workflow it supports rather than as a standalone business area with no academy context.'
+          'Treat the tool entry as an extension of the academy workflow it supports rather than as a standalone business area with no academy context.',
+          'Some gated surfaces live under owner operations, while others can appear through the broader academy setup or capability-review path.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Help should explain tool purpose and workflow, not stale purchase mechanics.',
-          'Old bundle assumptions should not be treated as product truth.'
+          'Old bundle assumptions should not be treated as product truth.',
+          'A missing tool surface can be caused by role gating, entitlement gating, or academy capability setup rather than by a broken route.'
         ],
         results_title: 'What happens next',
         results_items: [
           'Once the relevant access exists, the tool opens its own workflow surface.',
-          'If access is missing, the absence is usually role or entitlement related rather than a broken route.'
+          'If access is missing, the absence is usually role or entitlement related rather than a broken route.',
+          'If the tool is visible but the supported workflow still cannot continue, the next check is usually the academy setup or selected-academy state, not the help route itself.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -1331,23 +1400,27 @@ export default {
         what_title: 'What you can do',
         what_items: [
           'Review privacy-related account settings.',
-          'Control progression or profile-visibility style settings where the app exposes them.'
+          'Control progression or profile-visibility style settings where the app exposes them.',
+          'Treat ranking participation and profile exposure as account-level settings, not as booking or academy-roster switches.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use settings privacy and progression surfaces from the signed-in account path.',
-          'Return here when the question is about visibility rather than roster or booking logic.'
+          'Return here when the question is about visibility rather than roster or booking logic.',
+          'Keep this separate from user preferences such as language, currency, or theme.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Anonymous booking is not the same thing as privacy settings.',
-          'Academy-side member visibility and account privacy are related but not identical ideas.'
+          'Academy-side member visibility and account privacy are related but not identical ideas.',
+          'This settings group should not be treated as the place to refresh or repair academy-context state.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the app uses the latest saved privacy or progression settings.',
           'If the problem is booking-roster anonymity specifically, use Booking instead.',
-          'Child and dependent-account behavior can remain more restricted than ordinary adult visibility settings.'
+          'Child and dependent-account behavior can remain more restricted than ordinary adult visibility settings.',
+          'If the issue is only presentation language or currency, switch to Preferences instead of changing privacy settings.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -1363,23 +1436,27 @@ export default {
         what_items: [
           'Change the app language.',
           'Change the currency display.',
-          'Change the visual theme or similar user-preference settings.'
+          'Change the visual theme or similar user-preference settings.',
+          'Update presentation-level preferences without changing academy data or account privacy rules.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use the signed-in settings area for preferences.',
           'Return here when the app presentation feels wrong even though the account itself is fine.',
-          'Language and related settings are user-preference concerns, not academy-configuration concerns.'
+          'Language and related settings are user-preference concerns, not academy-configuration concerns.',
+          'Keep preference changes separate from privacy/progression settings even when both live under the account area.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'Preferences change app presentation, not academy business setup.',
-          'If the issue is authentication or profile identity, use the account access topics instead.'
+          'If the issue is authentication or profile identity, use the account access topics instead.',
+          'Do not treat preferences as the place to fix member roster privacy or anonymous booking behavior.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the app uses the updated preference values for later screens.',
-          'English fallback still protects missing localized copy if a locale is incomplete.'
+          'English fallback still protects missing localized copy if a locale is incomplete.',
+          'If the visible issue remains after the preference change, the problem is more likely to be account, locale content, or academy context rather than the preference save itself.'
         ],
         next_title: 'Next topics',
         next_links: [
