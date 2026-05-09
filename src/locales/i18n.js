@@ -3,17 +3,7 @@ import { createI18n } from 'vue-i18n'
 
 // Keep file names exactly as on disk
 import en from './en.json'
-import hans from './hans.json'  // Simplified Chinese
-import hant from './hant.json'  // Traditional Chinese
-import ko from './ko.json'
-import ja from './ja.json'
-import pt from './pt.json'
 import enV2 from './v2/en'
-import hansV2 from './v2/hans'
-import hantV2 from './v2/hant'
-import jaV2 from './v2/ja'
-import koV2 from './v2/ko'
-import ptV2 from './v2/pt'
 
 function mergeMessages(base, extra) {
   const output = { ...base }
@@ -37,11 +27,44 @@ function mergeMessages(base, extra) {
 
 const messages = {
   en: mergeMessages(en, enV2),
-  hans: mergeMessages(hans, hansV2),
-  hant: mergeMessages(hant, hantV2),
-  ja: mergeMessages(ja, jaV2),
-  ko: mergeMessages(ko, koV2),
-  pt: mergeMessages(pt, ptV2),
+}
+
+const localeLoaders = {
+  hans: async () => {
+    const [{ default: base }, { default: extra }] = await Promise.all([
+      import('./hans.json'),
+      import('./v2/hans.js'),
+    ])
+    return mergeMessages(base, extra)
+  },
+  hant: async () => {
+    const [{ default: base }, { default: extra }] = await Promise.all([
+      import('./hant.json'),
+      import('./v2/hant.js'),
+    ])
+    return mergeMessages(base, extra)
+  },
+  ja: async () => {
+    const [{ default: base }, { default: extra }] = await Promise.all([
+      import('./ja.json'),
+      import('./v2/ja.js'),
+    ])
+    return mergeMessages(base, extra)
+  },
+  ko: async () => {
+    const [{ default: base }, { default: extra }] = await Promise.all([
+      import('./ko.json'),
+      import('./v2/ko.js'),
+    ])
+    return mergeMessages(base, extra)
+  },
+  pt: async () => {
+    const [{ default: base }, { default: extra }] = await Promise.all([
+      import('./pt.json'),
+      import('./v2/pt.js'),
+    ])
+    return mergeMessages(base, extra)
+  },
 }
 
 const saved = localStorage.getItem('locale') || 'en'
@@ -55,9 +78,29 @@ const i18n = createI18n({
   messages,
 })
 
-export function setLocale(locale) {
-  const valid = Object.prototype.hasOwnProperty.call(messages, locale)
-  const next = valid ? locale : 'en'
+async function ensureLocaleMessages(locale) {
+  if (locale === 'en') return 'en'
+
+  if (i18n.global.availableLocales.includes(locale)) {
+    return locale
+  }
+
+  const load = localeLoaders[locale]
+  if (!load) return 'en'
+
+  const message = await load()
+  i18n.global.setLocaleMessage(locale, message)
+  return locale
+}
+
+export async function initializeI18n() {
+  const next = await ensureLocaleMessages(initialLocale)
+  i18n.global.locale.value = next
+  localStorage.setItem('locale', next)
+}
+
+export async function setLocale(locale) {
+  const next = await ensureLocaleMessages(locale)
   i18n.global.locale.value = next
   localStorage.setItem('locale', next)
 }

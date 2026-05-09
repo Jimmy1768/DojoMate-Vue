@@ -1,145 +1,145 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../pages/Home.vue'
-import Privacy from '../pages/Privacy.vue'
-import Deletion from '../pages/Deletion.vue'
-import Progression from '../pages/Progression.vue'
-import HelpLayout from '../components/HelpLayout.vue'
-import HelpLayoutV2 from '../components/HelpLayoutV2.vue'
-import HelpLayoutV3 from '../components/HelpLayoutV3.vue'
-import HelpWelcome from '../pages/HelpWelcome.vue'
-import HelpWelcomeV2 from '../pages/HelpWelcomeV2.vue'
-import HelpWelcomeV3 from '../pages/HelpWelcomeV3.vue'
-import RoleHubV3 from '../pages/help-v3/RoleHubV3.vue'
-import TopicPageV3 from '../pages/help-v3/TopicPageV3.vue'
-import OwnerHomeV2 from '../pages/help-v2/OwnerHomeV2.vue'
-import AdminHomeV2 from '../pages/help-v2/AdminHomeV2.vue'
-import StudentHomeV2 from '../pages/help-v2/StudentHomeV2.vue'
-import SignInV2 from '../pages/help-v2/SignInV2.vue'
-import CreateAccountV2 from '../pages/help-v2/CreateAccountV2.vue'
-import ResetPasswordV2 from '../pages/help-v2/ResetPasswordV2.vue'
-import TroubleshootingV2 from '../pages/help-v2/TroubleshootingV2.vue'
-import ChangePasswordV2 from '../pages/help-v2/ChangePasswordV2.vue'
-import LanguageV2 from '../pages/help-v2/LanguageV2.vue'
-import CurrencyV2 from '../pages/help-v2/CurrencyV2.vue'
-import PrivacySettingsV2 from '../pages/help-v2/PrivacySettingsV2.vue'
-import DeleteAccountSettingsV2 from '../pages/help-v2/DeleteAccountSettingsV2.vue'
-import LogoutV2 from '../pages/help-v2/LogoutV2.vue'
-import EditProfileV2 from '../pages/help-v2/EditProfileV2.vue'
-import ChildAccountsV2 from '../pages/help-v2/ChildAccountsV2.vue'
-import JoinAcademyV2 from '../pages/help-v2/JoinAcademyV2.vue'
-import MembershipsV2 from '../pages/help-v2/MembershipsV2.vue'
-import BookingStudentV2 from '../pages/help-v2/BookingStudentV2.vue'
-import SystemAlertsV2 from '../pages/help-v2/SystemAlertsV2.vue'
-import StudentBroadcastV2 from '../pages/help-v2/StudentBroadcastV2.vue'
-import AttendanceRecordsStudentV2 from '../pages/help-v2/AttendanceRecordsStudentV2.vue'
-import BusinessOverviewV2 from '../pages/help-v2/BusinessOverviewV2.vue'
-import BusinessComparisonV2 from '../pages/help-v2/BusinessComparisonV2.vue'
-import InstructorsV2 from '../pages/help-v2/InstructorsV2.vue'
-import StaffAccessV2 from '../pages/help-v2/StaffAccessV2.vue'
-import AnalyticsV2 from '../pages/help-v2/AnalyticsV2.vue'
-import ScheduleOverviewV2 from '../pages/help-v2/ScheduleOverviewV2.vue'
-import CreateLessonV2 from '../pages/help-v2/CreateLessonV2.vue'
-import ManageLessonV2 from '../pages/help-v2/ManageLessonV2.vue'
-import BookForStudentsV2 from '../pages/help-v2/BookForStudentsV2.vue'
-import CardsOverviewV2 from '../pages/help-v2/CardsOverviewV2.vue'
-import CardsBookingFlowV2 from '../pages/help-v2/CardsBookingFlowV2.vue'
-import CreateCardTemplateV2 from '../pages/help-v2/CreateCardTemplateV2.vue'
-import IssueCardsV2 from '../pages/help-v2/IssueCardsV2.vue'
-import EditCardTemplatesV2 from '../pages/help-v2/EditCardTemplatesV2.vue'
-import DeleteCardTemplatesV2 from '../pages/help-v2/DeleteCardTemplatesV2.vue'
-import DeleteCardsV2 from '../pages/help-v2/DeleteCardsV2.vue'
-import CardDisputesV2 from '../pages/help-v2/CardDisputesV2.vue'
-import MembersOverviewV2 from '../pages/help-v2/MembersOverviewV2.vue'
-import QuickEnrollmentV2 from '../pages/help-v2/QuickEnrollmentV2.vue'
-import ApplicationsV2 from '../pages/help-v2/ApplicationsV2.vue'
-import RejectOrBanMembersV2 from '../pages/help-v2/RejectOrBanMembersV2.vue'
-import ToolsOverviewV2 from '../pages/help-v2/ToolsOverviewV2.vue'
-import ActivateToolsV2 from '../pages/help-v2/ActivateToolsV2.vue'
-import TimetableV2 from '../pages/help-v2/TimetableV2.vue'
-import PauseCardsV2 from '../pages/help-v2/PauseCardsV2.vue'
-import BroadcastV2 from '../pages/help-v2/BroadcastV2.vue'
-import GettingStartedOwnerV2 from '../pages/help-v2/GettingStartedOwnerV2.vue'
-import EnrollmentVsApplicationsV2 from '../pages/help-v2/EnrollmentVsApplicationsV2.vue'
-import PortalOverviewV2 from '../pages/help-v2/PortalOverviewV2.vue'
-import PortalRegisterV2 from '../pages/help-v2/PortalRegisterV2.vue'
-import PortalMembersV2 from '../pages/help-v2/PortalMembersV2.vue'
-import PortalRanksV2 from '../pages/help-v2/PortalRanksV2.vue'
-import PortalCardsV2 from '../pages/help-v2/PortalCardsV2.vue'
-import PortalReportsV2 from '../pages/help-v2/PortalReportsV2.vue'
-import PortalCloudUsageV2 from '../pages/help-v2/PortalCloudUsageV2.vue'
-import PortalPayoutsV2 from '../pages/help-v2/PortalPayoutsV2.vue'
-import CreateAcademyV2 from '../pages/help-v2/CreateAcademyV2.vue'
-import AcademyBasicsV2 from '../pages/help-v2/AcademyBasicsV2.vue'
-import AcademyQRV2 from '../pages/help-v2/AcademyQRV2.vue'
-import DeleteAcademyV2 from '../pages/help-v2/DeleteAcademyV2.vue'
+const Home = () => import('../pages/Home.vue')
+const Privacy = () => import('../pages/Privacy.vue')
+const Deletion = () => import('../pages/Deletion.vue')
+const Progression = () => import('../pages/Progression.vue')
+const HelpLayout = () => import('../components/HelpLayout.vue')
+const HelpLayoutV2 = () => import('../components/HelpLayoutV2.vue')
+const HelpLayoutV3 = () => import('../components/HelpLayoutV3.vue')
+const HelpWelcome = () => import('../pages/HelpWelcome.vue')
+const HelpWelcomeV2 = () => import('../pages/HelpWelcomeV2.vue')
+const HelpWelcomeV3 = () => import('../pages/HelpWelcomeV3.vue')
+const RoleHubV3 = () => import('../pages/help-v3/RoleHubV3.vue')
+const TopicPageV3 = () => import('../pages/help-v3/TopicPageV3.vue')
+const OwnerHomeV2 = () => import('../pages/help-v2/OwnerHomeV2.vue')
+const AdminHomeV2 = () => import('../pages/help-v2/AdminHomeV2.vue')
+const StudentHomeV2 = () => import('../pages/help-v2/StudentHomeV2.vue')
+const SignInV2 = () => import('../pages/help-v2/SignInV2.vue')
+const CreateAccountV2 = () => import('../pages/help-v2/CreateAccountV2.vue')
+const ResetPasswordV2 = () => import('../pages/help-v2/ResetPasswordV2.vue')
+const TroubleshootingV2 = () => import('../pages/help-v2/TroubleshootingV2.vue')
+const ChangePasswordV2 = () => import('../pages/help-v2/ChangePasswordV2.vue')
+const LanguageV2 = () => import('../pages/help-v2/LanguageV2.vue')
+const CurrencyV2 = () => import('../pages/help-v2/CurrencyV2.vue')
+const PrivacySettingsV2 = () => import('../pages/help-v2/PrivacySettingsV2.vue')
+const DeleteAccountSettingsV2 = () => import('../pages/help-v2/DeleteAccountSettingsV2.vue')
+const LogoutV2 = () => import('../pages/help-v2/LogoutV2.vue')
+const EditProfileV2 = () => import('../pages/help-v2/EditProfileV2.vue')
+const ChildAccountsV2 = () => import('../pages/help-v2/ChildAccountsV2.vue')
+const JoinAcademyV2 = () => import('../pages/help-v2/JoinAcademyV2.vue')
+const MembershipsV2 = () => import('../pages/help-v2/MembershipsV2.vue')
+const BookingStudentV2 = () => import('../pages/help-v2/BookingStudentV2.vue')
+const SystemAlertsV2 = () => import('../pages/help-v2/SystemAlertsV2.vue')
+const StudentBroadcastV2 = () => import('../pages/help-v2/StudentBroadcastV2.vue')
+const AttendanceRecordsStudentV2 = () => import('../pages/help-v2/AttendanceRecordsStudentV2.vue')
+const BusinessOverviewV2 = () => import('../pages/help-v2/BusinessOverviewV2.vue')
+const BusinessComparisonV2 = () => import('../pages/help-v2/BusinessComparisonV2.vue')
+const InstructorsV2 = () => import('../pages/help-v2/InstructorsV2.vue')
+const StaffAccessV2 = () => import('../pages/help-v2/StaffAccessV2.vue')
+const AnalyticsV2 = () => import('../pages/help-v2/AnalyticsV2.vue')
+const ScheduleOverviewV2 = () => import('../pages/help-v2/ScheduleOverviewV2.vue')
+const CreateLessonV2 = () => import('../pages/help-v2/CreateLessonV2.vue')
+const ManageLessonV2 = () => import('../pages/help-v2/ManageLessonV2.vue')
+const BookForStudentsV2 = () => import('../pages/help-v2/BookForStudentsV2.vue')
+const CardsOverviewV2 = () => import('../pages/help-v2/CardsOverviewV2.vue')
+const CardsBookingFlowV2 = () => import('../pages/help-v2/CardsBookingFlowV2.vue')
+const CreateCardTemplateV2 = () => import('../pages/help-v2/CreateCardTemplateV2.vue')
+const IssueCardsV2 = () => import('../pages/help-v2/IssueCardsV2.vue')
+const EditCardTemplatesV2 = () => import('../pages/help-v2/EditCardTemplatesV2.vue')
+const DeleteCardTemplatesV2 = () => import('../pages/help-v2/DeleteCardTemplatesV2.vue')
+const DeleteCardsV2 = () => import('../pages/help-v2/DeleteCardsV2.vue')
+const CardDisputesV2 = () => import('../pages/help-v2/CardDisputesV2.vue')
+const MembersOverviewV2 = () => import('../pages/help-v2/MembersOverviewV2.vue')
+const QuickEnrollmentV2 = () => import('../pages/help-v2/QuickEnrollmentV2.vue')
+const ApplicationsV2 = () => import('../pages/help-v2/ApplicationsV2.vue')
+const RejectOrBanMembersV2 = () => import('../pages/help-v2/RejectOrBanMembersV2.vue')
+const ToolsOverviewV2 = () => import('../pages/help-v2/ToolsOverviewV2.vue')
+const ActivateToolsV2 = () => import('../pages/help-v2/ActivateToolsV2.vue')
+const TimetableV2 = () => import('../pages/help-v2/TimetableV2.vue')
+const PauseCardsV2 = () => import('../pages/help-v2/PauseCardsV2.vue')
+const BroadcastV2 = () => import('../pages/help-v2/BroadcastV2.vue')
+const GettingStartedOwnerV2 = () => import('../pages/help-v2/GettingStartedOwnerV2.vue')
+const EnrollmentVsApplicationsV2 = () => import('../pages/help-v2/EnrollmentVsApplicationsV2.vue')
+const PortalOverviewV2 = () => import('../pages/help-v2/PortalOverviewV2.vue')
+const PortalRegisterV2 = () => import('../pages/help-v2/PortalRegisterV2.vue')
+const PortalMembersV2 = () => import('../pages/help-v2/PortalMembersV2.vue')
+const PortalRanksV2 = () => import('../pages/help-v2/PortalRanksV2.vue')
+const PortalCardsV2 = () => import('../pages/help-v2/PortalCardsV2.vue')
+const PortalReportsV2 = () => import('../pages/help-v2/PortalReportsV2.vue')
+const PortalCloudUsageV2 = () => import('../pages/help-v2/PortalCloudUsageV2.vue')
+const PortalPayoutsV2 = () => import('../pages/help-v2/PortalPayoutsV2.vue')
+const CreateAcademyV2 = () => import('../pages/help-v2/CreateAcademyV2.vue')
+const AcademyBasicsV2 = () => import('../pages/help-v2/AcademyBasicsV2.vue')
+const AcademyQRV2 = () => import('../pages/help-v2/AcademyQRV2.vue')
+const DeleteAcademyV2 = () => import('../pages/help-v2/DeleteAcademyV2.vue')
 import { v3RoleHubs, v3TopicRoutes } from '../help-v3/routes'
 
 // Account pages
-import SignIn from '../pages/account/SignIn.vue'
-import CreateAccount from '../pages/account/CreateAccount.vue'
-import ResetPassword from '../pages/account/ResetPassword.vue'
-import Troubleshooting from '../pages/account/Troubleshooting.vue'
+const SignIn = () => import('../pages/account/SignIn.vue')
+const CreateAccount = () => import('../pages/account/CreateAccount.vue')
+const ResetPassword = () => import('../pages/account/ResetPassword.vue')
+const Troubleshooting = () => import('../pages/account/Troubleshooting.vue')
 
 // Settings pages
-import ChangePassword from '../pages/settings/ChangePassword.vue'
-import Language from '../pages/settings/Language.vue'
-import Currency from '../pages/settings/Currency.vue'
-import Logout from '../pages/settings/Logout.vue'
-import PrivacySettings from '../pages/settings/PrivacySettings.vue'
-import DeleteAccount from '../pages/settings/DeleteAccount.vue'
+const ChangePassword = () => import('../pages/settings/ChangePassword.vue')
+const Language = () => import('../pages/settings/Language.vue')
+const Currency = () => import('../pages/settings/Currency.vue')
+const Logout = () => import('../pages/settings/Logout.vue')
+const PrivacySettings = () => import('../pages/settings/PrivacySettings.vue')
+const DeleteAccount = () => import('../pages/settings/DeleteAccount.vue')
 
 // Profile pages
-import EditProfile from '../pages/profile/EditProfile.vue'
-import ChildAccounts from '../pages/profile/ChildAccounts.vue'
+const EditProfile = () => import('../pages/profile/EditProfile.vue')
+const ChildAccounts = () => import('../pages/profile/ChildAccounts.vue')
 
 // Academy (Member) pages
-import JoinAcademy from '../pages/academy/JoinAcademy.vue'
-import ManagingMemberships from '../pages/academy/ManagingMemberships.vue'
-import Booking from '../pages/academy/Booking.vue'
-import SystemMessages from '../pages/academy/SystemMessages.vue'
-import AttendanceRecords from '../pages/academy/AttendanceRecords.vue'
+const JoinAcademy = () => import('../pages/academy/JoinAcademy.vue')
+const ManagingMemberships = () => import('../pages/academy/ManagingMemberships.vue')
+const Booking = () => import('../pages/academy/Booking.vue')
+const SystemMessages = () => import('../pages/academy/SystemMessages.vue')
+const AttendanceRecords = () => import('../pages/academy/AttendanceRecords.vue')
 
 // Business (Owner) pages
-import CreateAcademy from '../pages/business/CreateAcademy.vue'
-import AcademyBasics from '../pages/business/AcademyBasics.vue'
-import AcademyQR from '../pages/business/AcademyQR.vue'
-import DeleteAcademy from '../pages/business/DeleteAcademy.vue'
-import AddInstructor from '../pages/business/AddInstructor.vue'
-import PortalPrologue from '../pages/portal/Prologue.vue'
-import PortalCards from '../pages/portal/Cards.vue'
-import PortalMembers from '../pages/portal/Members.vue'
-import PortalRanks from '../pages/portal/Ranks.vue'
-import PortalReports from '../pages/portal/Reports.vue'
-import PortalRegister from '../pages/portal/Register.vue'
+const CreateAcademy = () => import('../pages/business/CreateAcademy.vue')
+const AcademyBasics = () => import('../pages/business/AcademyBasics.vue')
+const AcademyQR = () => import('../pages/business/AcademyQR.vue')
+const DeleteAcademy = () => import('../pages/business/DeleteAcademy.vue')
+const AddInstructor = () => import('../pages/business/AddInstructor.vue')
+const PortalPrologue = () => import('../pages/portal/Prologue.vue')
+const PortalCards = () => import('../pages/portal/Cards.vue')
+const PortalMembers = () => import('../pages/portal/Members.vue')
+const PortalRanks = () => import('../pages/portal/Ranks.vue')
+const PortalReports = () => import('../pages/portal/Reports.vue')
+const PortalRegister = () => import('../pages/portal/Register.vue')
 
 // Cards (Admin) pages
-import CreateTemplate from '../pages/cards/CreateTemplate.vue'
-import EditTemplates from '../pages/cards/EditTemplates.vue'
-import DeleteTemplates from '../pages/cards/DeleteTemplates.vue'
-import IssueCards from '../pages/cards/IssueCards.vue'
-import ManageCards from '../pages/cards/ManageCards.vue'
-import DeleteCards from '../pages/cards/DeleteCards.vue'
-import CardRecords from '../pages/cards/CardRecords.vue'
+const CreateTemplate = () => import('../pages/cards/CreateTemplate.vue')
+const EditTemplates = () => import('../pages/cards/EditTemplates.vue')
+const DeleteTemplates = () => import('../pages/cards/DeleteTemplates.vue')
+const IssueCards = () => import('../pages/cards/IssueCards.vue')
+const ManageCards = () => import('../pages/cards/ManageCards.vue')
+const DeleteCards = () => import('../pages/cards/DeleteCards.vue')
+const CardRecords = () => import('../pages/cards/CardRecords.vue')
 
 // Members (Admin) pages
-import Enrollment from '../pages/members/Enrollment.vue'
-import Applications from '../pages/members/Applications.vue'
-import Rejection from '../pages/members/Rejection.vue'
-import MemberRecords from '../pages/members/Records.vue'
+const Enrollment = () => import('../pages/members/Enrollment.vue')
+const Applications = () => import('../pages/members/Applications.vue')
+const Rejection = () => import('../pages/members/Rejection.vue')
+const MemberRecords = () => import('../pages/members/Records.vue')
 
 // Schedule pages
-import CreateLesson from '../pages/schedule/CreateLesson.vue'
-import ManageLesson from '../pages/schedule/ManageLesson.vue'
-import BookForStudents from '../pages/schedule/BookForStudents.vue'
+const CreateLesson = () => import('../pages/schedule/CreateLesson.vue')
+const ManageLesson = () => import('../pages/schedule/ManageLesson.vue')
+const BookForStudents = () => import('../pages/schedule/BookForStudents.vue')
 
 // Paid Tools pages
-import Prologue from '../pages/tools/Prologue.vue'
-import Timetable from '../pages/tools/Timetable.vue'
-import PauseCards from '../pages/tools/PauseCards.vue'
-import StaffPermissions from '../pages/tools/StaffPermissions.vue'
-import AnalyticsOverview from '../pages/tools/AnalyticsOverview.vue'
-import AnalyticsWages from '../pages/tools/AnalyticsWages.vue'
-import AnalyticsPunchCards from '../pages/tools/AnalyticsPunchCards.vue'
+const Prologue = () => import('../pages/tools/Prologue.vue')
+const Timetable = () => import('../pages/tools/Timetable.vue')
+const PauseCards = () => import('../pages/tools/PauseCards.vue')
+const StaffPermissions = () => import('../pages/tools/StaffPermissions.vue')
+const AnalyticsOverview = () => import('../pages/tools/AnalyticsOverview.vue')
+const AnalyticsWages = () => import('../pages/tools/AnalyticsWages.vue')
+const AnalyticsPunchCards = () => import('../pages/tools/AnalyticsPunchCards.vue')
 
 const helpChildren = [
   { path: '', component: HelpWelcome },
