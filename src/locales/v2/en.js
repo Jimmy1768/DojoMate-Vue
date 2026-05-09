@@ -337,22 +337,26 @@ export default {
         what_title: 'What you can do',
         what_items: [
           'Read important system-generated account or academy updates.',
-          'Use alerts as a safe fallback surface when a push notification cannot deep-link into a more specific screen.'
+          'Use alerts as a safe fallback surface when a push notification cannot deep-link into a more specific screen.',
+          'Treat alerts as the member-side inbox for system-driven updates rather than as a conversation surface.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use member alert surfaces such as Academy Alerts.',
-          'If a notification tap cannot open an exact target, the app can land here instead.'
+          'If a notification tap cannot open an exact target, the app can land here instead.',
+          'Use alerts after notification taps that provide useful context but do not yet support a precise drill-in route.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'System Alerts is not chat.',
-          'Not every notification type has a precise deep-link target yet.'
+          'Not every notification type has a precise deep-link target yet.',
+          'Some notifications intentionally fall back to alerts or another safe screen instead of guessing a specific route.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After you read an alert, its read state can update.',
-          'If the alert points to a workflow, use the linked app area next rather than staying in alerts.'
+          'If the alert points to a workflow, use the linked app area next rather than staying in alerts.',
+          'If a notification opened only a fallback destination, the next step is usually to continue into the real academy workflow manually from there.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -403,24 +407,28 @@ export default {
           'Open Online from the member dashboard when access is granted.',
           'Browse curriculum, catalog, and lesson layers.',
           'Watch teaching clips and attached tip videos.',
-          'Open and submit homework from the owning lesson flow.'
+          'Open and submit homework from the owning lesson flow.',
+          'Create or remove bookmarks while you study online content.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use Online Home, Curriculum, Catalog, Lesson, Video, and Homework screens.',
-          'Follow the lesson flow from curriculum down to the slice you want to watch.'
+          'Follow the lesson flow from curriculum down to the slice you want to watch.',
+          'Treat the lesson and slice flow as the source of truth for tip videos and homework ownership.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'The Online tile appears only when entitlement grants access.',
           'Expo is a consumer-only online surface here, not an online-admin area.',
-          'Homework and tip videos stay tied to the owning lesson and slice, rather than living as a separate academy-wide feed.'
+          'Homework and tip videos stay tied to the owning lesson and slice, rather than living as a separate academy-wide feed.',
+          'Subscription and entitlement management remain outside this member consumption flow.'
         ],
         results_title: 'What happens next',
         results_items: [
           'When access exists, the dashboard reveals the Online entry.',
           'Homework and tip content stay tied to the owning lesson and slice instead of living as separate free-floating content.',
-          'If access is missing, the correct expectation is that the Online entry does not appear rather than a partially working empty screen.'
+          'If access is missing, the correct expectation is that the Online entry does not appear rather than a partially working empty screen.',
+          'If homework or tip content changes, the owning lesson and slice remain the right place to resume instead of searching for a separate academy-wide media list.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -437,23 +445,27 @@ export default {
           'Browse available competition events.',
           'Open event detail before registration.',
           'Create or update your competition profile.',
-          'Manage registration and payment steps when the event supports them.'
+          'Manage registration and payment steps when the event supports them.',
+          'Follow external handoff flows when an event uses a federation or provider site outside the main app.'
         ],
         where_title: 'Where you do it',
         where_items: [
           'Use event list, detail, profile, and registration screens.',
-          'Some event flows hand off to external providers such as federation or event websites outside the main app.'
+          'Some event flows hand off to external providers such as federation or event websites outside the main app.',
+          'Treat the in-app event profile as the preparation step before provider-specific registration when an external handoff exists.'
         ],
         limits_title: 'Important limits',
         limits_items: [
           'External provider flows do not stay fully inside the DojoMate app.',
-          'Registration state can depend on event-specific requirements outside the usual academy membership flow.'
+          'Registration state can depend on event-specific requirements outside the usual academy membership flow.',
+          'A complete event flow may use both in-app profile state and an outside provider workflow.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, your profile or registration state updates.',
           'If the event uses an external provider, expect a handoff instead of a full in-app form.',
-          'Competition-profile updates can become part of later event-registration readiness rather than staying isolated to one screen.'
+          'Competition-profile updates can become part of later event-registration readiness rather than staying isolated to one screen.',
+          'If the provider owns the final registration step, return to the relevant provider or event surface rather than expecting the app to finish every step itself.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -1255,13 +1267,15 @@ export default {
         limits_title: 'Important limits',
         limits_items: [
           'Choosing the wrong journey can create confusion later about which help path to follow.',
-          'If the email already belongs to an existing account, sign in or reset the password instead of making duplicates.'
+          'If the email already belongs to an existing account, sign in or reset the password instead of making duplicates.',
+          'Registration problems should be interpreted from current structured auth failures rather than guessed from vague status text.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the app continues into the relevant member or admin workflow.',
           'If registration fails, the app should use current normalized auth behavior rather than vague historical copy.',
-          'The next useful step is usually role-specific, such as joining an academy or beginning academy setup.'
+          'The next useful step is usually role-specific, such as joining an academy or beginning academy setup.',
+          'If account integrity or session setup fails, the app should follow the current auth-support handling instead of pretending the account is simply a bad-password case.'
         ],
         next_title: 'Next topics',
         next_links: [
@@ -1308,7 +1322,8 @@ export default {
         what_title: 'What you can do',
         what_items: [
           'Submit the current password and a new password from account settings.',
-          'Revoke other sessions while preserving the current device when the current contract allows it.'
+          'Revoke other sessions while preserving the current device when the current contract allows it.',
+          'Use the signed-in password-change flow instead of leaving to the reset-email path.'
         ],
         where_title: 'Where you do it',
         where_items: [
@@ -1318,12 +1333,14 @@ export default {
         limits_title: 'Important limits',
         limits_items: [
           'The current password is required.',
-          'If session preservation cannot be kept, the app can clear the local session instead of pretending the old state survived.'
+          'If session preservation cannot be kept, the app can clear the local session instead of pretending the old state survived.',
+          'Wrong-current-password failures should be treated as a specific structured error, not as a vague unknown failure.'
         ],
         results_title: 'What happens next',
         results_items: [
           'After success, the current session can remain active while other sessions are revoked.',
-          'If the current password is wrong, the app should show the current structured failure behavior instead of a vague generic response.'
+          'If the current password is wrong, the app should show the current structured failure behavior instead of a vague generic response.',
+          'If the contract falls back to revoke-all behavior, the app can clear the local session immediately rather than pretending the current device stayed signed in.'
         ],
         next_title: 'Next topics',
         next_links: [
