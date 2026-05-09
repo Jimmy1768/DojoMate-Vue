@@ -1,4 +1,1434 @@
 export default {
+  help_v3: {
+    support: {
+      heading: '還需要更多幫助？',
+      default_description: '如有後續問題、特殊情況或跨產品流程需要說明，請前往 Source Combatives 上的 DojoMate 幫助版塊。',
+      default_button: '打開 DojoMate 幫助版塊'
+    },
+    layout: {
+      badge: '幫助 v3',
+      intro: '依照目前 DojoMate 儀表板與角色分組的工作流程指南。',
+      open_v2: '打開幫助 v2',
+      search_placeholder: '搜尋幫助 v3',
+      search_no_results: '找不到結果',
+      nav: {
+        start_here: '從這裡開始',
+        home: '幫助 v3 首頁',
+        member_home: '學員指南',
+        admin_home: '管理指南',
+        owner_home: '館主指南',
+        account_home: '帳號指南',
+        member: '學員',
+        admin: '管理 / 員工',
+        owner: '館主 / 營運',
+        account: '帳號 / 設定',
+        join_academy: '加入學院',
+        memberships: '會員資格',
+        member_cards: '會員卡',
+        card_disputes: '會員卡爭議',
+        booking: '預約課程',
+        attendance_records: '出勤記錄',
+        system_alerts: '系統提醒',
+        broadcasts: '公告廣播',
+        online_learning: '線上學習',
+        events: '活動賽事',
+        academy_context: '學院情境',
+        admin_members: '成員管理',
+        admin_cards: '會員卡管理',
+        session_debt: '課次債務',
+        lessons: '課程模板',
+        schedule: '課表安排',
+        admin_booking: '代訂課程',
+        admin_broadcasts: '發佈廣播',
+        alerts_qr: '提醒與 QR 工具',
+        create_academy: '建立學院',
+        onboarding: '新館主引導',
+        business_management: '學院業務管理',
+        instructors: '教練管理',
+        access: '權限存取',
+        operations_analytics: '營運分析',
+        timesheets_salaries: '工時與薪資',
+        oversight: '監督審查',
+        owner_tools: '工具功能',
+        sign_in: '登入',
+        create_account: '建立帳號',
+        reset_password: '重設密碼',
+        change_password: '更改密碼',
+        profile: '個人資料',
+        child_accounts: '兒童帳號',
+        privacy_progression: '隱私與進度',
+        preferences: '偏好設定',
+        delete_account: '刪除帳號',
+        logout: '登出'
+      }
+    },
+    welcome: {
+      badge: '幫助 v3',
+      title: '目前工作流程指南',
+      intro: '當你需要依照目前 DojoMate 角色與儀表板來查找操作說明時，請使用幫助 v3。',
+      areas_title: '選擇符合你工作的區域',
+      member_title: '學員',
+      member_body: '加入學院、會員卡、預約、提醒、公告、線上學習與活動賽事。',
+      member_link: '打開學員指南',
+      admin_title: '管理 / 員工',
+      admin_body: '成員管理、會員卡、課表、代訂課程、公告與學院日常管理。',
+      admin_link: '打開管理指南',
+      owner_title: '館主 / 營運',
+      owner_body: '建立學院、引導流程、館主專屬業務設定、權限與營運工作流程。',
+      owner_link: '打開館主指南',
+      account_title: '帳號 / 設定',
+      account_body: '登入、密碼協助、個人資料、隱私設定、偏好設定與登出。',
+      account_link: '打開帳號指南',
+      note_title: 'v3 的差異',
+      note_body: 'v3 依照目前產品中的角色與儀表板責任劃分來整理內容，比混合式的 v2 更適合查找與後續助理擷取。',
+      note_button: '查看幫助 v2'
+    },
+    member: {
+      home: {
+        badge: '學員',
+        title: '學員指南',
+        intro: '當你在學院訓練，並需要加入、會員資格、會員卡、預約、提醒、公告、線上學習或活動方面的幫助時，請使用此指南。',
+        areas_title: '學員主題',
+        links: [
+          {
+            title: '學院與會員資格',
+            body: '加入正確的學院，並確認目前選定的學院情境。',
+            links: [
+              { label: '加入學院', to: '/help-v3/member/join-academy' },
+              { label: '會員資格', to: '/help-v3/member/memberships' }
+            ]
+          },
+          {
+            title: '會員卡與課程',
+            body: '查看會員卡、提出爭議、預約課程，並確認出勤紀錄。',
+            links: [
+              { label: '會員卡', to: '/help-v3/member/cards' },
+              { label: '會員卡爭議', to: '/help-v3/member/card-disputes' },
+              { label: '預約課程', to: '/help-v3/member/booking' },
+              { label: '出勤記錄', to: '/help-v3/member/attendance-records' }
+            ]
+          },
+          {
+            title: '學院內容與更新',
+            body: '閱讀系統提醒、公告、線上學習內容與活動資訊。',
+            links: [
+              { label: '系統提醒', to: '/help-v3/member/system-alerts' },
+              { label: '公告廣播', to: '/help-v3/member/broadcasts' },
+              { label: '線上學習', to: '/help-v3/member/online-learning' },
+              { label: '活動賽事', to: '/help-v3/member/events' }
+            ]
+          }
+        ]
+      },
+      join_academy: {
+        badge: '學員',
+        title: '加入學院',
+        intro: '當你想把帳號連接到使用 DojoMate 的學院時，請使用這個流程。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '在 Discover 中瀏覽學院。',
+          '用學院名稱搜尋。',
+          '掃描學院提供的 QR code。',
+          '在決定加入之前先打開學院詳細資訊。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '如果你想先比較不同學院，請使用 Discover Academy。',
+          '如果你已經知道學院，或想直接掃描 QR code，請使用 Academy Search。',
+          '先用學院詳細頁確認是否找對學院。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '送出加入動作後，學院仍可能需要先接受你。',
+          '家長管理的帳號或兒童帳號連結，可能會讓後續步驟更多一些。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，學院會出現在你的 academy list 或 pending 狀態中。',
+          '如果學院尚未接受你，後續學員功能仍可能保持受限。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員資格', to: '/help-v3/member/memberships' },
+          { label: '會員卡', to: '/help-v3/member/cards' }
+        ]
+      },
+      memberships: {
+        badge: '學員',
+        title: '管理會員資格與學院情境',
+        intro: '當你屬於一間或多間學院，並需要確認目前作用中的學院時，請使用這個主題。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看和帳號連結的學院。',
+          '在使用會員卡、預約或公告前切換選定學院。',
+          '在某些內容看起來缺失時，先確認你目前是否處於正確的學院。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用已加入的 academy list 和學員端的 academy context 畫面。',
+          '在判斷卡片或課程不存在之前，先重新確認目前選定的學院。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '選錯學院，會讓卡片、課表和公告看起來像是不存在。',
+          '會員資格狀態仍可能受到學院接受流程或兒童帳號連結影響。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '選定正確學院後，後續學員畫面會載入該學院的資料。',
+          '如果仍停留在錯的學院，預約和會員卡相關內容會繼續顯得不一致。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員卡', to: '/help-v3/member/cards' },
+          { label: '預約課程', to: '/help-v3/member/booking' }
+        ]
+      },
+      cards: {
+        badge: '學員',
+        title: '查看會員卡與待付款項目',
+        intro: '當你想確認目前有哪些可用會員卡、查看待付款卡片，或理解為什麼無法預約時，請使用這個主題。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看目前選定學院中的可用會員卡。',
+          '檢查是否有待付款的卡片流程。',
+          '在預約失敗時先確認是否真的是卡片問題。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用學員端會員卡畫面與待付款卡片流程。',
+          '當預約提示沒有符合條件的卡片時，先回到這裡確認。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '學員會員卡會跟目前選定的學院綁定。',
+          '這裡不是館主或管理員的稽核審查區域。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '待付款成功後，卡片可能會進入可使用狀態。',
+          '如果付款或發卡更新後卡片仍然看起來不正確，請改用爭議流程。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員卡爭議', to: '/help-v3/member/card-disputes' },
+          { label: '預約課程', to: '/help-v3/member/booking' }
+        ]
+      },
+      booking: {
+        badge: '學員',
+        title: '預約或取消預約課程',
+        intro: '當你想打開學院課表、查看課程、選擇可用會員卡並確認名額時，請使用預約流程。',
+        steps_title: '常見步驟',
+        steps_items: [
+          '打開目前選定學院的課表。',
+          '選擇一堂已排定的課程並查看詳細資訊。',
+          '打開會員卡選擇，挑選符合條件的卡，並決定是否要在學員名單中匿名。',
+          '確認預約或取消預約。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Academy Schedule、Academy Booking 和 Academy Card Selection。',
+          '如果課程或會員卡看起來不對，先回去確認目前選定的學院。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '預約使用目前的 scheduled-lesson 預約流程，不是一般課程編輯。',
+          '會員卡是否符合資格，以及預約保護規則，都由後端決定。',
+          '匿名預約只會對其他學員隱藏身分，學院工作人員仍會看到真實預約資料。',
+          '就算預約動作被封鎖，已取消或已處理的課程仍可能保留可閱讀的詳細畫面。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，預約狀態和可見名單會更新。',
+          '預期中的保護規則失敗會說明為何動作被封鎖，例如預約已關閉或課程已開始。',
+          '如果系統無法確認請求是否成功，可能需要重新整理再試一次。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '出勤記錄', to: '/help-v3/member/attendance-records' },
+          { label: '系統提醒', to: '/help-v3/member/system-alerts' }
+        ]
+      },
+      attendance_records: {
+        badge: '學員',
+        title: '查看出勤記錄',
+        intro: '當你想確認過去的課程是否有正確記錄出勤時，請使用出勤記錄。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看目前選定學院的歷史出勤資料。',
+          '確認某堂課是否出現在你的記錄中。',
+          '把這些記錄當成預約與上課之後的確認。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用學員端出勤或 academy records 畫面。',
+          '當你想確認先前預約或到課結果時，先從這裡開始。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '出勤記錄只能查看，不能由學員自行修改。',
+          '如果記錄有誤，必須由學院端更正。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '正常的記錄代表該堂課已被成功登記。',
+          '若記錄缺失或不正確，應改走學院後續處理，而不是自行修正。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '預約課程', to: '/help-v3/member/booking' },
+          { label: '會員卡爭議', to: '/help-v3/member/card-disputes' }
+        ]
+      },
+      system_alerts: {
+        badge: '學員',
+        title: '查看系統提醒',
+        intro: '當你需要查看與帳號、學院或相關學員流程有關的重要更新時，請使用系統提醒。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看系統自動產生的重要帳號或學院更新。',
+          '當推播通知無法直接打開精確畫面時，把提醒當成安全的回退頁面。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用學員端提醒畫面，例如 Academy Alerts。',
+          '如果通知點開後無法進入特定頁面，應用可能會先帶你到這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '系統提醒不是聊天工具。',
+          '並不是所有通知類型都已經有完整的精準深連結。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '閱讀後，提醒的已讀狀態可能會更新。',
+          '如果提醒本身指向某個流程，接下來應該前往該流程，而不是停留在提醒頁。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '公告廣播', to: '/help-v3/member/broadcasts' },
+          { label: '預約課程', to: '/help-v3/member/booking' }
+        ]
+      },
+      broadcasts: {
+        badge: '學員',
+        title: '閱讀學院公告廣播',
+        intro: '使用 Broadcast 閱讀目前選定學院的貼文。學員端的公告流是唯讀的，主要用來顯示學院更新與訓練貼文。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '在 Updates 和 Training 兩個分類之間切換。',
+          '閱讀文字、圖片和學院公告貼文。',
+          '打開圖片放大查看，並在不離開學員儀表板的情況下瀏覽內容。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用和目前選定學院綁定的學員 Broadcast 畫面。',
+          '如果看到的是錯的內容流，先回去確認學院選擇。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '學員端 Broadcast 是唯讀的。',
+          '這裡沒有留言、回覆、按讚或學員自行發文功能。',
+          '空內容流不代表功能壞掉，也可能只是學院目前還沒有可見貼文。',
+          'Broadcast 內容由學院端工作人員或館主建立，不是由學員端發文。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功載入後，會顯示目前選定學院的內容流。',
+          '如果你想看的是帳號或系統狀態，請改看 System Alerts。',
+          '如果學院也有線上學習權限，Broadcast 和 Online 仍然是分開的兩個內容區。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '系統提醒', to: '/help-v3/member/system-alerts' },
+          { label: '線上學習', to: '/help-v3/member/online-learning' }
+        ]
+      },
+      card_disputes: {
+        badge: '學員',
+        title: '提出會員卡爭議',
+        intro: '當卡片、刪卡或卡片相關變更從學員端看起來有問題，且需要學院後續處理時，請使用會員卡爭議。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立一筆和卡片問題綁定的爭議紀錄。',
+          '從學員角度說明哪裡看起來不正確。',
+          '把問題放進專門的後續流程，而不是混在預約或個人資料問題裡。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用學員端的卡片與爭議畫面，例如 Academy Disputes。',
+          '可以的話，從看起來有問題的卡片本身開始。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '提出爭議不會立刻修正卡片。',
+          '像 audit logs 這類館主專屬審查工具，不屬於學員端爭議流程。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，爭議會成為學院端需要跟進的項目。',
+          '在學院完成審查前，你可能仍需等待卡片狀態改變。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員卡', to: '/help-v3/member/cards' },
+          { label: '出勤記錄', to: '/help-v3/member/attendance-records' }
+        ]
+      },
+      online_learning: {
+        badge: '學員',
+        title: '使用線上學習',
+        intro: '當你的學員帳號有線上學習權限，且你想瀏覽課綱、打開課程、觀看片段並完成作業時，請使用 Online。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '在具備權限時，從學員儀表板打開 Online。',
+          '瀏覽課綱、catalog 與課程層級。',
+          '觀看教學片段和附加的 tips 影片。',
+          '從所屬課程流程中打開並提交作業。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Online Home、Curriculum、Catalog、Lesson、Video 和 Homework 畫面。',
+          '從課綱一路跟進到你要觀看的課程片段。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '只有在權限允許時，Online tile 才會出現。',
+          '這裡的 Expo Online 是學員消費端，不是線上管理後台。',
+          '作業與 tips 影片會綁定在所屬課程與切片，而不是獨立的學院全域內容流。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '有權限時，儀表板會顯示 Online 入口。',
+          '作業與 tips 內容會留在各自的課程與切片之下，而不是變成漂浮的獨立內容。',
+          '如果沒有權限，正確預期是根本看不到 Online 入口，而不是看到一個半空的畫面。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '活動賽事', to: '/help-v3/member/events' },
+          { label: '公告廣播', to: '/help-v3/member/broadcasts' }
+        ]
+      },
+      events: {
+        badge: '學員',
+        title: '瀏覽活動與報名',
+        intro: '當你想瀏覽競賽活動、維護競賽資料，或管理活動報名步驟時，請使用 Events。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '瀏覽可參加的競賽活動。',
+          '在報名前先打開活動詳細資訊。',
+          '建立或更新你的競賽資料。',
+          '在活動支援的情況下管理報名與付款步驟。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用活動列表、詳細、資料與報名畫面。',
+          '有些活動流程會交給聯盟或活動網站等外部提供者，而不完全留在 app 內。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '外部提供者流程不會完全停留在 DojoMate app 裡。',
+          '報名狀態可能取決於一般學院會員資格流程之外的活動專屬要求。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，你的競賽資料或報名狀態會更新。',
+          '如果活動使用外部提供者，預期會被帶往外部流程，而不是完整 app 內表單。',
+          '競賽資料更新可能會成為後續活動報名準備的一部分，而不是只停留在單一畫面。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員資格', to: '/help-v3/member/memberships' },
+          { label: '系統提醒', to: '/help-v3/member/system-alerts' }
+        ]
+      }
+    },
+    admin: {
+      home: {
+        badge: '管理',
+        title: '管理與員工指南',
+        intro: '當你從學院管理儀表板協助處理成員、會員卡、課表、代訂或公告時，請使用此指南。',
+        areas_title: '管理主題',
+        links: [
+          {
+            title: '學院情境與成員',
+            body: '先確認目前選定的是正確學院，再處理成員與身分相關工作。',
+            links: [
+              { label: '學院情境', to: '/help-v3/admin/academy-context' },
+              { label: '成員管理', to: '/help-v3/admin/members' }
+            ]
+          },
+          {
+            title: '日常營運工作',
+            body: '管理會員卡、課次債務、課程模板、課表與代訂流程。',
+            links: [
+              { label: '會員卡管理', to: '/help-v3/admin/cards' },
+              { label: '課次債務', to: '/help-v3/admin/session-debt' },
+              { label: '課程模板', to: '/help-v3/admin/lessons' },
+              { label: '課表安排', to: '/help-v3/admin/schedule' },
+              { label: '代訂課程', to: '/help-v3/admin/admin-booking' }
+            ]
+          },
+          {
+            title: '公告與支援工具',
+            body: '使用目前的廣播發佈流程、提醒訊息與 QR 工具。',
+            links: [
+              { label: '發佈廣播', to: '/help-v3/admin/broadcasts' },
+              { label: '提醒與 QR 工具', to: '/help-v3/admin/alerts-qr' }
+            ]
+          }
+        ]
+      },
+      cards: {
+        badge: '管理',
+        title: '建立並發放會員卡',
+        intro: '當你需要建立會員卡模板、發出有效會員卡、查看目前卡片，或改變學院成員可用的卡片狀態時，請使用管理端 Cards。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立會員卡模板。',
+          '查看既有模板。',
+          '將有效會員卡發給成員。',
+          '查看有效卡片，並在畫面允許時處理暫停相關狀態。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用建立模板、模板列表、發卡和 Active Cards 等畫面。',
+          '如果學員預約失敗其實是因為卡片不對，請回到這裡檢查。',
+          '在 onboarding 階段，應用可能會直接把你帶到 Cards，因為第一張卡的里程碑就屬於學院建立流程。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '卡片模板和有效卡片是兩個不同層次。',
+          '館主專屬的審查工具，例如 audit logs，不屬於一般管理端 Cards 指南。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，與卡片有關的管理和學員流程都會刷新。',
+          '卡片更新進入正確學院情境之後，預約資格也可能隨之改變。',
+          '如果這張卡只是 onboarding 或員工測試用途，它仍然可以計入里程碑，而不代表正式收費流程已經準備完成。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '課次債務', to: '/help-v3/admin/session-debt' },
+          { label: '代訂課程', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      academy_context: {
+        badge: '管理',
+        title: '確認目前管理的是哪一間學院',
+        intro: '當你同時接觸多間學院，或擔心自己目前不在正確的管理情境中時，請先確認 academy context。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '確認目前載入的是哪一間學院。',
+          '在進行成員、會員卡、課表或公告操作前，先切換到正確的學院。',
+          '分辨自己現在處於 Admin 還是 Business / Owner 路徑。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用學院切換與管理入口流程。',
+          '如果你剛從其他學院回來，先在這裡重新確認再繼續工作。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '管理與員工操作都會綁定到目前選定的學院。',
+          '館主或 Business 側的設定工作不應該被誤認為一般 admin 功能。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '確認正確學院後，後續管理畫面會載入對應的資料。',
+          '如果學院選錯，成員、卡片或課表看起來就可能像是缺失或不一致。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '成員管理', to: '/help-v3/admin/members' },
+          { label: '會員卡管理', to: '/help-v3/admin/cards' }
+        ]
+      },
+      members: {
+        badge: '管理',
+        title: '管理成員',
+        intro: '當你需要查看待處理、已接受、已拒絕或已封鎖的學院成員，並檢查成員在學院中的參與狀態時，請使用 Members。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看待審核和已接受的會員資格。',
+          '在畫面允許時，拒絕、封鎖或更新會員資格狀態。',
+          '打開成員資料與出勤相關內容。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Pending、Accepted、Rejected 和 Banned 等成員狀態畫面。',
+          '從管理端的成員區域打開成員詳細資料或出勤資訊。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '成員、教練和管理權限不是同一個概念。',
+          '被標記為教練的已接受成人列，不應被當成一般成人成員列來理解。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功更新後，該人會移到正確的可見成員狀態。',
+          '相關的管理畫面會依照新的成員狀態刷新。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員卡管理', to: '/help-v3/admin/cards' },
+          { label: '代訂課程', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      session_debt: {
+        badge: '管理',
+        title: '處理課次債務',
+        intro: '當卡片或預約歷史產生需要由員工端結清的債務狀態時，請使用課次債務流程。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看未結清的課次債務項目。',
+          '透過目前管理端的結清流程處理債務。',
+          '把債務處理和學員爭議或館主監督分開。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用屬於目前卡片工具的管理端 debt 或 card-debt 畫面。',
+          '應從卡片營運流程進入，而不是從成員資料假設一路跳進來。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '債務處理不是學員端爭議流程。',
+          '館主審查工具仍然獨立於這個日常管理結清流程。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '結清後，債務狀態和相關卡片情境都應更新。',
+          '如果底層紀錄本身是爭議問題，而不只是欠次數，應改走正確的爭議或監督路徑。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '會員卡管理', to: '/help-v3/admin/cards' },
+          { label: '成員管理', to: '/help-v3/admin/members' }
+        ]
+      },
+      lessons: {
+        badge: '管理',
+        title: '管理課程模板',
+        intro: '當你需要在課程發布到實際課表之前建立、編輯或移除課程模板時，請使用 Lessons。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立課程模板。',
+          '編輯模板中的教學與排程細節。',
+          '刪除不再需要發布的模板。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 lesson-day、create lesson 和 edit lesson 等模板畫面。',
+          '在進入實際課表發布前，先在這裡完成模板工作。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '課程模板不等於已發布的已排定課程。',
+          '沒有進入 schedule 層之前，模板變更不會自動解釋所有已發布課表結果。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，模板可供後續課表使用。',
+          '如果實際活動已存在，schedule 編輯仍可能是另外一步。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '課表安排', to: '/help-v3/admin/schedule' },
+          { label: '代訂課程', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      schedule: {
+        badge: '管理',
+        title: '發布與管理課表',
+        intro: '當你需要發布課程、編輯已排定課程、取消或從實際課表中刪除它時，請使用課表工具。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '從模板發布已排定課程。',
+          '編輯或取消已排定課程。',
+          '查看已排定課程的詳細與名單狀態。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 schedule layout 和 create/edit event 流程。',
+          '當你需要檢查目前狀態時，直接打開那堂已排定課程的詳細畫面。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '已取消或已處理的課程應該仍可供檢視，而不是從檢查流程中完全消失。',
+          '只有實際的預約動作本身應在保護規則要求時被封鎖。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，學院課表會刷新，反映目前的已排定課程狀態。',
+          '如果課程已取消，即使預約已關閉，詳細畫面仍可能對後續檢查有用。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '課程模板', to: '/help-v3/admin/lessons' },
+          { label: '代訂課程', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      admin_booking: {
+        badge: '管理',
+        title: '替學員或成員代訂課程',
+        intro: '當員工需要從管理端課表代表某位成員建立或移除預約時，請使用 admin booking。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '從管理端打開某堂已排定課程。',
+          '選擇目標成員與符合條件的卡片。',
+          '使用目前的預約動作流程建立或移除預約。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Admin Booking 和相關的卡片選擇流程。',
+          '應從你正在處理的那堂已排定課程開始，而不是先做一般成員搜尋。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '管理端不能建立匿名預約。',
+          '後端的 booking guard codes 仍會決定是否允許預約。',
+          '即使名單詳細還在，若發生非預期失敗，仍可能需要重新整理後再試一次。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，課程名單和預約狀態會更新。',
+          '如果動作被封鎖，畫面應說明保護條件，而不是讓課程看起來像憑空消失。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '課表安排', to: '/help-v3/admin/schedule' },
+          { label: '成員管理', to: '/help-v3/admin/members' }
+        ]
+      },
+      broadcasts: {
+        badge: '管理',
+        title: '發佈廣播',
+        intro: '當你想從 app 發布學院更新或訓練貼文時，請使用目前的管理端 Broadcast 流程。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立含文字與圖片的 Broadcast。',
+          '建立含文字與單一 MP4 影片的 Broadcast。',
+          '立即發布到目前選定學院的內容流。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用管理端 Members 區域中的 Broadcast 發佈畫面。',
+          '發布前請先確認你在正確的選定學院情境中。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '目前沒有草稿儲存分流。',
+          'app 只支援單支影片，且不能混合圖片加影片貼文。',
+          '授權仍取決於學院角色與 access。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功建立後，Broadcast 會立即發布。',
+          '如果媒體或授權不正確，建立動作應失敗，而不是產生隱藏草稿。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '提醒與 QR 工具', to: '/help-v3/admin/alerts-qr' },
+          { label: '學院情境', to: '/help-v3/admin/academy-context' }
+        ]
+      },
+      alerts_qr: {
+        badge: '管理',
+        title: '使用提醒與 QR 工具',
+        intro: '當你需要與目前學院情境相關的提醒、QR 動作或恢復操作時，請使用這些管理端支援工具。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看屬於學院的管理或 business 提醒。',
+          '打開 QR 相關工具。',
+          '在需要恢復或切換時，使用學院情境支援流程。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用學院側選單中的提醒畫面和 QR 入口。',
+          '如果目前學院不正確，回到學院切換器。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '這些流程支援學院工作，但不取代館主專屬的 business 管理。',
+          '有些恢復動作屬於更廣的 bootstrap 或 settings 路徑，而不是一般日常選單。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '正確的提醒或 QR 動作會把你帶往下一個相關學院流程。',
+          '如果問題其實屬於館主專屬 business 設定，下一步通常要改到館主側區域。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '學院情境', to: '/help-v3/admin/academy-context' },
+          { label: '發佈廣播', to: '/help-v3/admin/broadcasts' }
+        ]
+      }
+    },
+    owner: {
+      home: {
+        badge: '館主',
+        title: '館主與營運指南',
+        intro: '當你需要建立學院、完成引導流程、管理館主專屬設定，或處理營運與監督工作時，請使用此指南。',
+        areas_title: '館主主題',
+        links: [
+          {
+            title: '學院建立與引導',
+            body: '建立第一間學院，並完成以里程碑為主的引導流程。',
+            links: [
+              { label: '建立學院', to: '/help-v3/owner/create-academy' },
+              { label: '新館主引導', to: '/help-v3/owner/onboarding' }
+            ]
+          },
+          {
+            title: '館主業務管理',
+            body: '管理學院資訊、教練與學院管理權限。',
+            links: [
+              { label: '學院業務管理', to: '/help-v3/owner/business-management' },
+              { label: '教練管理', to: '/help-v3/owner/instructors' },
+              { label: '權限存取', to: '/help-v3/owner/access' }
+            ]
+          },
+          {
+            title: '營運與監督',
+            body: '使用分析、工時薪資、監督審查與館主工具。',
+            links: [
+              { label: '營運分析', to: '/help-v3/owner/operations-analytics' },
+              { label: '工時與薪資', to: '/help-v3/owner/timesheets-salaries' },
+              { label: '監督審查', to: '/help-v3/owner/oversight' },
+              { label: '工具功能', to: '/help-v3/owner/tools' }
+            ]
+          }
+        ]
+      },
+      access: {
+        badge: '館主',
+        title: '管理權限與存取',
+        intro: '當你需要決定哪些已接受的成人成員可以進入目前學院的管理端時，請使用 Access。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '把學院管理權限授予符合條件的已接受成人成員。',
+          '更新或移除學院層級的 permission row。',
+          '把管理權限與教學身分分開處理。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用館主端的 permissions 或 Access 畫面。',
+          '在版面較窄的選單中，這個按鈕可能會簡短顯示為 `Access`。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '移除某一間學院的 permission row，不會自動移除這個人在其他學院的 broader admin role。',
+          '這個畫面管理的是學院管理權限，不是教練身分。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，該人能否打開目前學院的管理功能會隨之改變。',
+          '如果這個人同時還需要教學身分，請另外使用 Instructors。',
+          '如果此人同時屬於其他學院，他在其他學院的 broader admin role 狀態仍可能保留。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '教練管理', to: '/help-v3/owner/instructors' },
+          { label: '營運分析', to: '/help-v3/owner/operations-analytics' }
+        ]
+      },
+      onboarding: {
+        badge: '館主',
+        title: '完成第一間學院的引導流程',
+        intro: '如果你想了解建立學院後，第一間學院的引導教學目前如何推進，請使用這個主題。',
+        steps_title: '里程碑順序',
+        steps_items: [
+          '建立學院。',
+          '加入第一位教練，或決定館主是否自己擔任總教練。',
+          '建立第一個會員卡模板。',
+          '發出第一張有效會員卡。',
+          '建立第一堂已排定課程。',
+          '完成第一個管理端代訂動作。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '依照引導中的儀表板提示和全螢幕 onboarding 畫面進行。',
+          '使用應用程式目前高亮的區塊來完成下一個里程碑。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          'Onboarding 是由里程碑驅動，並依賴持久的 usage-history 狀態。',
+          '完成教學不需要真實付費學生，也不代表已完成線上付款設定。',
+          'Onboarding 完成不等於學院已經達到帳單或收款就緒狀態。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '每完成一個里程碑，應用會揭露下一個建議區塊。',
+          '完成 onboarding 之後，完整的管理儀表板會打開，並依照權限顯示更多工具。',
+          '教學流程可以用館主自己或員工的測試流程完成，不需要先有真實付費成員。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '教練管理', to: '/help-v3/owner/instructors' },
+          { label: '權限存取', to: '/help-v3/owner/access' }
+        ]
+      },
+      create_academy: {
+        badge: '館主',
+        title: '建立新學院',
+        intro: '當你需要建立第一間或新增另一間學院時，請使用建立學院流程。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立新的學院。',
+          '在有多個身分或多間學院時，切換到建立模式。',
+          '建立後直接進入後續引導。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Business 建立流程與相關的 bootstrap / gate 畫面。',
+          '如果應用先顯示選擇路徑畫面，先確認你要的是建立新學院，而不是進入既有管理情境。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '可建立的學院數量仍可能受目前方案或 academy slots 影響。',
+          '取消建立模式會返回到管理入口，而不是完成任何設定。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，新學院會被選定，並進入後續引導流程。',
+          '如果中途取消，應用會回到 admin / business 的選擇入口。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '新館主引導', to: '/help-v3/owner/onboarding' },
+          { label: '學院業務管理', to: '/help-v3/owner/business-management' }
+        ]
+      },
+      business_management: {
+        badge: '館主',
+        title: '管理學院業務設定',
+        intro: '當你需要維護學院本身的資料、媒體與館主層級設定時，請使用 Business Management。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '更新學院基本資料。',
+          '管理 logo、banner、gallery 或其他學院媒體。',
+          '處理館主層級的學院設定與生命週期操作。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Business 相關的編輯、刪除、媒體與館主設定畫面。',
+          '當工作是調整學院本身，而不是日常 admin 任務時，應回到這一區。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '這些是館主範圍的 academy-management 功能，不是一般員工權限。',
+          '更新學院資料不會自動改變管理員存取權或營運分析權限。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，學院資料與相關館主畫面會顯示新內容。',
+          '如果接下來是處理誰能進入管理端，請改到 Access。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '權限存取', to: '/help-v3/owner/access' },
+          { label: '教練管理', to: '/help-v3/owner/instructors' }
+        ]
+      },
+      instructors: {
+        badge: '館主',
+        title: '管理教練',
+        intro: '當你需要管理學院人員中的教學身分層面時，請使用 Instructors。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '加入或維護學院中的教練身分。',
+          '在 onboarding 與後續學院管理中，支援總教練和教學人員設定。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用館主端學院區域中的 Business Instructors 畫面。',
+          '當問題是教學身分，而不是管理存取權時，請回到這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '教練身分不等於學院管理存取權。',
+          '教練身分也不等於薪資或薪酬所有權。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功的教練設定會滿足 onboarding 與學院人員配置中的教學身分需求。',
+          '如果問題是誰可以管理學院，而不是誰負責授課，請改用 Access。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '權限存取', to: '/help-v3/owner/access' },
+          { label: '新館主引導', to: '/help-v3/owner/onboarding' }
+        ]
+      },
+      operations_analytics: {
+        badge: '館主',
+        title: '使用營運與分析',
+        intro: '當你需要館主層級的指標、即時學院報表、趨勢或月度報表，而不是一般學院管理工作時，請使用 Operations。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看即時與摘要學院指標。',
+          '打開 insights、trends 與 monthly reporting 畫面。',
+          '使用館主端營運視角，而不是一般 admin 儀表板做高層報表判讀。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用館主營運儀表板與報表畫面。',
+          '在解讀特定學院分析時，保持在館主端目前選定學院情境中。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '營運與分析屬於館主或 operations 範圍，不是一般管理 / 員工範圍。',
+          '分析和教練身分或存取身分是不同概念。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功存取後，會載入目前選定學院的館主報表與營運內容。',
+          '如果畫面不存在，原因可能是角色或權限，而不是學院資料錯誤。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '工時與薪資', to: '/help-v3/owner/timesheets-salaries' },
+          { label: '監督審查', to: '/help-v3/owner/oversight' }
+        ]
+      },
+      timesheets_salaries: {
+        badge: '館主',
+        title: '管理工時與薪資',
+        intro: '當你需要追蹤員工工時或管理薪酬相關資料時，請使用這些館主營運工具。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '讓員工打卡上下班，或查看已記錄的工時。',
+          '查看與管理薪資或薪酬相關資料。',
+          '把薪酬問題和教練身分或管理存取權分開。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 staff time、staff salaries 等館主營運畫面。',
+          '當問題是薪酬，而不是教學身分時，請回到這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '薪酬畫面不定義誰是教練。',
+          '薪酬畫面也不取代 access 或 permissions 管理。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功更新後，館主側的工時或薪酬資料會改變。',
+          '如果員工問題其實是角色分配，請改回 Instructors 或 Access。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '營運分析', to: '/help-v3/owner/operations-analytics' },
+          { label: '權限存取', to: '/help-v3/owner/access' }
+        ]
+      },
+      oversight: {
+        badge: '館主',
+        title: '使用館主監督審查',
+        intro: '當你需要館主專屬的 issue records、delete records 或 audit logs 審查工具時，請使用 Oversight。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看 issue records。',
+          '查看 delete records。',
+          '在館主專屬監督區域中查看 audit logs。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用館主營運中的 oversight 區域，而不是一般管理儀表板。',
+          '只有在問題屬於歷史或營運審查時，才打開這些工具。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '這些畫面是館主專屬的監督工具。',
+          '它們不是一般管理端的 Cards 工作流程。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '監督審查有助於館主確認歷史或營運上到底發生了什麼。',
+          '若需要後續動作，通常會再回到正確的管理或學員流程。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '營運分析', to: '/help-v3/owner/operations-analytics' },
+          { label: '工具功能', to: '/help-v3/owner/tools' }
+        ]
+      },
+      tools: {
+        badge: '館主',
+        title: '使用館主工具與受限功能',
+        intro: '當你需要理解可選的館主工具做什麼，以及在可用之後這些工作流程會出現在哪裡時，請使用這個主題。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '打開和目前學院工作流程相符的館主工具或受限功能。',
+          '把館主工具建立在核心學院流程之上使用，而不是取代它。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '在權限可用後，使用對應的館主或營運儀表板入口。',
+          '先確認目前選定學院，再判斷工具是否真的缺失。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '幫助內容應說明工具用途與工作流程，而不是過時的購買機制。',
+          '舊的 bundle 假設不應再被當成產品事實。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '一旦相關權限存在，工具就會打開自己的工作流程畫面。',
+          '如果工具缺失，通常是角色或 entitlement 問題，而不是路由壞掉。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '營運分析', to: '/help-v3/owner/operations-analytics' },
+          { label: '學院業務管理', to: '/help-v3/owner/business-management' }
+        ]
+      }
+    },
+    account: {
+      home: {
+        badge: '帳號',
+        title: '帳號與設定指南',
+        intro: '當你需要登入、重設密碼、修改個人資料、調整偏好或結束工作階段時，請使用此指南。',
+        areas_title: '帳號主題',
+        links: [
+          {
+            title: '進入帳號',
+            body: '登入、建立帳號，或從忘記密碼流程恢復存取。',
+            links: [
+              { label: '登入', to: '/help-v3/account/sign-in' },
+              { label: '建立帳號', to: '/help-v3/account/create-account' },
+              { label: '重設密碼', to: '/help-v3/account/reset-password' },
+              { label: '更改密碼', to: '/help-v3/account/change-password' }
+            ]
+          },
+          {
+            title: '個人資料與關聯',
+            body: '管理成人帳號資料，以及兒童帳號關聯。',
+            links: [
+              { label: '個人資料', to: '/help-v3/account/profile' },
+              { label: '兒童帳號', to: '/help-v3/account/child-accounts' }
+            ]
+          },
+          {
+            title: '設定與離開',
+            body: '調整隱私、偏好設定，或進行登出與刪除帳號。',
+            links: [
+              { label: '隱私與進度', to: '/help-v3/account/privacy-progression' },
+              { label: '偏好設定', to: '/help-v3/account/preferences' },
+              { label: '刪除帳號', to: '/help-v3/account/delete-account' },
+              { label: '登出', to: '/help-v3/account/logout' }
+            ]
+          }
+        ]
+      },
+      create_account: {
+        badge: '帳號',
+        title: '建立帳號',
+        intro: '如果你還沒有 DojoMate 帳號，並且需要開始正確的學員或管理流程，請使用建立帳號。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立新的 DojoMate 帳號。',
+          '選擇符合實際需求的角色路徑。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '從驗證入口流程中的 account creation 畫面開始。',
+          '先決定自己是要加入並訓練，還是要建立和管理學院。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '如果一開始走錯角色路徑，後面會更容易對該看哪個指南感到混亂。',
+          '如果 email 已經屬於既有帳號，請登入或重設密碼，不要重複建立。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，應用會進入對應的學員或管理工作流程。',
+          '如果註冊失敗，應用應該使用目前標準化的驗證處理，而不是舊的模糊錯誤說法。',
+          '下一步通常會是角色相關流程，例如加入學院或開始學院設定。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '登入', to: '/help-v3/account/sign-in' },
+          { label: '加入學院', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      reset_password: {
+        badge: '帳號',
+        title: '重設密碼',
+        intro: '如果你忘記密碼，且需要重新取得帳號存取權，請使用重設密碼流程。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '要求系統寄送密碼重設郵件。',
+          '在無法正常登入時改走找回存取權路徑。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '從 Sign In 畫面進入密碼重設流程。',
+          '當問題是忘記密碼，而不是一般登入失敗時，請從這裡開始。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '這是找回遺失密碼的流程，不是登入後修改密碼。',
+          '如果郵件地址本身有誤，重設郵件就不會送到正確信箱。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，系統會寄送重設密碼郵件。',
+          '如果信件沒有到達，應先檢查信箱與重試，而不是直接重新建立帳號。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '登入', to: '/help-v3/account/sign-in' },
+          { label: '建立帳號', to: '/help-v3/account/create-account' }
+        ]
+      },
+      change_password: {
+        badge: '帳號',
+        title: '更改密碼',
+        intro: '當你已經登入，並想在不走重設郵件流程的情況下替換目前密碼時，請使用 Change Password。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '從帳號設定提交目前密碼和新密碼。',
+          '在目前合約允許時，保留目前裝置並撤銷其他工作階段。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用已登入的帳號設定畫面。',
+          '保持在目前工作階段中，而不是先回到 Sign In。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '需要提供目前密碼。',
+          '如果無法保留目前工作階段，應用可能會清除本機工作階段。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，目前工作階段可繼續保留，而其他工作階段會被撤銷。',
+          '如果目前密碼錯誤，應用應顯示目前結構化的失敗行為。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '偏好設定', to: '/help-v3/account/preferences' },
+          { label: '登出', to: '/help-v3/account/logout' }
+        ]
+      },
+      sign_in: {
+        badge: '帳號',
+        title: '登入',
+        intro: '當帳號已經存在，且你想正常開始一個 DojoMate 工作階段時，請使用登入。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '用既有帳號憑證登入。',
+          '開始一般的學員、管理或館主工作階段。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 Sign In 畫面作為主要入口。',
+          '如果問題是忘記密碼，而不是一般登入失敗，請改看重設密碼主題。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '目前的驗證結果會依照新的標準化規則處理，而不是依賴舊的錯誤文字。',
+          '某些帳號完整性問題屬於支援或恢復流程，不只是密碼錯誤。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，應用會開始目前使用者的工作階段。',
+          '如果無法正常開始工作階段，應用可能會導向恢復或支援流程，而不是只顯示一般登入錯誤。',
+          '之後的受保護請求會依賴目前的 refresh-token 流程，而不是舊的相容路徑。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '重設密碼', to: '/help-v3/account/reset-password' },
+          { label: '建立帳號', to: '/help-v3/account/create-account' }
+        ]
+      },
+      preferences: {
+        badge: '帳號',
+        title: '調整偏好設定',
+        intro: '當你需要調整語言、貨幣、主題或其他個人化設定時，請使用偏好設定。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '調整應用語言與顯示偏好。',
+          '修改與帳號體驗相關的個人設定。',
+          '在不改動學院業務設定的前提下，調整自己的 app 使用體驗。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用帳號設定與偏好設定相關畫面。',
+          '如果你要改的是個人 app 體驗，而不是學院資料，請停留在這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '偏好設定不會改變學院的 business 設定。',
+          '有些設定會立即生效，有些則可能要到下一次重新整理才完全反映。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，應用呈現或帳號體驗會依照新設定更新。',
+          '如果你想結束目前工作階段，接下來應使用 Logout，而不是在這裡尋找刪除帳號。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '隱私與進度', to: '/help-v3/account/privacy-progression' },
+          { label: '登出', to: '/help-v3/account/logout' }
+        ]
+      },
+      profile: {
+        badge: '帳號',
+        title: '編輯個人資料',
+        intro: '當成人帳號本身的資料需要檢查或更新時，請使用 Profile。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看和成人帳號綁定的個人資料。',
+          '從已登入的帳號流程更新個人欄位。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 profile user 和 edit-profile 相關畫面。',
+          '如果不正確的是帳號身分資料，而不是學院會員資格，請回到這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '個人資料編輯不能取代學院會員資格決策。',
+          '兒童帳號關係是另一條獨立流程。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，帳號個人資料會反映最新儲存的值。',
+          '如果實際問題其實是兒童或會員資格關係，請切換到正確主題。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '兒童帳號', to: '/help-v3/account/child-accounts' },
+          { label: '隱私與進度', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      child_accounts: {
+        badge: '帳號',
+        title: '管理兒童帳號',
+        intro: '當家長或監護人需要建立、編輯或移除兒童連結帳號關係時，請使用 Child Accounts。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '建立兒童帳號。',
+          '編輯兒童帳號。',
+          '在關係不再需要時移除兒童帳號。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用已登入帳號路徑中的兒童帳號資料與管理畫面。',
+          '如果家長管理帳號關係影響到加入學院或會員資格，請回到這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '兒童帳號關係會影響加入學院和會員資格行為。',
+          '這是帳號關係流程，不是一般學院名單編輯。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，家長管理的帳號關係會更新，供後續學員流程使用。',
+          '如果學院會員資格仍然不對，請再前往對應的學員或管理主題。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '加入學院', to: '/help-v3/member/join-academy' },
+          { label: '會員資格', to: '/help-v3/member/memberships' }
+        ]
+      },
+      privacy_progression: {
+        badge: '帳號',
+        title: '管理隱私與進度設定',
+        intro: '當問題和可見性、排名參與、資料曝光或帳號層級隱私選項有關時，請使用隱私與進度設定。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '查看與隱私有關的帳號設定。',
+          '在應用有提供時，控制進度或個人資料可見度相關設定。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用已登入帳號路徑中的 settings privacy 和 progression 畫面。',
+          '當問題是可見性而不是名單或預約邏輯時，請回到這裡。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '匿名預約和隱私設定不是同一件事。',
+          '學院端的成員可見性與帳號隱私彼此相關，但不是完全相同的概念。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，應用會使用最新儲存的隱私或進度設定。',
+          '如果問題其實是預約名單的匿名顯示，請改看 Booking。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '預約課程', to: '/help-v3/member/booking' },
+          { label: '偏好設定', to: '/help-v3/account/preferences' }
+        ]
+      },
+      delete_account: {
+        badge: '帳號',
+        title: '刪除帳號',
+        intro: '只有在你打算刪除整個帳號，而不是離開單一學院或改變單一會員資格關係時，才使用刪除帳號。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '從已登入設定路徑啟動刪除帳號流程。',
+          '重新確認刪除帳號是否真的是你想做的動作。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用 delete-account 設定畫面，而不是學院名單工具。',
+          '送出刪除前，請再次確認目標。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '刪除整個帳號不等於離開單一學院。',
+          '如果你只需要調整會員資格，應改用學院或成員流程。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，帳號本身的存取權會被移除。',
+          '如果真正需求只是改變某一段學院關係，刪除帳號就太廣了。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '登出', to: '/help-v3/account/logout' },
+          { label: '會員資格', to: '/help-v3/member/memberships' }
+        ]
+      },
+      logout: {
+        badge: '帳號',
+        title: '登出',
+        intro: '當你想結束目前裝置上的工作階段，並乾淨地離開已登入狀態時，請使用 Logout。',
+        what_title: '你可以做什麼',
+        what_items: [
+          '結束目前已登入的 app 工作階段。',
+          '為其他帳號或之後重新進入做好準備。'
+        ],
+        where_title: '在哪裡操作',
+        where_items: [
+          '使用已登入的帳號設定區域。',
+          '如果你只是想停止使用目前工作階段，請登出，而不是刪除帳號。'
+        ],
+        limits_title: '重要限制',
+        limits_items: [
+          '登出只會結束目前工作階段，不會刪除帳號。',
+          '如果需要改的是密碼本身，請改用 Change Password。'
+        ],
+        results_title: '接下來會發生什麼',
+        results_items: [
+          '成功後，應用會清除這台裝置上的目前已登入狀態。',
+          '之後你可以用相同或不同帳號重新登入。',
+          '當你不需要變更密碼或刪除帳號時，Logout 是最安全的結束會話方式。'
+        ],
+        next_title: '下一個主題',
+        next_links: [
+          { label: '登入', to: '/help-v3/account/sign-in' },
+          { label: '建立帳號', to: '/help-v3/account/create-account' }
+        ]
+      }
+    }
+  },
   help_v2: {
     support: {
       heading: '還需要更多幫助？',

@@ -1,4 +1,1433 @@
 export default {
+  help_v3: {
+    support: {
+      heading: 'Precisa de mais ajuda?',
+      default_description: 'Use o fórum de ajuda do DojoMate no Source Combatives para dúvidas extras, casos especiais ou fluxos que continuam fora do app.',
+      default_button: 'Abrir o fórum de ajuda do DojoMate'
+    },
+    layout: {
+      badge: 'Ajuda v3',
+      intro: 'Guia de fluxos organizado pelos dashboards e papéis atuais do DojoMate.',
+      open_v2: 'Abrir Ajuda v2',
+      search_placeholder: 'Buscar ajuda v3',
+      search_no_results: 'Nenhum resultado encontrado',
+      nav: {
+        start_here: 'Comece aqui',
+        home: 'Página inicial da Ajuda v3',
+        member_home: 'Guia do aluno',
+        admin_home: 'Guia do admin',
+        owner_home: 'Guia do dono',
+        account_home: 'Guia da conta',
+        member: 'Aluno',
+        admin: 'Admin / equipe',
+        owner: 'Dono / operações',
+        account: 'Conta / configurações',
+        join_academy: 'Entrar em uma academia',
+        memberships: 'Memberships',
+        member_cards: 'Cartões',
+        card_disputes: 'Disputas de cartões',
+        booking: 'Reservas',
+        attendance_records: 'Registros de presença',
+        system_alerts: 'Alertas do sistema',
+        broadcasts: 'Broadcasts',
+        online_learning: 'Aprendizado online',
+        events: 'Eventos',
+        academy_context: 'Contexto da academia',
+        admin_members: 'Membros',
+        admin_cards: 'Cartões',
+        session_debt: 'Dívida de sessões',
+        lessons: 'Modelos de aula',
+        schedule: 'Agenda',
+        admin_booking: 'Reserva pelo admin',
+        admin_broadcasts: 'Publicar broadcasts',
+        alerts_qr: 'Alertas e QR',
+        create_academy: 'Criar academia',
+        onboarding: 'Onboarding',
+        business_management: 'Gestão da academia',
+        instructors: 'Instrutores',
+        access: 'Acesso',
+        operations_analytics: 'Análises de operações',
+        timesheets_salaries: 'Ponto e salários',
+        oversight: 'Supervisão',
+        owner_tools: 'Ferramentas',
+        sign_in: 'Entrar',
+        create_account: 'Criar conta',
+        reset_password: 'Redefinir senha',
+        change_password: 'Mudar senha',
+        profile: 'Perfil',
+        child_accounts: 'Contas infantis',
+        privacy_progression: 'Privacidade e progressão',
+        preferences: 'Preferências',
+        delete_account: 'Excluir conta',
+        logout: 'Sair'
+      }
+    },
+    welcome: {
+      badge: 'Ajuda v3',
+      title: 'Guia atual de fluxos',
+      intro: 'Use a Ajuda v3 quando quiser seguir as tarefas conforme os papéis e dashboards atuais do DojoMate.',
+      areas_title: 'Escolha a área que combina com seu trabalho',
+      member_title: 'Aluno',
+      member_body: 'Entrar na academia, cartões, reservas, alertas, broadcasts, aprendizado online e eventos.',
+      member_link: 'Abrir guia do aluno',
+      admin_title: 'Admin / equipe',
+      admin_body: 'Membros, cartões, agenda, reservas para alunos, broadcasts e trabalho diário da academia.',
+      admin_link: 'Abrir guia do admin',
+      owner_title: 'Dono / operações',
+      owner_body: 'Criação da academia, onboarding, configuração exclusiva do dono, acesso e fluxos operacionais.',
+      owner_link: 'Abrir guia do dono',
+      account_title: 'Conta / configurações',
+      account_body: 'Entrar, ajuda com senha, perfil, privacidade, preferências e sair.',
+      account_link: 'Abrir guia da conta',
+      note_title: 'O que muda na v3',
+      note_body: 'A v3 organiza o conteúdo de acordo com os papéis e responsabilidades atuais do produto, o que facilita a busca e também a futura extração por assistentes.',
+      note_button: 'Ver Ajuda v2'
+    },
+    member: {
+      home: {
+        badge: 'Aluno',
+        title: 'Guia do aluno',
+        intro: 'Use este guia quando você treina em uma academia e precisa de ajuda com entrada, memberships, cartões, reservas, alertas, broadcasts, aprendizado online ou eventos.',
+        areas_title: 'Tópicos do aluno',
+        links: [
+          {
+            title: 'Academia e memberships',
+            body: 'Entrar na academia correta e confirmar o contexto da academia selecionada.',
+            links: [
+              { label: 'Entrar em uma academia', to: '/help-v3/member/join-academy' },
+              { label: 'Memberships', to: '/help-v3/member/memberships' }
+            ]
+          },
+          {
+            title: 'Cartões e aulas',
+            body: 'Revisar cartões, abrir disputas, reservar aulas e conferir registros de presença.',
+            links: [
+              { label: 'Cartões', to: '/help-v3/member/cards' },
+              { label: 'Disputas de cartões', to: '/help-v3/member/card-disputes' },
+              { label: 'Reservas', to: '/help-v3/member/booking' },
+              { label: 'Registros de presença', to: '/help-v3/member/attendance-records' }
+            ]
+          },
+          {
+            title: 'Atualizações da academia',
+            body: 'Ler alertas do sistema, broadcasts, conteúdo online e informações de eventos.',
+            links: [
+              { label: 'Alertas do sistema', to: '/help-v3/member/system-alerts' },
+              { label: 'Broadcasts', to: '/help-v3/member/broadcasts' },
+              { label: 'Aprendizado online', to: '/help-v3/member/online-learning' },
+              { label: 'Eventos', to: '/help-v3/member/events' }
+            ]
+          }
+        ]
+      },
+      join_academy: {
+        badge: 'Aluno',
+        title: 'Entrar em uma academia',
+        intro: 'Use este fluxo quando quiser conectar sua conta a uma academia que usa DojoMate.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Explorar academias no Discover.',
+          'Pesquisar pelo nome da academia.',
+          'Escanear um QR code fornecido pela academia.',
+          'Abrir os detalhes da academia antes de decidir entrar.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Se você quer comparar academias primeiro, use Discover Academy.',
+          'Se já sabe qual academia quer ou quer escanear um QR, use Academy Search.',
+          'Primeiro confirme nos detalhes da academia se é realmente a academia correta.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Depois de enviar o pedido, a academia ainda pode precisar aceitá-lo.',
+          'Contas geridas por responsáveis ou vínculos com contas infantis podem exigir etapas extras.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, a academia aparece na sua academy list ou em estado pendente.',
+          'Se a academia ainda não tiver aceitado você, recursos seguintes do lado do aluno podem continuar limitados.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Memberships', to: '/help-v3/member/memberships' },
+          { label: 'Cartões', to: '/help-v3/member/cards' }
+        ]
+      },
+      memberships: {
+        badge: 'Aluno',
+        title: 'Gerenciar memberships e contexto da academia',
+        intro: 'Use este tópico quando você pertence a uma ou mais academias e precisa confirmar qual academia está ativa agora.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar as academias ligadas à sua conta.',
+          'Trocar a academia selecionada antes de usar cartões, reservas ou broadcasts.',
+          'Confirmar se você está na academia correta quando algo parecer ausente.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a academy list das academias em que você entrou e as superfícies de contexto da academia do aluno.',
+          'Antes de concluir que um cartão ou aula sumiu, confirme novamente a academia atualmente selecionada.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Selecionar a academia errada pode fazer cartões, agenda e Broadcast parecerem indisponíveis.',
+          'O estado da membership ainda pode depender da aceitação da academia ou do vínculo com conta infantil.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois de escolher a academia correta, as próximas telas do aluno carregam os dados daquela academia.',
+          'Se a academia errada continuar selecionada, reservas e cartões podem continuar parecendo inconsistentes.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Cartões', to: '/help-v3/member/cards' },
+          { label: 'Reservas', to: '/help-v3/member/booking' }
+        ]
+      },
+      cards: {
+        badge: 'Aluno',
+        title: 'Revisar cartões e pagamentos pendentes',
+        intro: 'Use este tópico quando quiser confirmar quais cartões estão disponíveis, revisar um cartão com pagamento pendente ou entender se um bloqueio de reserva está ligado ao cartão.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Ver os cartões disponíveis na academia atualmente selecionada.',
+          'Verificar se existe um fluxo de pagamento pendente para cartão.',
+          'Confirmar primeiro se uma falha de reserva realmente é um problema de cartão.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as telas de cartões do aluno e qualquer fluxo de pagamento pendente de cartão.',
+          'Volte para cá primeiro quando a reserva disser que você não tem um cartão elegível.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Os cartões do aluno são vinculados à academia atualmente selecionada.',
+          'Esta não é a área de revisão de auditoria do dono ou do admin.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois que um pagamento pendente dá certo, o cartão pode passar para um estado utilizável.',
+          'Se o cartão continuar parecendo errado depois do pagamento ou de mudanças de emissão, use o fluxo de disputa.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Disputas de cartão', to: '/help-v3/member/card-disputes' },
+          { label: 'Reservas', to: '/help-v3/member/booking' }
+        ]
+      },
+      booking: {
+        badge: 'Aluno',
+        title: 'Reservar ou cancelar uma aula',
+        intro: 'Use o fluxo de reservas quando quiser abrir a agenda da academia, revisar a aula, escolher um cartão válido e confirmar sua vaga.',
+        steps_title: 'Passos comuns',
+        steps_items: [
+          'Abra a agenda da academia atualmente selecionada.',
+          'Escolha uma aula agendada e veja os detalhes.',
+          'Abra a seleção de cartões, escolha um cartão elegível e decida se a reserva deve aparecer como anônima para outros membros.',
+          'Confirme a reserva ou o cancelamento.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use Academy Schedule, Academy Booking e Academy Card Selection.',
+          'Se a aula ou o cartão parecer errado, primeiro confirme qual academia está selecionada.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'A reserva usa o fluxo atual de scheduled lessons, e não uma edição genérica de aula.',
+          'A elegibilidade do cartão e as regras de bloqueio da reserva vêm do backend.',
+          'A reserva anônima esconde a identidade apenas de outros membros; a equipe da academia continua vendo a reserva real.',
+          'Mesmo quando a ação de reservar é bloqueada, detalhes de aulas canceladas ou processadas podem continuar visíveis.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, o estado da reserva e a lista visível são atualizados.',
+          'Falhas esperadas de guarda explicam por que a ação foi bloqueada, como reserva encerrada ou aula já iniciada.',
+          'Se o app não conseguir confirmar se a solicitação foi concluída, pode ser necessário atualizar a tela e tentar novamente.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Registros de presença', to: '/help-v3/member/attendance-records' },
+          { label: 'Alertas do sistema', to: '/help-v3/member/system-alerts' }
+        ]
+      },
+      attendance_records: {
+        badge: 'Aluno',
+        title: 'Revisar registros de presença',
+        intro: 'Use os registros de presença quando quiser confirmar se uma aula passada foi registrada da forma esperada.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar presença passada da academia atualmente selecionada.',
+          'Conferir se uma aula aparece no seu histórico.',
+          'Usar o registro como confirmação depois da reserva e do treino.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as superfícies de presença do aluno ou academy records.',
+          'Comece por aqui quando quiser confirmar o resultado de uma reserva ou visita anterior.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Os registros de presença são para consulta, não para edição pelo aluno.',
+          'Se um registro estiver errado, a academia precisa corrigi-lo.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Um registro normal confirma que a aula foi lançada.',
+          'Um registro ausente ou incorreto deve levar você ao acompanhamento com a academia, e não a uma correção por conta própria.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Reservas', to: '/help-v3/member/booking' },
+          { label: 'Disputas de cartão', to: '/help-v3/member/card-disputes' }
+        ]
+      },
+      system_alerts: {
+        badge: 'Aluno',
+        title: 'Ler alertas do sistema',
+        intro: 'Use os alertas do sistema quando precisar ler atualizações importantes ligadas à sua conta, à academia ou a fluxos relacionados do aluno.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Ler atualizações importantes geradas pelo sistema sobre conta ou academia.',
+          'Usar alertas como superfície de fallback segura quando uma notificação push não consegue abrir uma tela mais específica.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use telas de alertas do aluno, como Academy Alerts.',
+          'Se um toque na notificação não conseguir abrir o destino exato, o app pode levar você para cá.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'System Alerts não é chat.',
+          'Nem todo tipo de notificação já tem um deep link preciso.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois da leitura, o estado de lido pode ser atualizado.',
+          'Se o alerta aponta para outro fluxo, vá para aquela área do app em vez de ficar parado nos alertas.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Broadcasts', to: '/help-v3/member/broadcasts' },
+          { label: 'Reservas', to: '/help-v3/member/booking' }
+        ]
+      },
+      broadcasts: {
+        badge: 'Aluno',
+        title: 'Ler broadcasts da academia',
+        intro: 'Use Broadcast para ler posts da academia atualmente selecionada. O feed do lado do aluno é somente leitura e serve para atualizações e posts de treino da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Alternar entre Updates e Training.',
+          'Ler texto, imagens e posts de Broadcast da academia.',
+          'Abrir imagens em tamanho maior sem sair do painel do aluno.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as telas de Broadcast do aluno ligadas à academia atualmente selecionada.',
+          'Se o feed parecer errado, volte e confirme a academia escolhida.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'O Broadcast do aluno é somente leitura.',
+          'Não há comentários, respostas, curtidas nem postagens de membros nesse fluxo.',
+          'Um feed vazio não significa necessariamente erro; a academia pode simplesmente ainda não ter posts visíveis.',
+          'O conteúdo de Broadcast é criado por equipe ou dono da academia, não por membros.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando o carregamento dá certo, o feed da academia selecionada aparece.',
+          'Se você quer ver estado da conta ou do sistema, use System Alerts.',
+          'Mesmo quando a academia também oferece Online, Broadcast e Online continuam sendo superfícies separadas.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Alertas do sistema', to: '/help-v3/member/system-alerts' },
+          { label: 'Aprendizado online', to: '/help-v3/member/online-learning' }
+        ]
+      },
+      card_disputes: {
+        badge: 'Aluno',
+        title: 'Abrir uma disputa de cartão',
+        intro: 'Use disputas de cartão quando um cartão, uma exclusão de cartão ou uma mudança relacionada ao cartão parecer errada do lado do aluno e exigir acompanhamento da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Criar um registro de disputa ligado ao problema de cartão que você percebeu.',
+          'Explicar o que parece errado do lado do aluno.',
+          'Manter o problema em um caminho dedicado de acompanhamento em vez de misturá-lo com reservas ou perguntas de perfil.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use telas de cartões e disputas do aluno, como Academy Disputes.',
+          'Quando possível, comece pelo cartão que parece errado.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Uma disputa não corrige o cartão na hora.',
+          'Ferramentas de revisão exclusivas do dono, como audit logs, não fazem parte do fluxo de disputa do aluno.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, a disputa vira um item de acompanhamento para o lado da academia.',
+          'Você ainda pode precisar esperar a revisão da academia antes de ver mudança no estado do cartão.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Cartões', to: '/help-v3/member/cards' },
+          { label: 'Registros de presença', to: '/help-v3/member/attendance-records' }
+        ]
+      },
+      online_learning: {
+        badge: 'Aluno',
+        title: 'Usar aprendizado online',
+        intro: 'Use Online quando sua conta de aluno tiver acesso online e você quiser navegar pelo currículo, abrir aulas, assistir clipes e concluir tarefas.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Abrir Online pelo dashboard do aluno quando o acesso existir.',
+          'Navegar por curriculum, catalog e camadas de aula.',
+          'Assistir clipes de ensino e vídeos de tips vinculados.',
+          'Abrir e enviar tarefas a partir do fluxo da aula dona do conteúdo.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use Online Home, Curriculum, Catalog, Lesson, Video e Homework.',
+          'Siga o fluxo da aula desde o currículo até o trecho que você quer assistir.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'O tile Online aparece apenas quando a permissão libera o acesso.',
+          'Aqui o Expo Online é uma superfície de consumo, não uma área de administração online.',
+          'Tarefas e vídeos de tips continuam ligados à aula e ao slice de origem, em vez de virarem um feed solto da academia.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando o acesso existe, o dashboard revela a entrada Online.',
+          'Tarefas e tips continuam ligadas à aula e ao slice de origem, em vez de virarem conteúdo separado e solto.',
+          'Se o acesso faltar, a expectativa correta é não ver a entrada Online, e não um estado vazio parcialmente funcional.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Eventos', to: '/help-v3/member/events' },
+          { label: 'Broadcasts', to: '/help-v3/member/broadcasts' }
+        ]
+      },
+      events: {
+        badge: 'Aluno',
+        title: 'Explorar eventos e inscrições',
+        intro: 'Use Events quando quiser explorar eventos de competição, manter seu perfil de competição ou gerenciar etapas de inscrição de um evento.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Explorar eventos de competição disponíveis.',
+          'Abrir o detalhe do evento antes da inscrição.',
+          'Criar ou atualizar seu perfil de competição.',
+          'Gerenciar etapas de inscrição e pagamento quando o evento oferecer isso.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use telas de lista de eventos, detalhe, perfil e inscrição.',
+          'Alguns fluxos de evento passam para provedores externos, como sites de federação ou do próprio evento.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Fluxos com provedores externos não ficam totalmente dentro do app DojoMate.',
+          'O estado da inscrição pode depender de exigências específicas do evento fora do fluxo comum de membership da academia.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, seu perfil ou estado de inscrição é atualizado.',
+          'Se o evento usar provedor externo, espere um handoff em vez de um formulário totalmente interno ao app.',
+          'Atualizações do perfil de competição podem virar parte da preparação para inscrições futuras, em vez de ficar isoladas em uma tela.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Memberships', to: '/help-v3/member/memberships' },
+          { label: 'Alertas do sistema', to: '/help-v3/member/system-alerts' }
+        ]
+      }
+    },
+    admin: {
+      home: {
+        badge: 'Admin',
+        title: 'Guia do admin e da equipe',
+        intro: 'Use este guia quando você trabalha no dashboard administrativo da academia com membros, cartões, agenda, reservas ou broadcasts.',
+        areas_title: 'Tópicos do admin',
+        links: [
+          {
+            title: 'Contexto da academia e membros',
+            body: 'Confirme primeiro que a academia correta está selecionada antes de alterar membros ou papéis.',
+            links: [
+              { label: 'Contexto da academia', to: '/help-v3/admin/academy-context' },
+              { label: 'Membros', to: '/help-v3/admin/members' }
+            ]
+          },
+          {
+            title: 'Operação diária',
+            body: 'Gerencie cartões, dívidas de sessões, modelos de aula, agenda e reservas pelo admin.',
+            links: [
+              { label: 'Cartões', to: '/help-v3/admin/cards' },
+              { label: 'Dívida de sessões', to: '/help-v3/admin/session-debt' },
+              { label: 'Modelos de aula', to: '/help-v3/admin/lessons' },
+              { label: 'Agenda', to: '/help-v3/admin/schedule' },
+              { label: 'Reserva pelo admin', to: '/help-v3/admin/admin-booking' }
+            ]
+          },
+          {
+            title: 'Alertas e ferramentas',
+            body: 'Use o fluxo atual de broadcasts, alertas administrativos e ferramentas de QR.',
+            links: [
+              { label: 'Publicar broadcasts', to: '/help-v3/admin/broadcasts' },
+              { label: 'Alertas e QR', to: '/help-v3/admin/alerts-qr' }
+            ]
+          }
+        ]
+      },
+      cards: {
+        badge: 'Admin',
+        title: 'Criar e emitir cartões',
+        intro: 'Use Cards no admin quando precisar criar modelos de cartão, emitir cartões ativos, revisar cartões atuais ou mudar o estado dos cartões disponíveis para membros da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Criar modelos de cartão.',
+          'Revisar modelos existentes.',
+          'Emitir cartões ativos para membros.',
+          'Revisar cartões ativos e lidar com estados ligados a pausa quando a tela permitir.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as telas de criação de modelo, lista de modelos, emissão e Active Cards.',
+          'Se um problema de reserva do aluno na verdade for um problema de cartão, volte para cá e revise.',
+          'Durante o onboarding, o app pode levar você direto para Cards porque o primeiro marco de cartão faz parte da criação da academia.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Modelo de cartão e cartão ativo são camadas diferentes.',
+          'Ferramentas exclusivas do dono, como audit logs, não fazem parte do guia normal de Cards no admin.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, os fluxos administrativos e do aluno ligados a cartões são atualizados.',
+          'Quando a atualização do cartão entra no contexto correto da academia, a elegibilidade de reservas também pode mudar.',
+          'Mesmo que esse cartão exista só para onboarding ou teste interno, ele ainda pode contar para o marco sem significar que a cobrança real já está pronta.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Dívida de sessões', to: '/help-v3/admin/session-debt' },
+          { label: 'Reserva pelo admin', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      academy_context: {
+        badge: 'Admin',
+        title: 'Confirmar qual academia você está administrando agora',
+        intro: 'Quando você trabalha com várias academias, ou suspeita que não está no contexto administrativo correto, confirme primeiro o academy context.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Confirmar qual academia está carregada agora.',
+          'Trocar para a academia correta antes de mexer em membros, cartões, agenda ou broadcasts.',
+          'Distinguir se você está no caminho Admin ou no caminho Business / Owner.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use o fluxo de troca de academia e a entrada administrativa.',
+          'Se você acabou de voltar de outra academia, confirme aqui antes de continuar o trabalho.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'As ações de admin e de equipe são vinculadas à academia atualmente selecionada.',
+          'Trabalhos de configuração do dono ou do lado Business não devem ser tratados como recursos admin comuns.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois de confirmar a academia correta, as telas administrativas seguintes carregam os dados correspondentes.',
+          'Se a academia estiver errada, membros, cartões ou agenda podem parecer ausentes ou inconsistentes.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Membros', to: '/help-v3/admin/members' },
+          { label: 'Cartões', to: '/help-v3/admin/cards' }
+        ]
+      },
+      members: {
+        badge: 'Admin',
+        title: 'Gerenciar membros',
+        intro: 'Use Members quando precisar revisar membros pendentes, aceitos, rejeitados ou banidos e entender como a pessoa está participando da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar memberships pendentes e aceitas.',
+          'Rejeitar, banir ou atualizar o estado quando a tela permitir.',
+          'Abrir perfil do membro e contexto de presença.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use telas de estado como Pending, Accepted, Rejected e Banned.',
+          'Abra detalhes do membro ou presença a partir da área administrativa de membros.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Membro, instrutor e acesso administrativo não são a mesma coisa.',
+          'Linhas de adultos marcados como instrutor não devem ser tratadas como linhas comuns de membros adultos.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, a pessoa passa para o estado visível correto.',
+          'As telas administrativas relacionadas também se atualizam com o novo estado.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Cartões', to: '/help-v3/admin/cards' },
+          { label: 'Reserva pelo admin', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      session_debt: {
+        badge: 'Admin',
+        title: 'Quitar dívida de sessões',
+        intro: 'Use o fluxo de dívida de sessões quando o histórico de cartão ou reserva tiver criado um estado de dívida que precisa ser resolvido pela equipe.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar itens de dívida de sessões em aberto.',
+          'Quitar a dívida pelo fluxo administrativo atual.',
+          'Manter a quitação separada de disputas de membros e de supervisão do dono.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a superfície de debt ou card-debt do admin ligada às ferramentas atuais de cartões.',
+          'Abra isso a partir das operações de cartões do admin, e não a partir de suposições de perfil de membro.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Quitar dívida não é o mesmo que uma disputa do lado do aluno.',
+          'Ferramentas de revisão do dono continuam separadas deste fluxo administrativo do dia a dia.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois da quitação, o estado da dívida e o contexto relacionado do cartão devem ser atualizados.',
+          'Se o registro de base estiver em disputa, e não apenas em débito, mude para o caminho correto de disputa ou supervisão.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Cartões', to: '/help-v3/admin/cards' },
+          { label: 'Membros', to: '/help-v3/admin/members' }
+        ]
+      },
+      lessons: {
+        badge: 'Admin',
+        title: 'Gerenciar modelos de aula',
+        intro: 'Use Lessons quando precisar criar, editar ou remover modelos de aula antes de publicá-los na agenda real.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Criar modelos de aula.',
+          'Editar detalhes de ensino e agenda dentro do modelo.',
+          'Excluir modelos que não precisam mais ser publicados.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use telas de template como lesson-day, create lesson e edit lesson.',
+          'Conclua o trabalho de template aqui antes de seguir para a publicação real no schedule.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Modelos de aula não são a mesma coisa que aulas agendadas já publicadas.',
+          'Mudar o template antes da camada de schedule não explica automaticamente todos os resultados já publicados na agenda.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, o template fica disponível para a agenda posterior.',
+          'Se o evento real já existir, a edição do schedule ainda pode ser um passo separado.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Agenda', to: '/help-v3/admin/schedule' },
+          { label: 'Reserva pelo admin', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      schedule: {
+        badge: 'Admin',
+        title: 'Publicar e gerenciar a agenda',
+        intro: 'Use as ferramentas de agenda quando precisar publicar uma aula, editar uma aula agendada, cancelá-la ou removê-la da agenda ao vivo da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Publicar aulas agendadas a partir de templates.',
+          'Editar ou cancelar aulas agendadas.',
+          'Revisar o detalhe da aula agendada e o estado da lista.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use o schedule layout e os fluxos de create/edit event.',
+          'Abra o detalhe específico da aula agendada quando precisar inspecionar o estado atual.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Aulas canceladas ou processadas devem continuar revisáveis em vez de desaparecerem do fluxo de revisão.',
+          'Apenas a ação de reservar em si deve ser bloqueada quando as regras de guarda exigirem isso.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, a agenda da academia é atualizada para refletir o estado atual da aula agendada.',
+          'Se a aula estiver cancelada, o detalhe ainda pode ser útil para revisão, mesmo sem reserva aberta.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Modelos de aula', to: '/help-v3/admin/lessons' },
+          { label: 'Reserva pelo admin', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      admin_booking: {
+        badge: 'Admin',
+        title: 'Reservar para um aluno ou membro',
+        intro: 'Use admin booking quando a equipe precisar criar ou remover uma reserva em nome de um membro a partir do lado administrativo da agenda.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Abrir uma aula agendada pelo lado admin.',
+          'Selecionar um membro-alvo e um cartão válido.',
+          'Criar ou remover a reserva usando o fluxo atual de ação de reserva.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use Admin Booking e o fluxo relacionado de seleção de cartão.',
+          'Comece pela aula agendada que você está atendendo, e não por uma busca genérica de membros.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'O admin não pode criar reservas anônimas.',
+          'Os backend booking guard codes continuam controlando se a reserva é permitida.',
+          'Mesmo quando o detalhe da lista continua visível, falhas inesperadas podem exigir atualização e nova tentativa.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, a lista da aula e o estado da reserva são atualizados.',
+          'Se a ação for bloqueada, a tela deve explicar a condição de guarda em vez de parecer que a aula desapareceu.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Agenda', to: '/help-v3/admin/schedule' },
+          { label: 'Membros', to: '/help-v3/admin/members' }
+        ]
+      },
+      broadcasts: {
+        badge: 'Admin',
+        title: 'Publicar broadcasts',
+        intro: 'Use o fluxo administrativo atual de Broadcast quando quiser publicar atualizações da academia ou posts de treino pelo app.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Criar um Broadcast com texto e imagens.',
+          'Criar um Broadcast com texto e um único vídeo MP4.',
+          'Publicar imediatamente no feed da academia atualmente selecionada.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a tela de publicação de Broadcast dentro da área Members do lado admin.',
+          'Confirme o contexto correto da academia selecionada antes de publicar.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'No momento não existe fluxo de rascunho salvo.',
+          'O app suporta apenas um vídeo, e não permite misturar imagens com vídeo no mesmo post.',
+          'A autorização continua dependendo do papel da academia e do access.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando a criação dá certo, o Broadcast é publicado imediatamente.',
+          'Se mídia ou autorização estiverem erradas, a criação deve falhar, e não virar um rascunho oculto.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Alertas e QR', to: '/help-v3/admin/alerts-qr' },
+          { label: 'Contexto da academia', to: '/help-v3/admin/academy-context' }
+        ]
+      },
+      alerts_qr: {
+        badge: 'Admin',
+        title: 'Usar alertas e ferramentas de QR',
+        intro: 'Use essas ferramentas de apoio do admin quando precisar lidar com alertas, ações de QR ou retomadas ligadas ao contexto atual da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar alertas administrativos ou business ligados à academia.',
+          'Abrir ferramentas relacionadas a QR.',
+          'Usar fluxos de apoio ao contexto da academia quando precisar retomar ou trocar.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a tela de alertas e a entrada de QR no menu da academia.',
+          'Se a academia atual estiver errada, volte ao seletor de academias.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Esses fluxos apoiam o trabalho da academia, mas não substituem a gestão business exclusiva do dono.',
+          'Algumas retomadas pertencem ao caminho mais amplo de bootstrap ou settings, e não ao menu diário comum.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'O alerta correto ou a ação de QR leva você para o próximo fluxo relevante da academia.',
+          'Se a questão for realmente uma configuração business exclusiva do dono, o próximo passo costuma ser mudar para a área do dono.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Contexto da academia', to: '/help-v3/admin/academy-context' },
+          { label: 'Publicar broadcasts', to: '/help-v3/admin/broadcasts' }
+        ]
+      }
+    },
+    owner: {
+      home: {
+        badge: 'Dono',
+        title: 'Guia do dono e de operações',
+        intro: 'Use este guia quando você precisa criar academias, concluir o onboarding, gerenciar configurações exclusivas do dono ou trabalhar com operações e supervisão.',
+        areas_title: 'Tópicos do dono',
+        links: [
+          {
+            title: 'Criação da academia e onboarding',
+            body: 'Criar a primeira academia e seguir o onboarding baseado em marcos.',
+            links: [
+              { label: 'Criar academia', to: '/help-v3/owner/create-academy' },
+              { label: 'Onboarding', to: '/help-v3/owner/onboarding' }
+            ]
+          },
+          {
+            title: 'Gestão do dono',
+            body: 'Gerenciar dados da academia, instrutores e acesso administrativo.',
+            links: [
+              { label: 'Gestão da academia', to: '/help-v3/owner/business-management' },
+              { label: 'Instrutores', to: '/help-v3/owner/instructors' },
+              { label: 'Acesso', to: '/help-v3/owner/access' }
+            ]
+          },
+          {
+            title: 'Operações e supervisão',
+            body: 'Usar análises, ponto e salários, supervisão e ferramentas.',
+            links: [
+              { label: 'Análises de operações', to: '/help-v3/owner/operations-analytics' },
+              { label: 'Ponto e salários', to: '/help-v3/owner/timesheets-salaries' },
+              { label: 'Supervisão', to: '/help-v3/owner/oversight' },
+              { label: 'Ferramentas', to: '/help-v3/owner/tools' }
+            ]
+          }
+        ]
+      },
+      access: {
+        badge: 'Dono',
+        title: 'Gerenciar acesso e permissões',
+        intro: 'Use Access quando quiser decidir quais membros adultos já aceitos podem entrar no lado administrativo da academia atual.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Conceder acesso administrativo da academia a membros adultos aceitos e elegíveis.',
+          'Atualizar ou remover permission rows no nível da academia.',
+          'Separar acesso administrativo da identidade de instrutor.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a superfície de permissions ou Access do lado do dono.',
+          'Em menus estreitos, o botão pode aparecer de forma reduzida como `Access`.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Remover a permission row de uma academia não remove automaticamente o broader admin role dessa pessoa em outras academias.',
+          'Essa superfície gerencia acesso administrativo da academia, e não identidade de instrutor.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, muda quais recursos administrativos essa pessoa consegue abrir na academia atual.',
+          'Se a pessoa também precisa da identidade de instrutor, use Instructors separadamente.',
+          'Se ela pertence a outras academias, o broader admin role nessas outras academias ainda pode continuar existindo.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Instrutores', to: '/help-v3/owner/instructors' },
+          { label: 'Análises de operações', to: '/help-v3/owner/operations-analytics' }
+        ]
+      },
+      onboarding: {
+        badge: 'Dono',
+        title: 'Concluir o onboarding da primeira academia',
+        intro: 'Use este tópico quando quiser entender como o tutorial atual da primeira academia avança depois da criação da academia.',
+        steps_title: 'Ordem dos marcos',
+        steps_items: [
+          'Criar a academia.',
+          'Adicionar o primeiro instrutor ou decidir se o próprio dono será o instrutor principal.',
+          'Criar o primeiro modelo de cartão.',
+          'Emitir o primeiro cartão ativo.',
+          'Criar a primeira aula agendada.',
+          'Concluir a primeira reserva pelo lado admin.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Siga o dashboard guiado e as telas de onboarding em tela cheia.',
+          'Use a seção destacada pelo app como próximo marco.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'O onboarding é guiado por marcos e usa um estado durável de usage history.',
+          'Concluir o tutorial não exige um aluno pagante real nem prova que pagamentos online já foram configurados.',
+          'Completar o onboarding não é a mesma coisa que estar pronto para cobrança ou recebimento.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois de cada marco, o app revela a próxima seção recomendada.',
+          'Depois da conclusão do onboarding, o dashboard administrativo mais amplo é liberado e mais ferramentas podem aparecer conforme o acesso.',
+          'O tutorial pode ser concluído com fluxos de teste do próprio dono ou da equipe, sem depender de um membro pagante real.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Instrutores', to: '/help-v3/owner/instructors' },
+          { label: 'Acesso', to: '/help-v3/owner/access' }
+        ]
+      },
+      create_academy: {
+        badge: 'Dono',
+        title: 'Criar uma nova academia',
+        intro: 'Use o fluxo de criação de academia quando precisar criar a primeira academia ou adicionar outra academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Criar uma nova academia.',
+          'Entrar em modo de criação quando você tiver vários papéis ou várias academias.',
+          'Seguir direto para o onboarding depois da criação.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use o fluxo de criação do Business e as telas relacionadas de bootstrap / gate.',
+          'Se o app mostrar primeiro uma escolha de caminho, confirme que você quer criar uma academia nova, e não entrar em um contexto administrativo existente.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'A quantidade de academias que você pode criar ainda pode depender do plano atual ou de academy slots.',
+          'Cancelar o modo de criação leva você de volta à entrada administrativa, sem concluir nenhuma configuração.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, a nova academia fica selecionada e o fluxo continua para o onboarding seguinte.',
+          'Se você cancelar no meio, o app volta para a escolha de entrada admin / business.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Onboarding', to: '/help-v3/owner/onboarding' },
+          { label: 'Gestão da academia', to: '/help-v3/owner/business-management' }
+        ]
+      },
+      business_management: {
+        badge: 'Dono',
+        title: 'Gerenciar a configuração de negócio da academia',
+        intro: 'Use Business Management quando precisar manter os dados da própria academia, mídia e configurações de nível dono.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Atualizar dados básicos da academia.',
+          'Gerenciar logo, banner, gallery e outras mídias da academia.',
+          'Executar configurações de nível dono e ações de ciclo de vida da academia.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as telas relacionadas a Business para editar, excluir, mídia e configuração do dono.',
+          'Se o trabalho é ajustar a própria academia, e não uma tarefa administrativa do dia a dia, volte para esta área.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Esses são recursos de academy-management do dono, e não permissões normais da equipe.',
+          'Atualizar os dados da academia não muda automaticamente acesso admin nem permissões de analytics.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, os dados da academia e as telas do dono relacionadas passam a mostrar o novo conteúdo.',
+          'Se o próximo trabalho é decidir quem pode abrir o admin, vá para Access.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Acesso', to: '/help-v3/owner/access' },
+          { label: 'Instrutores', to: '/help-v3/owner/instructors' }
+        ]
+      },
+      instructors: {
+        badge: 'Dono',
+        title: 'Gerenciar instrutores',
+        intro: 'Use Instructors quando precisar gerenciar o lado de identidade de ensino da equipe da academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Adicionar ou manter a identidade de instrutor na academia.',
+          'Dar suporte à configuração de head instructor e equipe de ensino durante o onboarding e depois.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a superfície Business Instructors do lado do dono.',
+          'Volte para cá quando a questão for identidade de ensino, e não acesso administrativo.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Identidade de instrutor não é o mesmo que acesso admin da academia.',
+          'Identidade de instrutor também não é o mesmo que folha de pagamento ou dono da compensação.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando a configuração dá certo, a parte de identidade de ensino do onboarding e da equipe fica satisfeita.',
+          'Se a pergunta for sobre quem pode gerenciar a academia, use Access em vez de Instructors.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Acesso', to: '/help-v3/owner/access' },
+          { label: 'Onboarding', to: '/help-v3/owner/onboarding' }
+        ]
+      },
+      operations_analytics: {
+        badge: 'Dono',
+        title: 'Usar operações e analytics',
+        intro: 'Use Operations quando você precisar de métricas de nível dono, relatórios em tempo real, tendências ou relatórios mensais, em vez de trabalho administrativo comum.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar métricas em tempo real e métricas resumidas da academia.',
+          'Abrir superfícies de insights, trends e monthly reporting.',
+          'Usar visões operacionais do dono em vez do dashboard admin comum para leitura de alto nível.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use dashboards operacionais e superfícies de relatório do dono.',
+          'Mantenha o contexto da academia selecionada do lado do dono ao interpretar analytics específicos da academia.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Operações e analytics são território de dono / operations, não de admin / staff comum.',
+          'Analytics é separado de identidade de instrutor e de identidade de acesso.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando o acesso dá certo, carregam o contexto operacional e de relatório do dono para a academia selecionada.',
+          'Se a superfície estiver ausente, o motivo pode ser papel ou entitlement, e não dados ruins da academia.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Pontos e salários', to: '/help-v3/owner/timesheets-salaries' },
+          { label: 'Supervisão', to: '/help-v3/owner/oversight' }
+        ]
+      },
+      timesheets_salaries: {
+        badge: 'Dono',
+        title: 'Gerenciar ponto e salários',
+        intro: 'Use essas ferramentas operacionais do dono quando precisar acompanhar o tempo da equipe ou gerenciar dados ligados à remuneração.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Registrar entrada e saída da equipe ou revisar o tempo já registrado.',
+          'Revisar e gerenciar dados ligados a salários ou remuneração.',
+          'Separar questões de remuneração da identidade de instrutor ou do acesso administrativo.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use telas operacionais do dono como staff time e staff salaries.',
+          'Se a questão for remuneração, e não identidade de ensino, volte para cá.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'As telas de remuneração não definem quem é instrutor.',
+          'Elas também não substituem o gerenciamento de access ou permissions.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando a atualização dá certo, os dados de tempo ou remuneração do lado do dono mudam.',
+          'Se o problema da equipe for na verdade distribuição de papel, volte para Instructors ou Access.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Análises de operações', to: '/help-v3/owner/operations-analytics' },
+          { label: 'Acesso', to: '/help-v3/owner/access' }
+        ]
+      },
+      oversight: {
+        badge: 'Dono',
+        title: 'Usar supervisão do dono',
+        intro: 'Use Oversight quando precisar revisar as ferramentas exclusivas do dono para issue records, delete records e audit logs.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar issue records.',
+          'Revisar delete records.',
+          'Revisar audit logs na área exclusiva de supervisão do dono.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a área de oversight do lado operacional do dono, e não o dashboard administrativo comum.',
+          'Abra essas ferramentas apenas quando a questão pertencer à revisão histórica ou operacional.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Essas telas são ferramentas de supervisão exclusivas do dono.',
+          'Elas não fazem parte do fluxo comum de Cards do lado admin.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'A supervisão ajuda o dono a confirmar o que realmente aconteceu no histórico ou na operação.',
+          'Se houver ação de seguimento, normalmente você volta para o fluxo correto de admin ou de aluno.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Análises de operações', to: '/help-v3/owner/operations-analytics' },
+          { label: 'Ferramentas', to: '/help-v3/owner/tools' }
+        ]
+      },
+      tools: {
+        badge: 'Dono',
+        title: 'Usar ferramentas do dono e recursos bloqueados',
+        intro: 'Use este tópico quando precisar entender o que fazem as ferramentas opcionais do dono e onde esses fluxos aparecem quando o acesso está disponível.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Abrir a ferramenta do dono ou o recurso bloqueado que corresponde ao fluxo da academia de que você precisa.',
+          'Usar ferramentas do dono em cima do fluxo principal da academia, e não no lugar dele.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a entrada correspondente do dashboard do dono ou de operações depois que o acesso existir.',
+          'Mantenha a academia selecionada em mente antes de assumir que uma ferramenta está ausente.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'A ajuda deve explicar propósito e fluxo da ferramenta, e não mecânicas antigas de compra.',
+          'Suposições antigas de bundle não devem ser tratadas como verdade do produto.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando o acesso relevante existir, a ferramenta abre sua própria superfície de fluxo.',
+          'Se o acesso estiver faltando, a ausência costuma estar ligada a papel ou entitlement, e não a uma rota quebrada.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Operações e analytics', to: '/help-v3/owner/operations-analytics' },
+          { label: 'Gestão da academia', to: '/help-v3/owner/business-management' }
+        ]
+      }
+    },
+    account: {
+      home: {
+        badge: 'Conta',
+        title: 'Guia da conta e das configurações',
+        intro: 'Use este guia quando precisar entrar, redefinir senha, atualizar perfil, ajustar preferências ou encerrar a sessão.',
+        areas_title: 'Tópicos da conta',
+        links: [
+          {
+            title: 'Acessar a conta',
+            body: 'Entrar, criar conta ou recuperar o acesso pelo fluxo de redefinição de senha.',
+            links: [
+              { label: 'Entrar', to: '/help-v3/account/sign-in' },
+              { label: 'Criar conta', to: '/help-v3/account/create-account' },
+              { label: 'Redefinir senha', to: '/help-v3/account/reset-password' },
+              { label: 'Mudar senha', to: '/help-v3/account/change-password' }
+            ]
+          },
+          {
+            title: 'Perfil e vínculos',
+            body: 'Gerenciar dados da conta adulta e vínculos com contas infantis.',
+            links: [
+              { label: 'Perfil', to: '/help-v3/account/profile' },
+              { label: 'Contas infantis', to: '/help-v3/account/child-accounts' }
+            ]
+          },
+          {
+            title: 'Configurações e saída',
+            body: 'Ajustar privacidade, preferências, logout e exclusão da conta.',
+            links: [
+              { label: 'Privacidade e progressão', to: '/help-v3/account/privacy-progression' },
+              { label: 'Preferências', to: '/help-v3/account/preferences' },
+              { label: 'Excluir conta', to: '/help-v3/account/delete-account' },
+              { label: 'Sair', to: '/help-v3/account/logout' }
+            ]
+          }
+        ]
+      },
+      create_account: {
+        badge: 'Conta',
+        title: 'Criar conta',
+        intro: 'Use a criação de conta quando você ainda não tem uma conta DojoMate e precisa começar o fluxo correto de aluno ou de administração.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Criar uma nova conta DojoMate.',
+          'Escolher o caminho de papel que corresponde ao que você realmente precisa.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Comece pela tela de criação de conta no fluxo de entrada de autenticação.',
+          'Decida primeiro se você vai entrar para treinar ou se vai criar e gerenciar uma academia.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Escolher o caminho de papel errado logo no começo pode confundir ainda mais qual guia você deve seguir depois.',
+          'Se o email já pertence a uma conta existente, use entrar ou redefinir senha em vez de criar outra conta.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, o app segue para o fluxo correspondente de aluno ou admin.',
+          'Se o cadastro falhar, o app deve usar o tratamento de autenticação normalizado atual em vez de mensagens antigas e vagas.',
+          'O próximo passo útil costuma ser algo ligado ao papel, como entrar em uma academia ou começar a configuração da academia.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Entrar', to: '/help-v3/account/sign-in' },
+          { label: 'Entrar em uma academia', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      reset_password: {
+        badge: 'Conta',
+        title: 'Redefinir senha',
+        intro: 'Use a redefinição de senha quando você tiver esquecido a senha e precisar recuperar o acesso à conta.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Solicitar o envio do email de redefinição de senha.',
+          'Entrar no fluxo de recuperação de acesso quando o login normal não resolve.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Entre no fluxo de redefinição a partir da tela Sign In.',
+          'Se o problema for senha esquecida, e não um simples erro de login, comece por aqui.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Este é o fluxo para recuperar uma senha perdida, não para mudar a senha depois de entrar.',
+          'Se o endereço de email estiver errado, o email de redefinição não vai para a caixa correta.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, o sistema envia um email de redefinição.',
+          'Se o email não chegar, verifique a caixa de entrada e tente novamente antes de criar outra conta.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Entrar', to: '/help-v3/account/sign-in' },
+          { label: 'Criar conta', to: '/help-v3/account/create-account' }
+        ]
+      },
+      change_password: {
+        badge: 'Conta',
+        title: 'Alterar senha',
+        intro: 'Use este fluxo quando já estiver com sessão iniciada e quiser atualizar a senha da conta atual.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Alterar a senha da conta enquanto já está com login ativo.',
+          'Melhorar a segurança sem sair do caminho atual da conta.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a tela de change password nas configurações da conta com sessão iniciada.',
+          'Se o problema não for senha esquecida, e sim uma atualização deliberada, comece por aqui.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Esse fluxo é diferente da redefinição de senha.',
+          'Normalmente ainda será necessária a senha atual para confirmar a mudança.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, a nova senha passa a valer para a conta.',
+          'A sessão deste dispositivo pode continuar, enquanto outras sessões podem ser revogadas.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Redefinir senha', to: '/help-v3/account/reset-password' },
+          { label: 'Sair', to: '/help-v3/account/logout' }
+        ]
+      },
+      sign_in: {
+        badge: 'Conta',
+        title: 'Entrar',
+        intro: 'Use Entrar quando a conta já existe e você quer iniciar uma sessão normal no DojoMate.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Entrar com credenciais de uma conta existente.',
+          'Iniciar uma sessão normal de aluno, admin ou dono.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a tela Sign In como ponto principal de entrada.',
+          'Se o problema for senha esquecida, e não uma falha comum de login, veja o tópico de redefinição de senha.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Os resultados atuais de autenticação seguem as regras normalizadas novas, e não os textos antigos de erro.',
+          'Alguns problemas de integridade da conta são fluxos de suporte ou recuperação, e não apenas senha errada.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, o app inicia a sessão atual do usuário.',
+          'Se a sessão não puder começar normalmente, o app pode levar você para recuperação ou suporte em vez de mostrar apenas um erro genérico de credenciais.',
+          'As próximas requisições protegidas passam a depender do fluxo atual de refresh token, e não do caminho antigo de compatibilidade.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Redefinir senha', to: '/help-v3/account/reset-password' },
+          { label: 'Criar conta', to: '/help-v3/account/create-account' }
+        ]
+      },
+      preferences: {
+        badge: 'Conta',
+        title: 'Ajustar preferências',
+        intro: 'Use Preferências quando precisar mudar idioma, moeda, tema ou outras configurações pessoais.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Ajustar idioma do app e preferências de exibição.',
+          'Mudar configurações pessoais ligadas à experiência da conta.',
+          'Ajustar sua experiência no app sem mexer nas configurações de business da academia.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as telas relacionadas a configurações da conta e preferências.',
+          'Se o que você quer mudar é a experiência pessoal no app, e não os dados da academia, permaneça aqui.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Preferências não mudam as configurações de business da academia.',
+          'Algumas mudanças aparecem na hora, e outras podem depender da próxima atualização para refletir totalmente.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, a apresentação do app ou a experiência da conta é atualizada com as novas escolhas.',
+          'Se você quer encerrar a sessão atual, o próximo passo é usar Logout, e não procurar exclusão de conta aqui.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Privacidade e progressão', to: '/help-v3/account/privacy-progression' },
+          { label: 'Sair', to: '/help-v3/account/logout' }
+        ]
+      },
+      profile: {
+        badge: 'Conta',
+        title: 'Editar seu perfil',
+        intro: 'Use Profile quando os detalhes da própria conta adulta precisarem ser revisados ou atualizados.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar detalhes do perfil ligados à conta adulta.',
+          'Atualizar campos do perfil a partir do fluxo de conta com sessão iniciada.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as superfícies de profile user e edit-profile.',
+          'Volte para cá quando o problema estiver nos detalhes de identidade da conta, e não na membership da academia.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Edições de perfil não substituem decisões de membership da academia.',
+          'Relações com child accounts são um fluxo separado.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, o perfil da conta reflete os valores salvos mais recentes.',
+          'Se o problema verdadeiro for uma relação de child account ou membership, mude para o tópico correto.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Contas infantis', to: '/help-v3/account/child-accounts' },
+          { label: 'Privacidade e progressão', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      child_accounts: {
+        badge: 'Conta',
+        title: 'Gerenciar contas infantis',
+        intro: 'Use Child Accounts quando precisar lidar com contas infantis vinculadas à conta adulta.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar as contas infantis ligadas à conta adulta atual.',
+          'Entender a relação entre os dados da criança e a conta adulta.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as telas relacionadas a child account dentro do caminho de conta com sessão iniciada.',
+          'Se a questão envolver responsável, criança ou relação de gerenciamento, volte para cá.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'A relação com contas infantis é diferente da edição comum do perfil adulto.',
+          'Também é diferente do estado de aprovação de membros da academia.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, a conta mostra o estado mais recente dos vínculos infantis.',
+          'Se o problema for na verdade membership da academia, volte para um tópico de membros.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Perfil', to: '/help-v3/account/profile' },
+          { label: 'Entrar em uma academia', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      privacy_progression: {
+        badge: 'Conta',
+        title: 'Gerenciar privacidade e configurações de progressão',
+        intro: 'Use este tópico quando a questão for visibilidade, participação em ranking, exposição do perfil ou escolhas de privacidade em nível de conta.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Revisar configurações de conta ligadas à privacidade.',
+          'Controlar configurações de progressão ou visibilidade de perfil quando o app as expõe.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use as superfícies de settings privacy e progression dentro do caminho de conta com sessão iniciada.',
+          'Volte para cá quando a questão for visibilidade, e não lógica de lista ou reserva.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Reserva anônima não é a mesma coisa que configurações de privacidade.',
+          'Visibilidade de membros do lado da academia e privacidade da conta são ideias relacionadas, mas não idênticas.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, o app usa as configurações salvas mais recentes de privacidade ou progressão.',
+          'Se o problema for especificamente anonimato na lista de reservas, use Booking em vez disso.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Reservas', to: '/help-v3/member/booking' },
+          { label: 'Preferências', to: '/help-v3/account/preferences' }
+        ]
+      },
+      delete_account: {
+        badge: 'Conta',
+        title: 'Excluir conta',
+        intro: 'Use o fluxo de exclusão quando quiser apagar permanentemente toda a conta DojoMate, e não apenas sair de uma academia.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Iniciar o fluxo de exclusão permanente da conta inteira.',
+          'Distinguir exclusão de conta de remoção de membership de uma academia específica.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a tela de privacidade da conta ou a tela relacionada à exclusão.',
+          'Se seu objetivo for apenas encerrar a sessão atual, use Logout.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Excluir a conta inteira é diferente de sair de uma academia.',
+          'Esta é uma ação permanente mais forte e não deve ser confundida com um logout comum.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Quando dá certo, o acesso à conta inteira é removido.',
+          'Se você só quer remover a relação com uma academia específica, volte para os fluxos de membro ou da academia.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Sair', to: '/help-v3/account/logout' },
+          { label: 'Privacidade e progressão', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      logout: {
+        badge: 'Conta',
+        title: 'Sair',
+        intro: 'Use Logout quando quiser encerrar a sessão atual do dispositivo e sair do estado autenticado de forma limpa.',
+        what_title: 'O que você pode fazer',
+        what_items: [
+          'Encerrar a sessão atual do app com login ativo.',
+          'Preparar o dispositivo para outra conta ou para voltar depois.'
+        ],
+        where_title: 'Onde fazer isso',
+        where_items: [
+          'Use a área de configurações da conta com sessão iniciada.',
+          'Escolha sair em vez de excluir a conta quando quiser apenas parar de usar a sessão atual.'
+        ],
+        limits_title: 'Limites importantes',
+        limits_items: [
+          'Logout encerra a sessão atual, mas não exclui a conta.',
+          'Se a senha em si precisa mudar, use Change Password.'
+        ],
+        results_title: 'O que acontece depois',
+        results_items: [
+          'Depois do sucesso, o app limpa o estado atual de login neste dispositivo.',
+          'Você pode voltar a entrar depois com a mesma conta ou com outra.',
+          'Logout é o caminho seguro para encerrar sessão quando você não precisa dos efeitos mais fortes de mudar senha ou excluir a conta.'
+        ],
+        next_title: 'Próximo tópico',
+        next_links: [
+          { label: 'Entrar', to: '/help-v3/account/sign-in' },
+          { label: 'Criar conta', to: '/help-v3/account/create-account' }
+        ]
+      }
+    }
+  },
   help_v2: {
     support: {
       heading: 'Precisa de mais ajuda?',

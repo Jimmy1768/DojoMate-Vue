@@ -1,4 +1,1433 @@
 export default {
+  help_v3: {
+    support: {
+      heading: '도움이 더 필요하신가요?',
+      default_description: '추가 질문, 예외 상황, 또는 앱 밖으로 이어지는 흐름 설명이 필요하면 Source Combatives의 DojoMate 도움말 게시판을 이용하세요.',
+      default_button: 'DojoMate 도움말 게시판 열기'
+    },
+    layout: {
+      badge: '도움말 v3',
+      intro: '현재 DojoMate의 대시보드와 역할에 맞춰 정리한 워크플로 가이드입니다.',
+      open_v2: '도움말 v2 열기',
+      search_placeholder: '도움말 v3 검색',
+      search_no_results: '검색 결과가 없습니다',
+      nav: {
+        start_here: '여기서 시작',
+        home: '도움말 v3 홈',
+        member_home: '학생 가이드',
+        admin_home: '관리 가이드',
+        owner_home: '오너 가이드',
+        account_home: '계정 가이드',
+        member: '학생',
+        admin: '관리 / 스태프',
+        owner: '오너 / 운영',
+        account: '계정 / 설정',
+        join_academy: '도장 가입',
+        memberships: '회원 자격',
+        member_cards: '카드',
+        card_disputes: '카드 이의 제기',
+        booking: '예약',
+        attendance_records: '출석 기록',
+        system_alerts: '시스템 알림',
+        broadcasts: 'Broadcast',
+        online_learning: '온라인 학습',
+        events: '이벤트',
+        academy_context: '도장 컨텍스트',
+        admin_members: '멤버 관리',
+        admin_cards: '카드 관리',
+        session_debt: '세션 부채',
+        lessons: '수업 템플릿',
+        schedule: '일정',
+        admin_booking: '대리 예약',
+        admin_broadcasts: 'Broadcast 발행',
+        alerts_qr: '알림 및 QR 도구',
+        create_academy: '도장 만들기',
+        onboarding: '온보딩',
+        business_management: '비즈니스 관리',
+        instructors: '강사 관리',
+        access: '접근 권한',
+        operations_analytics: '운영 분석',
+        timesheets_salaries: '근태 및 급여',
+        oversight: '감사 및 검토',
+        owner_tools: '도구',
+        sign_in: '로그인',
+        create_account: '계정 만들기',
+        reset_password: '비밀번호 재설정',
+        change_password: '비밀번호 변경',
+        profile: '프로필',
+        child_accounts: '아동 계정',
+        privacy_progression: '개인정보 및 진행도',
+        preferences: '환경설정',
+        delete_account: '계정 삭제',
+        logout: '로그아웃'
+      }
+    },
+    welcome: {
+      badge: '도움말 v3',
+      title: '현재 워크플로 가이드',
+      intro: '현재 DojoMate 역할과 대시보드 기준으로 작업 방법을 찾고 싶을 때는 도움말 v3를 사용하세요.',
+      areas_title: '내 작업에 맞는 영역 선택',
+      member_title: '학생',
+      member_body: '도장 가입, 카드, 예약, 알림, Broadcast, 온라인 학습, 이벤트.',
+      member_link: '학생 가이드 열기',
+      admin_title: '관리 / 스태프',
+      admin_body: '멤버, 카드, 일정, 대리 예약, Broadcast, 도장 운영 업무.',
+      admin_link: '관리 가이드 열기',
+      owner_title: '오너 / 운영',
+      owner_body: '도장 생성, 온보딩, 오너 전용 설정, 접근 권한, 운영 워크플로.',
+      owner_link: '오너 가이드 열기',
+      account_title: '계정 / 설정',
+      account_body: '로그인, 비밀번호 지원, 프로필, 개인정보, 환경설정, 로그아웃.',
+      account_link: '계정 가이드 열기',
+      note_title: 'v3가 다른 점',
+      note_body: 'v3는 현재 제품의 역할과 대시보드 책임에 맞춰 정리되어 있어서, 섞여 보이기 쉬운 v2보다 찾기 쉽고 이후 어시스턴트 추출에도 더 적합합니다.',
+      note_button: '도움말 v2 보기'
+    },
+    member: {
+      home: {
+        badge: '학생',
+        title: '학생 가이드',
+        intro: '도장에서 수련하며 가입, 회원 자격, 카드, 예약, 알림, Broadcast, 온라인 학습, 이벤트에 대한 도움이 필요할 때 이 가이드를 사용하세요.',
+        areas_title: '학생 주제',
+        links: [
+          {
+            title: '도장 가입과 회원 자격',
+            body: '올바른 도장에 가입하고 현재 선택된 도장 컨텍스트를 확인합니다.',
+            links: [
+              { label: '도장 가입', to: '/help-v3/member/join-academy' },
+              { label: '회원 자격', to: '/help-v3/member/memberships' }
+            ]
+          },
+          {
+            title: '카드와 수업',
+            body: '카드를 확인하고, 이의를 제기하고, 예약하고, 출석 기록을 확인합니다.',
+            links: [
+              { label: '카드', to: '/help-v3/member/cards' },
+              { label: '카드 이의 제기', to: '/help-v3/member/card-disputes' },
+              { label: '예약', to: '/help-v3/member/booking' },
+              { label: '출석 기록', to: '/help-v3/member/attendance-records' }
+            ]
+          },
+          {
+            title: '도장 업데이트',
+            body: '시스템 알림, Broadcast, 온라인 학습, 이벤트 정보를 확인합니다.',
+            links: [
+              { label: '시스템 알림', to: '/help-v3/member/system-alerts' },
+              { label: 'Broadcast', to: '/help-v3/member/broadcasts' },
+              { label: '온라인 학습', to: '/help-v3/member/online-learning' },
+              { label: '이벤트', to: '/help-v3/member/events' }
+            ]
+          }
+        ]
+      },
+      join_academy: {
+        badge: '학생',
+        title: '도장 가입',
+        intro: 'DojoMate를 사용하는 도장에 계정을 연결하고 싶을 때 이 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          'Discover에서 도장을 둘러봅니다.',
+          '도장 이름으로 검색합니다.',
+          '도장에서 제공한 QR 코드를 스캔합니다.',
+          '가입을 결정하기 전에 도장 상세를 엽니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '여러 도장을 먼저 비교하고 싶다면 Discover Academy를 사용합니다.',
+          '이미 도장을 알고 있거나 QR을 바로 스캔하려면 Academy Search를 사용합니다.',
+          '먼저 도장 상세 페이지에서 정말 올바른 도장인지 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '가입 요청을 보낸 뒤에도 도장에서 먼저 승인해야 할 수 있습니다.',
+          '부모 관리 계정이나 아동 계정 연결 때문에 추가 단계가 생길 수 있습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 그 도장이 academy list 또는 pending 상태로 나타납니다.',
+          '아직 승인이 나지 않았다면 이후 학생 기능은 일부 제한될 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '회원 자격', to: '/help-v3/member/memberships' },
+          { label: '카드', to: '/help-v3/member/cards' }
+        ]
+      },
+      memberships: {
+        badge: '학생',
+        title: '회원 자격과 도장 컨텍스트 관리',
+        intro: '한 개 또는 여러 개의 도장에 속해 있고, 현재 어떤 도장이 활성화되어 있는지 확인하고 싶을 때 이 주제를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '계정에 연결된 도장들을 확인합니다.',
+          '카드, 예약, Broadcast를 사용하기 전에 현재 선택된 도장을 바꿉니다.',
+          '무언가가 없다고 느껴질 때 먼저 올바른 도장에 있는지 확인합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '가입된 academy list와 학생용 academy context 화면을 사용합니다.',
+          '카드나 수업이 없다고 판단하기 전에 현재 선택된 도장을 다시 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '도장을 잘못 선택하면 카드, 일정, Broadcast가 없는 것처럼 보일 수 있습니다.',
+          '회원 자격 상태는 도장 승인이나 아동 계정 연결의 영향도 받을 수 있습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '올바른 도장을 선택하면 이후 학생 화면들이 그 도장 데이터를 불러옵니다.',
+          '잘못된 도장에 머물러 있으면 예약과 카드 관련 내용이 계속 어긋나 보일 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '카드', to: '/help-v3/member/cards' },
+          { label: '예약', to: '/help-v3/member/booking' }
+        ]
+      },
+      cards: {
+        badge: '학생',
+        title: '카드와 보류 중 결제 확인',
+        intro: '현재 사용할 수 있는 카드, 보류 중인 카드 결제, 또는 예약이 되지 않는 이유가 카드 때문인지 확인하고 싶을 때 이 주제를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '현재 선택된 도장에서 사용할 수 있는 카드를 확인합니다.',
+          '보류 중인 카드 결제 흐름이 있는지 확인합니다.',
+          '예약 실패가 실제 카드 문제인지 먼저 분리해서 봅니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '학생용 카드 화면과 보류 중 카드 결제 흐름을 사용합니다.',
+          '예약 화면에서 사용할 수 있는 카드가 없다고 나오면 먼저 여기로 돌아와 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '학생 카드는 현재 선택된 도장에 묶입니다.',
+          '이곳은 오너나 관리 측 감사 검토 화면이 아닙니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '보류 중 결제가 성공하면 카드가 사용 가능한 상태로 바뀔 수 있습니다.',
+          '결제나 발급 변경 후에도 카드가 여전히 이상해 보이면 분쟁 흐름을 사용하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '카드 분쟁', to: '/help-v3/member/card-disputes' },
+          { label: '예약', to: '/help-v3/member/booking' }
+        ]
+      },
+      booking: {
+        badge: '학생',
+        title: '수업 예약 또는 예약 취소',
+        intro: '도장 일정표를 열고, 수업을 확인하고, 사용할 카드를 고른 뒤 자리를 확정하고 싶을 때 예약 흐름을 사용하세요.',
+        steps_title: '일반적인 단계',
+        steps_items: [
+          '현재 선택된 도장의 일정표를 엽니다.',
+          '예정된 수업 하나를 선택하고 상세 정보를 확인합니다.',
+          '카드 선택 화면을 열어 사용할 수 있는 카드를 고르고, 멤버 명단에서 익명으로 보일지 결정합니다.',
+          '예약 또는 예약 취소를 확정합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Academy Schedule, Academy Booking, Academy Card Selection을 사용합니다.',
+          '수업이나 카드가 이상해 보이면 먼저 현재 선택된 도장을 다시 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '예약은 현재 scheduled-lesson 예약 흐름을 사용하며, 일반적인 수업 편집이 아닙니다.',
+          '카드 사용 가능 여부와 예약 가드 규칙은 백엔드가 결정합니다.',
+          '익명 예약은 다른 멤버에게만 신원을 숨기며, 도장 직원은 실제 예약 정보를 계속 봅니다.',
+          '예약 동작이 막혀도 취소되었거나 처리된 수업 상세는 계속 읽을 수 있는 경우가 있습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 예약 상태와 보이는 명단이 업데이트됩니다.',
+          '예상된 가드 실패는 왜 막혔는지 설명하며, 예를 들어 예약이 마감되었거나 수업이 이미 시작되었음을 알려줍니다.',
+          '요청이 실제로 처리되었는지 앱이 확인하지 못하면 새로고침 후 다시 확인해야 할 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '출석 기록', to: '/help-v3/member/attendance-records' },
+          { label: '시스템 알림', to: '/help-v3/member/system-alerts' }
+        ]
+      },
+      attendance_records: {
+        badge: '학생',
+        title: '출석 기록 확인',
+        intro: '지난 수업이 기대한 대로 기록되었는지 확인하고 싶을 때 출석 기록을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '현재 선택된 도장의 지난 출석 기록을 확인합니다.',
+          '특정 수업이 내 기록에 나타나는지 확인합니다.',
+          '예약과 수련 이후의 확인 자료로 기록을 사용합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '학생용 출석 화면이나 academy records 화면을 사용합니다.',
+          '이전 예약이나 방문 결과를 확인하고 싶을 때 먼저 여기서 시작하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '출석 기록은 확인용이며, 학생이 직접 수정하는 화면이 아닙니다.',
+          '기록이 잘못되었다면 도장 측에서 수정해야 합니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '정상 기록이 있으면 해당 수업이 등록되었음을 확인할 수 있습니다.',
+          '기록이 없거나 잘못되었다면 직접 고치려 하지 말고 도장 후속 처리로 넘어가야 합니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '예약', to: '/help-v3/member/booking' },
+          { label: '카드 분쟁', to: '/help-v3/member/card-disputes' }
+        ]
+      },
+      system_alerts: {
+        badge: '학생',
+        title: '시스템 알림 읽기',
+        intro: '계정, 도장, 또는 관련 학생 흐름에 연결된 중요한 업데이트를 확인해야 할 때 시스템 알림을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '시스템이 생성한 중요한 계정 또는 도장 업데이트를 읽습니다.',
+          '푸시 알림이 정확한 화면으로 이동하지 못할 때 안전한 대체 화면으로 사용합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Academy Alerts 같은 학생용 알림 화면을 사용합니다.',
+          '알림 탭으로 특정 화면에 들어가지 못하면 앱이 먼저 이곳으로 보낼 수 있습니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '시스템 알림은 채팅이 아닙니다.',
+          '모든 알림 유형에 완전한 딥링크가 준비된 것은 아닙니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '읽으면 읽음 상태가 업데이트될 수 있습니다.',
+          '알림이 다른 흐름을 가리키고 있다면 알림 화면에 머무르지 말고 그 흐름으로 이동하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: 'Broadcast', to: '/help-v3/member/broadcasts' },
+          { label: '예약', to: '/help-v3/member/booking' }
+        ]
+      },
+      broadcasts: {
+        badge: '학생',
+        title: '도장 Broadcast 읽기',
+        intro: 'Broadcast를 사용해 현재 선택된 도장의 게시물을 읽습니다. 학생 쪽 피드는 읽기 전용이며 도장 공지와 훈련 게시물을 보는 용도입니다.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          'Updates와 Training 사이를 전환합니다.',
+          '텍스트, 이미지, 도장 Broadcast 게시물을 읽습니다.',
+          '학생 대시보드를 벗어나지 않고 이미지를 크게 열어 봅니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '현재 선택된 도장에 연결된 학생용 Broadcast 화면을 사용합니다.',
+          '잘못된 피드가 보이면 먼저 도장 선택부터 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '학생용 Broadcast는 읽기 전용입니다.',
+          '댓글, 답글, 좋아요, 학생 게시 기능은 없습니다.',
+          '피드가 비어 있어도 기능이 고장 난 것은 아닐 수 있으며, 단순히 공개된 게시물이 아직 없을 수 있습니다.',
+          'Broadcast 내용은 도장 직원이나 오너가 작성합니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '정상적으로 불러오면 현재 선택된 도장의 피드가 표시됩니다.',
+          '계정 상태나 시스템 상태를 보고 싶다면 System Alerts를 사용하세요.',
+          '도장에 온라인 학습 권한이 있더라도 Broadcast와 Online은 서로 다른 영역입니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '시스템 알림', to: '/help-v3/member/system-alerts' },
+          { label: '온라인 학습', to: '/help-v3/member/online-learning' }
+        ]
+      },
+      card_disputes: {
+        badge: '학생',
+        title: '카드 분쟁 제기',
+        intro: '카드, 카드 삭제, 또는 카드 관련 변경이 학생 입장에서 잘못된 것처럼 보이고 도장 후속 처리가 필요할 때 카드 분쟁을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '발견한 카드 문제에 연결된 분쟁 기록을 만듭니다.',
+          '학생 입장에서 무엇이 잘못 보이는지 설명합니다.',
+          '문제를 예약이나 프로필 질문에 섞지 말고 전용 후속 경로로 분리합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Academy Disputes 같은 학생용 카드 / 분쟁 화면을 사용합니다.',
+          '가능하면 문제가 보이는 카드에서 바로 시작하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '분쟁을 제기해도 카드가 즉시 수정되지는 않습니다.',
+          'audit logs 같은 오너 전용 검토 도구는 학생 분쟁 흐름에 포함되지 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 분쟁이 도장 측의 후속 처리 항목이 됩니다.',
+          '도장 검토가 끝나기 전까지는 보이는 카드 상태가 바뀌지 않을 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '카드', to: '/help-v3/member/cards' },
+          { label: '출석 기록', to: '/help-v3/member/attendance-records' }
+        ]
+      },
+      online_learning: {
+        badge: '학생',
+        title: '온라인 학습 사용',
+        intro: '학생 계정에 온라인 학습 접근 권한이 있고, 커리큘럼 탐색, 수업 열기, 영상 시청, 숙제 제출을 하고 싶을 때 Online을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '접근 권한이 있을 때 학생 대시보드에서 Online을 엽니다.',
+          '커리큘럼, catalog, 수업 계층을 탐색합니다.',
+          '지도용 클립과 연결된 tip 영상을 봅니다.',
+          '소속 수업 흐름에서 숙제를 열고 제출합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Online Home, Curriculum, Catalog, Lesson, Video, Homework 화면을 사용합니다.',
+          '보고 싶은 클립까지 커리큘럼에서 단계별로 내려가세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          'Online 타일은 접근 권한이 있을 때만 나타납니다.',
+          '여기서의 Expo Online은 학생 소비용 화면이지 온라인 관리 화면이 아닙니다.',
+          '숙제와 tip 영상은 소속 수업과 슬라이스에 묶이며, 독립적인 도장 전체 피드가 아닙니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '접근 권한이 있으면 대시보드에 Online 진입점이 보입니다.',
+          '숙제와 tip 내용은 각 수업과 슬라이스에 남아 있으며, 떠다니는 별도 콘텐츠가 되지 않습니다.',
+          '권한이 없으면 빈 화면이 아니라 Online 진입점 자체가 보이지 않는 것이 정상입니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '이벤트', to: '/help-v3/member/events' },
+          { label: 'Broadcast', to: '/help-v3/member/broadcasts' }
+        ]
+      },
+      events: {
+        badge: '학생',
+        title: '이벤트와 등록 보기',
+        intro: '대회 이벤트를 둘러보고, 대회 프로필을 유지하거나, 이벤트 등록 단계를 관리하고 싶을 때 Events를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '참가 가능한 대회 이벤트를 둘러봅니다.',
+          '등록 전에 이벤트 상세를 엽니다.',
+          '대회 프로필을 만들거나 업데이트합니다.',
+          '이벤트가 지원하면 등록과 결제 단계를 관리합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '이벤트 목록, 상세, 프로필, 등록 화면을 사용합니다.',
+          '일부 이벤트 흐름은 연맹 사이트나 이벤트 사이트 같은 외부 제공자로 넘어갑니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '외부 제공자 흐름은 DojoMate app 안에 완전히 머무르지 않습니다.',
+          '등록 상태는 일반적인 도장 회원 흐름 밖의 이벤트 전용 요구사항에도 좌우될 수 있습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 대회 프로필이나 등록 상태가 업데이트됩니다.',
+          '외부 제공자를 쓰는 이벤트는 완전한 앱 내 양식이 아니라 외부로의 인계가 발생합니다.',
+          '대회 프로필 업데이트는 이후 이벤트 등록 준비의 일부가 될 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '회원 자격', to: '/help-v3/member/memberships' },
+          { label: '시스템 알림', to: '/help-v3/member/system-alerts' }
+        ]
+      }
+    },
+    admin: {
+      home: {
+        badge: '관리',
+        title: '관리 및 스태프 가이드',
+        intro: '도장 관리 대시보드에서 멤버, 카드, 일정, 대리 예약, Broadcast를 다룰 때 이 가이드를 사용하세요.',
+        areas_title: '관리 주제',
+        links: [
+          {
+            title: '도장 컨텍스트와 멤버',
+            body: '먼저 올바른 도장이 선택되었는지 확인한 뒤 멤버와 역할 관련 작업을 진행합니다.',
+            links: [
+              { label: '도장 컨텍스트', to: '/help-v3/admin/academy-context' },
+              { label: '멤버 관리', to: '/help-v3/admin/members' }
+            ]
+          },
+          {
+            title: '일상 운영',
+            body: '카드, 세션 부채, 수업 템플릿, 일정, 대리 예약을 처리합니다.',
+            links: [
+              { label: '카드 관리', to: '/help-v3/admin/cards' },
+              { label: '세션 부채', to: '/help-v3/admin/session-debt' },
+              { label: '수업 템플릿', to: '/help-v3/admin/lessons' },
+              { label: '일정', to: '/help-v3/admin/schedule' },
+              { label: '대리 예약', to: '/help-v3/admin/admin-booking' }
+            ]
+          },
+          {
+            title: '알림 및 도구',
+            body: 'Broadcast 발행, 알림, QR 도구를 사용합니다.',
+            links: [
+              { label: 'Broadcast 발행', to: '/help-v3/admin/broadcasts' },
+              { label: '알림 및 QR 도구', to: '/help-v3/admin/alerts-qr' }
+            ]
+          }
+        ]
+      },
+      cards: {
+        badge: '관리',
+        title: '카드 만들기와 발급',
+        intro: '카드 템플릿을 만들고, 활성 카드를 발급하고, 현재 카드 상태를 확인하거나, 도장 멤버가 사용할 수 있는 카드 상태를 바꾸고 싶을 때 관리용 Cards를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '카드 템플릿을 만듭니다.',
+          '기존 템플릿을 확인합니다.',
+          '활성 카드를 멤버에게 발급합니다.',
+          '활성 카드를 확인하고, 화면에서 허용하는 범위에서 일시정지 관련 상태를 다룹니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '템플릿 생성, 템플릿 목록, 발급, Active Cards 화면을 사용합니다.',
+          '학생 예약 문제가 사실 카드 문제라면 여기로 돌아와 확인하세요.',
+          '온보딩 중에는 첫 카드 마일스톤이 도장 생성 흐름에 속하므로 앱이 직접 Cards로 안내할 수 있습니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '카드 템플릿과 활성 카드는 서로 다른 층위입니다.',
+          'audit logs 같은 오너 전용 검토 도구는 일반 관리용 Cards 안내에 포함되지 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 카드와 관련된 관리 및 학생 흐름이 갱신됩니다.',
+          '카드 업데이트가 올바른 도장 컨텍스트에 반영되면 예약 가능 여부도 달라질 수 있습니다.',
+          '이 카드가 온보딩이나 직원 테스트 용도라 해도 정식 수금 준비와는 별개로 마일스톤으로 인정될 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '세션 부채', to: '/help-v3/admin/session-debt' },
+          { label: '대리 예약', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      academy_context: {
+        badge: '관리',
+        title: '현재 어떤 도장을 관리 중인지 확인',
+        intro: '여러 도장을 오가거나, 현재 올바른 관리 컨텍스트에 있는지 확신이 없을 때 먼저 academy context를 확인하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '현재 어떤 도장이 로드되어 있는지 확인합니다.',
+          '멤버, 카드, 일정, Broadcast를 다루기 전에 올바른 도장으로 전환합니다.',
+          '지금 내가 Admin인지 Business / Owner 경로인지 구분합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '도장 전환과 관리 진입 흐름을 사용합니다.',
+          '다른 도장에서 막 돌아왔다면 작업을 계속하기 전에 여기서 다시 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '관리와 스태프 작업은 현재 선택된 도장에 묶입니다.',
+          '오너나 Business 쪽 설정 작업을 일반 admin 기능으로 오해하면 안 됩니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '올바른 도장을 확인하면 이후 관리 화면이 해당 데이터를 불러옵니다.',
+          '도장을 잘못 선택하면 멤버, 카드, 일정이 누락되거나 어긋나 보일 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '멤버 관리', to: '/help-v3/admin/members' },
+          { label: '카드 관리', to: '/help-v3/admin/cards' }
+        ]
+      },
+      members: {
+        badge: '관리',
+        title: '멤버 관리',
+        intro: '대기 중, 승인됨, 거절됨, 또는 차단된 도장 멤버를 확인하고 도장 내 참여 상태를 살펴봐야 할 때 Members를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '대기 중이거나 승인된 멤버십 상태를 확인합니다.',
+          '화면이 허용하는 범위에서 거절, 차단, 또는 상태 업데이트를 수행합니다.',
+          '멤버 프로필과 출석 관련 정보를 엽니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Pending, Accepted, Rejected, Banned 같은 상태 화면을 사용합니다.',
+          '관리 쪽 멤버 영역에서 상세나 출석 정보를 엽니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '멤버, 강사, 관리 접근 권한은 같은 개념이 아닙니다.',
+          '강사로 표시된 승인된 성인 행은 일반 성인 멤버 행으로 설명하면 안 됩니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 해당 사람은 올바른 멤버 상태로 이동합니다.',
+          '관련 관리 화면도 새 상태에 맞춰 갱신됩니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '카드 관리', to: '/help-v3/admin/cards' },
+          { label: '대리 예약', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      session_debt: {
+        badge: '관리',
+        title: '세션 부채 정리',
+        intro: '카드나 예약 기록 때문에 스태프 쪽에서 정리해야 하는 부채 상태가 생겼을 때 이 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '열려 있는 세션 부채 항목을 검토합니다.',
+          '현재 관리 측 정리 흐름으로 부채를 해결합니다.',
+          '부채 처리를 학생 분쟁이나 오너 감독과 분리합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '현재 카드 도구에 속한 관리 측 debt 또는 card-debt 화면을 사용합니다.',
+          '멤버 프로필 가정에서가 아니라 카드 운영 흐름에서 여세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '부채 처리는 학생 측 분쟁과 같은 흐름이 아닙니다.',
+          '오너 검토 도구는 이 일상적인 관리 정산 흐름과 별개입니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '정산 후 부채 상태와 관련 카드 문맥이 업데이트됩니다.',
+          '기본 기록 자체가 분쟁 대상이라면 단순 미지급이 아니라 올바른 분쟁 또는 감독 경로로 전환해야 합니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '카드 관리', to: '/help-v3/admin/cards' },
+          { label: '멤버 관리', to: '/help-v3/admin/members' }
+        ]
+      },
+      lessons: {
+        badge: '관리',
+        title: '수업 템플릿 관리',
+        intro: '수업을 실제 일정에 게시하기 전에 템플릿을 만들거나 수정하거나 제거해야 할 때 Lessons를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '수업 템플릿을 만듭니다.',
+          '템플릿 안의 지도 내용과 일정 세부사항을 수정합니다.',
+          '더 이상 게시할 필요가 없는 템플릿을 삭제합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'lesson-day, create lesson, edit lesson 같은 템플릿 화면을 사용합니다.',
+          '실제 schedule 게시로 넘어가기 전에 여기서 템플릿 작업을 끝냅니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '수업 템플릿은 이미 게시된 예정 수업과 같은 개념이 아닙니다.',
+          'schedule 단계로 들어가기 전의 템플릿 변경만으로는 이미 게시된 일정 결과 전체가 자동으로 설명되지 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 이후 일정 게시에서 템플릿을 사용할 수 있습니다.',
+          '실제 이벤트가 이미 존재하면 schedule 쪽 편집이 따로 필요할 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '일정', to: '/help-v3/admin/schedule' },
+          { label: '대리 예약', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      schedule: {
+        badge: '관리',
+        title: '일정 게시 및 관리',
+        intro: '수업을 게시하고, 예정 수업을 수정하거나 취소하거나, 실제 도장 일정에서 제거해야 할 때 일정 도구를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '템플릿에서 예정 수업을 게시합니다.',
+          '예정 수업을 수정하거나 취소합니다.',
+          '예정 수업 상세와 명단 상태를 검토합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'schedule layout과 create/edit event 흐름을 사용합니다.',
+          '현재 상태를 확인해야 할 때는 해당 예정 수업 상세를 직접 여세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '취소되었거나 처리된 수업도 검토를 위해 계속 볼 수 있어야 합니다.',
+          '실제 예약 동작 자체만 가드 규칙에 따라 막혀야 합니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 도장 일정이 현재 예정 수업 상태를 반영하도록 새로고침됩니다.',
+          '수업이 취소되었더라도 상세 화면은 후속 검토에 여전히 유용할 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '수업 템플릿', to: '/help-v3/admin/lessons' },
+          { label: '대리 예약', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      admin_booking: {
+        badge: '관리',
+        title: '학생이나 멤버 대신 예약하기',
+        intro: '스태프가 관리 측 일정에서 멤버 대신 예약을 만들거나 제거해야 할 때 admin booking을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '관리 측에서 예정 수업을 엽니다.',
+          '대상 멤버와 유효한 카드를 선택합니다.',
+          '현재 예약 동작 흐름으로 예약을 만들거나 제거합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Admin Booking과 관련 카드 선택 흐름을 사용합니다.',
+          '일반 멤버 검색이 아니라 지금 다루는 예정 수업에서 시작하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '관리 측은 익명 예약을 만들 수 없습니다.',
+          '예약 허용 여부는 backend booking guard codes가 계속 결정합니다.',
+          '명단 상세가 보이더라도 예상치 못한 실패 때는 새로고침 후 재시도가 필요할 수 있습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 수업 명단과 예약 상태가 업데이트됩니다.',
+          '동작이 막히면 화면은 가드 조건을 설명해야 하며, 수업이 사라진 것처럼 보여서는 안 됩니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '일정', to: '/help-v3/admin/schedule' },
+          { label: '멤버 관리', to: '/help-v3/admin/members' }
+        ]
+      },
+      broadcasts: {
+        badge: '관리',
+        title: 'Broadcast 발행',
+        intro: '앱에서 도장 업데이트나 훈련 게시물을 내보내고 싶을 때 현재의 관리 측 Broadcast 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '텍스트와 이미지를 포함한 Broadcast를 만듭니다.',
+          '텍스트와 단일 MP4 영상을 포함한 Broadcast를 만듭니다.',
+          '현재 선택된 도장의 콘텐츠 피드에 즉시 게시합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '관리 측 Members 영역의 Broadcast 발행 화면을 사용합니다.',
+          '게시 전 올바른 선택 도장 컨텍스트에 있는지 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '현재는 임시저장 분기가 없습니다.',
+          '앱은 단일 영상만 지원하며 이미지와 영상 혼합 게시물은 만들 수 없습니다.',
+          '권한은 계속 도장 역할과 access에 따라 결정됩니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '생성에 성공하면 Broadcast가 바로 게시됩니다.',
+          '미디어나 권한이 맞지 않으면 숨은 초안이 아니라 생성 실패가 되어야 합니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '알림 및 QR 도구', to: '/help-v3/admin/alerts-qr' },
+          { label: '도장 컨텍스트', to: '/help-v3/admin/academy-context' }
+        ]
+      },
+      alerts_qr: {
+        badge: '관리',
+        title: '알림 및 QR 도구 사용',
+        intro: '현재 도장 컨텍스트와 관련된 알림, QR 동작, 또는 복귀 동작이 필요할 때 이 관리 측 지원 도구를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '도장에 속한 관리 또는 business 알림을 검토합니다.',
+          'QR 관련 도구를 엽니다.',
+          '복귀나 전환이 필요할 때 도장 컨텍스트 지원 흐름을 사용합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '도장 측 메뉴의 알림 화면과 QR 진입점을 사용합니다.',
+          '현재 도장이 틀리다면 도장 전환기로 돌아가세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '이 흐름은 도장 작업을 지원하지만 오너 전용 business 관리를 대체하지는 않습니다.',
+          '일부 복귀 동작은 일반 일상 메뉴가 아니라 더 넓은 bootstrap 또는 settings 경로에 속합니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '올바른 알림 또는 QR 동작은 다음 관련 도장 흐름으로 이동시킵니다.',
+          '문제가 실제로 오너 전용 business 설정이라면 다음 단계는 오너 쪽 영역으로 이동하는 것입니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '도장 컨텍스트', to: '/help-v3/admin/academy-context' },
+          { label: 'Broadcast 발행', to: '/help-v3/admin/broadcasts' }
+        ]
+      }
+    },
+    owner: {
+      home: {
+        badge: '오너',
+        title: '오너 및 운영 가이드',
+        intro: '도장 생성, 온보딩, 오너 전용 설정, 운영과 검토 업무가 필요할 때 이 가이드를 사용하세요.',
+        areas_title: '오너 주제',
+        links: [
+          {
+            title: '도장 생성과 온보딩',
+            body: '첫 도장을 만들고 마일스톤 기반 온보딩을 진행합니다.',
+            links: [
+              { label: '도장 만들기', to: '/help-v3/owner/create-academy' },
+              { label: '온보딩', to: '/help-v3/owner/onboarding' }
+            ]
+          },
+          {
+            title: '오너 비즈니스 관리',
+            body: '도장 정보, 강사, 관리 접근 권한을 관리합니다.',
+            links: [
+              { label: '비즈니스 관리', to: '/help-v3/owner/business-management' },
+              { label: '강사 관리', to: '/help-v3/owner/instructors' },
+              { label: '접근 권한', to: '/help-v3/owner/access' }
+            ]
+          },
+          {
+            title: '운영과 검토',
+            body: '분석, 근태와 급여, 감사 검토, 도구를 사용합니다.',
+            links: [
+              { label: '운영 분석', to: '/help-v3/owner/operations-analytics' },
+              { label: '근태 및 급여', to: '/help-v3/owner/timesheets-salaries' },
+              { label: '감사 및 검토', to: '/help-v3/owner/oversight' },
+              { label: '도구', to: '/help-v3/owner/tools' }
+            ]
+          }
+        ]
+      },
+      access: {
+        badge: '오너',
+        title: '접근 권한과 퍼미션 관리',
+        intro: '현재 도장의 관리 화면에 들어올 수 있는 승인된 성인 멤버를 정하고 싶을 때 Access를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '조건을 충족하는 승인된 성인 멤버에게 도장 관리 접근 권한을 부여합니다.',
+          '도장 단위 permission row를 업데이트하거나 제거합니다.',
+          '관리 접근 권한을 강사 역할과 분리해서 관리합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '오너 측 permissions 또는 Access 화면을 사용합니다.',
+          '좁은 메뉴에서는 버튼이 `Access`로 짧게 보일 수 있습니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '한 도장의 permission row를 제거해도 그 사람의 다른 도장 broader admin role이 자동으로 없어지지는 않습니다.',
+          '이 화면은 도장 관리 접근 권한을 다루며, 강사 신분을 다루는 화면이 아닙니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 그 사람이 현재 도장에서 어떤 관리 기능을 열 수 있는지가 달라집니다.',
+          '그 사람이 강사 역할도 필요하다면 Instructors를 별도로 사용하세요.',
+          '다른 도장에도 속해 있다면, 그 다른 도장 쪽 broader admin role은 계속 남아 있을 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '강사 관리', to: '/help-v3/owner/instructors' },
+          { label: '운영 분석', to: '/help-v3/owner/operations-analytics' }
+        ]
+      },
+      onboarding: {
+        badge: '오너',
+        title: '첫 도장 온보딩 진행하기',
+        intro: '도장을 만든 뒤 첫 도장 온보딩이 현재 어떻게 진행되는지 이해하고 싶을 때 이 주제를 사용하세요.',
+        steps_title: '마일스톤 순서',
+        steps_items: [
+          '도장을 만듭니다.',
+          '첫 강사를 추가하거나 오너가 직접 헤드 강사가 될지 결정합니다.',
+          '첫 카드 템플릿을 만듭니다.',
+          '첫 활성 카드를 발급합니다.',
+          '첫 예약 수업을 만듭니다.',
+          '첫 관리 측 예약 동작을 완료합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '가이드형 대시보드와 전체 화면 온보딩 안내를 따릅니다.',
+          '앱이 다음 마일스톤으로 강조해 주는 구역을 사용합니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '온보딩은 마일스톤 기반이며, 지속되는 usage-history 상태를 기준으로 합니다.',
+          '완료를 위해 실제 유료 학생이나 온라인 결제 설정이 필수는 아닙니다.',
+          '온보딩 완료가 곧 청구 또는 수금 준비 완료를 의미하지는 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '각 마일스톤을 마치면 앱이 다음 권장 구역을 열어 줍니다.',
+          '온보딩이 끝나면 더 넓은 관리 대시보드가 열리고, 권한이 있으면 추가 도구도 나타납니다.',
+          '이 튜토리얼은 실제 유료 멤버가 없어도 본인이나 스태프 테스트 흐름으로 완료할 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '강사 관리', to: '/help-v3/owner/instructors' },
+          { label: '접근 권한', to: '/help-v3/owner/access' }
+        ]
+      },
+      create_academy: {
+        badge: '오너',
+        title: '새 도장 만들기',
+        intro: '첫 도장을 만들거나 추가 도장을 새로 만들고 싶을 때 도장 생성 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '새 도장을 만듭니다.',
+          '여러 역할이나 여러 도장이 있을 때 생성 모드로 전환합니다.',
+          '생성 후 바로 다음 온보딩으로 이어집니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Business 생성 흐름과 관련 bootstrap / gate 화면을 사용합니다.',
+          '앱이 먼저 경로 선택 화면을 보여주면, 기존 관리로 들어가는 것이 아니라 새 도장 생성이 목적임을 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '생성 가능한 도장 수는 현재 플랜이나 academy slots의 영향을 받을 수 있습니다.',
+          '생성 모드를 취소하면 어떤 설정도 완료되지 않고 관리 진입점으로 돌아갑니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 새 도장이 선택되고, 이후 온보딩으로 진행됩니다.',
+          '중간에 취소하면 앱이 admin / business 선택 진입점으로 돌아갑니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '온보딩', to: '/help-v3/owner/onboarding' },
+          { label: '비즈니스 관리', to: '/help-v3/owner/business-management' }
+        ]
+      },
+      business_management: {
+        badge: '오너',
+        title: '도장 비즈니스 설정 관리',
+        intro: '도장 자체의 정보, 미디어, 오너 레벨 설정을 유지해야 할 때 Business Management를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '도장 기본 정보를 업데이트합니다.',
+          'logo, banner, gallery 등 도장 미디어를 관리합니다.',
+          '오너 레벨의 도장 설정과 라이프사이클 작업을 처리합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Business 관련 편집, 삭제, 미디어, 오너 설정 화면을 사용합니다.',
+          '일상 admin 작업이 아니라 도장 자체를 조정하는 일이라면 이 영역으로 돌아오세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '이 영역은 오너 범위의 academy-management 기능이며, 일반 스태프 권한이 아닙니다.',
+          '도장 정보를 업데이트해도 admin 접근 권한이나 운영 분석 권한이 자동으로 바뀌지는 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 도장 정보와 관련 오너 화면에 새 내용이 반영됩니다.',
+          '다음으로 누가 관리 화면에 들어갈 수 있는지 다루려면 Access로 이동하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '접근 권한', to: '/help-v3/owner/access' },
+          { label: '강사 관리', to: '/help-v3/owner/instructors' }
+        ]
+      },
+      instructors: {
+        badge: '오너',
+        title: '강사 관리',
+        intro: '도장 인력 중에서 가르치는 정체성 측면을 관리해야 할 때 Instructors를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '도장 안의 강사 정체성을 추가하거나 유지합니다.',
+          '온보딩과 이후 도장 운영에서 헤드 강사와 teaching staff 구성을 지원합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '오너 쪽 Business Instructors 화면을 사용합니다.',
+          '문제가 관리 접근이 아니라 가르치는 정체성에 관한 것이라면 여기로 돌아오세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '강사 정체성은 도장 관리 접근 권한과 다릅니다.',
+          '강사 정체성은 급여나 보상 소유와도 다릅니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '강사 설정이 성공하면 온보딩과 인력 구성에 필요한 teaching identity가 충족됩니다.',
+          '문제가 누가 도장을 관리하느냐라면 Access를 사용하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '접근 권한', to: '/help-v3/owner/access' },
+          { label: '온보딩', to: '/help-v3/owner/onboarding' }
+        ]
+      },
+      operations_analytics: {
+        badge: '오너',
+        title: '운영과 분석 사용',
+        intro: '일반 관리 작업이 아니라 오너 수준의 지표, 실시간 리포트, 추세, 월간 보고가 필요할 때 Operations를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '실시간 및 요약 도장 지표를 확인합니다.',
+          'insights, trends, monthly reporting 화면을 엽니다.',
+          '상위 수준 리포트 해석에는 일반 admin 대시보드가 아니라 오너 운영 뷰를 사용합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '오너 운영 대시보드와 리포트 화면을 사용합니다.',
+          '특정 도장 분석을 읽을 때는 현재 선택된 오너 도장 컨텍스트를 유지하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '운영과 분석은 오너 / operations 영역이지 일반 admin / staff 영역이 아닙니다.',
+          '분석은 강사 정체성이나 접근 정체성과 별개입니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '접근에 성공하면 현재 선택된 도장의 오너 리포트와 운영 문맥이 로드됩니다.',
+          '화면이 없으면 원인이 역할이나 권한일 수 있으며, 도장 데이터 오류만은 아닙니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '근태와 급여', to: '/help-v3/owner/timesheets-salaries' },
+          { label: '감독 검토', to: '/help-v3/owner/oversight' }
+        ]
+      },
+      timesheets_salaries: {
+        badge: '오너',
+        title: '근태 및 급여 관리',
+        intro: '스태프 근태를 추적하거나 보수 관련 데이터를 관리해야 할 때 이 오너 운영 도구를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '스태프 출퇴근 기록을 다루거나 기록된 시간을 검토합니다.',
+          '급여 또는 보수 관련 데이터를 검토하고 관리합니다.',
+          '보수 문제를 강사 신분이나 관리 접근 권한과 분리합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'staff time, staff salaries 같은 오너 운영 화면을 사용합니다.',
+          '문제가 보수이지 가르치는 신분이 아니라면 여기로 돌아오세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '보수 화면이 누가 강사인지를 정의하지는 않습니다.',
+          '보수 화면이 access 또는 permissions 관리를 대체하지도 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '업데이트에 성공하면 오너 측 근태 또는 보수 데이터가 바뀝니다.',
+          '스태프 문제가 실제로 역할 배정이라면 Instructors 또는 Access로 돌아가세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '운영 분석', to: '/help-v3/owner/operations-analytics' },
+          { label: '접근 권한', to: '/help-v3/owner/access' }
+        ]
+      },
+      oversight: {
+        badge: '오너',
+        title: '오너 감사 및 검토 사용',
+        intro: '오너 전용 issue records, delete records, audit logs 검토 도구가 필요할 때 Oversight를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          'issue records를 검토합니다.',
+          'delete records를 검토합니다.',
+          '오너 전용 감사 영역에서 audit logs를 검토합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '일반 관리 대시보드가 아니라 오너 운영 측 oversight 영역을 사용합니다.',
+          '문제가 기록 이력 또는 운영 검토에 속할 때만 이 도구를 엽니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '이 화면은 오너 전용 감사 도구입니다.',
+          '일반 관리 측 Cards 흐름이 아닙니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '감사 및 검토를 통해 이력이나 운영에서 실제로 무엇이 일어났는지 확인할 수 있습니다.',
+          '후속 조치가 필요하면 보통 올바른 관리 또는 학생 흐름으로 돌아갑니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '운영 분석', to: '/help-v3/owner/operations-analytics' },
+          { label: '도구', to: '/help-v3/owner/tools' }
+        ]
+      },
+      tools: {
+        badge: '오너',
+        title: '오너 도구와 제한 기능 사용',
+        intro: '선택형 오너 도구가 무엇을 하는지, 그리고 접근이 생기면 어디에 나타나는지 이해하고 싶을 때 이 주제를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '현재 도장 흐름에 맞는 오너 도구나 제한 기능을 엽니다.',
+          '오너 도구를 핵심 도장 흐름 위에 얹어 쓰고, 이를 대체하지는 않습니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '접근 권한이 생긴 뒤 해당 오너 / 운영 대시보드 진입점을 사용합니다.',
+          '도구가 정말 없는지 판단하기 전에 현재 선택된 도장을 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '도움말은 도구의 목적과 흐름을 설명해야 하며, 오래된 구매 메커니즘을 설명하면 안 됩니다.',
+          '오래된 bundle 가정은 더 이상 제품 사실로 다루면 안 됩니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '관련 접근 권한이 있으면 도구가 자체 워크플로 화면을 엽니다.',
+          '도구가 보이지 않으면 보통은 라우트 고장이 아니라 역할이나 entitlement 문제입니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '운영 분석', to: '/help-v3/owner/operations-analytics' },
+          { label: '비즈니스 관리', to: '/help-v3/owner/business-management' }
+        ]
+      }
+    },
+    account: {
+      home: {
+        badge: '계정',
+        title: '계정 및 설정 가이드',
+        intro: '로그인, 비밀번호 재설정, 프로필 수정, 환경설정 조정, 세션 종료가 필요할 때 이 가이드를 사용하세요.',
+        areas_title: '계정 주제',
+        links: [
+          {
+            title: '계정에 들어가기',
+            body: '로그인, 계정 만들기, 또는 비밀번호 재설정으로 접근을 복구합니다.',
+            links: [
+              { label: '로그인', to: '/help-v3/account/sign-in' },
+              { label: '계정 만들기', to: '/help-v3/account/create-account' },
+              { label: '비밀번호 재설정', to: '/help-v3/account/reset-password' },
+              { label: '비밀번호 변경', to: '/help-v3/account/change-password' }
+            ]
+          },
+          {
+            title: '프로필과 연결',
+            body: '성인 계정 정보와 아동 계정 연결을 관리합니다.',
+            links: [
+              { label: '프로필', to: '/help-v3/account/profile' },
+              { label: '아동 계정', to: '/help-v3/account/child-accounts' }
+            ]
+          },
+          {
+            title: '설정과 종료',
+            body: '개인정보, 환경설정, 로그아웃, 계정 삭제를 처리합니다.',
+            links: [
+              { label: '개인정보 및 진행도', to: '/help-v3/account/privacy-progression' },
+              { label: '환경설정', to: '/help-v3/account/preferences' },
+              { label: '계정 삭제', to: '/help-v3/account/delete-account' },
+              { label: '로그아웃', to: '/help-v3/account/logout' }
+            ]
+          }
+        ]
+      },
+      create_account: {
+        badge: '계정',
+        title: '계정 만들기',
+        intro: '아직 DojoMate 계정이 없고, 올바른 학생 또는 관리 흐름을 시작해야 할 때 계정 만들기를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '새로운 DojoMate 계정을 만듭니다.',
+          '실제 필요에 맞는 역할 경로를 선택합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '인증 진입 흐름의 account creation 화면에서 시작합니다.',
+          '내가 훈련을 위해 가입하는지, 아니면 도장을 만들고 관리하려는지 먼저 결정합니다.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '처음부터 역할 경로를 잘못 고르면 이후 어떤 가이드를 봐야 하는지 더 헷갈릴 수 있습니다.',
+          '이메일이 이미 기존 계정에 속한다면, 새로 만들지 말고 로그인이나 비밀번호 재설정을 사용하세요.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 앱이 학생 또는 관리에 맞는 흐름으로 이어집니다.',
+          '등록 실패 시에는 예전의 모호한 오류 문구가 아니라 현재 정규화된 인증 처리 규칙을 사용해야 합니다.',
+          '다음 실질적 단계는 도장 가입이나 도장 설정 시작처럼 역할에 따라 달라집니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '로그인', to: '/help-v3/account/sign-in' },
+          { label: '도장 가입', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      reset_password: {
+        badge: '계정',
+        title: '비밀번호 재설정',
+        intro: '비밀번호를 잊었고 계정 접근 권한을 다시 얻어야 할 때 비밀번호 재설정 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '비밀번호 재설정 이메일 발송을 요청합니다.',
+          '정상 로그인 대신 접근 복구 흐름으로 들어갑니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Sign In 화면에서 비밀번호 재설정 흐름으로 들어갑니다.',
+          '문제가 단순 로그인 실패가 아니라 비밀번호 분실이라면 여기서 시작하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '이 흐름은 잃어버린 비밀번호를 되찾기 위한 것이며, 로그인 후 변경하는 기능이 아닙니다.',
+          '이메일 주소 자체가 잘못되어 있으면 재설정 메일은 올바른 받은편지함으로 가지 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 비밀번호 재설정 이메일이 발송됩니다.',
+          '메일이 오지 않으면 새 계정을 만들기 전에 받은편지함 확인과 재시도를 먼저 하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '로그인', to: '/help-v3/account/sign-in' },
+          { label: '계정 만들기', to: '/help-v3/account/create-account' }
+        ]
+      },
+      change_password: {
+        badge: '계정',
+        title: '비밀번호 변경',
+        intro: '이미 로그인한 상태에서 현재 계정 비밀번호를 업데이트하고 싶을 때 이 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '로그인된 상태에서 계정 비밀번호를 변경합니다.',
+          '현재 계정 흐름을 유지한 채 보안을 강화합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '로그인된 계정 설정의 change password 화면을 사용합니다.',
+          '문제가 비밀번호 분실이 아니라 능동적인 갱신이라면 여기서 시작하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '이 흐름은 비밀번호 재설정과 다릅니다.',
+          '일반적으로 현재 비밀번호 확인이 필요합니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 계정에 새 비밀번호가 저장됩니다.',
+          '현재 기기 세션은 유지되면서 다른 기기 세션은 해제될 수 있습니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '비밀번호 재설정', to: '/help-v3/account/reset-password' },
+          { label: '로그아웃', to: '/help-v3/account/logout' }
+        ]
+      },
+      sign_in: {
+        badge: '계정',
+        title: '로그인',
+        intro: '계정이 이미 존재하고 정상적인 DojoMate 세션을 시작하고 싶을 때 로그인 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '기존 계정 자격 증명으로 로그인합니다.',
+          '일반적인 학생, 관리자, 또는 오너 세션을 시작합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'Sign In 화면을 기본 진입점으로 사용합니다.',
+          '문제가 단순 로그인 실패가 아니라 비밀번호 분실이라면 비밀번호 재설정 주제를 확인하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '현재 인증 결과는 오래된 오류 문구가 아니라 새로운 정규화 규칙에 따라 처리됩니다.',
+          '일부 계정 무결성 문제는 단순 비밀번호 오류가 아니라 지원 또는 복구 흐름입니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 앱이 현재 사용자 세션을 시작합니다.',
+          '세션을 정상적으로 시작할 수 없으면 앱이 단순 로그인 오류 대신 복구나 지원 흐름으로 보낼 수 있습니다.',
+          '이후 보호된 요청은 예전 호환 경로가 아니라 현재 refresh-token 흐름을 사용합니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '비밀번호 재설정', to: '/help-v3/account/reset-password' },
+          { label: '계정 만들기', to: '/help-v3/account/create-account' }
+        ]
+      },
+      preferences: {
+        badge: '계정',
+        title: '환경설정 조정',
+        intro: '언어, 통화, 테마, 기타 개인 설정을 바꾸고 싶을 때 환경설정을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '앱 언어와 표시 환경설정을 조정합니다.',
+          '계정 경험과 관련된 개인 설정을 바꿉니다.',
+          '도장의 business 설정을 건드리지 않고 내 app 사용 경험만 조정합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '계정 설정과 환경설정 관련 화면을 사용합니다.',
+          '바꾸려는 것이 개인 app 경험이지 도장 정보가 아니라면 이곳에 머무르세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '환경설정은 도장의 business 설정을 바꾸지 않습니다.',
+          '즉시 반영되는 항목도 있고, 완전히 반영되려면 다음 새로고침이 필요한 항목도 있습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 앱 표시나 계정 경험이 새 설정에 맞게 업데이트됩니다.',
+          '현재 세션을 끝내고 싶다면 여기서 계정 삭제를 찾지 말고 Logout을 사용하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '개인정보 및 진행도', to: '/help-v3/account/privacy-progression' },
+          { label: '로그아웃', to: '/help-v3/account/logout' }
+        ]
+      },
+      profile: {
+        badge: '계정',
+        title: '프로필 수정',
+        intro: '성인 계정 자체의 정보가 검토되거나 업데이트되어야 할 때 Profile을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '성인 계정에 묶인 프로필 세부정보를 확인합니다.',
+          '로그인된 계정 흐름에서 프로필 필드를 업데이트합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          'profile user와 edit-profile 관련 화면을 사용합니다.',
+          '도장 회원 정보가 아니라 계정 정체성 정보가 잘못되었다면 여기로 돌아오세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '프로필 수정이 도장 회원 결정 자체를 대신하지는 않습니다.',
+          '아동 계정 관계는 별도 흐름입니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 계정 프로필에 최신 저장값이 반영됩니다.',
+          '실제 문제가 아동 관계나 회원 관계라면 올바른 주제로 전환하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '아동 계정', to: '/help-v3/account/child-accounts' },
+          { label: '개인정보 및 진행도', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      child_accounts: {
+        badge: '계정',
+        title: '아동 계정 관리',
+        intro: '성인 계정에 연결된 아동 계정을 다뤄야 할 때 Child Accounts를 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '현재 성인 계정에 연결된 아동 계정을 검토합니다.',
+          '아동 정보와 성인 계정 사이의 관계를 이해합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '로그인된 계정 경로의 child account 관련 화면을 사용합니다.',
+          '문제가 보호자, 아동, 또는 관리 관계라면 여기로 돌아오세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '아동 계정 관계는 일반 성인 프로필 수정과 다릅니다.',
+          '도장 멤버 승인 상태와도 다른 흐름입니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 계정에 최신 아동 연결 상태가 표시됩니다.',
+          '문제가 실제로 도장 멤버십이라면 멤버 관련 주제로 돌아가세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '프로필', to: '/help-v3/account/profile' },
+          { label: '도장 가입', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      privacy_progression: {
+        badge: '계정',
+        title: '개인정보 및 진행도 설정 관리',
+        intro: '가시성, 랭크 참여, 프로필 노출, 또는 계정 수준 개인정보 선택이 문제일 때 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '개인정보 관련 계정 설정을 검토합니다.',
+          '앱이 노출하는 범위에서 진행도나 프로필 가시성 설정을 조정합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '로그인된 계정 경로의 settings privacy / progression 화면을 사용합니다.',
+          '문제가 명단이나 예약 로직이 아니라 가시성이라면 여기로 돌아오세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '익명 예약은 개인정보 설정 자체와 같은 개념이 아닙니다.',
+          '도장 측 멤버 가시성과 계정 개인정보는 관련은 있지만 동일하지 않습니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 앱이 최신 개인정보 또는 진행도 설정을 사용합니다.',
+          '문제가 예약 명단의 익명 표시 그 자체라면 Booking을 사용하세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '예약', to: '/help-v3/member/booking' },
+          { label: '환경설정', to: '/help-v3/account/preferences' }
+        ]
+      },
+      delete_account: {
+        badge: '계정',
+        title: '계정 삭제',
+        intro: '한 도장을 떠나는 것이 아니라 DojoMate 계정 전체를 영구 삭제하고 싶을 때 이 삭제 흐름을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '계정 전체의 영구 삭제 흐름을 시작합니다.',
+          '삭제 전에 계정 삭제와 단일 도장 멤버십 제거를 구분합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '계정 개인정보 또는 삭제 관련 화면을 사용합니다.',
+          '목표가 현재 세션만 멈추는 것이라면 Logout을 사용하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '계정 전체 삭제는 한 도장을 떠나는 것과 다릅니다.',
+          '이것은 더 강한 영구 동작이며 일반 로그아웃과 혼동하면 안 됩니다.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 계정 전체 접근이 제거됩니다.',
+          '특정 도장 관계만 정리하려는 것이라면 멤버 또는 도장 관련 흐름으로 돌아가세요.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '로그아웃', to: '/help-v3/account/logout' },
+          { label: '개인정보 및 진행도', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      logout: {
+        badge: '계정',
+        title: '로그아웃',
+        intro: '현재 기기 세션을 끝내고 로그인 상태를 깔끔하게 벗어나고 싶을 때 Logout을 사용하세요.',
+        what_title: '할 수 있는 일',
+        what_items: [
+          '현재 로그인된 앱 세션을 종료합니다.',
+          '다른 계정이나 나중의 재진입을 준비합니다.'
+        ],
+        where_title: '어디에서 하는가',
+        where_items: [
+          '로그인된 계정 설정 영역을 사용합니다.',
+          '현재 세션 사용만 멈추고 싶다면 계정 삭제가 아니라 로그아웃을 선택하세요.'
+        ],
+        limits_title: '중요한 제한',
+        limits_items: [
+          '로그아웃은 현재 세션만 끝내며 계정을 삭제하지는 않습니다.',
+          '비밀번호 자체를 바꾸고 싶다면 Change Password를 사용하세요.'
+        ],
+        results_title: '그 다음에는',
+        results_items: [
+          '성공하면 이 기기의 현재 로그인 상태가 지워집니다.',
+          '나중에 같은 계정이나 다른 계정으로 다시 로그인할 수 있습니다.',
+          '비밀번호 변경이나 삭제 같은 더 강한 계정 효과가 필요 없을 때 Logout은 안전한 세션 종료 경로입니다.'
+        ],
+        next_title: '다음 주제',
+        next_links: [
+          { label: '로그인', to: '/help-v3/account/sign-in' },
+          { label: '계정 만들기', to: '/help-v3/account/create-account' }
+        ]
+      }
+    }
+  },
   help_v2: {
     support: {
       heading: '도움이 더 필요하신가요?',

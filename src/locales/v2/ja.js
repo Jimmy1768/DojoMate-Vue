@@ -1,4 +1,1433 @@
 export default {
+  help_v3: {
+    support: {
+      heading: 'さらにサポートが必要ですか？',
+      default_description: '追加の質問、特殊ケース、またはアプリ外に続く導線については、Source Combatives の DojoMate ヘルプ掲示板をご利用ください。',
+      default_button: 'DojoMate ヘルプ掲示板を開く'
+    },
+    layout: {
+      badge: 'ヘルプ v3',
+      intro: '現在の DojoMate のダッシュボードと役割に合わせて整理したワークフローガイドです。',
+      open_v2: 'ヘルプ v2 を開く',
+      search_placeholder: 'ヘルプ v3 を検索',
+      search_no_results: '結果が見つかりません',
+      nav: {
+        start_here: 'ここから開始',
+        home: 'ヘルプ v3 ホーム',
+        member_home: '受講者ガイド',
+        admin_home: '管理ガイド',
+        owner_home: 'オーナーガイド',
+        account_home: 'アカウントガイド',
+        member: '受講者',
+        admin: '管理 / スタッフ',
+        owner: 'オーナー / 運営',
+        account: 'アカウント / 設定',
+        join_academy: '道場に参加する',
+        memberships: '会員資格',
+        member_cards: 'カード',
+        card_disputes: 'カード異議申し立て',
+        booking: '予約',
+        attendance_records: '出席記録',
+        system_alerts: 'システム通知',
+        broadcasts: 'Broadcast',
+        online_learning: 'オンライン学習',
+        events: 'イベント',
+        academy_context: '道場コンテキスト',
+        admin_members: 'メンバー管理',
+        admin_cards: 'カード管理',
+        session_debt: 'セッション負債',
+        lessons: 'レッスンテンプレート',
+        schedule: 'スケジュール',
+        admin_booking: '代理予約',
+        admin_broadcasts: 'Broadcast 発行',
+        alerts_qr: '通知と QR ツール',
+        create_academy: '道場を作成する',
+        onboarding: 'オンボーディング',
+        business_management: 'ビジネス管理',
+        instructors: 'インストラクター',
+        access: 'アクセス権',
+        operations_analytics: '運営分析',
+        timesheets_salaries: '勤怠と給与',
+        oversight: '監督レビュー',
+        owner_tools: 'ツール',
+        sign_in: 'サインイン',
+        create_account: 'アカウント作成',
+        reset_password: 'パスワード再設定',
+        change_password: 'パスワード変更',
+        profile: 'プロフィール',
+        child_accounts: '子どもアカウント',
+        privacy_progression: 'プライバシーと進捗',
+        preferences: '設定',
+        delete_account: 'アカウント削除',
+        logout: 'ログアウト'
+      }
+    },
+    welcome: {
+      badge: 'ヘルプ v3',
+      title: '現在のワークフローガイド',
+      intro: '現在の DojoMate の役割とダッシュボードに沿って手順を確認したいときは、ヘルプ v3 を使ってください。',
+      areas_title: '自分の作業に合う領域を選ぶ',
+      member_title: '受講者',
+      member_body: '道場参加、カード、予約、通知、Broadcast、オンライン学習、イベント。',
+      member_link: '受講者ガイドを開く',
+      admin_title: '管理 / スタッフ',
+      admin_body: 'メンバー、カード、スケジュール、代理予約、Broadcast、日常運営。',
+      admin_link: '管理ガイドを開く',
+      owner_title: 'オーナー / 運営',
+      owner_body: '道場作成、オンボーディング、オーナー専用設定、アクセス管理、運営ワークフロー。',
+      owner_link: 'オーナーガイドを開く',
+      account_title: 'アカウント / 設定',
+      account_body: 'サインイン、パスワード補助、プロフィール、プライバシー、設定、ログアウト。',
+      account_link: 'アカウントガイドを開く',
+      note_title: 'v3 の違い',
+      note_body: 'v3 は現在の製品内の役割とダッシュボード責務に合わせて整理されており、混在しやすい v2 より探しやすく、今後のアシスタント抽出にも向いています。',
+      note_button: 'ヘルプ v2 を見る'
+    },
+    member: {
+      home: {
+        badge: '受講者',
+        title: '受講者ガイド',
+        intro: '道場でトレーニングしていて、参加、会員資格、カード、予約、通知、Broadcast、オンライン学習、イベントで案内が必要なときはこのガイドを使ってください。',
+        areas_title: '受講者トピック',
+        links: [
+          {
+            title: '道場参加と会員資格',
+            body: '正しい道場に参加し、現在選択中の道場コンテキストを確認します。',
+            links: [
+              { label: '道場に参加する', to: '/help-v3/member/join-academy' },
+              { label: '会員資格', to: '/help-v3/member/memberships' }
+            ]
+          },
+          {
+            title: 'カードとクラス',
+            body: 'カード確認、異議申し立て、予約、出席記録の確認を行います。',
+            links: [
+              { label: 'カード', to: '/help-v3/member/cards' },
+              { label: 'カード異議申し立て', to: '/help-v3/member/card-disputes' },
+              { label: '予約', to: '/help-v3/member/booking' },
+              { label: '出席記録', to: '/help-v3/member/attendance-records' }
+            ]
+          },
+          {
+            title: '道場からの更新',
+            body: 'システム通知、Broadcast、オンライン学習、イベント情報を確認します。',
+            links: [
+              { label: 'システム通知', to: '/help-v3/member/system-alerts' },
+              { label: 'Broadcast', to: '/help-v3/member/broadcasts' },
+              { label: 'オンライン学習', to: '/help-v3/member/online-learning' },
+              { label: 'イベント', to: '/help-v3/member/events' }
+            ]
+          }
+        ]
+      },
+      join_academy: {
+        badge: '受講者',
+        title: '道場に参加する',
+        intro: 'DojoMate を使っている道場にアカウントを接続したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'Discover で道場を閲覧する。',
+          '道場名で検索する。',
+          '道場から渡された QR コードを読み取る。',
+          '参加を決める前に道場詳細を開く。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '複数の道場を比較したい場合は Discover Academy を使います。',
+          'すでに道場がわかっている場合や QR を読みたい場合は Academy Search を使います。',
+          'まず道場詳細で本当に正しい道場か確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '参加申請後も、道場側で承認が必要な場合があります。',
+          '保護者管理アカウントや子どもアカウント連携では追加手順が必要になることがあります。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、その道場が academy list または pending 状態に現れます。',
+          'まだ承認されていない場合、以後の受講者機能は一部制限されたままになることがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '会員資格', to: '/help-v3/member/memberships' },
+          { label: 'カード', to: '/help-v3/member/cards' }
+        ]
+      },
+      memberships: {
+        badge: '受講者',
+        title: '会員資格と道場コンテキストを管理する',
+        intro: '一つまたは複数の道場に所属していて、現在どの道場が有効なのか確認したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '自分のアカウントに紐づいた道場を確認する。',
+          'カード、予約、Broadcast を使う前に選択中の道場を切り替える。',
+          '何かが見当たらないとき、まず正しい道場にいるか確認する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '参加済み academy list と受講者側の academy context 画面を使います。',
+          'カードやクラスがないと決めつける前に、現在選択中の道場を再確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '道場選択が違うと、カード、スケジュール、Broadcast が存在しないように見えることがあります。',
+          '会員資格状態は、道場承認や子どもアカウント連携の影響も受けます。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '正しい道場を選ぶと、以後の受講者画面はその道場データを読み込みます。',
+          '間違った道場のままだと、予約やカード関連が引き続き不一致に見えます。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'カード', to: '/help-v3/member/cards' },
+          { label: '予約', to: '/help-v3/member/booking' }
+        ]
+      },
+      cards: {
+        badge: '受講者',
+        title: 'カードと保留中の支払いを確認する',
+        intro: '現在使えるカード、保留中のカード支払い、または予約できない理由がカードにあるかを確認したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '現在選択中の道場で使えるカードを確認する。',
+          '保留中の支払いカードがあるか確認する。',
+          '予約失敗が本当にカード原因かを先に切り分ける。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '受講者側のカード画面と保留中カード支払いフローを使います。',
+          '予約画面で利用可能カードがないと言われたら、先にここへ戻って確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '受講者カードは現在選択中の道場に紐づきます。',
+          'ここはオーナーや管理側の監査レビュー画面ではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '保留中支払いが成功すると、カードが利用可能状態に変わることがあります。',
+          '支払いや発行更新の後でもカード表示がおかしい場合は、異議申し立てフローを使ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'カード異議申し立て', to: '/help-v3/member/card-disputes' },
+          { label: '予約', to: '/help-v3/member/booking' }
+        ]
+      },
+      booking: {
+        badge: '受講者',
+        title: 'クラスを予約する / 予約を取り消す',
+        intro: '道場のスケジュールを開き、クラス詳細を確認し、使えるカードを選んで参加枠を確定したいときに使います。',
+        steps_title: 'よくある手順',
+        steps_items: [
+          '現在選択中の道場のスケジュールを開く。',
+          '予定されているクラスを選び、詳細を見る。',
+          'カード選択を開き、使えるカードを選び、必要ならメンバー向け名簿で匿名にするか決める。',
+          '予約または予約取消を確定する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Academy Schedule、Academy Booking、Academy Card Selection を使います。',
+          'クラスやカードが違って見える場合は、まず選択中の道場を確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '予約は現在の scheduled-lesson 予約フローを使い、一般的なレッスン編集ではありません。',
+          'カード適格性と予約ガードはバックエンドで判定されます。',
+          '匿名予約は他のメンバーにだけ身元を隠し、道場スタッフには実名のまま見えます。',
+          '予約アクションがブロックされても、キャンセル済みや処理済みのクラス詳細は読めるまま残ることがあります。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると予約状態と表示名簿が更新されます。',
+          '想定どおりのガード失敗では、予約締切や開始済みなど、なぜブロックされたかが表示されます。',
+          '処理できたか確認できない失敗では、リロードして再確認が必要になることがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '出席記録', to: '/help-v3/member/attendance-records' },
+          { label: 'システム通知', to: '/help-v3/member/system-alerts' }
+        ]
+      },
+      attendance_records: {
+        badge: '受講者',
+        title: '出席記録を確認する',
+        intro: '過去のクラスが期待どおりに記録されたか確認したいときは、出席記録を使います。',
+        what_title: 'できること',
+        what_items: [
+          '現在選択中の道場で過去の出席履歴を確認する。',
+          '特定のクラスが自分の履歴にあるか確かめる。',
+          '予約や受講後の確認として記録を使う。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '受講者側の出席画面や academy records 画面を使います。',
+          '以前の予約や来館結果を確認したいときは、まずここから始めてください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '出席記録は確認用であり、受講者側から編集するものではありません。',
+          '記録が間違っている場合は道場側で修正が必要です。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '正常な記録があれば、そのクラスが登録済みであることを確認できます。',
+          '記録が欠けている、または間違っている場合は、自己修正ではなく道場側フォローに進んでください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '予約', to: '/help-v3/member/booking' },
+          { label: 'カード異議申し立て', to: '/help-v3/member/card-disputes' }
+        ]
+      },
+      system_alerts: {
+        badge: '受講者',
+        title: 'システム通知を確認する',
+        intro: 'アカウント、道場、または関連する受講者フローに関する重要な更新を確認したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'システム生成の重要なアカウント更新や道場更新を読む。',
+          'プッシュ通知が正確な画面へ移動できないときの安全なフォールバックとして使う。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Academy Alerts などの受講者通知画面を使います。',
+          '通知タップで特定画面へ進めない場合、アプリはまずここへ遷移することがあります。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'システム通知はチャットではありません。',
+          'すべての通知タイプに完全なディープリンクがあるわけではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '読了すると既読状態が更新されることがあります。',
+          '通知が別のフローを指している場合は、通知一覧に留まらずそのフローへ進んでください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'Broadcast', to: '/help-v3/member/broadcasts' },
+          { label: '予約', to: '/help-v3/member/booking' }
+        ]
+      },
+      broadcasts: {
+        badge: '受講者',
+        title: '道場の Broadcast を読む',
+        intro: 'Broadcast を使って、現在選択中の道場の投稿を読みます。受講者側のフィードは読み取り専用で、道場からの更新やトレーニング投稿を見るためのものです。',
+        what_title: 'できること',
+        what_items: [
+          'Updates と Training の切り替え。',
+          '文章、画像、道場からの Broadcast 投稿を読む。',
+          '画像を大きく開いて見ながら、受講者ダッシュボード内で内容を確認する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '現在選択中の道場に紐づく受講者側 Broadcast 画面を使います。',
+          '違うフィードが見えるときは、まず道場選択を確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '受講者側 Broadcast は読み取り専用です。',
+          'コメント、返信、いいね、受講者投稿はありません。',
+          '空フィードでも壊れているとは限らず、単に公開中の投稿がない場合があります。',
+          'Broadcast の内容は道場スタッフまたはオーナー側が作成します。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '正常に読み込めば、現在選択中の道場のフィードが表示されます。',
+          'アカウント状態やシステム状態を見たい場合は System Alerts を使ってください。',
+          '道場にオンライン学習権限があっても、Broadcast と Online は別の面です。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'システム通知', to: '/help-v3/member/system-alerts' },
+          { label: 'オンライン学習', to: '/help-v3/member/online-learning' }
+        ]
+      },
+      card_disputes: {
+        badge: '受講者',
+        title: 'カード異議申し立てを行う',
+        intro: 'カード、削除、またはカード関連変更が受講者側から見ておかしく、道場側の追跡対応が必要なときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '気づいたカード問題に紐づく異議申し立て記録を作成する。',
+          '受講者側から見て何がおかしいか説明する。',
+          '予約やプロフィールの質問に混ぜず、専用のフォロー経路へ分ける。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Academy Disputes などの受講者カード / 異議申し立て画面を使います。',
+          '可能なら問題のあるカードから始めてください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '異議申し立てを出してもカードは即時修正されません。',
+          'audit logs のようなオーナー専用レビューは、受講者異議申し立てフローには含まれません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、異議申し立ては道場側のフォロー項目になります。',
+          '道場レビューが終わるまでは、見えているカード状態が変わらないことがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'カード', to: '/help-v3/member/cards' },
+          { label: '出席記録', to: '/help-v3/member/attendance-records' }
+        ]
+      },
+      online_learning: {
+        badge: '受講者',
+        title: 'オンライン学習を使う',
+        intro: '受講者アカウントにオンライン学習アクセスがあり、カリキュラム閲覧、レッスン表示、動画視聴、宿題提出をしたいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'アクセスがあるとき、受講者ダッシュボードから Online を開く。',
+          'カリキュラム、catalog、レッスン階層を閲覧する。',
+          '指導クリップや関連 tip 動画を見る。',
+          '所属レッスンの流れから宿題を開いて提出する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Online Home、Curriculum、Catalog、Lesson、Video、Homework 画面を使います。',
+          '見たいクリップまでカリキュラムから順に辿ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'Online タイルはアクセス権があるときだけ表示されます。',
+          'ここでの Expo Online は受講者利用面であり、オンライン管理面ではありません。',
+          '宿題と tip 動画は所属レッスンとスライスに紐づき、独立した学院全体フィードにはなりません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          'アクセスがあると、ダッシュボードに Online 入口が現れます。',
+          '宿題や tip は、それぞれのレッスンとスライスに留まり、独立して浮いた内容にはなりません。',
+          'アクセスがない場合は、空の画面ではなく入口自体が見えないのが正しい期待です。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'イベント', to: '/help-v3/member/events' },
+          { label: 'Broadcast', to: '/help-v3/member/broadcasts' }
+        ]
+      },
+      events: {
+        badge: '受講者',
+        title: 'イベントと申込を確認する',
+        intro: '競技イベントの閲覧、競技プロフィールの維持、イベント申込手順の管理をしたいときは Events を使います。',
+        what_title: 'できること',
+        what_items: [
+          '参加可能な競技イベントを閲覧する。',
+          '申込前にイベント詳細を開く。',
+          '競技プロフィールを作成または更新する。',
+          'イベントが対応している場合は申込と支払い手順を管理する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'イベント一覧、詳細、プロフィール、申込画面を使います。',
+          '一部のイベントは連盟サイトやイベントサイトなど外部提供者へ引き継がれます。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '外部提供者フローは DojoMate app 内に完全には留まりません。',
+          '申込状態は通常の道場会員フロー以外のイベント固有要件にも左右されます。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると競技プロフィールや申込状態が更新されます。',
+          '外部提供者を使うイベントでは、完全なアプリ内フォームではなく引き継ぎが発生します。',
+          '競技プロフィール更新は、後のイベント申込準備の一部として使われることがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '会員資格', to: '/help-v3/member/memberships' },
+          { label: 'システム通知', to: '/help-v3/member/system-alerts' }
+        ]
+      }
+    },
+    admin: {
+      home: {
+        badge: '管理',
+        title: '管理とスタッフのガイド',
+        intro: '道場の管理ダッシュボードからメンバー、カード、スケジュール、代理予約、Broadcast を扱うときはこのガイドを使ってください。',
+        areas_title: '管理トピック',
+        links: [
+          {
+            title: '道場コンテキストとメンバー',
+            body: '先に正しい道場が選ばれていることを確認してから、メンバーや役割の作業に進みます。',
+            links: [
+              { label: '道場コンテキスト', to: '/help-v3/admin/academy-context' },
+              { label: 'メンバー管理', to: '/help-v3/admin/members' }
+            ]
+          },
+          {
+            title: '日常運営',
+            body: 'カード、セッション負債、レッスンテンプレート、スケジュール、代理予約を扱います。',
+            links: [
+              { label: 'カード管理', to: '/help-v3/admin/cards' },
+              { label: 'セッション負債', to: '/help-v3/admin/session-debt' },
+              { label: 'レッスンテンプレート', to: '/help-v3/admin/lessons' },
+              { label: 'スケジュール', to: '/help-v3/admin/schedule' },
+              { label: '代理予約', to: '/help-v3/admin/admin-booking' }
+            ]
+          },
+          {
+            title: '通知と支援ツール',
+            body: 'Broadcast 発行、通知、QR ツールを使います。',
+            links: [
+              { label: 'Broadcast 発行', to: '/help-v3/admin/broadcasts' },
+              { label: '通知と QR ツール', to: '/help-v3/admin/alerts-qr' }
+            ]
+          }
+        ]
+      },
+      cards: {
+        badge: '管理',
+        title: 'カードを作成して発行する',
+        intro: 'カードテンプレート作成、有効カード発行、現在のカード確認、または道場メンバー向けカード状態の変更が必要なときに管理側 Cards を使います。',
+        what_title: 'できること',
+        what_items: [
+          'カードテンプレートを作成する。',
+          '既存テンプレートを確認する。',
+          '有効カードをメンバーへ発行する。',
+          '有効カードを確認し、画面で許可されている範囲で一時停止関連の状態を扱う。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'テンプレート作成、テンプレート一覧、発行、Active Cards などの画面を使います。',
+          '受講者予約の問題が実はカード不備なら、ここに戻って確認します。',
+          'オンボーディング中は、最初のカードのマイルストーンが道場作成の一部なので、アプリが直接 Cards に案内することがあります。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'カードテンプレートと有効カードは別の層です。',
+          'audit logs のようなオーナー専用レビューは、通常の管理側 Cards ガイドには含めません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、カードに関係する管理側と受講者側のフローが更新されます。',
+          '正しい道場コンテキストにカード更新が反映されると、予約適格性も変わることがあります。',
+          'このカードがオンボーディングやスタッフテスト専用でも、正式課金準備とは別にマイルストーンとして数えられます。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'セッション負債', to: '/help-v3/admin/session-debt' },
+          { label: '代理予約', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      academy_context: {
+        badge: '管理',
+        title: '今どの道場を管理しているか確認する',
+        intro: '複数の道場を扱っている、または正しい管理コンテキストにいない可能性があるときは、先に academy context を確認してください。',
+        what_title: 'できること',
+        what_items: [
+          '現在読み込まれている道場を確認する。',
+          'メンバー、カード、スケジュール、Broadcast を触る前に正しい道場へ切り替える。',
+          'いま自分が Admin なのか Business / Owner 側なのかを見分ける。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '道場切り替えと管理入口フローを使います。',
+          '別の道場から戻った直後は、作業再開前にここで再確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '管理 / スタッフ操作は現在選択中の道場に紐づきます。',
+          'オーナーや Business 側の設定作業を、通常の admin 機能と混同しないでください。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '正しい道場を確認できれば、以後の管理画面は対応するデータを読み込みます。',
+          '道場が違うと、メンバー、カード、スケジュールが欠けているように見えることがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'メンバー管理', to: '/help-v3/admin/members' },
+          { label: 'カード管理', to: '/help-v3/admin/cards' }
+        ]
+      },
+      members: {
+        badge: '管理',
+        title: 'メンバーを管理する',
+        intro: '保留中、承認済み、拒否済み、または禁止中の道場メンバーを確認し、道場内での参加状態を把握したいときに Members を使います。',
+        what_title: 'できること',
+        what_items: [
+          '保留中と承認済みの会員状態を確認する。',
+          '画面で許可されている範囲で、拒否、禁止、または状態更新を行う。',
+          'メンバープロフィールや出席関連の情報を開く。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Pending、Accepted、Rejected、Banned などの状態画面を使います。',
+          '管理側のメンバー領域から詳細や出席情報を開きます。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'メンバー、インストラクター、管理アクセスは同じ概念ではありません。',
+          'インストラクター扱いの承認済み成人行は、通常の成人メンバー行として説明すべきではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、その人は正しい可視状態へ移動します。',
+          '関連する管理画面も新しい状態に合わせて更新されます。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'カード管理', to: '/help-v3/admin/cards' },
+          { label: '代理予約', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      session_debt: {
+        badge: '管理',
+        title: 'セッション負債を精算する',
+        intro: 'カードや予約履歴によって、スタッフ側で解消すべき負債状態が発生したときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '未解消のセッション負債を確認する。',
+          '現在の管理側精算フローで負債を処理する。',
+          '負債処理を受講者異議申し立てやオーナー監督と分ける。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '現在のカード機能に属する管理側 debt / card-debt 画面を使います。',
+          'メンバープロフィール想定からではなく、カード運用側から入ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '負債処理は受講者側の異議申し立てとは別です。',
+          'オーナーレビュー画面は、この日常的な管理精算フローとは別です。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '精算後、負債状態と関連カード文脈が更新されます。',
+          '根本レコード自体が争点なら、単なる未払いではなく正しい異議申し立てや監督経路へ切り替えてください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'カード管理', to: '/help-v3/admin/cards' },
+          { label: 'メンバー管理', to: '/help-v3/admin/members' }
+        ]
+      },
+      lessons: {
+        badge: '管理',
+        title: 'レッスンテンプレートを管理する',
+        intro: 'レッスンを実際のスケジュールに公開する前に、テンプレートを作成、編集、削除したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'レッスンテンプレートを作成する。',
+          'テンプレート内の指導内容やスケジュール詳細を編集する。',
+          '不要になったテンプレートを削除する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'lesson-day、create lesson、edit lesson などのテンプレート画面を使います。',
+          '実際の schedule に公開する前に、まずここでテンプレート作業を終えます。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'レッスンテンプレートは、すでに公開済みの予定レッスンとは別です。',
+          'schedule 層に進む前のテンプレート変更だけでは、公開済みスケジュール結果すべてを自動で説明しません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、そのテンプレートを後続のスケジュール公開に使えます。',
+          '実際のイベントがすでに存在する場合は、schedule 側の編集が別途必要になることがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'スケジュール', to: '/help-v3/admin/schedule' },
+          { label: '代理予約', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      schedule: {
+        badge: '管理',
+        title: 'スケジュールを公開・管理する',
+        intro: 'レッスン公開、予定レッスン編集、キャンセル、または実際の道場スケジュールからの削除が必要なときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'テンプレートから予定レッスンを公開する。',
+          '予定レッスンを編集またはキャンセルする。',
+          '予定レッスン詳細と参加名簿状態を確認する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'schedule layout と create/edit event フローを使います。',
+          '現在状態を確認したい場合は、その予定レッスン詳細を直接開いてください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'キャンセル済みや処理済みのレッスンも、レビューのために参照可能であるべきです。',
+          '実際の予約操作だけが、必要時にガードでブロックされるべきです。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、道場スケジュールが現在の予定レッスン状態を反映して更新されます。',
+          'レッスンがキャンセル済みでも、詳細画面は後続レビューに役立つことがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'レッスンテンプレート', to: '/help-v3/admin/lessons' },
+          { label: '代理予約', to: '/help-v3/admin/admin-booking' }
+        ]
+      },
+      admin_booking: {
+        badge: '管理',
+        title: '受講者やメンバーの代わりに予約する',
+        intro: 'スタッフが管理側スケジュールから、メンバーの代わりに予約作成や削除を行う必要があるときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '管理側から予定レッスンを開く。',
+          '対象メンバーと有効なカードを選ぶ。',
+          '現在の予約アクションフローで予約を作成または削除する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Admin Booking と関連カード選択フローを使います。',
+          '一般メンバー検索からではなく、扱っている予定レッスンから始めてください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '管理側では匿名予約は作成できません。',
+          '予約可能かどうかは backend booking guard codes が引き続き決めます。',
+          '名簿詳細が見えていても、想定外失敗時には更新して再試行が必要になることがあります。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功するとレッスン名簿と予約状態が更新されます。',
+          '動作がブロックされた場合、画面はガード条件を説明すべきで、レッスンが消えたように見せるべきではありません。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'スケジュール', to: '/help-v3/admin/schedule' },
+          { label: 'メンバー管理', to: '/help-v3/admin/members' }
+        ]
+      },
+      broadcasts: {
+        badge: '管理',
+        title: 'Broadcast を公開する',
+        intro: 'アプリから道場更新やトレーニング投稿を出したいときは、現在の管理側 Broadcast フローを使います。',
+        what_title: 'できること',
+        what_items: [
+          'テキストと画像を含む Broadcast を作成する。',
+          'テキストと単一の MP4 動画を含む Broadcast を作成する。',
+          '現在選択中の道場のフィードへすぐに公開する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '管理側 Members 領域にある Broadcast 公開画面を使います。',
+          '公開前に、正しい選択道場コンテキストにいることを確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '現在は下書き保存フローはありません。',
+          'アプリは単一動画のみ対応で、画像と動画の混在投稿はできません。',
+          '権限は引き続き道場ロールと access に依存します。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '作成に成功すると、Broadcast はすぐ公開されます。',
+          'メディアや権限が不正な場合は、隠し下書きではなく作成失敗になります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '通知と QR ツール', to: '/help-v3/admin/alerts-qr' },
+          { label: '道場コンテキスト', to: '/help-v3/admin/academy-context' }
+        ]
+      },
+      alerts_qr: {
+        badge: '管理',
+        title: '通知と QR ツールを使う',
+        intro: '現在の道場コンテキストに関わる通知、QR 操作、または復帰操作が必要なときは、これらの管理側支援ツールを使います。',
+        what_title: 'できること',
+        what_items: [
+          '道場に属する管理または business 通知を確認する。',
+          'QR 関連ツールを開く。',
+          '復帰や切り替えが必要なときに道場コンテキスト支援フローを使う。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '道場側メニューの通知画面と QR 入口を使います。',
+          '現在の道場が違う場合は、道場スイッチャーへ戻ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'これらのフローは道場作業を支援しますが、オーナー専用の business 管理を置き換えるものではありません。',
+          '一部の復帰操作は、通常メニューではなく bootstrap や settings の広い経路に属します。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '正しい通知または QR 操作は、次の関連する道場フローへ進めます。',
+          '問題がオーナー専用の business 設定である場合、次はオーナー側領域に移ることになります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '道場コンテキスト', to: '/help-v3/admin/academy-context' },
+          { label: 'Broadcast 発行', to: '/help-v3/admin/broadcasts' }
+        ]
+      }
+    },
+    owner: {
+      home: {
+        badge: 'オーナー',
+        title: 'オーナーと運営のガイド',
+        intro: '道場作成、オンボーディング、オーナー専用設定、運営や監督レビューが必要なときはこのガイドを使ってください。',
+        areas_title: 'オーナートピック',
+        links: [
+          {
+            title: '道場作成とオンボーディング',
+            body: '最初の道場を作成し、マイルストーン主導のオンボーディングを進めます。',
+            links: [
+              { label: '道場を作成する', to: '/help-v3/owner/create-academy' },
+              { label: 'オンボーディング', to: '/help-v3/owner/onboarding' }
+            ]
+          },
+          {
+            title: 'オーナー業務管理',
+            body: '道場情報、インストラクター、管理アクセスを管理します。',
+            links: [
+              { label: 'ビジネス管理', to: '/help-v3/owner/business-management' },
+              { label: 'インストラクター', to: '/help-v3/owner/instructors' },
+              { label: 'アクセス権', to: '/help-v3/owner/access' }
+            ]
+          },
+          {
+            title: '運営と監督',
+            body: '分析、勤怠と給与、監督レビュー、ツールを使います。',
+            links: [
+              { label: '運営分析', to: '/help-v3/owner/operations-analytics' },
+              { label: '勤怠と給与', to: '/help-v3/owner/timesheets-salaries' },
+              { label: '監督レビュー', to: '/help-v3/owner/oversight' },
+              { label: 'ツール', to: '/help-v3/owner/tools' }
+            ]
+          }
+        ]
+      },
+      access: {
+        badge: 'オーナー',
+        title: 'アクセス権と権限を管理する',
+        intro: '現在の道場の管理側に入れる承認済み成人メンバーを決めたいときは Access を使います。',
+        what_title: 'できること',
+        what_items: [
+          '条件を満たす承認済み成人メンバーに道場管理アクセスを付与する。',
+          '道場単位の permission row を更新または削除する。',
+          '管理アクセスを教える役割と切り分ける。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'オーナー側の permissions または Access 画面を使います。',
+          '幅の狭いメニューではボタンが `Access` と短く表示されることがあります。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '一つの道場の permission row を外しても、その人の他道場での broader admin role が自動で消えるわけではありません。',
+          'この画面は道場管理アクセスを扱うもので、インストラクター身分を扱うものではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、その人が現在の道場でどの管理機能を開けるかが変わります。',
+          'その人に教える役割も必要なら、別途 Instructors を使います。',
+          '他の道場にも属している場合、その別道場側の broader admin role は残ることがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'インストラクター', to: '/help-v3/owner/instructors' },
+          { label: '運営分析', to: '/help-v3/owner/operations-analytics' }
+        ]
+      },
+      onboarding: {
+        badge: 'オーナー',
+        title: '最初の道場オンボーディングを進める',
+        intro: '道場作成後に、最初の道場向けオンボーディングが現在どのように進むのかを理解したいときに使います。',
+        steps_title: 'マイルストーン順序',
+        steps_items: [
+          '道場を作成する。',
+          '最初のインストラクターを追加するか、オーナー自身がヘッドインストラクターになるか決める。',
+          '最初のカードテンプレートを作成する。',
+          '最初の有効カードを発行する。',
+          '最初の予定レッスンを作成する。',
+          '最初の管理側予約を完了する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'ガイド付きダッシュボードと全画面オンボーディング画面に従います。',
+          'アプリが次のマイルストーンとして強調表示している領域を使います。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'オンボーディングはマイルストーン駆動で、永続的な usage-history 状態に基づきます。',
+          '完了のために実在の有料生徒やオンライン決済設定は必須ではありません。',
+          'オンボーディング完了は請求や集金準備完了と同じ意味ではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '各マイルストーン完了後に、アプリが次の推奨セクションを開示します。',
+          'オンボーディング完了後は、より広い管理ダッシュボードが使えるようになり、権限次第で追加ツールも現れます。',
+          'このチュートリアルは、実在の有料メンバーがいなくても、自分やスタッフのテストフローで完了できます。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'インストラクター', to: '/help-v3/owner/instructors' },
+          { label: 'アクセス権', to: '/help-v3/owner/access' }
+        ]
+      },
+      create_academy: {
+        badge: 'オーナー',
+        title: '新しい道場を作成する',
+        intro: '最初の道場、または追加の道場を作成したいときは、道場作成フローを使います。',
+        what_title: 'できること',
+        what_items: [
+          '新しい道場を作成する。',
+          '複数の立場や複数の道場がある場合に作成モードへ切り替える。',
+          '作成後、そのままオンボーディングへ進む。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Business の作成フローと関連する bootstrap / gate 画面を使います。',
+          '最初に経路選択画面が出る場合は、既存管理に入るのではなく新規作成が目的か確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '作成可能な道場数は現在のプランや academy slots の影響を受けることがあります。',
+          '作成モードをキャンセルすると、設定完了にはならず管理入口へ戻ります。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると新しい道場が選択され、そのまま後続オンボーディングへ進みます。',
+          '途中でキャンセルした場合は、admin / business の選択入口へ戻ります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'オンボーディング', to: '/help-v3/owner/onboarding' },
+          { label: 'ビジネス管理', to: '/help-v3/owner/business-management' }
+        ]
+      },
+      business_management: {
+        badge: 'オーナー',
+        title: '道場のビジネス設定を管理する',
+        intro: '道場そのものの情報、メディア、オーナーレベル設定を維持したいときは Business Management を使います。',
+        what_title: 'できること',
+        what_items: [
+          '道場の基本情報を更新する。',
+          'logo、banner、gallery などの道場メディアを管理する。',
+          'オーナーレベルの道場設定やライフサイクル操作を行う。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Business 関連の編集、削除、メディア、オーナー設定画面を使います。',
+          '日常の admin 作業ではなく、道場そのものを調整する仕事ならここへ戻ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'ここはオーナー範囲の academy-management 機能であり、通常スタッフ権限ではありません。',
+          '道場情報を更新しても、管理アクセス権や運営分析権限が自動で変わるわけではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると道場情報と関連するオーナー画面に新しい内容が反映されます。',
+          '次に誰へ管理アクセスを与えるかを扱うなら、Access に進んでください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'アクセス権', to: '/help-v3/owner/access' },
+          { label: 'インストラクター', to: '/help-v3/owner/instructors' }
+        ]
+      },
+      instructors: {
+        badge: 'オーナー',
+        title: 'インストラクターを管理する',
+        intro: '道場スタッフのうち、教える側の身分を管理したいときは Instructors を使います。',
+        what_title: 'できること',
+        what_items: [
+          '道場内のインストラクター身分を追加または維持する。',
+          'オンボーディングや後続の道場運営で、ヘッドインストラクターと教員体制を整える。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'オーナー側の Business Instructors 画面を使います。',
+          '問題が管理アクセスではなく教える身分にあるなら、ここへ戻ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'インストラクター身分は学園管理アクセスとは別です。',
+          'インストラクター身分は給与や報酬の権限とも別です。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          'インストラクター設定が成功すると、オンボーディングや人員配置に必要な教える身分が満たされます。',
+          '誰が管理できるかの問題なら、Instructors ではなく Access を使ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'アクセス権', to: '/help-v3/owner/access' },
+          { label: 'オンボーディング', to: '/help-v3/owner/onboarding' }
+        ]
+      },
+      operations_analytics: {
+        badge: 'オーナー',
+        title: '運営と分析を使う',
+        intro: '通常の管理作業ではなく、オーナー向けの指標、即時レポート、推移、月次報告が必要なときは Operations を使います。',
+        what_title: 'できること',
+        what_items: [
+          'リアルタイムと要約の道場指標を確認する。',
+          'insights、trends、monthly reporting 画面を開く。',
+          '高次のレポート確認では、通常 admin ダッシュボードではなくオーナー側の運営ビューを使う。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'オーナー側の運営ダッシュボードとレポート画面を使います。',
+          '特定道場の分析を見るときは、現在選択中のオーナー道場コンテキストを維持してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '運営と分析はオーナー / operations 領域であり、一般 admin / staff 領域ではありません。',
+          '分析はインストラクター身分やアクセス身分とは別の概念です。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          'アクセスに成功すると、選択中道場のオーナー向けレポートと運営文脈が読み込まれます。',
+          '画面が見当たらない場合、原因はロールや権限であって、道場データの誤りとは限りません。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '勤怠と給与', to: '/help-v3/owner/timesheets-salaries' },
+          { label: '監督レビュー', to: '/help-v3/owner/oversight' }
+        ]
+      },
+      timesheets_salaries: {
+        badge: 'オーナー',
+        title: '勤怠と給与を管理する',
+        intro: 'スタッフの勤怠を追跡したり、報酬データを管理したいときは、このオーナー運営ツールを使います。',
+        what_title: 'できること',
+        what_items: [
+          'スタッフの出退勤記録を扱う、または記録済み時間を確認する。',
+          '給与や報酬に関するデータを確認、管理する。',
+          '報酬の問題をインストラクター身分や管理アクセスから切り分ける。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'staff time、staff salaries などのオーナー運営画面を使います。',
+          '問題が報酬であり、教える身分ではないならここへ戻ります。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '報酬画面は誰がインストラクターかを定義するものではありません。',
+          '報酬画面は access や permissions 管理の代わりにもなりません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '更新に成功すると、オーナー側の勤怠や報酬データが変わります。',
+          'スタッフの問題が実際には役割割当なら、Instructors または Access に戻ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '運営分析', to: '/help-v3/owner/operations-analytics' },
+          { label: 'アクセス権', to: '/help-v3/owner/access' }
+        ]
+      },
+      oversight: {
+        badge: 'オーナー',
+        title: 'オーナー監督レビューを使う',
+        intro: 'オーナー専用の issue records、delete records、audit logs を確認したいときは Oversight を使います。',
+        what_title: 'できること',
+        what_items: [
+          'issue records を確認する。',
+          'delete records を確認する。',
+          'オーナー専用の監督領域で audit logs を確認する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '通常の管理ダッシュボードではなく、オーナー運営側の oversight 領域を使います。',
+          '問題が履歴または運営レビューに属するときだけ、これらのツールを開きます。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'これらの画面はオーナー専用の監督ツールです。',
+          '通常の管理側 Cards フローではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '監督レビューによって、履歴上または運営上で実際に何が起きたかを確認できます。',
+          '後続アクションが必要なら、通常は正しい管理または受講者フローへ戻ります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '運営分析', to: '/help-v3/owner/operations-analytics' },
+          { label: 'ツール', to: '/help-v3/owner/tools' }
+        ]
+      },
+      tools: {
+        badge: 'オーナー',
+        title: 'オーナーツールと制限機能を使う',
+        intro: '任意のオーナーツールが何をするか、そしてアクセスがあるときどこに現れるかを理解したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '現在の道場ワークフローに合うオーナーツールや制限機能を開く。',
+          'オーナーツールを道場の基本ワークフローの上に重ねて使い、置き換えにはしない。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'アクセスが有効になった後、対応するオーナー / 運営ダッシュボード入口を使います。',
+          '本当にツールが欠けていると判断する前に、現在選択中の道場を確認してください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'ヘルプは、ツールの目的とワークフローを説明すべきで、古い購入仕組みを説明すべきではありません。',
+          '古い bundle 前提は、もはや製品事実として扱うべきではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '必要なアクセスがあると、そのツールは独自のワークフロー画面を開きます。',
+          'ツールが見えない場合、通常はロールや entitlement の問題であり、ルート破損ではありません。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '運営分析', to: '/help-v3/owner/operations-analytics' },
+          { label: 'ビジネス管理', to: '/help-v3/owner/business-management' }
+        ]
+      }
+    },
+    account: {
+      home: {
+        badge: 'アカウント',
+        title: 'アカウントと設定のガイド',
+        intro: 'サインイン、パスワード再設定、プロフィール更新、設定変更、セッション終了が必要なときはこのガイドを使ってください。',
+        areas_title: 'アカウントトピック',
+        links: [
+          {
+            title: 'アカウントに入る',
+            body: 'サインイン、アカウント作成、またはパスワード再設定からアクセスを回復します。',
+            links: [
+              { label: 'サインイン', to: '/help-v3/account/sign-in' },
+              { label: 'アカウント作成', to: '/help-v3/account/create-account' },
+              { label: 'パスワード再設定', to: '/help-v3/account/reset-password' },
+              { label: 'パスワード変更', to: '/help-v3/account/change-password' }
+            ]
+          },
+          {
+            title: 'プロフィールと関連付け',
+            body: '大人アカウントの情報と子どもアカウントの関連付けを管理します。',
+            links: [
+              { label: 'プロフィール', to: '/help-v3/account/profile' },
+              { label: '子どもアカウント', to: '/help-v3/account/child-accounts' }
+            ]
+          },
+          {
+            title: '設定と終了',
+            body: 'プライバシー、設定、ログアウト、アカウント削除を扱います。',
+            links: [
+              { label: 'プライバシーと進捗', to: '/help-v3/account/privacy-progression' },
+              { label: '設定', to: '/help-v3/account/preferences' },
+              { label: 'アカウント削除', to: '/help-v3/account/delete-account' },
+              { label: 'ログアウト', to: '/help-v3/account/logout' }
+            ]
+          }
+        ]
+      },
+      create_account: {
+        badge: 'アカウント',
+        title: 'アカウントを作成する',
+        intro: 'まだ DojoMate アカウントがなく、受講者または管理の正しい導線を始める必要があるときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '新しい DojoMate アカウントを作成する。',
+          '実際に必要な役割導線を選ぶ。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          '認証入口フローの account creation 画面から始めます。',
+          '自分が参加してトレーニングする側なのか、道場を作成・管理する側なのかを最初に決めます。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '最初に役割導線を間違えると、後でどのガイドを見るべきか混乱しやすくなります。',
+          'メールアドレスがすでに既存アカウントに使われている場合は、再作成ではなくサインインかパスワード再設定を使います。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アプリは受講者または管理の対応する導線へ進みます。',
+          '登録失敗時は、古い曖昧な文言ではなく現在の正規化された認証処理が使われるべきです。',
+          '次の実用ステップは、道場参加や道場セットアップ開始など、役割に応じたものになります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'サインイン', to: '/help-v3/account/sign-in' },
+          { label: '道場に参加する', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      reset_password: {
+        badge: 'アカウント',
+        title: 'パスワードを再設定する',
+        intro: 'パスワードを忘れてアカウントへのアクセスを取り戻したいときは、パスワード再設定フローを使ってください。',
+        what_title: 'できること',
+        what_items: [
+          'パスワード再設定メールの送信を依頼する。',
+          '通常のサインインでは入れないときに、アクセス回復フローへ進む。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Sign In 画面からパスワード再設定へ進みます。',
+          '単なるログイン失敗ではなく、パスワード忘れが問題ならここから始めてください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'これは紛失したパスワードを取り戻すためのフローであり、サインイン後の変更ではありません。',
+          '登録メールアドレス自体が違っている場合、再設定メールは正しく届きません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功するとパスワード再設定メールが送られます。',
+          'メールが届かない場合は、すぐ別アカウントを作るのではなく受信箱確認と再試行を行ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'サインイン', to: '/help-v3/account/sign-in' },
+          { label: 'アカウント作成', to: '/help-v3/account/create-account' }
+        ]
+      },
+      change_password: {
+        badge: 'アカウント',
+        title: 'パスワードを変更する',
+        intro: 'すでにサインインしていて、現在のアカウントのパスワードを更新したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'サインイン済み状態でアカウントのパスワードを変更する。',
+          '現在のアカウント導線を維持したままセキュリティを高める。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'サインイン済みアカウント設定の change password 画面を使います。',
+          '問題がパスワード忘れではなく、能動的な更新ならここから始めてください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'これはパスワード再設定フローとは別です。',
+          '通常は現在のパスワード確認が必要です。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アカウントに新しいパスワードが保存されます。',
+          '現在の端末セッションは維持される一方、他端末セッションが失効することがあります。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'パスワード再設定', to: '/help-v3/account/reset-password' },
+          { label: 'ログアウト', to: '/help-v3/account/logout' }
+        ]
+      },
+      sign_in: {
+        badge: 'アカウント',
+        title: 'サインイン',
+        intro: 'アカウントがすでに存在し、通常の DojoMate セッションを始めたいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          '既存の認証情報でサインインする。',
+          '通常の受講者、管理者、またはオーナーのセッションを開始する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'Sign In 画面を主な入口として使います。',
+          '問題が単なるサインイン失敗ではなくパスワード紛失なら、パスワード再設定の方を見てください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '現在の認証結果は、古いエラーテキストではなく新しい正規化ルールで扱われます。',
+          '一部のアカウント整合性問題は、単なるパスワード誤りではなくサポートや復旧フローです。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アプリが現在のユーザーセッションを開始します。',
+          '通常どおり開始できない場合、アプリは単なる資格情報エラーではなく、復旧やサポートに案内することがあります。',
+          'その後の保護されたリクエストは、旧互換パスではなく現在の refresh-token フローに依存します。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'パスワード再設定', to: '/help-v3/account/reset-password' },
+          { label: 'アカウント作成', to: '/help-v3/account/create-account' }
+        ]
+      },
+      preferences: {
+        badge: 'アカウント',
+        title: '設定を調整する',
+        intro: '言語、通貨、テーマ、その他の個人設定を変更したいときは、この設定トピックを使ってください。',
+        what_title: 'できること',
+        what_items: [
+          'アプリ言語や表示設定を調整する。',
+          'アカウント体験に関わる個人設定を変更する。',
+          '道場の business 設定を変えずに、自分の app 体験を整える。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'アカウント設定と設定関連画面を使います。',
+          '変えたいのが個人の app 体験であり、道場情報ではないならここに留まってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '設定を変えても道場の business 設定は変わりません。',
+          '即時反映されるものもあれば、完全反映に次回更新が必要なものもあります。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功するとアプリ表示やアカウント体験が新しい設定に合わせて更新されます。',
+          '現在のセッションを終えたい場合は、ここで削除を探すのではなく Logout を使ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'プライバシーと進捗', to: '/help-v3/account/privacy-progression' },
+          { label: 'ログアウト', to: '/help-v3/account/logout' }
+        ]
+      },
+      profile: {
+        badge: 'アカウント',
+        title: 'プロフィールを編集する',
+        intro: '成人アカウント自体の情報を確認または更新したいときは Profile を使います。',
+        what_title: 'できること',
+        what_items: [
+          '成人アカウントに紐づくプロフィール詳細を確認する。',
+          'サインイン済みのアカウントフローからプロフィール項目を更新する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'profile user と edit-profile 関連画面を使います。',
+          '道場会員情報ではなくアカウント身分情報が間違っているときは、ここへ戻ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'プロフィール編集は道場会員判断の代わりにはなりません。',
+          '子どもアカウント関係は別フローです。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アカウントプロフィールに最新保存値が反映されます。',
+          '問題が子ども関係や会員関係にあるなら、正しいトピックへ切り替えてください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '子どもアカウント', to: '/help-v3/account/child-accounts' },
+          { label: 'プライバシーと進捗', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      child_accounts: {
+        badge: 'アカウント',
+        title: '子どもアカウントを管理する',
+        intro: '成人アカウントに紐づく子どもアカウントを扱う必要があるときは Child Accounts を使います。',
+        what_title: 'できること',
+        what_items: [
+          '現在の成人アカウントに紐づく子どもアカウントを確認する。',
+          '子どもの情報と成人アカウントの関係を理解する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'サインイン済みアカウント経路の child account 関連画面を使います。',
+          '問題が保護者、子ども、または管理関係にあるならここへ戻ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '子どもアカウント関係は、通常の成人プロフィール編集とは別です。',
+          '道場メンバー承認状態とも別です。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アカウントに最新の子ども関連状態が表示されます。',
+          '問題が実際には道場メンバー資格なら、メンバー関連トピックに戻ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'プロフィール', to: '/help-v3/account/profile' },
+          { label: '道場に参加する', to: '/help-v3/member/join-academy' }
+        ]
+      },
+      privacy_progression: {
+        badge: 'アカウント',
+        title: 'プライバシーと進捗設定を管理する',
+        intro: '可視性、ランク参加、プロフィール公開、またはアカウントレベルのプライバシー設定が問題のときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'プライバシー関連のアカウント設定を確認する。',
+          'アプリが公開している範囲で、進捗やプロフィール可視性設定を調整する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'サインイン済みアカウント経路の settings privacy / progression 画面を使います。',
+          '名簿や予約ロジックではなく可視性が問題なら、ここへ戻ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          '匿名予約はプライバシー設定そのものではありません。',
+          '道場側のメンバー可視性とアカウントプライバシーは関連していますが同一ではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アプリは最新のプライバシーまたは進捗設定を使います。',
+          '問題が予約名簿の匿名表示そのものなら Booking を使ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: '予約', to: '/help-v3/member/booking' },
+          { label: '設定', to: '/help-v3/account/preferences' }
+        ]
+      },
+      delete_account: {
+        badge: 'アカウント',
+        title: 'アカウントを削除する',
+        intro: '一つの道場を離れるのではなく、DojoMate アカウント全体を永久に削除したいときに使います。',
+        what_title: 'できること',
+        what_items: [
+          'アカウント全体の永久削除フローを開始する。',
+          '削除前に、アカウント削除と単一道場の会員関係解除を区別する。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'アカウントのプライバシーまたは削除関連画面を使います。',
+          '目的が現在のセッション停止だけなら Logout を使ってください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'アカウント全体の削除は、一つの道場を離れることとは別です。',
+          'これはより強い永続操作であり、通常のログアウトと混同すべきではありません。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、アカウント全体へのアクセスが削除されます。',
+          '特定の道場関係だけを外したい場合は、メンバーまたは道場関連フローへ戻ってください。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'ログアウト', to: '/help-v3/account/logout' },
+          { label: 'プライバシーと進捗', to: '/help-v3/account/privacy-progression' }
+        ]
+      },
+      logout: {
+        badge: 'アカウント',
+        title: 'ログアウトする',
+        intro: '現在の端末セッションを終了し、サインイン状態をきれいに抜けたいときは Logout を使います。',
+        what_title: 'できること',
+        what_items: [
+          '現在のサインイン済みアプリセッションを終了する。',
+          '別アカウントや後日の再利用に備える。'
+        ],
+        where_title: 'どこで行うか',
+        where_items: [
+          'サインイン済みのアカウント設定領域を使います。',
+          '現在のセッションを止めたいだけなら、アカウント削除ではなくログアウトを選んでください。'
+        ],
+        limits_title: '重要な制限',
+        limits_items: [
+          'ログアウトは現在のセッションを終えるだけで、アカウント削除ではありません。',
+          'パスワード自体を変えたいなら Change Password を使ってください。'
+        ],
+        results_title: 'その後どうなるか',
+        results_items: [
+          '成功すると、この端末上の現在のサインイン状態が消去されます。',
+          '後で同じアカウントまたは別アカウントで再度サインインできます。',
+          'パスワード変更や削除ほど強いアカウント効果が不要なとき、Logout は安全なセッション終了手段です。'
+        ],
+        next_title: '次のトピック',
+        next_links: [
+          { label: 'サインイン', to: '/help-v3/account/sign-in' },
+          { label: 'アカウント作成', to: '/help-v3/account/create-account' }
+        ]
+      }
+    }
+  },
   help_v2: {
     support: {
       heading: 'さらにサポートが必要ですか？',
