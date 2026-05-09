@@ -119,7 +119,7 @@ const DeleteTemplates = () => import('../pages/cards/DeleteTemplates.vue')
 const IssueCards = () => import('../pages/cards/IssueCards.vue')
 const ManageCards = () => import('../pages/cards/ManageCards.vue')
 const DeleteCards = () => import('../pages/cards/DeleteCards.vue')
-const CardRecords = () => import('../pages/cards/CardRecords.vue')
+const CardRecordsLegacy = () => import('../pages/cards/CardRecords.vue')
 
 // Members (Admin) pages
 const Enrollment = () => import('../pages/members/Enrollment.vue')
@@ -132,7 +132,7 @@ const CreateLesson = () => import('../pages/schedule/CreateLesson.vue')
 const ManageLesson = () => import('../pages/schedule/ManageLesson.vue')
 const BookForStudents = () => import('../pages/schedule/BookForStudents.vue')
 
-// Paid Tools pages
+// Optional Tools pages
 const Prologue = () => import('../pages/tools/Prologue.vue')
 const Timetable = () => import('../pages/tools/Timetable.vue')
 const PauseCards = () => import('../pages/tools/PauseCards.vue')
@@ -191,7 +191,7 @@ const helpChildren = [
   { path: 'cards/issue-cards', component: IssueCards },
   { path: 'cards/manage-cards', component: ManageCards },
   { path: 'cards/delete-cards', component: DeleteCards },
-  { path: 'cards/records', component: CardRecords },
+  { path: 'cards/records', component: CardRecordsLegacy },
 
   // Members (Admin)
   { path: 'members/enrollment', component: Enrollment },
@@ -204,7 +204,7 @@ const helpChildren = [
   { path: 'schedule/manage-lesson', component: ManageLesson },
   { path: 'schedule/book-for-students', component: BookForStudents },
 
-  // Paid Tools
+  // Optional Tools
   { path: 'tools/prologue', component: Prologue },
   { path: 'tools/timetable', component: Timetable },
   { path: 'tools/pause-cards', component: PauseCards },

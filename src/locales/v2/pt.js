@@ -1500,14 +1500,14 @@ export default {
         edit_templates: 'Editar modelos',
         delete_templates: 'Excluir modelos',
         delete_cards: 'Excluir cartões',
-        card_records: 'Registros de cartões',
+        card_records: 'Disputas',
         members_overview: 'Visão geral dos membros',
         add_a_member_directly: 'Adicionar um membro diretamente',
         enrollment_vs_applications: 'Cadastro direto vs solicitações',
         review_applications: 'Revisar solicitações',
         reject_or_ban_members: 'Recusar ou banir membros',
         tools_overview: 'Visão geral das ferramentas',
-        activate_tools_and_premium: 'Ativar ferramentas e plano Premium',
+        activate_tools_and_premium: 'Revisar status das ferramentas',
         timetable: 'Horários',
         pause_cards: 'Pausar cartões'
       }
@@ -1695,7 +1695,7 @@ export default {
         'Se algo estiver faltando na sua conta, talvez o dono precise conceder acesso ou ativar a ferramenta necessária primeiro.'
       ],
       compare_link: 'Comparar páginas do Business',
-      tools_link: 'Ativar ferramentas e Premium'
+      tools_link: 'Revisar status das ferramentas'
     },
     business: {
       overview: {
@@ -1858,7 +1858,7 @@ export default {
         next_title: 'Próximo passo',
         next_body: 'Depois que as funções da equipe estiverem definidas, a próxima tarefa comum é revisar ferramentas de compensação e relatórios no Analytics.',
         back_link: 'Voltar para Instrutores',
-        activate_link: 'Ativar ferramentas e plano Premium',
+        activate_link: 'Revisar status das ferramentas',
         compare_pages_link: 'Comparar páginas',
         next_link: 'Ir para Analytics'
       },
@@ -1900,7 +1900,7 @@ export default {
         compare_link: 'Comparar páginas do Business',
         next_title: 'Próximo passo',
         next_body: 'Se você ainda está montando sua equipe, termine primeiro as etapas de função de ensino e função administrativa. Se a equipe já estiver pronta, a próxima tarefa comum é criar aulas e deixar as reservas fazerem o trabalho diário.',
-        activate_link: 'Ativar ferramentas e Premium',
+        activate_link: 'Revisar status das ferramentas',
         instructors_link: 'Instrutores',
         staff_access_link: 'Acesso da equipe',
         next_link: 'Ir para Agenda'
@@ -2907,7 +2907,7 @@ export default {
           'Outras funções geralmente podem usar as ferramentas depois que o dono da academia as ativa.',
           'Normalmente é mais fácil aprender primeiro o fluxo básico e depois adicionar as ferramentas pagas.'
         ],
-        activate_link: 'Ativar ferramentas e plano Premium'
+        activate_link: 'Revisar status das ferramentas'
       },
       activate: {
         badge: 'Ferramentas',
@@ -3037,7 +3037,7 @@ export default {
         publish_body_2: 'Os membros ainda podem ver aulas não publicadas como planos futuros, mas ainda não podem reservá-las.',
         mistake_title: 'Erro comum',
         mistake_body: 'Se uma aula recorrente cair em um feriado, normalmente você não precisa refazer o timetable. Basta escolher não publicar aquela aula.',
-        activate_link: 'Ativar ferramentas e Premium'
+        activate_link: 'Revisar status das ferramentas'
       },
       pause: {
         badge: 'Ferramentas',
@@ -3059,7 +3059,7 @@ export default {
         common_body: 'Donos costumam usar essa ferramenta quando querem proteger o tempo do membro sem estender manualmente a validade de um cartão por vez.',
         next_title: 'Próximo passo',
         back_tools: 'Voltar para visão geral das ferramentas',
-        activate_link: 'Ativar ferramentas e Premium',
+        activate_link: 'Revisar status das ferramentas',
         back_cards: 'Voltar para Cards'
       }
     },

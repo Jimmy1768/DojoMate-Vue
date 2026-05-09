@@ -1501,14 +1501,14 @@ export default {
         edit_templates: '編輯模板',
         delete_templates: '刪除模板',
         delete_cards: '刪除會員卡',
-        card_records: '卡片記錄',
+        card_records: '爭議',
         members_overview: '成員總覽',
         add_a_member_directly: '直接新增成員',
         enrollment_vs_applications: '快速註冊 vs 申請',
         review_applications: '審核申請',
         reject_or_ban_members: '拒絕或封禁成員',
         tools_overview: '工具總覽',
-        activate_tools_and_premium: '啟用工具與進階方案',
+        activate_tools_and_premium: '查看工具狀態',
         timetable: '時間表',
         pause_cards: '暫停會員卡'
       }
@@ -1696,7 +1696,7 @@ export default {
         '如果你的帳號裡缺少某項功能，館主可能需要先授予存取權限或啟用所需工具。'
       ],
       compare_link: '比較 Business 頁面',
-      tools_link: '啟用工具與 Premium'
+      tools_link: '查看工具狀態'
     },
     business: {
       overview: {
@@ -1859,7 +1859,7 @@ export default {
         next_title: '下一步',
         next_body: '團隊角色設定完成後，下一個常見任務是到 Analytics 中查看薪酬和報表工具。',
         back_link: '返回講師設定',
-        activate_link: '啟用工具與 Premium',
+        activate_link: '查看工具狀態',
         compare_pages_link: '比較頁面',
         next_link: '前往 Analytics'
       },
@@ -1901,7 +1901,7 @@ export default {
         compare_link: '比較 Business 頁面',
         next_title: '下一步',
         next_body: '如果你還在設定團隊，先完成授課角色和管理員角色設定。如果團隊已經就緒，下一個常見任務就是建立課程，並讓預約承擔日常工作。',
-        activate_link: '啟用工具與 Premium',
+        activate_link: '查看工具狀態',
         instructors_link: '講師設定',
         staff_access_link: '員工存取',
         next_link: '前往 Schedule'
@@ -2908,7 +2908,7 @@ export default {
           '學院館主啟用工具後，其他角色通常也可以使用它們。',
           '通常先學會基礎流程，再疊加付費工具，會更容易。'
         ],
-        activate_link: '啟用工具與進階方案'
+        activate_link: '查看工具狀態'
       },
       activate: {
         badge: '工具',
@@ -3038,7 +3038,7 @@ export default {
         publish_body_2: '成員仍然可以把未發佈課程看成未來計畫，但還不能預約。',
         mistake_title: '常見錯誤',
         mistake_body: '如果重複課程遇到假日，通常不需要重建 timetable。只要選擇不要發佈那一堂課即可。',
-        activate_link: '啟用工具與 Premium'
+        activate_link: '查看工具狀態'
       },
       pause: {
         badge: '工具',
@@ -3060,7 +3060,7 @@ export default {
         common_body: '館主經常在想保護成員時間、又不想一張一張手動延長到期日時使用這個工具。',
         next_title: '下一步',
         back_tools: '返回工具總覽',
-        activate_link: '啟用工具與 Premium',
+        activate_link: '查看工具狀態',
         back_cards: '返回會員卡'
       }
     },

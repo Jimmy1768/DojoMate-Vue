@@ -1500,14 +1500,14 @@ export default {
         edit_templates: 'テンプレートを編集する',
         delete_templates: 'テンプレートを削除する',
         delete_cards: 'カードを削除する',
-        card_records: 'カード記録',
+        card_records: '異議申し立て',
         members_overview: 'メンバー概要',
         add_a_member_directly: 'メンバーを直接追加する',
         enrollment_vs_applications: '直接登録と申請の比較',
         review_applications: '申請を確認する',
         reject_or_ban_members: 'メンバーを拒否または禁止する',
         tools_overview: 'ツール概要',
-        activate_tools_and_premium: 'ツールとプレミアムを有効化する',
+        activate_tools_and_premium: 'ツール状況を確認する',
         timetable: '時間割',
         pause_cards: 'カードを一時停止する'
       }
@@ -1695,7 +1695,7 @@ export default {
         'アカウントに機能が見当たらない場合、オーナーが権限付与や必要ツールの有効化を行う必要があるかもしれません。'
       ],
       compare_link: 'Business ページを比較する',
-      tools_link: 'ツールとプレミアムを有効化する'
+      tools_link: 'ツール状況を確認する'
     },
     business: {
       overview: {
@@ -1858,7 +1858,7 @@ export default {
         next_title: '次のステップ',
         next_body: 'チームの役割設定が終わったら、次によく行うのは Analytics で報酬やレポート系ツールを確認することです。',
         back_link: '講師設定に戻る',
-        activate_link: 'ツールとプレミアムを有効化する',
+        activate_link: 'ツール状況を確認する',
         compare_pages_link: 'ページを比較する',
         next_link: 'Analytics へ進む'
       },
@@ -1900,7 +1900,7 @@ export default {
         compare_link: 'ビジネスページを比較する',
         next_title: '次のステップ',
         next_body: 'まだチーム設定中なら、先に教える役割と管理者役割の設定を終えてください。チームがすでに整っているなら、次によく行うのはレッスンを作り、日々の動きは予約に任せることです。',
-        activate_link: 'ツールとプレミアムを有効化する',
+        activate_link: 'ツール状況を確認する',
         instructors_link: '講師設定',
         staff_access_link: 'スタッフアクセス',
         next_link: 'スケジュールへ進む'
@@ -2907,7 +2907,7 @@ export default {
           '道場オーナーが有効化すれば、他の役割でも利用できることが多いです。',
           '通常は先に基本ワークフローを理解してから、有料ツールを重ねるほうが分かりやすいです。'
         ],
-        activate_link: 'ツールとプレミアムを有効化する'
+        activate_link: 'ツール状況を確認する'
       },
       activate: {
         badge: 'ツール',
@@ -3037,7 +3037,7 @@ export default {
         publish_body_2: 'メンバーは未公開レッスンを将来予定として見ることはできますが、まだ予約はできません。',
         mistake_title: 'よくある間違い',
         mistake_body: '繰り返しレッスンが祝日に当たっても、通常は timetable を作り直す必要はありません。その回を公開しないだけで大丈夫です。',
-        activate_link: 'ツールと Premium を有効化する'
+        activate_link: 'ツール状況を確認する'
       },
       pause: {
         badge: 'ツール',
@@ -3059,7 +3059,7 @@ export default {
         common_body: 'オーナーは、期限を1枚ずつ手動で延長することなく、メンバーの時間を保護したいときによくこのツールを使います。',
         next_title: '次のステップ',
         back_tools: 'ツール概要に戻る',
-        activate_link: 'ツールと Premium を有効化する',
+        activate_link: 'ツール状況を確認する',
         back_cards: 'Cards に戻る'
       }
     },

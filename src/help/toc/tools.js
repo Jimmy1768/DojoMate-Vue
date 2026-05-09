@@ -1,5 +1,5 @@
 // src/help/toc/tools.js
-// Paid Tools — shared by Owner/Admin; page content should note role differences.
+// Optional Tools — shared by Owner/Admin; page content should note role differences.
 
 export const toolsSections = [
   {

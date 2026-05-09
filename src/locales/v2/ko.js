@@ -1500,14 +1500,14 @@ export default {
         edit_templates: '템플릿 수정',
         delete_templates: '템플릿 삭제',
         delete_cards: '카드 삭제',
-        card_records: '카드 기록',
+        card_records: '분쟁',
         members_overview: '멤버 개요',
         add_a_member_directly: '멤버 직접 추가',
         enrollment_vs_applications: '직접 등록 vs 신청',
         review_applications: '신청 검토',
         reject_or_ban_members: '멤버 거절 또는 차단',
         tools_overview: '도구 개요',
-        activate_tools_and_premium: '도구와 프리미엄 활성화',
+        activate_tools_and_premium: '도구 상태 확인',
         timetable: '시간표',
         pause_cards: '카드 일시정지'
       }
@@ -1695,7 +1695,7 @@ export default {
         '계정에서 어떤 기능이 보이지 않는다면 오너가 접근 권한을 부여하거나 필요한 도구를 먼저 활성화해야 할 수 있습니다.'
       ],
       compare_link: 'Business 페이지 비교',
-      tools_link: '도구와 Premium 활성화'
+      tools_link: '도구 상태 확인'
     },
     business: {
       overview: {
@@ -1858,7 +1858,7 @@ export default {
         next_title: '다음 단계',
         next_body: '팀 역할이 정리되면 다음으로 자주 하는 작업은 Analytics에서 보수 및 리포트 도구를 검토하는 것입니다.',
         back_link: '강사 설정으로 돌아가기',
-        activate_link: '도구와 프리미엄 활성화',
+        activate_link: '도구 상태 확인',
         compare_pages_link: '페이지 비교',
         next_link: 'Analytics로 이동'
       },
@@ -1900,7 +1900,7 @@ export default {
         compare_link: 'Business 페이지 비교',
         next_title: '다음 단계',
         next_body: '아직 팀을 설정 중이라면 먼저 강사 역할과 관리자 역할 설정을 마무리하세요. 팀 설정이 끝났다면 다음으로 자주 하는 작업은 수업을 만들고 일상 운영은 예약이 처리하도록 두는 것입니다.',
-        activate_link: '도구와 Premium 활성화',
+        activate_link: '도구 상태 확인',
         instructors_link: '강사 설정',
         staff_access_link: '팀 접근 권한',
         next_link: '일정으로 이동'
@@ -2907,7 +2907,7 @@ export default {
           '도장 오너가 활성화하면 다른 역할도 사용할 수 있는 경우가 많습니다.',
           '보통은 먼저 기본 흐름을 익힌 뒤 유료 도구를 얹는 편이 더 쉽습니다.'
         ],
-        activate_link: '도구와 프리미엄 활성화'
+        activate_link: '도구 상태 확인'
       },
       activate: {
         badge: '도구',
@@ -3037,7 +3037,7 @@ export default {
         publish_body_2: '멤버는 게시되지 않은 수업도 미래 계획으로 볼 수 있지만 아직 예약할 수는 없습니다.',
         mistake_title: '흔한 실수',
         mistake_body: '반복 수업이 공휴일과 겹치더라도 보통 timetable을 다시 만들 필요는 없습니다. 그 수업만 게시하지 않으면 됩니다.',
-        activate_link: '도구와 Premium 활성화'
+        activate_link: '도구 상태 확인'
       },
       pause: {
         badge: '도구',
@@ -3059,7 +3059,7 @@ export default {
         common_body: '오너는 카드마다 만료일을 수동으로 하나씩 늘리지 않고 멤버 시간을 보호하고 싶을 때 이 도구를 자주 사용합니다.',
         next_title: '다음 단계',
         back_tools: '도구 개요로 돌아가기',
-        activate_link: '도구와 Premium 활성화',
+        activate_link: '도구 상태 확인',
         back_cards: '카드로 돌아가기'
       }
     },
