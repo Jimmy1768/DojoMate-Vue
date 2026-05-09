@@ -67,8 +67,10 @@ const localeLoaders = {
   },
 }
 
+const supportedLocales = ['en', ...Object.keys(localeLoaders)]
+
 const saved = localStorage.getItem('locale') || 'en'
-const initialLocale = Object.prototype.hasOwnProperty.call(messages, saved) ? saved : 'en'
+const initialLocale = supportedLocales.includes(saved) ? saved : 'en'
 
 const i18n = createI18n({
   legacy: false,
