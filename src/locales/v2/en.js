@@ -1741,7 +1741,7 @@ export default {
     business: {
       overview: {
         badge: 'Business',
-        paid_badge: 'Paid',
+        paid_badge: 'Optional Feature',
         title: 'Run the business side of your academy',
         intro: 'The Business area helps you set up your team, decide who can manage the academy, switch the active academy when needed, and enter academy-creation mode when the app allows it. Some owner/pro reporting and oversight tools now live in the separate Operations dashboard.',
         start_title: 'Start with the job you need to do',
@@ -1782,7 +1782,7 @@ export default {
       },
       compare: {
         badge: 'Business',
-        paid_badge: 'Paid',
+        paid_badge: 'Optional Feature',
         title: 'Instructors, Staff Access, and Analytics',
         intro: 'These three workflows support different jobs. Use this page when you are not sure which one matches what you need to do.',
         pick_title: 'Choose the page by the job',
@@ -2287,7 +2287,7 @@ export default {
           'a card case needs a human decision instead of ordinary renew/delete flow'
         ],
         know_title: 'What to know',
-        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. Issue Records and Delete Records stay in Cards for card lifecycle review, while Audit Logs belong under owner-side Operations -> Oversight. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
+        know_body: 'Disputes are now the main cards follow-up workflow in the admin path. Issue Records, Delete Records, and Audit Logs belong under owner-side Operations -> Oversight. For ordinary daily work, the normal flow is still: create the template, issue the card, use it, then clean up or renew it when needed.'
       }
     },
     members: {
@@ -2829,7 +2829,7 @@ export default {
         know_title: 'What to know',
         know_items: [
           'Some screens are fully locked when a tool is inactive.',
-          'Some screens still load but replace paid actions with upgrade prompts.',
+          'Some screens still load but replace locked actions with upgrade prompts.',
           'Broadcast is the current user-facing term in this UI.',
           'Broadcast follows academy payment and readiness setup, so it should be understood separately from the main tool workflow.',
           'Use this page to understand status and capability, not as the main place to learn each workflow.'
@@ -2960,7 +2960,7 @@ export default {
         ranks_title: 'Manage rank programs',
         ranks_body: 'Set up rank programs, enroll members by program, and confirm rank changes through the current review flow.',
         cards_title: 'Manage cards in the Affiliate Portal',
-        cards_body: 'Use the Templates, Assign, Active, and History views for card setup, issuing, active-card work, pause actions, and card record review. Use Operations -> Oversight when you need owner-side audit logs.',
+        cards_body: 'Use the Templates, Assign, Active, History, and Lesson Booking Adjustments views for card setup, issuing, active-card work, pause actions, and booking-related card corrections. Use Operations -> Oversight when you need owner-side review tools such as issue records, delete records, or audit logs.',
         reports_title: 'Review reports and report access',
         reports_body: 'Monthly Reports is read-only, but owner-side Shareholders controls who can receive financial or operational report access.',
         capability_title: 'Manage owner-only capability setup',
@@ -3081,7 +3081,7 @@ export default {
         know_items: [
           'You cannot delete a template that still has active cards.',
           'If the academy is paused, individual card management is locked.',
-          'Pause and unpause controls require the paid Pause tool.',
+          'Pause and unpause controls require the optional Pause Cards tool.',
           'Deleting a card has different behaviors for Expire and Cancel, and cancel may require a reason.',
           'Cards issued in the Affiliate Portal are the live cards used by the app for bookings, attendance/session deduction, and member card state.'
         ],
@@ -3145,7 +3145,7 @@ export default {
         ],
         know_title: 'What to know',
         know_items: [
-          'Billing readiness is staged: save the profile first, then complete the billing-method onboarding flow.',
+          'Billing readiness happens in steps: save the profile first, then complete the billing-method onboarding flow.',
           'This page is not only for invoices. It also controls whether academy media and related broadcast capabilities can move into a ready state.',
           'Statement disputes and billing-support cases belong here, not in the general cards or reports workflows.',
           'This is owner-side web setup, so normal admins should not expect to manage it from the app.'
