@@ -338,7 +338,7 @@ const router = createRouter({
     {
       path: '/help',
       name: 'help',
-      redirect: to => ({ path: '/help-v2', query: to.query, hash: to.hash })
+      redirect: to => ({ path: '/help-v3', query: to.query, hash: to.hash })
     },
     {
       path: '/help/:pathMatch(.*)*',
