@@ -873,8 +873,8 @@ export default {
         badge: '館主',
         title: '建立新學院',
         intro: '當你需要建立第一間或新增另一間學院時，請使用建立學院流程。',
-        what_title: '你可以做什麼',
-        what_items: [
+        steps_title: '你可以做什麼',
+        steps_items: [
           '建立新的學院。',
           '在有多個身分或多間學院時，切換到建立模式。',
           '建立後直接進入後續引導。'
@@ -1157,8 +1157,8 @@ export default {
         badge: '帳號',
         title: '重設密碼',
         intro: '如果你忘記密碼，且需要重新取得帳號存取權，請使用重設密碼流程。',
-        what_title: '你可以做什麼',
-        what_items: [
+        steps_title: '你可以做什麼',
+        steps_items: [
           '要求系統寄送密碼重設郵件。',
           '在無法正常登入時改走找回存取權路徑。'
         ],

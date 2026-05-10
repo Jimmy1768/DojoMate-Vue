@@ -873,8 +873,8 @@ export default {
         badge: '馆主',
         title: '创建新学院',
         intro: '当你需要创建第一家学院或新增另一家学院时，请使用创建学院流程。',
-        what_title: '你可以做什么',
-        what_items: [
+        steps_title: '你可以做什么',
+        steps_items: [
           '创建新的学院。',
           '在有多个身份或多家学院时，切换到创建模式。',
           '创建后直接进入后续引导。'
@@ -1157,8 +1157,8 @@ export default {
         badge: '账号',
         title: '重置密码',
         intro: '如果你忘记了密码，并且需要重新取得账号访问权，请使用重置密码流程。',
-        what_title: '你可以做什么',
-        what_items: [
+        steps_title: '你可以做什么',
+        steps_items: [
           '请求系统发送密码重置邮件。',
           '在无法正常登录时改走找回访问权路径。'
         ],

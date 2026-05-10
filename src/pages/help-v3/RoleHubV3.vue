@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue'
 import V2Icon from '../../components/V2Icon.vue'
 import V3SupportCallout from '../../components/V3SupportCallout.vue'
 import { useI18n } from 'vue-i18n'
@@ -16,7 +17,10 @@ const props = defineProps({
   }
 })
 
-const linkGroups = tm(`${props.baseKey}.links`)
+const linkGroups = computed(() => {
+  const value = tm(`${props.baseKey}.links`)
+  return Array.isArray(value) ? value : []
+})
 </script>
 
 <template>

@@ -17,6 +17,11 @@ const props = defineProps({
   }
 })
 
+function readArrayMessage(key) {
+  const value = tm(key)
+  return Array.isArray(value) ? value : []
+}
+
 const sections = computed(() => {
   const keys = [
     { title: 'steps_title', items: 'steps_items', body: 'steps_body' },
@@ -32,18 +37,19 @@ const sections = computed(() => {
       const itemsKey = `${props.baseKey}.${section.items}`
       const bodyKey = `${props.baseKey}.${section.body}`
       if (!te(titleKey)) return null
+      const items = readArrayMessage(itemsKey)
       return {
         title: t(titleKey),
-        items: te(itemsKey) ? tm(itemsKey) : null,
+        items,
         body: te(bodyKey) ? t(bodyKey) : null
       }
     })
     .filter(Boolean)
+    .filter((section) => section.items.length || section.body)
 })
 
 const nextLinks = computed(() => {
-  const key = `${props.baseKey}.next_links`
-  return te(key) ? tm(key) : []
+  return readArrayMessage(`${props.baseKey}.next_links`)
 })
 </script>
 
@@ -61,7 +67,7 @@ const nextLinks = computed(() => {
       class="card stack tight"
     >
       <h2>{{ section.title }}</h2>
-      <ul v-if="section.items">
+      <ul v-if="section.items.length">
         <li v-for="item in section.items" :key="item">{{ item }}</li>
       </ul>
       <p v-else-if="section.body" class="muted">{{ section.body }}</p>

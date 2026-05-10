@@ -873,8 +873,8 @@ export default {
         badge: 'Dono',
         title: 'Criar uma nova academia',
         intro: 'Use o fluxo de criação de academia quando precisar criar a primeira academia ou adicionar outra academia.',
-        what_title: 'O que você pode fazer',
-        what_items: [
+        steps_title: 'O que você pode fazer',
+        steps_items: [
           'Criar uma nova academia.',
           'Entrar em modo de criação quando você tiver vários papéis ou várias academias.',
           'Seguir direto para o onboarding depois da criação.'
@@ -1157,8 +1157,8 @@ export default {
         badge: 'Conta',
         title: 'Redefinir senha',
         intro: 'Use a redefinição de senha quando você tiver esquecido a senha e precisar recuperar o acesso à conta.',
-        what_title: 'O que você pode fazer',
-        what_items: [
+        steps_title: 'O que você pode fazer',
+        steps_items: [
           'Solicitar o envio do email de redefinição de senha.',
           'Entrar no fluxo de recuperação de acesso quando o login normal não resolve.'
         ],

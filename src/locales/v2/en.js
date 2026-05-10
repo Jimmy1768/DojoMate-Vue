@@ -86,7 +86,7 @@ export default {
     member: {
       home: {
         badge: 'Member',
-        title: 'Member Guide',
+        title: 'Member',
         intro: 'Use this guide when you train at an academy and need help with joining, memberships, cards, booking, alerts, broadcasts, online learning, or events.',
         areas_title: 'Member topics',
         links: [
@@ -158,7 +158,7 @@ export default {
       },
       memberships: {
         badge: 'Member',
-        title: 'Manage memberships and academy context',
+        title: 'Memberships and academy context',
         intro: 'Use this page when you belong to one or more academies and need to confirm which academy is currently active before you use cards, booking, alerts, or broadcasts.',
         what_title: 'What you can do',
         what_items: [
@@ -193,7 +193,7 @@ export default {
       },
       cards: {
         badge: 'Member',
-        title: 'Review your cards and pending payments',
+        title: 'Cards and pending payments',
         intro: 'Use member cards when you need to confirm what cards you can use, whether payment is still pending, or whether a card problem needs follow-up in the selected academy.',
         what_title: 'What you can do',
         what_items: [
@@ -400,7 +400,7 @@ export default {
       },
       online_learning: {
         badge: 'Member',
-        title: 'Use online learning',
+        title: 'Online learning',
         intro: 'Use Online when your member account has online access and you want to browse curriculum, open lessons, watch clips, and complete homework.',
         what_title: 'What you can do',
         what_items: [
@@ -438,7 +438,7 @@ export default {
       },
       events: {
         badge: 'Member',
-        title: 'Browse events and registrations',
+        title: 'Events and registrations',
         intro: 'Use Events when you want to browse competition events, maintain your competition profile, or manage registration steps for an event.',
         what_title: 'What you can do',
         what_items: [
@@ -477,7 +477,7 @@ export default {
     admin: {
       home: {
         badge: 'Admin',
-        title: 'Admin and staff guide',
+        title: 'Admin / Staff',
         intro: 'Use this guide when you help run an academy from the academy-scoped admin dashboard.',
         areas_title: 'Admin topics',
         links: [
@@ -512,7 +512,7 @@ export default {
       },
       academy_context: {
         badge: 'Admin',
-        title: 'Work in the correct academy context',
+        title: 'Academy context',
         intro: 'Use this topic when you need to confirm whether you are working in the correct academy and correct relationship before changing academy data, or when admin recovery actions need to route you back through academy selection.',
         what_title: 'What you can do',
         what_items: [
@@ -584,7 +584,7 @@ export default {
       },
       cards: {
         badge: 'Admin',
-        title: 'Create and assign cards',
+        title: 'Cards',
         intro: 'Use admin cards when you need to create templates, issue active cards, review current cards, or change card availability for academy members.',
         what_title: 'What you can do',
         what_items: [
@@ -622,7 +622,7 @@ export default {
       },
       session_debt: {
         badge: 'Admin',
-        title: 'Settle session debt',
+        title: 'Session debt',
         intro: 'Use the session debt workflow when a card or booking history has created a debt state that needs staff-side settlement.',
         what_title: 'What you can do',
         what_items: [
@@ -658,7 +658,7 @@ export default {
       },
       lessons: {
         badge: 'Admin',
-        title: 'Manage lesson templates',
+        title: 'Lessons',
         intro: 'Use lessons when you need to create, edit, or remove lesson templates before they are published into the live academy schedule.',
         what_title: 'What you can do',
         what_items: [
@@ -690,7 +690,7 @@ export default {
       },
       schedule: {
         badge: 'Admin',
-        title: 'Publish and manage the schedule',
+        title: 'Schedule',
         intro: 'Use schedule tools when you need to publish a lesson, edit a scheduled lesson, cancel it, or delete it from the live academy schedule.',
         what_title: 'What you can do',
         what_items: [
@@ -721,7 +721,7 @@ export default {
       },
       admin_booking: {
         badge: 'Admin',
-        title: 'Book for a student or member',
+        title: 'Admin booking',
         intro: 'Use admin booking when staff needs to create or remove a booking on behalf of a member from the admin schedule side.',
         what_title: 'What you can do',
         what_items: [
@@ -757,7 +757,7 @@ export default {
       },
       broadcasts: {
         badge: 'Admin',
-        title: 'Author broadcasts',
+        title: 'Broadcast authoring',
         intro: 'Use the current admin Broadcast flow when you want to publish academy updates or training posts from the app inside the selected academy context.',
         what_title: 'What you can do',
         what_items: [
@@ -795,7 +795,7 @@ export default {
       },
       alerts_qr: {
         badge: 'Admin',
-        title: 'Use alerts and QR tools',
+        title: 'Alerts and QR',
         intro: 'Use these admin-side support surfaces when you need academy alerts, QR-related actions, or recovery actions tied to the current academy context.',
         what_title: 'What you can do',
         what_items: [
@@ -829,7 +829,7 @@ export default {
     owner: {
       home: {
         badge: 'Owner',
-        title: 'Owner and operations guide',
+        title: 'Owner / Operations',
         intro: 'Use this guide when you create academies, manage owner-only academy settings, control access, or work in operations and oversight surfaces.',
         areas_title: 'Owner topics',
         links: [
@@ -901,7 +901,7 @@ export default {
       },
       onboarding: {
         badge: 'Owner',
-        title: 'Follow the first-academy onboarding flow',
+        title: 'Onboarding',
         intro: 'Use this topic to understand how the current first-academy tutorial progresses after academy creation and how the app resumes the next milestone after reload or re-entry.',
         steps_title: 'Milestone order',
         steps_items: [
@@ -940,7 +940,7 @@ export default {
       },
       business_management: {
         badge: 'Owner',
-        title: 'Manage academy business details',
+        title: 'Business Management',
         intro: 'Use owner business management when you need to edit or delete an academy or maintain academy presentation media such as logo, banner, gallery, and training media.',
         what_title: 'What you can do',
         what_items: [
@@ -1012,7 +1012,7 @@ export default {
       },
       access: {
         badge: 'Owner',
-        title: 'Manage access and permissions',
+        title: 'Access',
         intro: 'Use Access when you need to decide which accepted adult members can work in the academy-admin side of the selected academy.',
         what_title: 'What you can do',
         what_items: [
@@ -1048,7 +1048,7 @@ export default {
       },
       operations_analytics: {
         badge: 'Owner',
-        title: 'Use operations and analytics',
+        title: 'Operations Analytics',
         intro: 'Use Operations when you need owner-level metrics, realtime academy reporting, trends, or monthly reporting rather than ordinary academy-admin work.',
         what_title: 'What you can do',
         what_items: [
@@ -1084,7 +1084,7 @@ export default {
       },
       timesheets_salaries: {
         badge: 'Owner',
-        title: 'Manage timesheets and salaries',
+        title: 'Timesheets and Salaries',
         intro: 'Use these owner operations tools when you need to track staff time or manage compensation-related academy data.',
         what_title: 'What you can do',
         what_items: [
@@ -1116,7 +1116,7 @@ export default {
       },
       oversight: {
         badge: 'Owner',
-        title: 'Use owner oversight',
+        title: 'Oversight',
         intro: 'Use Oversight when you need owner-only review tools such as issue records, delete records, or audit logs.',
         what_title: 'What you can do',
         what_items: [
@@ -1148,7 +1148,7 @@ export default {
       },
       tools: {
         badge: 'Owner',
-        title: 'Use owner tools and gated features',
+        title: 'Tools and gated features',
         intro: 'Use this topic when you need to understand what optional owner-side tools do, where those workflows appear, and which surfaces stay role-gated or entitlement-gated.',
         what_title: 'What you can do',
         what_items: [
@@ -1185,7 +1185,7 @@ export default {
     account: {
       home: {
         badge: 'Account',
-        title: 'Account and settings guide',
+        title: 'Account / Settings',
         intro: 'Use this guide for sign-in, password recovery, profile updates, privacy settings, preferences, and session actions.',
         areas_title: 'Account topics',
         links: [
@@ -1285,7 +1285,7 @@ export default {
       },
       reset_password: {
         badge: 'Account',
-        title: 'Reset your password',
+        title: 'Reset password',
         intro: 'Use password reset when you cannot access the account because the current password is lost or no longer usable.',
         steps_title: 'Typical steps',
         steps_items: [
@@ -1317,7 +1317,7 @@ export default {
       },
       change_password: {
         badge: 'Account',
-        title: 'Change your password',
+        title: 'Change password',
         intro: 'Use change password when you are already signed in and want to replace the current password without using the reset-email flow.',
         what_title: 'What you can do',
         what_items: [
@@ -1350,7 +1350,7 @@ export default {
       },
       profile: {
         badge: 'Account',
-        title: 'Edit your profile',
+        title: 'Profile',
         intro: 'Use Profile when your adult account details need to be reviewed or updated.',
         what_title: 'What you can do',
         what_items: [
@@ -1381,7 +1381,7 @@ export default {
       },
       child_accounts: {
         badge: 'Account',
-        title: 'Manage child accounts',
+        title: 'Child accounts',
         intro: 'Use Child Accounts when a parent or guardian needs to create, edit, or remove a child-linked account relationship.',
         what_title: 'What you can do',
         what_items: [
@@ -1412,7 +1412,7 @@ export default {
       },
       privacy_progression: {
         badge: 'Account',
-        title: 'Manage privacy and progression settings',
+        title: 'Privacy and progression',
         intro: 'Use privacy and progression settings when the question is about visibility, ranking participation, profile exposure, or account-level privacy choices.',
         what_title: 'What you can do',
         what_items: [
@@ -1447,7 +1447,7 @@ export default {
       },
       preferences: {
         badge: 'Account',
-        title: 'Manage preferences',
+        title: 'Preferences',
         intro: 'Use Preferences when you want to change app language, currency, theme, or other presentation-level account preferences.',
         what_title: 'What you can do',
         what_items: [
@@ -1483,7 +1483,7 @@ export default {
       },
       delete_account: {
         badge: 'Account',
-        title: 'Delete your account',
+        title: 'Delete account',
         intro: 'Use account deletion only when you intend to remove the whole account rather than leaving one academy or changing one membership relationship.',
         what_title: 'What you can do',
         what_items: [
@@ -1514,7 +1514,7 @@ export default {
       },
       logout: {
         badge: 'Account',
-        title: 'Log out',
+        title: 'Logout',
         intro: 'Use Logout when you want to end the current device session and leave the signed-in app state cleanly.',
         what_title: 'What you can do',
         what_items: [
